@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+/2n7JaYgS+RP2u15xYxjb/fUzoRXuAOCdTVvRMlmR8S8hw63ovCStpM3snbrQKBGHGbP/a1v8xNm8N+u9L73Q==",
+  "dgSpecHash": "rDto05HtlMmgmy0jR/cKWhtUJNZcD8SEu7HQxfcjyBG+1zMcZ0CC4CzohdsVsW9bmq3u7vdr3/nZMy200DVqDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ACER\\Downloads\\WinFormsApp1\\WinFormsApp1\\WinFormsApp1.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ACER\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512",
-    "C:\\Users\\ACER\\.nuget\\packages\\metroset_ui\\2.0.0\\metroset_ui.2.0.0.nupkg.sha512"
+    "C:\\Users\\ADMIN\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512"
   ],
   "logs": [
     {
