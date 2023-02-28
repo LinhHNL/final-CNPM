@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp1
+﻿using WinFormsApp2;
+
+namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -29,10 +31,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tb_firstName = new WinFormsApp1.MyTextbox();
+            this.tb_firstName = new WinFormsApp2.MyTextbox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_signUp = new WinFormsApp1.RoundedButton();
-            this.tb_password = new WinFormsApp1.MyTextbox();
+            this.btn_signUp = new WinFormsApp2.MyRoundedButton();
+            this.tb_password = new WinFormsApp2.MyTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_login_change = new System.Windows.Forms.Button();
             this.btn_signupchange = new System.Windows.Forms.Button();
@@ -165,7 +167,7 @@
         #endregion
         private MyTextbox tb_firstName;
         private Label label1;
-        private RoundedButton btn_signUp;
+        private MyRoundedButton btn_signUp;
         private MyTextbox tb_password;
         private Panel panel1;
         private Button btn_login_change;
