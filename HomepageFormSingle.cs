@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp2
 {
-    public partial class HomepageForm : MetroFramework.Forms.MetroForm
+    public partial class HomepageFormSingle : MetroFramework.Forms.MetroForm
     {
-        public HomepageForm()
+        public HomepageFormSingle()
         {
             InitializeComponent();
         }
@@ -28,6 +28,26 @@ namespace WinFormsApp2
         }
 
         private void myRoundedButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pa_ColorDis_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_signUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
