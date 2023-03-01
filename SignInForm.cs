@@ -80,5 +80,13 @@ namespace WinFormsApp2
         {
 
         }
+
+        private void btn_signUpForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUpForm signUpForm = new SignUpForm();
+            signUpForm.ShowDialog();
+            this.Close();
+        }
     }
 }

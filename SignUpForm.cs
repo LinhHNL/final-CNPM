@@ -101,5 +101,13 @@ namespace WinFormsApp2
         {
 
         }
+
+        private void btn_signInForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignInForm signInForm = new SignInForm();
+            signInForm.ShowDialog();
+            this.Close();
+        }
     }
 }

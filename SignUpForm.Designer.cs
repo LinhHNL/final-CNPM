@@ -38,7 +38,7 @@ namespace WinFormsApp2
             this.tb_email = new WinFormsApp2.CustomControls.RoundedTextBox();
             this.tb_phone = new WinFormsApp2.CustomControls.RoundedTextBox();
             this.tb_password = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_signInForm = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
             this.lbl_errorMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -174,25 +174,26 @@ namespace WinFormsApp2
             this.tb_password.Texts = "";
             this.tb_password.UnderlinedStyle = false;
             // 
-            // roundedButton1
+            // btn_signInForm
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton1.BorderRadius = 8;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(747, 34);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton1.TabIndex = 17;
-            this.roundedButton1.Text = "Đăng nhập";
-            this.roundedButton1.TextColor = System.Drawing.Color.White;
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.btn_signInForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_signInForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_signInForm.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_signInForm.BorderRadius = 8;
+            this.btn_signInForm.BorderSize = 0;
+            this.btn_signInForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_signInForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_signInForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_signInForm.ForeColor = System.Drawing.Color.White;
+            this.btn_signInForm.Location = new System.Drawing.Point(747, 34);
+            this.btn_signInForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_signInForm.Name = "btn_signInForm";
+            this.btn_signInForm.Size = new System.Drawing.Size(117, 35);
+            this.btn_signInForm.TabIndex = 17;
+            this.btn_signInForm.Text = "Đăng nhập";
+            this.btn_signInForm.TextColor = System.Drawing.Color.White;
+            this.btn_signInForm.UseVisualStyleBackColor = false;
+            this.btn_signInForm.Click += new System.EventHandler(this.btn_signInForm_Click);
             // 
             // roundedButton2
             // 
@@ -231,7 +232,7 @@ namespace WinFormsApp2
             this.ClientSize = new System.Drawing.Size(1003, 521);
             this.Controls.Add(this.lbl_errorMessage);
             this.Controls.Add(this.roundedButton2);
-            this.Controls.Add(this.roundedButton1);
+            this.Controls.Add(this.btn_signInForm);
             this.Controls.Add(this.tb_password);
             this.Controls.Add(this.tb_phone);
             this.Controls.Add(this.tb_email);
@@ -258,7 +259,7 @@ namespace WinFormsApp2
         private RoundedTextBox tb_email;
         private RoundedTextBox tb_phone;
         private RoundedTextBox tb_password;
-        private RoundedButton roundedButton1;
+        private RoundedButton btn_signInForm;
         private RoundedButton roundedButton2;
         private Label lbl_errorMessage;
     }
