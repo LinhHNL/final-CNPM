@@ -1,4 +1,6 @@
-﻿namespace WinFormsApp2
+﻿using WinFormsApp2.CustomControls;
+
+namespace WinFormsApp2
 {
     partial class HomepageForm
     {
@@ -28,7 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.myRoundedButton1 = new WinFormsApp2.MyRoundedButton();
+            this.myRoundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             this.SuspendLayout();
             // 
             // myRoundedButton1
@@ -58,6 +60,6 @@
 
         #endregion
 
-        private MyRoundedButton myRoundedButton1;
+        private RoundedButton myRoundedButton1;
     }
 }

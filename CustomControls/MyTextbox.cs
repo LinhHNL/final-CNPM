@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinFormsApp2
+namespace WinFormsApp2.CustomControls
 {
     public class MyTextbox : TextBox
     {
         public MyTextbox()
         {
-            BorderStyle = System.Windows.Forms.BorderStyle.None;
+            BorderStyle = BorderStyle.None;
             AutoSize = false;
 
             Controls.Add(new Label()
