@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "a5VEuBpKsCPt8y0SSlKz9pcs5oZZNertsYNlbkHBm18maMGfgiM5spkz+Dhs2avCZjG5cpMkBmZjQfa7v7FVZQ==",
+  "dgSpecHash": "rzI6zRWnMqMBBB8h7R0CUvq+xY/Xt6g0YDJhUDRbRh5I+vS2xoY0k+QKC+s8bHvxLKeQsvI6Q5bODToK1Ozs5A==",
   "success": true,
-  "projectFilePath": "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj",
+  "projectFilePath": "C:\\hoc\\CNPM\\doan\\doancuoikyCNPM\\WinFormsApp2.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\a\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512"
+    "C:\\Users\\Laptop T&T\\.nuget\\packages\\metromodernui\\1.4.0\\metromodernui.1.4.0.nupkg.sha512"
   ],
   "logs": [
     {
