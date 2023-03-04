@@ -34,9 +34,9 @@ namespace WinFormsApp2
             Pa_ColorDis = new RoundedButton();
             pa2_NoicomDien = new RoundedButton();
             roundedButton1 = new RoundedButton();
-            btn_signUp = new RoundedButton();
-            roundedButton2 = new RoundedButton();
-            roundedButton3 = new RoundedButton();
+            btn_singlePot = new RoundedButton();
+            btn_fourPot = new RoundedButton();
+            btn_doublePot = new RoundedButton();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             metroPanel7 = new MetroFramework.Controls.MetroPanel();
             roundedButton9 = new RoundedButton();
@@ -46,6 +46,14 @@ namespace WinFormsApp2
             roundedButton5 = new RoundedButton();
             roundedButton4 = new RoundedButton();
             pictureBox1 = new PictureBox();
+            panel_doublePot = new Panel();
+            roundedButton14 = new RoundedButton();
+            roundedButton20 = new RoundedButton();
+            roundedButton18 = new RoundedButton();
+            roundedButton19 = new RoundedButton();
+            btn_leftDoublePot = new MetroFramework.Controls.MetroTile();
+            roundedButton2 = new RoundedButton();
+            btn_rightDoublePot = new MetroFramework.Controls.MetroTile();
             metroPanel2 = new MetroFramework.Controls.MetroPanel();
             roundedButton11 = new RoundedButton();
             label2 = new Label();
@@ -73,8 +81,22 @@ namespace WinFormsApp2
             btn_signInForm = new RoundedButton();
             roundedButton10 = new RoundedButton();
             roundedButton15 = new RoundedButton();
+            roundedButton17 = new RoundedButton();
+            panel_singlePot = new Panel();
+            panel_fourPot = new Panel();
+            roundedButton21 = new RoundedButton();
+            roundedButton3 = new RoundedButton();
+            roundedButton23 = new RoundedButton();
+            roundedButton22 = new RoundedButton();
+            roundedButton24 = new RoundedButton();
+            btn_topLeftFourPot = new MetroFramework.Controls.MetroTile();
+            btn_bottomLeftFourPot = new MetroFramework.Controls.MetroTile();
+            btn_topRightFourPot = new MetroFramework.Controls.MetroTile();
+            btn_bottomRightFourPot = new MetroFramework.Controls.MetroTile();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel_doublePot.SuspendLayout();
+            btn_leftDoublePot.SuspendLayout();
             metroPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             metroPanel5.SuspendLayout();
@@ -85,6 +107,8 @@ namespace WinFormsApp2
             metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             metroTile1.SuspendLayout();
+            panel_singlePot.SuspendLayout();
+            panel_fourPot.SuspendLayout();
             SuspendLayout();
             // 
             // Pa_ColorDis
@@ -98,9 +122,9 @@ namespace WinFormsApp2
             Pa_ColorDis.FlatAppearance.BorderSize = 0;
             Pa_ColorDis.FlatStyle = FlatStyle.Flat;
             Pa_ColorDis.ForeColor = Color.Yellow;
-            Pa_ColorDis.Location = new Point(398, 130);
+            Pa_ColorDis.Location = new Point(44, 51);
             Pa_ColorDis.Name = "Pa_ColorDis";
-            Pa_ColorDis.Size = new Size(125, 120);
+            Pa_ColorDis.Size = new Size(125, 125);
             Pa_ColorDis.TabIndex = 0;
             Pa_ColorDis.TextColor = Color.Yellow;
             Pa_ColorDis.UseVisualStyleBackColor = false;
@@ -116,9 +140,9 @@ namespace WinFormsApp2
             pa2_NoicomDien.FlatAppearance.BorderSize = 0;
             pa2_NoicomDien.FlatStyle = FlatStyle.Flat;
             pa2_NoicomDien.ForeColor = Color.Yellow;
-            pa2_NoicomDien.Location = new Point(368, 99);
+            pa2_NoicomDien.Location = new Point(11, 11);
             pa2_NoicomDien.Name = "pa2_NoicomDien";
-            pa2_NoicomDien.Size = new Size(180, 181);
+            pa2_NoicomDien.Size = new Size(200, 200);
             pa2_NoicomDien.TabIndex = 1;
             pa2_NoicomDien.TextColor = Color.Yellow;
             pa2_NoicomDien.UseVisualStyleBackColor = false;
@@ -134,72 +158,75 @@ namespace WinFormsApp2
             roundedButton1.FlatAppearance.BorderSize = 0;
             roundedButton1.FlatStyle = FlatStyle.Flat;
             roundedButton1.ForeColor = Color.Yellow;
-            roundedButton1.Location = new Point(345, 80);
+            roundedButton1.Location = new Point(1, 1);
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(228, 216);
+            roundedButton1.Size = new Size(220, 220);
             roundedButton1.TabIndex = 2;
             roundedButton1.TextColor = Color.Yellow;
             roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // btn_signUp
+            // btn_singlePot
             // 
-            btn_signUp.BackColor = Color.FromArgb(229, 1, 17);
-            btn_signUp.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_signUp.BorderColor = Color.PaleVioletRed;
-            btn_signUp.BorderRadius = 10;
-            btn_signUp.BorderSize = 0;
-            btn_signUp.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_signUp.FlatStyle = FlatStyle.Flat;
-            btn_signUp.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_signUp.ForeColor = Color.White;
-            btn_signUp.Location = new Point(378, 339);
-            btn_signUp.Margin = new Padding(3, 4, 3, 4);
-            btn_signUp.Name = "btn_signUp";
-            btn_signUp.Size = new Size(170, 48);
-            btn_signUp.TabIndex = 12;
-            btn_signUp.Text = "Nồi đơn";
-            btn_signUp.TextColor = Color.White;
-            btn_signUp.UseVisualStyleBackColor = false;
+            btn_singlePot.BackColor = Color.FromArgb(229, 1, 17);
+            btn_singlePot.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_singlePot.BorderColor = Color.PaleVioletRed;
+            btn_singlePot.BorderRadius = 10;
+            btn_singlePot.BorderSize = 0;
+            btn_singlePot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_singlePot.FlatStyle = FlatStyle.Flat;
+            btn_singlePot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_singlePot.ForeColor = Color.White;
+            btn_singlePot.Location = new Point(268, 103);
+            btn_singlePot.Margin = new Padding(3, 4, 3, 4);
+            btn_singlePot.Name = "btn_singlePot";
+            btn_singlePot.Size = new Size(128, 48);
+            btn_singlePot.TabIndex = 12;
+            btn_singlePot.Text = "Nồi đơn";
+            btn_singlePot.TextColor = Color.White;
+            btn_singlePot.UseVisualStyleBackColor = false;
+            btn_singlePot.Click += btn_singlePot_Click;
             // 
-            // roundedButton2
+            // btn_fourPot
             // 
-            roundedButton2.BackColor = Color.FromArgb(222, 226, 230);
-            roundedButton2.BackgroundColor = Color.FromArgb(222, 226, 230);
-            roundedButton2.BorderColor = Color.FromArgb(222, 226, 230);
-            roundedButton2.BorderRadius = 10;
-            roundedButton2.BorderSize = 0;
-            roundedButton2.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton2.FlatStyle = FlatStyle.Flat;
-            roundedButton2.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton2.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton2.Location = new Point(378, 499);
-            roundedButton2.Margin = new Padding(3, 4, 3, 4);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(170, 48);
-            roundedButton2.TabIndex = 13;
-            roundedButton2.Text = "Nồi bốn ngăn";
-            roundedButton2.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton2.UseVisualStyleBackColor = false;
+            btn_fourPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_fourPot.BackgroundColor = Color.FromArgb(222, 226, 230);
+            btn_fourPot.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_fourPot.BorderRadius = 10;
+            btn_fourPot.BorderSize = 0;
+            btn_fourPot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_fourPot.FlatStyle = FlatStyle.Flat;
+            btn_fourPot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_fourPot.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_fourPot.Location = new Point(578, 103);
+            btn_fourPot.Margin = new Padding(3, 4, 3, 4);
+            btn_fourPot.Name = "btn_fourPot";
+            btn_fourPot.Size = new Size(154, 48);
+            btn_fourPot.TabIndex = 13;
+            btn_fourPot.Text = "Nồi bốn ngăn";
+            btn_fourPot.TextColor = Color.FromArgb(160, 159, 159);
+            btn_fourPot.UseVisualStyleBackColor = false;
+            btn_fourPot.Click += btn_fourPot_Click;
             // 
-            // roundedButton3
+            // btn_doublePot
             // 
-            roundedButton3.BackColor = Color.FromArgb(222, 226, 230);
-            roundedButton3.BackgroundColor = Color.FromArgb(222, 226, 230);
-            roundedButton3.BorderColor = Color.FromArgb(222, 226, 230);
-            roundedButton3.BorderRadius = 10;
-            roundedButton3.BorderSize = 0;
-            roundedButton3.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton3.FlatStyle = FlatStyle.Flat;
-            roundedButton3.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton3.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton3.Location = new Point(378, 417);
-            roundedButton3.Margin = new Padding(3, 4, 3, 4);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(170, 48);
-            roundedButton3.TabIndex = 14;
-            roundedButton3.Text = "Nồi uyên ương";
-            roundedButton3.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton3.UseVisualStyleBackColor = false;
+            btn_doublePot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_doublePot.BackgroundColor = Color.FromArgb(222, 226, 230);
+            btn_doublePot.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_doublePot.BorderRadius = 10;
+            btn_doublePot.BorderSize = 0;
+            btn_doublePot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_doublePot.FlatStyle = FlatStyle.Flat;
+            btn_doublePot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_doublePot.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_doublePot.Location = new Point(402, 103);
+            btn_doublePot.Margin = new Padding(3, 4, 3, 4);
+            btn_doublePot.Name = "btn_doublePot";
+            btn_doublePot.Size = new Size(170, 48);
+            btn_doublePot.TabIndex = 14;
+            btn_doublePot.Text = "Nồi uyên ương";
+            btn_doublePot.TextColor = Color.FromArgb(160, 159, 159);
+            btn_doublePot.UseVisualStyleBackColor = false;
+            btn_doublePot.Click += btn_doublePot_Click;
             // 
             // metroPanel1
             // 
@@ -365,6 +392,145 @@ namespace WinFormsApp2
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
+            // panel_doublePot
+            // 
+            panel_doublePot.Controls.Add(roundedButton14);
+            panel_doublePot.Controls.Add(roundedButton20);
+            panel_doublePot.Controls.Add(roundedButton18);
+            panel_doublePot.Controls.Add(Pa_ColorDis);
+            panel_doublePot.Controls.Add(roundedButton19);
+            panel_doublePot.Controls.Add(btn_leftDoublePot);
+            panel_doublePot.Controls.Add(btn_rightDoublePot);
+            panel_doublePot.Location = new Point(350, 200);
+            panel_doublePot.Name = "panel_doublePot";
+            panel_doublePot.Size = new Size(289, 267);
+            panel_doublePot.TabIndex = 33;
+            panel_doublePot.Visible = false;
+            // 
+            // roundedButton14
+            // 
+            roundedButton14.BackColor = Color.FromArgb(108, 117, 125);
+            roundedButton14.BackgroundColor = Color.FromArgb(108, 117, 125);
+            roundedButton14.BorderColor = Color.PaleVioletRed;
+            roundedButton14.BorderRadius = 0;
+            roundedButton14.BorderSize = 0;
+            roundedButton14.FlatAppearance.BorderSize = 0;
+            roundedButton14.FlatStyle = FlatStyle.Flat;
+            roundedButton14.ForeColor = Color.White;
+            roundedButton14.Location = new Point(109, 16);
+            roundedButton14.Name = "roundedButton14";
+            roundedButton14.Size = new Size(2, 195);
+            roundedButton14.TabIndex = 27;
+            roundedButton14.Text = "roundedButton14";
+            roundedButton14.TextColor = Color.White;
+            roundedButton14.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton20
+            // 
+            roundedButton20.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton20.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton20.BorderColor = Color.FromArgb(233, 236, 239);
+            roundedButton20.BorderRadius = 30;
+            roundedButton20.BorderSize = 0;
+            roundedButton20.Enabled = false;
+            roundedButton20.FlatAppearance.BorderSize = 0;
+            roundedButton20.FlatStyle = FlatStyle.Flat;
+            roundedButton20.ForeColor = Color.Yellow;
+            roundedButton20.Location = new Point(48, 51);
+            roundedButton20.Name = "roundedButton20";
+            roundedButton20.Size = new Size(125, 125);
+            roundedButton20.TabIndex = 31;
+            roundedButton20.TextColor = Color.Yellow;
+            roundedButton20.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton18
+            // 
+            roundedButton18.BackColor = Color.FromArgb(222, 226, 230);
+            roundedButton18.BackgroundColor = Color.FromArgb(222, 226, 230);
+            roundedButton18.BorderColor = Color.FromArgb(108, 117, 125);
+            roundedButton18.BorderRadius = 50;
+            roundedButton18.BorderSize = 2;
+            roundedButton18.Enabled = false;
+            roundedButton18.FlatAppearance.BorderSize = 0;
+            roundedButton18.FlatStyle = FlatStyle.Flat;
+            roundedButton18.ForeColor = Color.Yellow;
+            roundedButton18.Location = new Point(11, 11);
+            roundedButton18.Name = "roundedButton18";
+            roundedButton18.Size = new Size(200, 200);
+            roundedButton18.TabIndex = 25;
+            roundedButton18.TextColor = Color.Yellow;
+            roundedButton18.UseVisualStyleBackColor = false;
+            roundedButton18.Click += roundedButton18_Click;
+            // 
+            // roundedButton19
+            // 
+            roundedButton19.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton19.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton19.BorderColor = Color.FromArgb(33, 37, 41);
+            roundedButton19.BorderRadius = 20;
+            roundedButton19.BorderSize = 2;
+            roundedButton19.Enabled = false;
+            roundedButton19.FlatAppearance.BorderSize = 0;
+            roundedButton19.FlatStyle = FlatStyle.Flat;
+            roundedButton19.ForeColor = Color.Yellow;
+            roundedButton19.Location = new Point(1, 1);
+            roundedButton19.Name = "roundedButton19";
+            roundedButton19.Size = new Size(220, 220);
+            roundedButton19.TabIndex = 26;
+            roundedButton19.TextColor = Color.Yellow;
+            roundedButton19.UseVisualStyleBackColor = false;
+            // 
+            // btn_leftDoublePot
+            // 
+            btn_leftDoublePot.ActiveControl = null;
+            btn_leftDoublePot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_leftDoublePot.Controls.Add(roundedButton2);
+            btn_leftDoublePot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_leftDoublePot.FlatAppearance.BorderSize = 0;
+            btn_leftDoublePot.FlatStyle = FlatStyle.Flat;
+            btn_leftDoublePot.Location = new Point(11, 16);
+            btn_leftDoublePot.Name = "btn_leftDoublePot";
+            btn_leftDoublePot.Size = new Size(92, 195);
+            btn_leftDoublePot.TabIndex = 28;
+            btn_leftDoublePot.UseCustomBackColor = true;
+            btn_leftDoublePot.UseSelectable = true;
+            btn_leftDoublePot.UseVisualStyleBackColor = false;
+            btn_leftDoublePot.Click += metroTile2_Click;
+            // 
+            // roundedButton2
+            // 
+            roundedButton2.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton2.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton2.BorderColor = Color.FromArgb(233, 236, 239);
+            roundedButton2.BorderRadius = 30;
+            roundedButton2.BorderSize = 0;
+            roundedButton2.Enabled = false;
+            roundedButton2.FlatAppearance.BorderSize = 0;
+            roundedButton2.FlatStyle = FlatStyle.Flat;
+            roundedButton2.ForeColor = Color.Yellow;
+            roundedButton2.Location = new Point(33, 23);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.Size = new Size(125, 125);
+            roundedButton2.TabIndex = 29;
+            roundedButton2.TextColor = Color.Yellow;
+            roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // btn_rightDoublePot
+            // 
+            btn_rightDoublePot.ActiveControl = null;
+            btn_rightDoublePot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_rightDoublePot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_rightDoublePot.FlatAppearance.BorderSize = 0;
+            btn_rightDoublePot.FlatStyle = FlatStyle.Flat;
+            btn_rightDoublePot.Location = new Point(115, 15);
+            btn_rightDoublePot.Name = "btn_rightDoublePot";
+            btn_rightDoublePot.Size = new Size(92, 195);
+            btn_rightDoublePot.TabIndex = 30;
+            btn_rightDoublePot.UseCustomBackColor = true;
+            btn_rightDoublePot.UseSelectable = true;
+            btn_rightDoublePot.UseVisualStyleBackColor = false;
+            btn_rightDoublePot.Click += btn_rightDoublePot_Click;
+            // 
             // metroPanel2
             // 
             metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -446,7 +612,7 @@ namespace WinFormsApp2
             metroPanel5.HorizontalScrollbarBarColor = true;
             metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
             metroPanel5.HorizontalScrollbarSize = 10;
-            metroPanel5.Location = new Point(738, 67);
+            metroPanel5.Location = new Point(743, 104);
             metroPanel5.Name = "metroPanel5";
             metroPanel5.Size = new Size(473, 533);
             metroPanel5.TabIndex = 19;
@@ -675,7 +841,7 @@ namespace WinFormsApp2
             metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
             metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
             metroTile1.FlatStyle = FlatStyle.Flat;
-            metroTile1.Location = new Point(259, 602);
+            metroTile1.Location = new Point(260, 637);
             metroTile1.Name = "metroTile1";
             metroTile1.PaintTileCount = false;
             metroTile1.Size = new Size(753, 66);
@@ -697,7 +863,7 @@ namespace WinFormsApp2
             button1.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.TopRight;
-            button1.Location = new Point(392, 11);
+            button1.Location = new Point(393, 12);
             button1.Name = "button1";
             button1.Size = new Size(356, 38);
             button1.TabIndex = 2;
@@ -728,7 +894,7 @@ namespace WinFormsApp2
             btn_signInForm.FlatStyle = FlatStyle.Flat;
             btn_signInForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_signInForm.ForeColor = Color.White;
-            btn_signInForm.Location = new Point(954, 25);
+            btn_signInForm.Location = new Point(959, 46);
             btn_signInForm.Margin = new Padding(3, 4, 3, 4);
             btn_signInForm.Name = "btn_signInForm";
             btn_signInForm.Size = new Size(117, 35);
@@ -748,7 +914,7 @@ namespace WinFormsApp2
             roundedButton10.FlatStyle = FlatStyle.Flat;
             roundedButton10.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton10.ForeColor = Color.White;
-            roundedButton10.Location = new Point(1079, 25);
+            roundedButton10.Location = new Point(1082, 46);
             roundedButton10.Margin = new Padding(3, 4, 3, 4);
             roundedButton10.Name = "roundedButton10";
             roundedButton10.Size = new Size(117, 35);
@@ -768,7 +934,7 @@ namespace WinFormsApp2
             roundedButton15.FlatStyle = FlatStyle.Flat;
             roundedButton15.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton15.ForeColor = Color.White;
-            roundedButton15.Location = new Point(1009, 602);
+            roundedButton15.Location = new Point(1010, 637);
             roundedButton15.Margin = new Padding(3, 4, 3, 4);
             roundedButton15.Name = "roundedButton15";
             roundedButton15.Size = new Size(207, 60);
@@ -777,27 +943,230 @@ namespace WinFormsApp2
             roundedButton15.TextColor = Color.White;
             roundedButton15.UseVisualStyleBackColor = false;
             // 
+            // roundedButton17
+            // 
+            roundedButton17.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton17.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton17.BorderColor = Color.FromArgb(233, 236, 239);
+            roundedButton17.BorderRadius = 30;
+            roundedButton17.BorderSize = 0;
+            roundedButton17.Enabled = false;
+            roundedButton17.FlatAppearance.BorderSize = 0;
+            roundedButton17.FlatStyle = FlatStyle.Flat;
+            roundedButton17.ForeColor = Color.Yellow;
+            roundedButton17.Location = new Point(49, 49);
+            roundedButton17.Name = "roundedButton17";
+            roundedButton17.Size = new Size(125, 125);
+            roundedButton17.TabIndex = 29;
+            roundedButton17.TextColor = Color.Yellow;
+            roundedButton17.UseVisualStyleBackColor = false;
+            // 
+            // panel_singlePot
+            // 
+            panel_singlePot.Controls.Add(roundedButton17);
+            panel_singlePot.Controls.Add(pa2_NoicomDien);
+            panel_singlePot.Controls.Add(roundedButton1);
+            panel_singlePot.Location = new Point(350, 200);
+            panel_singlePot.Name = "panel_singlePot";
+            panel_singlePot.Size = new Size(289, 247);
+            panel_singlePot.TabIndex = 32;
+            // 
+            // panel_fourPot
+            // 
+            panel_fourPot.Controls.Add(roundedButton21);
+            panel_fourPot.Controls.Add(roundedButton3);
+            panel_fourPot.Controls.Add(roundedButton23);
+            panel_fourPot.Controls.Add(roundedButton22);
+            panel_fourPot.Controls.Add(roundedButton24);
+            panel_fourPot.Controls.Add(btn_topLeftFourPot);
+            panel_fourPot.Controls.Add(btn_bottomLeftFourPot);
+            panel_fourPot.Controls.Add(btn_topRightFourPot);
+            panel_fourPot.Controls.Add(btn_bottomRightFourPot);
+            panel_fourPot.Location = new Point(350, 200);
+            panel_fourPot.Name = "panel_fourPot";
+            panel_fourPot.Size = new Size(289, 267);
+            panel_fourPot.TabIndex = 34;
+            panel_fourPot.Visible = false;
+            // 
+            // roundedButton21
+            // 
+            roundedButton21.BackColor = Color.FromArgb(108, 117, 125);
+            roundedButton21.BackgroundColor = Color.FromArgb(108, 117, 125);
+            roundedButton21.BorderColor = Color.PaleVioletRed;
+            roundedButton21.BorderRadius = 0;
+            roundedButton21.BorderSize = 0;
+            roundedButton21.FlatAppearance.BorderSize = 0;
+            roundedButton21.FlatStyle = FlatStyle.Flat;
+            roundedButton21.ForeColor = Color.White;
+            roundedButton21.Location = new Point(16, 110);
+            roundedButton21.Name = "roundedButton21";
+            roundedButton21.Size = new Size(195, 2);
+            roundedButton21.TabIndex = 35;
+            roundedButton21.Text = "roundedButton21";
+            roundedButton21.TextColor = Color.White;
+            roundedButton21.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton3
+            // 
+            roundedButton3.BackColor = Color.FromArgb(108, 117, 125);
+            roundedButton3.BackgroundColor = Color.FromArgb(108, 117, 125);
+            roundedButton3.BorderColor = Color.PaleVioletRed;
+            roundedButton3.BorderRadius = 0;
+            roundedButton3.BorderSize = 0;
+            roundedButton3.FlatAppearance.BorderSize = 0;
+            roundedButton3.FlatStyle = FlatStyle.Flat;
+            roundedButton3.ForeColor = Color.White;
+            roundedButton3.Location = new Point(109, 15);
+            roundedButton3.Name = "roundedButton3";
+            roundedButton3.Size = new Size(2, 195);
+            roundedButton3.TabIndex = 27;
+            roundedButton3.Text = "roundedButton3";
+            roundedButton3.TextColor = Color.White;
+            roundedButton3.UseVisualStyleBackColor = false;
+            roundedButton3.Click += roundedButton3_Click;
+            // 
+            // roundedButton23
+            // 
+            roundedButton23.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton23.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton23.BorderColor = Color.FromArgb(233, 236, 239);
+            roundedButton23.BorderRadius = 30;
+            roundedButton23.BorderSize = 0;
+            roundedButton23.Enabled = false;
+            roundedButton23.FlatAppearance.BorderSize = 0;
+            roundedButton23.FlatStyle = FlatStyle.Flat;
+            roundedButton23.ForeColor = Color.Yellow;
+            roundedButton23.Location = new Point(44, 51);
+            roundedButton23.Name = "roundedButton23";
+            roundedButton23.Size = new Size(125, 125);
+            roundedButton23.TabIndex = 0;
+            roundedButton23.TextColor = Color.Yellow;
+            roundedButton23.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton22
+            // 
+            roundedButton22.BackColor = Color.FromArgb(222, 226, 230);
+            roundedButton22.BackgroundColor = Color.FromArgb(222, 226, 230);
+            roundedButton22.BorderColor = Color.FromArgb(108, 117, 125);
+            roundedButton22.BorderRadius = 50;
+            roundedButton22.BorderSize = 2;
+            roundedButton22.Enabled = false;
+            roundedButton22.FlatAppearance.BorderSize = 0;
+            roundedButton22.FlatStyle = FlatStyle.Flat;
+            roundedButton22.ForeColor = Color.Yellow;
+            roundedButton22.Location = new Point(11, 11);
+            roundedButton22.Name = "roundedButton22";
+            roundedButton22.Size = new Size(200, 200);
+            roundedButton22.TabIndex = 25;
+            roundedButton22.TextColor = Color.Yellow;
+            roundedButton22.UseVisualStyleBackColor = false;
+            roundedButton22.Click += roundedButton22_Click;
+            // 
+            // roundedButton24
+            // 
+            roundedButton24.BackColor = Color.FromArgb(233, 236, 239);
+            roundedButton24.BackgroundColor = Color.FromArgb(233, 236, 239);
+            roundedButton24.BorderColor = Color.FromArgb(33, 37, 41);
+            roundedButton24.BorderRadius = 20;
+            roundedButton24.BorderSize = 2;
+            roundedButton24.Enabled = false;
+            roundedButton24.FlatAppearance.BorderSize = 0;
+            roundedButton24.FlatStyle = FlatStyle.Flat;
+            roundedButton24.ForeColor = Color.Yellow;
+            roundedButton24.Location = new Point(1, 1);
+            roundedButton24.Name = "roundedButton24";
+            roundedButton24.Size = new Size(220, 220);
+            roundedButton24.TabIndex = 26;
+            roundedButton24.TextColor = Color.Yellow;
+            roundedButton24.UseVisualStyleBackColor = false;
+            // 
+            // btn_topLeftFourPot
+            // 
+            btn_topLeftFourPot.ActiveControl = null;
+            btn_topLeftFourPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_topLeftFourPot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_topLeftFourPot.FlatAppearance.BorderSize = 0;
+            btn_topLeftFourPot.FlatStyle = FlatStyle.Flat;
+            btn_topLeftFourPot.Location = new Point(11, 16);
+            btn_topLeftFourPot.Name = "btn_topLeftFourPot";
+            btn_topLeftFourPot.Size = new Size(92, 95);
+            btn_topLeftFourPot.TabIndex = 28;
+            btn_topLeftFourPot.UseCustomBackColor = true;
+            btn_topLeftFourPot.UseSelectable = true;
+            btn_topLeftFourPot.UseVisualStyleBackColor = false;
+            btn_topLeftFourPot.Click += btn_topLeftFourPot_Click;
+            // 
+            // btn_bottomLeftFourPot
+            // 
+            btn_bottomLeftFourPot.ActiveControl = null;
+            btn_bottomLeftFourPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_bottomLeftFourPot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_bottomLeftFourPot.FlatAppearance.BorderSize = 0;
+            btn_bottomLeftFourPot.FlatStyle = FlatStyle.Flat;
+            btn_bottomLeftFourPot.Location = new Point(11, 117);
+            btn_bottomLeftFourPot.Name = "btn_bottomLeftFourPot";
+            btn_bottomLeftFourPot.Size = new Size(92, 95);
+            btn_bottomLeftFourPot.TabIndex = 32;
+            btn_bottomLeftFourPot.UseCustomBackColor = true;
+            btn_bottomLeftFourPot.UseSelectable = true;
+            btn_bottomLeftFourPot.UseVisualStyleBackColor = false;
+            btn_bottomLeftFourPot.Click += btn_bottomLeftFourPot_Click;
+            // 
+            // btn_topRightFourPot
+            // 
+            btn_topRightFourPot.ActiveControl = null;
+            btn_topRightFourPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_topRightFourPot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_topRightFourPot.FlatAppearance.BorderSize = 0;
+            btn_topRightFourPot.FlatStyle = FlatStyle.Flat;
+            btn_topRightFourPot.Location = new Point(117, 16);
+            btn_topRightFourPot.Name = "btn_topRightFourPot";
+            btn_topRightFourPot.Size = new Size(92, 95);
+            btn_topRightFourPot.TabIndex = 33;
+            btn_topRightFourPot.UseCustomBackColor = true;
+            btn_topRightFourPot.UseSelectable = true;
+            btn_topRightFourPot.UseVisualStyleBackColor = false;
+            btn_topRightFourPot.Click += btn_topRightFourPot_Click;
+            // 
+            // btn_bottomRightFourPot
+            // 
+            btn_bottomRightFourPot.ActiveControl = null;
+            btn_bottomRightFourPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_bottomRightFourPot.FlatAppearance.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_bottomRightFourPot.FlatAppearance.BorderSize = 0;
+            btn_bottomRightFourPot.FlatStyle = FlatStyle.Flat;
+            btn_bottomRightFourPot.Location = new Point(117, 117);
+            btn_bottomRightFourPot.Name = "btn_bottomRightFourPot";
+            btn_bottomRightFourPot.Size = new Size(92, 95);
+            btn_bottomRightFourPot.TabIndex = 34;
+            btn_bottomRightFourPot.UseCustomBackColor = true;
+            btn_bottomRightFourPot.UseSelectable = true;
+            btn_bottomRightFourPot.UseVisualStyleBackColor = false;
+            btn_bottomRightFourPot.Click += btn_bottomRightFourPot_Click;
+            // 
             // HomepageFormSingle
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1212, 660);
+            ClientSize = new Size(1212, 697);
+            Controls.Add(panel_fourPot);
+            Controls.Add(panel_doublePot);
+            Controls.Add(panel_singlePot);
             Controls.Add(roundedButton15);
             Controls.Add(roundedButton10);
             Controls.Add(btn_signInForm);
             Controls.Add(metroTile1);
             Controls.Add(metroPanel5);
             Controls.Add(metroPanel1);
-            Controls.Add(roundedButton3);
-            Controls.Add(roundedButton2);
-            Controls.Add(btn_signUp);
-            Controls.Add(Pa_ColorDis);
-            Controls.Add(pa2_NoicomDien);
-            Controls.Add(roundedButton1);
+            Controls.Add(btn_doublePot);
+            Controls.Add(btn_fourPot);
+            Controls.Add(btn_singlePot);
             Name = "HomepageFormSingle";
             Style = MetroFramework.MetroColorStyle.White;
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel_doublePot.ResumeLayout(false);
+            btn_leftDoublePot.ResumeLayout(false);
             metroPanel2.ResumeLayout(false);
             metroPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -813,6 +1182,8 @@ namespace WinFormsApp2
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             metroTile1.ResumeLayout(false);
             metroTile1.PerformLayout();
+            panel_singlePot.ResumeLayout(false);
+            panel_fourPot.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -821,9 +1192,9 @@ namespace WinFormsApp2
         private RoundedButton Pa_ColorDis;
         private RoundedButton pa2_NoicomDien;
         private RoundedButton roundedButton1;
-        private RoundedButton btn_signUp;
-        private RoundedButton roundedButton2;
-        private RoundedButton roundedButton3;
+        private RoundedButton btn_singlePot;
+        private RoundedButton btn_fourPot;
+        private RoundedButton btn_doublePot;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private PictureBox pictureBox1;
         private RoundedButton roundedButton9;
@@ -860,5 +1231,25 @@ namespace WinFormsApp2
         private RoundedButton roundedButton15;
         private Button button1;
         private Label label7;
+        private RoundedButton roundedButton14;
+        private RoundedButton roundedButton18;
+        private RoundedButton roundedButton19;
+        private MetroFramework.Controls.MetroTile btn_leftDoublePot;
+        private RoundedButton roundedButton2;
+        private RoundedButton roundedButton17;
+        private MetroFramework.Controls.MetroTile btn_rightDoublePot;
+        private Panel panel_singlePot;
+        private Panel panel_doublePot;
+        private RoundedButton roundedButton20;
+        private Panel panel_fourPot;
+        private MetroFramework.Controls.MetroTile btn_bottomRightFourPot;
+        private MetroFramework.Controls.MetroTile btn_topRightFourPot;
+        private MetroFramework.Controls.MetroTile btn_bottomLeftFourPot;
+        private RoundedButton roundedButton3;
+        private RoundedButton roundedButton23;
+        private MetroFramework.Controls.MetroTile btn_topLeftFourPot;
+        private RoundedButton roundedButton22;
+        private RoundedButton roundedButton24;
+        private RoundedButton roundedButton21;
     }
 }
