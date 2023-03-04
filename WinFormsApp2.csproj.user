@@ -16,6 +16,9 @@
     <Compile Update="HomepageFormSingle.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="MonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SignInForm.cs">
       <SubType>Form</SubType>
     </Compile>

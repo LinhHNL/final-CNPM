@@ -130,5 +130,53 @@ namespace WinFormsApp2
         {
 
         }
+
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MonAn homepageFormSingle = new MonAn();
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MonAn homepageFormSingle = new MonAn();
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MonAn homepageFormSingle = new MonAn();
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void roundedButton8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MonAn homepageFormSingle = new MonAn();
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void roundedButton9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MonAn homepageFormSingle = new MonAn();
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void roundedButton10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignInForm signUpForm = new SignInForm();
+            signUpForm.ShowDialog();
+            this.Close();
+        }
     }
 }

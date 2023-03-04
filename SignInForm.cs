@@ -27,6 +27,10 @@ namespace WinFormsApp2
             if (validateData())
             {
                 lbl_errorMessage.Text = "Đăng nhập thành công";
+                this.Hide();
+                HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
+                homepageFormSingle.ShowDialog();
+                this.Close();
             }
 
         }
@@ -35,7 +39,7 @@ namespace WinFormsApp2
         {
             String phone = tb_phone.Texts.Trim();
             String password = tb_password.Texts;
-            
+
             if (phone.Equals(""))
             {
                 lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
@@ -96,7 +100,10 @@ namespace WinFormsApp2
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
+            homepageFormSingle.ShowDialog();
+            this.Close();
         }
     }
 }
