@@ -39,19 +39,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
       "projectName": "WinFormsApp2",
-      "projectPath": "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj",
-      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "D:\\tdt\\CNPM\\cuoiki\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -101,7 +101,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   },
