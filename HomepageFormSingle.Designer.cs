@@ -884,9 +884,10 @@ namespace WinFormsApp2
             label7.ForeColor = Color.White;
             label7.Location = new Point(20, 16);
             label7.Name = "label7";
-            label7.Size = new Size(227, 28);
+            label7.Size = new Size(279, 28);
             label7.TabIndex = 0;
-            label7.Text = "Vui lòng chọn 1 đáy nồi";
+            label7.Text = "Bạn đang chọn loại 1 đáy nồi";
+            label7.Click += label7_Click;
             // 
             // btn_signInForm
             // 

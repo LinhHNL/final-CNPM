@@ -49,6 +49,7 @@ namespace WinFormsApp2
 
         private void btn_singlePot_Click(object sender, EventArgs e)
         {
+            label7.Text = "Bạn đang chọn loại 1 đáy nồi";
             panel_doublePot.Visible = false;
             panel_singlePot.Visible = true;
             panel_fourPot.Visible = false;
@@ -62,6 +63,7 @@ namespace WinFormsApp2
 
         private void btn_doublePot_Click(object sender, EventArgs e)
         {
+            label7.Text = "Bạn đang chọn loại 2 đáy nồi";
             panel_doublePot.Visible = true;
             panel_singlePot.Visible = false;
             panel_fourPot.Visible = false;
@@ -75,6 +77,7 @@ namespace WinFormsApp2
 
         private void btn_fourPot_Click(object sender, EventArgs e)
         {
+            label7.Text = "Bạn đang chọn loại 4 đáy nồi";
             panel_doublePot.Visible = false;
             panel_singlePot.Visible = false;
             panel_fourPot.Visible = true;
@@ -177,6 +180,11 @@ namespace WinFormsApp2
             SignInForm signUpForm = new SignInForm();
             signUpForm.ShowDialog();
             this.Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

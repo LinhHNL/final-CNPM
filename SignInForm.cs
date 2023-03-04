@@ -54,7 +54,7 @@ namespace WinFormsApp2
                 return false;
             }
 
-            if (!IsDigitsOnly(phone))
+            if (!IsDigitsOnly(phone) || phone.Length!=10)
             {
                 lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
                 tb_phone.Focus();
