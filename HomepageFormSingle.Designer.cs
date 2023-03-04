@@ -98,9 +98,10 @@ namespace WinFormsApp2
             this.Pa_ColorDis.FlatAppearance.BorderSize = 0;
             this.Pa_ColorDis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Pa_ColorDis.ForeColor = System.Drawing.Color.Yellow;
-            this.Pa_ColorDis.Location = new System.Drawing.Point(398, 130);
+            this.Pa_ColorDis.Location = new System.Drawing.Point(498, 162);
+            this.Pa_ColorDis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pa_ColorDis.Name = "Pa_ColorDis";
-            this.Pa_ColorDis.Size = new System.Drawing.Size(125, 120);
+            this.Pa_ColorDis.Size = new System.Drawing.Size(156, 150);
             this.Pa_ColorDis.TabIndex = 0;
             this.Pa_ColorDis.TextColor = System.Drawing.Color.Yellow;
             this.Pa_ColorDis.UseVisualStyleBackColor = false;
@@ -116,9 +117,10 @@ namespace WinFormsApp2
             this.pa2_NoicomDien.FlatAppearance.BorderSize = 0;
             this.pa2_NoicomDien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pa2_NoicomDien.ForeColor = System.Drawing.Color.Yellow;
-            this.pa2_NoicomDien.Location = new System.Drawing.Point(368, 99);
+            this.pa2_NoicomDien.Location = new System.Drawing.Point(460, 124);
+            this.pa2_NoicomDien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pa2_NoicomDien.Name = "pa2_NoicomDien";
-            this.pa2_NoicomDien.Size = new System.Drawing.Size(180, 181);
+            this.pa2_NoicomDien.Size = new System.Drawing.Size(225, 226);
             this.pa2_NoicomDien.TabIndex = 1;
             this.pa2_NoicomDien.TextColor = System.Drawing.Color.Yellow;
             this.pa2_NoicomDien.UseVisualStyleBackColor = false;
@@ -134,9 +136,10 @@ namespace WinFormsApp2
             this.roundedButton1.FlatAppearance.BorderSize = 0;
             this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton1.ForeColor = System.Drawing.Color.Yellow;
-            this.roundedButton1.Location = new System.Drawing.Point(345, 80);
+            this.roundedButton1.Location = new System.Drawing.Point(431, 100);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(228, 216);
+            this.roundedButton1.Size = new System.Drawing.Size(285, 270);
             this.roundedButton1.TabIndex = 2;
             this.roundedButton1.TextColor = System.Drawing.Color.Yellow;
             this.roundedButton1.UseVisualStyleBackColor = false;
@@ -152,10 +155,10 @@ namespace WinFormsApp2
             this.btn_signUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_signUp.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_signUp.ForeColor = System.Drawing.Color.White;
-            this.btn_signUp.Location = new System.Drawing.Point(378, 339);
-            this.btn_signUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_signUp.Location = new System.Drawing.Point(472, 424);
+            this.btn_signUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_signUp.Name = "btn_signUp";
-            this.btn_signUp.Size = new System.Drawing.Size(170, 48);
+            this.btn_signUp.Size = new System.Drawing.Size(212, 60);
             this.btn_signUp.TabIndex = 12;
             this.btn_signUp.Text = "Nồi đơn";
             this.btn_signUp.TextColor = System.Drawing.Color.White;
@@ -172,10 +175,10 @@ namespace WinFormsApp2
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton2.Location = new System.Drawing.Point(378, 499);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton2.Location = new System.Drawing.Point(472, 624);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(170, 48);
+            this.roundedButton2.Size = new System.Drawing.Size(212, 60);
             this.roundedButton2.TabIndex = 13;
             this.roundedButton2.Text = "Nồi bốn ngăn";
             this.roundedButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -192,10 +195,10 @@ namespace WinFormsApp2
             this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton3.Location = new System.Drawing.Point(378, 417);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton3.Location = new System.Drawing.Point(472, 521);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(170, 48);
+            this.roundedButton3.Size = new System.Drawing.Size(212, 60);
             this.roundedButton3.TabIndex = 14;
             this.roundedButton3.Text = "Nồi uyên ương";
             this.roundedButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -213,28 +216,30 @@ namespace WinFormsApp2
             this.metroPanel1.Controls.Add(this.pictureBox1);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 32);
+            this.metroPanel1.HorizontalScrollbarSize = 12;
+            this.metroPanel1.Location = new System.Drawing.Point(0, 40);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(262, 597);
+            this.metroPanel1.Size = new System.Drawing.Size(328, 746);
             this.metroPanel1.TabIndex = 15;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 12;
             // 
             // metroPanel7
             // 
             this.metroPanel7.BackColor = System.Drawing.Color.Black;
             this.metroPanel7.HorizontalScrollbarBarColor = true;
             this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 10;
-            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
+            this.metroPanel7.HorizontalScrollbarSize = 12;
+            this.metroPanel7.Location = new System.Drawing.Point(324, 674);
+            this.metroPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
+            this.metroPanel7.Size = new System.Drawing.Size(1130, 69);
             this.metroPanel7.TabIndex = 20;
             this.metroPanel7.VerticalScrollbarBarColor = true;
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 10;
+            this.metroPanel7.VerticalScrollbarSize = 12;
             // 
             // roundedButton9
             // 
@@ -247,10 +252,10 @@ namespace WinFormsApp2
             this.roundedButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton9.Location = new System.Drawing.Point(-2, 369);
-            this.roundedButton9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton9.Location = new System.Drawing.Point(-2, 461);
+            this.roundedButton9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton9.Name = "roundedButton9";
-            this.roundedButton9.Size = new System.Drawing.Size(264, 64);
+            this.roundedButton9.Size = new System.Drawing.Size(330, 80);
             this.roundedButton9.TabIndex = 20;
             this.roundedButton9.Text = "Gia Vị";
             this.roundedButton9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -267,10 +272,10 @@ namespace WinFormsApp2
             this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton8.Location = new System.Drawing.Point(-2, 307);
-            this.roundedButton8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton8.Location = new System.Drawing.Point(-2, 384);
+            this.roundedButton8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(264, 64);
+            this.roundedButton8.Size = new System.Drawing.Size(330, 80);
             this.roundedButton8.TabIndex = 19;
             this.roundedButton8.Text = "Đồ uống";
             this.roundedButton8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -287,10 +292,10 @@ namespace WinFormsApp2
             this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.Location = new System.Drawing.Point(0, 243);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton7.Location = new System.Drawing.Point(0, 304);
+            this.roundedButton7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(264, 64);
+            this.roundedButton7.Size = new System.Drawing.Size(330, 80);
             this.roundedButton7.TabIndex = 18;
             this.roundedButton7.Text = "Đồ ăn vặt";
             this.roundedButton7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -307,10 +312,10 @@ namespace WinFormsApp2
             this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton6.Location = new System.Drawing.Point(0, 184);
-            this.roundedButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton6.Location = new System.Drawing.Point(0, 230);
+            this.roundedButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(264, 64);
+            this.roundedButton6.Size = new System.Drawing.Size(330, 80);
             this.roundedButton6.TabIndex = 17;
             this.roundedButton6.Text = "Món rau";
             this.roundedButton6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -327,10 +332,10 @@ namespace WinFormsApp2
             this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton5.Location = new System.Drawing.Point(0, 126);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton5.Location = new System.Drawing.Point(0, 158);
+            this.roundedButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(262, 60);
+            this.roundedButton5.Size = new System.Drawing.Size(328, 75);
             this.roundedButton5.TabIndex = 16;
             this.roundedButton5.Text = "Món mặn";
             this.roundedButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
@@ -347,10 +352,10 @@ namespace WinFormsApp2
             this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(0, 71);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton4.Location = new System.Drawing.Point(0, 89);
+            this.roundedButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(262, 56);
+            this.roundedButton4.Size = new System.Drawing.Size(328, 70);
             this.roundedButton4.TabIndex = 16;
             this.roundedButton4.Text = "Lẩu";
             this.roundedButton4.TextColor = System.Drawing.Color.White;
@@ -359,9 +364,10 @@ namespace WinFormsApp2
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
+            this.pictureBox1.Location = new System.Drawing.Point(125, 18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(62, 62);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -375,14 +381,15 @@ namespace WinFormsApp2
             this.metroPanel2.HorizontalScrollbar = true;
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
+            this.metroPanel2.HorizontalScrollbarSize = 12;
             this.metroPanel2.Location = new System.Drawing.Point(0, 0);
+            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(455, 188);
+            this.metroPanel2.Size = new System.Drawing.Size(568, 234);
             this.metroPanel2.TabIndex = 16;
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.VerticalScrollbarSize = 12;
             // 
             // roundedButton11
             // 
@@ -397,9 +404,10 @@ namespace WinFormsApp2
             this.roundedButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton11.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton11.ForeColor = System.Drawing.Color.White;
-            this.roundedButton11.Location = new System.Drawing.Point(407, 143);
+            this.roundedButton11.Location = new System.Drawing.Point(509, 179);
+            this.roundedButton11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedButton11.Name = "roundedButton11";
-            this.roundedButton11.Size = new System.Drawing.Size(36, 36);
+            this.roundedButton11.Size = new System.Drawing.Size(45, 45);
             this.roundedButton11.TabIndex = 19;
             this.roundedButton11.TextColor = System.Drawing.Color.White;
             this.roundedButton11.UseVisualStyleBackColor = false;
@@ -409,9 +417,10 @@ namespace WinFormsApp2
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(278, 29);
+            this.label2.Location = new System.Drawing.Point(348, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 29);
+            this.label2.Size = new System.Drawing.Size(105, 35);
             this.label2.TabIndex = 18;
             this.label2.Text = "Giá tiền";
             // 
@@ -420,18 +429,20 @@ namespace WinFormsApp2
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label1.Location = new System.Drawing.Point(274, -3);
+            this.label1.Location = new System.Drawing.Point(342, -4);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 37);
+            this.label1.Size = new System.Drawing.Size(146, 44);
             this.label1.TabIndex = 17;
             this.label1.Text = "Tên món";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-48, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(-60, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(316, 226);
+            this.pictureBox2.Size = new System.Drawing.Size(395, 282);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -445,15 +456,16 @@ namespace WinFormsApp2
             this.metroPanel5.HorizontalScrollbar = true;
             this.metroPanel5.HorizontalScrollbarBarColor = true;
             this.metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.HorizontalScrollbarSize = 10;
-            this.metroPanel5.Location = new System.Drawing.Point(738, 67);
+            this.metroPanel5.HorizontalScrollbarSize = 12;
+            this.metroPanel5.Location = new System.Drawing.Point(922, 84);
+            this.metroPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel5.Name = "metroPanel5";
-            this.metroPanel5.Size = new System.Drawing.Size(473, 533);
+            this.metroPanel5.Size = new System.Drawing.Size(591, 666);
             this.metroPanel5.TabIndex = 19;
             this.metroPanel5.VerticalScrollbar = true;
             this.metroPanel5.VerticalScrollbarBarColor = true;
             this.metroPanel5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.VerticalScrollbarSize = 10;
+            this.metroPanel5.VerticalScrollbarSize = 12;
             // 
             // metroPanel8
             // 
@@ -465,14 +477,15 @@ namespace WinFormsApp2
             this.metroPanel8.HorizontalScrollbar = true;
             this.metroPanel8.HorizontalScrollbarBarColor = true;
             this.metroPanel8.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel8.HorizontalScrollbarSize = 10;
-            this.metroPanel8.Location = new System.Drawing.Point(3, 582);
+            this.metroPanel8.HorizontalScrollbarSize = 12;
+            this.metroPanel8.Location = new System.Drawing.Point(4, 728);
+            this.metroPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel8.Name = "metroPanel8";
-            this.metroPanel8.Size = new System.Drawing.Size(455, 188);
+            this.metroPanel8.Size = new System.Drawing.Size(568, 234);
             this.metroPanel8.TabIndex = 22;
             this.metroPanel8.VerticalScrollbarBarColor = true;
             this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel8.VerticalScrollbarSize = 10;
+            this.metroPanel8.VerticalScrollbarSize = 12;
             // 
             // roundedButton16
             // 
@@ -487,9 +500,10 @@ namespace WinFormsApp2
             this.roundedButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton16.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton16.ForeColor = System.Drawing.Color.White;
-            this.roundedButton16.Location = new System.Drawing.Point(407, 143);
+            this.roundedButton16.Location = new System.Drawing.Point(509, 179);
+            this.roundedButton16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedButton16.Name = "roundedButton16";
-            this.roundedButton16.Size = new System.Drawing.Size(36, 36);
+            this.roundedButton16.Size = new System.Drawing.Size(45, 45);
             this.roundedButton16.TabIndex = 19;
             this.roundedButton16.TextColor = System.Drawing.Color.White;
             this.roundedButton16.UseVisualStyleBackColor = false;
@@ -499,9 +513,10 @@ namespace WinFormsApp2
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(278, 29);
+            this.label9.Location = new System.Drawing.Point(348, 36);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 29);
+            this.label9.Size = new System.Drawing.Size(105, 35);
             this.label9.TabIndex = 18;
             this.label9.Text = "Giá tiền";
             // 
@@ -510,18 +525,20 @@ namespace WinFormsApp2
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label10.Location = new System.Drawing.Point(274, -3);
+            this.label10.Location = new System.Drawing.Point(342, -4);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 37);
+            this.label10.Size = new System.Drawing.Size(146, 44);
             this.label10.TabIndex = 17;
             this.label10.Text = "Tên món";
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-48, 0);
+            this.pictureBox6.Location = new System.Drawing.Point(-60, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(316, 226);
+            this.pictureBox6.Size = new System.Drawing.Size(395, 282);
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
@@ -535,14 +552,15 @@ namespace WinFormsApp2
             this.metroPanel4.HorizontalScrollbar = true;
             this.metroPanel4.HorizontalScrollbarBarColor = true;
             this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.HorizontalScrollbarSize = 10;
-            this.metroPanel4.Location = new System.Drawing.Point(1, 388);
+            this.metroPanel4.HorizontalScrollbarSize = 12;
+            this.metroPanel4.Location = new System.Drawing.Point(1, 485);
+            this.metroPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(455, 188);
+            this.metroPanel4.Size = new System.Drawing.Size(568, 234);
             this.metroPanel4.TabIndex = 21;
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.VerticalScrollbarSize = 10;
+            this.metroPanel4.VerticalScrollbarSize = 12;
             // 
             // roundedButton13
             // 
@@ -557,9 +575,10 @@ namespace WinFormsApp2
             this.roundedButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton13.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton13.ForeColor = System.Drawing.Color.White;
-            this.roundedButton13.Location = new System.Drawing.Point(407, 143);
+            this.roundedButton13.Location = new System.Drawing.Point(509, 179);
+            this.roundedButton13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedButton13.Name = "roundedButton13";
-            this.roundedButton13.Size = new System.Drawing.Size(36, 36);
+            this.roundedButton13.Size = new System.Drawing.Size(45, 45);
             this.roundedButton13.TabIndex = 19;
             this.roundedButton13.TextColor = System.Drawing.Color.White;
             this.roundedButton13.UseVisualStyleBackColor = false;
@@ -569,9 +588,10 @@ namespace WinFormsApp2
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(278, 29);
+            this.label5.Location = new System.Drawing.Point(348, 36);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 29);
+            this.label5.Size = new System.Drawing.Size(105, 35);
             this.label5.TabIndex = 18;
             this.label5.Text = "Giá tiền";
             // 
@@ -580,18 +600,20 @@ namespace WinFormsApp2
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label6.Location = new System.Drawing.Point(274, -3);
+            this.label6.Location = new System.Drawing.Point(342, -4);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 37);
+            this.label6.Size = new System.Drawing.Size(146, 44);
             this.label6.TabIndex = 17;
             this.label6.Text = "Tên món";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(-48, 0);
+            this.pictureBox4.Location = new System.Drawing.Point(-60, 0);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(316, 226);
+            this.pictureBox4.Size = new System.Drawing.Size(395, 282);
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
@@ -605,14 +627,15 @@ namespace WinFormsApp2
             this.metroPanel3.HorizontalScrollbar = true;
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(1, 194);
+            this.metroPanel3.HorizontalScrollbarSize = 12;
+            this.metroPanel3.Location = new System.Drawing.Point(1, 242);
+            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(455, 188);
+            this.metroPanel3.Size = new System.Drawing.Size(568, 234);
             this.metroPanel3.TabIndex = 20;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
+            this.metroPanel3.VerticalScrollbarSize = 12;
             // 
             // roundedButton12
             // 
@@ -627,9 +650,10 @@ namespace WinFormsApp2
             this.roundedButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton12.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton12.ForeColor = System.Drawing.Color.White;
-            this.roundedButton12.Location = new System.Drawing.Point(407, 143);
+            this.roundedButton12.Location = new System.Drawing.Point(509, 179);
+            this.roundedButton12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.roundedButton12.Name = "roundedButton12";
-            this.roundedButton12.Size = new System.Drawing.Size(36, 36);
+            this.roundedButton12.Size = new System.Drawing.Size(45, 45);
             this.roundedButton12.TabIndex = 19;
             this.roundedButton12.TextColor = System.Drawing.Color.White;
             this.roundedButton12.UseVisualStyleBackColor = false;
@@ -639,9 +663,10 @@ namespace WinFormsApp2
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(278, 29);
+            this.label3.Location = new System.Drawing.Point(348, 36);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 29);
+            this.label3.Size = new System.Drawing.Size(105, 35);
             this.label3.TabIndex = 18;
             this.label3.Text = "Giá tiền";
             // 
@@ -650,18 +675,20 @@ namespace WinFormsApp2
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(274, -3);
+            this.label4.Location = new System.Drawing.Point(342, -4);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 37);
+            this.label4.Size = new System.Drawing.Size(146, 44);
             this.label4.TabIndex = 17;
             this.label4.Text = "Tên món";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-48, 0);
+            this.pictureBox3.Location = new System.Drawing.Point(-60, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(316, 226);
+            this.pictureBox3.Size = new System.Drawing.Size(395, 282);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
@@ -675,10 +702,11 @@ namespace WinFormsApp2
             this.metroTile1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.metroTile1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.metroTile1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.metroTile1.Location = new System.Drawing.Point(259, 602);
+            this.metroTile1.Location = new System.Drawing.Point(324, 752);
+            this.metroTile1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.PaintTileCount = false;
-            this.metroTile1.Size = new System.Drawing.Size(753, 66);
+            this.metroTile1.Size = new System.Drawing.Size(941, 82);
             this.metroTile1.Style = MetroFramework.MetroColorStyle.Black;
             this.metroTile1.TabIndex = 20;
             this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -697,9 +725,10 @@ namespace WinFormsApp2
             this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.Location = new System.Drawing.Point(392, 11);
+            this.button1.Location = new System.Drawing.Point(490, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 38);
+            this.button1.Size = new System.Drawing.Size(445, 56);
             this.button1.TabIndex = 2;
             this.button1.Text = "đ 0";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -711,9 +740,10 @@ namespace WinFormsApp2
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(20, 16);
+            this.label7.Location = new System.Drawing.Point(25, 20);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(227, 28);
+            this.label7.Size = new System.Drawing.Size(277, 35);
             this.label7.TabIndex = 0;
             this.label7.Text = "Vui lòng chọn 1 đáy nồi";
             // 
@@ -728,10 +758,10 @@ namespace WinFormsApp2
             this.btn_signInForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_signInForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_signInForm.ForeColor = System.Drawing.Color.White;
-            this.btn_signInForm.Location = new System.Drawing.Point(954, 27);
-            this.btn_signInForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_signInForm.Location = new System.Drawing.Point(1192, 34);
+            this.btn_signInForm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_signInForm.Name = "btn_signInForm";
-            this.btn_signInForm.Size = new System.Drawing.Size(117, 35);
+            this.btn_signInForm.Size = new System.Drawing.Size(146, 44);
             this.btn_signInForm.TabIndex = 18;
             this.btn_signInForm.Text = "Tài khoản";
             this.btn_signInForm.TextColor = System.Drawing.Color.White;
@@ -748,10 +778,10 @@ namespace WinFormsApp2
             this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1077, 27);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton10.Location = new System.Drawing.Point(1346, 34);
+            this.roundedButton10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(117, 35);
+            this.roundedButton10.Size = new System.Drawing.Size(146, 44);
             this.roundedButton10.TabIndex = 21;
             this.roundedButton10.Text = "Đăng xuất";
             this.roundedButton10.TextColor = System.Drawing.Color.White;
@@ -768,10 +798,10 @@ namespace WinFormsApp2
             this.roundedButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.roundedButton15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundedButton15.ForeColor = System.Drawing.Color.White;
-            this.roundedButton15.Location = new System.Drawing.Point(1009, 602);
-            this.roundedButton15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton15.Location = new System.Drawing.Point(1261, 752);
+            this.roundedButton15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.roundedButton15.Name = "roundedButton15";
-            this.roundedButton15.Size = new System.Drawing.Size(207, 60);
+            this.roundedButton15.Size = new System.Drawing.Size(259, 75);
             this.roundedButton15.TabIndex = 21;
             this.roundedButton15.Text = "Giỏ hàng";
             this.roundedButton15.TextColor = System.Drawing.Color.White;
@@ -779,9 +809,9 @@ namespace WinFormsApp2
             // 
             // HomepageFormSingle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 660);
+            this.ClientSize = new System.Drawing.Size(1515, 825);
             this.Controls.Add(this.roundedButton15);
             this.Controls.Add(this.roundedButton10);
             this.Controls.Add(this.btn_signInForm);
@@ -794,7 +824,9 @@ namespace WinFormsApp2
             this.Controls.Add(this.Pa_ColorDis);
             this.Controls.Add(this.pa2_NoicomDien);
             this.Controls.Add(this.roundedButton1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "HomepageFormSingle";
+            this.Padding = new System.Windows.Forms.Padding(25, 75, 25, 25);
             this.Style = MetroFramework.MetroColorStyle.White;
             this.metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

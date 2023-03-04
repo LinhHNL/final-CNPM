@@ -24,3 +24,30 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\ref\WinFormsApp2.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RoundedButton.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.HomepageFormSingle.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\WinFormsApp2.exe
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\WinFormsApp2.deps.json
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\WinFormsApp2.runtimeconfig.json
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\WinFormsApp2.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\WinFormsApp2.pdb
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\MetroFramework.Design.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\MetroFramework.Fonts.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\bin\Debug\net6.0-windows\MetroFramework.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.csproj.AssemblyReference.cache
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RoundedButton.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RoundedTextBox.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.HomepageFormSingle.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.Properties.Resources.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.SignInForm.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.SignUpForm.resources
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.csproj.GenerateResource.cache
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfoInputs.cache
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AssemblyInfo.cs
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.csproj.CopyComplete
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\refint\WinFormsApp2.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.pdb
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.genruntimeconfig.cache
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\ref\WinFormsApp2.dll
+C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.MonAn.resources
