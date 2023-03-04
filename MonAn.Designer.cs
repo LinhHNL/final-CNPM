@@ -31,865 +31,832 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MonAn));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton9 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton8 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton7 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton6 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton5 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton4 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_signInForm = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton15 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton3 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.metroPanel6 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton11 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.metroPanel8 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton12 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.metroPanel9 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton13 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.metroPanel5.SuspendLayout();
-            this.metroPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.metroTile1.SuspendLayout();
-            this.metroPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.metroPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.metroPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.metroPanel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.metroPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            this.SuspendLayout();
+            metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            metroPanel7 = new MetroFramework.Controls.MetroPanel();
+            roundedButton9 = new RoundedButton();
+            roundedButton8 = new RoundedButton();
+            roundedButton7 = new RoundedButton();
+            roundedButton6 = new RoundedButton();
+            roundedButton5 = new RoundedButton();
+            roundedButton4 = new RoundedButton();
+            pictureBox1 = new PictureBox();
+            metroPanel5 = new MetroFramework.Controls.MetroPanel();
+            metroPanel9 = new MetroFramework.Controls.MetroPanel();
+            roundedButton13 = new RoundedButton();
+            label12 = new Label();
+            label13 = new Label();
+            pictureBox7 = new PictureBox();
+            metroPanel8 = new MetroFramework.Controls.MetroPanel();
+            roundedButton12 = new RoundedButton();
+            label10 = new Label();
+            label11 = new Label();
+            pictureBox6 = new PictureBox();
+            metroPanel6 = new MetroFramework.Controls.MetroPanel();
+            roundedButton11 = new RoundedButton();
+            label8 = new Label();
+            label9 = new Label();
+            pictureBox5 = new PictureBox();
+            metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            roundedButton3 = new RoundedButton();
+            label5 = new Label();
+            label6 = new Label();
+            pictureBox4 = new PictureBox();
+            metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            roundedButton2 = new RoundedButton();
+            label1 = new Label();
+            label2 = new Label();
+            pictureBox2 = new PictureBox();
+            metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            roundedButton1 = new RoundedButton();
+            label3 = new Label();
+            label4 = new Label();
+            pictureBox3 = new PictureBox();
+            metroTile1 = new MetroFramework.Controls.MetroTile();
+            button1 = new Button();
+            label7 = new Label();
+            btn_signInForm = new RoundedButton();
+            roundedButton10 = new RoundedButton();
+            roundedButton15 = new RoundedButton();
+            metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            metroPanel5.SuspendLayout();
+            metroPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            metroPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            metroPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            metroPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            metroPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            metroPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            metroTile1.SuspendLayout();
+            SuspendLayout();
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.roundedButton9);
-            this.metroPanel1.Controls.Add(this.roundedButton8);
-            this.metroPanel1.Controls.Add(this.roundedButton7);
-            this.metroPanel1.Controls.Add(this.roundedButton6);
-            this.metroPanel1.Controls.Add(this.roundedButton5);
-            this.metroPanel1.Controls.Add(this.roundedButton4);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 40);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(328, 746);
-            this.metroPanel1.TabIndex = 15;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 12;
+            metroPanel1.Controls.Add(metroPanel7);
+            metroPanel1.Controls.Add(roundedButton9);
+            metroPanel1.Controls.Add(roundedButton8);
+            metroPanel1.Controls.Add(roundedButton7);
+            metroPanel1.Controls.Add(roundedButton6);
+            metroPanel1.Controls.Add(roundedButton5);
+            metroPanel1.Controls.Add(roundedButton4);
+            metroPanel1.Controls.Add(pictureBox1);
+            metroPanel1.HorizontalScrollbarBarColor = true;
+            metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel1.HorizontalScrollbarSize = 10;
+            metroPanel1.Location = new Point(0, 32);
+            metroPanel1.Name = "metroPanel1";
+            metroPanel1.Size = new Size(262, 597);
+            metroPanel1.TabIndex = 15;
+            metroPanel1.VerticalScrollbarBarColor = true;
+            metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel1.VerticalScrollbarSize = 10;
             // 
             // metroPanel7
             // 
-            this.metroPanel7.BackColor = System.Drawing.Color.Black;
-            this.metroPanel7.HorizontalScrollbarBarColor = true;
-            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 12;
-            this.metroPanel7.Location = new System.Drawing.Point(324, 674);
-            this.metroPanel7.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(1130, 69);
-            this.metroPanel7.TabIndex = 20;
-            this.metroPanel7.VerticalScrollbarBarColor = true;
-            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 12;
+            metroPanel7.BackColor = Color.Black;
+            metroPanel7.HorizontalScrollbarBarColor = true;
+            metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel7.HorizontalScrollbarSize = 10;
+            metroPanel7.Location = new Point(259, 539);
+            metroPanel7.Name = "metroPanel7";
+            metroPanel7.Size = new Size(904, 55);
+            metroPanel7.TabIndex = 20;
+            metroPanel7.VerticalScrollbarBarColor = true;
+            metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel7.VerticalScrollbarSize = 10;
             // 
             // roundedButton9
             // 
-            this.roundedButton9.BackColor = System.Drawing.Color.White;
-            this.roundedButton9.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton9.BorderRadius = 0;
-            this.roundedButton9.BorderSize = 0;
-            this.roundedButton9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton9.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton9.Location = new System.Drawing.Point(-2, 461);
-            this.roundedButton9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton9.Name = "roundedButton9";
-            this.roundedButton9.Size = new System.Drawing.Size(330, 80);
-            this.roundedButton9.TabIndex = 20;
-            this.roundedButton9.Text = "Gia Vị";
-            this.roundedButton9.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton9.UseVisualStyleBackColor = false;
+            roundedButton9.BackColor = Color.White;
+            roundedButton9.BackgroundColor = Color.White;
+            roundedButton9.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton9.BorderRadius = 0;
+            roundedButton9.BorderSize = 0;
+            roundedButton9.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton9.FlatStyle = FlatStyle.Flat;
+            roundedButton9.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton9.ForeColor = Color.FromArgb(160, 159, 159);
+            roundedButton9.Location = new Point(-2, 369);
+            roundedButton9.Margin = new Padding(3, 4, 3, 4);
+            roundedButton9.Name = "roundedButton9";
+            roundedButton9.Size = new Size(264, 64);
+            roundedButton9.TabIndex = 20;
+            roundedButton9.Text = "Gia Vị";
+            roundedButton9.TextColor = Color.FromArgb(160, 159, 159);
+            roundedButton9.UseVisualStyleBackColor = false;
+            roundedButton9.Click += roundedButton9_Click;
             // 
             // roundedButton8
             // 
-            this.roundedButton8.BackColor = System.Drawing.Color.White;
-            this.roundedButton8.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton8.BorderRadius = 0;
-            this.roundedButton8.BorderSize = 0;
-            this.roundedButton8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton8.Location = new System.Drawing.Point(-2, 384);
-            this.roundedButton8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton8.Name = "roundedButton8";
-            this.roundedButton8.Size = new System.Drawing.Size(330, 80);
-            this.roundedButton8.TabIndex = 19;
-            this.roundedButton8.Text = "Đồ uống";
-            this.roundedButton8.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton8.UseVisualStyleBackColor = false;
+            roundedButton8.BackColor = Color.White;
+            roundedButton8.BackgroundColor = Color.White;
+            roundedButton8.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton8.BorderRadius = 0;
+            roundedButton8.BorderSize = 0;
+            roundedButton8.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton8.FlatStyle = FlatStyle.Flat;
+            roundedButton8.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton8.ForeColor = Color.FromArgb(160, 159, 159);
+            roundedButton8.Location = new Point(-2, 307);
+            roundedButton8.Margin = new Padding(3, 4, 3, 4);
+            roundedButton8.Name = "roundedButton8";
+            roundedButton8.Size = new Size(264, 64);
+            roundedButton8.TabIndex = 19;
+            roundedButton8.Text = "Đồ uống";
+            roundedButton8.TextColor = Color.FromArgb(160, 159, 159);
+            roundedButton8.UseVisualStyleBackColor = false;
+            roundedButton8.Click += roundedButton8_Click;
             // 
             // roundedButton7
             // 
-            this.roundedButton7.BackColor = System.Drawing.Color.White;
-            this.roundedButton7.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton7.BorderRadius = 0;
-            this.roundedButton7.BorderSize = 0;
-            this.roundedButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.Location = new System.Drawing.Point(0, 304);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(330, 80);
-            this.roundedButton7.TabIndex = 18;
-            this.roundedButton7.Text = "Đồ ăn vặt";
-            this.roundedButton7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.UseVisualStyleBackColor = false;
+            roundedButton7.BackColor = Color.White;
+            roundedButton7.BackgroundColor = Color.White;
+            roundedButton7.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton7.BorderRadius = 0;
+            roundedButton7.BorderSize = 0;
+            roundedButton7.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton7.FlatStyle = FlatStyle.Flat;
+            roundedButton7.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton7.ForeColor = Color.FromArgb(160, 159, 159);
+            roundedButton7.Location = new Point(0, 243);
+            roundedButton7.Margin = new Padding(3, 4, 3, 4);
+            roundedButton7.Name = "roundedButton7";
+            roundedButton7.Size = new Size(264, 64);
+            roundedButton7.TabIndex = 18;
+            roundedButton7.Text = "Đồ ăn vặt";
+            roundedButton7.TextColor = Color.FromArgb(160, 159, 159);
+            roundedButton7.UseVisualStyleBackColor = false;
+            roundedButton7.Click += roundedButton7_Click;
             // 
             // roundedButton6
             // 
-            this.roundedButton6.BackColor = System.Drawing.Color.White;
-            this.roundedButton6.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton6.BorderRadius = 0;
-            this.roundedButton6.BorderSize = 0;
-            this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton6.Location = new System.Drawing.Point(0, 230);
-            this.roundedButton6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(330, 80);
-            this.roundedButton6.TabIndex = 17;
-            this.roundedButton6.Text = "Món rau";
-            this.roundedButton6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton6.UseVisualStyleBackColor = false;
+            roundedButton6.BackColor = Color.White;
+            roundedButton6.BackgroundColor = Color.White;
+            roundedButton6.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton6.BorderRadius = 0;
+            roundedButton6.BorderSize = 0;
+            roundedButton6.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton6.FlatStyle = FlatStyle.Flat;
+            roundedButton6.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton6.ForeColor = Color.FromArgb(160, 159, 159);
+            roundedButton6.Location = new Point(0, 184);
+            roundedButton6.Margin = new Padding(3, 4, 3, 4);
+            roundedButton6.Name = "roundedButton6";
+            roundedButton6.Size = new Size(264, 64);
+            roundedButton6.TabIndex = 17;
+            roundedButton6.Text = "Món rau";
+            roundedButton6.TextColor = Color.FromArgb(160, 159, 159);
+            roundedButton6.UseVisualStyleBackColor = false;
+            roundedButton6.Click += roundedButton6_Click;
             // 
             // roundedButton5
             // 
-            this.roundedButton5.BackColor = System.Drawing.Color.White;
-            this.roundedButton5.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton5.BorderRadius = 0;
-            this.roundedButton5.BorderSize = 0;
-            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton5.Location = new System.Drawing.Point(0, 158);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(328, 75);
-            this.roundedButton5.TabIndex = 16;
-            this.roundedButton5.Text = "Món mặn";
-            this.roundedButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton5.UseVisualStyleBackColor = false;
+            roundedButton5.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton5.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton5.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton5.BorderRadius = 0;
+            roundedButton5.BorderSize = 0;
+            roundedButton5.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton5.FlatStyle = FlatStyle.Flat;
+            roundedButton5.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton5.ForeColor = Color.White;
+            roundedButton5.Location = new Point(0, 126);
+            roundedButton5.Margin = new Padding(3, 4, 3, 4);
+            roundedButton5.Name = "roundedButton5";
+            roundedButton5.Size = new Size(262, 60);
+            roundedButton5.TabIndex = 16;
+            roundedButton5.Text = "Món mặn";
+            roundedButton5.TextColor = Color.White;
+            roundedButton5.UseVisualStyleBackColor = false;
+            roundedButton5.Click += roundedButton5_Click;
             // 
             // roundedButton4
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton4.BorderRadius = 0;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton4.ForeColor = System.Drawing.Color.White;
-            this.roundedButton4.Location = new System.Drawing.Point(0, 89);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(328, 70);
-            this.roundedButton4.TabIndex = 16;
-            this.roundedButton4.Text = "Lẩu";
-            this.roundedButton4.TextColor = System.Drawing.Color.White;
-            this.roundedButton4.UseVisualStyleBackColor = false;
+            roundedButton4.BackColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton4.BackgroundColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton4.BorderColor = Color.PaleVioletRed;
+            roundedButton4.BorderRadius = 0;
+            roundedButton4.BorderSize = 0;
+            roundedButton4.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton4.FlatStyle = FlatStyle.Flat;
+            roundedButton4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton4.ForeColor = Color.FromArgb(160, 159, 159);
+            roundedButton4.Location = new Point(0, 71);
+            roundedButton4.Margin = new Padding(3, 4, 3, 4);
+            roundedButton4.Name = "roundedButton4";
+            roundedButton4.Size = new Size(262, 56);
+            roundedButton4.TabIndex = 16;
+            roundedButton4.Text = "Lẩu";
+            roundedButton4.TextColor = Color.FromArgb(160, 159, 159);
+            roundedButton4.UseVisualStyleBackColor = false;
+            roundedButton4.Click += roundedButton4_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(125, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 62);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(100, 14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 50);
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
             // 
             // metroPanel5
             // 
-            this.metroPanel5.AutoScroll = true;
-            this.metroPanel5.Controls.Add(this.metroPanel9);
-            this.metroPanel5.Controls.Add(this.metroPanel8);
-            this.metroPanel5.Controls.Add(this.metroPanel6);
-            this.metroPanel5.Controls.Add(this.metroPanel4);
-            this.metroPanel5.Controls.Add(this.metroPanel2);
-            this.metroPanel5.Controls.Add(this.metroPanel3);
-            this.metroPanel5.HorizontalScrollbar = true;
-            this.metroPanel5.HorizontalScrollbarBarColor = true;
-            this.metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.HorizontalScrollbarSize = 12;
-            this.metroPanel5.Location = new System.Drawing.Point(387, 84);
-            this.metroPanel5.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel5.Name = "metroPanel5";
-            this.metroPanel5.Size = new System.Drawing.Size(1126, 666);
-            this.metroPanel5.TabIndex = 19;
-            this.metroPanel5.VerticalScrollbar = true;
-            this.metroPanel5.VerticalScrollbarBarColor = true;
-            this.metroPanel5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.VerticalScrollbarSize = 12;
-            // 
-            // metroPanel3
-            // 
-            this.metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel3.Controls.Add(this.roundedButton1);
-            this.metroPanel3.Controls.Add(this.label3);
-            this.metroPanel3.Controls.Add(this.label4);
-            this.metroPanel3.Controls.Add(this.pictureBox3);
-            this.metroPanel3.HorizontalScrollbar = true;
-            this.metroPanel3.HorizontalScrollbarBarColor = true;
-            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 12;
-            this.metroPanel3.Location = new System.Drawing.Point(15, 15);
-            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel3.TabIndex = 20;
-            this.metroPanel3.VerticalScrollbarBarColor = true;
-            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 12;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton1.BackgroundImage")));
-            this.roundedButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton1.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton1.BorderRadius = 18;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.BorderSize = 0;
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton1.TabIndex = 20;
-            this.roundedButton1.TextColor = System.Drawing.Color.White;
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(348, 36);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 35);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Giá tiền";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(342, -4);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 44);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Tên món";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.BackColor = System.Drawing.Color.Black;
-            this.metroTile1.Controls.Add(this.button1);
-            this.metroTile1.Controls.Add(this.label7);
-            this.metroTile1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.metroTile1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.metroTile1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.metroTile1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.metroTile1.Location = new System.Drawing.Point(324, 752);
-            this.metroTile1.Margin = new System.Windows.Forms.Padding(4);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.PaintTileCount = false;
-            this.metroTile1.Size = new System.Drawing.Size(941, 82);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Black;
-            this.metroTile1.TabIndex = 20;
-            this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroTile1.UseCustomBackColor = true;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.UseStyleColors = true;
-            this.metroTile1.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.Location = new System.Drawing.Point(490, 14);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(445, 56);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "đ 0";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(25, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(277, 35);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Vui lòng chọn 1 đáy nồi";
-            // 
-            // btn_signInForm
-            // 
-            this.btn_signInForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_signInForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_signInForm.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_signInForm.BorderRadius = 8;
-            this.btn_signInForm.BorderSize = 0;
-            this.btn_signInForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_signInForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_signInForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_signInForm.ForeColor = System.Drawing.Color.White;
-            this.btn_signInForm.Location = new System.Drawing.Point(1192, 34);
-            this.btn_signInForm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_signInForm.Name = "btn_signInForm";
-            this.btn_signInForm.Size = new System.Drawing.Size(146, 44);
-            this.btn_signInForm.TabIndex = 18;
-            this.btn_signInForm.Text = "Tài khoản";
-            this.btn_signInForm.TextColor = System.Drawing.Color.White;
-            this.btn_signInForm.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton10
-            // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton10.BorderRadius = 8;
-            this.roundedButton10.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1346, 34);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(146, 44);
-            this.roundedButton10.TabIndex = 21;
-            this.roundedButton10.Text = "Đăng xuất";
-            this.roundedButton10.TextColor = System.Drawing.Color.White;
-            this.roundedButton10.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton15
-            // 
-            this.roundedButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton15.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton15.BorderRadius = 0;
-            this.roundedButton15.BorderSize = 0;
-            this.roundedButton15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton15.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton15.ForeColor = System.Drawing.Color.White;
-            this.roundedButton15.Location = new System.Drawing.Point(1261, 752);
-            this.roundedButton15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.roundedButton15.Name = "roundedButton15";
-            this.roundedButton15.Size = new System.Drawing.Size(259, 75);
-            this.roundedButton15.TabIndex = 21;
-            this.roundedButton15.Text = "Giỏ hàng";
-            this.roundedButton15.TextColor = System.Drawing.Color.White;
-            this.roundedButton15.UseVisualStyleBackColor = false;
-            // 
-            // metroPanel2
-            // 
-            this.metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel2.Controls.Add(this.roundedButton2);
-            this.metroPanel2.Controls.Add(this.label1);
-            this.metroPanel2.Controls.Add(this.label2);
-            this.metroPanel2.Controls.Add(this.pictureBox2);
-            this.metroPanel2.HorizontalScrollbar = true;
-            this.metroPanel2.HorizontalScrollbarBarColor = true;
-            this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 12;
-            this.metroPanel2.Location = new System.Drawing.Point(601, 16);
-            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel2.TabIndex = 21;
-            this.metroPanel2.VerticalScrollbarBarColor = true;
-            this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 12;
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton2.BackgroundImage")));
-            this.roundedButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton2.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton2.BorderRadius = 18;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.BorderSize = 0;
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton2.TabIndex = 20;
-            this.roundedButton2.TextColor = System.Drawing.Color.White;
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(348, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 35);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Giá tiền";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label2.Location = new System.Drawing.Point(342, -4);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 44);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Tên món";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // metroPanel4
-            // 
-            this.metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel4.Controls.Add(this.roundedButton3);
-            this.metroPanel4.Controls.Add(this.label5);
-            this.metroPanel4.Controls.Add(this.label6);
-            this.metroPanel4.Controls.Add(this.pictureBox4);
-            this.metroPanel4.HorizontalScrollbar = true;
-            this.metroPanel4.HorizontalScrollbarBarColor = true;
-            this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.HorizontalScrollbarSize = 12;
-            this.metroPanel4.Location = new System.Drawing.Point(15, 263);
-            this.metroPanel4.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel4.TabIndex = 22;
-            this.metroPanel4.VerticalScrollbarBarColor = true;
-            this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.VerticalScrollbarSize = 12;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton3.BackgroundImage")));
-            this.roundedButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton3.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton3.BorderRadius = 18;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.BorderSize = 0;
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton3.TabIndex = 20;
-            this.roundedButton3.TextColor = System.Drawing.Color.White;
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(348, 36);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 35);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Giá tiền";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label6.Location = new System.Drawing.Point(342, -4);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(146, 44);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Tên món";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // metroPanel6
-            // 
-            this.metroPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel6.Controls.Add(this.roundedButton11);
-            this.metroPanel6.Controls.Add(this.label8);
-            this.metroPanel6.Controls.Add(this.label9);
-            this.metroPanel6.Controls.Add(this.pictureBox5);
-            this.metroPanel6.HorizontalScrollbar = true;
-            this.metroPanel6.HorizontalScrollbarBarColor = true;
-            this.metroPanel6.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel6.HorizontalScrollbarSize = 12;
-            this.metroPanel6.Location = new System.Drawing.Point(601, 263);
-            this.metroPanel6.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel6.Name = "metroPanel6";
-            this.metroPanel6.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel6.TabIndex = 23;
-            this.metroPanel6.VerticalScrollbarBarColor = true;
-            this.metroPanel6.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel6.VerticalScrollbarSize = 12;
-            // 
-            // roundedButton11
-            // 
-            this.roundedButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton11.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton11.BackgroundImage")));
-            this.roundedButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton11.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton11.BorderRadius = 18;
-            this.roundedButton11.BorderSize = 0;
-            this.roundedButton11.FlatAppearance.BorderSize = 0;
-            this.roundedButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton11.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton11.ForeColor = System.Drawing.Color.White;
-            this.roundedButton11.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton11.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton11.Name = "roundedButton11";
-            this.roundedButton11.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton11.TabIndex = 20;
-            this.roundedButton11.TextColor = System.Drawing.Color.White;
-            this.roundedButton11.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(348, 36);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 35);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Giá tiền";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label9.Location = new System.Drawing.Point(342, -4);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 44);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Tên món";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // metroPanel8
-            // 
-            this.metroPanel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel8.Controls.Add(this.roundedButton12);
-            this.metroPanel8.Controls.Add(this.label10);
-            this.metroPanel8.Controls.Add(this.label11);
-            this.metroPanel8.Controls.Add(this.pictureBox6);
-            this.metroPanel8.HorizontalScrollbar = true;
-            this.metroPanel8.HorizontalScrollbarBarColor = true;
-            this.metroPanel8.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel8.HorizontalScrollbarSize = 12;
-            this.metroPanel8.Location = new System.Drawing.Point(15, 512);
-            this.metroPanel8.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel8.Name = "metroPanel8";
-            this.metroPanel8.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel8.TabIndex = 24;
-            this.metroPanel8.VerticalScrollbarBarColor = true;
-            this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel8.VerticalScrollbarSize = 12;
-            // 
-            // roundedButton12
-            // 
-            this.roundedButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton12.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton12.BackgroundImage")));
-            this.roundedButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton12.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton12.BorderRadius = 18;
-            this.roundedButton12.BorderSize = 0;
-            this.roundedButton12.FlatAppearance.BorderSize = 0;
-            this.roundedButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton12.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton12.ForeColor = System.Drawing.Color.White;
-            this.roundedButton12.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton12.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton12.Name = "roundedButton12";
-            this.roundedButton12.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton12.TabIndex = 20;
-            this.roundedButton12.TextColor = System.Drawing.Color.White;
-            this.roundedButton12.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(348, 36);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 35);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Giá tiền";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label11.Location = new System.Drawing.Point(342, -4);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(146, 44);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Tên món";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
+            metroPanel5.AutoScroll = true;
+            metroPanel5.Controls.Add(metroPanel9);
+            metroPanel5.Controls.Add(metroPanel8);
+            metroPanel5.Controls.Add(metroPanel6);
+            metroPanel5.Controls.Add(metroPanel4);
+            metroPanel5.Controls.Add(metroPanel2);
+            metroPanel5.Controls.Add(metroPanel3);
+            metroPanel5.HorizontalScrollbar = true;
+            metroPanel5.HorizontalScrollbarBarColor = true;
+            metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel5.HorizontalScrollbarSize = 10;
+            metroPanel5.Location = new Point(310, 67);
+            metroPanel5.Name = "metroPanel5";
+            metroPanel5.Size = new Size(901, 533);
+            metroPanel5.TabIndex = 19;
+            metroPanel5.VerticalScrollbar = true;
+            metroPanel5.VerticalScrollbarBarColor = true;
+            metroPanel5.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel5.VerticalScrollbarSize = 10;
             // 
             // metroPanel9
             // 
-            this.metroPanel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel9.Controls.Add(this.roundedButton13);
-            this.metroPanel9.Controls.Add(this.label12);
-            this.metroPanel9.Controls.Add(this.label13);
-            this.metroPanel9.Controls.Add(this.pictureBox7);
-            this.metroPanel9.HorizontalScrollbar = true;
-            this.metroPanel9.HorizontalScrollbarBarColor = true;
-            this.metroPanel9.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel9.HorizontalScrollbarSize = 12;
-            this.metroPanel9.Location = new System.Drawing.Point(597, 513);
-            this.metroPanel9.Margin = new System.Windows.Forms.Padding(4);
-            this.metroPanel9.Name = "metroPanel9";
-            this.metroPanel9.Size = new System.Drawing.Size(568, 234);
-            this.metroPanel9.TabIndex = 25;
-            this.metroPanel9.VerticalScrollbarBarColor = true;
-            this.metroPanel9.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel9.VerticalScrollbarSize = 12;
+            metroPanel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel9.Controls.Add(roundedButton13);
+            metroPanel9.Controls.Add(label12);
+            metroPanel9.Controls.Add(label13);
+            metroPanel9.Controls.Add(pictureBox7);
+            metroPanel9.HorizontalScrollbar = true;
+            metroPanel9.HorizontalScrollbarBarColor = true;
+            metroPanel9.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel9.HorizontalScrollbarSize = 10;
+            metroPanel9.Location = new Point(478, 410);
+            metroPanel9.Name = "metroPanel9";
+            metroPanel9.Size = new Size(455, 188);
+            metroPanel9.TabIndex = 25;
+            metroPanel9.VerticalScrollbarBarColor = true;
+            metroPanel9.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel9.VerticalScrollbarSize = 10;
             // 
             // roundedButton13
             // 
-            this.roundedButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton13.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedButton13.BackgroundImage")));
-            this.roundedButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundedButton13.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton13.BorderRadius = 18;
-            this.roundedButton13.BorderSize = 0;
-            this.roundedButton13.FlatAppearance.BorderSize = 0;
-            this.roundedButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton13.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton13.ForeColor = System.Drawing.Color.White;
-            this.roundedButton13.Location = new System.Drawing.Point(512, 183);
-            this.roundedButton13.Margin = new System.Windows.Forms.Padding(4);
-            this.roundedButton13.Name = "roundedButton13";
-            this.roundedButton13.Size = new System.Drawing.Size(45, 45);
-            this.roundedButton13.TabIndex = 20;
-            this.roundedButton13.TextColor = System.Drawing.Color.White;
-            this.roundedButton13.UseVisualStyleBackColor = false;
+            roundedButton13.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton13.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton13.BackgroundImage = (Image)resources.GetObject("roundedButton13.BackgroundImage");
+            roundedButton13.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton13.BorderColor = Color.Transparent;
+            roundedButton13.BorderRadius = 18;
+            roundedButton13.BorderSize = 0;
+            roundedButton13.FlatAppearance.BorderSize = 0;
+            roundedButton13.FlatStyle = FlatStyle.Flat;
+            roundedButton13.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton13.ForeColor = Color.White;
+            roundedButton13.Location = new Point(410, 146);
+            roundedButton13.Name = "roundedButton13";
+            roundedButton13.Size = new Size(36, 36);
+            roundedButton13.TabIndex = 20;
+            roundedButton13.TextColor = Color.White;
+            roundedButton13.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(348, 36);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 35);
-            this.label12.TabIndex = 18;
-            this.label12.Text = "Giá tiền";
+            label12.AutoSize = true;
+            label12.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(278, 29);
+            label12.Name = "label12";
+            label12.Size = new Size(90, 29);
+            label12.TabIndex = 18;
+            label12.Text = "Giá tiền";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label13.Location = new System.Drawing.Point(342, -4);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(146, 44);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Tên món";
+            label13.AutoSize = true;
+            label13.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = Color.FromArgb(229, 1, 17);
+            label13.Location = new Point(274, -3);
+            label13.Name = "label13";
+            label13.Size = new Size(123, 37);
+            label13.TabIndex = 17;
+            label13.Text = "Tên món";
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(-60, 0);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(395, 282);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(-48, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(316, 226);
+            pictureBox7.TabIndex = 2;
+            pictureBox7.TabStop = false;
+            // 
+            // metroPanel8
+            // 
+            metroPanel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel8.Controls.Add(roundedButton12);
+            metroPanel8.Controls.Add(label10);
+            metroPanel8.Controls.Add(label11);
+            metroPanel8.Controls.Add(pictureBox6);
+            metroPanel8.HorizontalScrollbar = true;
+            metroPanel8.HorizontalScrollbarBarColor = true;
+            metroPanel8.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel8.HorizontalScrollbarSize = 10;
+            metroPanel8.Location = new Point(12, 410);
+            metroPanel8.Name = "metroPanel8";
+            metroPanel8.Size = new Size(455, 188);
+            metroPanel8.TabIndex = 24;
+            metroPanel8.VerticalScrollbarBarColor = true;
+            metroPanel8.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel8.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton12
+            // 
+            roundedButton12.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton12.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton12.BackgroundImage = (Image)resources.GetObject("roundedButton12.BackgroundImage");
+            roundedButton12.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton12.BorderColor = Color.Transparent;
+            roundedButton12.BorderRadius = 18;
+            roundedButton12.BorderSize = 0;
+            roundedButton12.FlatAppearance.BorderSize = 0;
+            roundedButton12.FlatStyle = FlatStyle.Flat;
+            roundedButton12.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton12.ForeColor = Color.White;
+            roundedButton12.Location = new Point(410, 146);
+            roundedButton12.Name = "roundedButton12";
+            roundedButton12.Size = new Size(36, 36);
+            roundedButton12.TabIndex = 20;
+            roundedButton12.TextColor = Color.White;
+            roundedButton12.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(278, 29);
+            label10.Name = "label10";
+            label10.Size = new Size(90, 29);
+            label10.TabIndex = 18;
+            label10.Text = "Giá tiền";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.FromArgb(229, 1, 17);
+            label11.Location = new Point(274, -3);
+            label11.Name = "label11";
+            label11.Size = new Size(123, 37);
+            label11.TabIndex = 17;
+            label11.Text = "Tên món";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(-48, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(316, 226);
+            pictureBox6.TabIndex = 2;
+            pictureBox6.TabStop = false;
+            // 
+            // metroPanel6
+            // 
+            metroPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel6.Controls.Add(roundedButton11);
+            metroPanel6.Controls.Add(label8);
+            metroPanel6.Controls.Add(label9);
+            metroPanel6.Controls.Add(pictureBox5);
+            metroPanel6.HorizontalScrollbar = true;
+            metroPanel6.HorizontalScrollbarBarColor = true;
+            metroPanel6.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel6.HorizontalScrollbarSize = 10;
+            metroPanel6.Location = new Point(481, 210);
+            metroPanel6.Name = "metroPanel6";
+            metroPanel6.Size = new Size(455, 188);
+            metroPanel6.TabIndex = 23;
+            metroPanel6.VerticalScrollbarBarColor = true;
+            metroPanel6.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel6.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton11
+            // 
+            roundedButton11.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton11.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton11.BackgroundImage = (Image)resources.GetObject("roundedButton11.BackgroundImage");
+            roundedButton11.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton11.BorderColor = Color.Transparent;
+            roundedButton11.BorderRadius = 18;
+            roundedButton11.BorderSize = 0;
+            roundedButton11.FlatAppearance.BorderSize = 0;
+            roundedButton11.FlatStyle = FlatStyle.Flat;
+            roundedButton11.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton11.ForeColor = Color.White;
+            roundedButton11.Location = new Point(410, 146);
+            roundedButton11.Name = "roundedButton11";
+            roundedButton11.Size = new Size(36, 36);
+            roundedButton11.TabIndex = 20;
+            roundedButton11.TextColor = Color.White;
+            roundedButton11.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(278, 29);
+            label8.Name = "label8";
+            label8.Size = new Size(90, 29);
+            label8.TabIndex = 18;
+            label8.Text = "Giá tiền";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.FromArgb(229, 1, 17);
+            label9.Location = new Point(274, -3);
+            label9.Name = "label9";
+            label9.Size = new Size(123, 37);
+            label9.TabIndex = 17;
+            label9.Text = "Tên món";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(-48, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(316, 226);
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
+            // 
+            // metroPanel4
+            // 
+            metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel4.Controls.Add(roundedButton3);
+            metroPanel4.Controls.Add(label5);
+            metroPanel4.Controls.Add(label6);
+            metroPanel4.Controls.Add(pictureBox4);
+            metroPanel4.HorizontalScrollbar = true;
+            metroPanel4.HorizontalScrollbarBarColor = true;
+            metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel4.HorizontalScrollbarSize = 10;
+            metroPanel4.Location = new Point(12, 210);
+            metroPanel4.Name = "metroPanel4";
+            metroPanel4.Size = new Size(455, 188);
+            metroPanel4.TabIndex = 22;
+            metroPanel4.VerticalScrollbarBarColor = true;
+            metroPanel4.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel4.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton3
+            // 
+            roundedButton3.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton3.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton3.BackgroundImage = (Image)resources.GetObject("roundedButton3.BackgroundImage");
+            roundedButton3.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton3.BorderColor = Color.Transparent;
+            roundedButton3.BorderRadius = 18;
+            roundedButton3.BorderSize = 0;
+            roundedButton3.FlatAppearance.BorderSize = 0;
+            roundedButton3.FlatStyle = FlatStyle.Flat;
+            roundedButton3.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton3.ForeColor = Color.White;
+            roundedButton3.Location = new Point(410, 146);
+            roundedButton3.Name = "roundedButton3";
+            roundedButton3.Size = new Size(36, 36);
+            roundedButton3.TabIndex = 20;
+            roundedButton3.TextColor = Color.White;
+            roundedButton3.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(278, 29);
+            label5.Name = "label5";
+            label5.Size = new Size(90, 29);
+            label5.TabIndex = 18;
+            label5.Text = "Giá tiền";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(229, 1, 17);
+            label6.Location = new Point(274, -3);
+            label6.Name = "label6";
+            label6.Size = new Size(123, 37);
+            label6.TabIndex = 17;
+            label6.Text = "Tên món";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(-48, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(316, 226);
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // metroPanel2
+            // 
+            metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel2.Controls.Add(roundedButton2);
+            metroPanel2.Controls.Add(label1);
+            metroPanel2.Controls.Add(label2);
+            metroPanel2.Controls.Add(pictureBox2);
+            metroPanel2.HorizontalScrollbar = true;
+            metroPanel2.HorizontalScrollbarBarColor = true;
+            metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel2.HorizontalScrollbarSize = 10;
+            metroPanel2.Location = new Point(481, 13);
+            metroPanel2.Name = "metroPanel2";
+            metroPanel2.Size = new Size(455, 188);
+            metroPanel2.TabIndex = 21;
+            metroPanel2.VerticalScrollbarBarColor = true;
+            metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton2
+            // 
+            roundedButton2.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BackgroundImage = (Image)resources.GetObject("roundedButton2.BackgroundImage");
+            roundedButton2.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton2.BorderColor = Color.Transparent;
+            roundedButton2.BorderRadius = 18;
+            roundedButton2.BorderSize = 0;
+            roundedButton2.FlatAppearance.BorderSize = 0;
+            roundedButton2.FlatStyle = FlatStyle.Flat;
+            roundedButton2.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton2.ForeColor = Color.White;
+            roundedButton2.Location = new Point(410, 146);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.Size = new Size(36, 36);
+            roundedButton2.TabIndex = 20;
+            roundedButton2.TextColor = Color.White;
+            roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(278, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 29);
+            label1.TabIndex = 18;
+            label1.Text = "Giá tiền";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(229, 1, 17);
+            label2.Location = new Point(274, -3);
+            label2.Name = "label2";
+            label2.Size = new Size(123, 37);
+            label2.TabIndex = 17;
+            label2.Text = "Tên món";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-48, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(316, 226);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // metroPanel3
+            // 
+            metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel3.Controls.Add(roundedButton1);
+            metroPanel3.Controls.Add(label3);
+            metroPanel3.Controls.Add(label4);
+            metroPanel3.Controls.Add(pictureBox3);
+            metroPanel3.HorizontalScrollbar = true;
+            metroPanel3.HorizontalScrollbarBarColor = true;
+            metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel3.HorizontalScrollbarSize = 10;
+            metroPanel3.Location = new Point(12, 12);
+            metroPanel3.Name = "metroPanel3";
+            metroPanel3.Size = new Size(455, 188);
+            metroPanel3.TabIndex = 20;
+            metroPanel3.VerticalScrollbarBarColor = true;
+            metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BackgroundImage = (Image)resources.GetObject("roundedButton1.BackgroundImage");
+            roundedButton1.BackgroundImageLayout = ImageLayout.Center;
+            roundedButton1.BorderColor = Color.Transparent;
+            roundedButton1.BorderRadius = 18;
+            roundedButton1.BorderSize = 0;
+            roundedButton1.FlatAppearance.BorderSize = 0;
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Location = new Point(410, 146);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(36, 36);
+            roundedButton1.TabIndex = 20;
+            roundedButton1.TextColor = Color.White;
+            roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(278, 29);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 29);
+            label3.TabIndex = 18;
+            label3.Text = "Giá tiền";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(229, 1, 17);
+            label4.Location = new Point(274, -3);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 37);
+            label4.TabIndex = 17;
+            label4.Text = "Tên món";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(-48, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(316, 226);
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
+            // metroTile1
+            // 
+            metroTile1.ActiveControl = null;
+            metroTile1.BackColor = Color.Black;
+            metroTile1.Controls.Add(button1);
+            metroTile1.Controls.Add(label7);
+            metroTile1.FlatAppearance.BorderColor = Color.Black;
+            metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
+            metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
+            metroTile1.FlatStyle = FlatStyle.Flat;
+            metroTile1.Location = new Point(259, 602);
+            metroTile1.Name = "metroTile1";
+            metroTile1.PaintTileCount = false;
+            metroTile1.Size = new Size(753, 66);
+            metroTile1.Style = MetroFramework.MetroColorStyle.Black;
+            metroTile1.TabIndex = 20;
+            metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            metroTile1.UseCustomBackColor = true;
+            metroTile1.UseSelectable = true;
+            metroTile1.UseStyleColors = true;
+            metroTile1.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.AutoSize = true;
+            button1.BackColor = Color.Black;
+            button1.FlatAppearance.BorderColor = Color.Black;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.ImageAlign = ContentAlignment.TopRight;
+            button1.Location = new Point(392, 11);
+            button1.Name = "button1";
+            button1.Size = new Size(356, 45);
+            button1.TabIndex = 2;
+            button1.Text = "đ 0";
+            button1.TextAlign = ContentAlignment.TopRight;
+            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(20, 16);
+            label7.Name = "label7";
+            label7.Size = new Size(227, 28);
+            label7.TabIndex = 0;
+            label7.Text = "Vui lòng chọn 1 đáy nồi";
+            // 
+            // btn_signInForm
+            // 
+            btn_signInForm.BackColor = Color.FromArgb(229, 1, 17);
+            btn_signInForm.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_signInForm.BorderColor = Color.PaleVioletRed;
+            btn_signInForm.BorderRadius = 8;
+            btn_signInForm.BorderSize = 0;
+            btn_signInForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_signInForm.FlatStyle = FlatStyle.Flat;
+            btn_signInForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_signInForm.ForeColor = Color.White;
+            btn_signInForm.Location = new Point(954, 27);
+            btn_signInForm.Margin = new Padding(3, 4, 3, 4);
+            btn_signInForm.Name = "btn_signInForm";
+            btn_signInForm.Size = new Size(117, 35);
+            btn_signInForm.TabIndex = 18;
+            btn_signInForm.Text = "Tài khoản";
+            btn_signInForm.TextColor = Color.White;
+            btn_signInForm.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton10
+            // 
+            roundedButton10.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton10.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton10.BorderColor = Color.PaleVioletRed;
+            roundedButton10.BorderRadius = 8;
+            roundedButton10.BorderSize = 0;
+            roundedButton10.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton10.FlatStyle = FlatStyle.Flat;
+            roundedButton10.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton10.ForeColor = Color.White;
+            roundedButton10.Location = new Point(1077, 27);
+            roundedButton10.Margin = new Padding(3, 4, 3, 4);
+            roundedButton10.Name = "roundedButton10";
+            roundedButton10.Size = new Size(117, 35);
+            roundedButton10.TabIndex = 21;
+            roundedButton10.Text = "Đăng xuất";
+            roundedButton10.TextColor = Color.White;
+            roundedButton10.UseVisualStyleBackColor = false;
+            roundedButton10.Click += roundedButton10_Click;
+            // 
+            // roundedButton15
+            // 
+            roundedButton15.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton15.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton15.BorderColor = Color.PaleVioletRed;
+            roundedButton15.BorderRadius = 0;
+            roundedButton15.BorderSize = 0;
+            roundedButton15.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton15.FlatStyle = FlatStyle.Flat;
+            roundedButton15.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton15.ForeColor = Color.White;
+            roundedButton15.Location = new Point(1009, 602);
+            roundedButton15.Margin = new Padding(3, 4, 3, 4);
+            roundedButton15.Name = "roundedButton15";
+            roundedButton15.Size = new Size(207, 60);
+            roundedButton15.TabIndex = 21;
+            roundedButton15.Text = "Giỏ hàng";
+            roundedButton15.TextColor = Color.White;
+            roundedButton15.UseVisualStyleBackColor = false;
             // 
             // MonAn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1515, 825);
-            this.Controls.Add(this.roundedButton15);
-            this.Controls.Add(this.roundedButton10);
-            this.Controls.Add(this.btn_signInForm);
-            this.Controls.Add(this.metroTile1);
-            this.Controls.Add(this.metroPanel5);
-            this.Controls.Add(this.metroPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MonAn";
-            this.Padding = new System.Windows.Forms.Padding(25, 75, 25, 25);
-            this.Style = MetroFramework.MetroColorStyle.White;
-            this.metroPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.metroPanel5.ResumeLayout(false);
-            this.metroPanel3.ResumeLayout(false);
-            this.metroPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.metroTile1.ResumeLayout(false);
-            this.metroTile1.PerformLayout();
-            this.metroPanel2.ResumeLayout(false);
-            this.metroPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.metroPanel4.ResumeLayout(false);
-            this.metroPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.metroPanel6.ResumeLayout(false);
-            this.metroPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.metroPanel8.ResumeLayout(false);
-            this.metroPanel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.metroPanel9.ResumeLayout(false);
-            this.metroPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1212, 660);
+            Controls.Add(roundedButton15);
+            Controls.Add(roundedButton10);
+            Controls.Add(btn_signInForm);
+            Controls.Add(metroTile1);
+            Controls.Add(metroPanel5);
+            Controls.Add(metroPanel1);
+            Name = "MonAn";
+            Style = MetroFramework.MetroColorStyle.White;
+            metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            metroPanel5.ResumeLayout(false);
+            metroPanel9.ResumeLayout(false);
+            metroPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            metroPanel8.ResumeLayout(false);
+            metroPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            metroPanel6.ResumeLayout(false);
+            metroPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            metroPanel4.ResumeLayout(false);
+            metroPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            metroPanel2.ResumeLayout(false);
+            metroPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            metroPanel3.ResumeLayout(false);
+            metroPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            metroTile1.ResumeLayout(false);
+            metroTile1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
