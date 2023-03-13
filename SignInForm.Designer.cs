@@ -65,10 +65,10 @@ namespace WinFormsApp2
             btn_signUp.FlatStyle = FlatStyle.Flat;
             btn_signUp.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_signUp.ForeColor = Color.White;
-            btn_signUp.Location = new Point(433, 348);
+            btn_signUp.Location = new Point(428, 328);
             btn_signUp.Margin = new Padding(3, 4, 3, 4);
             btn_signUp.Name = "btn_signUp";
-            btn_signUp.Size = new Size(156, 51);
+            btn_signUp.Size = new Size(152, 54);
             btn_signUp.TabIndex = 11;
             btn_signUp.Text = "Đăng nhập";
             btn_signUp.TextColor = Color.White;
@@ -94,7 +94,7 @@ namespace WinFormsApp2
             tb_phone.BorderSize = 2;
             tb_phone.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_phone.ForeColor = Color.FromArgb(64, 64, 64);
-            tb_phone.Location = new Point(325, 211);
+            tb_phone.Location = new Point(325, 176);
             tb_phone.Margin = new Padding(4);
             tb_phone.Multiline = false;
             tb_phone.Name = "tb_phone";
@@ -116,7 +116,7 @@ namespace WinFormsApp2
             tb_password.BorderSize = 2;
             tb_password.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             tb_password.ForeColor = Color.FromArgb(64, 64, 64);
-            tb_password.Location = new Point(325, 279);
+            tb_password.Location = new Point(325, 247);
             tb_password.Margin = new Padding(4);
             tb_password.Multiline = false;
             tb_password.Name = "tb_password";
@@ -181,10 +181,10 @@ namespace WinFormsApp2
             roundedButton2.FlatStyle = FlatStyle.Flat;
             roundedButton2.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton2.ForeColor = Color.White;
-            roundedButton2.Location = new Point(412, 407);
+            roundedButton2.Location = new Point(398, 399);
             roundedButton2.Margin = new Padding(3, 4, 3, 4);
             roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(200, 51);
+            roundedButton2.Size = new Size(214, 51);
             roundedButton2.TabIndex = 19;
             roundedButton2.Text = "Đăng nhập khách";
             roundedButton2.TextColor = Color.White;
@@ -195,11 +195,12 @@ namespace WinFormsApp2
             // 
             lbl_errorMessage.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_errorMessage.ForeColor = Color.FromArgb(229, 1, 17);
-            lbl_errorMessage.Location = new Point(325, 164);
+            lbl_errorMessage.Location = new Point(325, 294);
             lbl_errorMessage.Name = "lbl_errorMessage";
             lbl_errorMessage.Size = new Size(349, 30);
             lbl_errorMessage.TabIndex = 20;
             lbl_errorMessage.TextAlign = ContentAlignment.TopCenter;
+            lbl_errorMessage.Click += lbl_errorMessage_Click;
             // 
             // SignInForm
             // 

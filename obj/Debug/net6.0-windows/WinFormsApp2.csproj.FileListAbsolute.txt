@@ -53,3 +53,5 @@ C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\r
 C:\Users\KimAnh\OneDrive\Desktop\CNPMD\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.MonAn.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.myblacklayout.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.MonAn.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.SelectedAdminPage.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddFood.resources
