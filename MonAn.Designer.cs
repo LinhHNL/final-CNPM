@@ -73,7 +73,6 @@ namespace WinFormsApp2
             pictureBox3 = new PictureBox();
             metroTile1 = new MetroFramework.Controls.MetroTile();
             button1 = new Button();
-            label7 = new Label();
             btn_signInForm = new RoundedButton();
             roundedButton10 = new RoundedButton();
             roundedButton15 = new RoundedButton();
@@ -712,7 +711,6 @@ namespace WinFormsApp2
             metroTile1.ActiveControl = null;
             metroTile1.BackColor = Color.Black;
             metroTile1.Controls.Add(button1);
-            metroTile1.Controls.Add(label7);
             metroTile1.FlatAppearance.BorderColor = Color.Black;
             metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
             metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
@@ -747,17 +745,6 @@ namespace WinFormsApp2
             button1.TextAlign = ContentAlignment.TopRight;
             button1.TextImageRelation = TextImageRelation.ImageBeforeText;
             button1.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(20, 16);
-            label7.Name = "label7";
-            label7.Size = new Size(227, 28);
-            label7.TabIndex = 0;
-            label7.Text = "Vui lòng chọn 1 đáy nồi";
             // 
             // btn_signInForm
             // 
@@ -879,7 +866,6 @@ namespace WinFormsApp2
         private PictureBox pictureBox3;
         private RoundedButton roundedButton15;
         private Button button1;
-        private Label label7;
         private RoundedButton roundedButton1;
         private MetroFramework.Controls.MetroPanel metroPanel9;
         private RoundedButton roundedButton13;
