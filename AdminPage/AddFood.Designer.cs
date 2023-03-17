@@ -43,8 +43,10 @@
             roundedTextBox1 = new CustomControls.RoundedTextBox();
             cb_TypeofFood = new ComboBox();
             roundedButton1 = new CustomControls.RoundedButton();
+            UploadPlaceBox = new PictureBox();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UploadPlaceBox).BeginInit();
             SuspendLayout();
             // 
             // metroPanel1
@@ -205,6 +207,7 @@
             btn_addPicture.TabIndex = 23;
             btn_addPicture.TextColor = SystemColors.WindowText;
             btn_addPicture.UseVisualStyleBackColor = false;
+            btn_addPicture.Click += btn_addPicture_Click;
             // 
             // btn_placeholderlabel
             // 
@@ -292,6 +295,15 @@
             roundedButton1.TextColor = Color.White;
             roundedButton1.UseVisualStyleBackColor = false;
             // 
+            // UploadPlaceBox
+            // 
+            UploadPlaceBox.Location = new Point(311, 108);
+            UploadPlaceBox.Name = "UploadPlaceBox";
+            UploadPlaceBox.Size = new Size(400, 399);
+            UploadPlaceBox.TabIndex = 29;
+            UploadPlaceBox.TabStop = false;
+            UploadPlaceBox.Click += UploadPlaceBox_Click;
+            // 
             // AddFood
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -305,10 +317,12 @@
             Controls.Add(btn_addPicture);
             Controls.Add(roundedButton10);
             Controls.Add(metroPanel1);
+            Controls.Add(UploadPlaceBox);
             Name = "AddFood";
             Load += AddFood_Load;
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UploadPlaceBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -329,5 +343,6 @@
         private CustomControls.RoundedTextBox roundedTextBox1;
         private ComboBox cb_TypeofFood;
         private CustomControls.RoundedButton roundedButton1;
+        private PictureBox UploadPlaceBox;
     }
 }
