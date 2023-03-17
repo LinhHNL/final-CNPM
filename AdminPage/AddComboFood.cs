@@ -64,5 +64,25 @@ namespace WinFormsApp2.AdminPage
                 MessageBox.Show("Bị lỗi update hình");
             }
         }
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_nameoffood__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_gia__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_TypeofFood_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
