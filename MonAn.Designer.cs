@@ -40,19 +40,24 @@ namespace WinFormsApp2
             roundedButton5 = new RoundedButton();
             roundedButton4 = new RoundedButton();
             pictureBox1 = new PictureBox();
+            metroTile1 = new MetroFramework.Controls.MetroTile();
+            button1 = new Button();
+            btn_signInForm = new RoundedButton();
+            roundedButton10 = new RoundedButton();
+            roundedButton15 = new RoundedButton();
             metroPanel5 = new MetroFramework.Controls.MetroPanel();
             metroPanel9 = new MetroFramework.Controls.MetroPanel();
-            roundedButton13 = new RoundedButton();
+            roundedButton11 = new RoundedButton();
             label12 = new Label();
             label13 = new Label();
             pictureBox7 = new PictureBox();
             metroPanel8 = new MetroFramework.Controls.MetroPanel();
-            roundedButton12 = new RoundedButton();
+            roundedButton1 = new RoundedButton();
             label10 = new Label();
             label11 = new Label();
             pictureBox6 = new PictureBox();
             metroPanel6 = new MetroFramework.Controls.MetroPanel();
-            roundedButton11 = new RoundedButton();
+            roundedButton2 = new RoundedButton();
             label8 = new Label();
             label9 = new Label();
             pictureBox5 = new PictureBox();
@@ -62,22 +67,18 @@ namespace WinFormsApp2
             label6 = new Label();
             pictureBox4 = new PictureBox();
             metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            roundedButton2 = new RoundedButton();
+            roundedButton12 = new RoundedButton();
             label1 = new Label();
             label2 = new Label();
             pictureBox2 = new PictureBox();
             metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            roundedButton1 = new RoundedButton();
+            roundedButton13 = new RoundedButton();
             label3 = new Label();
             label4 = new Label();
             pictureBox3 = new PictureBox();
-            metroTile1 = new MetroFramework.Controls.MetroTile();
-            button1 = new Button();
-            btn_signInForm = new RoundedButton();
-            roundedButton10 = new RoundedButton();
-            roundedButton15 = new RoundedButton();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            metroTile1.SuspendLayout();
             metroPanel5.SuspendLayout();
             metroPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
@@ -91,7 +92,6 @@ namespace WinFormsApp2
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            metroTile1.SuspendLayout();
             SuspendLayout();
             // 
             // metroPanel1
@@ -264,448 +264,6 @@ namespace WinFormsApp2
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
-            // metroPanel5
-            // 
-            metroPanel5.AutoScroll = true;
-            metroPanel5.Controls.Add(metroPanel9);
-            metroPanel5.Controls.Add(metroPanel8);
-            metroPanel5.Controls.Add(metroPanel6);
-            metroPanel5.Controls.Add(metroPanel4);
-            metroPanel5.Controls.Add(metroPanel2);
-            metroPanel5.Controls.Add(metroPanel3);
-            metroPanel5.HorizontalScrollbar = true;
-            metroPanel5.HorizontalScrollbarBarColor = true;
-            metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel5.HorizontalScrollbarSize = 10;
-            metroPanel5.Location = new Point(310, 67);
-            metroPanel5.Name = "metroPanel5";
-            metroPanel5.Size = new Size(901, 533);
-            metroPanel5.TabIndex = 19;
-            metroPanel5.VerticalScrollbar = true;
-            metroPanel5.VerticalScrollbarBarColor = true;
-            metroPanel5.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel5.VerticalScrollbarSize = 10;
-            // 
-            // metroPanel9
-            // 
-            metroPanel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel9.Controls.Add(roundedButton13);
-            metroPanel9.Controls.Add(label12);
-            metroPanel9.Controls.Add(label13);
-            metroPanel9.Controls.Add(pictureBox7);
-            metroPanel9.HorizontalScrollbar = true;
-            metroPanel9.HorizontalScrollbarBarColor = true;
-            metroPanel9.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel9.HorizontalScrollbarSize = 10;
-            metroPanel9.Location = new Point(478, 410);
-            metroPanel9.Name = "metroPanel9";
-            metroPanel9.Size = new Size(455, 188);
-            metroPanel9.TabIndex = 25;
-            metroPanel9.VerticalScrollbarBarColor = true;
-            metroPanel9.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel9.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton13
-            // 
-            roundedButton13.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton13.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton13.BackgroundImage = (Image)resources.GetObject("roundedButton13.BackgroundImage");
-            roundedButton13.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton13.BorderColor = Color.Transparent;
-            roundedButton13.BorderRadius = 18;
-            roundedButton13.BorderSize = 0;
-            roundedButton13.FlatAppearance.BorderSize = 0;
-            roundedButton13.FlatStyle = FlatStyle.Flat;
-            roundedButton13.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton13.ForeColor = Color.White;
-            roundedButton13.Location = new Point(410, 146);
-            roundedButton13.Name = "roundedButton13";
-            roundedButton13.Size = new Size(36, 36);
-            roundedButton13.TabIndex = 20;
-            roundedButton13.TextColor = Color.White;
-            roundedButton13.UseVisualStyleBackColor = false;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.ForeColor = Color.Black;
-            label12.Location = new Point(278, 29);
-            label12.Name = "label12";
-            label12.Size = new Size(90, 29);
-            label12.TabIndex = 18;
-            label12.Text = "Giá tiền";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.ForeColor = Color.FromArgb(229, 1, 17);
-            label13.Location = new Point(274, -3);
-            label13.Name = "label13";
-            label13.Size = new Size(123, 37);
-            label13.TabIndex = 17;
-            label13.Text = "Tên món";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(-48, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(316, 226);
-            pictureBox7.TabIndex = 2;
-            pictureBox7.TabStop = false;
-            // 
-            // metroPanel8
-            // 
-            metroPanel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel8.Controls.Add(roundedButton12);
-            metroPanel8.Controls.Add(label10);
-            metroPanel8.Controls.Add(label11);
-            metroPanel8.Controls.Add(pictureBox6);
-            metroPanel8.HorizontalScrollbar = true;
-            metroPanel8.HorizontalScrollbarBarColor = true;
-            metroPanel8.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel8.HorizontalScrollbarSize = 10;
-            metroPanel8.Location = new Point(12, 410);
-            metroPanel8.Name = "metroPanel8";
-            metroPanel8.Size = new Size(455, 188);
-            metroPanel8.TabIndex = 24;
-            metroPanel8.VerticalScrollbarBarColor = true;
-            metroPanel8.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel8.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton12
-            // 
-            roundedButton12.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton12.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton12.BackgroundImage = (Image)resources.GetObject("roundedButton12.BackgroundImage");
-            roundedButton12.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton12.BorderColor = Color.Transparent;
-            roundedButton12.BorderRadius = 18;
-            roundedButton12.BorderSize = 0;
-            roundedButton12.FlatAppearance.BorderSize = 0;
-            roundedButton12.FlatStyle = FlatStyle.Flat;
-            roundedButton12.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton12.ForeColor = Color.White;
-            roundedButton12.Location = new Point(410, 146);
-            roundedButton12.Name = "roundedButton12";
-            roundedButton12.Size = new Size(36, 36);
-            roundedButton12.TabIndex = 20;
-            roundedButton12.TextColor = Color.White;
-            roundedButton12.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = Color.Black;
-            label10.Location = new Point(278, 29);
-            label10.Name = "label10";
-            label10.Size = new Size(90, 29);
-            label10.TabIndex = 18;
-            label10.Text = "Giá tiền";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = Color.FromArgb(229, 1, 17);
-            label11.Location = new Point(274, -3);
-            label11.Name = "label11";
-            label11.Size = new Size(123, 37);
-            label11.TabIndex = 17;
-            label11.Text = "Tên món";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(-48, 0);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(316, 226);
-            pictureBox6.TabIndex = 2;
-            pictureBox6.TabStop = false;
-            // 
-            // metroPanel6
-            // 
-            metroPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel6.Controls.Add(roundedButton11);
-            metroPanel6.Controls.Add(label8);
-            metroPanel6.Controls.Add(label9);
-            metroPanel6.Controls.Add(pictureBox5);
-            metroPanel6.HorizontalScrollbar = true;
-            metroPanel6.HorizontalScrollbarBarColor = true;
-            metroPanel6.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel6.HorizontalScrollbarSize = 10;
-            metroPanel6.Location = new Point(481, 210);
-            metroPanel6.Name = "metroPanel6";
-            metroPanel6.Size = new Size(455, 188);
-            metroPanel6.TabIndex = 23;
-            metroPanel6.VerticalScrollbarBarColor = true;
-            metroPanel6.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel6.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton11
-            // 
-            roundedButton11.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton11.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton11.BackgroundImage = (Image)resources.GetObject("roundedButton11.BackgroundImage");
-            roundedButton11.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton11.BorderColor = Color.Transparent;
-            roundedButton11.BorderRadius = 18;
-            roundedButton11.BorderSize = 0;
-            roundedButton11.FlatAppearance.BorderSize = 0;
-            roundedButton11.FlatStyle = FlatStyle.Flat;
-            roundedButton11.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton11.ForeColor = Color.White;
-            roundedButton11.Location = new Point(410, 146);
-            roundedButton11.Name = "roundedButton11";
-            roundedButton11.Size = new Size(36, 36);
-            roundedButton11.TabIndex = 20;
-            roundedButton11.TextColor = Color.White;
-            roundedButton11.UseVisualStyleBackColor = false;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.Black;
-            label8.Location = new Point(278, 29);
-            label8.Name = "label8";
-            label8.Size = new Size(90, 29);
-            label8.TabIndex = 18;
-            label8.Text = "Giá tiền";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = Color.FromArgb(229, 1, 17);
-            label9.Location = new Point(274, -3);
-            label9.Name = "label9";
-            label9.Size = new Size(123, 37);
-            label9.TabIndex = 17;
-            label9.Text = "Tên món";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(-48, 0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(316, 226);
-            pictureBox5.TabIndex = 2;
-            pictureBox5.TabStop = false;
-            // 
-            // metroPanel4
-            // 
-            metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel4.Controls.Add(roundedButton3);
-            metroPanel4.Controls.Add(label5);
-            metroPanel4.Controls.Add(label6);
-            metroPanel4.Controls.Add(pictureBox4);
-            metroPanel4.HorizontalScrollbar = true;
-            metroPanel4.HorizontalScrollbarBarColor = true;
-            metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel4.HorizontalScrollbarSize = 10;
-            metroPanel4.Location = new Point(12, 210);
-            metroPanel4.Name = "metroPanel4";
-            metroPanel4.Size = new Size(455, 188);
-            metroPanel4.TabIndex = 22;
-            metroPanel4.VerticalScrollbarBarColor = true;
-            metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel4.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton3
-            // 
-            roundedButton3.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton3.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton3.BackgroundImage = (Image)resources.GetObject("roundedButton3.BackgroundImage");
-            roundedButton3.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton3.BorderColor = Color.Transparent;
-            roundedButton3.BorderRadius = 18;
-            roundedButton3.BorderSize = 0;
-            roundedButton3.FlatAppearance.BorderSize = 0;
-            roundedButton3.FlatStyle = FlatStyle.Flat;
-            roundedButton3.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton3.ForeColor = Color.White;
-            roundedButton3.Location = new Point(410, 146);
-            roundedButton3.Name = "roundedButton3";
-            roundedButton3.Size = new Size(36, 36);
-            roundedButton3.TabIndex = 20;
-            roundedButton3.TextColor = Color.White;
-            roundedButton3.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.Black;
-            label5.Location = new Point(278, 29);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 29);
-            label5.TabIndex = 18;
-            label5.Text = "Giá tiền";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(229, 1, 17);
-            label6.Location = new Point(274, -3);
-            label6.Name = "label6";
-            label6.Size = new Size(123, 37);
-            label6.TabIndex = 17;
-            label6.Text = "Tên món";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(-48, 0);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(316, 226);
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            // 
-            // metroPanel2
-            // 
-            metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel2.Controls.Add(roundedButton2);
-            metroPanel2.Controls.Add(label1);
-            metroPanel2.Controls.Add(label2);
-            metroPanel2.Controls.Add(pictureBox2);
-            metroPanel2.HorizontalScrollbar = true;
-            metroPanel2.HorizontalScrollbarBarColor = true;
-            metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel2.HorizontalScrollbarSize = 10;
-            metroPanel2.Location = new Point(481, 13);
-            metroPanel2.Name = "metroPanel2";
-            metroPanel2.Size = new Size(455, 188);
-            metroPanel2.TabIndex = 21;
-            metroPanel2.VerticalScrollbarBarColor = true;
-            metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel2.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton2
-            // 
-            roundedButton2.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton2.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton2.BackgroundImage = (Image)resources.GetObject("roundedButton2.BackgroundImage");
-            roundedButton2.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton2.BorderColor = Color.Transparent;
-            roundedButton2.BorderRadius = 18;
-            roundedButton2.BorderSize = 0;
-            roundedButton2.FlatAppearance.BorderSize = 0;
-            roundedButton2.FlatStyle = FlatStyle.Flat;
-            roundedButton2.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton2.ForeColor = Color.White;
-            roundedButton2.Location = new Point(410, 146);
-            roundedButton2.Name = "roundedButton2";
-            roundedButton2.Size = new Size(36, 36);
-            roundedButton2.TabIndex = 20;
-            roundedButton2.TextColor = Color.White;
-            roundedButton2.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(278, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 29);
-            label1.TabIndex = 18;
-            label1.Text = "Giá tiền";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(229, 1, 17);
-            label2.Location = new Point(274, -3);
-            label2.Name = "label2";
-            label2.Size = new Size(123, 37);
-            label2.TabIndex = 17;
-            label2.Text = "Tên món";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-48, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(316, 226);
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // metroPanel3
-            // 
-            metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel3.Controls.Add(roundedButton1);
-            metroPanel3.Controls.Add(label3);
-            metroPanel3.Controls.Add(label4);
-            metroPanel3.Controls.Add(pictureBox3);
-            metroPanel3.HorizontalScrollbar = true;
-            metroPanel3.HorizontalScrollbarBarColor = true;
-            metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel3.HorizontalScrollbarSize = 10;
-            metroPanel3.Location = new Point(12, 12);
-            metroPanel3.Name = "metroPanel3";
-            metroPanel3.Size = new Size(455, 188);
-            metroPanel3.TabIndex = 20;
-            metroPanel3.VerticalScrollbarBarColor = true;
-            metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel3.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton1
-            // 
-            roundedButton1.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton1.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton1.BackgroundImage = (Image)resources.GetObject("roundedButton1.BackgroundImage");
-            roundedButton1.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton1.BorderColor = Color.Transparent;
-            roundedButton1.BorderRadius = 18;
-            roundedButton1.BorderSize = 0;
-            roundedButton1.FlatAppearance.BorderSize = 0;
-            roundedButton1.FlatStyle = FlatStyle.Flat;
-            roundedButton1.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton1.ForeColor = Color.White;
-            roundedButton1.Location = new Point(410, 146);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(36, 36);
-            roundedButton1.TabIndex = 20;
-            roundedButton1.TextColor = Color.White;
-            roundedButton1.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Black;
-            label3.Location = new Point(278, 29);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 29);
-            label3.TabIndex = 18;
-            label3.Text = "Giá tiền";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(229, 1, 17);
-            label4.Location = new Point(274, -3);
-            label4.Name = "label4";
-            label4.Size = new Size(123, 37);
-            label4.TabIndex = 17;
-            label4.Text = "Tên món";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-48, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(316, 226);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
             // metroTile1
             // 
             metroTile1.ActiveControl = null;
@@ -807,21 +365,465 @@ namespace WinFormsApp2
             roundedButton15.TextColor = Color.White;
             roundedButton15.UseVisualStyleBackColor = false;
             // 
+            // metroPanel5
+            // 
+            metroPanel5.AutoScroll = true;
+            metroPanel5.Controls.Add(metroPanel9);
+            metroPanel5.Controls.Add(metroPanel8);
+            metroPanel5.Controls.Add(metroPanel6);
+            metroPanel5.Controls.Add(metroPanel4);
+            metroPanel5.Controls.Add(metroPanel2);
+            metroPanel5.Controls.Add(metroPanel3);
+            metroPanel5.HorizontalScrollbar = true;
+            metroPanel5.HorizontalScrollbarBarColor = true;
+            metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel5.HorizontalScrollbarSize = 10;
+            metroPanel5.Location = new Point(293, 69);
+            metroPanel5.Name = "metroPanel5";
+            metroPanel5.Size = new Size(901, 505);
+            metroPanel5.TabIndex = 24;
+            metroPanel5.VerticalScrollbar = true;
+            metroPanel5.VerticalScrollbarBarColor = true;
+            metroPanel5.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel5.VerticalScrollbarSize = 10;
+            // 
+            // metroPanel9
+            // 
+            metroPanel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel9.Controls.Add(roundedButton11);
+            metroPanel9.Controls.Add(label12);
+            metroPanel9.Controls.Add(label13);
+            metroPanel9.Controls.Add(pictureBox7);
+            metroPanel9.HorizontalScrollbar = true;
+            metroPanel9.HorizontalScrollbarBarColor = true;
+            metroPanel9.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel9.HorizontalScrollbarSize = 10;
+            metroPanel9.Location = new Point(425, 410);
+            metroPanel9.Name = "metroPanel9";
+            metroPanel9.Size = new Size(455, 188);
+            metroPanel9.TabIndex = 25;
+            metroPanel9.VerticalScrollbarBarColor = true;
+            metroPanel9.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel9.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton11
+            // 
+            roundedButton11.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton11.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton11.BorderColor = Color.PaleVioletRed;
+            roundedButton11.BorderRadius = 8;
+            roundedButton11.BorderSize = 0;
+            roundedButton11.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton11.FlatStyle = FlatStyle.Flat;
+            roundedButton11.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton11.ForeColor = Color.White;
+            roundedButton11.Location = new Point(332, 140);
+            roundedButton11.Margin = new Padding(3, 4, 3, 4);
+            roundedButton11.Name = "roundedButton11";
+            roundedButton11.Size = new Size(117, 35);
+            roundedButton11.TabIndex = 25;
+            roundedButton11.Text = "Khóa";
+            roundedButton11.TextColor = Color.White;
+            roundedButton11.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = Color.Black;
+            label12.Location = new Point(199, 85);
+            label12.Name = "label12";
+            label12.Size = new Size(90, 29);
+            label12.TabIndex = 18;
+            label12.Text = "Giá tiền";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = Color.FromArgb(229, 1, 17);
+            label13.Location = new Point(199, 10);
+            label13.Name = "label13";
+            label13.Size = new Size(123, 37);
+            label13.TabIndex = 17;
+            label13.Text = "Tên món";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(-48, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(229, 226);
+            pictureBox7.TabIndex = 2;
+            pictureBox7.TabStop = false;
+            // 
+            // metroPanel8
+            // 
+            metroPanel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel8.Controls.Add(roundedButton1);
+            metroPanel8.Controls.Add(label10);
+            metroPanel8.Controls.Add(label11);
+            metroPanel8.Controls.Add(pictureBox6);
+            metroPanel8.HorizontalScrollbar = true;
+            metroPanel8.HorizontalScrollbarBarColor = true;
+            metroPanel8.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel8.HorizontalScrollbarSize = 10;
+            metroPanel8.Location = new Point(-41, 410);
+            metroPanel8.Name = "metroPanel8";
+            metroPanel8.Size = new Size(455, 188);
+            metroPanel8.TabIndex = 24;
+            metroPanel8.VerticalScrollbarBarColor = true;
+            metroPanel8.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel8.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BorderColor = Color.PaleVioletRed;
+            roundedButton1.BorderRadius = 8;
+            roundedButton1.BorderSize = 0;
+            roundedButton1.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Location = new Point(329, 140);
+            roundedButton1.Margin = new Padding(3, 4, 3, 4);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(117, 35);
+            roundedButton1.TabIndex = 25;
+            roundedButton1.Text = "Khóa";
+            roundedButton1.TextColor = Color.White;
+            roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.Black;
+            label10.Location = new Point(246, 85);
+            label10.Name = "label10";
+            label10.Size = new Size(90, 29);
+            label10.TabIndex = 18;
+            label10.Text = "Giá tiền";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.FromArgb(229, 1, 17);
+            label11.Location = new Point(246, 10);
+            label11.Name = "label11";
+            label11.Size = new Size(123, 37);
+            label11.TabIndex = 17;
+            label11.Text = "Tên món";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(-48, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(259, 226);
+            pictureBox6.TabIndex = 2;
+            pictureBox6.TabStop = false;
+            // 
+            // metroPanel6
+            // 
+            metroPanel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel6.Controls.Add(roundedButton2);
+            metroPanel6.Controls.Add(label8);
+            metroPanel6.Controls.Add(label9);
+            metroPanel6.Controls.Add(pictureBox5);
+            metroPanel6.HorizontalScrollbar = true;
+            metroPanel6.HorizontalScrollbarBarColor = true;
+            metroPanel6.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel6.HorizontalScrollbarSize = 10;
+            metroPanel6.Location = new Point(425, 210);
+            metroPanel6.Name = "metroPanel6";
+            metroPanel6.Size = new Size(455, 188);
+            metroPanel6.TabIndex = 23;
+            metroPanel6.VerticalScrollbarBarColor = true;
+            metroPanel6.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel6.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton2
+            // 
+            roundedButton2.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BorderColor = Color.PaleVioletRed;
+            roundedButton2.BorderRadius = 8;
+            roundedButton2.BorderSize = 0;
+            roundedButton2.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton2.FlatStyle = FlatStyle.Flat;
+            roundedButton2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton2.ForeColor = Color.White;
+            roundedButton2.Location = new Point(329, 146);
+            roundedButton2.Margin = new Padding(3, 4, 3, 4);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.Size = new Size(117, 35);
+            roundedButton2.TabIndex = 24;
+            roundedButton2.Text = "Khóa";
+            roundedButton2.TextColor = Color.White;
+            roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.Black;
+            label8.Location = new Point(196, 94);
+            label8.Name = "label8";
+            label8.Size = new Size(90, 29);
+            label8.TabIndex = 18;
+            label8.Text = "Giá tiền";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.FromArgb(229, 1, 17);
+            label9.Location = new Point(196, 17);
+            label9.Name = "label9";
+            label9.Size = new Size(123, 37);
+            label9.TabIndex = 17;
+            label9.Text = "Tên món";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(-48, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(226, 226);
+            pictureBox5.TabIndex = 2;
+            pictureBox5.TabStop = false;
+            // 
+            // metroPanel4
+            // 
+            metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel4.Controls.Add(roundedButton3);
+            metroPanel4.Controls.Add(label5);
+            metroPanel4.Controls.Add(label6);
+            metroPanel4.Controls.Add(pictureBox4);
+            metroPanel4.HorizontalScrollbar = true;
+            metroPanel4.HorizontalScrollbarBarColor = true;
+            metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel4.HorizontalScrollbarSize = 10;
+            metroPanel4.Location = new Point(-44, 210);
+            metroPanel4.Name = "metroPanel4";
+            metroPanel4.Size = new Size(455, 188);
+            metroPanel4.TabIndex = 22;
+            metroPanel4.VerticalScrollbarBarColor = true;
+            metroPanel4.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel4.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton3
+            // 
+            roundedButton3.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton3.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton3.BorderColor = Color.PaleVioletRed;
+            roundedButton3.BorderRadius = 8;
+            roundedButton3.BorderSize = 0;
+            roundedButton3.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton3.FlatStyle = FlatStyle.Flat;
+            roundedButton3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton3.ForeColor = Color.White;
+            roundedButton3.Location = new Point(329, 146);
+            roundedButton3.Margin = new Padding(3, 4, 3, 4);
+            roundedButton3.Name = "roundedButton3";
+            roundedButton3.Size = new Size(117, 35);
+            roundedButton3.TabIndex = 24;
+            roundedButton3.Text = "Khóa";
+            roundedButton3.TextColor = Color.White;
+            roundedButton3.UseVisualStyleBackColor = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.Black;
+            label5.Location = new Point(246, 94);
+            label5.Name = "label5";
+            label5.Size = new Size(90, 29);
+            label5.TabIndex = 18;
+            label5.Text = "Giá tiền";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(229, 1, 17);
+            label6.Location = new Point(246, 17);
+            label6.Name = "label6";
+            label6.Size = new Size(123, 37);
+            label6.TabIndex = 17;
+            label6.Text = "Tên món";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(-48, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(259, 226);
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // metroPanel2
+            // 
+            metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel2.Controls.Add(roundedButton12);
+            metroPanel2.Controls.Add(label1);
+            metroPanel2.Controls.Add(label2);
+            metroPanel2.Controls.Add(pictureBox2);
+            metroPanel2.HorizontalScrollbar = true;
+            metroPanel2.HorizontalScrollbarBarColor = true;
+            metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel2.HorizontalScrollbarSize = 10;
+            metroPanel2.Location = new Point(425, 13);
+            metroPanel2.Name = "metroPanel2";
+            metroPanel2.Size = new Size(455, 188);
+            metroPanel2.TabIndex = 21;
+            metroPanel2.VerticalScrollbarBarColor = true;
+            metroPanel2.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel2.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton12
+            // 
+            roundedButton12.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton12.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton12.BorderColor = Color.PaleVioletRed;
+            roundedButton12.BorderRadius = 8;
+            roundedButton12.BorderSize = 0;
+            roundedButton12.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton12.FlatStyle = FlatStyle.Flat;
+            roundedButton12.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton12.ForeColor = Color.White;
+            roundedButton12.Location = new Point(329, 144);
+            roundedButton12.Margin = new Padding(3, 4, 3, 4);
+            roundedButton12.Name = "roundedButton12";
+            roundedButton12.Size = new Size(117, 35);
+            roundedButton12.TabIndex = 23;
+            roundedButton12.Text = "Khóa";
+            roundedButton12.TextColor = Color.White;
+            roundedButton12.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(207, 88);
+            label1.Name = "label1";
+            label1.Size = new Size(90, 29);
+            label1.TabIndex = 18;
+            label1.Text = "Giá tiền";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(229, 1, 17);
+            label2.Location = new Point(196, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(123, 37);
+            label2.TabIndex = 17;
+            label2.Text = "Tên món";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(-48, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(226, 226);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // metroPanel3
+            // 
+            metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            metroPanel3.Controls.Add(roundedButton13);
+            metroPanel3.Controls.Add(label3);
+            metroPanel3.Controls.Add(label4);
+            metroPanel3.Controls.Add(pictureBox3);
+            metroPanel3.HorizontalScrollbar = true;
+            metroPanel3.HorizontalScrollbarBarColor = true;
+            metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel3.HorizontalScrollbarSize = 10;
+            metroPanel3.Location = new Point(-44, 12);
+            metroPanel3.Name = "metroPanel3";
+            metroPanel3.Size = new Size(455, 188);
+            metroPanel3.TabIndex = 20;
+            metroPanel3.VerticalScrollbarBarColor = true;
+            metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // roundedButton13
+            // 
+            roundedButton13.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton13.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton13.BorderColor = Color.PaleVioletRed;
+            roundedButton13.BorderRadius = 8;
+            roundedButton13.BorderSize = 0;
+            roundedButton13.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton13.FlatStyle = FlatStyle.Flat;
+            roundedButton13.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton13.ForeColor = Color.White;
+            roundedButton13.Location = new Point(329, 145);
+            roundedButton13.Margin = new Padding(3, 4, 3, 4);
+            roundedButton13.Name = "roundedButton13";
+            roundedButton13.Size = new Size(117, 35);
+            roundedButton13.TabIndex = 23;
+            roundedButton13.Text = "Khóa";
+            roundedButton13.TextColor = Color.White;
+            roundedButton13.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(236, 89);
+            label3.Name = "label3";
+            label3.Size = new Size(90, 29);
+            label3.TabIndex = 18;
+            label3.Text = "Giá tiền";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(229, 1, 17);
+            label4.Location = new Point(236, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(123, 37);
+            label4.TabIndex = 17;
+            label4.Text = "Tên món";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(-48, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(259, 226);
+            pictureBox3.TabIndex = 2;
+            pictureBox3.TabStop = false;
+            // 
             // MonAn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1212, 660);
+            Controls.Add(metroPanel5);
             Controls.Add(roundedButton15);
             Controls.Add(roundedButton10);
             Controls.Add(btn_signInForm);
             Controls.Add(metroTile1);
-            Controls.Add(metroPanel5);
             Controls.Add(metroPanel1);
             Name = "MonAn";
             Style = MetroFramework.MetroColorStyle.White;
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            metroTile1.ResumeLayout(false);
+            metroTile1.PerformLayout();
             metroPanel5.ResumeLayout(false);
             metroPanel9.ResumeLayout(false);
             metroPanel9.PerformLayout();
@@ -841,8 +843,6 @@ namespace WinFormsApp2
             metroPanel3.ResumeLayout(false);
             metroPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            metroTile1.ResumeLayout(false);
-            metroTile1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -855,30 +855,25 @@ namespace WinFormsApp2
         private RoundedButton roundedButton6;
         private RoundedButton roundedButton5;
         private RoundedButton roundedButton4;
-        private MetroFramework.Controls.MetroPanel metroPanel5;
         private MetroFramework.Controls.MetroPanel metroPanel7;
         private MetroFramework.Controls.MetroTile metroTile1;
         private RoundedButton btn_signInForm;
         private RoundedButton roundedButton10;
-        private MetroFramework.Controls.MetroPanel metroPanel3;
-        private Label label3;
-        private Label label4;
-        private PictureBox pictureBox3;
         private RoundedButton roundedButton15;
         private Button button1;
-        private RoundedButton roundedButton1;
+        private MetroFramework.Controls.MetroPanel metroPanel5;
         private MetroFramework.Controls.MetroPanel metroPanel9;
-        private RoundedButton roundedButton13;
+        private RoundedButton roundedButton11;
         private Label label12;
         private Label label13;
         private PictureBox pictureBox7;
         private MetroFramework.Controls.MetroPanel metroPanel8;
-        private RoundedButton roundedButton12;
+        private RoundedButton roundedButton1;
         private Label label10;
         private Label label11;
         private PictureBox pictureBox6;
         private MetroFramework.Controls.MetroPanel metroPanel6;
-        private RoundedButton roundedButton11;
+        private RoundedButton roundedButton2;
         private Label label8;
         private Label label9;
         private PictureBox pictureBox5;
@@ -888,9 +883,14 @@ namespace WinFormsApp2
         private Label label6;
         private PictureBox pictureBox4;
         private MetroFramework.Controls.MetroPanel metroPanel2;
-        private RoundedButton roundedButton2;
+        private RoundedButton roundedButton12;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
+        private MetroFramework.Controls.MetroPanel metroPanel3;
+        private RoundedButton roundedButton13;
+        private Label label3;
+        private Label label4;
+        private PictureBox pictureBox3;
     }
 }
