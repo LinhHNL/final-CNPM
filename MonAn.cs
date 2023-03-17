@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WinFormsApp2
 {
@@ -138,6 +139,24 @@ namespace WinFormsApp2
             SignInForm signUpForm = new SignInForm();
             signUpForm.ShowDialog();
             this.Close();
+        }
+        
+        private void MonAn_Load_1(object sender, EventArgs e)
+        {
+
+            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-QJ172GF0\\SQLEXPRESS; Initial Catalog = haidilao; Integrated Security = True");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
+            
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    
+                        panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+
+                }
+            }
         }
     }
 }

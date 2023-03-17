@@ -64,5 +64,10 @@ namespace WinFormsApp2.AdminPage
                 MessageBox.Show("Bị lỗi update hình");
             }
         }
+
+        private void btn_placeholderlabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -7,6 +7,9 @@
     <Compile Update="AdminPage\SelectedAdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Components\MonAnComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CustomControls\myblacklayout.cs">
       <SubType>UserControl</SubType>
     </Compile>

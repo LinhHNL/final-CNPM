@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj": {}
+    "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj": {
+    "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
+        "projectUniqueName": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj",
         "projectName": "WinFormsApp2",
-        "projectPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\obj\\",
+        "projectPath": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +43,10 @@
             "MetroModernUI": {
               "target": "Package",
               "version": "[1.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -64,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
