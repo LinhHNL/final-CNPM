@@ -65,7 +65,7 @@ namespace WinFormsApp2.AdminPage
             }
         }
 
-        private void btn_placeholderlabel_Click(object sender, EventArgs e)
+        private void roundedButton1_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj": {}
+    "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj": {}
   },
   "projects": {
-    "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj": {
+    "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj",
+        "projectUniqueName": "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj",
         "projectName": "WinFormsApp2",
-        "projectPath": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\WinFormsApp2.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\ASSIGNMENT TDTU\\HK 2 Nam 2\\SOFTWARE\\CUOIKI\\doancuoikyCNPM\\obj\\",
+        "projectPath": "D:\\tdt\\CNPM\\cuoiki\\WinFormsApp2.csproj",
+        "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+        "outputPath": "D:\\tdt\\CNPM\\cuoiki\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
-        "originalTargetFrameworks": [
-          "net6.0-windows"
-        ],
+        "originalTargetFrameworks": ["net6.0-windows"],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
@@ -31,9 +29,7 @@
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         }
       },
       "frameworks": {
@@ -68,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

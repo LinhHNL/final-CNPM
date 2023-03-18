@@ -34,7 +34,7 @@
             // textBox1
             // 
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Dock = DockStyle.Fill;
+            textBox1.Dock = DockStyle.Top;
             textBox1.Location = new Point(10, 7);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(230, 18);
