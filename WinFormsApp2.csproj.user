@@ -7,17 +7,23 @@
     <Compile Update="AdminPage\SelectedAdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CustomControls\CustomComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\LeftAlignRoundedTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CustomControls\myblacklayout.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CustomControls\RoundedButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="CustomControls\RoundedTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="CustomControls\MyTextbox.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="CustomControls\RoundedTextBox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="HomepageFormSingle.cs">
       <SubType>Form</SubType>
