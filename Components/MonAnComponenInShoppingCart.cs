@@ -14,31 +14,25 @@ namespace WinFormsApp2.Components
     {
         private String Tenmon = "";
         private String Giamon = "";
-        private int soluong = 0;
         private int index = 0;
+        private int SoLuong = 0;
         public MonAnComponenInShoppingCart()
         {
             InitializeComponent();
         }
         
-        public MonAnComponenInShoppingCart(MonAnComponent item, List<MonAnComponenInShoppingCart> list)
+        public MonAnComponenInShoppingCart(string TenMon,int SoLuong,String GiaMon, List<MonAnComponent> list)
         {
+            // Set index
             index = list.Count;
             //Set số lượng
-            if (soluong == 0)
-            {
-                Tenmon= item.getGiaMon();
-                Giamon= item.getTenMon();
-                this.soluong = 1;
-            }
-            else
-            {
-                this.soluong = this.soluong++;
-            }
+            this.Tenmon = TenMon;
+            this.Giamon = GiaMon;
+            this.SoLuong = SoLuong;
             InitializeComponent();
-            lbl_TenMon.Text = Tenmon;
-            lbl_SoLuong.Text = soluong.ToString();
-            lbl_price.Text = Giamon;
+            lbl_TenMon.Text = this.Tenmon;
+            lbl_SoLuong.Text = this.SoLuong.ToString();
+            lbl_price.Text = this.Giamon;
 
         }
 

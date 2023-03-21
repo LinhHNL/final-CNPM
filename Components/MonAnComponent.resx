@@ -58,6 +58,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="add_them_soluong.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnAwINOjLPmi9rAAAAtUlEQVRIS+2VQQrCMBREAz1ydW/1
+        cvUKBXda7+AmziNfyg9aCmnARR7MJj/MLJJJwhZijJ10kWbTmTUblyOzo5TT27gcmV2Tp2O0cTkym5Kn
+        Y7JxOZglT0cLWMAseTr+JEAbKRH3nKt4+6GXlMPat70Ir4PUEUBDazEQQPVr8awdcCeAh6sWp88hcyB7
+        HvIo9dK2F1cbW5PXwSx5OlrAgsyqf5n0JGfXT58y0viHaWDNxiuE8AZVZ9Lh8l7Y0AAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAIAAAB7GkOtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS

@@ -35,7 +35,7 @@
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             lbl_returnplace = new Label();
             lbl_heading = new Label();
-            panel1 = new Panel();
+            pnl_hienthimonan = new Panel();
             lbl_description = new Label();
             panel2 = new Panel();
             PB_Delicon = new PictureBox();
@@ -133,12 +133,12 @@
             lbl_heading.TabIndex = 2;
             lbl_heading.Text = "Món ăn tôi chọn";
             // 
-            // panel1
+            // pnl_hienthimonan
             // 
-            panel1.Location = new Point(-2, 203);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1045, 218);
-            panel1.TabIndex = 25;
+            pnl_hienthimonan.Location = new Point(-2, 203);
+            pnl_hienthimonan.Name = "pnl_hienthimonan";
+            pnl_hienthimonan.Size = new Size(1045, 218);
+            pnl_hienthimonan.TabIndex = 25;
             // 
             // lbl_description
             // 
@@ -187,12 +187,13 @@
             ClientSize = new Size(1042, 565);
             Controls.Add(panel2);
             Controls.Add(lbl_description);
-            Controls.Add(panel1);
+            Controls.Add(pnl_hienthimonan);
             Controls.Add(metroPanel1);
             Controls.Add(pictureBox1);
             Controls.Add(roundedButton10);
             Controls.Add(btn_signInForm);
             Name = "ShoppingCartForm";
+            Load += ShoppingCartForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
@@ -211,7 +212,7 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private Label lbl_returnplace;
         private Label lbl_heading;
-        private Panel panel1;
+        private Panel pnl_hienthimonan;
         private Label lbl_description;
         private Panel panel2;
         private Label lbl_deleteAll;

@@ -140,23 +140,34 @@ namespace WinFormsApp2
             signUpForm.ShowDialog();
             this.Close();
         }
-        
+
         private void MonAn_Load_1(object sender, EventArgs e)
         {
 
             SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
-            
+
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 while (reader.Read())
                 {
-                    
-                        panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
 
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
                 }
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "20000"));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "20000"));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "20000"));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "20000"));
             }
+        }
+
+        private void btn_ChangetoForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShoppingCartForm ShoppingCartForm = new ShoppingCartForm();
+            ShoppingCartForm.ShowDialog();
+            this.Close();
         }
     }
 }

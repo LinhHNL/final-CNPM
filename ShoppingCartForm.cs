@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2.Components;
 
 namespace WinFormsApp2
 {
@@ -15,6 +16,18 @@ namespace WinFormsApp2
         public ShoppingCartForm()
         {
             InitializeComponent();
+        }
+
+        private void ShoppingCartForm_Load(object sender, EventArgs e)
+        {
+            List <MonAnComponent> listdachon= StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList;
+            MessageBox.Show(listdachon.Count().ToString());
+            // MessageBox.Show(listdachon.Count().ToString());
+            foreach (MonAnComponent i in listdachon)
+            {
+                MessageBox.Show(i.getTenMon());
+                pnl_hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getTenMon(),i.getSoLuong(),i.getGiaMon(),listdachon));
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace WinFormsApp2.Components
     {
         private String TenMon = "";
         private String GiaMon = "";
+        private int Soluongdaadd = 0;
         public MonAnComponent()
         {
             InitializeComponent();
@@ -23,7 +24,7 @@ namespace WinFormsApp2.Components
         {
             InitializeComponent();
             TenMon = ten;
-            GiaMon = gia;  
+            GiaMon = gia;
             lbl_ten.Text = ten;
             lbl_gia.Text = gia;
         }
@@ -34,6 +35,19 @@ namespace WinFormsApp2.Components
         public String getGiaMon()
         {
             return GiaMon;
+        }
+        public int getSoLuong()
+        {
+            return Soluongdaadd;
+        }
+        public void TangSoLuong()
+        {
+            this.Soluongdaadd+=1;
+        }
+        private void add_them_soluong_Click(object sender, EventArgs e)
+        {
+            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Add(this);
+
         }
     }
 }

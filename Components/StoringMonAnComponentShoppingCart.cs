@@ -8,13 +8,22 @@ namespace WinFormsApp2.Components
 {
     internal class StoringMonAnComponentShoppingCart
     {   
-        private List <MonAnComponenInShoppingCart> StoringMonAnComponentShoppingCartList = new List<MonAnComponenInShoppingCart>();
+        public static List <MonAnComponent> StoringMonAnComponentShoppingCartList = new List<MonAnComponent>();
     
-        public void Add(MonAnComponenInShoppingCart item)
+        public void Add(MonAnComponent item)
         {
-            StoringMonAnComponentShoppingCartList.Add(item);
+            MessageBox.Show(StoringMonAnComponentShoppingCartList.Contains(item).ToString());
+            if (StoringMonAnComponentShoppingCartList.Contains(item)) 
+            {
+                MonAnComponent itemcantang = StoringMonAnComponentShoppingCartList.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
+                itemcantang.TangSoLuong();
+            }
+            else {
+                item.TangSoLuong();
+                StoringMonAnComponentShoppingCartList.Add(item);
+            }
         }
-        public void Delete(MonAnComponenInShoppingCart item)
+        public void Delete(MonAnComponent item)
         {
             StoringMonAnComponentShoppingCartList.Remove(item);
         }
@@ -26,7 +35,7 @@ namespace WinFormsApp2.Components
         {
             return StoringMonAnComponentShoppingCartList.Count();
         }
-        public List<MonAnComponenInShoppingCart> getStoringMonAnComponentShoppingCartList()
+        public List<MonAnComponent> getStoringMonAnComponentShoppingCartList()
         {
             return StoringMonAnComponentShoppingCartList;
         }
