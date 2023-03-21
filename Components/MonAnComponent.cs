@@ -42,7 +42,7 @@ namespace WinFormsApp2.Components
         }
         public void TangSoLuong()
         {
-            this.Soluongdaadd+=1;
+            this.Soluongdaadd++;
         }
         private void add_them_soluong_Click(object sender, EventArgs e)
         {

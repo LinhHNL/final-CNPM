@@ -20,13 +20,13 @@ namespace WinFormsApp2
 
         private void ShoppingCartForm_Load(object sender, EventArgs e)
         {
-            List <MonAnComponent> listdachon= StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList;
-            MessageBox.Show(listdachon.Count().ToString());
+            List<MonAnComponent> listdachon = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList;
+            List<MonAnComponent> listdaxuly=new List<MonAnComponent>();
             // MessageBox.Show(listdachon.Count().ToString());
             foreach (MonAnComponent i in listdachon)
             {
-                MessageBox.Show(i.getTenMon());
-                pnl_hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getTenMon(),i.getSoLuong(),i.getGiaMon(),listdachon));
+                listdaxuly.Add(i);
+                flp_Hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getTenMon(), i.getSoLuong(), i.getGiaMon(), listdaxuly));
             }
         }
     }

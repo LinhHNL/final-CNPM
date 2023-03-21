@@ -24,7 +24,7 @@ namespace WinFormsApp2.Components
         public MonAnComponenInShoppingCart(string TenMon,int SoLuong,String GiaMon, List<MonAnComponent> list)
         {
             // Set index
-            index = list.Count;
+            index = list.Count();
             //Set số lượng
             this.Tenmon = TenMon;
             this.Giamon = GiaMon;

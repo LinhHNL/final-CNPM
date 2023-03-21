@@ -35,11 +35,11 @@
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             lbl_returnplace = new Label();
             lbl_heading = new Label();
-            pnl_hienthimonan = new Panel();
             lbl_description = new Label();
             panel2 = new Panel();
             PB_Delicon = new PictureBox();
             lbl_deleteAll = new Label();
+            flp_Hienthimonan = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -133,13 +133,6 @@
             lbl_heading.TabIndex = 2;
             lbl_heading.Text = "Món ăn tôi chọn";
             // 
-            // pnl_hienthimonan
-            // 
-            pnl_hienthimonan.Location = new Point(-2, 203);
-            pnl_hienthimonan.Name = "pnl_hienthimonan";
-            pnl_hienthimonan.Size = new Size(1045, 218);
-            pnl_hienthimonan.TabIndex = 25;
-            // 
             // lbl_description
             // 
             lbl_description.AutoSize = true;
@@ -180,14 +173,21 @@
             lbl_deleteAll.TabIndex = 28;
             lbl_deleteAll.Text = "Xóa hết";
             // 
+            // flp_Hienthimonan
+            // 
+            flp_Hienthimonan.Location = new Point(-2, 203);
+            flp_Hienthimonan.Name = "flp_Hienthimonan";
+            flp_Hienthimonan.Size = new Size(1045, 289);
+            flp_Hienthimonan.TabIndex = 28;
+            // 
             // ShoppingCartForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1042, 565);
+            Controls.Add(flp_Hienthimonan);
             Controls.Add(panel2);
             Controls.Add(lbl_description);
-            Controls.Add(pnl_hienthimonan);
             Controls.Add(metroPanel1);
             Controls.Add(pictureBox1);
             Controls.Add(roundedButton10);
@@ -212,10 +212,10 @@
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private Label lbl_returnplace;
         private Label lbl_heading;
-        private Panel pnl_hienthimonan;
         private Label lbl_description;
         private Panel panel2;
         private Label lbl_deleteAll;
         private PictureBox PB_Delicon;
+        private FlowLayoutPanel flp_Hienthimonan;
     }
 }
