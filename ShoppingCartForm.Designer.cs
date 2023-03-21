@@ -175,6 +175,7 @@
             // 
             // flp_Hienthimonan
             // 
+            flp_Hienthimonan.AutoScroll = true;
             flp_Hienthimonan.Location = new Point(-2, 203);
             flp_Hienthimonan.Name = "flp_Hienthimonan";
             flp_Hienthimonan.Size = new Size(1045, 289);

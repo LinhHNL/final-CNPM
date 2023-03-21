@@ -46,8 +46,7 @@ namespace WinFormsApp2.Components
         }
         private void add_them_soluong_Click(object sender, EventArgs e)
         {
-            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Add(this);
-
+            StoringMonAnComponentShoppingCart.Add(this);
         }
     }
 }

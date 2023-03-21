@@ -9,16 +9,17 @@ namespace WinFormsApp2.Components
     internal class StoringMonAnComponentShoppingCart
     {   
         public static List <MonAnComponent> StoringMonAnComponentShoppingCartList = new List<MonAnComponent>();
-    
-        public void Add(MonAnComponent item)
+
+        public static void Add(MonAnComponent item)
         {
-            MessageBox.Show(StoringMonAnComponentShoppingCartList.Contains(item).ToString());
-            if (StoringMonAnComponentShoppingCartList.Contains(item)) 
+            if (StoringMonAnComponentShoppingCartList.Contains(item))
             {
-                MonAnComponent itemcantang = StoringMonAnComponentShoppingCartList.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
-                itemcantang.TangSoLuong();
+                //MonAnComponent itemcantang = StoringMonAnComponentShoppingCartList.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
+                //itemcantang.TangSoLuong();
+                StoringMonAnComponentShoppingCartList.Find(x => x.getTenMon().Equals(item.getTenMon())).TangSoLuong();
             }
-            else {
+            else
+            {
                 item.TangSoLuong();
                 StoringMonAnComponentShoppingCartList.Add(item);
             }

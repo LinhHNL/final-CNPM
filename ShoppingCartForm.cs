@@ -21,7 +21,7 @@ namespace WinFormsApp2
         private void ShoppingCartForm_Load(object sender, EventArgs e)
         {
             List<MonAnComponent> listdachon = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList;
-            List<MonAnComponent> listdaxuly=new List<MonAnComponent>();
+            List<MonAnComponent> listdaxuly = new List<MonAnComponent>();
             // MessageBox.Show(listdachon.Count().ToString());
             foreach (MonAnComponent i in listdachon)
             {

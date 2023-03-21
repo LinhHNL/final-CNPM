@@ -97,9 +97,9 @@
             // lbl_SoLuong
             // 
             lbl_SoLuong.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_SoLuong.Location = new Point(895, 15);
+            lbl_SoLuong.Location = new Point(917, 15);
             lbl_SoLuong.Name = "lbl_SoLuong";
-            lbl_SoLuong.Size = new Size(98, 75);
+            lbl_SoLuong.Size = new Size(65, 75);
             lbl_SoLuong.TabIndex = 22;
             lbl_SoLuong.Text = "Số lượng";
             // 

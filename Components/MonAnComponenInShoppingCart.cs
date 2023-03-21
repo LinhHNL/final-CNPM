@@ -20,8 +20,8 @@ namespace WinFormsApp2.Components
         {
             InitializeComponent();
         }
-        
-        public MonAnComponenInShoppingCart(string TenMon,int SoLuong,String GiaMon, List<MonAnComponent> list)
+
+        public MonAnComponenInShoppingCart(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list)
         {
             // Set index
             index = list.Count();

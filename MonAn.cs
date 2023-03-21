@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using WinFormsApp2.Components;
 
 namespace WinFormsApp2
 {
@@ -169,5 +170,7 @@ namespace WinFormsApp2
             ShoppingCartForm.ShowDialog();
             this.Close();
         }
+
+
     }
 }
