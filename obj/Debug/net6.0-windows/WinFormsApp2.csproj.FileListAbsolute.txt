@@ -59,3 +59,17 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.LockFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.UpdateFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.UpdateFoodForm.resources
+<<<<<<< Updated upstream
+=======
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddComboFoodForm.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponent.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.LeftAlignRoundedTextBox.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.ShoppingCartForm.resources
+>>>>>>> Stashed changes
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponenInShoppingCart.resources

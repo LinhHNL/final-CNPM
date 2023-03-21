@@ -144,7 +144,7 @@ namespace WinFormsApp2
         private void MonAn_Load_1(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-QJ172GF0\\SQLEXPRESS; Initial Catalog = haidilao; Integrated Security = True");
+            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
             

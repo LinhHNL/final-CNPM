@@ -13,6 +13,18 @@
     <Compile Update="AdminPage\SelectedAdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AdminPage\UpdateFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AdminPage\UpdateFoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\MonAnComponent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Components\MonAnComponenInShoppingCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CustomControls\CustomComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -35,6 +47,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ShoppingCartForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SignInForm.cs">

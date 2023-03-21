@@ -12,6 +12,8 @@ namespace WinFormsApp2.Components
 {
     public partial class MonAnComponent : UserControl
     {
+        private String TenMon = "";
+        private String GiaMon = "";
         public MonAnComponent()
         {
             InitializeComponent();
@@ -20,8 +22,18 @@ namespace WinFormsApp2.Components
         public MonAnComponent(String ten, String gia)
         {
             InitializeComponent();
+            TenMon = ten;
+            GiaMon = gia;  
             lbl_ten.Text = ten;
             lbl_gia.Text = gia;
+        }
+        public String getTenMon()
+        {
+            return TenMon;
+        }
+        public String getGiaMon()
+        {
+            return GiaMon;
         }
     }
 }

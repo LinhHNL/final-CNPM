@@ -54,7 +54,7 @@ namespace WinFormsApp2
             btn_leftDoublePot = new MetroFramework.Controls.MetroTile();
             roundedButton2 = new RoundedButton();
             btn_rightDoublePot = new MetroFramework.Controls.MetroTile();
-            metroPanel2 = new MetroFramework.Controls.MetroPanel();
+            panel_monan_view = new MetroFramework.Controls.MetroPanel();
             roundedButton11 = new RoundedButton();
             label2 = new Label();
             label1 = new Label();
@@ -97,7 +97,7 @@ namespace WinFormsApp2
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel_doublePot.SuspendLayout();
             btn_leftDoublePot.SuspendLayout();
-            metroPanel2.SuspendLayout();
+            panel_monan_view.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             metroPanel5.SuspendLayout();
             metroPanel8.SuspendLayout();
@@ -536,24 +536,24 @@ namespace WinFormsApp2
             btn_rightDoublePot.UseVisualStyleBackColor = false;
             btn_rightDoublePot.Click += btn_rightDoublePot_Click;
             // 
-            // metroPanel2
+            // panel_monan_view
             // 
-            metroPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            metroPanel2.Controls.Add(roundedButton11);
-            metroPanel2.Controls.Add(label2);
-            metroPanel2.Controls.Add(label1);
-            metroPanel2.Controls.Add(pictureBox2);
-            metroPanel2.HorizontalScrollbar = true;
-            metroPanel2.HorizontalScrollbarBarColor = true;
-            metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel2.HorizontalScrollbarSize = 10;
-            metroPanel2.Location = new Point(0, 0);
-            metroPanel2.Name = "metroPanel2";
-            metroPanel2.Size = new Size(455, 188);
-            metroPanel2.TabIndex = 16;
-            metroPanel2.VerticalScrollbarBarColor = true;
-            metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel2.VerticalScrollbarSize = 10;
+            panel_monan_view.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel_monan_view.Controls.Add(roundedButton11);
+            panel_monan_view.Controls.Add(label2);
+            panel_monan_view.Controls.Add(label1);
+            panel_monan_view.Controls.Add(pictureBox2);
+            panel_monan_view.HorizontalScrollbar = true;
+            panel_monan_view.HorizontalScrollbarBarColor = true;
+            panel_monan_view.HorizontalScrollbarHighlightOnWheel = false;
+            panel_monan_view.HorizontalScrollbarSize = 10;
+            panel_monan_view.Location = new Point(0, 0);
+            panel_monan_view.Name = "panel_monan_view";
+            panel_monan_view.Size = new Size(455, 188);
+            panel_monan_view.TabIndex = 16;
+            panel_monan_view.VerticalScrollbarBarColor = true;
+            panel_monan_view.VerticalScrollbarHighlightOnWheel = false;
+            panel_monan_view.VerticalScrollbarSize = 10;
             // 
             // roundedButton11
             // 
@@ -612,7 +612,7 @@ namespace WinFormsApp2
             metroPanel5.Controls.Add(metroPanel8);
             metroPanel5.Controls.Add(metroPanel4);
             metroPanel5.Controls.Add(metroPanel3);
-            metroPanel5.Controls.Add(metroPanel2);
+            metroPanel5.Controls.Add(panel_monan_view);
             metroPanel5.HorizontalScrollbar = true;
             metroPanel5.HorizontalScrollbarBarColor = true;
             metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
@@ -1170,12 +1170,13 @@ namespace WinFormsApp2
             Controls.Add(btn_singlePot);
             Name = "HomepageFormSingle";
             Style = MetroFramework.MetroColorStyle.White;
+            Load += HomepageFormSingle_Load;
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel_doublePot.ResumeLayout(false);
             btn_leftDoublePot.ResumeLayout(false);
-            metroPanel2.ResumeLayout(false);
-            metroPanel2.PerformLayout();
+            panel_monan_view.ResumeLayout(false);
+            panel_monan_view.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             metroPanel5.ResumeLayout(false);
             metroPanel8.ResumeLayout(false);
@@ -1210,7 +1211,7 @@ namespace WinFormsApp2
         private RoundedButton roundedButton6;
         private RoundedButton roundedButton5;
         private RoundedButton roundedButton4;
-        private MetroFramework.Controls.MetroPanel metroPanel2;
+        private MetroFramework.Controls.MetroPanel panel_monan_view;
         private PictureBox pictureBox2;
         private Label label2;
         private Label label1;
