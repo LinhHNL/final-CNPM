@@ -36,6 +36,22 @@ namespace WinFormsApp2.Components
 
         }
 
+        private void add_them_soluong_Click(object sender, EventArgs e)
+        {
+            MonAnComponent monancantang = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList[index - 1];
+            monancantang.TangSoLuong();
+            lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+        }
 
+        private void btn_giamsoluong_Click(object sender, EventArgs e)
+        {
+            MonAnComponent monancantang = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList[index - 1];
+            if (monancantang.getSoLuong() == 1)
+            {
+                return;
+            }
+            monancantang.GiamSoLuong();
+            lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+        }
     }
 }

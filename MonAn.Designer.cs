@@ -41,11 +41,11 @@ namespace WinFormsApp2
             roundedButton4 = new RoundedButton();
             pictureBox1 = new PictureBox();
             metroTile1 = new MetroFramework.Controls.MetroTile();
-            button1 = new Button();
             btn_signInForm = new RoundedButton();
             roundedButton10 = new RoundedButton();
             btn_ChangetoForm = new RoundedButton();
             panel_monan_1 = new FlowLayoutPanel();
+            lbl_priceshow = new Label();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroTile1.SuspendLayout();
@@ -219,7 +219,7 @@ namespace WinFormsApp2
             // 
             metroTile1.ActiveControl = null;
             metroTile1.BackColor = Color.Black;
-            metroTile1.Controls.Add(button1);
+            metroTile1.Controls.Add(lbl_priceshow);
             metroTile1.FlatAppearance.BorderColor = Color.Black;
             metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
             metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
@@ -235,25 +235,6 @@ namespace WinFormsApp2
             metroTile1.UseSelectable = true;
             metroTile1.UseStyleColors = true;
             metroTile1.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.AutoSize = true;
-            button1.BackColor = Color.Black;
-            button1.FlatAppearance.BorderColor = Color.Black;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.ImageAlign = ContentAlignment.TopRight;
-            button1.Location = new Point(392, 11);
-            button1.Name = "button1";
-            button1.Size = new Size(356, 45);
-            button1.TabIndex = 2;
-            button1.Text = "đ 0";
-            button1.TextAlign = ContentAlignment.TopRight;
-            button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button1.UseVisualStyleBackColor = false;
             // 
             // btn_signInForm
             // 
@@ -324,6 +305,18 @@ namespace WinFormsApp2
             panel_monan_1.Size = new Size(935, 493);
             panel_monan_1.TabIndex = 22;
             // 
+            // lbl_priceshow
+            // 
+            lbl_priceshow.BackColor = Color.Black;
+            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_priceshow.ForeColor = Color.White;
+            lbl_priceshow.Location = new Point(490, 18);
+            lbl_priceshow.Name = "lbl_priceshow";
+            lbl_priceshow.Size = new Size(254, 25);
+            lbl_priceshow.TabIndex = 0;
+            lbl_priceshow.Text = "10.000đ";
+            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // MonAn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -341,7 +334,6 @@ namespace WinFormsApp2
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             metroTile1.ResumeLayout(false);
-            metroTile1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -359,7 +351,7 @@ namespace WinFormsApp2
         private RoundedButton btn_signInForm;
         private RoundedButton roundedButton10;
         private RoundedButton btn_ChangetoForm;
-        private Button button1;
         private FlowLayoutPanel panel_monan_1;
+        private Label lbl_priceshow;
     }
 }

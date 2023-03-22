@@ -32,7 +32,7 @@
             lbl_TenMon = new Label();
             lbl_price = new Label();
             add_them_soluong = new CustomControls.RoundedButton();
-            roundedButton1 = new CustomControls.RoundedButton();
+            btn_giamsoluong = new CustomControls.RoundedButton();
             lbl_SoLuong = new Label();
             SuspendLayout();
             // 
@@ -73,26 +73,28 @@
             add_them_soluong.TabIndex = 20;
             add_them_soluong.TextColor = Color.White;
             add_them_soluong.UseVisualStyleBackColor = false;
+            add_them_soluong.Click += add_them_soluong_Click;
             // 
-            // roundedButton1
+            // btn_giamsoluong
             // 
-            roundedButton1.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton1.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton1.BackgroundImage = (Image)resources.GetObject("roundedButton1.BackgroundImage");
-            roundedButton1.BackgroundImageLayout = ImageLayout.Center;
-            roundedButton1.BorderColor = Color.Transparent;
-            roundedButton1.BorderRadius = 18;
-            roundedButton1.BorderSize = 0;
-            roundedButton1.FlatAppearance.BorderSize = 0;
-            roundedButton1.FlatStyle = FlatStyle.Flat;
-            roundedButton1.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton1.ForeColor = Color.White;
-            roundedButton1.Location = new Point(853, 15);
-            roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(36, 36);
-            roundedButton1.TabIndex = 21;
-            roundedButton1.TextColor = Color.White;
-            roundedButton1.UseVisualStyleBackColor = false;
+            btn_giamsoluong.BackColor = Color.FromArgb(229, 1, 17);
+            btn_giamsoluong.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_giamsoluong.BackgroundImage = (Image)resources.GetObject("btn_giamsoluong.BackgroundImage");
+            btn_giamsoluong.BackgroundImageLayout = ImageLayout.Center;
+            btn_giamsoluong.BorderColor = Color.Transparent;
+            btn_giamsoluong.BorderRadius = 18;
+            btn_giamsoluong.BorderSize = 0;
+            btn_giamsoluong.FlatAppearance.BorderSize = 0;
+            btn_giamsoluong.FlatStyle = FlatStyle.Flat;
+            btn_giamsoluong.Font = new Font("Calibri", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_giamsoluong.ForeColor = Color.White;
+            btn_giamsoluong.Location = new Point(853, 15);
+            btn_giamsoluong.Name = "btn_giamsoluong";
+            btn_giamsoluong.Size = new Size(36, 36);
+            btn_giamsoluong.TabIndex = 21;
+            btn_giamsoluong.TextColor = Color.White;
+            btn_giamsoluong.UseVisualStyleBackColor = false;
+            btn_giamsoluong.Click += btn_giamsoluong_Click;
             // 
             // lbl_SoLuong
             // 
@@ -108,7 +110,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(lbl_SoLuong);
-            Controls.Add(roundedButton1);
+            Controls.Add(btn_giamsoluong);
             Controls.Add(add_them_soluong);
             Controls.Add(lbl_price);
             Controls.Add(lbl_TenMon);
@@ -123,7 +125,7 @@
         private Label lbl_price;
         private System.CodeDom.CodeTypeReference btn_addmoreitem;
         private CustomControls.RoundedButton add_them_soluong;
-        private CustomControls.RoundedButton roundedButton1;
+        private CustomControls.RoundedButton btn_giamsoluong;
         private Label lbl_SoLuong;
     }
 }

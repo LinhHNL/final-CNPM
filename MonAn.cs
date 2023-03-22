@@ -170,7 +170,15 @@ namespace WinFormsApp2
             ShoppingCartForm.ShowDialog();
             this.Close();
         }
-
+        public void Updateprice()
+        {
+            int price = 0;
+            foreach(MonAnComponent i in StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList)
+            {
+                price += Int16.Parse(i.getGiaMon());
+            }
+            lbl_priceshow.Text = price.ToString();
+        }
 
     }
 }
