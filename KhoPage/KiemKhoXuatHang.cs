@@ -22,5 +22,9 @@ namespace WinFormsApp2.KhoPage
             dgv_XuatHang.Rows.Add("0", "asd", "asd");
         }
 
+        private void KiemKhoXuatHang_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

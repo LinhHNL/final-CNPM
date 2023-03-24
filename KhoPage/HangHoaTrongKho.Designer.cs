@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2.KhoPage
 {
-    partial class KiemKhoXuatHang
+    partial class HangHoaTrongKho
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KiemKhoXuatHang));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HangHoaTrongKho));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton7 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton6 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.roundedButtonNhapHang = new WinFormsApp2.CustomControls.RoundedButton();
+            this.roundedButtonXuatHang = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton5 = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton4 = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,6 +54,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.roundedButton3 = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -66,8 +68,8 @@
             this.metroPanel1.Controls.Add(this.label4);
             this.metroPanel1.Controls.Add(this.pictureBox2);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.roundedButton7);
-            this.metroPanel1.Controls.Add(this.roundedButton6);
+            this.metroPanel1.Controls.Add(this.roundedButtonNhapHang);
+            this.metroPanel1.Controls.Add(this.roundedButtonXuatHang);
             this.metroPanel1.Controls.Add(this.roundedButton5);
             this.metroPanel1.Controls.Add(this.roundedButton4);
             this.metroPanel1.Controls.Add(this.pictureBox1);
@@ -116,45 +118,47 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // roundedButton7
+            // roundedButtonNhapHang
             // 
-            this.roundedButton7.BackColor = System.Drawing.Color.White;
-            this.roundedButton7.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton7.BorderRadius = 0;
-            this.roundedButton7.BorderSize = 0;
-            this.roundedButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.Location = new System.Drawing.Point(-1, 302);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton7.TabIndex = 18;
-            this.roundedButton7.Text = "Cập nhật món ăn";
-            this.roundedButton7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.UseVisualStyleBackColor = false;
+            this.roundedButtonNhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.roundedButtonNhapHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.roundedButtonNhapHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.roundedButtonNhapHang.BorderRadius = 0;
+            this.roundedButtonNhapHang.BorderSize = 0;
+            this.roundedButtonNhapHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButtonNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonNhapHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButtonNhapHang.ForeColor = System.Drawing.Color.Black;
+            this.roundedButtonNhapHang.Location = new System.Drawing.Point(-1, 302);
+            this.roundedButtonNhapHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButtonNhapHang.Name = "roundedButtonNhapHang";
+            this.roundedButtonNhapHang.Size = new System.Drawing.Size(263, 64);
+            this.roundedButtonNhapHang.TabIndex = 18;
+            this.roundedButtonNhapHang.Text = "Nhập hàng";
+            this.roundedButtonNhapHang.TextColor = System.Drawing.Color.Black;
+            this.roundedButtonNhapHang.UseVisualStyleBackColor = false;
+            this.roundedButtonNhapHang.Visible = false;
             // 
-            // roundedButton6
+            // roundedButtonXuatHang
             // 
-            this.roundedButton6.BackColor = System.Drawing.Color.White;
-            this.roundedButton6.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton6.BorderRadius = 0;
-            this.roundedButton6.BorderSize = 0;
-            this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton6.Location = new System.Drawing.Point(-1, 243);
-            this.roundedButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(264, 64);
-            this.roundedButton6.TabIndex = 17;
-            this.roundedButton6.Text = "Khóa món ăn";
-            this.roundedButton6.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton6.UseVisualStyleBackColor = false;
+            this.roundedButtonXuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.roundedButtonXuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.roundedButtonXuatHang.BorderColor = System.Drawing.Color.Silver;
+            this.roundedButtonXuatHang.BorderRadius = 0;
+            this.roundedButtonXuatHang.BorderSize = 0;
+            this.roundedButtonXuatHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButtonXuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButtonXuatHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButtonXuatHang.ForeColor = System.Drawing.Color.Black;
+            this.roundedButtonXuatHang.Location = new System.Drawing.Point(-1, 243);
+            this.roundedButtonXuatHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButtonXuatHang.Name = "roundedButtonXuatHang";
+            this.roundedButtonXuatHang.Size = new System.Drawing.Size(264, 64);
+            this.roundedButtonXuatHang.TabIndex = 17;
+            this.roundedButtonXuatHang.Text = "Xuất hàng";
+            this.roundedButtonXuatHang.TextColor = System.Drawing.Color.Black;
+            this.roundedButtonXuatHang.UseVisualStyleBackColor = false;
+            this.roundedButtonXuatHang.Visible = false;
             // 
             // roundedButton5
             // 
@@ -172,14 +176,14 @@
             this.roundedButton5.Name = "roundedButton5";
             this.roundedButton5.Size = new System.Drawing.Size(262, 60);
             this.roundedButton5.TabIndex = 16;
-            this.roundedButton5.Text = "Thêm món ăn";
+            this.roundedButton5.Text = "Hàng trong kho";
             this.roundedButton5.TextColor = System.Drawing.Color.White;
             this.roundedButton5.UseVisualStyleBackColor = false;
             // 
             // roundedButton4
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.roundedButton4.BackColor = System.Drawing.Color.White;
+            this.roundedButton4.BackgroundColor = System.Drawing.Color.White;
             this.roundedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundedButton4.BorderRadius = 0;
             this.roundedButton4.BorderSize = 0;
@@ -192,9 +196,10 @@
             this.roundedButton4.Name = "roundedButton4";
             this.roundedButton4.Size = new System.Drawing.Size(262, 56);
             this.roundedButton4.TabIndex = 16;
-            this.roundedButton4.Text = "Thêm combo món ăn";
+            this.roundedButton4.Text = "Kiểm kho";
             this.roundedButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.roundedButton4.UseVisualStyleBackColor = false;
+            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
             // 
             // pictureBox1
             // 
@@ -204,6 +209,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // roundedButton10
             // 
@@ -271,7 +277,7 @@
             this.btn_PhieuXuatHang.Name = "btn_PhieuXuatHang";
             this.btn_PhieuXuatHang.Size = new System.Drawing.Size(175, 35);
             this.btn_PhieuXuatHang.TabIndex = 30;
-            this.btn_PhieuXuatHang.Text = "+ Phiếu xuất hàng";
+            this.btn_PhieuXuatHang.Text = "Xuất file";
             this.btn_PhieuXuatHang.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_PhieuXuatHang.UseVisualStyleBackColor = false;
             // 
@@ -282,37 +288,37 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle9;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(381, 153);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.metroGrid1.RowHeadersWidth = 51;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 29;
@@ -323,48 +329,48 @@
             // dgv_XuatHang
             // 
             this.dgv_XuatHang.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
-            this.dgv_XuatHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.dgv_XuatHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_XuatHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_XuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dgv_XuatHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_XuatHang.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgv_XuatHang.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_XuatHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_XuatHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_XuatHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_XuatHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_XuatHang.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_XuatHang.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgv_XuatHang.EnableHeadersVisualStyles = false;
             this.dgv_XuatHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgv_XuatHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
             this.dgv_XuatHang.Location = new System.Drawing.Point(282, 125);
             this.dgv_XuatHang.Name = "dgv_XuatHang";
             this.dgv_XuatHang.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_XuatHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_XuatHang.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgv_XuatHang.RowHeadersVisible = false;
             this.dgv_XuatHang.RowHeadersWidth = 51;
             this.dgv_XuatHang.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -372,6 +378,7 @@
             this.dgv_XuatHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_XuatHang.Size = new System.Drawing.Size(877, 324);
             this.dgv_XuatHang.TabIndex = 32;
+            this.dgv_XuatHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_XuatHang_CellContentClick);
             // 
             // Column1
             // 
@@ -394,11 +401,53 @@
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
-            // KiemKhoXuatHang
+            // roundedButton2
+            // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.roundedButton2.BorderRadius = 8;
+            this.roundedButton2.BorderSize = 1;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.Location = new System.Drawing.Point(803, 80);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(175, 35);
+            this.roundedButton2.TabIndex = 33;
+            this.roundedButton2.Text = "Thêm";
+            this.roundedButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton3
+            // 
+            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.roundedButton3.BorderRadius = 8;
+            this.roundedButton3.BorderSize = 1;
+            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton3.Location = new System.Drawing.Point(622, 80);
+            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton3.Name = "roundedButton3";
+            this.roundedButton3.Size = new System.Drawing.Size(175, 35);
+            this.roundedButton3.TabIndex = 34;
+            this.roundedButton3.Text = "Xóa";
+            this.roundedButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton3.UseVisualStyleBackColor = false;
+            // 
+            // HangHoaTrongKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
+            this.Controls.Add(this.roundedButton3);
+            this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.dgv_XuatHang);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.btn_PhieuXuatHang);
@@ -406,8 +455,7 @@
             this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.roundedButton10);
             this.Controls.Add(this.metroPanel1);
-            this.Name = "KiemKhoXuatHang";
-            this.Load += new System.EventHandler(this.KiemKhoXuatHang_Load);
+            this.Name = "HangHoaTrongKho";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -423,8 +471,8 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton roundedButton7;
-        private CustomControls.RoundedButton roundedButton6;
+        private CustomControls.RoundedButton roundedButtonNhapHang;
+        private CustomControls.RoundedButton roundedButtonXuatHang;
         private CustomControls.RoundedButton roundedButton5;
         private CustomControls.RoundedButton roundedButton4;
         private PictureBox pictureBox1;
@@ -439,5 +487,7 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
+        private CustomControls.RoundedButton roundedButton2;
+        private CustomControls.RoundedButton roundedButton3;
     }
 }
