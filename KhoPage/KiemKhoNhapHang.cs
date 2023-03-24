@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace WinFormsApp2.KhoPage
 {
-    public partial class KiemKhoXuatHang : MetroFramework.Forms.MetroForm
+    public partial class KiemKhoNhapHang : MetroFramework.Forms.MetroForm
     {
-        public KiemKhoXuatHang()
+        public KiemKhoNhapHang()
         {
             InitializeComponent();
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
+            dgv_NhapHang.Rows.Add("0", "asd", "asd");
+            dgv_NhapHang.Rows.Add("0", "asd", "asd");
+            dgv_NhapHang.Rows.Add("0", "asd", "asd");
+            dgv_NhapHang.Rows.Add("0", "asd", "asd");
+            dgv_NhapHang.Rows.Add("0", "asd", "asd");
         }
 
         private void btn_PhieuXuatHang_Click(object sender, EventArgs e)

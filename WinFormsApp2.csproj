@@ -27,6 +27,27 @@
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />
     <Compile Update="AdminPage\AddComboFood.cs" />
+    <Compile Update="KhoPage\KiemKhoSuaPhieuNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoSuaPhieuXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoTaoPhieuNhapHang .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoXemPhieuNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoXemPhieuXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhoPage\KiemKhoNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MonAn.cs" />
   </ItemGroup>
 
