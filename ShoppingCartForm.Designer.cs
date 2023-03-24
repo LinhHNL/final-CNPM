@@ -40,6 +40,9 @@
             PB_Delicon = new PictureBox();
             lbl_deleteAll = new Label();
             flp_Hienthimonan = new FlowLayoutPanel();
+            lbl_priceshowheading = new Label();
+            lbl_priceshow = new Label();
+            btn_submitfood = new CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -121,6 +124,7 @@
             lbl_returnplace.Size = new Size(110, 28);
             lbl_returnplace.TabIndex = 3;
             lbl_returnplace.Text = "Quay lại >";
+            lbl_returnplace.Click += lbl_returnplace_Click;
             // 
             // lbl_heading
             // 
@@ -181,11 +185,55 @@
             flp_Hienthimonan.Size = new Size(1045, 289);
             flp_Hienthimonan.TabIndex = 28;
             // 
+            // lbl_priceshowheading
+            // 
+            lbl_priceshowheading.AutoSize = true;
+            lbl_priceshowheading.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_priceshowheading.ForeColor = Color.FromArgb(229, 1, 17);
+            lbl_priceshowheading.Location = new Point(23, 513);
+            lbl_priceshowheading.Name = "lbl_priceshowheading";
+            lbl_priceshowheading.Size = new Size(124, 32);
+            lbl_priceshowheading.TabIndex = 3;
+            lbl_priceshowheading.Text = "Tổng tiền";
+            // 
+            // lbl_priceshow
+            // 
+            lbl_priceshow.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_priceshow.Location = new Point(374, 504);
+            lbl_priceshow.Name = "lbl_priceshow";
+            lbl_priceshow.Size = new Size(433, 50);
+            lbl_priceshow.TabIndex = 29;
+            lbl_priceshow.Text = "Giá tiền";
+            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // btn_submitfood
+            // 
+            btn_submitfood.BackColor = Color.FromArgb(229, 1, 17);
+            btn_submitfood.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_submitfood.BorderColor = Color.PaleVioletRed;
+            btn_submitfood.BorderRadius = 8;
+            btn_submitfood.BorderSize = 0;
+            btn_submitfood.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_submitfood.FlatStyle = FlatStyle.Flat;
+            btn_submitfood.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_submitfood.ForeColor = Color.White;
+            btn_submitfood.Location = new Point(813, 504);
+            btn_submitfood.Margin = new Padding(3, 4, 3, 4);
+            btn_submitfood.Name = "btn_submitfood";
+            btn_submitfood.Size = new Size(184, 55);
+            btn_submitfood.TabIndex = 20;
+            btn_submitfood.Text = "Đặt món ăn";
+            btn_submitfood.TextColor = Color.White;
+            btn_submitfood.UseVisualStyleBackColor = false;
+            // 
             // ShoppingCartForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1042, 565);
+            Controls.Add(btn_submitfood);
+            Controls.Add(lbl_priceshow);
+            Controls.Add(lbl_priceshowheading);
             Controls.Add(flp_Hienthimonan);
             Controls.Add(panel2);
             Controls.Add(lbl_description);
@@ -218,5 +266,8 @@
         private Label lbl_deleteAll;
         private PictureBox PB_Delicon;
         private FlowLayoutPanel flp_Hienthimonan;
+        private Label lbl_priceshowheading;
+        private Label lbl_priceshow;
+        private CustomControls.RoundedButton btn_submitfood;
     }
 }

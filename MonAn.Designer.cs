@@ -41,11 +41,11 @@ namespace WinFormsApp2
             roundedButton4 = new RoundedButton();
             pictureBox1 = new PictureBox();
             metroTile1 = new MetroFramework.Controls.MetroTile();
+            lbl_priceshow = new Label();
             btn_signInForm = new RoundedButton();
             roundedButton10 = new RoundedButton();
             btn_ChangetoForm = new RoundedButton();
             panel_monan_1 = new FlowLayoutPanel();
-            lbl_priceshow = new Label();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroTile1.SuspendLayout();
@@ -236,6 +236,18 @@ namespace WinFormsApp2
             metroTile1.UseStyleColors = true;
             metroTile1.UseVisualStyleBackColor = false;
             // 
+            // lbl_priceshow
+            // 
+            lbl_priceshow.BackColor = Color.Black;
+            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_priceshow.ForeColor = Color.White;
+            lbl_priceshow.Location = new Point(490, 18);
+            lbl_priceshow.Name = "lbl_priceshow";
+            lbl_priceshow.Size = new Size(254, 25);
+            lbl_priceshow.TabIndex = 0;
+            lbl_priceshow.Text = "0đ";
+            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
+            // 
             // btn_signInForm
             // 
             btn_signInForm.BackColor = Color.FromArgb(229, 1, 17);
@@ -304,18 +316,6 @@ namespace WinFormsApp2
             panel_monan_1.Name = "panel_monan_1";
             panel_monan_1.Size = new Size(935, 493);
             panel_monan_1.TabIndex = 22;
-            // 
-            // lbl_priceshow
-            // 
-            lbl_priceshow.BackColor = Color.Black;
-            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_priceshow.ForeColor = Color.White;
-            lbl_priceshow.Location = new Point(490, 18);
-            lbl_priceshow.Name = "lbl_priceshow";
-            lbl_priceshow.Size = new Size(254, 25);
-            lbl_priceshow.TabIndex = 0;
-            lbl_priceshow.Text = "10.000đ";
-            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
             // 
             // MonAn
             // 
