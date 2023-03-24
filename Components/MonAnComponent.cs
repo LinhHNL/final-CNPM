@@ -15,6 +15,7 @@ namespace WinFormsApp2.Components
         private String TenMon = "";
         private String GiaMon = "";
         private int Soluongdaadd = 0;
+        private MonAn Context;
         public MonAnComponent()
         {
             InitializeComponent();
@@ -24,6 +25,16 @@ namespace WinFormsApp2.Components
         {
             InitializeComponent();
             TenMon = ten;
+            GiaMon = gia;
+            lbl_ten.Text = ten;
+            lbl_gia.Text = gia;
+        }
+
+        public MonAnComponent(String ten, String gia, MonAn context)
+        {
+            InitializeComponent();
+            TenMon = ten;
+            Context = context;
             GiaMon = gia;
             lbl_ten.Text = ten;
             lbl_gia.Text = gia;
@@ -51,8 +62,7 @@ namespace WinFormsApp2.Components
         private void add_them_soluong_Click(object sender, EventArgs e)
         {
             StoringMonAnComponentShoppingCart.Add(this);
-            MonAn monandoigia = new MonAn();
-            monandoigia.Updateprice();
+            Context.Updateprice();
         }
 
     }
