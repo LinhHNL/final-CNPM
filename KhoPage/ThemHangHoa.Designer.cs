@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemHangHoa));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButtonNhapHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButtonXuatHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton5 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton4 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButtonLuu = new WinFormsApp2.CustomControls.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,157 +42,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
+            this.btn_NhapHang = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_XuatHang = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_HangTrongKho = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_KiemKho = new WinFormsApp2.CustomControls.RoundedButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Controls.Add(this.label4);
-            this.metroPanel1.Controls.Add(this.pictureBox2);
-            this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.roundedButtonNhapHang);
-            this.metroPanel1.Controls.Add(this.roundedButtonXuatHang);
-            this.metroPanel1.Controls.Add(this.roundedButton5);
-            this.metroPanel1.Controls.Add(this.roundedButton4);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 37);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(259, 570);
-            this.metroPanel1.TabIndex = 17;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // metroPanel7
-            // 
-            this.metroPanel7.BackColor = System.Drawing.Color.Black;
-            this.metroPanel7.HorizontalScrollbarBarColor = true;
-            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 10;
-            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
-            this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
-            this.metroPanel7.TabIndex = 20;
-            this.metroPanel7.VerticalScrollbarBarColor = true;
-            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 10;
-            // 
-            // roundedButtonNhapHang
-            // 
-            this.roundedButtonNhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.roundedButtonNhapHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.roundedButtonNhapHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButtonNhapHang.BorderRadius = 0;
-            this.roundedButtonNhapHang.BorderSize = 0;
-            this.roundedButtonNhapHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButtonNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtonNhapHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButtonNhapHang.ForeColor = System.Drawing.Color.Black;
-            this.roundedButtonNhapHang.Location = new System.Drawing.Point(-1, 302);
-            this.roundedButtonNhapHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButtonNhapHang.Name = "roundedButtonNhapHang";
-            this.roundedButtonNhapHang.Size = new System.Drawing.Size(263, 64);
-            this.roundedButtonNhapHang.TabIndex = 18;
-            this.roundedButtonNhapHang.Text = "Nhập hàng";
-            this.roundedButtonNhapHang.TextColor = System.Drawing.Color.Black;
-            this.roundedButtonNhapHang.UseVisualStyleBackColor = false;
-            this.roundedButtonNhapHang.Visible = false;
-            // 
-            // roundedButtonXuatHang
-            // 
-            this.roundedButtonXuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.roundedButtonXuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.roundedButtonXuatHang.BorderColor = System.Drawing.Color.Silver;
-            this.roundedButtonXuatHang.BorderRadius = 0;
-            this.roundedButtonXuatHang.BorderSize = 0;
-            this.roundedButtonXuatHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButtonXuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButtonXuatHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButtonXuatHang.ForeColor = System.Drawing.Color.Black;
-            this.roundedButtonXuatHang.Location = new System.Drawing.Point(-1, 243);
-            this.roundedButtonXuatHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButtonXuatHang.Name = "roundedButtonXuatHang";
-            this.roundedButtonXuatHang.Size = new System.Drawing.Size(264, 64);
-            this.roundedButtonXuatHang.TabIndex = 17;
-            this.roundedButtonXuatHang.Text = "Xuất hàng";
-            this.roundedButtonXuatHang.TextColor = System.Drawing.Color.Black;
-            this.roundedButtonXuatHang.UseVisualStyleBackColor = false;
-            this.roundedButtonXuatHang.Visible = false;
-            // 
-            // roundedButton5
-            // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton5.BorderRadius = 0;
-            this.roundedButton5.BorderSize = 0;
-            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton5.ForeColor = System.Drawing.Color.White;
-            this.roundedButton5.Location = new System.Drawing.Point(0, 130);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(262, 60);
-            this.roundedButton5.TabIndex = 16;
-            this.roundedButton5.Text = "Hàng trong kho";
-            this.roundedButton5.TextColor = System.Drawing.Color.White;
-            this.roundedButton5.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton4
-            // 
-            this.roundedButton4.BackColor = System.Drawing.Color.White;
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton4.BorderRadius = 0;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton4.Location = new System.Drawing.Point(0, 189);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(262, 56);
-            this.roundedButton4.TabIndex = 16;
-            this.roundedButton4.Text = "Kiểm kho";
-            this.roundedButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton4.UseVisualStyleBackColor = false;
-            this.roundedButton4.Click += new System.EventHandler(this.roundedButton4_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // roundedButton10
             // 
@@ -413,11 +266,159 @@
             this.label7.TabIndex = 39;
             this.label7.Text = "Số lượng:";
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.label4);
+            this.metroPanel1.Controls.Add(this.pictureBox2);
+            this.metroPanel1.Controls.Add(this.metroPanel7);
+            this.metroPanel1.Controls.Add(this.btn_NhapHang);
+            this.metroPanel1.Controls.Add(this.btn_XuatHang);
+            this.metroPanel1.Controls.Add(this.btn_HangTrongKho);
+            this.metroPanel1.Controls.Add(this.btn_KiemKho);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(11, 37);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(259, 570);
+            this.metroPanel1.TabIndex = 40;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.label4.Location = new System.Drawing.Point(70, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 28);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Tên tài khoản";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // metroPanel7
+            // 
+            this.metroPanel7.BackColor = System.Drawing.Color.Black;
+            this.metroPanel7.HorizontalScrollbarBarColor = true;
+            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.HorizontalScrollbarSize = 10;
+            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
+            this.metroPanel7.Name = "metroPanel7";
+            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
+            this.metroPanel7.TabIndex = 20;
+            this.metroPanel7.VerticalScrollbarBarColor = true;
+            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.VerticalScrollbarSize = 10;
+            // 
+            // btn_NhapHang
+            // 
+            this.btn_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_NhapHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_NhapHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_NhapHang.BorderRadius = 0;
+            this.btn_NhapHang.BorderSize = 0;
+            this.btn_NhapHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_NhapHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_NhapHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_NhapHang.Location = new System.Drawing.Point(-1, 302);
+            this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_NhapHang.Name = "btn_NhapHang";
+            this.btn_NhapHang.Size = new System.Drawing.Size(263, 64);
+            this.btn_NhapHang.TabIndex = 18;
+            this.btn_NhapHang.Text = "Nhập hàng";
+            this.btn_NhapHang.TextColor = System.Drawing.Color.Black;
+            this.btn_NhapHang.UseVisualStyleBackColor = false;
+            this.btn_NhapHang.Visible = false;
+            // 
+            // btn_XuatHang
+            // 
+            this.btn_XuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_XuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_XuatHang.BorderColor = System.Drawing.Color.Silver;
+            this.btn_XuatHang.BorderRadius = 0;
+            this.btn_XuatHang.BorderSize = 0;
+            this.btn_XuatHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_XuatHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_XuatHang.ForeColor = System.Drawing.Color.Black;
+            this.btn_XuatHang.Location = new System.Drawing.Point(-1, 243);
+            this.btn_XuatHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_XuatHang.Name = "btn_XuatHang";
+            this.btn_XuatHang.Size = new System.Drawing.Size(264, 64);
+            this.btn_XuatHang.TabIndex = 17;
+            this.btn_XuatHang.Text = "Xuất hàng";
+            this.btn_XuatHang.TextColor = System.Drawing.Color.Black;
+            this.btn_XuatHang.UseVisualStyleBackColor = false;
+            this.btn_XuatHang.Visible = false;
+            // 
+            // btn_HangTrongKho
+            // 
+            this.btn_HangTrongKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_HangTrongKho.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_HangTrongKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_HangTrongKho.BorderRadius = 0;
+            this.btn_HangTrongKho.BorderSize = 0;
+            this.btn_HangTrongKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_HangTrongKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_HangTrongKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_HangTrongKho.ForeColor = System.Drawing.Color.White;
+            this.btn_HangTrongKho.Location = new System.Drawing.Point(0, 130);
+            this.btn_HangTrongKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_HangTrongKho.Name = "btn_HangTrongKho";
+            this.btn_HangTrongKho.Size = new System.Drawing.Size(262, 60);
+            this.btn_HangTrongKho.TabIndex = 16;
+            this.btn_HangTrongKho.Text = "Hàng trong kho";
+            this.btn_HangTrongKho.TextColor = System.Drawing.Color.White;
+            this.btn_HangTrongKho.UseVisualStyleBackColor = false;
+            // 
+            // btn_KiemKho
+            // 
+            this.btn_KiemKho.BackColor = System.Drawing.Color.White;
+            this.btn_KiemKho.BackgroundColor = System.Drawing.Color.White;
+            this.btn_KiemKho.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_KiemKho.BorderRadius = 0;
+            this.btn_KiemKho.BorderSize = 0;
+            this.btn_KiemKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_KiemKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_KiemKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_KiemKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_KiemKho.Location = new System.Drawing.Point(0, 189);
+            this.btn_KiemKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_KiemKho.Name = "btn_KiemKho";
+            this.btn_KiemKho.Size = new System.Drawing.Size(262, 56);
+            this.btn_KiemKho.TabIndex = 16;
+            this.btn_KiemKho.Text = "Kiểm kho";
+            this.btn_KiemKho.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_KiemKho.UseVisualStyleBackColor = false;
+            this.btn_KiemKho.Click += new System.EventHandler(this.btn_KiemKho_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
+            // 
             // ThemHangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -431,7 +432,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.roundedButtonLuu);
             this.Controls.Add(this.roundedButton10);
-            this.Controls.Add(this.metroPanel1);
             this.Name = "ThemHangHoa";
             this.Load += new System.EventHandler(this.ThemHangHoa_Load_1);
             this.metroPanel1.ResumeLayout(false);
@@ -444,18 +444,8 @@
         }
 
         #endregion
-
-        private MetroFramework.Controls.MetroPanel metroPanel1;
-        private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton roundedButtonNhapHang;
-        private CustomControls.RoundedButton roundedButtonXuatHang;
-        private CustomControls.RoundedButton roundedButton5;
-        private CustomControls.RoundedButton roundedButton4;
-        private PictureBox pictureBox1;
         private CustomControls.RoundedButton roundedButton10;
         private CustomControls.RoundedButton roundedButtonLuu;
-        private PictureBox pictureBox2;
-        private Label label4;
         private Label label1;
         private CustomControls.RoundedTextBox tb_MaHang;
         private Label label2;
@@ -467,5 +457,14 @@
         private Label label5;
         private Label label6;
         private Label label7;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private Label label4;
+        private PictureBox pictureBox2;
+        private MetroFramework.Controls.MetroPanel metroPanel7;
+        private CustomControls.RoundedButton btn_NhapHang;
+        private CustomControls.RoundedButton btn_XuatHang;
+        private CustomControls.RoundedButton btn_HangTrongKho;
+        private CustomControls.RoundedButton btn_KiemKho;
+        private PictureBox pictureBox1;
     }
 }

@@ -21,17 +21,29 @@ namespace WinFormsApp2.KhoPage
         private void roundedButton4_Click(object sender, EventArgs e)
         {
             
-                if (roundedButtonNhapHang.Visible == false)
-                {
-                    roundedButtonNhapHang.Visible = true;
-                    roundedButtonXuatHang.Visible = true;
-                }
-                else
-                {
-                    roundedButtonNhapHang.Visible = false;
-                    roundedButtonXuatHang.Visible = false;
-                }
+                
             
+        }
+        private void btn_KiemKho_Click(object sender, EventArgs e)
+        {
+            btn_HangTrongKho.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_HangTrongKho.BackColor = ColorTranslator.FromHtml("white");
+            btn_KiemKho.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_KiemKho.ForeColor = ColorTranslator.FromHtml("white");
+            if (btn_NhapHang.Visible == false)
+            {
+                btn_NhapHang.Visible = true;
+                btn_XuatHang.Visible = true;
+            }
+            else
+            {
+                btn_NhapHang.Visible = false;
+                btn_XuatHang.Visible = false;
+            }
+            this.Hide();
+            KiemKhoXuatHang form = new KiemKhoXuatHang();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void btn_edit_Click(object sender, EventArgs e)
