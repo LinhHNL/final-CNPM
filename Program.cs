@@ -1,5 +1,6 @@
 using WinFormsApp2;
 using WinFormsApp2.AdminPage;
+using WinFormsApp2.KhoPage;
 
 namespace WinFormsApp1
 {
@@ -14,7 +15,7 @@ namespace WinFormsApp1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MonAn());
+            Application.Run(new KiemKhoXuatHang());
         }
     }
 }
