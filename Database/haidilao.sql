@@ -1,4 +1,4 @@
-use haidilao 
+use haidilao
 go
 CREATE TABLE Level
 (
@@ -63,7 +63,7 @@ CREATE TABLE Position
   FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID)
 );
 
-CREATE TABLE Shifts
+CREATE TABLE Shift
 (
   ShiftID CHAR(11) NOT NULL,
   Name VARCHAR(45) NOT NULL,
@@ -96,7 +96,8 @@ CREATE TABLE Insurance
   Name VARCHAR(45) NOT NULL,
   Fee FLOAT NOT NULL,
   StartDate DATE NOT NULL,
-  Status VARCHAR(45) NOT NULL
+  Status VARCHAR(45) NOT NULL,
+  PRIMARY KEY (InsuranceID)
 );
 
 CREATE TABLE Customers
@@ -131,6 +132,7 @@ CREATE TABLE KindFood
   PRIMARY KEY (KindFoodID),
   FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
 );
+
 CREATE TABLE Commodity
 (
   ComodityID CHAR(11) NOT NULL,
@@ -158,7 +160,6 @@ CREATE TABLE Staff
   NameBank VARCHAR(45) NOT NULL,
   Salary FLOAT NOT NULL,
   Sex VARCHAR(45) NOT NULL,
-  URLIMAGE TEXT NOT NULL,
   Status VARCHAR(45) NOT NULL,
   PositionID CHAR(11) NOT NULL,
   PRIMARY KEY (StaffID),
@@ -227,7 +228,7 @@ CREATE TABLE ArrangeShifts
   ShiftID CHAR(11) NOT NULL,
   PRIMARY KEY (ArrangeShifts),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID),
-  FOREIGN KEY (ShiftID) REFERENCES Shifts(ShiftID)
+  FOREIGN KEY (ShiftID) REFERENCES Shift(ShiftID)
 );
 
 CREATE TABLE Requets
@@ -276,6 +277,20 @@ CREATE TABLE Payroll
   PRIMARY KEY (PayrollID),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID),
   FOREIGN KEY (TimekeepingID) REFERENCES TimekeepingSum(TimekeepingID)
+);
+
+CREATE TABLE SocialInsurance
+(
+  SocialInsurance CHAR(11) NOT NULL,
+  StartDateSI INT NOT NULL,
+  EndDateSI INT NOT NULL,
+  CodeSI INT NOT NULL,
+  StartDateHI INT NOT NULL,
+  EndDateHI INT NOT NULL,
+  CodeHI INT NOT NULL,
+  StaffID CHAR(11) NOT NULL,
+  PRIMARY KEY (SocialInsurance),
+  FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
 );
 
 CREATE TABLE Menu
