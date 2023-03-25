@@ -3,17 +3,17 @@ go
 CREATE TABLE Level
 (
   LevelID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Description VARCHAR(50) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   PRIMARY KEY (LevelID)
 );
 
 CREATE TABLE Promotion
 (
   PromotionID CHAR(11) NOT NULL,
-  Name VARCHAR(50) NOT NULL,
+  Name NVARCHAR(50) NOT NULL,
   Discount FLOAT NOT NULL,
-  Description VARCHAR(50) NOT NULL,
+  Description TEXT NOT NULL,
   Starttime DATE NOT NULL,
   EndTime DATE NOT NULL,
   PRIMARY KEY (PromotionID)
@@ -22,14 +22,14 @@ CREATE TABLE Promotion
 CREATE TABLE Room
 (
   RoomID CHAR(11) NOT NULL,
-  Name VARCHAR(50) NOT NULL,
-  Description VARCHAR(50) NOT NULL,
+  Name NVARCHAR(50) NOT NULL,
+  Description TEXT NOT NULL,
   PRIMARY KEY (RoomID)
 );
 
 CREATE TABLE PromotionDetailForLevel
 (
-  Description VARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   LevelID CHAR(11) NOT NULL,
   PromotionID CHAR(11) NOT NULL,
   PRIMARY KEY (LevelID, PromotionID),
@@ -40,24 +40,24 @@ CREATE TABLE PromotionDetailForLevel
 CREATE TABLE Unit
 (
   UnitID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Description VARCHAR(50) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   PRIMARY KEY (UnitID)
 );
 
 CREATE TABLE Department
 (
   DepartmentID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Description VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   PRIMARY KEY (DepartmentID)
 );
 
 CREATE TABLE Position
 (
   PositionID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Desciption VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Desciption NVARCHAR(45) NOT NULL,
   DepartmentID CHAR(11) NOT NULL,
   PRIMARY KEY (PositionID),
   FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID)
@@ -66,7 +66,7 @@ CREATE TABLE Position
 CREATE TABLE Shift
 (
   ShiftID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
   StartTime DATE NOT NULL,
   EndTime DATE NOT NULL,
   PRIMARY KEY (ShiftID)
@@ -75,17 +75,17 @@ CREATE TABLE Shift
 CREATE TABLE RequestType
 (
   RequestTypeID CHAR(11) NOT NULL,
-  Name VARCHAR(50) NOT NULL,
-  MaxNumber VARCHAR(50) NOT NULL,
-  Description VARCHAR(50) NOT NULL,
+  Name NVARCHAR(50) NOT NULL,
+  MaxNumber NVARCHAR(50) NOT NULL,
+  Description TEXT NOT NULL,
   PRIMARY KEY (RequestTypeID)
 );
 
 CREATE TABLE Allowance
 (
   AllowanceID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Description VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   Bonus FLOAT NOT NULL,
   PRIMARY KEY (AllowanceID)
 );
@@ -93,20 +93,20 @@ CREATE TABLE Allowance
 CREATE TABLE Insurance
 (
   InsuranceID INT NOT NULL,
-  Name VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
   Fee FLOAT NOT NULL,
   StartDate DATE NOT NULL,
-  Status VARCHAR(45) NOT NULL,
+  Status NVARCHAR(45) NOT NULL,
   PRIMARY KEY (InsuranceID)
 );
 
 CREATE TABLE Customers
 (
   CustormerID CHAR(10) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Phone VARCHAR(45) NOT NULL,
-  Address VARCHAR(45) NOT NULL,
-  Password VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Phone NVARCHAR(45) NOT NULL,
+  Address NVARCHAR(45) NOT NULL,
+  Password NVARCHAR(45) NOT NULL,
   Point INT NOT NULL,
   LevelID CHAR(11) NOT NULL,
   PRIMARY KEY (CustormerID),
@@ -126,8 +126,8 @@ CREATE TABLE Transactions
 CREATE TABLE KindFood
 (
   KindFoodID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Description VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   RoomID CHAR(11) NOT NULL,
   PRIMARY KEY (KindFoodID),
   FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
@@ -136,9 +136,9 @@ CREATE TABLE KindFood
 CREATE TABLE Commodity
 (
   ComodityID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
   Number FLOAT NOT NULL,
-  Description VARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   UnitID CHAR(11) NOT NULL,
   PRIMARY KEY (ComodityID),
   FOREIGN KEY (UnitID) REFERENCES Unit(UnitID)
@@ -147,20 +147,21 @@ CREATE TABLE Commodity
 CREATE TABLE Staff
 (
   StaffID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
   Dateofbirth DATE NOT NULL,
-  Nationality VARCHAR(45) NOT NULL,
+  Nationality NVARCHAR(45) NOT NULL,
   Phone CHAR(10) NOT NULL,
   identityCard CHAR(45) NOT NULL,
   DateIdentityCard DATE NOT NULL,
-  PlaceidentityCard VARCHAR(45) NOT NULL,
-  CurrentAddress VARCHAR(45) NOT NULL,
-  PermanentAddress VARCHAR(45) NOT NULL,
+  PlaceidentityCard NVARCHAR(45) NOT NULL,
+  CurrentAddress NVARCHAR(45) NOT NULL,
+  PermanentAddress NVARCHAR(45) NOT NULL,
   BankID CHAR(45) NOT NULL,
-  NameBank VARCHAR(45) NOT NULL,
+  URLImage TEXT NOT NULL,
+  NameBank NVARCHAR(45) NOT NULL,
   Salary FLOAT NOT NULL,
-  Sex VARCHAR(45) NOT NULL,
-  Status VARCHAR(45) NOT NULL,
+  Sex NVARCHAR(45) NOT NULL,
+  Status NVARCHAR(45) NOT NULL,
   PositionID CHAR(11) NOT NULL,
   PRIMARY KEY (StaffID),
   FOREIGN KEY (PositionID) REFERENCES Position(PositionID)
@@ -168,8 +169,8 @@ CREATE TABLE Staff
 
 CREATE TABLE ImportOrders
 (
-  ImportOrderID INT NOT NULL,
-  Name INT NOT NULL,
+  ImportOrderID CHAR(11) NOT NULL,
+  Name NVARCHAR(50) NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PRIMARY KEY (ImportOrderID),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
@@ -178,7 +179,7 @@ CREATE TABLE ImportOrders
 CREATE TABLE ImportOrdersDetails
 (
   Number FLOAT NOT NULL,
-  ImportOrderID INT NOT NULL,
+  ImportOrderID CHAR(11) NOT NULL,
   ComodityID CHAR(11) NOT NULL,
   PRIMARY KEY (ImportOrderID, ComodityID),
   FOREIGN KEY (ImportOrderID) REFERENCES ImportOrders(ImportOrderID),
@@ -190,7 +191,7 @@ CREATE TABLE WorkProgress
   WorkProgressID CHAR(11) NOT NULL,
   StartDate DATE NOT NULL,
   EndDate DATE NOT NULL,
-  Description VARCHAR(45) NOT NULL,
+  Description TEXT NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PositionID CHAR(11) NOT NULL,
   PRIMARY KEY (WorkProgressID),
@@ -201,9 +202,9 @@ CREATE TABLE WorkProgress
 CREATE TABLE FamilyRelationship
 (
   FamilyRelationshipID CHAR(11) NOT NULL,
-  Name VARCHAR(45) NOT NULL,
-  Relationship VARCHAR(45) NOT NULL,
-  Sex VARCHAR(45) NOT NULL,
+  Name NVARCHAR(45) NOT NULL,
+  Relationship NVARCHAR(45) NOT NULL,
+  Sex NVARCHAR(45) NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PRIMARY KEY (FamilyRelationshipID),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
@@ -212,8 +213,8 @@ CREATE TABLE FamilyRelationship
 CREATE TABLE Account
 (
   AccountID CHAR(11) NOT NULL,
-  Username VARCHAR(45) NOT NULL,
-  Password VARCHAR(45) NOT NULL,
+  Username NVARCHAR(45) NOT NULL,
+  Password NVARCHAR(45) NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PRIMARY KEY (AccountID),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
@@ -221,8 +222,8 @@ CREATE TABLE Account
 
 CREATE TABLE ArrangeShifts
 (
-  Date INT NOT NULL,
-  Status INT NOT NULL,
+  DateArrangeShifts Date NOT NULL,
+  Status NVARCHAR(50) NOT NULL,
   ArrangeShifts CHAR(11) NOT NULL,
   StaffID CHAR(11) NOT NULL,
   ShiftID CHAR(11) NOT NULL,
@@ -234,8 +235,8 @@ CREATE TABLE ArrangeShifts
 CREATE TABLE Requets
 (
   RequestID CHAR(11) NOT NULL,
-  Date DATE NOT NULL,
-  Description INT NOT NULL,
+  DateRequets DATE NOT NULL,
+  Description Text NOT NULL,
   StaffID CHAR(11) NOT NULL,
   RequestTypeID CHAR(11) NOT NULL,
   PRIMARY KEY (RequestID),
@@ -247,10 +248,10 @@ CREATE TABLE TimekeepingSum
 (
   TimekeepingID CHAR(11) NOT NULL,
   ActualWT FLOAT NOT NULL,
-  Date DATE NOT NULL,
+  DateTimekeeping DATE NOT NULL,
   TheCalendarWT FLOAT NOT NULL,
-  Deduction INT NOT NULL,
-  Locked INT NOT NULL,
+  Deduction FLOAT NOT NULL,
+  Locked bit NOT NULL,
   DateLocked DATE NOT NULL,
   StaffID CHAR(11) NOT NULL,
   ArrangeShifts CHAR(11) NOT NULL,
@@ -265,7 +266,7 @@ CREATE TABLE Payroll
   TimeHourW FLOAT NOT NULL,
   NDAYOFF INT NOT NULL,
   Bonus FLOAT NOT NULL,
-  Overtime INT NOT NULL,
+  Overtime FLOAT NOT NULL,
   TotalSalary FLOAT NOT NULL,
   Tax FLOAT NOT NULL,
   SocialInsurance FLOAT NOT NULL,
@@ -282,12 +283,12 @@ CREATE TABLE Payroll
 CREATE TABLE SocialInsurance
 (
   SocialInsurance CHAR(11) NOT NULL,
-  StartDateSI INT NOT NULL,
-  EndDateSI INT NOT NULL,
-  CodeSI INT NOT NULL,
-  StartDateHI INT NOT NULL,
-  EndDateHI INT NOT NULL,
-  CodeHI INT NOT NULL,
+  StartDateSI date NOT NULL,
+  EndDateSI date NOT NULL,
+  CodeSI CHAR(11) NOT NULL,
+  StartDateHI date NOT NULL,
+  EndDateHI date NOT NULL,
+  CodeHI CHAR(11) NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PRIMARY KEY (SocialInsurance),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
@@ -295,11 +296,11 @@ CREATE TABLE SocialInsurance
 
 CREATE TABLE Menu
 (
-  MenuID INT NOT NULL,
-  Name INT NOT NULL,
-  Price INT NOT NULL,
+  MenuID CHAR(11) NOT NULL,
+  Name NVARCHAR(50) NOT NULL,
+  Price Float NOT NULL,
   Point INT NOT NULL,
-  URLImage INT NOT NULL,
+  URLImage TEXT NOT NULL,
   KindFoodID CHAR(11) NOT NULL,
   PRIMARY KEY (MenuID),
   FOREIGN KEY (KindFoodID) REFERENCES KindFood(KindFoodID)
@@ -307,8 +308,8 @@ CREATE TABLE Menu
 
 CREATE TABLE ExportOrders
 (
-  ExportOrderID INT NOT NULL,
-  Date INT NOT NULL,
+  ExportOrderID CHAR(11) NOT NULL,
+  DateExportOrders DAte NOT NULL,
   StaffID CHAR(11) NOT NULL,
   PRIMARY KEY (ExportOrderID),
   FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
@@ -317,7 +318,7 @@ CREATE TABLE ExportOrders
 CREATE TABLE MaterialsDetails
 (
   Number FLOAT NOT NULL,
-  MenuID INT NOT NULL,
+  MenuID CHAR(11) NOT NULL,
   ComodityID CHAR(11) NOT NULL,
   PRIMARY KEY (MenuID, ComodityID),
   FOREIGN KEY (MenuID) REFERENCES Menu(MenuID),
@@ -328,18 +329,17 @@ CREATE TABLE ExportOrdersDetails
 (
   Number FLOAT NOT NULL,
   ComodityID CHAR(11) NOT NULL,
-  ExportOrderID INT NOT NULL,
+  ExportOrderID CHAR(11) NOT NULL,
   PRIMARY KEY (ComodityID, ExportOrderID),
   FOREIGN KEY (ComodityID) REFERENCES Commodity(ComodityID),
   FOREIGN KEY (ExportOrderID) REFERENCES ExportOrders(ExportOrderID)
 );
-
 CREATE TABLE TransactionDetail
 (
   Number INT NOT NULL,
   Price FLOAT NOT NULL,
   TransactionID CHAR(11) NOT NULL,
-  MenuID INT NOT NULL,
+  MenuID CHAR(11) NOT NULL,
   PRIMARY KEY (TransactionID, MenuID),
   FOREIGN KEY (TransactionID) REFERENCES Transactions(TransactionID),
   FOREIGN KEY (MenuID) REFERENCES Menu(MenuID)
