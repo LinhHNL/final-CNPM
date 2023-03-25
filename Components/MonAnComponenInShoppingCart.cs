@@ -16,12 +16,13 @@ namespace WinFormsApp2.Components
         private String Giamon = "";
         private int index = 0;
         private int SoLuong = 0;
+        private ShoppingCartForm context;
         public MonAnComponenInShoppingCart()
         {
             InitializeComponent();
         }
 
-        public MonAnComponenInShoppingCart(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list)
+        public MonAnComponenInShoppingCart(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list, ShoppingCartForm context)
         {
             // Set index
             index = list.Count();
@@ -33,7 +34,7 @@ namespace WinFormsApp2.Components
             lbl_TenMon.Text = this.Tenmon;
             lbl_SoLuong.Text = this.SoLuong.ToString();
             lbl_price.Text = this.Giamon;
-
+            this.context = context;
         }
 
         private void add_them_soluong_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace WinFormsApp2.Components
             MonAnComponent monancantang = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList[index - 1];
             monancantang.TangSoLuong();
             lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+            context.UpdatePrice();
         }
 
         private void btn_giamsoluong_Click(object sender, EventArgs e)
@@ -52,6 +54,7 @@ namespace WinFormsApp2.Components
             }
             monancantang.GiamSoLuong();
             lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+            context.UpdatePrice();
         }
     }
 }

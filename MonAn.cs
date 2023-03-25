@@ -15,7 +15,7 @@ namespace WinFormsApp2
 
     public partial class MonAn : MetroFramework.Forms.MetroForm
     {
-
+        private string lbl_showprice = "0 VNĐ";
         public MonAn()
         {
             InitializeComponent();
@@ -145,7 +145,7 @@ namespace WinFormsApp2
         private void MonAn_Load_1(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-NL9HRVVA; Initial Catalog = hadilao; Integrated Security = True");
+            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
 
@@ -156,11 +156,12 @@ namespace WinFormsApp2
 
                     panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
                 }
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "20000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "20000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "20000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "20000", this ));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "5000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
             }
+            this.Updateprice();
         }
 
         private void btn_ChangetoForm_Click(object sender, EventArgs e)
@@ -173,11 +174,21 @@ namespace WinFormsApp2
         public void Updateprice()
         {
             int price = 0;
-            foreach(MonAnComponent i in StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList)
+            int tmpprice = 0;
+            foreach (MonAnComponent i in StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList)
             {
-                price += Int16.Parse(i.getGiaMon());
+                tmpprice = Int32.Parse(i.getGiaMon()) * i.getSoLuong();
+                price += tmpprice;
             }
-            lbl_priceshow.Text = price.ToString();
+            string pricestr = price.ToString();
+            string changestr = "";
+            for (int i = pricestr.Length - 3; i > 0; i -= 3)
+            {
+                changestr = pricestr.Insert(i, ".");
+                pricestr = changestr;
+            }
+            lbl_priceshow.Text = pricestr + " VNĐ";
+            this.lbl_showprice = pricestr + " VNĐ";
         }
 
     }

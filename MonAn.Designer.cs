@@ -40,15 +40,15 @@ namespace WinFormsApp2
             roundedButton5 = new RoundedButton();
             roundedButton4 = new RoundedButton();
             pictureBox1 = new PictureBox();
-            metroTile1 = new MetroFramework.Controls.MetroTile();
+            tile_blacklayout = new MetroFramework.Controls.MetroTile();
+            lbl_priceshow = new Label();
             btn_signInForm = new RoundedButton();
             roundedButton10 = new RoundedButton();
             btn_ChangetoForm = new RoundedButton();
             panel_monan_1 = new FlowLayoutPanel();
-            lbl_priceshow = new Label();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            metroTile1.SuspendLayout();
+            tile_blacklayout.SuspendLayout();
             SuspendLayout();
             // 
             // metroPanel1
@@ -215,26 +215,38 @@ namespace WinFormsApp2
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
-            // metroTile1
+            // tile_blacklayout
             // 
-            metroTile1.ActiveControl = null;
-            metroTile1.BackColor = Color.Black;
-            metroTile1.Controls.Add(lbl_priceshow);
-            metroTile1.FlatAppearance.BorderColor = Color.Black;
-            metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
-            metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
-            metroTile1.FlatStyle = FlatStyle.Flat;
-            metroTile1.Location = new Point(259, 602);
-            metroTile1.Name = "metroTile1";
-            metroTile1.PaintTileCount = false;
-            metroTile1.Size = new Size(753, 66);
-            metroTile1.Style = MetroFramework.MetroColorStyle.Black;
-            metroTile1.TabIndex = 20;
-            metroTile1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            metroTile1.UseCustomBackColor = true;
-            metroTile1.UseSelectable = true;
-            metroTile1.UseStyleColors = true;
-            metroTile1.UseVisualStyleBackColor = false;
+            tile_blacklayout.ActiveControl = null;
+            tile_blacklayout.BackColor = Color.Black;
+            tile_blacklayout.Controls.Add(lbl_priceshow);
+            tile_blacklayout.FlatAppearance.BorderColor = Color.Black;
+            tile_blacklayout.FlatAppearance.MouseDownBackColor = Color.Black;
+            tile_blacklayout.FlatAppearance.MouseOverBackColor = Color.Black;
+            tile_blacklayout.FlatStyle = FlatStyle.Flat;
+            tile_blacklayout.Location = new Point(259, 602);
+            tile_blacklayout.Name = "tile_blacklayout";
+            tile_blacklayout.PaintTileCount = false;
+            tile_blacklayout.Size = new Size(753, 66);
+            tile_blacklayout.Style = MetroFramework.MetroColorStyle.Black;
+            tile_blacklayout.TabIndex = 20;
+            tile_blacklayout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            tile_blacklayout.UseCustomBackColor = true;
+            tile_blacklayout.UseSelectable = true;
+            tile_blacklayout.UseStyleColors = true;
+            tile_blacklayout.UseVisualStyleBackColor = false;
+            // 
+            // lbl_priceshow
+            // 
+            lbl_priceshow.BackColor = Color.Black;
+            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_priceshow.ForeColor = Color.White;
+            lbl_priceshow.Location = new Point(490, 18);
+            lbl_priceshow.Name = "lbl_priceshow";
+            lbl_priceshow.Size = new Size(254, 25);
+            lbl_priceshow.TabIndex = 0;
+            lbl_priceshow.Text = "0đ";
+            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
             // 
             // btn_signInForm
             // 
@@ -305,18 +317,6 @@ namespace WinFormsApp2
             panel_monan_1.Size = new Size(935, 493);
             panel_monan_1.TabIndex = 22;
             // 
-            // lbl_priceshow
-            // 
-            lbl_priceshow.BackColor = Color.Black;
-            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_priceshow.ForeColor = Color.White;
-            lbl_priceshow.Location = new Point(490, 18);
-            lbl_priceshow.Name = "lbl_priceshow";
-            lbl_priceshow.Size = new Size(254, 25);
-            lbl_priceshow.TabIndex = 0;
-            lbl_priceshow.Text = "10.000đ";
-            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
-            // 
             // MonAn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -326,14 +326,14 @@ namespace WinFormsApp2
             Controls.Add(btn_ChangetoForm);
             Controls.Add(roundedButton10);
             Controls.Add(btn_signInForm);
-            Controls.Add(metroTile1);
+            Controls.Add(tile_blacklayout);
             Controls.Add(metroPanel1);
             Name = "MonAn";
             Style = MetroFramework.MetroColorStyle.White;
             Load += MonAn_Load_1;
             metroPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            metroTile1.ResumeLayout(false);
+            tile_blacklayout.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -347,7 +347,7 @@ namespace WinFormsApp2
         private RoundedButton roundedButton5;
         private RoundedButton roundedButton4;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile tile_blacklayout;
         private RoundedButton btn_signInForm;
         private RoundedButton roundedButton10;
         private RoundedButton btn_ChangetoForm;

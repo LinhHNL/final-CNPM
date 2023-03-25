@@ -12,7 +12,7 @@ namespace WinFormsApp2.Components
 
         public static void Add(MonAnComponent item)
         {
-            if (StoringMonAnComponentShoppingCartList.Contains(item))
+            if (StoringMonAnComponentShoppingCartList.Contains(StoringMonAnComponentShoppingCartList.Find(x => x.getTenMon().Equals(item.getTenMon()))))
             {
                 //MonAnComponent itemcantang = StoringMonAnComponentShoppingCartList.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
                 //itemcantang.TangSoLuong();
