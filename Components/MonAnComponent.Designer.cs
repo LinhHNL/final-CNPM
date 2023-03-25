@@ -56,6 +56,7 @@
             metroPanel3.VerticalScrollbarBarColor = true;
             metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             metroPanel3.VerticalScrollbarSize = 10;
+            metroPanel3.Paint += metroPanel3_Paint;
             // 
             // add_them_soluong
             // 
@@ -84,7 +85,7 @@
             lbl_gia.BackColor = Color.White;
             lbl_gia.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_gia.ForeColor = Color.Black;
-            lbl_gia.Location = new Point(236, 89);
+            lbl_gia.Location = new Point(236, 115);
             lbl_gia.Name = "lbl_gia";
             lbl_gia.Size = new Size(90, 29);
             lbl_gia.TabIndex = 18;
@@ -92,13 +93,12 @@
             // 
             // lbl_ten
             // 
-            lbl_ten.AutoSize = true;
             lbl_ten.BackColor = Color.White;
-            lbl_ten.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_ten.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_ten.ForeColor = Color.FromArgb(229, 1, 17);
             lbl_ten.Location = new Point(236, 16);
             lbl_ten.Name = "lbl_ten";
-            lbl_ten.Size = new Size(123, 37);
+            lbl_ten.Size = new Size(204, 89);
             lbl_ten.TabIndex = 17;
             lbl_ten.Text = "Tên món";
             // 

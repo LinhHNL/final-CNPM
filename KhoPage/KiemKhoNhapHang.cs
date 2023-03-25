@@ -29,7 +29,7 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
-        
+
 
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
         {

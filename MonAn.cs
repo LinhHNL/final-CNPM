@@ -160,6 +160,7 @@ namespace WinFormsApp2
                 panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
                 panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
                 panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Come back home, I'm the best", "50000000", this));
             }
             this.Updateprice();
         }

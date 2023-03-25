@@ -36,7 +36,6 @@
             lbl_returnplace = new Label();
             lbl_heading = new Label();
             lbl_description = new Label();
-            panel2 = new Panel();
             PB_Delicon = new PictureBox();
             lbl_deleteAll = new Label();
             flp_Hienthimonan = new FlowLayoutPanel();
@@ -45,7 +44,6 @@
             btn_submitfood = new CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             metroPanel1.SuspendLayout();
-            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PB_Delicon).BeginInit();
             SuspendLayout();
             // 
@@ -148,34 +146,27 @@
             lbl_description.TabIndex = 26;
             lbl_description.Text = "Món ăn";
             // 
-            // panel2
-            // 
-            panel2.Controls.Add(PB_Delicon);
-            panel2.Controls.Add(lbl_deleteAll);
-            panel2.Location = new Point(869, 157);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(150, 40);
-            panel2.TabIndex = 27;
-            // 
             // PB_Delicon
             // 
             PB_Delicon.Image = (Image)resources.GetObject("PB_Delicon.Image");
-            PB_Delicon.Location = new Point(42, 0);
+            PB_Delicon.Location = new Point(902, 157);
             PB_Delicon.Name = "PB_Delicon";
             PB_Delicon.Size = new Size(32, 34);
             PB_Delicon.TabIndex = 24;
             PB_Delicon.TabStop = false;
+            PB_Delicon.Click += PB_Delicon_Click;
             // 
             // lbl_deleteAll
             // 
             lbl_deleteAll.AutoSize = true;
             lbl_deleteAll.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lbl_deleteAll.ForeColor = Color.FromArgb(108, 117, 125);
-            lbl_deleteAll.Location = new Point(71, 0);
+            lbl_deleteAll.Location = new Point(940, 157);
             lbl_deleteAll.Name = "lbl_deleteAll";
             lbl_deleteAll.Size = new Size(79, 28);
             lbl_deleteAll.TabIndex = 28;
             lbl_deleteAll.Text = "Xóa hết";
+            lbl_deleteAll.Click += lbl_deleteAll_Click;
             // 
             // flp_Hienthimonan
             // 
@@ -225,17 +216,19 @@
             btn_submitfood.Text = "Đặt món ăn";
             btn_submitfood.TextColor = Color.White;
             btn_submitfood.UseVisualStyleBackColor = false;
+            btn_submitfood.Click += btn_submitfood_Click;
             // 
             // ShoppingCartForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1042, 565);
+            Controls.Add(lbl_deleteAll);
+            Controls.Add(PB_Delicon);
             Controls.Add(btn_submitfood);
             Controls.Add(lbl_priceshow);
             Controls.Add(lbl_priceshowheading);
             Controls.Add(flp_Hienthimonan);
-            Controls.Add(panel2);
             Controls.Add(lbl_description);
             Controls.Add(metroPanel1);
             Controls.Add(pictureBox1);
@@ -246,8 +239,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PB_Delicon).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -262,7 +253,6 @@
         private Label lbl_returnplace;
         private Label lbl_heading;
         private Label lbl_description;
-        private Panel panel2;
         private Label lbl_deleteAll;
         private PictureBox PB_Delicon;
         private FlowLayoutPanel flp_Hienthimonan;

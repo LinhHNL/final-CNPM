@@ -61,5 +61,33 @@ namespace WinFormsApp2
             MonAn.ShowDialog();
             this.Close();
         }
+
+
+        private void lbl_deleteAll_Click(object sender, EventArgs e)
+        {
+            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            this.Hide();
+            MonAn MonAn = new MonAn();
+            MonAn.ShowDialog();
+            this.Close();
+        }
+
+        private void PB_Delicon_Click(object sender, EventArgs e)
+        {
+            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            this.Hide();
+            MonAn MonAn = new MonAn();
+            MonAn.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_submitfood_Click(object sender, EventArgs e)
+        {
+            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            this.Hide();
+            MonAn MonAn = new MonAn();
+            MonAn.ShowDialog();
+            this.Close();
+        }
     }
 }

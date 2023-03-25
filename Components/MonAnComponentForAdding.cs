@@ -67,7 +67,7 @@ namespace WinFormsApp2.Components
             btn_add_them_soluong.Hide();
             btn_uncheckedadding.Show();
             this.setTrangThai();
-            if(this.Checking)
+            if(this.Checking && StoringMonAnComponentForAdding.StoringMonAnAdding.Find(x => x.getTenMon().Equals(this.getTenMon())) == null)
             {
             this.Soluongdaadd++;
             StoringMonAnComponentForAdding.StoringMonAnAdding.Add(this);

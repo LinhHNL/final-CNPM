@@ -21,7 +21,19 @@ namespace WinFormsApp2.Components
         {
             InitializeComponent();
         }
-
+        private string ChangeGia(String gia)
+        {
+            int price = 0;
+            price = Int32.Parse(gia);
+            string pricestr = price.ToString();
+            string changestr = "";
+            for (int i = pricestr.Length - 3; i > 0; i -= 3)
+            {
+                changestr = pricestr.Insert(i, ".");
+                pricestr = changestr;
+            }
+            return pricestr + " ₫";
+        }
         public MonAnComponenInShoppingCart(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list, ShoppingCartForm context)
         {
             // Set index
@@ -33,7 +45,7 @@ namespace WinFormsApp2.Components
             InitializeComponent();
             lbl_TenMon.Text = this.Tenmon;
             lbl_SoLuong.Text = this.SoLuong.ToString();
-            lbl_price.Text = this.Giamon;
+            lbl_price.Text = ChangeGia(GiaMon);
             this.context = context;
         }
 
