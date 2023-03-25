@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,21 @@ namespace WinFormsApp2
 
         private void HomepageForm_Load(object sender, EventArgs e)
         {
+
+            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
+
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+
+                    panel_monan_view.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+
+                }
+            }
+
 
         }
 
@@ -183,6 +199,11 @@ namespace WinFormsApp2
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomepageFormSingle_Load(object sender, EventArgs e)
         {
 
         }

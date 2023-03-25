@@ -12,6 +12,10 @@ namespace WinFormsApp2.Components
 {
     public partial class MonAnComponent : UserControl
     {
+        private String TenMon = "";
+        private String GiaMon = "";
+        private int Soluongdaadd = 0;
+        private MonAn Context;
         public MonAnComponent()
         {
             InitializeComponent();
@@ -20,8 +24,46 @@ namespace WinFormsApp2.Components
         public MonAnComponent(String ten, String gia)
         {
             InitializeComponent();
+            TenMon = ten;
+            GiaMon = gia;
             lbl_ten.Text = ten;
             lbl_gia.Text = gia;
         }
+
+        public MonAnComponent(String ten, String gia, MonAn context)
+        {
+            InitializeComponent();
+            TenMon = ten;
+            Context = context;
+            GiaMon = gia;
+            lbl_ten.Text = ten;
+            lbl_gia.Text = gia;
+        }
+        public String getTenMon()
+        {
+            return TenMon;
+        }
+        public String getGiaMon()
+        {
+            return GiaMon;
+        }
+        public int getSoLuong()
+        {
+            return Soluongdaadd;
+        }
+        public void TangSoLuong()
+        {
+            this.Soluongdaadd++;
+        }
+        public void GiamSoLuong()
+        {
+            this.Soluongdaadd--;
+        }
+        private void add_them_soluong_Click(object sender, EventArgs e)
+        {
+            StoringMonAnComponentShoppingCart.Add(this);
+            Context.Updateprice();
+        }
+
     }
 }
