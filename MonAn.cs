@@ -15,7 +15,7 @@ namespace WinFormsApp2
 
     public partial class MonAn : MetroFramework.Forms.MetroForm
     {
-        private string lbl_showprice="0 VNĐ";
+        private string lbl_showprice = "0 VNĐ";
         public MonAn()
         {
             InitializeComponent();
@@ -188,7 +188,7 @@ namespace WinFormsApp2
                 pricestr = changestr;
             }
             lbl_priceshow.Text = pricestr + " VNĐ";
-            this.lbl_showprice= pricestr + " VNĐ";
+            this.lbl_showprice = pricestr + " VNĐ";
         }
 
     }

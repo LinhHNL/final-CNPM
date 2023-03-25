@@ -33,9 +33,9 @@
             add_them_soluong = new CustomControls.RoundedButton();
             lbl_gia = new Label();
             lbl_ten = new Label();
-            pictureBox3 = new PictureBox();
+            pb_FoodImage = new PictureBox();
             metroPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb_FoodImage).BeginInit();
             SuspendLayout();
             // 
             // metroPanel3
@@ -44,7 +44,7 @@
             metroPanel3.Controls.Add(add_them_soluong);
             metroPanel3.Controls.Add(lbl_gia);
             metroPanel3.Controls.Add(lbl_ten);
-            metroPanel3.Controls.Add(pictureBox3);
+            metroPanel3.Controls.Add(pb_FoodImage);
             metroPanel3.HorizontalScrollbar = true;
             metroPanel3.HorizontalScrollbarBarColor = true;
             metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
@@ -102,15 +102,15 @@
             lbl_ten.TabIndex = 17;
             lbl_ten.Text = "Tên món";
             // 
-            // pictureBox3
+            // pb_FoodImage
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-1, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(212, 187);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            pb_FoodImage.Image = (Image)resources.GetObject("pb_FoodImage.Image");
+            pb_FoodImage.Location = new Point(-1, 0);
+            pb_FoodImage.Name = "pb_FoodImage";
+            pb_FoodImage.Size = new Size(212, 187);
+            pb_FoodImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_FoodImage.TabIndex = 2;
+            pb_FoodImage.TabStop = false;
             // 
             // MonAnComponent
             // 
@@ -121,7 +121,7 @@
             Size = new Size(455, 188);
             metroPanel3.ResumeLayout(false);
             metroPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_FoodImage).EndInit();
             ResumeLayout(false);
         }
 
@@ -130,7 +130,7 @@
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private Label lbl_gia;
         private Label lbl_ten;
-        private PictureBox pictureBox3;
+        private PictureBox pb_FoodImage;
         private CustomControls.RoundedButton add_them_soluong;
     }
 }
