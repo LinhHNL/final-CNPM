@@ -1,5 +1,6 @@
 using WinFormsApp2;
 using WinFormsApp2.AdminPage;
+using WinFormsApp2.KhoPage;
 
 namespace WinFormsApp1
 {

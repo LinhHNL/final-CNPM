@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFood));
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
             this.roundedButton7 = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton6 = new WinFormsApp2.CustomControls.RoundedButton();
@@ -44,12 +46,10 @@
             this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             this.UploadPlaceBox = new System.Windows.Forms.PictureBox();
             this.cb_TypeofFood = new WinFormsApp2.CustomControls.CustomComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UploadPlaceBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
@@ -72,6 +72,26 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.label4.Location = new System.Drawing.Point(70, 86);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 28);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Tên tài khoản";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // metroPanel7
             // 
@@ -149,8 +169,8 @@
             // 
             // roundedButton4
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.roundedButton4.BackColor = System.Drawing.Color.White;
+            this.roundedButton4.BackgroundColor = System.Drawing.Color.White;
             this.roundedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.roundedButton4.BorderRadius = 0;
             this.roundedButton4.BorderSize = 0;
@@ -318,26 +338,6 @@
             this.cb_TypeofFood.TabIndex = 30;
             this.cb_TypeofFood.Texts = "Loại món ăn";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
-            // 
             // AddFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -355,9 +355,9 @@
             this.Name = "AddFood";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UploadPlaceBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

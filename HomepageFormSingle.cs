@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2.Components;
 
 namespace WinFormsApp2
 {
@@ -18,26 +19,25 @@ namespace WinFormsApp2
             InitializeComponent();
         }
 
-        private void HomepageForm_Load(object sender, EventArgs e)
+
+        public void Updateprice()
         {
-
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
-
-            using (SqlDataReader reader = cmd.ExecuteReader())
+            int price = 0;
+            int tmpprice = 0;
+            foreach (MonAnComponent i in StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList)
             {
-                while (reader.Read())
-                {
-
-                    panel_monan_view.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
-
-                }
+                tmpprice = Int32.Parse(i.getGiaMon()) * i.getSoLuong();
+                price += tmpprice;
             }
-
-
+            string pricestr = price.ToString();
+            string changestr = "";
+            for (int i = pricestr.Length - 3; i > 0; i -= 3)
+            {
+                changestr = pricestr.Insert(i, ".");
+                pricestr = changestr;
+            }
+            btn_showprice.Text = pricestr + " VNĐ";
         }
-
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
@@ -205,7 +205,32 @@ namespace WinFormsApp2
 
         private void HomepageFormSingle_Load(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
 
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+                }
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "5000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent("Come back home, I'm the best", "50000000", this));
+                this.Updateprice();
+            }
+        }
+
+        private void btn_ChangingtoCartForm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShoppingCartForm ShoppingCartForm = new ShoppingCartForm();
+            ShoppingCartForm.ShowDialog();
+            this.Close();
         }
     }
 }

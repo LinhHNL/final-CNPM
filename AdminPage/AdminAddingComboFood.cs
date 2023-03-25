@@ -22,17 +22,19 @@ namespace WinFormsApp2.AdminPage
         {
             List<MonAnComponentForAdding> listdachon = StoringMonAnComponentForAdding.StoringMonAnAdding;
             List<MonAnComponentForAdding> listdaxuly = new List<MonAnComponentForAdding>();
-
+            flp_Hienthimonan.Controls.Clear();
             if(listdachon.Count > 0) {
             // MessageBox.Show(listdachon.Count().ToString());
-            foreach (MonAnComponentForAdding i in listdachon)
-            {
-                    if (i.getTrangThai() && (listdachon.Count==0|| listdachon.Contains(listdachon.Find(x => x.getTenMon().Equals(i.getTenMon())))))
-                    {
-                        listdaxuly.Add(i);
-                        flp_Hienthimonan.Controls.Add(new MonAnAddingInPanel(i.getTenMon(), i));
-                    }
-            }
+
+
+                foreach (MonAnComponentForAdding i in listdachon)
+                {
+                        if (i.getTrangThai())
+                        {
+                            listdaxuly.Add(i);
+                            flp_Hienthimonan.Controls.Add(new MonAnAddingInPanel(i.getTenMon(), i));
+                        }
+                }
             }
         }
         private void AdminAddingComboFood_Load(object sender, EventArgs e)

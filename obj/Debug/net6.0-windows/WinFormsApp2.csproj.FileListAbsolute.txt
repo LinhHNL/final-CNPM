@@ -45,3 +45,15 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AdminAddingComboFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponentForAdding.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnAddingInPanel.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.HangHoaTrongKho.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoNhapHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoSuaPhieuNhapHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoSuaPhieuXuatHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoTaoPhieuNhapHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoTaoPhieuXuatHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXemPhieuNhapHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXemPhieuXuatHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXuatHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.SuaThongTinHangHoa.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.ThemHangHoa.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.XemThongTinHangHoa.resources

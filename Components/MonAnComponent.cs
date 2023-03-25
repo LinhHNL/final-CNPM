@@ -16,6 +16,7 @@ namespace WinFormsApp2.Components
         private String GiaMon = "";
         private int Soluongdaadd = 0;
         private MonAn Context;
+        private HomepageFormSingle ContextHomePage;
         public MonAnComponent()
         {
             InitializeComponent();
@@ -37,7 +38,29 @@ namespace WinFormsApp2.Components
             Context = context;
             GiaMon = gia;
             lbl_ten.Text = ten;
-            lbl_gia.Text = gia;
+         lbl_gia.Text = ChangeGia(gia);
+        }
+        private string ChangeGia(String gia)
+        {
+            int price = 0;
+            price = Int32.Parse(gia);        
+            string pricestr = price.ToString();
+            string changestr = "";
+            for (int i = pricestr.Length - 3; i > 0; i -= 3)
+            {
+                changestr = pricestr.Insert(i, ".");
+                pricestr = changestr;
+            }
+            return pricestr + " ₫";
+        }
+        public MonAnComponent(String ten, String gia, HomepageFormSingle context)
+        {
+            InitializeComponent();
+            TenMon = ten;
+            ContextHomePage = context;
+            GiaMon = gia;
+            lbl_ten.Text = ten;
+            lbl_gia.Text = ChangeGia(gia);
         }
         public String getTenMon()
         {
@@ -62,8 +85,19 @@ namespace WinFormsApp2.Components
         private void add_them_soluong_Click(object sender, EventArgs e)
         {
             StoringMonAnComponentShoppingCart.Add(this);
-            Context.Updateprice();
+            if (Context != null)
+            {
+                Context.Updateprice();
+            }
+            else
+            {
+                ContextHomePage.Updateprice();
+            }
         }
 
+        private void metroPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -105,6 +105,7 @@ namespace WinFormsApp2
             roundedButton9.Text = "Gia Vị";
             roundedButton9.TextColor = Color.FromArgb(160, 159, 159);
             roundedButton9.UseVisualStyleBackColor = false;
+            roundedButton9.Click += roundedButton9_Click;
             // 
             // roundedButton8
             // 
@@ -125,6 +126,7 @@ namespace WinFormsApp2
             roundedButton8.Text = "Đồ uống";
             roundedButton8.TextColor = Color.FromArgb(160, 159, 159);
             roundedButton8.UseVisualStyleBackColor = false;
+            roundedButton8.Click += roundedButton8_Click;
             // 
             // roundedButton7
             // 
@@ -145,6 +147,7 @@ namespace WinFormsApp2
             roundedButton7.Text = "Đồ ăn vặt";
             roundedButton7.TextColor = Color.FromArgb(160, 159, 159);
             roundedButton7.UseVisualStyleBackColor = false;
+            roundedButton7.Click += roundedButton7_Click;
             // 
             // roundedButton6
             // 
@@ -165,6 +168,7 @@ namespace WinFormsApp2
             roundedButton6.Text = "Món rau";
             roundedButton6.TextColor = Color.FromArgb(160, 159, 159);
             roundedButton6.UseVisualStyleBackColor = false;
+            roundedButton6.Click += roundedButton6_Click;
             // 
             // roundedButton5
             // 
@@ -185,11 +189,12 @@ namespace WinFormsApp2
             roundedButton5.Text = "Món mặn";
             roundedButton5.TextColor = Color.White;
             roundedButton5.UseVisualStyleBackColor = false;
+            roundedButton5.Click += roundedButton5_Click;
             // 
             // roundedButton4
             // 
-            roundedButton4.BackColor = Color.FromArgb(0, 0, 15, 255);
-            roundedButton4.BackgroundColor = Color.FromArgb(0, 0, 15, 255);
+            roundedButton4.BackColor = Color.White;
+            roundedButton4.BackgroundColor = Color.White;
             roundedButton4.BorderColor = Color.PaleVioletRed;
             roundedButton4.BorderRadius = 0;
             roundedButton4.BorderSize = 0;
@@ -205,6 +210,7 @@ namespace WinFormsApp2
             roundedButton4.Text = "Lẩu";
             roundedButton4.TextColor = Color.FromArgb(160, 159, 159);
             roundedButton4.UseVisualStyleBackColor = false;
+            roundedButton4.Click += roundedButton4_Click;
             // 
             // pictureBox1
             // 
