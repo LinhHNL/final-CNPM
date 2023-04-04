@@ -27,27 +27,13 @@
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />
     <Compile Update="AdminPage\AddComboFood.cs" />
-    <Compile Update="KhoPage\KiemKhoSuaPhieuNhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoSuaPhieuXuatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoTaoPhieuNhapHang .cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoXemPhieuNhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoXemPhieuXuatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="KhoPage\KiemKhoNhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="KhoPage\KiemKhoSuaPhieuNhapHang.cs" />
+    <Compile Update="KhoPage\KiemKhoSuaPhieuXuatHang.cs" />
+    <Compile Update="KhoPage\KiemKhoTaoPhieuNhapHang .cs" />
+    <Compile Update="KhoPage\KiemKhoXemPhieuNhapHang.cs" />
+    <Compile Update="KhoPage\KiemKhoXemPhieuXuatHang.cs" />
+    <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs" />
+    <Compile Update="KhoPage\KiemKhoNhapHang.cs" />
     <Compile Update="MonAn.cs" />
   </ItemGroup>
 
