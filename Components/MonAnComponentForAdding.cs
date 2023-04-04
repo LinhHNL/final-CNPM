@@ -75,7 +75,7 @@ namespace WinFormsApp2.Components
             {
             this.Soluongdaadd++;
             StoringMonAnComponentForAdding.StoringMonAnAdding.Add(this);
-                StoringMonAnPanel.StoringMonAnPanelList.Add(new Components.MonAnAddingInPanel(this.TenMon, this));
+            StoringMonAnPanel.StoringMonAnPanelList.Add(new Components.MonAnAddingInPanel(this.TenMon, this));
             }
             context.HienThiMonAn();
         }
@@ -90,7 +90,9 @@ namespace WinFormsApp2.Components
             btn_uncheckedadding.Hide();
             this.setTrangThai();
             StoringMonAnComponentForAdding.Remove(this.TenMon);
-            this.Soluongdaadd = 1;
+            MonAnAddingInPanel itemcantim = StoringMonAnPanel.StoringMonAnPanelList.Find(x => x.getTen().Equals(this.getTenMon()));
+            StoringMonAnPanel.StoringMonAnPanelList.Remove(itemcantim);
+            this.Soluongdaadd = 0;
             context.HienThiMonAn();
         }
     }

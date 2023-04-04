@@ -37,7 +37,7 @@ namespace WinFormsApp2.Components
                 }
             }
             StoringMonAnAdding.Remove(itemneedtoremove);
-            for(int i=index-1;i<StoringMonAnPanel.StoringMonAnPanelList.Count;i++)
+            for(int i=index;i<StoringMonAnPanel.StoringMonAnPanelList.Count;i++)
             {
                 StoringMonAnPanel.StoringMonAnPanelList[i].setIndex(i-1);
             }
