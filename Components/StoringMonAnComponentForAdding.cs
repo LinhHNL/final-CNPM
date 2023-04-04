@@ -12,12 +12,36 @@ namespace WinFormsApp2.Components
 
         public static void Add(MonAnComponentForAdding item)
         {
-            if (item.getTrangThai())
+            if (StoringMonAnAdding.Contains(StoringMonAnAdding.Find(x => x.getTenMon().Equals(item.getTenMon()))))
             {
-                //MonAnComponentForAdding itemcantang = StoringMonAnAdding.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
+                //MonAnComponent itemcantang = StoringMonAnComponentShoppingCartList.FirstOrDefault(itemseperate => itemseperate.getTenMon().Equals(item.getTenMon()) && itemseperate.getGiaMon().Equals(itemseperate.getTenMon()));
                 //itemcantang.TangSoLuong();
+                StoringMonAnAdding.Find(x => x.getTenMon().Equals(item.getTenMon())).TangSoLuong();
+            }
+            else
+            {
+                item.TangSoLuong();
                 StoringMonAnAdding.Add(item);
             }
+        }
+        public static void Remove(String tenmon) {
+          ;
+            MonAnComponentForAdding itemneedtoremove = StoringMonAnAdding.Find(x => x.getTenMon().Equals(tenmon));
+            int index = 0;
+            foreach (MonAnAddingInPanel i in StoringMonAnPanel.StoringMonAnPanelList)
+            {
+                if (tenmon.Equals(i.getTen()))
+                {
+                    index = i.getIndex();
+                    break;
+                }
+            }
+            StoringMonAnAdding.Remove(itemneedtoremove);
+            for(int i=index-1;i<StoringMonAnPanel.StoringMonAnPanelList.Count;i++)
+            {
+                StoringMonAnPanel.StoringMonAnPanelList[i].setIndex(i-1);
+            }
+            
         }
         public void Delete(MonAnComponentForAdding item)
         {

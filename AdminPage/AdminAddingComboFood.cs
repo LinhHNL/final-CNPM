@@ -22,6 +22,7 @@ namespace WinFormsApp2.AdminPage
         {
             List<MonAnComponentForAdding> listdachon = StoringMonAnComponentForAdding.StoringMonAnAdding;
             List<MonAnComponentForAdding> listdaxuly = new List<MonAnComponentForAdding>();
+            List<MonAnAddingInPanel> listdaxulypanel = new List<MonAnAddingInPanel>();
             flp_Hienthimonan.Controls.Clear();
             if(listdachon.Count > 0) {
             // MessageBox.Show(listdachon.Count().ToString());
@@ -29,11 +30,20 @@ namespace WinFormsApp2.AdminPage
 
                 foreach (MonAnComponentForAdding i in listdachon)
                 {
+                    foreach(MonAnAddingInPanel j in StoringMonAnPanel.StoringMonAnPanelList)
+                    {
                         if (i.getTrangThai())
                         {
                             listdaxuly.Add(i);
-                            flp_Hienthimonan.Controls.Add(new MonAnAddingInPanel(i.getTenMon(), i));
+
+                            if (i.getTenMon().Equals(j.getTen()) && listdaxulypanel.Find(x => x.getTen().Equals(j.getTen()))==null)
+                            {
+                                flp_Hienthimonan.Controls.Add(j);
+                                continue;
+                            }
                         }
+                    }
+                       
                 }
             }
         }
@@ -49,7 +59,9 @@ namespace WinFormsApp2.AdminPage
                 {
 
                     panel_monan_1.Controls.Add(new Components.MonAnComponentForAdding(reader["ten"].ToString()));
+                    
                 }
+
                 panel_monan_1.Controls.Add(new Components.MonAnComponentForAdding("PrettyU",this));
                 panel_monan_1.Controls.Add(new Components.MonAnComponentForAdding("Aju Nice",this));
                 panel_monan_1.Controls.Add(new Components.MonAnComponentForAdding("Home", this));
