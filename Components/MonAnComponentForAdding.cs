@@ -64,6 +64,10 @@ namespace WinFormsApp2.Components
         }
         private void add_them_soluong_Click(object sender, EventArgs e)
         {
+            if (Checking == true)
+            {
+                return;
+            }
             btn_add_them_soluong.Hide();
             btn_uncheckedadding.Show();
             this.setTrangThai();
@@ -71,16 +75,22 @@ namespace WinFormsApp2.Components
             {
             this.Soluongdaadd++;
             StoringMonAnComponentForAdding.StoringMonAnAdding.Add(this);
+                StoringMonAnPanel.StoringMonAnPanelList.Add(new Components.MonAnAddingInPanel(this.TenMon, this));
             }
             context.HienThiMonAn();
         }
 
         private void btn_uncheckedadding_Click(object sender, EventArgs e)
         {
+            if (Checking == false)
+            {
+                return;
+            }
             btn_add_them_soluong.Show();
             btn_uncheckedadding.Hide();
             this.setTrangThai();
-            this.Soluongdaadd--;
+            StoringMonAnComponentForAdding.Remove(this.TenMon);
+            this.Soluongdaadd = 1;
             context.HienThiMonAn();
         }
     }

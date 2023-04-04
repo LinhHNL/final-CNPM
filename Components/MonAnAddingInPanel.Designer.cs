@@ -73,6 +73,7 @@
             btn_giamsoluong.TabIndex = 24;
             btn_giamsoluong.TextColor = Color.White;
             btn_giamsoluong.UseVisualStyleBackColor = false;
+            btn_giamsoluong.Click += btn_giamsoluong_Click;
             // 
             // add_them_soluong
             // 
@@ -93,6 +94,7 @@
             add_them_soluong.TabIndex = 23;
             add_them_soluong.TextColor = Color.White;
             add_them_soluong.UseVisualStyleBackColor = false;
+            add_them_soluong.Click += add_them_soluong_Click;
             // 
             // btn_deleteitem
             // 
@@ -113,6 +115,7 @@
             btn_deleteitem.TabIndex = 26;
             btn_deleteitem.TextColor = Color.White;
             btn_deleteitem.UseVisualStyleBackColor = false;
+            btn_deleteitem.Click += btn_deleteitem_Click;
             // 
             // MonAnAddingInPanel
             // 

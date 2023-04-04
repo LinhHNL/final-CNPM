@@ -57,3 +57,9 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.SuaThongTinHangHoa.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.ThemHangHoa.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.XemThongTinHangHoa.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.HoSoNhanVien.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThemNhanVien.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_BHXH.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_CongViec.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_HoSo.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_SuaBHXH.resources
