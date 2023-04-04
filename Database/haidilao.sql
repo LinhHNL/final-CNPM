@@ -334,7 +334,6 @@ CREATE TABLE ExportOrdersDetails
   FOREIGN KEY (ComodityID) REFERENCES Commodity(ComodityID),
   FOREIGN KEY (ExportOrderID) REFERENCES ExportOrders(ExportOrderID)
 );
-
 CREATE TABLE TransactionDetail
 (
   Number INT NOT NULL,
