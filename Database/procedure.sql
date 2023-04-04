@@ -1,4 +1,6 @@
 ﻿--check login  result = 0 là thất bạn 1 là thành công
+use hadilao
+go
 CREATE PROCEDURE CheckLogin
     @phone VARCHAR(50),
     @password VARCHAR(50)

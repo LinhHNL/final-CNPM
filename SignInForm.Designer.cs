@@ -32,7 +32,7 @@ namespace WinFormsApp2
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
             label1 = new Label();
-            btn_signUp = new RoundedButton();
+            btn_login = new RoundedButton();
             pictureBox1 = new PictureBox();
             tb_phone = new RoundedTextBox();
             tb_password = new RoundedTextBox();
@@ -54,27 +54,27 @@ namespace WinFormsApp2
             label1.TabIndex = 4;
             label1.Text = "Đăng nhập";
             // 
-            // btn_signUp
+            // btn_login
             // 
-            btn_signUp.BackColor = Color.FromArgb(229, 1, 17);
-            btn_signUp.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_signUp.BorderColor = Color.PaleVioletRed;
-            btn_signUp.BorderRadius = 28;
-            btn_signUp.BorderSize = 0;
-            btn_signUp.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_signUp.FlatStyle = FlatStyle.Flat;
-            btn_signUp.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_signUp.ForeColor = Color.White;
-            btn_signUp.Location = new Point(428, 328);
-            btn_signUp.Margin = new Padding(3, 4, 3, 4);
-            btn_signUp.Name = "btn_signUp";
-            btn_signUp.Size = new Size(152, 54);
-            btn_signUp.TabIndex = 11;
-            btn_signUp.Text = "Đăng nhập";
-            btn_signUp.TextColor = Color.White;
-            btn_signUp.UseVisualStyleBackColor = false;
-            btn_signUp.Click += roundedButton1_Click;
-            btn_signUp.MouseHover += roundedButton1_MouseHover;
+            btn_login.BackColor = Color.FromArgb(229, 1, 17);
+            btn_login.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_login.BorderColor = Color.PaleVioletRed;
+            btn_login.BorderRadius = 28;
+            btn_login.BorderSize = 0;
+            btn_login.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(428, 328);
+            btn_login.Margin = new Padding(3, 4, 3, 4);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(152, 54);
+            btn_login.TabIndex = 11;
+            btn_login.Text = "Đăng nhập";
+            btn_login.TextColor = Color.White;
+            btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
+            btn_login.MouseHover += roundedButton1_MouseHover;
             // 
             // pictureBox1
             // 
@@ -214,7 +214,7 @@ namespace WinFormsApp2
             Controls.Add(tb_password);
             Controls.Add(tb_phone);
             Controls.Add(pictureBox1);
-            Controls.Add(btn_signUp);
+            Controls.Add(btn_login);
             Controls.Add(label1);
             Margin = new Padding(2, 3, 2, 3);
             Name = "SignInForm";
@@ -228,7 +228,7 @@ namespace WinFormsApp2
 
         #endregion
         private Label label1;
-        private RoundedButton btn_signUp;
+        private RoundedButton btn_login;
         private PictureBox pictureBox1;
         private RoundedTextBox tb_phone;
         private RoundedTextBox tb_password;
