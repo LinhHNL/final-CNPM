@@ -47,6 +47,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tb_NganHang = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBoxNhanVien = new System.Windows.Forms.PictureBox();
             this.leftAlignRoundedTextBox2 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
@@ -71,8 +73,6 @@
             this.cb_GioiTinh = new WinFormsApp2.CustomControls.CustomComboBox();
             this.tb_MaNhanVien = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.tb_NganHang = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -161,9 +161,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 11;
-            this.metroPanel1.Location = new System.Drawing.Point(3, 35);
+            this.metroPanel1.Location = new System.Drawing.Point(-2, 35);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(259, 561);
+            this.metroPanel1.Size = new System.Drawing.Size(264, 572);
             this.metroPanel1.TabIndex = 44;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -370,6 +370,39 @@
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cơ bản";
+            // 
+            // tb_NganHang
+            // 
+            this.tb_NganHang.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_NganHang.BorderColor = System.Drawing.Color.Gray;
+            this.tb_NganHang.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_NganHang.BorderRadius = 10;
+            this.tb_NganHang.BorderSize = 1;
+            this.tb_NganHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_NganHang.ForeColor = System.Drawing.Color.Black;
+            this.tb_NganHang.Location = new System.Drawing.Point(202, 413);
+            this.tb_NganHang.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_NganHang.Multiline = false;
+            this.tb_NganHang.Name = "tb_NganHang";
+            this.tb_NganHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_NganHang.PasswordChar = false;
+            this.tb_NganHang.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_NganHang.PlaceholderText = "";
+            this.tb_NganHang.Size = new System.Drawing.Size(168, 39);
+            this.tb_NganHang.TabIndex = 59;
+            this.tb_NganHang.Texts = "";
+            this.tb_NganHang.UnderlinedStyle = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(48, 416);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(147, 28);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "STK ngân hàng:";
             // 
             // label15
             // 
@@ -750,39 +783,6 @@
             this.label3.Size = new System.Drawing.Size(133, 28);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã nhân viên:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(48, 416);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 28);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "STK ngân hàng:";
-            // 
-            // tb_NganHang
-            // 
-            this.tb_NganHang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NganHang.BorderColor = System.Drawing.Color.Gray;
-            this.tb_NganHang.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_NganHang.BorderRadius = 10;
-            this.tb_NganHang.BorderSize = 1;
-            this.tb_NganHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NganHang.ForeColor = System.Drawing.Color.Black;
-            this.tb_NganHang.Location = new System.Drawing.Point(202, 413);
-            this.tb_NganHang.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NganHang.Multiline = false;
-            this.tb_NganHang.Name = "tb_NganHang";
-            this.tb_NganHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_NganHang.PasswordChar = false;
-            this.tb_NganHang.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NganHang.PlaceholderText = "";
-            this.tb_NganHang.Size = new System.Drawing.Size(168, 39);
-            this.tb_NganHang.TabIndex = 59;
-            this.tb_NganHang.Texts = "";
-            this.tb_NganHang.UnderlinedStyle = false;
             // 
             // ThemNhanVien
             // 
