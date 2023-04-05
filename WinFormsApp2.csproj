@@ -27,6 +27,9 @@
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />
     <Compile Update="AdminPage\AddComboFood.cs" />
+    <Compile Update="KhachHangManager\DeleteCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="KhoPage\KiemKhoSuaPhieuNhapHang.cs" />
     <Compile Update="KhoPage\KiemKhoSuaPhieuXuatHang.cs" />
     <Compile Update="KhoPage\KiemKhoTaoPhieuNhapHang .cs" />
