@@ -104,9 +104,12 @@ namespace WinFormsApp2
         private void btn_login_Click(object sender, EventArgs e)
         {
             TakingValidateProc resultlogin=new TakingValidateProc();
-            if(this.tb_phone!=null & this.tb_password != null)
+            Dictionary<string, string> resultlist= new Dictionary<string, string>();
+            resultlist=resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString());
+            String result = resultlist["result"];
+            if (this.tb_phone!=null & this.tb_password != null)
             {
-                if (resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString()) == 0)
+                if (result == "0")
                 {
                     lbl_errorMessage.Text = "Sai Tài Khoản và Mật Khẩu";
                 }

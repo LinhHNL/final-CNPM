@@ -12,7 +12,7 @@ BEGIN
         WHERE Phone = @phone AND Password = @password
     )
     BEGIN
-        SELECT *, '1' as Result
+        SELECT *,'1' as Result
         FROM Customers 
         WHERE Phone = @phone AND Password = @password
     END

@@ -9,12 +9,12 @@ namespace WinFormsApp2.Business
 {
     internal class ValidateLogin
     {
-        private int ValidateLoginFunc(String username,String password)
+        private Dictionary<string, string> ValidateLoginFunc(String username,String password)
         {
             TakingValidateProc takingValidateProc = new TakingValidateProc();   
             return takingValidateProc.TakingValidateProcFuncUsing(username,password);
         }
-        public int returnResultLogin(String username,String password)
+        public Dictionary<string, string> returnResultLogin(String username,String password)
         {
             return ValidateLoginFunc(username,password);
         }
