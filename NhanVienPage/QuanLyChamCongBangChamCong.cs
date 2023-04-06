@@ -11,11 +11,12 @@ using WinFormsApp2.CustomControls;
 
 namespace WinFormsApp2.NhanVienPage
 {
-    public partial class QuanLyLichLam : MetroFramework.Forms.MetroForm
+    public partial class QuanLyChamCongBangChamCong : MetroFramework.Forms.MetroForm
     {
-        public QuanLyLichLam()
+        public QuanLyChamCongBangChamCong()
         {
             InitializeComponent();
+            cb_month.SelectedIndex = 0;
             calendar.cellClickEvent = (sender, e) =>
             {
                 int day = Int32.Parse(((CalendarCell)sender).getDay().Text);
@@ -24,19 +25,20 @@ namespace WinFormsApp2.NhanVienPage
                 form.ShowDialog();
                 this.Close();
             };
+           
+
         }
 
-        private void QuanLyLichLam_Load(object sender, EventArgs e)
+        private void QuanLyChamCongBangChamCong_Load(object sender, EventArgs e)
         {
             calendar.setParentForm(this);
             calendar.SetMonthYear(DateTime.Now.Month, DateTime.Now.Year);
             cb_month.SelectedIndex = 0;
+
+            calendar.getCellAtDay(7).setOff();
+            calendar.getCellAtDay(6).setCa(9, 30, 10, 0, 1);
         }
 
-        private void cb_month_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         private void cb_month_SelectionChangeCommitted(object sender, EventArgs e)
         {
@@ -44,6 +46,14 @@ namespace WinFormsApp2.NhanVienPage
             int year = Int32.Parse(cb_month.SelectedItem.ToString().Split("/")[1]);
             calendar.SetMonthYear(month, year);
             calendar.Reload();
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e)
+        {
+            QuanLyChamCong form = new QuanLyChamCong();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2.NhanVienPage
 {
-    partial class QuanLyLichLam
+    partial class QuanLyChamCongBangChamCong
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyLichLam));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyChamCongBangChamCong));
             this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -47,7 +47,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cb_month = new MetroFramework.Controls.MetroComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.calendar = new WinFormsApp2.CustomControls.Calendar();
+            this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -217,22 +219,22 @@
             // 
             // btn_QuanLyChamCong
             // 
-            this.btn_QuanLyChamCong.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BackgroundColor = System.Drawing.Color.White;
+            this.btn_QuanLyChamCong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_QuanLyChamCong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_QuanLyChamCong.BorderColor = System.Drawing.Color.Silver;
             this.btn_QuanLyChamCong.BorderRadius = 0;
             this.btn_QuanLyChamCong.BorderSize = 0;
             this.btn_QuanLyChamCong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btn_QuanLyChamCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_QuanLyChamCong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_QuanLyChamCong.ForeColor = System.Drawing.Color.White;
             this.btn_QuanLyChamCong.Location = new System.Drawing.Point(-1, 243);
             this.btn_QuanLyChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QuanLyChamCong.Name = "btn_QuanLyChamCong";
             this.btn_QuanLyChamCong.Size = new System.Drawing.Size(264, 64);
             this.btn_QuanLyChamCong.TabIndex = 17;
             this.btn_QuanLyChamCong.Text = "Quản lý chấm công";
-            this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.White;
             this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
             // 
             // btn_HoSoNhanVien
@@ -257,22 +259,22 @@
             // 
             // btn_QuanLyLichLam
             // 
-            this.btn_QuanLyLichLam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_QuanLyLichLam.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_QuanLyLichLam.BackColor = System.Drawing.Color.White;
+            this.btn_QuanLyLichLam.BackgroundColor = System.Drawing.Color.White;
             this.btn_QuanLyLichLam.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_QuanLyLichLam.BorderRadius = 0;
             this.btn_QuanLyLichLam.BorderSize = 0;
             this.btn_QuanLyLichLam.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btn_QuanLyLichLam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_QuanLyLichLam.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyLichLam.ForeColor = System.Drawing.Color.White;
+            this.btn_QuanLyLichLam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyLichLam.Location = new System.Drawing.Point(0, 189);
             this.btn_QuanLyLichLam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_QuanLyLichLam.Name = "btn_QuanLyLichLam";
             this.btn_QuanLyLichLam.Size = new System.Drawing.Size(262, 56);
             this.btn_QuanLyLichLam.TabIndex = 16;
             this.btn_QuanLyLichLam.Text = "Quản lý lịch làm";
-            this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.White;
+            this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -288,11 +290,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(266, 35);
+            this.label1.Location = new System.Drawing.Point(273, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 37);
+            this.label1.Size = new System.Drawing.Size(154, 37);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Lịch làm";
+            this.label1.Text = "Chấm công";
             // 
             // cb_month
             // 
@@ -300,11 +302,10 @@
             this.cb_month.FormattingEnabled = true;
             this.cb_month.ItemHeight = 29;
             this.cb_month.Items.AddRange(new object[] {
-            "04/2023",
             "03/2023",
             "02/2023",
             "01/2023"});
-            this.cb_month.Location = new System.Drawing.Point(353, 76);
+            this.cb_month.Location = new System.Drawing.Point(561, 79);
             this.cb_month.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cb_month.Name = "cb_month";
             this.cb_month.PromptText = "Tháng";
@@ -317,34 +318,67 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(270, 79);
+            this.label2.Location = new System.Drawing.Point(480, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 28);
             this.label2.TabIndex = 49;
             this.label2.Text = "Tháng:";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(272, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(166, 28);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "Bảng chấm công";
+            // 
             // calendar
             // 
-            this.calendar.Location = new System.Drawing.Point(267, 126);
+            this.calendar.Location = new System.Drawing.Point(268, 123);
             this.calendar.Name = "calendar";
             this.calendar.Size = new System.Drawing.Size(907, 469);
-            this.calendar.TabIndex = 50;
+            this.calendar.TabIndex = 68;
             // 
-            // QuanLyLichLam
+            // btn_Back
+            // 
+            this.btn_Back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.White;
+            this.btn_Back.BorderRadius = 8;
+            this.btn_Back.BorderSize = 1;
+            this.btn_Back.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.Location = new System.Drawing.Point(1057, 79);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(117, 35);
+            this.btn_Back.TabIndex = 69;
+            this.btn_Back.Text = "Quay lại >";
+            this.btn_Back.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
+            // 
+            // QuanLyChamCongBangChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.calendar);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cb_month);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.btn_DangXuat);
-            this.Name = "QuanLyLichLam";
+            this.Name = "QuanLyChamCongBangChamCong";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
-            this.Load += new System.EventHandler(this.QuanLyLichLam_Load);
+            this.Load += new System.EventHandler(this.QuanLyChamCongBangChamCong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
@@ -371,6 +405,8 @@
         private Label label1;
         private MetroFramework.Controls.MetroComboBox cb_month;
         private Label label2;
+        private Label label3;
         private CustomControls.Calendar calendar;
+        private CustomControls.RoundedButton btn_Back;
     }
 }

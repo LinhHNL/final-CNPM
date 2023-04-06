@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2.NhanVienPage
 {
-    partial class QuanLyLichLam
+    partial class QuanLyLichLamThemNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyLichLam));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyLichLamThemNhanVien));
             this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -45,9 +45,16 @@
             this.btn_QuanLyLichLam = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cb_month = new MetroFramework.Controls.MetroComboBox();
+            this.cb_date = new MetroFramework.Controls.MetroComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.calendar = new WinFormsApp2.CustomControls.Calendar();
+            this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cb_Ca = new MetroFramework.Controls.MetroComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel_NhanVien = new System.Windows.Forms.FlowLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cb_PhongBan = new MetroFramework.Controls.MetroComboBox();
+            this.leftAlignRoundedTextBox1 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -288,63 +295,167 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(266, 35);
+            this.label1.Location = new System.Drawing.Point(267, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 37);
+            this.label1.Size = new System.Drawing.Size(152, 37);
             this.label1.TabIndex = 47;
-            this.label1.Text = "Lịch làm";
+            this.label1.Text = "Xếp ca làm";
             // 
-            // cb_month
+            // cb_date
             // 
-            this.cb_month.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.cb_month.FormattingEnabled = true;
-            this.cb_month.ItemHeight = 29;
-            this.cb_month.Items.AddRange(new object[] {
-            "04/2023",
-            "03/2023",
-            "02/2023",
-            "01/2023"});
-            this.cb_month.Location = new System.Drawing.Point(353, 76);
-            this.cb_month.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cb_month.Name = "cb_month";
-            this.cb_month.PromptText = "Tháng";
-            this.cb_month.Size = new System.Drawing.Size(138, 35);
-            this.cb_month.TabIndex = 48;
-            this.cb_month.UseSelectable = true;
-            this.cb_month.SelectionChangeCommitted += new System.EventHandler(this.cb_month_SelectionChangeCommitted);
+            this.cb_date.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.cb_date.FormattingEnabled = true;
+            this.cb_date.ItemHeight = 29;
+            this.cb_date.Location = new System.Drawing.Point(350, 94);
+            this.cb_date.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_date.Name = "cb_date";
+            this.cb_date.PromptText = "Ngày";
+            this.cb_date.Size = new System.Drawing.Size(138, 35);
+            this.cb_date.TabIndex = 48;
+            this.cb_date.UseSelectable = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(270, 79);
+            this.label2.Location = new System.Drawing.Point(267, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 28);
+            this.label2.Size = new System.Drawing.Size(65, 28);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Tháng:";
+            this.label2.Text = "Ngày:";
             // 
-            // calendar
+            // btn_Back
             // 
-            this.calendar.Location = new System.Drawing.Point(267, 126);
-            this.calendar.Name = "calendar";
-            this.calendar.Size = new System.Drawing.Size(907, 469);
-            this.calendar.TabIndex = 50;
+            this.btn_Back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.White;
+            this.btn_Back.BorderRadius = 8;
+            this.btn_Back.BorderSize = 1;
+            this.btn_Back.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.Location = new System.Drawing.Point(1057, 78);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(117, 35);
+            this.btn_Back.TabIndex = 56;
+            this.btn_Back.Text = "Quay lại >";
+            this.btn_Back.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
-            // QuanLyLichLam
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(548, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 28);
+            this.label3.TabIndex = 58;
+            this.label3.Text = "Ca:";
+            // 
+            // cb_Ca
+            // 
+            this.cb_Ca.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.cb_Ca.FormattingEnabled = true;
+            this.cb_Ca.ItemHeight = 29;
+            this.cb_Ca.Items.AddRange(new object[] {
+            "Sáng",
+            "Chiều",
+            "Tối"});
+            this.cb_Ca.Location = new System.Drawing.Point(606, 94);
+            this.cb_Ca.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_Ca.Name = "cb_Ca";
+            this.cb_Ca.PromptText = "Ca";
+            this.cb_Ca.Size = new System.Drawing.Size(138, 35);
+            this.cb_Ca.TabIndex = 57;
+            this.cb_Ca.UseSelectable = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(268, 178);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(255, 35);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Danh sách nhân viên";
+            // 
+            // panel_NhanVien
+            // 
+            this.panel_NhanVien.AutoScroll = true;
+            this.panel_NhanVien.Location = new System.Drawing.Point(273, 224);
+            this.panel_NhanVien.Name = "panel_NhanVien";
+            this.panel_NhanVien.Size = new System.Drawing.Size(901, 358);
+            this.panel_NhanVien.TabIndex = 60;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(267, 143);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 28);
+            this.label6.TabIndex = 62;
+            this.label6.Text = "Tìm kiếm: ";
+            // 
+            // cb_PhongBan
+            // 
+            this.cb_PhongBan.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.cb_PhongBan.FormattingEnabled = true;
+            this.cb_PhongBan.ItemHeight = 29;
+            this.cb_PhongBan.Location = new System.Drawing.Point(606, 140);
+            this.cb_PhongBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_PhongBan.Name = "cb_PhongBan";
+            this.cb_PhongBan.PromptText = "Phòng ban";
+            this.cb_PhongBan.Size = new System.Drawing.Size(159, 35);
+            this.cb_PhongBan.TabIndex = 63;
+            this.cb_PhongBan.UseSelectable = true;
+            // 
+            // leftAlignRoundedTextBox1
+            // 
+            this.leftAlignRoundedTextBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.leftAlignRoundedTextBox1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.leftAlignRoundedTextBox1.BorderRadius = 0;
+            this.leftAlignRoundedTextBox1.BorderSize = 1;
+            this.leftAlignRoundedTextBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.leftAlignRoundedTextBox1.Location = new System.Drawing.Point(370, 140);
+            this.leftAlignRoundedTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox1.Multiline = false;
+            this.leftAlignRoundedTextBox1.Name = "leftAlignRoundedTextBox1";
+            this.leftAlignRoundedTextBox1.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.leftAlignRoundedTextBox1.PasswordChar = false;
+            this.leftAlignRoundedTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox1.PlaceholderText = "";
+            this.leftAlignRoundedTextBox1.Size = new System.Drawing.Size(219, 35);
+            this.leftAlignRoundedTextBox1.TabIndex = 65;
+            this.leftAlignRoundedTextBox1.Texts = "Mã / Tên nhân viên";
+            this.leftAlignRoundedTextBox1.UnderlinedStyle = false;
+            // 
+            // QuanLyLichLamThemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.calendar);
+            this.Controls.Add(this.leftAlignRoundedTextBox1);
+            this.Controls.Add(this.cb_PhongBan);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.panel_NhanVien);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cb_Ca);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cb_month);
+            this.Controls.Add(this.cb_date);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.btn_DangXuat);
-            this.Name = "QuanLyLichLam";
+            this.Name = "QuanLyLichLamThemNhanVien";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
-            this.Load += new System.EventHandler(this.QuanLyLichLam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
@@ -369,8 +480,15 @@
         private PictureBox pictureBox1;
         private CustomControls.RoundedButton btn_LuongThuong;
         private Label label1;
-        private MetroFramework.Controls.MetroComboBox cb_month;
+        private MetroFramework.Controls.MetroComboBox cb_date;
         private Label label2;
-        private CustomControls.Calendar calendar;
+        private CustomControls.RoundedButton btn_Back;
+        private Label label3;
+        private MetroFramework.Controls.MetroComboBox cb_Ca;
+        private Label label5;
+        private FlowLayoutPanel panel_NhanVien;
+        private Label label6;
+        private MetroFramework.Controls.MetroComboBox cb_PhongBan;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox1;
     }
 }

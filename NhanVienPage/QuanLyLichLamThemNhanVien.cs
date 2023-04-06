@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace WinFormsApp2.NhanVienPage
 {
-    public partial class QuanLyLichLamCa : MetroFramework.Forms.MetroForm 
+    public partial class QuanLyLichLamThemNhanVien : MetroFramework.Forms.MetroForm
     {
         int day, month, year, shift;
 
 
-        public QuanLyLichLamCa()
+        public QuanLyLichLamThemNhanVien()
         {
             InitializeComponent();
             for (int i = 0; i < 10; i++)
@@ -24,10 +24,10 @@ namespace WinFormsApp2.NhanVienPage
             }
         }
 
-        public QuanLyLichLamCa(int day, int month, int year, int shift)
+        public QuanLyLichLamThemNhanVien(int day, int month, int year, int shift)
         {
             InitializeComponent();
-            this.day = day; 
+            this.day = day;
             this.month = month;
             this.year = year;
             this.shift = shift;
@@ -40,22 +40,13 @@ namespace WinFormsApp2.NhanVienPage
             cb_Ca.SelectedIndex = shift;
             for (int i = 0; i < 10; i++)
             {
-                panel_NhanVien.Controls.Add(new CustomControls.RowDeletable("Ten nv", i));
+                panel_NhanVien.Controls.Add(new CustomControls.RowAdd("Ten nv", i));
             }
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            QuanLyLichLamNgay form = new QuanLyLichLamNgay(day, month, year);
-            this.Hide();
-            form.ShowDialog();
-            this.Close();
-        }
-
-
-        private void btn_AddNhanVien_Click(object sender, EventArgs e)
-        {
-            QuanLyLichLamThemNhanVien form = new QuanLyLichLamThemNhanVien(day, month, year, shift);
+            QuanLyLichLamCa form = new QuanLyLichLamCa(day, month, year, shift);
             this.Hide();
             form.ShowDialog();
             this.Close();

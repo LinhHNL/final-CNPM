@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +19,7 @@ namespace WinFormsApp2.CustomControls
         int month = 1, year = 2023;
         Dictionary<String, int> dict = new Dictionary<string, int>();
         Form parentForm;
+        public Action<object, EventArgs> cellClickEvent;
 
         public Calendar()
         {
@@ -35,6 +39,9 @@ namespace WinFormsApp2.CustomControls
             this.month = month;
             this.year = year;
         }
+
+        public int Month { get { return month; } }
+        public int Year { get { return year; } }
 
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -115,7 +122,8 @@ namespace WinFormsApp2.CustomControls
                 cell.Height = (Height - titleHeight) / 6;
                 cell.Margin = new Padding(0, 0, 0, 0);
                 cell.getDay().Text = i.ToString();
-                cell.Click += new System.EventHandler(CellClickEvent);
+                cell.Click += new System.EventHandler(cellClickEvent);
+                
                 flowLayoutPanel1.Controls.Add(cell);
             }
             int currentCount = flowLayoutPanel1.Controls.Count;
@@ -135,33 +143,14 @@ namespace WinFormsApp2.CustomControls
                 control.Width = Width / 7;
             }
         }
-        public void CellClickEvent(object sender, EventArgs e)
+
+        public CalendarCell getCellAtDay(int day)
         {
-            int day = Int32.Parse(((CalendarCell)sender).getDay().Text);
-            QuanLyLichLamNgay form = new QuanLyLichLamNgay(day, month, year);
-            parentForm.Hide();
-            form.ShowDialog();
-            parentForm.Close();
+            DateTime dt = new DateTime(year, month, 1);
+            String dw = dt.DayOfWeek.ToString();
+            return (CalendarCell) flowLayoutPanel1.Controls[7 + dict[dw] + day-2];
         }
 
-    }
-
-    public class MyEventArgs : EventArgs
-    {
-        int day;
-        int month;
-        int year;
-        public MyEventArgs(int day, int month, int year)
-        {
-            this.day = day;
-            this.month = month;
-            this.year = year;
-        }
-
-        public int Day { get { return day; } }
-        public int Month { get { return month; } } 
-
-        public int Year { get { return year; } }
     }
 
 }

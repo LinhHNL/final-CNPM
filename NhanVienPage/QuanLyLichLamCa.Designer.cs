@@ -341,6 +341,7 @@
             this.btn_Back.Text = "Quay lại >";
             this.btn_Back.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // label3
             // 
@@ -406,6 +407,7 @@
             this.btn_AddNhanVien.Text = "+ Nhân viên";
             this.btn_AddNhanVien.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_AddNhanVien.UseVisualStyleBackColor = false;
+            this.btn_AddNhanVien.Click += new System.EventHandler(this.btn_AddNhanVien_Click);
             // 
             // QuanLyLichLamCa
             // 
