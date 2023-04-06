@@ -105,9 +105,9 @@ namespace WinFormsApp2
         {
             TakingValidateProc resultlogin=new TakingValidateProc();
             Dictionary<string, string> resultlist= new Dictionary<string, string>();
-            resultlist=resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString());
+            resultlist=resultlogin.TakingValidateProcFuncUsing(this.tb_phone.Texts.ToString(), this.tb_password.Texts.ToString());
             String result = resultlist["result"];
-            if (this.tb_phone!=null & this.tb_password != null)
+            if (this.tb_phone!=null & this.tb_password != null) 
             {
                 if (result == "0")
                 {
