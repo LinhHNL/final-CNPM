@@ -34,10 +34,22 @@
     <Compile Update="Components\MonAnComponentForAdding.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="CustomControls\ButtonTrangThai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\Calendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\CalendarCell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CustomControls\CustomComboBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CustomControls\LeftAlignRoundedTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\Line.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CustomControls\myblacklayout.cs">
@@ -50,6 +62,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="CustomControls\RoundedTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\RowAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CustomControls\RowDeletable.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="HomepageFormSingle.cs">
@@ -95,6 +113,30 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\HoSoNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyChamCongBangChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyChamCongBangChamCong2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyDonTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLichLamCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLichLamNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLichLamThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\ThemNhanVien.cs">

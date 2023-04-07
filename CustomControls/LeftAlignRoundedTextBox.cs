@@ -194,6 +194,13 @@ namespace WinFormsApp2.CustomControls
             }
         }
 
+        [Category("RJ Code Advance")]
+        public bool ReadOnly
+        {
+            get { return textBox1.ReadOnly; }
+            set { textBox1.ReadOnly = value; }
+        }
+
 
 
         #endregion
@@ -330,6 +337,10 @@ namespace WinFormsApp2.CustomControls
                 textBox1.Multiline = false;
 
                 this.Height = textBox1.Height + this.Padding.Top + this.Padding.Bottom;
+            }
+            else
+            {
+                textBox1.Height = this.Height - this.Padding.Top - this.Padding.Bottom;
             }
         }
         #endregion
