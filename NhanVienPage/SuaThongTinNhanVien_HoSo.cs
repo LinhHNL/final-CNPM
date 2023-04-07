@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp2.NhanVienPage
 {
-    public partial class ThongTinCoBanNhanVien_HoSo : MetroFramework.Forms.MetroForm
+    public partial class SuaThongTinNhanVien_HoSo : MetroFramework.Forms.MetroForm
     {
-        public ThongTinCoBanNhanVien_HoSo()
+        public SuaThongTinNhanVien_HoSo()
         {
             InitializeComponent();
         }
@@ -27,13 +27,11 @@ namespace WinFormsApp2.NhanVienPage
                 e.Graphics.DrawLine(pen, 0, 0, 306, 0);
             }
         }
-        
-      
 
         private void label2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HoSoNhanVien form = new HoSoNhanVien();
+            ThongTinCoBanNhanVien_HoSo form = new ThongTinCoBanNhanVien_HoSo();
             form.ShowDialog();
             this.Close();
         }
@@ -54,12 +52,14 @@ namespace WinFormsApp2.NhanVienPage
             this.Close();
         }
 
-        private void roundedButton2_Click(object sender, EventArgs e)
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            this.Hide();
-            SuaThongTinNhanVien_HoSo form = new SuaThongTinNhanVien_HoSo();
-            form.ShowDialog();
-            this.Close();
+
+        }
+
+        private void btn_XuatFile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -32,6 +32,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThemNhanVien));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
@@ -46,9 +50,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_NganHang = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.tb_TenNganHang = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_TenTK = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.tb_STK = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label28 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBoxNhanVien = new System.Windows.Forms.PictureBox();
             this.leftAlignRoundedTextBox2 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
@@ -73,12 +82,47 @@
             this.cb_GioiTinh = new WinFormsApp2.CustomControls.CustomComboBox();
             this.tb_MaNhanVien = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.dgv_NhanVien = new MetroFramework.Controls.MetroGrid();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tb_NgayLamViec = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.tb_ChucVu = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tb_MaChamCong = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tb_TrangThai = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.leftAlignRoundedTextBox3 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.leftAlignRoundedTextBox4 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.leftAlignRoundedTextBox5 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.leftAlignRoundedTextBox6 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.leftAlignRoundedTextBox7 = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanVien)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_DangXuat
@@ -334,10 +378,28 @@
             this.label2.Text = "Quay lại >";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.groupBox1);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox3);
+            this.flowLayoutPanel1.Controls.Add(this.groupBox4);
+            this.flowLayoutPanel1.Controls.Add(this.roundedButton2);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(269, 121);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(912, 420);
+            this.flowLayoutPanel1.TabIndex = 54;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tb_NganHang);
-            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.tb_TenNganHang);
+            this.groupBox1.Controls.Add(this.tb_TenTK);
+            this.groupBox1.Controls.Add(this.label30);
+            this.groupBox1.Controls.Add(this.label29);
+            this.groupBox1.Controls.Add(this.tb_STK);
+            this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.pictureBoxNhanVien);
             this.groupBox1.Controls.Add(this.leftAlignRoundedTextBox2);
@@ -364,45 +426,111 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox1.Location = new System.Drawing.Point(273, 124);
+            this.groupBox1.Location = new System.Drawing.Point(11, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(894, 472);
+            this.groupBox1.Size = new System.Drawing.Size(877, 579);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin cơ bản";
             // 
-            // tb_NganHang
+            // tb_TenNganHang
             // 
-            this.tb_NganHang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NganHang.BorderColor = System.Drawing.Color.Gray;
-            this.tb_NganHang.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_NganHang.BorderRadius = 10;
-            this.tb_NganHang.BorderSize = 1;
-            this.tb_NganHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NganHang.ForeColor = System.Drawing.Color.Black;
-            this.tb_NganHang.Location = new System.Drawing.Point(202, 413);
-            this.tb_NganHang.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NganHang.Multiline = false;
-            this.tb_NganHang.Name = "tb_NganHang";
-            this.tb_NganHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_NganHang.PasswordChar = false;
-            this.tb_NganHang.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NganHang.PlaceholderText = "";
-            this.tb_NganHang.Size = new System.Drawing.Size(168, 39);
-            this.tb_NganHang.TabIndex = 59;
-            this.tb_NganHang.Texts = "";
-            this.tb_NganHang.UnderlinedStyle = false;
+            this.tb_TenNganHang.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_TenNganHang.BorderColor = System.Drawing.Color.Gray;
+            this.tb_TenNganHang.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_TenNganHang.BorderRadius = 10;
+            this.tb_TenNganHang.BorderSize = 1;
+            this.tb_TenNganHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_TenNganHang.ForeColor = System.Drawing.Color.Black;
+            this.tb_TenNganHang.Location = new System.Drawing.Point(202, 509);
+            this.tb_TenNganHang.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_TenNganHang.Multiline = false;
+            this.tb_TenNganHang.Name = "tb_TenNganHang";
+            this.tb_TenNganHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_TenNganHang.PasswordChar = false;
+            this.tb_TenNganHang.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_TenNganHang.PlaceholderText = "";
+            this.tb_TenNganHang.Size = new System.Drawing.Size(168, 39);
+            this.tb_TenNganHang.TabIndex = 63;
+            this.tb_TenNganHang.Texts = "";
+            this.tb_TenNganHang.UnderlinedStyle = false;
             // 
-            // label16
+            // tb_TenTK
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(48, 416);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 28);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "STK ngân hàng:";
+            this.tb_TenTK.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_TenTK.BorderColor = System.Drawing.Color.Gray;
+            this.tb_TenTK.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_TenTK.BorderRadius = 10;
+            this.tb_TenTK.BorderSize = 1;
+            this.tb_TenTK.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_TenTK.ForeColor = System.Drawing.Color.Black;
+            this.tb_TenTK.Location = new System.Drawing.Point(202, 462);
+            this.tb_TenTK.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_TenTK.Multiline = false;
+            this.tb_TenTK.Name = "tb_TenTK";
+            this.tb_TenTK.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_TenTK.PasswordChar = false;
+            this.tb_TenTK.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_TenTK.PlaceholderText = "";
+            this.tb_TenTK.Size = new System.Drawing.Size(168, 39);
+            this.tb_TenTK.TabIndex = 62;
+            this.tb_TenTK.Texts = "";
+            this.tb_TenTK.UnderlinedStyle = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label30.ForeColor = System.Drawing.Color.Black;
+            this.label30.Location = new System.Drawing.Point(48, 513);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(143, 28);
+            this.label30.TabIndex = 61;
+            this.label30.Text = "Tên ngân hàng:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(60, 466);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(131, 28);
+            this.label29.TabIndex = 60;
+            this.label29.Text = "Tên tài khoản:";
+            // 
+            // tb_STK
+            // 
+            this.tb_STK.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_STK.BorderColor = System.Drawing.Color.Gray;
+            this.tb_STK.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_STK.BorderRadius = 10;
+            this.tb_STK.BorderSize = 1;
+            this.tb_STK.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_STK.ForeColor = System.Drawing.Color.Black;
+            this.tb_STK.Location = new System.Drawing.Point(202, 415);
+            this.tb_STK.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_STK.Multiline = false;
+            this.tb_STK.Name = "tb_STK";
+            this.tb_STK.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_STK.PasswordChar = false;
+            this.tb_STK.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_STK.PlaceholderText = "";
+            this.tb_STK.Size = new System.Drawing.Size(168, 39);
+            this.tb_STK.TabIndex = 59;
+            this.tb_STK.Texts = "";
+            this.tb_STK.UnderlinedStyle = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(48, 418);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(147, 28);
+            this.label28.TabIndex = 58;
+            this.label28.Text = "STK ngân hàng:";
             // 
             // label15
             // 
@@ -664,7 +792,7 @@
             this.leftAlignRoundedTextBox1.BorderSize = 1;
             this.leftAlignRoundedTextBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.leftAlignRoundedTextBox1.ForeColor = System.Drawing.Color.Black;
-            this.leftAlignRoundedTextBox1.Location = new System.Drawing.Point(202, 178);
+            this.leftAlignRoundedTextBox1.Location = new System.Drawing.Point(203, 178);
             this.leftAlignRoundedTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.leftAlignRoundedTextBox1.Multiline = false;
             this.leftAlignRoundedTextBox1.Name = "leftAlignRoundedTextBox1";
@@ -784,12 +912,522 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã nhân viên:";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.Controls.Add(this.roundedButton1);
+            this.groupBox2.Controls.Add(this.dgv_NhanVien);
+            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.groupBox2.Location = new System.Drawing.Point(5, 588);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(883, 327);
+            this.groupBox2.TabIndex = 53;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin thân nhân";
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.roundedButton1.BorderRadius = 8;
+            this.roundedButton1.BorderSize = 1;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton1.Location = new System.Drawing.Point(700, 34);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(157, 35);
+            this.roundedButton1.TabIndex = 44;
+            this.roundedButton1.Text = "+ Thân nhân";
+            this.roundedButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // dgv_NhanVien
+            // 
+            this.dgv_NhanVien.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.dgv_NhanVien.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_NhanVien.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgv_NhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_NhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgv_NhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_NhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_NhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_NhanVien.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_NhanVien.EnableHeadersVisualStyles = false;
+            this.dgv_NhanVien.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dgv_NhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.dgv_NhanVien.Location = new System.Drawing.Point(6, 80);
+            this.dgv_NhanVien.Name = "dgv_NhanVien";
+            this.dgv_NhanVien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_NhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgv_NhanVien.RowHeadersVisible = false;
+            this.dgv_NhanVien.RowHeadersWidth = 51;
+            this.dgv_NhanVien.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_NhanVien.RowTemplate.Height = 29;
+            this.dgv_NhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_NhanVien.Size = new System.Drawing.Size(871, 214);
+            this.dgv_NhanVien.TabIndex = 33;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Họ tên";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 300;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Giới tính";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Mối quan hệ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 200;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tb_NgayLamViec);
+            this.groupBox3.Controls.Add(this.tb_PhongBan);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.tb_ChucVu);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.tb_MaChamCong);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.tb_TrangThai);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.groupBox3.Location = new System.Drawing.Point(15, 921);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(873, 284);
+            this.groupBox3.TabIndex = 56;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông tin công việc";
+            // 
+            // tb_NgayLamViec
+            // 
+            this.tb_NgayLamViec.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_NgayLamViec.BorderColor = System.Drawing.Color.Gray;
+            this.tb_NgayLamViec.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_NgayLamViec.BorderRadius = 10;
+            this.tb_NgayLamViec.BorderSize = 1;
+            this.tb_NgayLamViec.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_NgayLamViec.ForeColor = System.Drawing.Color.Black;
+            this.tb_NgayLamViec.Location = new System.Drawing.Point(295, 233);
+            this.tb_NgayLamViec.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_NgayLamViec.Multiline = false;
+            this.tb_NgayLamViec.Name = "tb_NgayLamViec";
+            this.tb_NgayLamViec.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_NgayLamViec.PasswordChar = false;
+            this.tb_NgayLamViec.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_NgayLamViec.PlaceholderText = "";
+            this.tb_NgayLamViec.Size = new System.Drawing.Size(306, 39);
+            this.tb_NgayLamViec.TabIndex = 44;
+            this.tb_NgayLamViec.Texts = "";
+            this.tb_NgayLamViec.UnderlinedStyle = false;
+            // 
+            // tb_PhongBan
+            // 
+            this.tb_PhongBan.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_PhongBan.BorderColor = System.Drawing.Color.Gray;
+            this.tb_PhongBan.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_PhongBan.BorderRadius = 10;
+            this.tb_PhongBan.BorderSize = 1;
+            this.tb_PhongBan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_PhongBan.ForeColor = System.Drawing.Color.Black;
+            this.tb_PhongBan.Location = new System.Drawing.Point(295, 186);
+            this.tb_PhongBan.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_PhongBan.Multiline = false;
+            this.tb_PhongBan.Name = "tb_PhongBan";
+            this.tb_PhongBan.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_PhongBan.PasswordChar = false;
+            this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_PhongBan.PlaceholderText = "";
+            this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
+            this.tb_PhongBan.TabIndex = 43;
+            this.tb_PhongBan.Texts = "";
+            this.tb_PhongBan.UnderlinedStyle = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(77, 240);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(211, 28);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "Ngày bắt đầu làm việc:";
+            // 
+            // tb_ChucVu
+            // 
+            this.tb_ChucVu.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_ChucVu.BorderColor = System.Drawing.Color.Gray;
+            this.tb_ChucVu.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_ChucVu.BorderRadius = 10;
+            this.tb_ChucVu.BorderSize = 1;
+            this.tb_ChucVu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_ChucVu.ForeColor = System.Drawing.Color.Black;
+            this.tb_ChucVu.Location = new System.Drawing.Point(295, 136);
+            this.tb_ChucVu.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_ChucVu.Multiline = false;
+            this.tb_ChucVu.Name = "tb_ChucVu";
+            this.tb_ChucVu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_ChucVu.PasswordChar = false;
+            this.tb_ChucVu.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_ChucVu.PlaceholderText = "";
+            this.tb_ChucVu.Size = new System.Drawing.Size(306, 39);
+            this.tb_ChucVu.TabIndex = 41;
+            this.tb_ChucVu.Texts = "";
+            this.tb_ChucVu.UnderlinedStyle = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(177, 190);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(111, 28);
+            this.label17.TabIndex = 40;
+            this.label17.Text = "Phòng ban:";
+            // 
+            // tb_MaChamCong
+            // 
+            this.tb_MaChamCong.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_MaChamCong.BorderColor = System.Drawing.Color.Gray;
+            this.tb_MaChamCong.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_MaChamCong.BorderRadius = 10;
+            this.tb_MaChamCong.BorderSize = 1;
+            this.tb_MaChamCong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_MaChamCong.ForeColor = System.Drawing.Color.Black;
+            this.tb_MaChamCong.Location = new System.Drawing.Point(295, 86);
+            this.tb_MaChamCong.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_MaChamCong.Multiline = false;
+            this.tb_MaChamCong.Name = "tb_MaChamCong";
+            this.tb_MaChamCong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_MaChamCong.PasswordChar = false;
+            this.tb_MaChamCong.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_MaChamCong.PlaceholderText = "";
+            this.tb_MaChamCong.Size = new System.Drawing.Size(306, 39);
+            this.tb_MaChamCong.TabIndex = 39;
+            this.tb_MaChamCong.Texts = "";
+            this.tb_MaChamCong.UnderlinedStyle = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.Black;
+            this.label18.Location = new System.Drawing.Point(202, 136);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(86, 28);
+            this.label18.TabIndex = 38;
+            this.label18.Text = "Chức vụ:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.Black;
+            this.label19.Location = new System.Drawing.Point(144, 88);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(145, 28);
+            this.label19.TabIndex = 37;
+            this.label19.Text = "Mã chấm công:";
+            // 
+            // tb_TrangThai
+            // 
+            this.tb_TrangThai.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_TrangThai.BorderColor = System.Drawing.Color.Gray;
+            this.tb_TrangThai.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_TrangThai.BorderRadius = 10;
+            this.tb_TrangThai.BorderSize = 1;
+            this.tb_TrangThai.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_TrangThai.ForeColor = System.Drawing.Color.Black;
+            this.tb_TrangThai.Location = new System.Drawing.Point(295, 34);
+            this.tb_TrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_TrangThai.Multiline = false;
+            this.tb_TrangThai.Name = "tb_TrangThai";
+            this.tb_TrangThai.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_TrangThai.PasswordChar = false;
+            this.tb_TrangThai.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_TrangThai.PlaceholderText = "";
+            this.tb_TrangThai.Size = new System.Drawing.Size(306, 39);
+            this.tb_TrangThai.TabIndex = 35;
+            this.tb_TrangThai.Texts = "";
+            this.tb_TrangThai.UnderlinedStyle = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(188, 36);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(102, 28);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Trạng thái:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.leftAlignRoundedTextBox3);
+            this.groupBox4.Controls.Add(this.leftAlignRoundedTextBox4);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.leftAlignRoundedTextBox5);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.leftAlignRoundedTextBox6);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.leftAlignRoundedTextBox7);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.groupBox4.Location = new System.Drawing.Point(15, 1211);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(873, 287);
+            this.groupBox4.TabIndex = 57;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Thông tin bảo hiểm";
+            // 
+            // leftAlignRoundedTextBox3
+            // 
+            this.leftAlignRoundedTextBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox3.BorderColor = System.Drawing.Color.Gray;
+            this.leftAlignRoundedTextBox3.BorderFocusColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox3.BorderRadius = 10;
+            this.leftAlignRoundedTextBox3.BorderSize = 1;
+            this.leftAlignRoundedTextBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox3.ForeColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox3.Location = new System.Drawing.Point(295, 233);
+            this.leftAlignRoundedTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox3.Multiline = false;
+            this.leftAlignRoundedTextBox3.Name = "leftAlignRoundedTextBox3";
+            this.leftAlignRoundedTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.leftAlignRoundedTextBox3.PasswordChar = false;
+            this.leftAlignRoundedTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox3.PlaceholderText = "";
+            this.leftAlignRoundedTextBox3.Size = new System.Drawing.Size(306, 39);
+            this.leftAlignRoundedTextBox3.TabIndex = 44;
+            this.leftAlignRoundedTextBox3.Texts = "";
+            this.leftAlignRoundedTextBox3.UnderlinedStyle = false;
+            // 
+            // leftAlignRoundedTextBox4
+            // 
+            this.leftAlignRoundedTextBox4.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox4.BorderColor = System.Drawing.Color.Gray;
+            this.leftAlignRoundedTextBox4.BorderFocusColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox4.BorderRadius = 10;
+            this.leftAlignRoundedTextBox4.BorderSize = 1;
+            this.leftAlignRoundedTextBox4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox4.ForeColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox4.Location = new System.Drawing.Point(295, 186);
+            this.leftAlignRoundedTextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox4.Multiline = false;
+            this.leftAlignRoundedTextBox4.Name = "leftAlignRoundedTextBox4";
+            this.leftAlignRoundedTextBox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.leftAlignRoundedTextBox4.PasswordChar = false;
+            this.leftAlignRoundedTextBox4.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox4.PlaceholderText = "";
+            this.leftAlignRoundedTextBox4.Size = new System.Drawing.Size(306, 39);
+            this.leftAlignRoundedTextBox4.TabIndex = 43;
+            this.leftAlignRoundedTextBox4.Texts = "";
+            this.leftAlignRoundedTextBox4.UnderlinedStyle = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(100, 238);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(189, 28);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "Ngày kết thúc BHYT:";
+            // 
+            // leftAlignRoundedTextBox5
+            // 
+            this.leftAlignRoundedTextBox5.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox5.BorderColor = System.Drawing.Color.Gray;
+            this.leftAlignRoundedTextBox5.BorderFocusColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox5.BorderRadius = 10;
+            this.leftAlignRoundedTextBox5.BorderSize = 1;
+            this.leftAlignRoundedTextBox5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox5.ForeColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox5.Location = new System.Drawing.Point(295, 136);
+            this.leftAlignRoundedTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox5.Multiline = false;
+            this.leftAlignRoundedTextBox5.Name = "leftAlignRoundedTextBox5";
+            this.leftAlignRoundedTextBox5.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.leftAlignRoundedTextBox5.PasswordChar = false;
+            this.leftAlignRoundedTextBox5.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox5.PlaceholderText = "";
+            this.leftAlignRoundedTextBox5.Size = new System.Drawing.Size(306, 39);
+            this.leftAlignRoundedTextBox5.TabIndex = 41;
+            this.leftAlignRoundedTextBox5.Texts = "";
+            this.leftAlignRoundedTextBox5.UnderlinedStyle = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Location = new System.Drawing.Point(105, 190);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(186, 28);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "Ngày bắt đầu BHYT:";
+            // 
+            // leftAlignRoundedTextBox6
+            // 
+            this.leftAlignRoundedTextBox6.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox6.BorderColor = System.Drawing.Color.Gray;
+            this.leftAlignRoundedTextBox6.BorderFocusColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox6.BorderRadius = 10;
+            this.leftAlignRoundedTextBox6.BorderSize = 1;
+            this.leftAlignRoundedTextBox6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox6.ForeColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox6.Location = new System.Drawing.Point(295, 86);
+            this.leftAlignRoundedTextBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox6.Multiline = false;
+            this.leftAlignRoundedTextBox6.Name = "leftAlignRoundedTextBox6";
+            this.leftAlignRoundedTextBox6.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.leftAlignRoundedTextBox6.PasswordChar = false;
+            this.leftAlignRoundedTextBox6.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox6.PlaceholderText = "";
+            this.leftAlignRoundedTextBox6.Size = new System.Drawing.Size(306, 39);
+            this.leftAlignRoundedTextBox6.TabIndex = 39;
+            this.leftAlignRoundedTextBox6.Texts = "";
+            this.leftAlignRoundedTextBox6.UnderlinedStyle = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.ForeColor = System.Drawing.Color.Black;
+            this.label23.Location = new System.Drawing.Point(97, 139);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(194, 28);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "Ngày kết thúc BHXH:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.ForeColor = System.Drawing.Color.Black;
+            this.label24.Location = new System.Drawing.Point(100, 89);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(191, 28);
+            this.label24.TabIndex = 37;
+            this.label24.Text = "Ngày bắt đầu BHXH:";
+            // 
+            // leftAlignRoundedTextBox7
+            // 
+            this.leftAlignRoundedTextBox7.BackColor = System.Drawing.SystemColors.Window;
+            this.leftAlignRoundedTextBox7.BorderColor = System.Drawing.Color.Gray;
+            this.leftAlignRoundedTextBox7.BorderFocusColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox7.BorderRadius = 10;
+            this.leftAlignRoundedTextBox7.BorderSize = 1;
+            this.leftAlignRoundedTextBox7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.leftAlignRoundedTextBox7.ForeColor = System.Drawing.Color.Black;
+            this.leftAlignRoundedTextBox7.Location = new System.Drawing.Point(295, 34);
+            this.leftAlignRoundedTextBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.leftAlignRoundedTextBox7.Multiline = false;
+            this.leftAlignRoundedTextBox7.Name = "leftAlignRoundedTextBox7";
+            this.leftAlignRoundedTextBox7.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.leftAlignRoundedTextBox7.PasswordChar = false;
+            this.leftAlignRoundedTextBox7.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.leftAlignRoundedTextBox7.PlaceholderText = "";
+            this.leftAlignRoundedTextBox7.Size = new System.Drawing.Size(306, 39);
+            this.leftAlignRoundedTextBox7.TabIndex = 35;
+            this.leftAlignRoundedTextBox7.Texts = "";
+            this.leftAlignRoundedTextBox7.UnderlinedStyle = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(163, 37);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(125, 28);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Mã số BHXH:";
+            // 
+            // roundedButton2
+            // 
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton2.BorderRadius = 8;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(788, 1505);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(100, 35);
+            this.roundedButton2.TabIndex = 58;
+            this.roundedButton2.Text = "Thêm";
+            this.roundedButton2.TextColor = System.Drawing.Color.White;
+            this.roundedButton2.UseVisualStyleBackColor = false;
+            // 
             // ThemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroPanel1);
@@ -798,14 +1436,23 @@
             this.Name = "ThemNhanVien";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Text = "v";
+            this.Load += new System.EventHandler(this.ThemNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNhanVien)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -826,8 +1473,22 @@
         private CustomControls.RoundedButton btn_LuongThuong;
         private Label label1;
         private Label label2;
+        private FlowLayoutPanel flowLayoutPanel1;
         private GroupBox groupBox1;
-        private Label label3;
+        private CustomControls.LeftAlignRoundedTextBox tb_TenNganHang;
+        private CustomControls.LeftAlignRoundedTextBox tb_TenTK;
+        private Label label30;
+        private Label label29;
+        private CustomControls.LeftAlignRoundedTextBox tb_STK;
+        private Label label28;
+        private Label label15;
+        private PictureBox pictureBoxNhanVien;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox2;
+        private Label label14;
+        private CustomControls.LeftAlignRoundedTextBox tb_DiaChiHienTai;
+        private Label label13;
+        private CustomControls.LeftAlignRoundedTextBox tb_DiaChiThuongTru;
+        private Label label12;
         private CustomControls.LeftAlignRoundedTextBox tb_NoiCap;
         private Label label11;
         private CustomControls.LeftAlignRoundedTextBox tb_QuocTich;
@@ -843,15 +1504,36 @@
         private Label label5;
         private CustomControls.CustomComboBox cb_GioiTinh;
         private CustomControls.LeftAlignRoundedTextBox tb_MaNhanVien;
-        private Label label12;
-        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox2;
-        private Label label14;
-        private CustomControls.LeftAlignRoundedTextBox tb_DiaChiHienTai;
-        private Label label13;
-        private CustomControls.LeftAlignRoundedTextBox tb_DiaChiThuongTru;
-        private Label label15;
-        private PictureBox pictureBoxNhanVien;
-        private CustomControls.LeftAlignRoundedTextBox tb_NganHang;
+        private Label label3;
+        private GroupBox groupBox2;
+        private CustomControls.RoundedButton roundedButton1;
+        private MetroFramework.Controls.MetroGrid dgv_NhanVien;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private GroupBox groupBox3;
+        private CustomControls.LeftAlignRoundedTextBox tb_NgayLamViec;
+        private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
         private Label label16;
+        private CustomControls.LeftAlignRoundedTextBox tb_ChucVu;
+        private Label label17;
+        private CustomControls.LeftAlignRoundedTextBox tb_MaChamCong;
+        private Label label18;
+        private Label label19;
+        private CustomControls.LeftAlignRoundedTextBox tb_TrangThai;
+        private Label label20;
+        private GroupBox groupBox4;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox3;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox4;
+        private Label label21;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox5;
+        private Label label22;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox6;
+        private Label label23;
+        private Label label24;
+        private CustomControls.LeftAlignRoundedTextBox leftAlignRoundedTextBox7;
+        private Label label25;
+        private CustomControls.RoundedButton roundedButton2;
     }
 }

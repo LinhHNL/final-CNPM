@@ -408,11 +408,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(188, 36);
+            this.label3.Location = new System.Drawing.Point(163, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 28);
+            this.label3.Size = new System.Drawing.Size(125, 28);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Trạng thái:";
+            this.label3.Text = "Mã số BHXH:";
             // 
             // tb_TrangThai
             // 
@@ -441,22 +441,22 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(144, 88);
+            this.label5.Location = new System.Drawing.Point(100, 89);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 28);
+            this.label5.Size = new System.Drawing.Size(191, 28);
             this.label5.TabIndex = 37;
-            this.label5.Text = "Mã chấm công:";
+            this.label5.Text = "Ngày bắt đầu BHXH:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(202, 136);
+            this.label6.Location = new System.Drawing.Point(97, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 28);
+            this.label6.Size = new System.Drawing.Size(194, 28);
             this.label6.TabIndex = 38;
-            this.label6.Text = "Chức vụ:";
+            this.label6.Text = "Ngày kết thúc BHXH:";
             // 
             // tb_MaChamCong
             // 
@@ -485,11 +485,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(177, 190);
+            this.label7.Location = new System.Drawing.Point(105, 190);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 28);
+            this.label7.Size = new System.Drawing.Size(186, 28);
             this.label7.TabIndex = 40;
-            this.label7.Text = "Phòng ban:";
+            this.label7.Text = "Ngày bắt đầu BHYT:";
             // 
             // tb_ChucVu
             // 
@@ -518,11 +518,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(77, 240);
+            this.label8.Location = new System.Drawing.Point(100, 238);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 28);
+            this.label8.Size = new System.Drawing.Size(189, 28);
             this.label8.TabIndex = 42;
-            this.label8.Text = "Ngày bắt đầu làm việc:";
+            this.label8.Text = "Ngày kết thúc BHYT:";
             // 
             // tb_PhongBan
             // 
@@ -565,7 +565,7 @@
             this.groupBox1.Size = new System.Drawing.Size(894, 287);
             this.groupBox1.TabIndex = 52;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin công việc";
+            this.groupBox1.Text = "Thông tin bảo hiểm";
             // 
             // tb_NgayLamViec
             // 

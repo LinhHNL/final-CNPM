@@ -31,5 +31,13 @@ namespace WinFormsApp2.NhanVienPage
             form.ShowDialog();
             this.Close();
         }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            XoaNhanVien form = new XoaNhanVien();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
