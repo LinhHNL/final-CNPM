@@ -50,19 +50,19 @@
             this.btn_HoSo = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_BaoHiemXaHoi = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_CongViec = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_TrangThai = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tb_MaChamCong = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_ChucVu = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_NgayLamViec = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tb_NgayLamViec = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tb_ChucVu = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tb_MaChamCong = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_TrangThai = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -403,148 +403,45 @@
             this.btn_CongViec.UseVisualStyleBackColor = false;
             this.btn_CongViec.Click += new System.EventHandler(this.btn_CongViec_Click);
             // 
-            // label3
+            // roundedButton1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(188, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 28);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Trạng thái:";
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.roundedButton1.BorderRadius = 8;
+            this.roundedButton1.BorderSize = 1;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(988, 481);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(90, 35);
+            this.roundedButton1.TabIndex = 53;
+            this.roundedButton1.Text = "Sửa";
+            this.roundedButton1.TextColor = System.Drawing.Color.White;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // tb_TrangThai
+            // roundedButton2
             // 
-            this.tb_TrangThai.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_TrangThai.BorderColor = System.Drawing.Color.Gray;
-            this.tb_TrangThai.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_TrangThai.BorderRadius = 10;
-            this.tb_TrangThai.BorderSize = 1;
-            this.tb_TrangThai.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_TrangThai.ForeColor = System.Drawing.Color.Black;
-            this.tb_TrangThai.Location = new System.Drawing.Point(295, 34);
-            this.tb_TrangThai.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_TrangThai.Multiline = false;
-            this.tb_TrangThai.Name = "tb_TrangThai";
-            this.tb_TrangThai.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_TrangThai.PasswordChar = false;
-            this.tb_TrangThai.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_TrangThai.PlaceholderText = "";
-            this.tb_TrangThai.Size = new System.Drawing.Size(306, 39);
-            this.tb_TrangThai.TabIndex = 35;
-            this.tb_TrangThai.Texts = "";
-            this.tb_TrangThai.UnderlinedStyle = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(144, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 28);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Mã chấm công:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(202, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 28);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Chức vụ:";
-            // 
-            // tb_MaChamCong
-            // 
-            this.tb_MaChamCong.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MaChamCong.BorderColor = System.Drawing.Color.Gray;
-            this.tb_MaChamCong.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_MaChamCong.BorderRadius = 10;
-            this.tb_MaChamCong.BorderSize = 1;
-            this.tb_MaChamCong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MaChamCong.ForeColor = System.Drawing.Color.Black;
-            this.tb_MaChamCong.Location = new System.Drawing.Point(295, 86);
-            this.tb_MaChamCong.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaChamCong.Multiline = false;
-            this.tb_MaChamCong.Name = "tb_MaChamCong";
-            this.tb_MaChamCong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MaChamCong.PasswordChar = false;
-            this.tb_MaChamCong.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MaChamCong.PlaceholderText = "";
-            this.tb_MaChamCong.Size = new System.Drawing.Size(306, 39);
-            this.tb_MaChamCong.TabIndex = 39;
-            this.tb_MaChamCong.Texts = "";
-            this.tb_MaChamCong.UnderlinedStyle = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(177, 190);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 28);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "Phòng ban:";
-            // 
-            // tb_ChucVu
-            // 
-            this.tb_ChucVu.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_ChucVu.BorderColor = System.Drawing.Color.Gray;
-            this.tb_ChucVu.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_ChucVu.BorderRadius = 10;
-            this.tb_ChucVu.BorderSize = 1;
-            this.tb_ChucVu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_ChucVu.ForeColor = System.Drawing.Color.Black;
-            this.tb_ChucVu.Location = new System.Drawing.Point(295, 136);
-            this.tb_ChucVu.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_ChucVu.Multiline = false;
-            this.tb_ChucVu.Name = "tb_ChucVu";
-            this.tb_ChucVu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_ChucVu.PasswordChar = false;
-            this.tb_ChucVu.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_ChucVu.PlaceholderText = "";
-            this.tb_ChucVu.Size = new System.Drawing.Size(306, 39);
-            this.tb_ChucVu.TabIndex = 41;
-            this.tb_ChucVu.Texts = "";
-            this.tb_ChucVu.UnderlinedStyle = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(77, 240);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 28);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Ngày bắt đầu làm việc:";
-            // 
-            // tb_PhongBan
-            // 
-            this.tb_PhongBan.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_PhongBan.BorderColor = System.Drawing.Color.Gray;
-            this.tb_PhongBan.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.BorderRadius = 10;
-            this.tb_PhongBan.BorderSize = 1;
-            this.tb_PhongBan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_PhongBan.ForeColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.Location = new System.Drawing.Point(295, 186);
-            this.tb_PhongBan.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_PhongBan.Multiline = false;
-            this.tb_PhongBan.Name = "tb_PhongBan";
-            this.tb_PhongBan.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_PhongBan.PasswordChar = false;
-            this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_PhongBan.PlaceholderText = "";
-            this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
-            this.tb_PhongBan.TabIndex = 43;
-            this.tb_PhongBan.Texts = "";
-            this.tb_PhongBan.UnderlinedStyle = false;
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.roundedButton2.BorderRadius = 8;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(1084, 481);
+            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Size = new System.Drawing.Size(90, 35);
+            this.roundedButton2.TabIndex = 54;
+            this.roundedButton2.Text = "Lưu";
+            this.roundedButton2.TextColor = System.Drawing.Color.White;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -560,12 +457,12 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox1.Location = new System.Drawing.Point(273, 176);
+            this.groupBox1.Location = new System.Drawing.Point(269, 176);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(894, 287);
-            this.groupBox1.TabIndex = 52;
+            this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin công việc";
+            this.groupBox1.Text = "Thông tin bảo hiểm";
             // 
             // tb_NgayLamViec
             // 
@@ -589,54 +486,157 @@
             this.tb_NgayLamViec.Texts = "";
             this.tb_NgayLamViec.UnderlinedStyle = false;
             // 
-            // roundedButton1
+            // tb_PhongBan
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.roundedButton1.BorderRadius = 8;
-            this.roundedButton1.BorderSize = 1;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(981, 481);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(90, 35);
-            this.roundedButton1.TabIndex = 53;
-            this.roundedButton1.Text = "Sửa";
-            this.roundedButton1.TextColor = System.Drawing.Color.White;
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.tb_PhongBan.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_PhongBan.BorderColor = System.Drawing.Color.Gray;
+            this.tb_PhongBan.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_PhongBan.BorderRadius = 10;
+            this.tb_PhongBan.BorderSize = 1;
+            this.tb_PhongBan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_PhongBan.ForeColor = System.Drawing.Color.Black;
+            this.tb_PhongBan.Location = new System.Drawing.Point(295, 186);
+            this.tb_PhongBan.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_PhongBan.Multiline = false;
+            this.tb_PhongBan.Name = "tb_PhongBan";
+            this.tb_PhongBan.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_PhongBan.PasswordChar = false;
+            this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_PhongBan.PlaceholderText = "";
+            this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
+            this.tb_PhongBan.TabIndex = 43;
+            this.tb_PhongBan.Texts = "";
+            this.tb_PhongBan.UnderlinedStyle = false;
             // 
-            // roundedButton2
+            // label8
             // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.roundedButton2.BorderRadius = 8;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton2.ForeColor = System.Drawing.Color.White;
-            this.roundedButton2.Location = new System.Drawing.Point(1077, 481);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(90, 35);
-            this.roundedButton2.TabIndex = 54;
-            this.roundedButton2.Text = "Lưu";
-            this.roundedButton2.TextColor = System.Drawing.Color.White;
-            this.roundedButton2.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(100, 238);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(189, 28);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "Ngày kết thúc BHYT:";
+            // 
+            // tb_ChucVu
+            // 
+            this.tb_ChucVu.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_ChucVu.BorderColor = System.Drawing.Color.Gray;
+            this.tb_ChucVu.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_ChucVu.BorderRadius = 10;
+            this.tb_ChucVu.BorderSize = 1;
+            this.tb_ChucVu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_ChucVu.ForeColor = System.Drawing.Color.Black;
+            this.tb_ChucVu.Location = new System.Drawing.Point(295, 136);
+            this.tb_ChucVu.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_ChucVu.Multiline = false;
+            this.tb_ChucVu.Name = "tb_ChucVu";
+            this.tb_ChucVu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_ChucVu.PasswordChar = false;
+            this.tb_ChucVu.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_ChucVu.PlaceholderText = "";
+            this.tb_ChucVu.Size = new System.Drawing.Size(306, 39);
+            this.tb_ChucVu.TabIndex = 41;
+            this.tb_ChucVu.Texts = "";
+            this.tb_ChucVu.UnderlinedStyle = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(105, 190);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(186, 28);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Ngày bắt đầu BHYT:";
+            // 
+            // tb_MaChamCong
+            // 
+            this.tb_MaChamCong.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_MaChamCong.BorderColor = System.Drawing.Color.Gray;
+            this.tb_MaChamCong.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_MaChamCong.BorderRadius = 10;
+            this.tb_MaChamCong.BorderSize = 1;
+            this.tb_MaChamCong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_MaChamCong.ForeColor = System.Drawing.Color.Black;
+            this.tb_MaChamCong.Location = new System.Drawing.Point(295, 86);
+            this.tb_MaChamCong.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_MaChamCong.Multiline = false;
+            this.tb_MaChamCong.Name = "tb_MaChamCong";
+            this.tb_MaChamCong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_MaChamCong.PasswordChar = false;
+            this.tb_MaChamCong.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_MaChamCong.PlaceholderText = "";
+            this.tb_MaChamCong.Size = new System.Drawing.Size(306, 39);
+            this.tb_MaChamCong.TabIndex = 39;
+            this.tb_MaChamCong.Texts = "";
+            this.tb_MaChamCong.UnderlinedStyle = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(97, 139);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(194, 28);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Ngày kết thúc BHXH:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(100, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(191, 28);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Ngày bắt đầu BHXH:";
+            // 
+            // tb_TrangThai
+            // 
+            this.tb_TrangThai.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_TrangThai.BorderColor = System.Drawing.Color.Gray;
+            this.tb_TrangThai.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_TrangThai.BorderRadius = 10;
+            this.tb_TrangThai.BorderSize = 1;
+            this.tb_TrangThai.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_TrangThai.ForeColor = System.Drawing.Color.Black;
+            this.tb_TrangThai.Location = new System.Drawing.Point(295, 34);
+            this.tb_TrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_TrangThai.Multiline = false;
+            this.tb_TrangThai.Name = "tb_TrangThai";
+            this.tb_TrangThai.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_TrangThai.PasswordChar = false;
+            this.tb_TrangThai.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_TrangThai.PlaceholderText = "";
+            this.tb_TrangThai.Size = new System.Drawing.Size(306, 39);
+            this.tb_TrangThai.TabIndex = 35;
+            this.tb_TrangThai.Texts = "";
+            this.tb_TrangThai.UnderlinedStyle = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(163, 37);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 28);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Mã số BHXH:";
             // 
             // ThongTinCoBanNhanVien_SuaBHXH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.roundedButton2);
             this.Controls.Add(this.roundedButton1);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_CongViec);
             this.Controls.Add(this.btn_BaoHiemXaHoi);
             this.Controls.Add(this.btn_HoSo);
@@ -680,18 +680,18 @@
         private CustomControls.RoundedButton btn_HoSo;
         private CustomControls.RoundedButton btn_BaoHiemXaHoi;
         private CustomControls.RoundedButton btn_CongViec;
-        private Label label3;
-        private CustomControls.LeftAlignRoundedTextBox tb_TrangThai;
-        private Label label5;
-        private Label label6;
-        private CustomControls.LeftAlignRoundedTextBox tb_MaChamCong;
-        private Label label7;
-        private CustomControls.LeftAlignRoundedTextBox tb_ChucVu;
-        private Label label8;
-        private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
-        private GroupBox groupBox1;
-        private CustomControls.LeftAlignRoundedTextBox tb_NgayLamViec;
         private CustomControls.RoundedButton roundedButton1;
         private CustomControls.RoundedButton roundedButton2;
+        private GroupBox groupBox1;
+        private CustomControls.LeftAlignRoundedTextBox tb_NgayLamViec;
+        private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
+        private Label label8;
+        private CustomControls.LeftAlignRoundedTextBox tb_ChucVu;
+        private Label label7;
+        private CustomControls.LeftAlignRoundedTextBox tb_MaChamCong;
+        private Label label6;
+        private Label label5;
+        private CustomControls.LeftAlignRoundedTextBox tb_TrangThai;
+        private Label label3;
     }
 }

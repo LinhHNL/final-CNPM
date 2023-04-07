@@ -10,18 +10,18 @@ using System.Windows.Forms;
 
 namespace WinFormsApp2.NhanVienPage
 {
-    public partial class ThongTinCoBanNhanVien_CongViec : MetroFramework.Forms.MetroForm
+    public partial class SuaThongTinNhanVien_CongViec : MetroFramework.Forms.MetroForm
     {
-        public ThongTinCoBanNhanVien_CongViec()
+        public SuaThongTinNhanVien_CongViec()
         {
             InitializeComponent();
         }
-        
+
 
         private void label2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HoSoNhanVien form = new HoSoNhanVien();
+            ThongTinCoBanNhanVien_CongViec form = new ThongTinCoBanNhanVien_CongViec();
             form.ShowDialog();
             this.Close();
         }
@@ -49,12 +49,19 @@ namespace WinFormsApp2.NhanVienPage
             this.Close();
         }
 
-        private void roundedButton1_Click(object sender, EventArgs e)
+        private void ThongTinCoBanNhanVien_CongViec_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            SuaThongTinNhanVien_CongViec form = new SuaThongTinNhanVien_CongViec();
-            form.ShowDialog();
-            this.Close();
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThongTinCoBanNhanVien_CongViec_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

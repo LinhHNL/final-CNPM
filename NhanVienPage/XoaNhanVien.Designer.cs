@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2.NhanVienPage
 {
-    partial class HoSoNhanVien
+    partial class XoaNhanVien
     {
         /// <summary>
         /// Required designer variable.
@@ -35,10 +35,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoSoNhanVien));
-            this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XoaNhanVien));
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.dgv_NhanVien = new MetroFramework.Controls.MetroGrid();
+            this.Column7 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +46,6 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_MaNhanVien = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.btn_XuatFile = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btn_LuongThuong = new WinFormsApp2.CustomControls.RoundedButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,36 +56,18 @@
             this.btn_HoSoNhanVien = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_QuanLyLichLam = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Them = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Xoa = new WinFormsApp2.CustomControls.RoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.cb_PhongBan = new MetroFramework.Controls.MetroComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
+            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_DangXuat
-            // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DangXuat.BorderRadius = 8;
-            this.btn_DangXuat.BorderSize = 0;
-            this.btn_DangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Location = new System.Drawing.Point(1057, 35);
-            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(117, 35);
-            this.btn_DangXuat.TabIndex = 22;
-            this.btn_DangXuat.Text = "Đăng xuất";
-            this.btn_DangXuat.TextColor = System.Drawing.Color.White;
-            this.btn_DangXuat.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
@@ -152,6 +133,7 @@
             this.dgv_NhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_NhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column7,
             this.Column1,
             this.Column2,
             this.Column3,
@@ -169,7 +151,7 @@
             this.dgv_NhanVien.EnableHeadersVisualStyles = false;
             this.dgv_NhanVien.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgv_NhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.dgv_NhanVien.Location = new System.Drawing.Point(271, 141);
+            this.dgv_NhanVien.Location = new System.Drawing.Point(271, 167);
             this.dgv_NhanVien.Name = "dgv_NhanVien";
             this.dgv_NhanVien.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -185,8 +167,17 @@
             this.dgv_NhanVien.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgv_NhanVien.RowTemplate.Height = 29;
             this.dgv_NhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_NhanVien.Size = new System.Drawing.Size(905, 464);
+            this.dgv_NhanVien.Size = new System.Drawing.Size(905, 438);
             this.dgv_NhanVien.TabIndex = 32;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column7.Width = 50;
             // 
             // Column1
             // 
@@ -194,7 +185,7 @@
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 170;
+            this.Column1.Width = 200;
             // 
             // Column2
             // 
@@ -242,7 +233,7 @@
             this.tb_MaNhanVien.BorderSize = 1;
             this.tb_MaNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_MaNhanVien.ForeColor = System.Drawing.Color.Black;
-            this.tb_MaNhanVien.Location = new System.Drawing.Point(359, 85);
+            this.tb_MaNhanVien.Location = new System.Drawing.Point(365, 120);
             this.tb_MaNhanVien.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tb_MaNhanVien.Multiline = false;
             this.tb_MaNhanVien.Name = "tb_MaNhanVien";
@@ -254,26 +245,6 @@
             this.tb_MaNhanVien.TabIndex = 34;
             this.tb_MaNhanVien.Texts = "";
             this.tb_MaNhanVien.UnderlinedStyle = false;
-            // 
-            // btn_XuatFile
-            // 
-            this.btn_XuatFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_XuatFile.BorderRadius = 8;
-            this.btn_XuatFile.BorderSize = 1;
-            this.btn_XuatFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_XuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatFile.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_XuatFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.Location = new System.Drawing.Point(1057, 85);
-            this.btn_XuatFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatFile.Name = "btn_XuatFile";
-            this.btn_XuatFile.Size = new System.Drawing.Size(117, 35);
-            this.btn_XuatFile.TabIndex = 43;
-            this.btn_XuatFile.Text = " Xuất file";
-            this.btn_XuatFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.UseVisualStyleBackColor = false;
             // 
             // metroPanel1
             // 
@@ -440,53 +411,11 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Them
-            // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Them.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Them.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_Them.BorderRadius = 8;
-            this.btn_Them.BorderSize = 1;
-            this.btn_Them.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Them.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Them.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Them.Location = new System.Drawing.Point(880, 85);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(87, 35);
-            this.btn_Them.TabIndex = 45;
-            this.btn_Them.Text = "+ Thêm";
-            this.btn_Them.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Them.UseVisualStyleBackColor = false;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Xoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Xoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_Xoa.BorderRadius = 8;
-            this.btn_Xoa.BorderSize = 1;
-            this.btn_Xoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Xoa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_Xoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Xoa.Location = new System.Drawing.Point(974, 85);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(77, 35);
-            this.btn_Xoa.TabIndex = 46;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Xoa.UseVisualStyleBackColor = false;
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(266, 92);
+            this.label1.Location = new System.Drawing.Point(271, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 28);
             this.label1.TabIndex = 47;
@@ -497,7 +426,7 @@
             this.cb_PhongBan.FontSize = MetroFramework.MetroComboBoxSize.Tall;
             this.cb_PhongBan.FormattingEnabled = true;
             this.cb_PhongBan.ItemHeight = 29;
-            this.cb_PhongBan.Location = new System.Drawing.Point(645, 87);
+            this.cb_PhongBan.Location = new System.Drawing.Point(645, 120);
             this.cb_PhongBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cb_PhongBan.Name = "cb_PhongBan";
             this.cb_PhongBan.PromptText = "Phòng ban";
@@ -505,22 +434,93 @@
             this.cb_PhongBan.TabIndex = 48;
             this.cb_PhongBan.UseSelectable = true;
             // 
-            // HoSoNhanVien
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(271, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(289, 38);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Danh sách nhân viên";
+            // 
+            // btn_Back
+            // 
+            this.btn_Back.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btn_Back.BorderColor = System.Drawing.Color.White;
+            this.btn_Back.BorderRadius = 8;
+            this.btn_Back.BorderSize = 1;
+            this.btn_Back.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.Location = new System.Drawing.Point(1061, 81);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(117, 35);
+            this.btn_Back.TabIndex = 57;
+            this.btn_Back.Text = "Quay lại >";
+            this.btn_Back.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
+            // 
+            // btn_DangXuat
+            // 
+            this.btn_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_DangXuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_DangXuat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_DangXuat.BorderRadius = 8;
+            this.btn_DangXuat.BorderSize = 0;
+            this.btn_DangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DangXuat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
+            this.btn_DangXuat.Location = new System.Drawing.Point(1057, 35);
+            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_DangXuat.Name = "btn_DangXuat";
+            this.btn_DangXuat.Size = new System.Drawing.Size(117, 35);
+            this.btn_DangXuat.TabIndex = 22;
+            this.btn_DangXuat.Text = "Đăng xuất";
+            this.btn_DangXuat.TextColor = System.Drawing.Color.White;
+            this.btn_DangXuat.UseVisualStyleBackColor = false;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton1.BorderRadius = 8;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton1.ForeColor = System.Drawing.Color.White;
+            this.roundedButton1.Location = new System.Drawing.Point(1070, 124);
+            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(96, 35);
+            this.roundedButton1.TabIndex = 58;
+            this.roundedButton1.Text = "Xóa";
+            this.roundedButton1.TextColor = System.Drawing.Color.White;
+            this.roundedButton1.UseVisualStyleBackColor = false;
+            // 
+            // XoaNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
+            this.Controls.Add(this.roundedButton1);
+            this.Controls.Add(this.btn_Back);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cb_PhongBan);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.btn_XuatFile);
             this.Controls.Add(this.tb_MaNhanVien);
             this.Controls.Add(this.dgv_NhanVien);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.btn_DangXuat);
-            this.Name = "HoSoNhanVien";
+            this.Name = "XoaNhanVien";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Text = "v";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
@@ -535,11 +535,9 @@
         }
 
         #endregion
-        private CustomControls.RoundedButton btn_DangXuat;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private MetroFramework.Controls.MetroGrid dgv_NhanVien;
         private CustomControls.LeftAlignRoundedTextBox tb_MaNhanVien;
-        private CustomControls.RoundedButton btn_XuatFile;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private Label label4;
         private PictureBox pictureBox2;
@@ -550,10 +548,13 @@
         private CustomControls.RoundedButton btn_QuanLyLichLam;
         private PictureBox pictureBox1;
         private CustomControls.RoundedButton btn_LuongThuong;
-        private CustomControls.RoundedButton btn_Them;
-        private CustomControls.RoundedButton btn_Xoa;
         private Label label1;
         private MetroFramework.Controls.MetroComboBox cb_PhongBan;
+        private Label label2;
+        private CustomControls.RoundedButton btn_Back;
+        private CustomControls.RoundedButton btn_DangXuat;
+        private CustomControls.RoundedButton roundedButton1;
+        private DataGridViewCheckBoxColumn Column7;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;

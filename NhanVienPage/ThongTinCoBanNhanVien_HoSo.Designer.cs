@@ -93,7 +93,6 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -189,6 +188,7 @@
             this.btn_XuatFile.Text = " Xuất file";
             this.btn_XuatFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_XuatFile.UseVisualStyleBackColor = false;
+            
             // 
             // metroPanel1
             // 
@@ -472,7 +472,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(883, 562);
             this.groupBox1.TabIndex = 52;
@@ -964,12 +964,12 @@
             this.flowLayoutPanel1.Controls.Add(this.groupBox1);
             this.flowLayoutPanel1.Controls.Add(this.groupBox2);
             this.flowLayoutPanel1.Controls.Add(this.roundedButton2);
-            this.flowLayoutPanel1.Controls.Add(this.roundedButton1);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(272, 176);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(912, 420);
             this.flowLayoutPanel1.TabIndex = 53;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+           
             // 
             // groupBox2
             // 
@@ -977,7 +977,7 @@
             this.groupBox2.Controls.Add(this.dgv_NhanVien);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox2.Location = new System.Drawing.Point(3, 571);
+            this.groupBox2.Location = new System.Drawing.Point(5, 571);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(883, 327);
             this.groupBox2.TabIndex = 53;
@@ -1070,43 +1070,24 @@
             // 
             // roundedButton2
             // 
-            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.roundedButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
             this.roundedButton2.BorderRadius = 8;
             this.roundedButton2.BorderSize = 1;
             this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton2.Location = new System.Drawing.Point(3, 905);
+            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton2.ForeColor = System.Drawing.Color.White;
+            this.roundedButton2.Location = new System.Drawing.Point(809, 905);
             this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(117, 35);
+            this.roundedButton2.Size = new System.Drawing.Size(79, 35);
             this.roundedButton2.TabIndex = 55;
-            this.roundedButton2.Text = " Xuất file";
-            this.roundedButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.roundedButton2.Text = "Sửa";
+            this.roundedButton2.TextColor = System.Drawing.Color.White;
             this.roundedButton2.UseVisualStyleBackColor = false;
-            // 
-            // roundedButton1
-            // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.roundedButton1.BorderRadius = 8;
-            this.roundedButton1.BorderSize = 1;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.Location = new System.Drawing.Point(126, 905);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton1.TabIndex = 54;
-            this.roundedButton1.Text = " Xuất file";
-            this.roundedButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.roundedButton2.Click += new System.EventHandler(this.roundedButton2_Click);
             // 
             // ThongTinCoBanNhanVien_HoSo
             // 
@@ -1201,6 +1182,5 @@
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private CustomControls.RoundedButton roundedButton2;
-        private CustomControls.RoundedButton roundedButton1;
     }
 }

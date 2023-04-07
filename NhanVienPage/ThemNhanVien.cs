@@ -24,5 +24,15 @@ namespace WinFormsApp2.NhanVienPage
             form.ShowDialog();
             this.Close();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ThemNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
