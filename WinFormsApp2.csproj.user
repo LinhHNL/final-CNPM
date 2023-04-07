@@ -127,6 +127,12 @@
     <Compile Update="NhanVienPage\QuanLyDonTu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NhanVienPage\QuanLyDonTuDuyetDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyDonTuNoiDungDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="NhanVienPage\QuanLyLichLam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\QuanLyLichLamThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLuongThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\QuanLyLuongThuongChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\SuaThongTinNhanVien_CongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\SuaThongTinNhanVien_HoSo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\ThemNhanVien.cs">
@@ -152,6 +170,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\ThongTinCoBanNhanVien_SuaBHXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NhanVienPage\XoaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ShoppingCartForm.cs">
