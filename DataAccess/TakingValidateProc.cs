@@ -15,8 +15,8 @@ namespace WinFormsApp2.DataAccess
         private Dictionary<string, string> TakingValidateProcFunc(String username,String password)
         {
             Dictionary<string, string> resultlist = new Dictionary<string, string>();
-            //try
-            //{
+            try
+            {
                 SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("CheckLogin", conn);
@@ -27,17 +27,16 @@ namespace WinFormsApp2.DataAccess
                 
                 while (reader.Read())
                 {
-                MessageBox.Show(reader["CustormerID"].ToString());
-                   // resultlist.Add("id", reader["CustormerID"].ToString());
-                    //resultlist.Add("result", reader["Result"].ToString());
+                   resultlist.Add("id", reader["CustormerID"].ToString());
+                   resultlist.Add("result", reader["Result"].ToString());
                 }
                 conn.Close();
-            //}
-           /*catch (Exception ex)
+            }
+           catch (Exception ex)
              {
                 resultlist.Add("id", "-1");
                 resultlist.Add("result", "0");
-            }*/
+            }
             return resultlist;
         }
         public Dictionary<string, string> TakingValidateProcFuncUsing(String username,String password)
