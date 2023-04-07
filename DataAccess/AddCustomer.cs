@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace WinFormsApp2.DataAccess
 {
-    internal class TakingValidateProc
+    internal class AddCustomer
     {
-        private Dictionary<string, string> TakingValidateProcFunc(String username,String password)
+        private Dictionary<string, string> TryingAddCustomer(String username, String password,String name,String email)
         {
             Dictionary<string, string> resultlist = new Dictionary<string, string>();
             try
@@ -23,25 +21,27 @@ namespace WinFormsApp2.DataAccess
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@phone", username);
                 cmd.Parameters.AddWithValue("@password", password);
+                cmd.Parameters.AddWithValue("@address", email);
+                cmd.Parameters.AddWithValue("@name", name);
                 SqlDataReader reader = cmd.ExecuteReader();
-                
+
                 while (reader.Read())
                 {
-                   resultlist.Add("id", reader["CustormerID"].ToString());
-                   resultlist.Add("result", reader["Result"].ToString());
+                    resultlist.Add("id", reader["CustormerID"].ToString());
+                    resultlist.Add("result", reader["Result"].ToString());
                 }
                 conn.Close();
             }
-           catch (Exception ex)
-             {
+            catch (Exception ex)
+            {
                 resultlist.Add("id", "-1");
                 resultlist.Add("result", "0");
             }
             return resultlist;
         }
-        public Dictionary<string, string> TakingValidateProcFuncUsing(String username,String password)
+        public Dictionary<string, string> TakingValidateProcFuncUsing(String username, String password, String name, String email)
         {
-            return this.TakingValidateProcFunc(username, password);
+            return this.TryingAddCustomer(username, password, name, email);
         }
     }
 }

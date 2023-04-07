@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2.Business;
 using WinFormsApp2.DataAccess;
 
 namespace WinFormsApp2
@@ -25,45 +26,7 @@ namespace WinFormsApp2
         }
 
 
-        private bool validateData()
-        {
-            String phone = tb_phone.Texts.Trim();
-            String password = tb_password.Texts;
-
-            if (phone.Equals(""))
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
-                tb_phone.Focus();
-                return false;
-            }
-
-            if (password.Equals(""))
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập mật khẩu";
-                tb_password.Focus();
-                return false;
-            }
-
-            if (!IsDigitsOnly(phone) || phone.Length != 10)
-            {
-                lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
-                tb_phone.Focus();
-                return false;
-            }
-
-            return true;
-        }
-
-        private bool IsDigitsOnly(string str)
-        {
-            foreach (char c in str)
-            {
-                if (c < '0' || c > '9')
-                    return false;
-            }
-
-            return true;
-        }
+       
 
         private void roundedButton1_MouseHover(object sender, EventArgs e)
         {
@@ -103,20 +66,38 @@ namespace WinFormsApp2
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            TakingValidateProc resultlogin=new TakingValidateProc();
-            if(this.tb_phone!=null & this.tb_password != null)
+            ValidateLogin resultlogin =new ValidateLogin();
+            Dictionary<string, string> resultlist= new Dictionary<string, string>();
+            resultlist=resultlogin.returnResultLogin(this.tb_phone.Texts.ToString(), this.tb_password.Texts.ToString());
+            String result = resultlist["result"];
+            if (this.tb_phone!=null & this.tb_password != null) 
             {
-                if (resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString()) == 0)
-                {
-                    lbl_errorMessage.Text = "Sai Tài Khoản và Mật Khẩu";
-                }
-                else
+                if (result == "1")
                 {
                     MessageBox.Show(resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString()).ToString());
                     this.Hide();
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
                     HomepageFormSingle.ShowDialog();
                     this.Close();
+                }
+                else
+                {
+                    if(result == "0") {
+                        lbl_errorMessage.Text = "Sai tài khoản và mật khẩu";
+                    }
+                    if (result == "-1")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
+                        tb_phone.Focus();
+                    }
+                    if(result == "-2") {
+                        lbl_errorMessage.Text = "Vui lòng nhập mật khẩu";
+                        tb_password.Focus();
+                    }
+                    if(result == "-3"){
+                        lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
+                        tb_phone.Focus();
+                    }
                 }
             }
             

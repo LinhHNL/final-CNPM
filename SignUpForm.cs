@@ -1,6 +1,7 @@
 ﻿
 
 using System.Text.RegularExpressions;
+using WinFormsApp2.Business;
 
 namespace WinFormsApp2
 {
@@ -13,84 +14,72 @@ namespace WinFormsApp2
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            if (validateData())
-            {
-                lbl_errorMessage.Text = "Đăng ký thành công";
-            }
-
-        }
-
-        private bool validateData()
-        {
             String name = tb_name.Texts.Trim();
             String email = tb_email.Texts.Trim();
             String phone = tb_phone.Texts.Trim();
             String password = tb_password.Texts;
-            Regex rgEmail = new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", RegexOptions.IgnoreCase);
 
-
-            if (name.Equals(""))
+            ValidateRegister resultregister = new ValidateRegister();
+            Dictionary<string, string> resultlist = new Dictionary<string, string>();
+            resultlist = resultregister.returnResultRegister(phone, password, name, email);
+            String result = resultlist["result"];
+            if (this.tb_phone != null & this.tb_password != null)
             {
-                lbl_errorMessage.Text = "Vui lòng nhập họ và tên";
-                tb_name.Focus();
-                return false;
+                if (result == "1")
+                {
+                    this.Hide();
+                    HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
+                    HomepageFormSingle.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    if (result == "0")
+                    {
+                        lbl_errorMessage.Text = "Sai tài khoản và mật khẩu";
+                    }
+                    if (result == "-1")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập họ và tên";
+                        tb_name.Focus();
+                    }
+                    if (result == "-2")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập địa chỉ email";
+                        tb_email.Focus();
+                    }
+                    if (result == "-3")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
+                        tb_phone.Focus();
+                    }
+                    if (result == "-4")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập mật khẩu";
+                        tb_password.Focus();
+                    }
+                    if (result == "-5")
+                    {
+                        lbl_errorMessage.Text = "Email không hợp lệ";
+                        tb_email.Focus();
+                    }
+                    if (result == "-6")
+                    {
+                        lbl_errorMessage.Text = "Vui lòng nhập mật khẩu có độ dài từ 8 kí tự";
+                        tb_password.Focus();
+                    }
+                    if (result == "-7")
+                    {
+                        lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
+                        tb_phone.Focus();
+                    }
+                }
             }
-
-            if (email.Equals(""))
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập địa chỉ email";
-                tb_email.Focus();
-                return false;
-            }
-
-            if (phone.Equals(""))
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
-                tb_phone.Focus();
-                return false;
-            }
-
-            if (password.Equals(""))
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập mật khẩu";
-                tb_password.Focus();
-                return false;
-            }
-
-            if (!rgEmail.IsMatch(email))
-            {
-                lbl_errorMessage.Text = "Email không hợp lệ";
-                tb_email.Focus();
-                return false;
-            }
-
-            if (password.Length < 8)
-            {
-                lbl_errorMessage.Text = "Vui lòng nhập mật khẩu có độ dài từ 8 kí tự";
-                tb_password.Focus();
-                return false;
-            }
-
-            if (!IsDigitsOnly(phone))
-            {
-                lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
-                tb_phone.Focus();
-                return false;
-            }
-
-            return true;
         }
 
-        private bool IsDigitsOnly(string str)
-        {
-            foreach (char c in str)
-            {
-                if (c < '0' || c > '9')
-                    return false;
-            }
+        
 
-            return true;
-        }
+        
 
         private void roundedButton1_MouseHover(object sender, EventArgs e)
         {
