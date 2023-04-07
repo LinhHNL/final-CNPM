@@ -31,5 +31,53 @@ namespace WinFormsApp2.NhanVienPage
             form.ShowDialog();
             this.Close();
         }
+
+        private void btn_Xoa_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            XoaNhanVien form = new XoaNhanVien();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_QuanLyLichLam_Click(object sender, EventArgs e)
+        {
+            QuanLyLichLam form = new QuanLyLichLam();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_QuanLyChamCong_Click(object sender, EventArgs e)
+        {
+            QuanLyChamCong form = new QuanLyChamCong();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_DonTu_Click(object sender, EventArgs e)
+        {
+            QuanLyDonTu form = new QuanLyDonTu();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_LuongThuong_Click(object sender, EventArgs e)
+        {
+            QuanLyLuongThuong form = new QuanLyLuongThuong();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_HoSoNhanVien_Click(object sender, EventArgs e)
+        {
+            HoSoNhanVien form = new HoSoNhanVien();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
