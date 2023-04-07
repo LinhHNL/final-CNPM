@@ -74,6 +74,7 @@ namespace WinFormsApp2
             {
                 if (result == "1")
                 {
+                    MessageBox.Show(resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString()).ToString());
                     this.Hide();
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
                     HomepageFormSingle.ShowDialog();

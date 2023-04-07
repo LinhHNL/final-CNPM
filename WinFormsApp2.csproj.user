@@ -73,6 +73,9 @@
     <Compile Update="HomepageFormSingle.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="KhachHangManager\ListCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="KhoPage\HangHoaTrongKho.cs">
       <SubType>Form</SubType>
     </Compile>

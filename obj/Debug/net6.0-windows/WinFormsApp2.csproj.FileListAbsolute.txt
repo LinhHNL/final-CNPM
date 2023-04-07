@@ -64,6 +64,10 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_HoSo.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_SuaBHXH.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.CustomComboBox.resources
+<<<<<<< HEAD
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhachHangManager.ListCustomerForm.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.KhachHangManager.DeleteCustomerForm.resources
+=======
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.ButtonTrangThai.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.Calendar.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.CalendarCell.resources
@@ -85,3 +89,4 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.SuaThongTinNhanVien_CongViec.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.SuaThongTinNhanVien_HoSo.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.XoaNhanVien.resources
+>>>>>>> main
