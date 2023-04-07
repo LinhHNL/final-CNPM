@@ -250,6 +250,7 @@
             this.tb_MaNhanVien.PasswordChar = false;
             this.tb_MaNhanVien.PlaceholderColor = System.Drawing.Color.DimGray;
             this.tb_MaNhanVien.PlaceholderText = "Mã nhân viên";
+            this.tb_MaNhanVien.ReadOnly = false;
             this.tb_MaNhanVien.Size = new System.Drawing.Size(272, 39);
             this.tb_MaNhanVien.TabIndex = 34;
             this.tb_MaNhanVien.Texts = "";
@@ -289,9 +290,9 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 11;
-            this.metroPanel1.Location = new System.Drawing.Point(3, 35);
+            this.metroPanel1.Location = new System.Drawing.Point(-1, 35);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(259, 571);
+            this.metroPanel1.Size = new System.Drawing.Size(263, 571);
             this.metroPanel1.TabIndex = 44;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -316,6 +317,7 @@
             this.btn_LuongThuong.Text = "Lương thưởng";
             this.btn_LuongThuong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_LuongThuong.UseVisualStyleBackColor = false;
+            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
             // 
             // label4
             // 
@@ -370,6 +372,7 @@
             this.btn_DonTu.Text = "Đơn từ";
             this.btn_DonTu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_DonTu.UseVisualStyleBackColor = false;
+            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
             // 
             // btn_QuanLyChamCong
             // 
@@ -390,6 +393,7 @@
             this.btn_QuanLyChamCong.Text = "Quản lý chấm công";
             this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
+            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
             // 
             // btn_HoSoNhanVien
             // 
@@ -410,6 +414,7 @@
             this.btn_HoSoNhanVien.Text = "Hồ sơ nhân viên";
             this.btn_HoSoNhanVien.TextColor = System.Drawing.Color.White;
             this.btn_HoSoNhanVien.UseVisualStyleBackColor = false;
+            this.btn_HoSoNhanVien.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
             // 
             // btn_QuanLyLichLam
             // 
@@ -430,6 +435,7 @@
             this.btn_QuanLyLichLam.Text = "Quản lý lịch làm";
             this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
+            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
             // 
             // pictureBox1
             // 

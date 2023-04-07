@@ -157,7 +157,6 @@
             // 
             // metroPanel1
             // 
-            this.metroPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.metroPanel1.Controls.Add(this.btn_LuongThuong);
             this.metroPanel1.Controls.Add(this.label4);
             this.metroPanel1.Controls.Add(this.pictureBox2);
@@ -197,6 +196,7 @@
             this.btn_LuongThuong.Text = "Lương thưởng";
             this.btn_LuongThuong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_LuongThuong.UseVisualStyleBackColor = false;
+            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
             // 
             // label4
             // 
@@ -251,6 +251,7 @@
             this.btn_DonTu.Text = "Đơn từ";
             this.btn_DonTu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_DonTu.UseVisualStyleBackColor = false;
+            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
             // 
             // btn_QuanLyChamCong
             // 
@@ -271,6 +272,7 @@
             this.btn_QuanLyChamCong.Text = "Quản lý chấm công";
             this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
+            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
             // 
             // btn_HoSoNhanVien
             // 
@@ -291,6 +293,7 @@
             this.btn_HoSoNhanVien.Text = "Hồ sơ nhân viên";
             this.btn_HoSoNhanVien.TextColor = System.Drawing.Color.White;
             this.btn_HoSoNhanVien.UseVisualStyleBackColor = false;
+            this.btn_HoSoNhanVien.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
             // 
             // btn_QuanLyLichLam
             // 
@@ -311,6 +314,7 @@
             this.btn_QuanLyLichLam.Text = "Quản lý lịch làm";
             this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
+            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
             // 
             // pictureBox1
             // 
@@ -481,6 +485,7 @@
             this.tb_NgayLamViec.PasswordChar = false;
             this.tb_NgayLamViec.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tb_NgayLamViec.PlaceholderText = "";
+            this.tb_NgayLamViec.ReadOnly = false;
             this.tb_NgayLamViec.Size = new System.Drawing.Size(306, 39);
             this.tb_NgayLamViec.TabIndex = 44;
             this.tb_NgayLamViec.Texts = "";
@@ -503,6 +508,7 @@
             this.tb_PhongBan.PasswordChar = false;
             this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tb_PhongBan.PlaceholderText = "";
+            this.tb_PhongBan.ReadOnly = false;
             this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
             this.tb_PhongBan.TabIndex = 43;
             this.tb_PhongBan.Texts = "";
@@ -536,6 +542,7 @@
             this.tb_ChucVu.PasswordChar = false;
             this.tb_ChucVu.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tb_ChucVu.PlaceholderText = "";
+            this.tb_ChucVu.ReadOnly = false;
             this.tb_ChucVu.Size = new System.Drawing.Size(306, 39);
             this.tb_ChucVu.TabIndex = 41;
             this.tb_ChucVu.Texts = "";
@@ -569,6 +576,7 @@
             this.tb_MaChamCong.PasswordChar = false;
             this.tb_MaChamCong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tb_MaChamCong.PlaceholderText = "";
+            this.tb_MaChamCong.ReadOnly = false;
             this.tb_MaChamCong.Size = new System.Drawing.Size(306, 39);
             this.tb_MaChamCong.TabIndex = 39;
             this.tb_MaChamCong.Texts = "";
@@ -613,6 +621,7 @@
             this.tb_TrangThai.PasswordChar = false;
             this.tb_TrangThai.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.tb_TrangThai.PlaceholderText = "";
+            this.tb_TrangThai.ReadOnly = false;
             this.tb_TrangThai.Size = new System.Drawing.Size(306, 39);
             this.tb_TrangThai.TabIndex = 35;
             this.tb_TrangThai.Texts = "";

@@ -172,6 +172,7 @@
             this.btn_LuongThuong.Text = "Lương thưởng";
             this.btn_LuongThuong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_LuongThuong.UseVisualStyleBackColor = false;
+            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
             // 
             // label4
             // 
@@ -226,6 +227,7 @@
             this.btn_DonTu.Text = "Đơn từ";
             this.btn_DonTu.TextColor = System.Drawing.Color.White;
             this.btn_DonTu.UseVisualStyleBackColor = false;
+            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
             // 
             // btn_QuanLyChamCong
             // 
@@ -246,6 +248,7 @@
             this.btn_QuanLyChamCong.Text = "Quản lý chấm công";
             this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
+            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
             // 
             // btn_HoSoNhanVien
             // 
@@ -266,6 +269,7 @@
             this.btn_HoSoNhanVien.Text = "Hồ sơ nhân viên";
             this.btn_HoSoNhanVien.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_HoSoNhanVien.UseVisualStyleBackColor = false;
+            this.btn_HoSoNhanVien.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
             // 
             // btn_QuanLyLichLam
             // 
@@ -286,6 +290,7 @@
             this.btn_QuanLyLichLam.Text = "Quản lý lịch làm";
             this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
+            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
             // 
             // pictureBox1
             // 
