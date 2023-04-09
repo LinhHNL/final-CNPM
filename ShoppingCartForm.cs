@@ -58,7 +58,7 @@ namespace WinFormsApp2
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
@@ -68,7 +68,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
@@ -77,7 +77,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
@@ -88,7 +88,7 @@ namespace WinFormsApp2
             transactionAdding.TransactionAddedFunc();
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }

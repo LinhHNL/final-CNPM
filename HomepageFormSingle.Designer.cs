@@ -39,7 +39,6 @@ namespace WinFormsApp2
             btn_doublePot = new RoundedButton();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            roundedButton9 = new RoundedButton();
             roundedButton8 = new RoundedButton();
             roundedButton7 = new RoundedButton();
             roundedButton6 = new RoundedButton();
@@ -202,7 +201,6 @@ namespace WinFormsApp2
             // metroPanel1
             // 
             metroPanel1.Controls.Add(metroPanel7);
-            metroPanel1.Controls.Add(roundedButton9);
             metroPanel1.Controls.Add(roundedButton8);
             metroPanel1.Controls.Add(roundedButton7);
             metroPanel1.Controls.Add(roundedButton6);
@@ -233,27 +231,6 @@ namespace WinFormsApp2
             metroPanel7.VerticalScrollbarBarColor = true;
             metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             metroPanel7.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton9
-            // 
-            roundedButton9.BackColor = Color.White;
-            roundedButton9.BackgroundColor = Color.White;
-            roundedButton9.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            roundedButton9.BorderRadius = 0;
-            roundedButton9.BorderSize = 0;
-            roundedButton9.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton9.FlatStyle = FlatStyle.Flat;
-            roundedButton9.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton9.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton9.Location = new Point(-2, 369);
-            roundedButton9.Margin = new Padding(3, 4, 3, 4);
-            roundedButton9.Name = "roundedButton9";
-            roundedButton9.Size = new Size(264, 64);
-            roundedButton9.TabIndex = 20;
-            roundedButton9.Text = "Gia Vị";
-            roundedButton9.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton9.UseVisualStyleBackColor = false;
-            roundedButton9.Click += roundedButton9_Click;
             // 
             // roundedButton8
             // 
@@ -872,7 +849,6 @@ namespace WinFormsApp2
         private RoundedButton btn_doublePot;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private PictureBox pictureBox1;
-        private RoundedButton roundedButton9;
         private RoundedButton roundedButton8;
         private RoundedButton roundedButton7;
         private RoundedButton roundedButton6;
