@@ -153,7 +153,7 @@ namespace WinFormsApp2
         private void roundedButton5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn homepageFormSingle = new MonAn();
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -161,7 +161,7 @@ namespace WinFormsApp2
         private void roundedButton6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn homepageFormSingle = new MonAn();
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -169,7 +169,7 @@ namespace WinFormsApp2
         private void roundedButton7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn homepageFormSingle = new MonAn();
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -177,7 +177,7 @@ namespace WinFormsApp2
         private void roundedButton8_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn homepageFormSingle = new MonAn();
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -185,7 +185,7 @@ namespace WinFormsApp2
         private void roundedButton9_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn homepageFormSingle = new MonAn();
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }

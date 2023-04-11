@@ -37,7 +37,7 @@
     <Compile Update="KhoPage\KiemKhoXemPhieuXuatHang.cs" />
     <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs" />
     <Compile Update="KhoPage\KiemKhoNhapHang.cs" />
-    <Compile Update="MonAn.cs" />
+    <Compile Update="AllMonAn.cs" />
   </ItemGroup>
 
 </Project>

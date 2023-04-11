@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2.Business;
 using WinFormsApp2.Components;
 
 namespace WinFormsApp2
@@ -57,7 +58,7 @@ namespace WinFormsApp2
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
@@ -67,7 +68,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
@@ -76,16 +77,18 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }
 
         private void btn_submitfood_Click(object sender, EventArgs e)
         {
+            TransactionAdding transactionAdding = new TransactionAdding();
+            transactionAdding.TransactionAddedFunc();
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            MonAn MonAn = new MonAn();
+            AllMonAn MonAn = new AllMonAn();
             MonAn.ShowDialog();
             this.Close();
         }

@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.Business;
+using WinFormsApp2.Components;
 using WinFormsApp2.DataAccess;
 
 namespace WinFormsApp2
@@ -53,6 +54,7 @@ namespace WinFormsApp2
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
+            StoringCustomerID.CustomerID = -64;
             this.Hide();
             HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
             homepageFormSingle.ShowDialog();
@@ -74,11 +76,12 @@ namespace WinFormsApp2
             {
                 if (result == "1")
                 {
-                    MessageBox.Show(resultlogin.TakingValidateProcFuncUsing(this.tb_phone.ToString(), this.tb_password.ToString()).ToString());
+                    StoringCustomerID.CustomerID = Int32.Parse(resultlist["id"]);
                     this.Hide();
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
                     HomepageFormSingle.ShowDialog();
                     this.Close();
+                 
                 }
                 else
                 {

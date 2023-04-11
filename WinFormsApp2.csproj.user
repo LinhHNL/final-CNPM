@@ -112,7 +112,7 @@
     <Compile Update="KhoPage\XemThongTinHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MonAn.cs">
+    <Compile Update="AllMonAn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\HoSoNhanVien.cs">

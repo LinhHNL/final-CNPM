@@ -2,6 +2,7 @@
 
 using System.Text.RegularExpressions;
 using WinFormsApp2.Business;
+using WinFormsApp2.Components;
 
 namespace WinFormsApp2
 {
@@ -27,6 +28,7 @@ namespace WinFormsApp2
             {
                 if (result == "1")
                 {
+                    StoringCustomerID.CustomerID = Int32.Parse(resultlist["id"]);
                     this.Hide();
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
                     HomepageFormSingle.ShowDialog();
@@ -36,7 +38,7 @@ namespace WinFormsApp2
                 {
                     if (result == "0")
                     {
-                        lbl_errorMessage.Text = "Sai tài khoản và mật khẩu";
+                        lbl_errorMessage.Text = "Khởi tạo tài khoản thất bại";
                     }
                     if (result == "-1")
                     {

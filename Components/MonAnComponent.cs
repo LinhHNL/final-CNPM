@@ -15,7 +15,7 @@ namespace WinFormsApp2.Components
         private String TenMon = "";
         private String GiaMon = "";
         private int Soluongdaadd = 0;
-        private MonAn Context;
+        private AllMonAn Context;
         private HomepageFormSingle ContextHomePage;
         public MonAnComponent()
         {
@@ -31,7 +31,7 @@ namespace WinFormsApp2.Components
             lbl_gia.Text = gia;
         }
 
-        public MonAnComponent(String ten, String gia, MonAn context)
+        public MonAnComponent(String ten, String gia, AllMonAn context)
         {
             InitializeComponent();
             TenMon = ten;
