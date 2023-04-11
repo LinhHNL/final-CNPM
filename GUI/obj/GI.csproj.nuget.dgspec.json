@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj": {}
+    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\GUI\\GI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj": {
+    "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\GUI\\GI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
-        "projectName": "WinFormsApp2",
-        "projectPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\WinFormsApp2.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\GUI\\GI.csproj",
+        "projectName": "GI",
+        "projectPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\GUI\\GI.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\GUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
