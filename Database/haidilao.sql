@@ -371,3 +371,4 @@ CREATE TABLE CouponDetail
   FOREIGN KEY (IDCoupon) REFERENCES ImportCoupon(IDCoupon)
 );
 
+Select * from Transactions
