@@ -159,31 +159,6 @@
             "rid": "win"
           }
         }
-      },
-      "BUS/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "DAO": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BUS.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BUS.dll": {}
-        },
-        "frameworkReferences": ["Microsoft.WindowsDesktop.App.WindowsForms"]
-      },
-      "DAO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/DAO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAO.dll": {}
-        },
-        "frameworkReferences": ["Microsoft.WindowsDesktop.App.WindowsForms"]
       }
     }
   },
@@ -514,21 +489,10 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "BUS/1.0.0": {
-      "type": "project",
-      "path": "../BUS/BUS.csproj",
-      "msbuildProject": "../BUS/BUS.csproj"
-    },
-    "DAO/1.0.0": {
-      "type": "project",
-      "path": "../DAO/DAO.csproj",
-      "msbuildProject": "../DAO/DAO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "BUS >= 1.0.0",
       "MetroModernUI >= 1.4.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
@@ -549,7 +513,9 @@
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
-      "originalTargetFrameworks": ["net6.0-windows"],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
@@ -557,15 +523,13 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {
-            "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\BUS\\BUS.csproj": {
-              "projectPath": "C:\\Users\\ADMIN\\Dropbox\\My PC (LAPTOP-VERULPGO)\\Desktop\\CuoiKyCNPM\\doancuoikyCNPM\\BUS\\BUS.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
-        "warnAsError": ["NU1605"]
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
@@ -611,7 +575,9 @@
       "warningLevel": 1,
       "message": "Package 'MetroModernUI 1.4.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "MetroModernUI",
-      "targetGraphs": ["net6.0-windows7.0"]
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
     }
   ]
 }
