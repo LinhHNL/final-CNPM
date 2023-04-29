@@ -10,8 +10,8 @@ namespace BUS
     {
         public bool addMenu(Dictionary<string, string> MenuInfo)
         {
-            
-            return true;
+            DAO.Menu menu = new DAO.Menu();
+            return menu.tryingAddingMonAn(MenuInfo);
         }
     }
 }

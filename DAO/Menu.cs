@@ -18,6 +18,7 @@ namespace DAO
             String TypeID = MenuInfo["typeID"];
             String RoomID = MenuInfo["RoomID"];
             String ImageURl = MenuInfo["ImageURL"];
+            int Point = Int32.Parse(Price) / 1000;
             Dictionary<string, string> resultlist = new Dictionary<string, string>();
             try
             {
@@ -27,7 +28,7 @@ namespace DAO
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@name", Name);
                 cmd.Parameters.AddWithValue("@price", Price);
-                cmd.Parameters.AddWithValue("@point",(int) (int.Parse(Price)/1000));
+                cmd.Parameters.AddWithValue("@point", Point);
                 cmd.Parameters.AddWithValue("@url_image", ImageURl);
                 cmd.Parameters.AddWithValue("@kind_food_id", TypeID);
                 cmd.Parameters.AddWithValue("@room_id", RoomID);

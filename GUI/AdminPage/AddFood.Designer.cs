@@ -359,7 +359,7 @@
             cb_RoomID.Padding = new Padding(1);
             cb_RoomID.Size = new Size(421, 49);
             cb_RoomID.TabIndex = 31;
-            cb_RoomID.Texts = "Loại món ăn";
+            cb_RoomID.Texts = "Loại phòng đảm nhận";
             // 
             // AddFood
             // 

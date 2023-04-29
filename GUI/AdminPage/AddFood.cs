@@ -31,6 +31,18 @@ namespace WinFormsApp2.AdminPage
                     cb_TypeofFood.Items.Add(name);
                 }
             }
+            cb_RoomID.Items.Add("Loại phòng đảm nhận");
+            cb_RoomID.SelectedIndex = 0;
+            BUS.Room Room = new BUS.Room();
+            List<Dictionary<string, string>> RoomList = Room.gettingRoom();
+            foreach (Dictionary<string, string> item in RoomList)
+            {
+                if (item.ContainsKey("Name"))
+                {
+                    string RoomName = item["Name"].ToString();
+                    cb_RoomID.Items.Add(RoomName);
+                }
+            }
         }
         String imageLocation = "";
         private void btn_addPicture_Click(object sender, EventArgs e)
@@ -77,14 +89,14 @@ namespace WinFormsApp2.AdminPage
         private void btn_addingMenu_Click(object sender, EventArgs e)
         {
             Dictionary<string, string> itemtoadd = new Dictionary<string, string>();
-            String nameoffood = this.tb_NameOfFood.ToString();
-            int price = int.Parse(this.tb_Price.ToString());
-            String typeID = cb_TypeofFood.SelectedIndex.ToString();
-            String RoomID = cb_RoomID.SelectedIndex.ToString();
+            String nameoffood = this.tb_NameOfFood.Texts.ToString();
+            String price = this.tb_Price.Texts.ToString();
+            String typeID = this.cb_TypeofFood.SelectedIndex.ToString();
+            String RoomID = this.cb_RoomID.SelectedIndex.ToString();
             itemtoadd.Add("Name", nameoffood);
-            itemtoadd.Add("Price", price.ToString());
+            itemtoadd.Add("Price", price);
             itemtoadd.Add("typeID", typeID);
-            itemtoadd.Add("URLImage", imageLocation);
+            itemtoadd.Add("ImageURL", imageLocation);
             itemtoadd.Add("RoomID", RoomID);
             BUS.Menu Menu = new BUS.Menu();
             if (Menu.addMenu(itemtoadd))
