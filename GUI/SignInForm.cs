@@ -8,10 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormsApp2.Business;
 using WinFormsApp2.Components;
-using WinFormsApp2.DataAccess;
-
+using BUS;
 namespace WinFormsApp2
 {
     public partial class SignInForm : MetroFramework.Forms.MetroForm
@@ -68,9 +66,9 @@ namespace WinFormsApp2
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            ValidateLogin resultlogin =new ValidateLogin();
+            BUS.Customer customer=new BUS.Customer();
             Dictionary<string, string> resultlist= new Dictionary<string, string>();
-            resultlist=resultlogin.returnResultLogin(this.tb_phone.Texts.ToString(), this.tb_password.Texts.ToString());
+            resultlist= customer.returnResultLogin(this.tb_phone.Texts.ToString(), this.tb_password.Texts.ToString());
             String result = resultlist["result"];
             if (this.tb_phone!=null & this.tb_password != null) 
             {

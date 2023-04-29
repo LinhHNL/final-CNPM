@@ -1,9 +1,8 @@
 ﻿
 
 using System.Text.RegularExpressions;
-using WinFormsApp2.Business;
 using WinFormsApp2.Components;
-
+using BUS;
 namespace WinFormsApp2
 {
     public partial class SignUpForm : MetroFramework.Forms.MetroForm
@@ -15,14 +14,14 @@ namespace WinFormsApp2
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
+            BUS.Customer customer = new BUS.Customer();
             String name = tb_name.Texts.Trim();
             String email = tb_email.Texts.Trim();
             String phone = tb_phone.Texts.Trim();
             String password = tb_password.Texts;
-
-            ValidateRegister resultregister = new ValidateRegister();
+            
             Dictionary<string, string> resultlist = new Dictionary<string, string>();
-            resultlist = resultregister.returnResultRegister(phone, password, name, email);
+            resultlist = customer.returnResultRegister(phone, password, name, email);
             String result = resultlist["result"];
             if (this.tb_phone != null & this.tb_password != null)
             {

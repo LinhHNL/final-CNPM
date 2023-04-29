@@ -23,6 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="AdminPage\UpdateFoodForm.cs" />
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />

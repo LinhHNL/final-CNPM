@@ -21,7 +21,7 @@ BEGIN
         SELECT '0' AS Result
     END
 END
-
+GO
 --lưu thông tin tài khoản mới trong đó result = 0 là thất bạn 1 là thành công
 CREATE PROCEDURE AddCustomer
     @name NVARCHAR(50),
@@ -45,9 +45,11 @@ BEGIN
 END
 
 
+GO
 EXEC AddCustomer N'Nguyễn Văn A', '0854512355', '123 Street, HCM City', '123456'
 
 EXEC CheckLogin '0854512355', '123456'
+GO
 --crud  room 
 CREATE PROCEDURE Room_Insert
     @Name NVARCHAR(50),
@@ -91,22 +93,22 @@ BEGIN
     SELECT * FROM Room WHERE RoomID = @Id
 END
 GO
+
 CREATE PROCEDURE Room_GetAll
-    
 AS
 BEGIN
     SELECT * FROM Room 
 END
 
-
+GO
 EXEC Room_Insert N'Phòng Lẩu', N'Phòng có chức năng chính là phục vụ các món lẩu'
 EXEC Room_Insert N'Phòng Hải Sản', N'Phòng có chức năng chính là phục vụ các món hải sản'
 EXEC Room_Insert N'Phòng Ăn Vặt', N'Phòng có chức năng chính là phục vụ các món ăn vặt và làm đồ ăn cho nhân viên'
 EXEC Room_Insert N'Phòng Chuyên Dụng', N'Phòng có chức năng chính là phục vụ các món nước ép và fill gia vị'
 EXEC Room_Insert N'Phòng Nước', N'Phòng có chức năng chính là phục vụ các món nước đóng chai rượu bia các thứ'
 EXEC Room_Insert N'Phòng Lên món', N'Phòng có chức năng chính là phục vụ các món chính trong nhà hàng'
-
---crud kind food 
+GO
+--crud kind food  
 CREATE PROCEDURE KindFood_Insert
     @Name NVARCHAR(50),
     @Description NVARCHAR(100)
@@ -156,12 +158,11 @@ AS
 BEGIN
     SELECT * FROM KindFood 
 END
-
+GO
 EXEC KindFood_Insert N'ĂN Vặt', N'Các món ăn vặt'
 EXEC KindFood_Insert N'Món Thịt', N'Các món thịt'
 EXEC KindFood_Insert N'Lẩu', N'Các món lẩu'
-
-
+GO
 CREATE PROCEDURE Level_GetAll
     @Id INT
 AS
@@ -286,8 +287,8 @@ BEGIN
         status = @status
     WHERE Menuid = @id;
 END
-go
-
+GO
+SELECT * FROM Menu
 CREATE PROCEDURE sp_delete_menu
     @id INT
 AS
@@ -325,7 +326,7 @@ begin
 	where 
 	MenuID = @id
 end
-
+GO
 -- crud department 
 CREATE PROCEDURE [dbo].[CreateDepartment]
     @Name nvarchar(45),
