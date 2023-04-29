@@ -179,6 +179,9 @@
       "DAO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.5"
+        },
         "compile": {
           "bin/placeholder/DAO.dll": {}
         },
