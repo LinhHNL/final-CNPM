@@ -105,8 +105,8 @@ EXEC Room_Insert N'Phòng Ăn Vặt', N'Phòng có chức năng chính là phụ
 EXEC Room_Insert N'Phòng Chuyên Dụng', N'Phòng có chức năng chính là phục vụ các món nước ép và fill gia vị'
 EXEC Room_Insert N'Phòng Nước', N'Phòng có chức năng chính là phục vụ các món nước đóng chai rượu bia các thứ'
 EXEC Room_Insert N'Phòng Lên món', N'Phòng có chức năng chính là phục vụ các món chính trong nhà hàng'
-
---crud kind food 
+GO
+--crud kind food  
 CREATE PROCEDURE KindFood_Insert
     @Name NVARCHAR(50),
     @Description NVARCHAR(100)
@@ -156,12 +156,12 @@ AS
 BEGIN
     SELECT * FROM KindFood 
 END
-
+GO
+DROP Procedure KindFood_GetAll;
 EXEC KindFood_Insert N'ĂN Vặt', N'Các món ăn vặt'
 EXEC KindFood_Insert N'Món Thịt', N'Các món thịt'
 EXEC KindFood_Insert N'Lẩu', N'Các món lẩu'
-
-
+GO
 CREATE PROCEDURE Level_GetAll
     @Id INT
 AS

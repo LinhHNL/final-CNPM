@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Data.SqlClient;
 using WinFormsApp2.Components;
 
 namespace WinFormsApp2
@@ -105,52 +96,11 @@ namespace WinFormsApp2
             btn_doublePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
         }
 
-        private void metroTile2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("");
-        }
 
-        private void roundedButton18_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void btn_rightDoublePot_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btn_topLeftFourPot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_bottomLeftFourPot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_topRightFourPot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_bottomRightFourPot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedButton22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedButton5_Click(object sender, EventArgs e)
+        private void btn_ChangeToSectionFood1_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllMonAn homepageFormSingle = new AllMonAn();
@@ -158,7 +108,7 @@ namespace WinFormsApp2
             this.Close();
         }
 
-        private void roundedButton6_Click(object sender, EventArgs e)
+        private void btn_ChangeToSectionFood2_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllMonAn homepageFormSingle = new AllMonAn();
@@ -166,7 +116,7 @@ namespace WinFormsApp2
             this.Close();
         }
 
-        private void roundedButton7_Click(object sender, EventArgs e)
+        private void btn_ChangeToSectionFood3_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllMonAn homepageFormSingle = new AllMonAn();
@@ -174,7 +124,7 @@ namespace WinFormsApp2
             this.Close();
         }
 
-        private void roundedButton8_Click(object sender, EventArgs e)
+        private void btn_ChangeToSectionFood4_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllMonAn homepageFormSingle = new AllMonAn();
@@ -182,7 +132,7 @@ namespace WinFormsApp2
             this.Close();
         }
 
-        private void roundedButton9_Click(object sender, EventArgs e)
+        private void btn_ChangeToSectionFood5_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllMonAn homepageFormSingle = new AllMonAn();
@@ -190,7 +140,7 @@ namespace WinFormsApp2
             this.Close();
         }
 
-        private void roundedButton10_Click(object sender, EventArgs e)
+        private void btn_ReturnLogin_Click(object sender, EventArgs e)
         {
             this.Hide();
             SignInForm signUpForm = new SignInForm();
