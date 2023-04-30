@@ -15,17 +15,19 @@ namespace WinFormsApp2.KhoPage
         public KiemKhoXuatHang()
         {
             InitializeComponent();
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
+            BUS.Order order = new BUS.Order();
+            List<Dictionary<string, string>> ExportList = order.getAllExportOrder();
+            foreach (Dictionary<string, string> item in ExportList)
+            {
+                dgv_XuatHang.Rows.Add(item["ExportOrderID"], item["Date"], item["Name"]);
+            }
         }
 
         private void btn_PhieuXuatHang_Click(object sender, EventArgs e)
         {
+            int numberofID = dgv_XuatHang.RowCount;
             this.Hide();
-            KiemKhoTaoPhieuXuatHang form = new KiemKhoTaoPhieuXuatHang();
+            KiemKhoTaoPhieuXuatHang form = new KiemKhoTaoPhieuXuatHang(numberofID);
             form.ShowDialog();
             this.Close();
         }
@@ -49,6 +51,26 @@ namespace WinFormsApp2.KhoPage
             KiemKhoNhapHang form = new KiemKhoNhapHang();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void dgv_XuatHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                string value = "";
+                if (dgv_XuatHang.Rows[e.RowIndex].Cells[0].Value == null)
+                {
+                    value = "";
+                }
+                else
+                {
+                    value = dgv_XuatHang.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    this.Hide();
+                    KiemKhoXemPhieuXuatHang form = new KiemKhoXemPhieuXuatHang(value);
+                    form.ShowDialog();
+                    this.Close();
+                }
+            }
         }
     }
 }

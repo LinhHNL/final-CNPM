@@ -12,14 +12,11 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoXemPhieuXuatHang : MetroFramework.Forms.MetroForm
     {
-        public KiemKhoXemPhieuXuatHang()
+        String valueofID = "";
+        public KiemKhoXemPhieuXuatHang(String valueofID)
         {
             InitializeComponent();
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
+            this.valueofID = valueofID;
         }
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
         {

@@ -12,9 +12,11 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class SuaThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
-        public SuaThongTinHangHoa()
+        private String hanghoaid = "";
+        public SuaThongTinHangHoa(string hanghoaid)
         {
             InitializeComponent();
+            this.hanghoaid = hanghoaid;
         }
 
         private void SuaThongTinHangHoa_Load(object sender, EventArgs e)

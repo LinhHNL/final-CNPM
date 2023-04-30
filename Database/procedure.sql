@@ -222,14 +222,12 @@ CREATE PROCEDURE sp_add_menu
     @name NVARCHAR(50),
     @price INT,
     @point INT,
-    @url_image NVARCHAR(200),
+    @url_image VARCHAR(MAX),
     @kind_food_id INT,
     @room_id INT,
     @status int
 AS
 BEGIN
-    
-
     IF NOT EXISTS (SELECT * FROM KindFood WHERE KindFoodid = @kind_food_id)
     BEGIN
         RAISERROR('Kind food does not exist.', 16, 1);
@@ -245,13 +243,13 @@ BEGIN
     INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid,status)
     VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status);
 END
-
+EXEC change_status 1,0;
 CREATE PROCEDURE sp_update_menu
     @id INT,
     @name NVARCHAR(50),
     @price INT,
     @point INT,
-    @url_image NVARCHAR(200),
+    @url_image VARCHAR(MAX),
     @kind_food_id INT,
     @room_id INT,
     @status BIT
@@ -288,7 +286,7 @@ BEGIN
     WHERE Menuid = @id;
 END
 GO
-SELECT * FROM Menu
+
 CREATE PROCEDURE sp_delete_menu
     @id INT
 AS
@@ -314,6 +312,14 @@ BEGIN
 
     DELETE FROM Menu WHERE MenuID = @id;
 END
+
+Create proc sp_getAll_Menu
+as 
+begin
+	Select * from Menu
+end
+GO
+EXEC sp_getAll_Menu;
 --Thay đổi trạng thái món ăn
 Create proc change_status
 @id int,
@@ -327,6 +333,7 @@ begin
 	MenuID = @id
 end
 GO
+EXEC change_status 1,0
 -- crud department 
 CREATE PROCEDURE [dbo].[CreateDepartment]
     @Name nvarchar(45),
@@ -493,7 +500,6 @@ BEGIN
     RAISERROR ('ShiftID not found.', 16, 1);
   END
 END
-
 CREATE PROCEDURE InsertStaff
     @Name nvarchar(45),
     @DateOfBirth DATE,
@@ -539,7 +545,7 @@ BEGIN
     VALUES (@Name, @DateOfBirth, @Nationality, @Phone, @IdentityCard, @DateIdentityCard, @PlaceIdentityCard,
         @CurrentAddress, @PermanentAddress, @BankID, @NameBank, @Salary, @Sex, @Status, @URLImage, @PositionID, @ShiftID);
     
-    SELECT @@IDENTITY;
+    SELECT @@IDENTITY as StaffID;
 END
 
 EXEC InsertStaff 
@@ -561,7 +567,6 @@ EXEC InsertStaff
 	@PositionID = 1,
 	@ShiftID = 1;
 
-select * from Staff
 
 CREATE PROCEDURE GetStaffByID
     @staffID INT
@@ -1069,6 +1074,15 @@ BEGIN
     WHERE ImportOrderID = @ImportOrderID
 END
 go
+
+CREATE PROCEDURE GetImportOrderAll
+AS
+BEGIN
+    SELECT *
+    FROM ImportOrders
+END
+go
+EXEC GetImportOrderAll;
 CREATE PROCEDURE UpdateImportOrder
     @ImportOrderID int,
     @Date date,
@@ -1218,3 +1232,11 @@ BEGIN
     FROM ExportOrdersDetails
     WHERE ComodityID = @CommodityID AND ExportOrderID = @ExportOrderID
 END
+GO
+CREATE PROCEDURE GetExportOrderAll
+AS
+BEGIN
+    SELECT *
+    FROM ExportOrders
+END
+go

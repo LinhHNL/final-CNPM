@@ -50,17 +50,16 @@ CREATE TABLE Department
   Description ntext NOT NULL,
   PRIMARY KEY (DepartmentID)
 );
-
+DROP TABLE Position;
 CREATE TABLE Position
 (
   PositionID INT IDENTITY(1,1) NOT NULL,
   Name nvarchar(45) NOT NULL,
-  Desciption nvarchar(45) NOT NULL,
+  Description nvarchar(45) NOT NULL,
   DepartmentID INT NOT NULL,
   PRIMARY KEY (PositionID),
   FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID)
 );
-
 CREATE TABLE Shift
 (
   ShiftID INT IDENTITY(1,1) NOT NULL,
@@ -295,7 +294,7 @@ CREATE TABLE Menu
   Name nvarchar(45) NOT NULL,
   Price FLOAT NOT NULL,
   Point INT NOT NULL,
-  URLImage ntext NOT NULL,
+  URLImage varchar(MAX) NOT NULL,
   KindFoodID INT NOT NULL,
   RoomID INT NOT NULL,
   status int not null,

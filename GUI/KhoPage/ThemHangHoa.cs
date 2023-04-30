@@ -12,14 +12,16 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class ThemHangHoa : MetroFramework.Forms.MetroForm
     {
-        public ThemHangHoa()
+        private int numberofRows = 0;
+        public ThemHangHoa(int numberofRows)
         {
             InitializeComponent();
+            this.numberofRows = numberofRows;
         }
 
         private void ThemHangHoa_Load(object sender, EventArgs e)
         {
-
+            this.tb_MaHang.Texts = "HH" + this.numberofRows.ToString();
         }
 
         private void btn_KiemKho_Click(object sender, EventArgs e)

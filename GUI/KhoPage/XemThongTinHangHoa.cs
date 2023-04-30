@@ -12,18 +12,15 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class XemThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
-        public XemThongTinHangHoa()
+        private String hanghoaid="";
+        public XemThongTinHangHoa(string hanghoaid)
         {
             InitializeComponent();
+            this.hanghoaid = hanghoaid;
         }
 
 
-        private void roundedButton4_Click(object sender, EventArgs e)
-        {
-            
-                
-            
-        }
+     
         private void btn_KiemKho_Click(object sender, EventArgs e)
         {
             btn_HangTrongKho.ForeColor = ColorTranslator.FromHtml("#A09F9F");
@@ -49,7 +46,7 @@ namespace WinFormsApp2.KhoPage
         private void btn_edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SuaThongTinHangHoa form = new SuaThongTinHangHoa();
+            SuaThongTinHangHoa form = new SuaThongTinHangHoa(this.hanghoaid);
             form.ShowDialog();
             this.Close();
         }

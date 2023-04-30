@@ -39,14 +39,14 @@
             roundedButton4 = new CustomControls.RoundedButton();
             pictureBox1 = new PictureBox();
             roundedButton10 = new CustomControls.RoundedButton();
-            btn_addPicture = new CustomControls.RoundedButton();
             btn_placeholderlabel = new Label();
             tb_NameOfFood = new CustomControls.LeftAlignRoundedTextBox();
             tb_Price = new CustomControls.LeftAlignRoundedTextBox();
             btn_addingMenu = new CustomControls.RoundedButton();
-            UploadPlaceBox = new PictureBox();
             cb_TypeofFood = new CustomControls.CustomComboBox();
             cb_RoomID = new CustomControls.CustomComboBox();
+            UploadPlaceBox = new PictureBox();
+            btn_addPicture = new CustomControls.RoundedButton();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -217,24 +217,6 @@
             roundedButton10.TextColor = Color.White;
             roundedButton10.UseVisualStyleBackColor = false;
             // 
-            // btn_addPicture
-            // 
-            btn_addPicture.BackColor = Color.Transparent;
-            btn_addPicture.BackgroundColor = Color.Transparent;
-            btn_addPicture.BorderColor = Color.FromArgb(33, 32, 32);
-            btn_addPicture.BorderRadius = 0;
-            btn_addPicture.BorderSize = 3;
-            btn_addPicture.FlatAppearance.BorderSize = 0;
-            btn_addPicture.FlatStyle = FlatStyle.Flat;
-            btn_addPicture.ForeColor = SystemColors.WindowText;
-            btn_addPicture.Location = new Point(311, 108);
-            btn_addPicture.Name = "btn_addPicture";
-            btn_addPicture.Size = new Size(400, 400);
-            btn_addPicture.TabIndex = 23;
-            btn_addPicture.TextColor = SystemColors.WindowText;
-            btn_addPicture.UseVisualStyleBackColor = false;
-            btn_addPicture.Click += btn_addPicture_Click;
-            // 
             // btn_placeholderlabel
             // 
             btn_placeholderlabel.AutoSize = true;
@@ -314,15 +296,6 @@
             btn_addingMenu.UseVisualStyleBackColor = false;
             btn_addingMenu.Click += btn_addingMenu_Click;
             // 
-            // UploadPlaceBox
-            // 
-            UploadPlaceBox.Location = new Point(311, 108);
-            UploadPlaceBox.Name = "UploadPlaceBox";
-            UploadPlaceBox.Size = new Size(400, 399);
-            UploadPlaceBox.TabIndex = 29;
-            UploadPlaceBox.TabStop = false;
-            UploadPlaceBox.Click += UploadPlaceBox_Click;
-            // 
             // cb_TypeofFood
             // 
             cb_TypeofFood.BackColor = Color.White;
@@ -361,6 +334,33 @@
             cb_RoomID.TabIndex = 31;
             cb_RoomID.Texts = "Loại phòng đảm nhận";
             // 
+            // UploadPlaceBox
+            // 
+            UploadPlaceBox.Location = new Point(311, 108);
+            UploadPlaceBox.Name = "UploadPlaceBox";
+            UploadPlaceBox.Size = new Size(400, 399);
+            UploadPlaceBox.TabIndex = 29;
+            UploadPlaceBox.TabStop = false;
+            UploadPlaceBox.Click += UploadPlaceBox_Click;
+            // 
+            // btn_addPicture
+            // 
+            btn_addPicture.BackColor = Color.Transparent;
+            btn_addPicture.BackgroundColor = Color.Transparent;
+            btn_addPicture.BorderColor = Color.FromArgb(33, 32, 32);
+            btn_addPicture.BorderRadius = 0;
+            btn_addPicture.BorderSize = 3;
+            btn_addPicture.FlatAppearance.BorderSize = 0;
+            btn_addPicture.FlatStyle = FlatStyle.Flat;
+            btn_addPicture.ForeColor = SystemColors.WindowText;
+            btn_addPicture.Location = new Point(311, 108);
+            btn_addPicture.Name = "btn_addPicture";
+            btn_addPicture.Size = new Size(400, 400);
+            btn_addPicture.TabIndex = 23;
+            btn_addPicture.TextColor = SystemColors.WindowText;
+            btn_addPicture.UseVisualStyleBackColor = false;
+            btn_addPicture.Click += btn_addPicture_Click;
+            // 
             // AddFood
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -397,15 +397,15 @@
         private CustomControls.RoundedButton roundedButton4;
         private PictureBox pictureBox1;
         private CustomControls.RoundedButton roundedButton10;
-        private CustomControls.RoundedButton btn_addPicture;
         private Label btn_placeholderlabel;
         private CustomControls.LeftAlignRoundedTextBox tb_NameOfFood;
         private CustomControls.LeftAlignRoundedTextBox tb_Price;
         private CustomControls.RoundedButton btn_addingMenu;
-        private PictureBox UploadPlaceBox;
         private CustomControls.CustomComboBox cb_TypeofFood;
         private PictureBox pictureBox2;
         private Label label4;
         private CustomControls.CustomComboBox cb_RoomID;
+        private PictureBox UploadPlaceBox;
+        private CustomControls.RoundedButton btn_addPicture;
     }
 }
