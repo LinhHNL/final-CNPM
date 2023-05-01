@@ -33,7 +33,7 @@ namespace GUI.Components
             TenMon = ten;
             GiaMon = gia;
             lbl_ten.Text = ten;
-            lbl_gia.Text = gia;
+            lbl_gia.Text = ChangeGia(gia);
             this.URLImage = URLImage;
             pb_FoodImage.Image = Base64ToImage(URLImage);
             this.ContextLockFood = ContextLockFood;
@@ -44,7 +44,7 @@ namespace GUI.Components
             TenMon = ten;
             GiaMon = gia;
             lbl_ten.Text = ten;
-            lbl_gia.Text = gia;
+            lbl_gia.Text = ChangeGia(gia);
         }
         public LockedFood(String ten, String gia, String URLImage)
         {
@@ -52,7 +52,7 @@ namespace GUI.Components
             TenMon = ten;
             GiaMon = gia;
             lbl_ten.Text = ten;
-            lbl_gia.Text = gia;
+            lbl_gia.Text = ChangeGia(gia);
             this.URLImage = URLImage;
             pb_FoodImage.Image = Base64ToImage(URLImage);
         }

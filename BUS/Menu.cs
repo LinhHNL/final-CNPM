@@ -23,5 +23,15 @@ namespace BUS
             DAO.Menu menu = new DAO.Menu();
             return menu.tryingChangeStatus(StatusInfo);
         }
+        public Dictionary<string, string> getMonAnByID(String ID)
+        {
+            DAO.Menu menu= new DAO.Menu();
+            return menu.getMonAnByID(int.Parse(ID));
+        }
+        public bool changeMenu(Dictionary<string, string> MenuInfo)
+        {
+            DAO.Menu menu=new DAO.Menu();
+            return menu.tryingChangeMenu(MenuInfo);
+        }
     }
 }

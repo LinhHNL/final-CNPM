@@ -216,7 +216,8 @@ EXEC Level_Insert N'Cấp độ bạc', N'Đạt số tiền từ 0 - 10000000',
 EXEC Level_Insert N'Cấp độ vàng', N'Đạt số tiền từ 10000000 - 30000000', 10000000
 
 
-drop PROCEDURE sp_add_menu
+
+
 --crud monan
 CREATE PROCEDURE sp_add_menu
     @name NVARCHAR(50),
@@ -312,14 +313,23 @@ BEGIN
 
     DELETE FROM Menu WHERE MenuID = @id;
 END
-
+GO
 Create proc sp_getAll_Menu
 as 
 begin
 	Select * from Menu
 end
 GO
-EXEC sp_getAll_Menu;
+EXEC sp_getAll_Menu
+GO
+CREATE PROCEDURE sp_getMenuByID
+	@ID INT
+AS
+BEGIN
+	Select * from Menu where @ID=MenuID
+END
+GO
+EXEC sp_getMenuByID 1
 --Thay đổi trạng thái món ăn
 Create proc change_status
 @id int,

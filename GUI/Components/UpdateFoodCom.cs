@@ -7,15 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormsApp2.Components;
-using WinFormsApp2;
 using WinFormsApp2.AdminPage;
+using WinFormsApp2;
 
 namespace GUI.Components
 {
-    public partial class UnlockedFood : UserControl
+    public partial class UpdateFoodCom : UserControl
     {
-        public UnlockedFood()
+        public UpdateFoodCom()
         {
             InitializeComponent();
         }
@@ -27,7 +26,8 @@ namespace GUI.Components
         private AllMonAn Context;
         private HomepageFormSingle ContextHomePage;
         private LockFood ContextLockFood;
-        public UnlockedFood(String ten, String gia)
+        private UpdateFood ContextUpdateFood;
+        public UpdateFoodCom(String ten, String gia)
         {
             InitializeComponent();
             TenMon = ten;
@@ -35,7 +35,7 @@ namespace GUI.Components
             lbl_ten.Text = ten;
             lbl_gia.Text = ChangeGia(gia);
         }
-        public UnlockedFood(String ten, String gia, String URLImage)
+        public UpdateFoodCom(String ten, String gia, String URLImage)
         {
             InitializeComponent();
             TenMon = ten;
@@ -45,7 +45,7 @@ namespace GUI.Components
             this.URLImage = URLImage;
             pb_FoodImage.Image = Base64ToImage(URLImage);
         }
-        public UnlockedFood(String IdFood,String ten, String gia, String URLImage, LockFood ContextLockFood)
+        public UpdateFoodCom(String IdFood, String ten, String gia, String URLImage, LockFood ContextLockFood)
         {
             InitializeComponent();
             this.IDFood = IdFood;
@@ -57,7 +57,19 @@ namespace GUI.Components
             pb_FoodImage.Image = Base64ToImage(URLImage);
             this.ContextLockFood = ContextLockFood;
         }
-        public UnlockedFood(String ten, String gia, String URLImage, AllMonAn context)
+        public UpdateFoodCom(String IdFood, String ten, String gia, String URLImage, UpdateFood ContextUpdateFood)
+        {
+            InitializeComponent();
+            this.IDFood = IdFood;
+            TenMon = ten;
+            GiaMon = gia;
+            lbl_ten.Text = ten;
+            lbl_gia.Text = ChangeGia(gia);
+            this.URLImage = URLImage;
+            pb_FoodImage.Image = Base64ToImage(URLImage);
+            this.ContextUpdateFood = ContextUpdateFood;
+        }
+        public UpdateFoodCom(String ten, String gia, String URLImage, AllMonAn context)
         {
             InitializeComponent();
             TenMon = ten;
@@ -93,7 +105,7 @@ namespace GUI.Components
             }
         }
 
-        public UnlockedFood(String ten, String gia, String URLImage, HomepageFormSingle context)
+        public UpdateFoodCom(String ten, String gia, String URLImage, HomepageFormSingle context)
         {
             InitializeComponent();
             TenMon = ten;
@@ -124,14 +136,14 @@ namespace GUI.Components
             this.Soluongdaadd--;
         }
 
-        private void btn_lockfood_Click(object sender, EventArgs e)
+
+        private void btn_UpdateFood_Click_1(object sender, EventArgs e)
         {
-            BUS.Menu menu = new BUS.Menu();
-            Dictionary<string, string> StatusInfo = new Dictionary<string, string>();
-            StatusInfo.Add("Status", "0");
-            StatusInfo.Add("IDFood", IDFood);
-            menu.changeStatusMenu(StatusInfo);
-            this.ContextLockFood.UpdateMenu();
+            ContextUpdateFood.Hide();
+            UpdateFoodForm UpdateFoodForm = new UpdateFoodForm(IDFood);
+            UpdateFoodForm.ShowDialog();
+            ContextUpdateFood.Close();
         }
     }
 }
+

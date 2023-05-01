@@ -77,6 +77,8 @@ namespace WinFormsApp2.AdminPage
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     imageLocation = dialog.FileName;
+                    byte[] imageData = File.ReadAllBytes(imageLocation);
+                    ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
                     btn_placeholderlabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
@@ -88,7 +90,6 @@ namespace WinFormsApp2.AdminPage
             }
         }
 
-        String imageURL = "";
         private void btn_addingMenu_Click(object sender, EventArgs e)
         {
             Dictionary<string, string> itemtoadd = new Dictionary<string, string>();
@@ -96,7 +97,6 @@ namespace WinFormsApp2.AdminPage
             String price = this.tb_Price.Texts.ToString();
             String typeID = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
             String RoomID = (this.cb_RoomID.SelectedIndex + 1).ToString();
-            ImageConverter converter = new ImageConverter();
             itemtoadd.Add("Name", nameoffood);
             itemtoadd.Add("Price", price);
             itemtoadd.Add("typeID", typeID);

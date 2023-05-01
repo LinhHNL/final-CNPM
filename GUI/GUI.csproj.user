@@ -40,6 +40,9 @@
     <Compile Update="Components\MonAnComponentForAdding.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Components\UpdateFoodCom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="CustomControls\ButtonTrangThai.cs">
       <SubType>UserControl</SubType>
     </Compile>
