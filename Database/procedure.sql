@@ -130,7 +130,7 @@ BEGIN
         SET Name = @Name, Description = @Description
         WHERE KindFoodID = @Id
 END
-
+GO
 CREATE PROCEDURE KindFood_Delete
     @Id INT
 AS
@@ -144,7 +144,7 @@ BEGIN
         RAISERROR('Cannot delete kind of food because it has foods', 16, 1)
     END
 END
-
+GO
 CREATE PROCEDURE KindFood_GetById
     @Id INT
 AS
@@ -216,7 +216,7 @@ EXEC Level_Insert N'Cấp độ bạc', N'Đạt số tiền từ 0 - 10000000',
 EXEC Level_Insert N'Cấp độ vàng', N'Đạt số tiền từ 10000000 - 30000000', 10000000
 
 
-
+GO
 
 --crud monan
 CREATE PROCEDURE sp_add_menu
@@ -244,7 +244,8 @@ BEGIN
     INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid,status)
     VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status);
 END
-EXEC change_status 1,0;
+GO
+GO
 CREATE PROCEDURE sp_update_menu
     @id INT,
     @name NVARCHAR(50),
@@ -330,6 +331,7 @@ BEGIN
 END
 GO
 EXEC sp_getMenuByID 1
+GO
 --Thay đổi trạng thái món ăn
 Create proc change_status
 @id int,
@@ -343,7 +345,7 @@ begin
 	MenuID = @id
 end
 GO
-EXEC change_status 1,0
+GO
 -- crud department 
 CREATE PROCEDURE [dbo].[CreateDepartment]
     @Name nvarchar(45),
@@ -388,6 +390,7 @@ END
 EXEC CreateDepartment @Name = 'HR', @Description = 'Human Resources Department'
 
 --crud Position
+GO
 CREATE PROCEDURE InsertPosition
     @Name nvarchar(45),
     @Description nvarchar(45),
@@ -441,9 +444,9 @@ BEGIN
     SET Name = @Name, Description = @Description, DepartmentID = @DepartmentID
     WHERE PositionID = @PositionID
 END
-
+GO
 EXEC InsertPosition 'Manager', 'Quản lý phòng kinh doanh', 1
-
+GO
 ---crud shift
 CREATE PROCEDURE sp_CreateShift
   @Name nvarchar(45),
@@ -510,6 +513,7 @@ BEGIN
     RAISERROR ('ShiftID not found.', 16, 1);
   END
 END
+GO
 CREATE PROCEDURE InsertStaff
     @Name nvarchar(45),
     @DateOfBirth DATE,
@@ -557,7 +561,7 @@ BEGIN
     
     SELECT @@IDENTITY as StaffID;
 END
-
+GO
 EXEC InsertStaff 
 	@Name = 'John Doe',
 	@Dateofbirth = '1990-01-01',
@@ -577,7 +581,7 @@ EXEC InsertStaff
 	@PositionID = 1,
 	@ShiftID = 1;
 
-
+GO
 CREATE PROCEDURE GetStaffByID
     @staffID INT
 AS
@@ -720,7 +724,7 @@ BEGIN
   INSERT INTO TransactionDetail (Number, Price, TransactionID, MenuID)
   VALUES (@Number, @Price, @TransactionID, @MenuID)
 END
-
+GO
 --crud unit 
 CREATE PROCEDURE create_unit
     @Name nvarchar(45),
@@ -765,7 +769,7 @@ BEGIN
     DELETE FROM Unit
     WHERE UnitID = @UnitID
 END
-
+GO
 CREATE PROCEDURE CreateCommodity
     @Name NVARCHAR(45),
     @Number FLOAT,
@@ -899,7 +903,7 @@ BEGIN
 	end
 END
 
-
+GO
 --Cru lập phiếu nhập hàng
 CREATE PROCEDURE ImportCoupon_Insert
 (
@@ -976,6 +980,7 @@ BEGIN
   INSERT INTO CouponDetail (Number, ComodityID, IDCoupon)
   VALUES (@Number, @ComodityID, @IDCoupon)
 END
+GO
 CREATE PROCEDURE sp_CouponDetail_Update
 (
   @ComodityID INT,
@@ -1006,12 +1011,14 @@ BEGIN
   SET Number = @Number
   WHERE ComodityID = @ComodityID AND IDCoupon = @IDCoupon
 END
+GO
 CREATE PROCEDURE sp_CouponDetail_GetAll
 AS
 BEGIN
   SELECT Number, ComodityID, IDCoupon
   FROM CouponDetail
 END
+GO
 --cru xuất hàng 
 CREATE PROCEDURE InsertExportOrder
     @Date date,
@@ -1092,7 +1099,6 @@ BEGIN
     FROM ImportOrders
 END
 go
-EXEC GetImportOrderAll;
 CREATE PROCEDURE UpdateImportOrder
     @ImportOrderID int,
     @Date date,
@@ -1250,3 +1256,104 @@ BEGIN
     FROM ExportOrders
 END
 go
+DROP PROC ADDCOMBO
+GO
+CREATE PROCEDURE AddCombo
+@Name NVARCHAR(45),
+@Cost NVARCHAR(45),
+@ImageURL NTEXT,
+@Description NTEXT
+AS
+BEGIN
+INSERT INTO Combo (Name, Cost, ImageURL, Description, status)
+VALUES (@Name, @Cost, @ImageURL, @Description, '1')
+END
+Go
+
+---Procedure thêm món ăn vào DetailCombo (Create)
+CREATE PROCEDURE AddMenuToCombo
+@MenuID INT,
+@ComboID INT,
+@NumberOfFood varchar(70)
+AS
+BEGIN
+INSERT INTO DetailCombo (MenuID, ID,NumberOfFood)
+VALUES (@MenuID, @ComboID,@NumberOfFood)
+END
+Go
+Drop proc GetLastIDConbo
+GO
+-- Procedure lấy id cuối cùng của Combo
+Create proc GetLastIDCombo
+AS
+BEGIN
+SELECT Id FROM Combo WHERE ID = ( SELECT MAX(ID) FROM Combo)
+END
+GO
+EXEC GetLastIDCombo;
+GO
+---Procedure lấy danh sách các Combo (Read)
+Drop proc GetCombos;
+GO
+CREATE PROCEDURE GetCombos
+AS
+BEGIN
+SELECT * FROM Combo 
+END
+Go
+EXEC GetCombos
+GO
+---Procedure lấy danh sách các món ăn trong Combo (Read)
+CREATE PROCEDURE GetMenusInCombo
+@ComboID INT
+AS
+BEGIN
+SELECT Menu.* FROM Menu
+INNER JOIN DetailCombo ON Menu.MenuID = DetailCombo.MenuID
+WHERE DetailCombo.ID = @ComboID
+END
+Go
+---Procedure cập nhật thông tin Combo (Update)
+CREATE PROCEDURE UpdateCombo
+@ComboID INT,
+@Name NVARCHAR(45),
+@Cost NVARCHAR(45),
+@ImageURL NTEXT,
+@Description NTEXT
+AS
+BEGIN
+UPDATE Combo
+SET Name = @Name, Cost = @Cost, ImageURL = @ImageURL, Description = @Description
+WHERE Id = @ComboID
+END
+Go
+----Procedure xóa Combo (Delete)
+CREATE PROCEDURE DeleteCombo
+@ComboID INT
+AS
+BEGIN
+DELETE FROM Combo WHERE Id = @ComboID
+END
+Go
+----Procedure xóa món ăn khỏi Combo (Delete)
+CREATE PROCEDURE RemoveMenuFromCombo
+@MenuID INT,
+@ComboID INT
+AS
+BEGIN
+DELETE FROM DetailCombo WHERE MenuID = @MenuID AND ID = @ComboID
+END
+GO
+Drop proc change_statusCombo
+GO
+Create proc change_statusCombo
+@id int,
+@status varchar
+As 
+begin
+	update Combo 
+	Set Combo.status = @status
+	where 
+	Id = @id
+end
+GO

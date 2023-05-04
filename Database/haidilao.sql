@@ -1,3 +1,5 @@
+use hadilao 
+GO
 
 CREATE TABLE Level
 (
@@ -50,7 +52,6 @@ CREATE TABLE Department
   Description ntext NOT NULL,
   PRIMARY KEY (DepartmentID)
 );
-DROP TABLE Position;
 CREATE TABLE Position
 (
   PositionID INT IDENTITY(1,1) NOT NULL,
@@ -96,7 +97,6 @@ CREATE TABLE Insurance
   Status nvarchar(45) NOT NULL,
   PRIMARY KEY (InsuranceID)
 );
-
 CREATE TABLE Combo
 (
   Id INT IDENTITY(1,1) NOT NULL,
@@ -104,6 +104,7 @@ CREATE TABLE Combo
   Cost nvarchar(45) NOT NULL,
   ImageURL ntext  NOT NULL,
   Description ntext  NOT NULL,
+  status varchar(2) NOT NULL,
   PRIMARY KEY (Id)
 );
 
@@ -348,6 +349,7 @@ CREATE TABLE DetailComBo
 (
   MenuID INT NOT NULL,
   Id INT NOT NULL,
+  NumberOfFood varchar(70) NOT NULL,
   PRIMARY KEY (MenuID, Id),
   FOREIGN KEY (MenuID) REFERENCES Menu(MenuID),
   FOREIGN KEY (Id) REFERENCES Combo(Id)

@@ -22,6 +22,8 @@ namespace GUI.Components
         private String TenMon = "";
         private String GiaMon = "";
         private String URLImage = "";
+        private String type = "Food";
+
         private int Soluongdaadd = 0;
         private AllMonAn Context;
         private HomepageFormSingle ContextHomePage;
@@ -37,6 +39,19 @@ namespace GUI.Components
             this.URLImage = URLImage;
             pb_FoodImage.Image = Base64ToImage(URLImage);
             this.ContextLockFood = ContextLockFood;
+        }
+        public LockedFood(String IdFood, String ten, String gia, String URLImage, LockFood ContextLockFood, String type)
+        {
+            InitializeComponent();
+            this.IDFood = IdFood;
+            TenMon = ten;
+            GiaMon = gia;
+            lbl_ten.Text = ten;
+            lbl_gia.Text = ChangeGia(gia);
+            this.URLImage = URLImage;
+            pb_FoodImage.Image = Base64ToImage(URLImage);
+            this.ContextLockFood = ContextLockFood;
+            this.type = type;
         }
         public LockedFood(String ten, String gia)
         {
@@ -126,14 +141,22 @@ namespace GUI.Components
 
         private void btn_unlockedfood_Click(object sender, EventArgs e)
         {
+            if (this.type == "Combo")
+            {
+                Dictionary<string, string> ComboStatusInfo = new Dictionary<string, string>();
+                BUS.Combo combo = new BUS.Combo();
+                ComboStatusInfo.Add("ComboID", this.IDFood);
+                ComboStatusInfo.Add("Status", "1");
+                combo.tryingFlipStatusCombo(ComboStatusInfo);
+                this.ContextLockFood.UpdateMenu();
+                return;
+            }
             BUS.Menu menu = new BUS.Menu();
-            Dictionary<string, string> StatusInfo=new Dictionary<string, string>();
+            Dictionary<string, string> StatusInfo = new Dictionary<string, string>();
             StatusInfo.Add("Status", "1");
             StatusInfo.Add("IDFood", IDFood);
             menu.changeStatusMenu(StatusInfo);
             this.ContextLockFood.UpdateMenu();
-            //Status
-            //IDFood
         }
     }
 }
