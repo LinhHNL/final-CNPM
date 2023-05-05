@@ -51,7 +51,7 @@
             metroPanel3.HorizontalScrollbarSize = 10;
             metroPanel3.Location = new Point(3, 0);
             metroPanel3.Name = "metroPanel3";
-            metroPanel3.Size = new Size(455, 188);
+            metroPanel3.Size = new Size(449, 185);
             metroPanel3.TabIndex = 22;
             metroPanel3.VerticalScrollbarBarColor = true;
             metroPanel3.VerticalScrollbarHighlightOnWheel = false;
@@ -68,7 +68,7 @@
             btn_lockfood.FlatStyle = FlatStyle.Flat;
             btn_lockfood.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_lockfood.ForeColor = Color.White;
-            btn_lockfood.Location = new Point(355, 146);
+            btn_lockfood.Location = new Point(345, 144);
             btn_lockfood.Margin = new Padding(3, 4, 3, 4);
             btn_lockfood.Name = "btn_lockfood";
             btn_lockfood.Size = new Size(95, 35);
@@ -117,7 +117,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(metroPanel3);
             Name = "UnlockedFood";
-            Size = new Size(460, 190);
+            Size = new Size(455, 188);
             metroPanel3.ResumeLayout(false);
             metroPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb_FoodImage).EndInit();

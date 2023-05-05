@@ -211,6 +211,7 @@
             // 
             // pnl_food_lock
             // 
+            pnl_food_lock.AutoScroll = true;
             pnl_food_lock.Location = new Point(299, 86);
             pnl_food_lock.Name = "pnl_food_lock";
             pnl_food_lock.Size = new Size(935, 493);

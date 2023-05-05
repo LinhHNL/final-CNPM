@@ -24,6 +24,19 @@ namespace WinFormsApp2.AdminPage
             pnl_food_lock.Controls.Clear();
             BUS.Menu menu = new BUS.Menu();
             List<Dictionary<string, string>> menuList = menu.getAllMenu();
+            BUS.Combo combo = new Combo();
+            List<Dictionary<string, string>> ComboList = combo.getAllCombo();
+            foreach (Dictionary<string, string> item in ComboList)
+            {
+                if (item["Status"] == "True")
+                {
+                    pnl_food_lock.Controls.Add(new UnlockedFood(item["ComboID"], item["Name"], item["Price"], item["URLImage"], this, "Combo"));
+                }
+                if (item["Status"] == "False")
+                {
+                    pnl_food_lock.Controls.Add(new LockedFood(item["ComboID"], item["Name"], item["Price"], item["URLImage"], this, "Combo"));
+                }
+            }
             foreach (Dictionary<string, string> item in menuList)
             {
                 if (item["Status"] == "1")

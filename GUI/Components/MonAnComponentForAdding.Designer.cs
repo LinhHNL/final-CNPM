@@ -29,32 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MonAnComponentForAdding));
-            pictureBox3 = new PictureBox();
+            pb_FoodImage = new PictureBox();
             lbl_ten = new Label();
             btn_add_them_soluong = new CustomControls.RoundedButton();
             btn_uncheckedadding = new CustomControls.RoundedButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb_FoodImage).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox3
+            // pb_FoodImage
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(0, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(212, 187);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
+            pb_FoodImage.Image = (Image)resources.GetObject("pb_FoodImage.Image");
+            pb_FoodImage.Location = new Point(0, 0);
+            pb_FoodImage.Name = "pb_FoodImage";
+            pb_FoodImage.Size = new Size(212, 187);
+            pb_FoodImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            pb_FoodImage.TabIndex = 3;
+            pb_FoodImage.TabStop = false;
             // 
             // lbl_ten
             // 
-            lbl_ten.AutoSize = true;
             lbl_ten.BackColor = Color.White;
             lbl_ten.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_ten.ForeColor = Color.FromArgb(229, 1, 17);
             lbl_ten.Location = new Point(218, 11);
             lbl_ten.Name = "lbl_ten";
-            lbl_ten.Size = new Size(123, 37);
+            lbl_ten.Size = new Size(223, 135);
             lbl_ten.TabIndex = 18;
             lbl_ten.Text = "Tên món";
             // 
@@ -106,18 +105,17 @@
             BackColor = Color.White;
             Controls.Add(btn_add_them_soluong);
             Controls.Add(lbl_ten);
-            Controls.Add(pictureBox3);
+            Controls.Add(pb_FoodImage);
             Controls.Add(btn_uncheckedadding);
             Name = "MonAnComponentForAdding";
             Size = new Size(455, 188);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb_FoodImage).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox3;
+        private PictureBox pb_FoodImage;
         private Label lbl_ten;
         private CustomControls.RoundedButton btn_add_them_soluong;
         private CustomControls.RoundedButton btn_uncheckedadding;
