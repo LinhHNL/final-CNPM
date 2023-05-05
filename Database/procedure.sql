@@ -1615,7 +1615,7 @@ DELETE FROM DetailCombo WHERE MenuID = @MenuID AND Id = @ComboID
 END
 
 
-
+GO
 ----- CRUD Tembill
 --- Mô tả : Đối với Status Temp Bill status bằng 0 nghĩa là chia được thanh toán 1 là đã thanh toán 
 ---Còn đối với TempBillDetails status bằng 0 nghĩa là đã xác nhận món xong 0 là chưa xác nhận món
