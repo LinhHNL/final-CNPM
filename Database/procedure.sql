@@ -1522,20 +1522,25 @@ END
 
 ----Crud Combo
 go
+
 ---Procedure thêm Combo mới (Create)
 CREATE PROCEDURE AddCombo
-@Name NVARCHAR(45),
-@Cost NVARCHAR(45),
-@ImageURL NTEXT,
-@Description NTEXT,
-@ComboID INT OUTPUT
+    @Name NVARCHAR(45),
+    @Cost NVARCHAR(45),
+    @ImageURL NTEXT,
+    @Description NTEXT
+   
 AS
 BEGIN
-INSERT INTO Combo (Name, Cost, ImageURL, Description, status)
-OUTPUT INSERTED.ComboID
-VALUES (@Name, @Cost, @ImageURL, @Description, 1)
+	Declare @ComboID int
+    INSERT INTO Combo (Name, Cost, ImageURL, Description, status)
+    VALUES (@Name, @Cost, @ImageURL, @Description, 1);
+
+    SET @ComboID = SCOPE_IDENTITY();
+
+    SELECT @ComboID AS ComboID;
 END
-go
+GO
 
 ---Procedure thêm món ăn vào DetailCombo (Create)
 CREATE PROCEDURE AddMenuToCombo
@@ -1663,16 +1668,11 @@ Go
 ----Update TempBillDetails
 CREATE PROCEDURE UpdateTempBillDetails
     @TempBillId INT,
-    @MenuID INT,
-    @Number INT,
-    @Price FLOAT,
-    @Status BIT
+    @MenuID INT
 AS
 BEGIN
     UPDATE TempBillDetails
-    SET Number = @Number,
-        Price = @Price,
-        Status = @Status
+    SET Status = ~Status
     WHERE TempBillId = @TempBillId AND MenuID = @MenuID
 END
 GO
@@ -1694,6 +1694,14 @@ BEGIN
 END
 GO
 ---Get
+Create Proc GetTempBillNotDone 
+AS
+	Begin
+		Select * from TempBill where status=0;
+	END
+GO
+EXEC GetTempBillNotDone;
+GO
 Create Procedure GetTempBill
 @Token varchar(45),
 @CustomerID int 
@@ -1711,7 +1719,8 @@ AS
 	End
 ----PayRoll
 GO
-
+EXEC GetAllTempBillDetailsOfTempBill 1;
+GO
 CREATE PROCEDURE InsertPayroll
 (
 @TimeHourW FLOAT,
@@ -2283,3 +2292,8 @@ as
 	begin 
 		select * from Staff where Name = @name
 	end
+GO
+
+EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xương đầy đủ';
+EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
+EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';

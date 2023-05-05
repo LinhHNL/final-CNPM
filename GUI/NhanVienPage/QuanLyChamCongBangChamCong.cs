@@ -25,7 +25,7 @@ namespace WinFormsApp2.NhanVienPage
                 form.ShowDialog();
                 this.Close();
             };
-           
+
 
         }
 

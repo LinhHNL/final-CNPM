@@ -102,3 +102,7 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UnlockedFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.LockedFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UpdateFoodCom.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.KitchenView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponentForKitchen.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.DetailKitchen.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.ViewingKitchen.resources
