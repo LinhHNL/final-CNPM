@@ -460,29 +460,24 @@ BEGIN
       SET Name = @Name, StartTime = @StartTime, EndTime = @EndTime
       WHERE ShiftID = @ShiftID;
 END
-go
+GO
+
 CREATE PROCEDURE sp_DeleteShift
   @ShiftID INT
 AS
 BEGIN
   IF EXISTS(SELECT * FROM Shift WHERE ShiftID = @ShiftID)
   BEGIN
-    IF NOT EXISTS(SELECT * FROM Staff WHERE ShiftID = @ShiftID)
-    BEGIN
-      DELETE FROM Shift
-      WHERE ShiftID = @ShiftID;
-    END
-    ELSE
-    BEGIN
-      RAISERROR ('Cannot delete this shift because there are still staffs assigned to it.', 16, 1);
-    END
+    DELETE FROM Shift
+    WHERE ShiftID = @ShiftID;
   END
   ELSE
   BEGIN
     RAISERROR ('ShiftID not found.', 16, 1);
   END
 END
-Go
+GO
+
 CREATE PROCEDURE sp_GetShifts
   @ShiftID INT
 AS
@@ -524,25 +519,6 @@ CREATE PROCEDURE InsertStaff
     @ShiftID INT
 AS
 BEGIN
-    -- Check if the position and shift exist
-    IF NOT EXISTS (SELECT * FROM Position WHERE PositionID = @PositionID)
-        BEGIN
-            RAISERROR ('Invalid position ID.', 16, 1);
-            RETURN;
-        END
-    IF NOT EXISTS (SELECT * FROM Shift WHERE ShiftID = @ShiftID)
-        BEGIN
-            RAISERROR ('Invalid shift ID.', 16, 1);
-            RETURN;
-        END
-        
- 
-    IF EXISTS (SELECT * FROM Staff WHERE Name = @Name AND DateOfBirth = @DateOfBirth)
-        BEGIN
-            RAISERROR ('A staff member with this name and date of birth algety exists.', 16, 1);
-            RETURN;
-        END
-    
   
     INSERT INTO Staff (Name, DateOfBirth, Nationality, Phone, IdentityCard, DateIdentityCard, PlaceIdentityCard,
         CurrentAddress, PermanentAddress, BankID, NameBank, Salary, Sex, Status, URLImage, PositionID, ShiftID)
@@ -552,26 +528,7 @@ BEGIN
     SELECT @@IDENTITY as StaffID;
 END
 
-EXEC InsertStaff 
-	@Name = 'John Doe',
-	@Dateofbirth = '1990-01-01',
-	@Nationality = 'American',
-	@Phone = '1234567890',
-	@identityCard = 'ABC123',
-	@DateIdentityCard = '2010-01-01',
-	@PlaceidentityCard = 'New York',
-	@CurrentAddress = '123 Main St',
-	@PermanentAddress = '123 Elm St',
-	@BankID = '1234567890',
-	@NameBank = 'Bank of America',
-	@Salary = 5000,
-	@Sex = 'Male',
-	@Status = 'Active',
-	@URLImage = 'https://example.com/image.png',
-	@PositionID = 1,
-	@ShiftID = 1;
-
-
+Go
 CREATE PROCEDURE GetStaffByID
     @staffID INT
 AS
@@ -618,24 +575,6 @@ CREATE PROCEDURE UpdateStaff
     @ShiftID INT
 AS
 BEGIN
-    IF NOT EXISTS (SELECT * FROM Staff WHERE StaffID = @StaffID)
-    BEGIN
-        RAISERROR('The StaffID does not exist.', 16, 1)
-        RETURN
-    END
-
-    IF NOT EXISTS (SELECT * FROM Position WHERE PositionID = @PositionID)
-    BEGIN
-        RAISERROR('The PositionID does not exist.', 16, 1)
-        RETURN
-    END
-
-    IF NOT EXISTS (SELECT * FROM Shift WHERE ShiftID = @ShiftID)
-    BEGIN
-        RAISERROR('The ShiftID does not exist.', 16, 1)
-        RETURN
-    END
-
     UPDATE Staff
     SET Name = @Name,
         Dateofbirth = @Dateofbirth,
@@ -657,6 +596,7 @@ BEGIN
     WHERE StaffID = @StaffID
 END
 go
+
 Create Procedure GetStaffs
 AS 
 Begin 
@@ -678,7 +618,6 @@ Begin
 	Delete from Staff where StaffID = @ID
 End
 Go
-
 --lưu thông tin lịch sử giao dịch
 CREATE PROCEDURE InsertTransaction
     @TotalPrice FLOAT,
@@ -852,15 +791,11 @@ CREATE PROCEDURE CreateCommodity
     @UnitID INT
 AS
 BEGIN
-    IF NOT EXISTS (SELECT * FROM Unit WHERE UnitID = @UnitID)
-    BEGIN
-        RAISERROR('Unit does not exist', 16, 1);
-        RETURN;
-    END
     INSERT INTO Commodity (Name, Number, Description, UnitID)
     VALUES (@Name, @Number, @Description, @UnitID);
     SELECT SCOPE_IDENTITY() AS CommodityID;
 END
+
 go
 CREATE PROCEDURE getCommodity
     @CommodityID INT
@@ -903,18 +838,6 @@ AS
 BEGIN
    
 
-    IF NOT EXISTS (SELECT * FROM Unit WHERE UnitID = @UnitID)
-    BEGIN
-        RAISERROR('Unit does not exist', 16, 1);
-        RETURN;
-    END
-
-    IF NOT EXISTS (SELECT * FROM Commodity WHERE ComodityID = @CommodityID)
-    BEGIN
-        RAISERROR('Commodity does not exist', 16, 1);
-        RETURN;
-    END
-
     UPDATE Commodity
     SET Name = @Name,
         Number = @Number,
@@ -935,18 +858,10 @@ CREATE PROCEDURE AddMaterialsDetail
 )
 AS
 BEGIN
-  -- Kiểm tra tính hợp lệ của dữ liệu trước khi thêm
-  IF EXISTS (SELECT * FROM Menu WHERE MenuID = @MenuID)
-  AND EXISTS (SELECT * FROM Commodity WHERE ComodityID = @ComodityID)
-  BEGIN
-    INSERT INTO MaterialsDetails(Number, MenuID, ComodityID) 
-    VALUES (@Number, @MenuID, @ComodityID)
-  END
-  else
-  begin
-    RAISERROR('error', 16, 1);
-	end
+  INSERT INTO MaterialsDetails(Number, MenuID, ComodityID) 
+  VALUES (@Number, @MenuID, @ComodityID)
 END
+
 go
 CREATE PROCEDURE GetMaterialsDetails
 @Id int
@@ -966,18 +881,10 @@ CREATE PROCEDURE UpdateMaterialsDetail
 )
 AS
 BEGIN
-  -- Kiểm tra tính hợp lệ của dữ liệu trước khi cập nhật
-  IF EXISTS (SELECT * FROM Menu WHERE MenuID = @MenuID)
-  AND EXISTS (SELECT * FROM Commodity WHERE ComodityID = @ComodityID)
-  BEGIN
     UPDATE MaterialsDetails 
     SET Number = @Number
     WHERE MenuID = @MenuID AND ComodityID = @ComodityID
-  END
-   else
-  begin
-    RAISERROR('error', 16, 1);
-	end
+
 END
 go
 CREATE PROCEDURE DeleteMaterialsDetail
@@ -1010,16 +917,10 @@ CREATE PROCEDURE ImportCoupon_Insert
 )
 AS
 BEGIN
-  IF NOT EXISTS (SELECT * FROM Staff WHERE StaffID = @StaffID)
-  BEGIN
-  
-    RAISERROR('error', 16, 1);
-	
-  END
-
   INSERT INTO ImportCoupon (Date, StaffID)
   VALUES (@Date, @StaffID)
 END
+
 go
 CREATE PROCEDURE ImportCoupon_Update
 (
@@ -1029,22 +930,11 @@ CREATE PROCEDURE ImportCoupon_Update
 )
 AS
 BEGIN
-  IF NOT EXISTS (SELECT * FROM ImportCoupon WHERE IDCoupon = @IDCoupon)
-  BEGIN
-       RAISERROR('error', 16, 1);
-
-  END
-
-  IF NOT EXISTS (SELECT * FROM Staff WHERE StaffID = @StaffID)
-  BEGIN
-       RAISERROR('error', 16, 1);
-
-  END
-
   UPDATE ImportCoupon
   SET Date = @Date, StaffID = @StaffID
-  WHERE IDCoupon = @IDCoupon
+  WHERE IDCoupon = @IDCoupon;
 END
+
 go
 CREATE PROCEDURE ImportCoupon_GetAll
 AS
@@ -1084,18 +974,10 @@ CREATE PROCEDURE CouponDetail_Insert
 )
 AS
 BEGIN
-  IF NOT EXISTS (SELECT * FROM Commodity WHERE ComodityID = @ComodityID)
-  BEGIN
-          RAISERROR('error', 16, 1);
-  END
-  IF NOT EXISTS (SELECT * FROM ImportCoupon WHERE IDCoupon = @IDCoupon)
-  BEGIN
-         RAISERROR('error', 16, 1);
-  END
   INSERT INTO CouponDetail (Number, ComodityID, IDCoupon)
   VALUES (@Number, @ComodityID, @IDCoupon)
 END
-go
+
 CREATE PROCEDURE CouponDetail_Update
 (
   @ComodityID INT,

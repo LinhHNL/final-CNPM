@@ -402,3 +402,19 @@ CREATE TABLE TempBillDetails (
     FOREIGN KEY (TempBillId) REFERENCES TempBill(Id)
 )
 GO
+CREATE TRIGGER trg_StaffCheckAge
+ON Staff
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT * FROM inserted
+        WHERE DATEDIFF(year, DateOfBirth, GETDATE()) < 18 OR DATEDIFF(year, DateOfBirth, GETDATE()) > 60
+    )
+    BEGIN
+        RAISERROR ('Staff age must be between 18 and 60.', 16, 1);
+        ROLLBACK;
+    END
+END
