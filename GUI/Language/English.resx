@@ -119,30 +119,39 @@
   </resheader>
   <data name="accountNameText" xml:space="preserve">
     <value>Account name</value>
+    <comment>1</comment>
   </data>
   <data name="accountNumberText" xml:space="preserve">
     <value>Account number</value>
+    <comment>1</comment>
   </data>
   <data name="accountText" xml:space="preserve">
     <value>Account</value>
+    <comment>1</comment>
   </data>
   <data name="addComboText" xml:space="preserve">
     <value>Add combo</value>
+    <comment>1</comment>
   </data>
   <data name="addFoodComboText" xml:space="preserve">
     <value>Add food combo</value>
+    <comment>1</comment>
   </data>
   <data name="addFoodText" xml:space="preserve">
     <value>Add food</value>
+    <comment>1</comment>
   </data>
   <data name="addImageText" xml:space="preserve">
     <value>Add image</value>
+    <comment>1</comment>
   </data>
   <data name="addressText" xml:space="preserve">
     <value>Address</value>
+    <comment>1</comment>
   </data>
   <data name="addText" xml:space="preserve">
     <value>Add</value>
+    <comment>1</comment>
   </data>
   <data name="afternoonShiftText" xml:space="preserve">
     <value>Afternoon shift</value>
@@ -158,78 +167,103 @@
   </data>
   <data name="backText" xml:space="preserve">
     <value>Back</value>
+    <comment>1</comment>
   </data>
   <data name="bankAccountNumberText" xml:space="preserve">
     <value>Bank account number</value>
+    <comment>1</comment>
   </data>
   <data name="bankNameNumber" xml:space="preserve">
     <value>Bank name</value>
+    <comment>1</comment>
   </data>
   <data name="beverageText" xml:space="preserve">
     <value>Beverages</value>
+    <comment>1</comment>
   </data>
   <data name="billDetailText" xml:space="preserve">
     <value>Bill details</value>
+    <comment>1</comment>
   </data>
   <data name="billIDText" xml:space="preserve">
     <value>Bill ID</value>
+    <comment>1</comment>
   </data>
   <data name="billText" xml:space="preserve">
     <value>Bills</value>
+    <comment>1</comment>
   </data>
   <data name="cancelText" xml:space="preserve">
     <value>Cancel</value>
+    <comment>1</comment>
   </data>
   <data name="cartText" xml:space="preserve">
     <value>Cart</value>
+    <comment>1</comment>
   </data>
   <data name="cashText" xml:space="preserve">
     <value>Cash</value>
+    <comment>1</comment>
   </data>
   <data name="chooseDishText" xml:space="preserve">
     <value>Choose dishes</value>
+    <comment>1</comment>
   </data>
   <data name="commodityIDNameText" xml:space="preserve">
     <value>Commodity ID/ Name</value>
+    <comment>1</comment>
   </data>
   <data name="commodityIDText" xml:space="preserve">
     <value>Commodity ID</value>
+    <comment>1</comment>
   </data>
   <data name="commodityInfoText" xml:space="preserve">
     <value>Commodity information</value>
+    <comment>1</comment>
   </data>
   <data name="commodityNameText" xml:space="preserve">
     <value>Commodity name</value>
+    <comment>1</comment>
   </data>
   <data name="commodityText" xml:space="preserve">
     <value>Commodity</value>
+    <comment>1</comment>
   </data>
   <data name="commodityTypeText" xml:space="preserve">
     <value>Commodity type</value>
+    <comment>1</comment>
   </data>
   <data name="confirmText" xml:space="preserve">
     <value>Confirm</value>
+    <comment>1</comment>
   </data>
   <data name="createNoteText" xml:space="preserve">
     <value>Create note</value>
+    <comment>1</comment>
   </data>
   <data name="currentAddressText" xml:space="preserve">
     <value>Current address</value>
+    <comment>1</comment>
   </data>
   <data name="customerManagementText" xml:space="preserve">
     <value>Customer management</value>
+    <comment>1</comment>
   </data>
   <data name="customerNameText" xml:space="preserve">
     <value>Customer name</value>
+    <comment>1</comment>
   </data>
   <data name="dateOfBirthText" xml:space="preserve">
     <value>Date of birth</value>
+    <comment>1</comment>
   </data>
   <data name="dateOfIssueText" xml:space="preserve">
     <value>Date of issue</value>
+    <comment>1</comment>
   </data>
   <data name="dayHourText" xml:space="preserve">
     <value>Day/ Hour</value>
+    <comment>1</comment>
   </data>
   <data name="dayoffText" xml:space="preserve">
     <value>Dayoff</value>
@@ -245,24 +279,31 @@
   </data>
   <data name="deleteAllText" xml:space="preserve">
     <value>Delete All</value>
+    <comment>1</comment>
   </data>
   <data name="deleteText" xml:space="preserve">
     <value>Delete</value>
+    <comment>1</comment>
   </data>
   <data name="departmentText" xml:space="preserve">
     <value>Department</value>
+    <comment>1</comment>
   </data>
   <data name="descriptionText" xml:space="preserve">
     <value>Description</value>
+    <comment>1</comment>
   </data>
   <data name="detailText" xml:space="preserve">
     <value>Detail</value>
+    <comment>1</comment>
   </data>
   <data name="dishText" xml:space="preserve">
     <value>Dish</value>
+    <comment>1</comment>
   </data>
   <data name="dualSidedPotText" xml:space="preserve">
     <value>Dual sided pot</value>
+    <comment>1</comment>
   </data>
   <data name="earlyEndTimesText" xml:space="preserve">
     <value>Early work end times</value>
@@ -270,9 +311,11 @@
   </data>
   <data name="editText" xml:space="preserve">
     <value>Edit</value>
+    <comment>1</comment>
   </data>
   <data name="endDateText" xml:space="preserve">
     <value>End date</value>
+    <comment>1</comment>
   </data>
   <data name="eveningShiftText" xml:space="preserve">
     <value>Evening shift</value>
@@ -280,27 +323,35 @@
   </data>
   <data name="explanationText" xml:space="preserve">
     <value>Explanation</value>
+    <comment>1</comment>
   </data>
   <data name="exportDateText" xml:space="preserve">
     <value>Export date</value>
+    <comment>1</comment>
   </data>
   <data name="exporterText" xml:space="preserve">
     <value>Exporter</value>
+    <comment>1</comment>
   </data>
   <data name="exportFileText" xml:space="preserve">
     <value>Export</value>
+    <comment>1</comment>
   </data>
   <data name="exportIDText" xml:space="preserve">
     <value>Export ID</value>
+    <comment>1</comment>
   </data>
   <data name="exportNoteText" xml:space="preserve">
     <value>Export note</value>
+    <comment>1</comment>
   </data>
   <data name="exportText" xml:space="preserve">
     <value>Export</value>
+    <comment>1</comment>
   </data>
   <data name="feedbackOnServiceText" xml:space="preserve">
     <value>Feedback on our restaurant service</value>
+    <comment>1</comment>
   </data>
   <data name="fineForLateText" xml:space="preserve">
     <value>Fine for lates</value>
@@ -308,21 +359,27 @@
   </data>
   <data name="finishText" xml:space="preserve">
     <value>Finish</value>
+    <comment>1</comment>
   </data>
   <data name="foodComboNameText" xml:space="preserve">
     <value>Food combo name</value>
+    <comment>1</comment>
   </data>
   <data name="foodManagementText" xml:space="preserve">
     <value>Food management</value>
+    <comment>1</comment>
   </data>
   <data name="foodNameText" xml:space="preserve">
     <value>Food name</value>
+    <comment>1</comment>
   </data>
   <data name="foodTypeText" xml:space="preserve">
     <value>Type of food</value>
+    <comment>1</comment>
   </data>
   <data name="fourSidedPotText" xml:space="preserve">
     <value>4-sided pot</value>
+    <comment>1</comment>
   </data>
   <data name="fridayText" xml:space="preserve">
     <value>Friday</value>
@@ -330,30 +387,39 @@
   </data>
   <data name="fullNameText" xml:space="preserve">
     <value>Full Name</value>
+    <comment>1</comment>
   </data>
   <data name="genderText" xml:space="preserve">
     <value>Gender</value>
+    <comment>1</comment>
   </data>
   <data name="hotpotText" xml:space="preserve">
     <value>Hotpot</value>
+    <comment>1</comment>
   </data>
   <data name="importDateText" xml:space="preserve">
     <value>Import date</value>
+    <comment>1</comment>
   </data>
   <data name="importerText" xml:space="preserve">
     <value>Importer</value>
+    <comment>1</comment>
   </data>
   <data name="importIDText" xml:space="preserve">
     <value>Import ID</value>
+    <comment>1</comment>
   </data>
   <data name="importNoteText" xml:space="preserve">
     <value>Import note</value>
+    <comment>1</comment>
   </data>
   <data name="importText" xml:space="preserve">
     <value>Import</value>
+    <comment>1</comment>
   </data>
   <data name="inStockText" xml:space="preserve">
     <value>In stock</value>
+    <comment>1</comment>
   </data>
   <data name="insuranceInfomationText" xml:space="preserve">
     <value>Insurance Information</value>
@@ -361,6 +427,7 @@
   </data>
   <data name="inventoryControlText" xml:space="preserve">
     <value>Inventory control</value>
+    <comment>1</comment>
   </data>
   <data name="lateTimesText" xml:space="preserve">
     <value>Late times</value>
@@ -384,18 +451,23 @@
   </data>
   <data name="letterText" xml:space="preserve">
     <value>Letter</value>
+    <comment>1</comment>
   </data>
   <data name="lockFoodText" xml:space="preserve">
     <value>Lock food</value>
+    <comment>1</comment>
   </data>
   <data name="lockText" xml:space="preserve">
     <value>Lock</value>
+    <comment>1</comment>
   </data>
   <data name="loginGuestText" xml:space="preserve">
     <value>Login as Guest</value>
+    <comment>1</comment>
   </data>
   <data name="loginText" xml:space="preserve">
     <value>Login</value>
+    <comment>1</comment>
   </data>
   <data name="medicalInsuranceEndDateText" xml:space="preserve">
     <value>Medical insurance end date</value>
@@ -407,9 +479,11 @@
   </data>
   <data name="membershipLevelText" xml:space="preserve">
     <value>Membership level</value>
+    <comment>1</comment>
   </data>
   <data name="moderateText" xml:space="preserve">
     <value>Moderate</value>
+    <comment>1</comment>
   </data>
   <data name="mondayText" xml:space="preserve">
     <value>Monday</value>
@@ -417,9 +491,11 @@
   </data>
   <data name="moneyPaidText" xml:space="preserve">
     <value>Money paid</value>
+    <comment>1</comment>
   </data>
   <data name="moneyReturnedText" xml:space="preserve">
     <value>Money returned</value>
+    <comment>1</comment>
   </data>
   <data name="monthText" xml:space="preserve">
     <value>Month</value>
@@ -431,36 +507,47 @@
   </data>
   <data name="myProfileText" xml:space="preserve">
     <value>My profile</value>
+    <comment>1</comment>
   </data>
   <data name="mySelectionsText" xml:space="preserve">
     <value>My selections</value>
+    <comment>1</comment>
   </data>
   <data name="nationalIDText" xml:space="preserve">
     <value>National ID</value>
+    <comment>1</comment>
   </data>
   <data name="nationalityText" xml:space="preserve">
     <value>Nationality</value>
+    <comment>1</comment>
   </data>
   <data name="newlyAddedDishText" xml:space="preserve">
     <value>Newly added dishes</value>
+    <comment>1</comment>
   </data>
   <data name="numberText" xml:space="preserve">
     <value>No.</value>
+    <comment>1</comment>
   </data>
   <data name="offerIDText" xml:space="preserve">
     <value>Offer ID</value>
+    <comment>1</comment>
   </data>
   <data name="offerText" xml:space="preserve">
     <value>Offer</value>
+    <comment>1</comment>
   </data>
   <data name="orderedDishesListText" xml:space="preserve">
     <value>List of ordered dishes</value>
+    <comment>1</comment>
   </data>
   <data name="orderedDishText" xml:space="preserve">
     <value>Ordered dishes</value>
+    <comment>1</comment>
   </data>
   <data name="orderText" xml:space="preserve">
     <value>Order</value>
+    <comment>1</comment>
   </data>
   <data name="overtimeAllowanceText" xml:space="preserve">
     <value>Overtime allowance</value>
@@ -472,12 +559,15 @@
   </data>
   <data name="passwordText" xml:space="preserve">
     <value>Password</value>
+    <comment>1</comment>
   </data>
   <data name="paymentDetailText" xml:space="preserve">
     <value>Payment details</value>
+    <comment>1</comment>
   </data>
   <data name="paymentMethodText" xml:space="preserve">
     <value>Payment method</value>
+    <comment>1</comment>
   </data>
   <data name="payrollDetailText" xml:space="preserve">
     <value>Payroll detail</value>
@@ -489,9 +579,11 @@
   </data>
   <data name="payrollText" xml:space="preserve">
     <value>Payroll</value>
+    <comment>1</comment>
   </data>
   <data name="payText" xml:space="preserve">
     <value>Pay</value>
+    <comment>1</comment>
   </data>
   <data name="pendingText" xml:space="preserve">
     <value>Pending</value>
@@ -499,6 +591,7 @@
   </data>
   <data name="permanentAddressText" xml:space="preserve">
     <value>Permanent address</value>
+    <comment>1</comment>
   </data>
   <data name="personalIncomeTax" xml:space="preserve">
     <value>Personal income tax</value>
@@ -506,36 +599,47 @@
   </data>
   <data name="phoneText" xml:space="preserve">
     <value>Phone Number</value>
+    <comment>1</comment>
   </data>
   <data name="placeOfIssueText" xml:space="preserve">
     <value>Place of issue</value>
+    <comment>1</comment>
   </data>
   <data name="pleaseChooseFourPartitionText" xml:space="preserve">
     <value>Please choose four partitions</value>
+    <comment>1</comment>
   </data>
   <data name="pleaseChooseOnePartitionText" xml:space="preserve">
     <value>Please choose one partition</value>
+    <comment>1</comment>
   </data>
   <data name="pleaseChooseTwoPartitionText" xml:space="preserve">
     <value>Please choose two partitions</value>
+    <comment>1</comment>
   </data>
   <data name="poorText" xml:space="preserve">
     <value>Poor</value>
+    <comment>1</comment>
   </data>
   <data name="positionText" xml:space="preserve">
     <value>Position</value>
+    <comment>1</comment>
   </data>
   <data name="priceText" xml:space="preserve">
     <value>Price</value>
+    <comment>1</comment>
   </data>
   <data name="profileText" xml:space="preserve">
     <value>Profile</value>
+    <comment>1</comment>
   </data>
   <data name="qualityRatingText" xml:space="preserve">
     <value>Quality rating</value>
+    <comment>1</comment>
   </data>
   <data name="quantityText" xml:space="preserve">
     <value>Quantity</value>
+    <comment>1</comment>
   </data>
   <data name="reasonDescriptionText" xml:space="preserve">
     <value>Reason description</value>
@@ -555,12 +659,15 @@
   </data>
   <data name="relationshipText" xml:space="preserve">
     <value>Relationship</value>
+    <comment>1</comment>
   </data>
   <data name="relativeInfoText" xml:space="preserve">
     <value>Relatives information</value>
+    <comment>1</comment>
   </data>
   <data name="relativeText" xml:space="preserve">
     <value>Relative</value>
+    <comment>1</comment>
   </data>
   <data name="revenueBonusText" xml:space="preserve">
     <value>Revenue bonus</value>
@@ -568,6 +675,7 @@
   </data>
   <data name="satisfactoryText" xml:space="preserve">
     <value>Satisfactory</value>
+    <comment>1</comment>
   </data>
   <data name="saturdayText" xml:space="preserve">
     <value>Saturday</value>
@@ -575,15 +683,19 @@
   </data>
   <data name="saveText" xml:space="preserve">
     <value>Save</value>
+    <comment>1</comment>
   </data>
   <data name="savouryFoodText" xml:space="preserve">
     <value>Savoury food</value>
+    <comment>1</comment>
   </data>
   <data name="searchText" xml:space="preserve">
     <value>Search</value>
+    <comment>1</comment>
   </data>
   <data name="seasoningText" xml:space="preserve">
     <value>Seasoning</value>
+    <comment>1</comment>
   </data>
   <data name="shiftText" xml:space="preserve">
     <value>Shift</value>
@@ -591,15 +703,19 @@
   </data>
   <data name="signoutText" xml:space="preserve">
     <value>Sign out</value>
+    <comment>1</comment>
   </data>
   <data name="signupText" xml:space="preserve">
     <value>Sign Up</value>
+    <comment>1</comment>
   </data>
   <data name="singlePotText" xml:space="preserve">
     <value>Single pot</value>
+    <comment>1</comment>
   </data>
   <data name="snackText" xml:space="preserve">
     <value>Snacks</value>
+    <comment>1</comment>
   </data>
   <data name="socialInsuranceEndDateText" xml:space="preserve">
     <value>Social insurance end date</value>
@@ -619,21 +735,27 @@
   </data>
   <data name="socialInsuranceText" xml:space="preserve">
     <value>Social insurance</value>
+    <comment>1</comment>
   </data>
   <data name="soldOutText" xml:space="preserve">
     <value>Sold out</value>
+    <comment>1</comment>
   </data>
   <data name="specialOfferCodeText" xml:space="preserve">
     <value>Special offer code</value>
+    <comment>1</comment>
   </data>
   <data name="specialOfferText" xml:space="preserve">
     <value>Special offers</value>
+    <comment>1</comment>
   </data>
   <data name="staffIDNameText" xml:space="preserve">
     <value>Staff ID/ Name</value>
+    <comment>1</comment>
   </data>
   <data name="staffIDText" xml:space="preserve">
     <value>Staff ID</value>
+    <comment>1</comment>
   </data>
   <data name="staffLevelBonusText" xml:space="preserve">
     <value>Staff level bonus</value>
@@ -641,12 +763,15 @@
   </data>
   <data name="staffListText" xml:space="preserve">
     <value>Staff list</value>
+    <comment>1</comment>
   </data>
   <data name="staffManagementText" xml:space="preserve">
     <value>Staff management</value>
+    <comment>1</comment>
   </data>
   <data name="staffProfileText" xml:space="preserve">
     <value>Staff profile</value>
+    <comment>1</comment>
   </data>
   <data name="staffText" xml:space="preserve">
     <value>Staff</value>
@@ -654,15 +779,19 @@
   </data>
   <data name="startDateText" xml:space="preserve">
     <value>Start date</value>
+    <comment>1</comment>
   </data>
   <data name="statisticsText" xml:space="preserve">
     <value>Statistics</value>
+    <comment>1</comment>
   </data>
   <data name="statusText" xml:space="preserve">
     <value>Status</value>
+    <comment>1</comment>
   </data>
   <data name="stockManagementText" xml:space="preserve">
     <value>Stock management</value>
+    <comment>1</comment>
   </data>
   <data name="sundayText" xml:space="preserve">
     <value>Sunday</value>
@@ -674,6 +803,7 @@
   </data>
   <data name="taxCodeText" xml:space="preserve">
     <value>Tax code</value>
+    <comment>1</comment>
   </data>
   <data name="thursdayText" xml:space="preserve">
     <value>Thursday</value>
@@ -681,9 +811,11 @@
   </data>
   <data name="timekeepingCodeText" xml:space="preserve">
     <value>Timekeeping code</value>
+    <comment>1</comment>
   </data>
   <data name="timekeepingManagementText" xml:space="preserve">
     <value>Timekeeping management</value>
+    <comment>1</comment>
   </data>
   <data name="timekeepingText" xml:space="preserve">
     <value>Timekeeping</value>
@@ -691,6 +823,7 @@
   </data>
   <data name="timeText" xml:space="preserve">
     <value>Time</value>
+    <comment>1</comment>
   </data>
   <data name="totalSalaryText" xml:space="preserve">
     <value>Total salary</value>
@@ -698,6 +831,7 @@
   </data>
   <data name="totalText" xml:space="preserve">
     <value>Total</value>
+    <comment>1</comment>
   </data>
   <data name="trueWorkText" xml:space="preserve">
     <value>True work</value>
@@ -717,15 +851,19 @@
   </data>
   <data name="unitText" xml:space="preserve">
     <value>Unit</value>
+    <comment>1</comment>
   </data>
   <data name="updateFoodText" xml:space="preserve">
     <value>Update food</value>
+    <comment>1</comment>
   </data>
   <data name="updateText" xml:space="preserve">
     <value>Update</value>
+    <comment>1</comment>
   </data>
   <data name="vegetableText" xml:space="preserve">
     <value>Vegetables</value>
+    <comment>1</comment>
   </data>
   <data name="wageText" xml:space="preserve">
     <value>Wage</value>

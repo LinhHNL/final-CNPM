@@ -574,7 +574,7 @@
         private CustomControls.RoundedButton btn_LuongThuong;
         private Label label1;
         private Label label3;
-        private CustomControls.Calendar calendar;
+        
         private CustomControls.RoundedButton btn_Back;
         private CustomControls.Line line1;
         private Label label2;

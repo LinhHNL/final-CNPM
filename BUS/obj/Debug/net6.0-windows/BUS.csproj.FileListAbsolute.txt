@@ -27,3 +27,32 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\DAO.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\DAO.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\DAO.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\BUS.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\BUS.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\BUS.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\BUS.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\BUS.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\DAO.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\bin\Debug\net6.0-windows\DAO.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.csproj.AssemblyReference.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.Form1.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.csproj.GenerateResource.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfoInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.AssemblyInfo.cs
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.csproj.CoreCompileInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.csproj.CopyComplete
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\refint\BUS.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\BUS.genruntimeconfig.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\BUS\obj\Debug\net6.0-windows\ref\BUS.dll

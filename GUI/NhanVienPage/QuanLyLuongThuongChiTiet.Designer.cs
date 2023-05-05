@@ -974,6 +974,7 @@
             this.Controls.Add(this.btn_DangXuat);
             this.Name = "QuanLyLuongThuongChiTiet";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
+            this.Load += new System.EventHandler(this.QuanLyLuongThuongChiTiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();

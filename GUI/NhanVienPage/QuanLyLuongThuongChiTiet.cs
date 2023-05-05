@@ -64,5 +64,10 @@ namespace WinFormsApp2.NhanVienPage
             form.ShowDialog();
             this.Close();
         }
+
+        private void QuanLyLuongThuongChiTiet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
