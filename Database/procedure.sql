@@ -977,7 +977,7 @@ BEGIN
   INSERT INTO CouponDetail (Number, ComodityID, IDCoupon)
   VALUES (@Number, @ComodityID, @IDCoupon)
 END
-
+go
 CREATE PROCEDURE CouponDetail_Update
 (
   @ComodityID INT,
@@ -986,24 +986,7 @@ CREATE PROCEDURE CouponDetail_Update
 )
 AS
 BEGIN
-  IF NOT EXISTS (SELECT * FROM CouponDetail WHERE ComodityID = @ComodityID AND IDCoupon = @IDCoupon)
-  BEGIN
-           RAISERROR('error', 16, 1);
-
-  END
-
-  IF NOT EXISTS (SELECT * FROM Commodity WHERE ComodityID = @ComodityID)
-  BEGIN
-          RAISERROR('error', 16, 1);
-
-  END
-
-  IF NOT EXISTS (SELECT * FROM ImportCoupon WHERE IDCoupon = @IDCoupon)
-  BEGIN
-           RAISERROR('error', 16, 1);
-
-  END
-
+ 
   UPDATE CouponDetail
   SET Number = @Number
   WHERE ComodityID = @ComodityID AND IDCoupon = @IDCoupon
@@ -1040,15 +1023,10 @@ CREATE PROCEDURE InsertExportOrder
     @StaffID int
 AS
 BEGIN
-    IF EXISTS(SELECT * FROM Staff WHERE StaffID = @StaffID)
-    BEGIN
+   
         INSERT INTO ExportOrders (Date, StaffID)
         VALUES (@Date, @StaffID)
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid StaffID', 16, 1)
-    END
+  
 END
 go
 
@@ -1086,167 +1064,17 @@ CREATE PROCEDURE UpdateExportOrder
     @StaffID int
 AS
 BEGIN
-    IF EXISTS(SELECT * FROM Staff WHERE StaffID = @StaffID)
-    BEGIN
-        UPDATE ExportOrder
+    
+        UPDATE ExportOrders
         SET Date = @Date,
             StaffID = @StaffID
         WHERE ExportOrderID = @ExportOrderID
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid StaffID', 16, 1)
-    END
+
 END
 
 go
 
 
-
-
---crud nhập hàng
-CREATE PROCEDURE InsertImportOrder
-    @Date date,
-    @StaffID int
-AS
-BEGIN
-    IF EXISTS(SELECT * FROM Staff WHERE StaffID = @StaffID)
-    BEGIN
-        INSERT INTO ImportOrders (Date, StaffID)
-        VALUES (@Date, @StaffID)
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid StaffID', 16, 1)
-    END
-END
-go
-CREATE PROCEDURE GetImportOrder
-    @ImportOrderID int
-AS
-BEGIN
-    SELECT *
-    FROM ImportOrders
-    WHERE ImportOrderID = @ImportOrderID
-END
-go
-
-CREATE PROCEDURE GetImportOrderAll
-AS
-BEGIN
-    SELECT *
-    FROM ImportOrders
-END
-go
-
-CREATE PROCEDURE UpdateImportOrder
-    @ImportOrderID int,
-    @Date date,
-    @StaffID int
-AS
-BEGIN
-    IF EXISTS(SELECT * FROM Staff WHERE StaffID = @StaffID)
-    BEGIN
-        UPDATE ImportOrders
-        SET Date = @Date,
-            StaffID = @StaffID
-        WHERE ImportOrderID = @ImportOrderID
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid StaffID', 16, 1)
-    END
-END
-go
-CREATE PROCEDURE DeleteImportOrder
-    @ImportOrderID int
-AS
-BEGIN
-    Delete
-    FROM ImportOrders
-    WHERE ImportOrderID = @ImportOrderID
-END
-go
-
---crud chi tiết nhập hàng
-CREATE PROCEDURE InsertImportOrderDetail
-    @Number float,
-    @CommodityID int,
-    @ImportOrderID int
-AS
-BEGIN
-    IF EXISTS(SELECT * FROM Commodity WHERE ComodityID = @CommodityID)
-    BEGIN
-        IF EXISTS(SELECT * FROM ImportOrders WHERE ImportOrderID = @ImportOrderID)
-        BEGIN
-            INSERT INTO ImportOrdersDetails (Number, ComodityID, ImportOrderID)
-            VALUES (@Number, @CommodityID, @ImportOrderID)
-        END
-        ELSE
-        BEGIN
-            RAISERROR('Invalid ExportOrderID', 16, 1)
-        END
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid CommodityID', 16, 1)
-    END
-END
-go
-CREATE PROCEDURE GetImportOrderDetail
-    @CommodityID int,
-    @ImportOrderID int
-AS
-BEGIN
-    SELECT *
-    FROM ImportOrdersDetails
-    WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
-END
-go
-CREATE PROCEDURE UpdateImportOrdersDetail
-    @Number float,
-    @CommodityID int,
-    @ImportOrderID int
-AS
-BEGIN
-    IF EXISTS(SELECT * FROM Commodity WHERE ComodityID = @CommodityID)
-    BEGIN
-        IF EXISTS(SELECT * FROM ImportOrders WHERE ImportOrderID = @ImportOrderID)
-        BEGIN
-            UPDATE ImportOrdersDetails
-            SET Number = @Number
-            WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
-        END
-        ELSE
-        BEGIN
-            RAISERROR('Invalid ExportOrderID', 16, 1)
-        END
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid CommodityID', 16, 1)
-    END
-END
-go
-Create Procedure GetImportOrderDetailAllByID 
-    @ImportOrderID int
-AS
-BEGIN
-    SELECT *
-    FROM ImportOrdersDetails
-    WHERE ImportOrderID = @ImportOrderID
-END
-go
-CREATE PROCEDURE DeleteImportOrderDetail
-    @CommodityID int,
-    @ImportOrderID int
-AS
-BEGIN
-    Delete
-    FROM ImportOrdersDetails
-    WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
-END
-go
 --crud chi tiết xuất hàng
 CREATE PROCEDURE GetExportOrderDetail
     @CommodityID int,
@@ -1274,22 +1102,8 @@ CREATE PROCEDURE InsertExportOrderDetail
     @ExportOrderID int
 AS
 BEGIN
-    IF EXISTS(SELECT * FROM Commodity WHERE ComodityID = @CommodityID)
-    BEGIN
-        IF EXISTS(SELECT * FROM ExportOrders WHERE ExportOrderID = @ExportOrderID)
-        BEGIN
-            INSERT INTO ExportOrdersDetails (Number, ComodityID, ExportOrderID)
-            VALUES (@Number, @CommodityID, @ExportOrderID)
-        END
-        ELSE
-        BEGIN
-            RAISERROR('Invalid ExportOrderID', 16, 1)
-        END
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid CommodityID', 16, 1)
-    END
+    INSERT INTO ExportOrdersDetails (Number, ComodityID, ExportOrderID)
+    VALUES (@Number, @CommodityID, @ExportOrderID)
 END
 go
 CREATE PROCEDURE UpdateExportOrderDetail
@@ -1298,23 +1112,9 @@ CREATE PROCEDURE UpdateExportOrderDetail
     @ExportOrderID int
 AS
 BEGIN
-    IF EXISTS(SELECT * FROM Commodity WHERE ComodityID = @CommodityID)
-    BEGIN
-        IF EXISTS(SELECT * FROM ExportOrders WHERE ExportOrderID = @ExportOrderID)
-        BEGIN
             UPDATE ExportOrdersDetails
             SET Number = @Number
             WHERE ComodityID = @CommodityID AND ExportOrderID = @ExportOrderID
-        END
-        ELSE
-        BEGIN
-            RAISERROR('Invalid ExportOrderID', 16, 1)
-        END
-    END
-    ELSE
-    BEGIN
-        RAISERROR('Invalid CommodityID', 16, 1)
-    END
 END
 go
 CREATE PROCEDURE DeleteExportOrderDetail
@@ -1327,6 +1127,117 @@ BEGIN
     WHERE ComodityID = @CommodityID AND ExportOrderID = @ExportOrderID
 END
 go
+
+--crud nhập hàng
+CREATE PROCEDURE InsertImportOrder
+    @Date date,
+    @StaffID int
+AS
+BEGIN
+    
+        INSERT INTO ImportOrders (Date, StaffID)
+        VALUES (@Date, @StaffID)
+  
+END
+go
+CREATE PROCEDURE GetImportOrder
+    @ImportOrderID int
+AS
+BEGIN
+    SELECT *
+    FROM ImportOrders
+    WHERE ImportOrderID = @ImportOrderID
+END
+go
+
+CREATE PROCEDURE GetImportOrderAll
+AS
+BEGIN
+    SELECT *
+    FROM ImportOrders
+END
+go
+
+CREATE PROCEDURE UpdateImportOrder
+    @ImportOrderID int,
+    @Date date,
+    @StaffID int
+AS
+BEGIN
+   
+        UPDATE ImportOrders
+        SET Date = @Date,
+            StaffID = @StaffID
+        WHERE ImportOrderID = @ImportOrderID
+  
+END
+go
+CREATE PROCEDURE DeleteImportOrder
+    @ImportOrderID int
+AS
+BEGIN
+    Delete
+    FROM ImportOrders
+    WHERE ImportOrderID = @ImportOrderID
+END
+go
+
+--crud chi tiết nhập hàng
+CREATE PROCEDURE InsertImportOrderDetail
+    @Number float,
+    @CommodityID int,
+    @ImportOrderID int
+AS
+BEGIN
+  
+            INSERT INTO ImportOrdersDetails (Number, ComodityID, ImportOrderID)
+            VALUES (@Number, @CommodityID, @ImportOrderID)
+      
+END
+go
+CREATE PROCEDURE GetImportOrderDetail
+    @CommodityID int,
+    @ImportOrderID int
+AS
+BEGIN
+    SELECT *
+    FROM ImportOrdersDetails
+    WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
+END
+go
+CREATE PROCEDURE UpdateImportOrdersDetail
+    @Number float,
+    @CommodityID int,
+    @ImportOrderID int
+AS
+BEGIN
+   
+            UPDATE ImportOrdersDetails
+            SET Number = @Number
+            WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
+       
+END
+go
+Create Procedure GetImportOrderDetailAllByID 
+    @ImportOrderID int
+AS
+BEGIN
+    SELECT *
+    FROM ImportOrdersDetails
+    WHERE ImportOrderID = @ImportOrderID
+END
+go
+CREATE PROCEDURE DeleteImportOrderDetail
+    @CommodityID int,
+    @ImportOrderID int
+AS
+BEGIN
+    Delete
+    FROM ImportOrdersDetails
+    WHERE ComodityID = @CommodityID AND ImportOrderID = @ImportOrderID
+END
+go
+
 ---CRUD account 
 -- CREATE
 CREATE PROCEDURE CreateAccount
