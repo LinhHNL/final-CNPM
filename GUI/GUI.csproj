@@ -57,6 +57,12 @@
     <Compile Update="StaffAccount\ChamCong2.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StaffAccount\LichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\DangKyLichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="StaffAccount\SuaThongTinCaNhan.cs">
       <SubType>Form</SubType>
     </Compile>

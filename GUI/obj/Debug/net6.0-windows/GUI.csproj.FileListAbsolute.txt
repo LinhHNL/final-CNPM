@@ -218,3 +218,5 @@ D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DoiMatKhau.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong2.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LichLam.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DangKyLichLam.resources
