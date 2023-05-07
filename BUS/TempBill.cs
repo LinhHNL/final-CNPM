@@ -8,12 +8,23 @@ namespace BUS
 {
     public class TempBill
     {
-        public bool tryingInsertTempBillDetail(Dictionary<string, string> TempBillInfo)
+        public bool tryingInsertTempBillDetail(Dictionary<string, string> TempBillDetailInfo)
         {
             DAO.TempBill tempBill = new DAO.TempBill();
-            return tempBill.tryingInsertTempBillDetail(TempBillInfo);
+            TempBillDetailInfo.Add("TempBillId", SessionStorage.TempBillID);
+            return tempBill.tryingInsertTempBillDetail(TempBillDetailInfo);
         }
-            public List<Dictionary<string, string>> getTempBillNotDone()
+        public Dictionary<string, string> tryingInsertTempBill(Dictionary<string, string> TempBillInfo)
+        {
+            TokenGenerate tokenGenerate = new TokenGenerate();
+            String TokenID = tokenGenerate.getTokenID();
+            TempBillInfo.Add("CustomerID", SessionStorage.CustomerIDInUse);
+            TempBillInfo.Add("Token", TokenID);
+            SessionStorage.TokenStorage=TokenID;
+            DAO.TempBill tempBill = new DAO.TempBill();
+            return tempBill.tryingInsertTempBill(TempBillInfo);
+        }
+        public List<Dictionary<string, string>> getTempBillNotDone()
         {
             DAO.TempBill tempBill = new DAO.TempBill();
             return tempBill.getTempBillNotDone();

@@ -48,7 +48,7 @@ namespace WinFormsApp2
             foreach (MonAnComponent i in listdachon)
             {
                 listdaxuly.Add(i);
-                flp_Hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getTenMon(), i.getSoLuong(), i.getGiaMon(), listdaxuly, this));
+                flp_Hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getMenuID(),i.getTenMon(), i.getSoLuong(), i.getGiaMon(), listdaxuly, this));
 
             }
             this.UpdatePrice();
@@ -83,6 +83,44 @@ namespace WinFormsApp2
 
         private void btn_submitfood_Click(object sender, EventArgs e)
         {
+            BUS.TempBill tempBill = new BUS.TempBill();
+            Dictionary<String,String> tempBillInfo=new Dictionary<String,String>();
+            Dictionary<String, String> IDInfo = new Dictionary<String, String>();
+            tempBillInfo.Add("Price",lbl_priceshow.ToString());
+            if (BUS.SessionStorage.TempBillID == "-1")
+            {
+            IDInfo=tempBill.tryingInsertTempBill(tempBillInfo);
+            BUS.SessionStorage.TempBillID = IDInfo["TempBilID"];
+            }
+            if (BUS.SessionStorage.TempBillID != "-1")
+            {
+                foreach(MonAnComponenInShoppingCart item in flp_Hienthimonan.Controls)
+                {
+                    if (item.MenuID != "-1")
+                    {
+                        Dictionary<String, String> tempBillDetailInfo = new Dictionary<String, String>();
+                        /*
+                        int TempBillId = int.Parse(TempBillDetailInfo["TempBillId"]);
+                        int MenuID = int.Parse(TempBillDetailInfo["MenuID"]);
+                        int NumberOfFood = int.Parse(TempBillDetailInfo["Number"]);
+                        float Price = (float)int.Parse(TempBillDetailInfo["Price"]);
+                         */
+                        tempBillDetailInfo.Add("MenuID", item.MenuID);
+                        tempBillDetailInfo.Add("Number", item.SoLuong.ToString());
+                        tempBillDetailInfo.Add("Price",item.Giamon.ToString());
+                        BUS.TempBill tempBill1 = new BUS.TempBill();
+                        tempBill1.tryingInsertTempBillDetail(tempBillDetailInfo);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thất bại");
+                        return;
+                    }
+                }
+            }
+            else{
+                MessageBox.Show("Thêm thất bại");
+            }
         }
     }
 }

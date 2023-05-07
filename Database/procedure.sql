@@ -1642,12 +1642,13 @@ Go
 CREATE PROCEDURE InsertTempBill
     @CustomerId INT,
     @Status BIT,
-    @Price FLOAT
+    @Price FLOAT,
+	@Token varchar(45)
 AS
 BEGIN
 	Declare  @id int
-    INSERT INTO TempBill (CustomerId, Status, Price)
-    VALUES (@CustomerId, @Status, @Price)
+    INSERT INTO TempBill (CustomerId, Status, Price,Token)
+    VALUES (@CustomerId, @Status, @Price, @Token)
 	set @id = SCOPE_IDENTITY()
 	Select @id as TempBilID
 END
