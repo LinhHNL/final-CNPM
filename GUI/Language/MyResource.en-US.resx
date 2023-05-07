@@ -169,7 +169,7 @@
     <value>Assign work shift</value>
   </data>
   <data name="backText" xml:space="preserve">
-    <value>Back</value>
+    <value>Back &gt;</value>
     <comment>1</comment>
   </data>
   <data name="bankAccountNumberText" xml:space="preserve">
@@ -215,6 +215,15 @@
     <value>Choose dishes</value>
     <comment>1</comment>
   </data>
+  <data name="chooseFourText" xml:space="preserve">
+    <value>You are choosing four partitions</value>
+  </data>
+  <data name="chooseOneText" xml:space="preserve">
+    <value>You are choosing one partition</value>
+  </data>
+  <data name="chooseTwoText" xml:space="preserve">
+    <value>You are choosing two partitions</value>
+  </data>
   <data name="commodityAddText" xml:space="preserve">
     <value>Add commodity</value>
   </data>
@@ -246,6 +255,9 @@
     <value>Confirm</value>
     <comment>1</comment>
   </data>
+  <data name="createLetterText" xml:space="preserve">
+    <value>Create letter</value>
+  </data>
   <data name="createNoteText" xml:space="preserve">
     <value>Create note</value>
     <comment>1</comment>
@@ -253,6 +265,9 @@
   <data name="currentAddressText" xml:space="preserve">
     <value>Current address</value>
     <comment>1</comment>
+  </data>
+  <data name="currentPasswordText" xml:space="preserve">
+    <value>Current password</value>
   </data>
   <data name="customerIDText" xml:space="preserve">
     <value>Customer ID</value>
@@ -324,6 +339,9 @@
   <data name="editText" xml:space="preserve">
     <value>Edit</value>
     <comment>1</comment>
+  </data>
+  <data name="emailText" xml:space="preserve">
+    <value>Email</value>
   </data>
   <data name="endDateText" xml:space="preserve">
     <value>End date</value>
@@ -474,6 +492,9 @@
     <value>Date of letter</value>
     <comment>Staff management</comment>
   </data>
+  <data name="letterHistoryText" xml:space="preserve">
+    <value>Letter history</value>
+  </data>
   <data name="letterIDText" xml:space="preserve">
     <value>Letter ID</value>
     <comment>Staff management</comment>
@@ -485,6 +506,9 @@
   <data name="letterText" xml:space="preserve">
     <value>Letter</value>
     <comment>1</comment>
+  </data>
+  <data name="letterTypeText" xml:space="preserve">
+    <value>Letter type</value>
   </data>
   <data name="lockFoodText" xml:space="preserve">
     <value>Lock food</value>
@@ -501,6 +525,12 @@
   <data name="loginText" xml:space="preserve">
     <value>Login</value>
     <comment>1</comment>
+  </data>
+  <data name="makeLetterDateText" xml:space="preserve">
+    <value>Date of making</value>
+  </data>
+  <data name="makeLetterText" xml:space="preserve">
+    <value>Make letter</value>
   </data>
   <data name="medicalInsuranceEndDateText" xml:space="preserve">
     <value>Medical insurance end date</value>
@@ -557,6 +587,12 @@
   <data name="newlyAddedDishText" xml:space="preserve">
     <value>Newly added dishes</value>
     <comment>1</comment>
+  </data>
+  <data name="newPasswordConfirmText" xml:space="preserve">
+    <value>New password confirm</value>
+  </data>
+  <data name="newPasswordText" xml:space="preserve">
+    <value>New password</value>
   </data>
   <data name="notificationText" xml:space="preserve">
     <value>Notification</value>
@@ -636,6 +672,9 @@
     <value>Personal income tax</value>
     <comment>Staff management</comment>
   </data>
+  <data name="personalInfoText" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
   <data name="phoneText" xml:space="preserve">
     <value>Phone Number</value>
     <comment>1</comment>
@@ -668,6 +707,9 @@
     <value>Price</value>
     <comment>1</comment>
   </data>
+  <data name="processingDateText" xml:space="preserve">
+    <value>Processing date</value>
+  </data>
   <data name="productIDText" xml:space="preserve">
     <value>Product ID</value>
   </data>
@@ -696,6 +738,9 @@
   <data name="reasonText" xml:space="preserve">
     <value>Reason</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="registerShiftText" xml:space="preserve">
+    <value>Register work shift</value>
   </data>
   <data name="rejectedText" xml:space="preserve">
     <value>Rejected</value>
@@ -757,7 +802,7 @@
     <comment>1</comment>
   </data>
   <data name="signupText" xml:space="preserve">
-    <value>Sign Up</value>
+    <value>Sign up</value>
     <comment>1</comment>
   </data>
   <data name="singlePotText" xml:space="preserve">
@@ -885,6 +930,9 @@
     <value>Timekeeping code</value>
     <comment>1</comment>
   </data>
+  <data name="timekeepingConfirmLetterText" xml:space="preserve">
+    <value>Timekeeping confirmation letter</value>
+  </data>
   <data name="timekeepingManagementText" xml:space="preserve">
     <value>Timekeeping management</value>
     <comment>1</comment>
@@ -922,6 +970,9 @@
   <data name="tuesdayText" xml:space="preserve">
     <value>Tuesday</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="turnInLetterText" xml:space="preserve">
+    <value>Turn in</value>
   </data>
   <data name="undertakingRoomText" xml:space="preserve">
     <value>Undertaking Room</value>

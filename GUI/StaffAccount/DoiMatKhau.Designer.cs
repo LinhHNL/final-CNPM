@@ -28,57 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
-            this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btn_CapNhat = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_PasswordReset = new System.Windows.Forms.Label();
+            this.lbl_CurrentPassword = new System.Windows.Forms.Label();
+            this.lbl_NewPassword = new System.Windows.Forms.Label();
+            this.btn_Update = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton3 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_LuongThuong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btn_PasswordReset = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Notification = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Payroll = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_DonTu = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyChamCong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_HoSoCuaToi = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyLichLam = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Letter = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Timekeeping = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_MyProfile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_WorkSchedule = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_MatKhauHienTai = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.tb_NhapLaiMatKhau = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.tb_MatKhauMoi = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.lbl_NewPasswordConfirm = new System.Windows.Forms.Label();
+            this.tb_CurrentPassword = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_NewPasswordConfirm = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_NewPassword = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_DangXuat
+            // btn_SignOut
             // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DangXuat.BorderRadius = 8;
-            this.btn_DangXuat.BorderSize = 0;
-            this.btn_DangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Location = new System.Drawing.Point(1057, 35);
-            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(117, 35);
-            this.btn_DangXuat.TabIndex = 22;
-            this.btn_DangXuat.Text = "Đăng xuất";
-            this.btn_DangXuat.TextColor = System.Drawing.Color.White;
-            this.btn_DangXuat.UseVisualStyleBackColor = false;
+            this.btn_SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_SignOut.BorderRadius = 8;
+            this.btn_SignOut.BorderSize = 0;
+            this.btn_SignOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_SignOut.ForeColor = System.Drawing.Color.White;
+            this.btn_SignOut.Location = new System.Drawing.Point(1057, 35);
+            this.btn_SignOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_SignOut.Name = "btn_SignOut";
+            this.btn_SignOut.Size = new System.Drawing.Size(117, 35);
+            this.btn_SignOut.TabIndex = 22;
+            this.btn_SignOut.Text = "Đăng xuất";
+            this.btn_SignOut.TextColor = System.Drawing.Color.White;
+            this.btn_SignOut.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
@@ -87,37 +87,37 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle5;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(370, 106);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.metroGrid1.RowHeadersWidth = 51;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 29;
@@ -125,68 +125,68 @@
             this.metroGrid1.Size = new System.Drawing.Size(8, 8);
             this.metroGrid1.TabIndex = 31;
             // 
-            // label1
+            // lbl_PasswordReset
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(267, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 37);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Đổi mật khẩu";
+            this.lbl_PasswordReset.AutoSize = true;
+            this.lbl_PasswordReset.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_PasswordReset.Location = new System.Drawing.Point(267, 80);
+            this.lbl_PasswordReset.Name = "lbl_PasswordReset";
+            this.lbl_PasswordReset.Size = new System.Drawing.Size(183, 37);
+            this.lbl_PasswordReset.TabIndex = 47;
+            this.lbl_PasswordReset.Text = "Đổi mật khẩu";
             // 
-            // label6
+            // lbl_CurrentPassword
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(486, 162);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(181, 28);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "Mật khẩu hiện tại:";
+            this.lbl_CurrentPassword.AutoSize = true;
+            this.lbl_CurrentPassword.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_CurrentPassword.Location = new System.Drawing.Point(486, 162);
+            this.lbl_CurrentPassword.Name = "lbl_CurrentPassword";
+            this.lbl_CurrentPassword.Size = new System.Drawing.Size(181, 28);
+            this.lbl_CurrentPassword.TabIndex = 62;
+            this.lbl_CurrentPassword.Text = "Mật khẩu hiện tại:";
             // 
-            // label5
+            // lbl_NewPassword
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(519, 224);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 28);
-            this.label5.TabIndex = 68;
-            this.label5.Text = "Mật khẩu mới:";
+            this.lbl_NewPassword.AutoSize = true;
+            this.lbl_NewPassword.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_NewPassword.Location = new System.Drawing.Point(519, 224);
+            this.lbl_NewPassword.Name = "lbl_NewPassword";
+            this.lbl_NewPassword.Size = new System.Drawing.Size(148, 28);
+            this.lbl_NewPassword.TabIndex = 68;
+            this.lbl_NewPassword.Text = "Mật khẩu mới:";
             // 
-            // btn_CapNhat
+            // btn_Update
             // 
-            this.btn_CapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_CapNhat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_CapNhat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_CapNhat.BorderRadius = 8;
-            this.btn_CapNhat.BorderSize = 0;
-            this.btn_CapNhat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_CapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CapNhat.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CapNhat.ForeColor = System.Drawing.Color.White;
-            this.btn_CapNhat.Location = new System.Drawing.Point(764, 329);
-            this.btn_CapNhat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_CapNhat.Name = "btn_CapNhat";
-            this.btn_CapNhat.Size = new System.Drawing.Size(123, 37);
-            this.btn_CapNhat.TabIndex = 75;
-            this.btn_CapNhat.Text = "Cập nhật";
-            this.btn_CapNhat.TextColor = System.Drawing.Color.White;
-            this.btn_CapNhat.UseVisualStyleBackColor = false;
+            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Update.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Update.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Update.BorderRadius = 8;
+            this.btn_Update.BorderSize = 0;
+            this.btn_Update.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Update.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Update.ForeColor = System.Drawing.Color.White;
+            this.btn_Update.Location = new System.Drawing.Point(764, 329);
+            this.btn_Update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(123, 37);
+            this.btn_Update.TabIndex = 75;
+            this.btn_Update.Text = "Cập nhật";
+            this.btn_Update.TextColor = System.Drawing.Color.White;
+            this.btn_Update.UseVisualStyleBackColor = false;
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.roundedButton3);
-            this.metroPanel1.Controls.Add(this.roundedButton1);
-            this.metroPanel1.Controls.Add(this.btn_LuongThuong);
-            this.metroPanel1.Controls.Add(this.label4);
+            this.metroPanel1.Controls.Add(this.btn_PasswordReset);
+            this.metroPanel1.Controls.Add(this.btn_Notification);
+            this.metroPanel1.Controls.Add(this.btn_Payroll);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
             this.metroPanel1.Controls.Add(this.pictureBox2);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_DonTu);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyChamCong);
-            this.metroPanel1.Controls.Add(this.btn_HoSoCuaToi);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyLichLam);
+            this.metroPanel1.Controls.Add(this.btn_Letter);
+            this.metroPanel1.Controls.Add(this.btn_Timekeeping);
+            this.metroPanel1.Controls.Add(this.btn_MyProfile);
+            this.metroPanel1.Controls.Add(this.btn_WorkSchedule);
             this.metroPanel1.Controls.Add(this.pictureBox1);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
@@ -199,79 +199,79 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // roundedButton3
+            // btn_PasswordReset
             // 
-            this.roundedButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton3.BorderRadius = 0;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton3.ForeColor = System.Drawing.Color.White;
-            this.roundedButton3.Location = new System.Drawing.Point(0, 485);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton3.TabIndex = 47;
-            this.roundedButton3.Text = "Đổi mật khẩu";
-            this.roundedButton3.TextColor = System.Drawing.Color.White;
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            this.roundedButton3.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
+            this.btn_PasswordReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_PasswordReset.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_PasswordReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_PasswordReset.BorderRadius = 0;
+            this.btn_PasswordReset.BorderSize = 0;
+            this.btn_PasswordReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_PasswordReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PasswordReset.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_PasswordReset.ForeColor = System.Drawing.Color.White;
+            this.btn_PasswordReset.Location = new System.Drawing.Point(0, 485);
+            this.btn_PasswordReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_PasswordReset.Name = "btn_PasswordReset";
+            this.btn_PasswordReset.Size = new System.Drawing.Size(263, 64);
+            this.btn_PasswordReset.TabIndex = 47;
+            this.btn_PasswordReset.Text = "Đổi mật khẩu";
+            this.btn_PasswordReset.TextColor = System.Drawing.Color.White;
+            this.btn_PasswordReset.UseVisualStyleBackColor = false;
+            this.btn_PasswordReset.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
             // 
-            // roundedButton1
+            // btn_Notification
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.White;
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton1.BorderRadius = 0;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton1.Location = new System.Drawing.Point(0, 420);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton1.TabIndex = 46;
-            this.roundedButton1.Text = "Thông báo";
-            this.roundedButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.Click += new System.EventHandler(this.btn_ThongBao_Click);
+            this.btn_Notification.BackColor = System.Drawing.Color.White;
+            this.btn_Notification.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Notification.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Notification.BorderRadius = 0;
+            this.btn_Notification.BorderSize = 0;
+            this.btn_Notification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Notification.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Notification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.Location = new System.Drawing.Point(0, 420);
+            this.btn_Notification.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Notification.Name = "btn_Notification";
+            this.btn_Notification.Size = new System.Drawing.Size(263, 64);
+            this.btn_Notification.TabIndex = 46;
+            this.btn_Notification.Text = "Thông báo";
+            this.btn_Notification.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.UseVisualStyleBackColor = false;
+            this.btn_Notification.Click += new System.EventHandler(this.btn_ThongBao_Click);
             // 
-            // btn_LuongThuong
+            // btn_Payroll
             // 
-            this.btn_LuongThuong.BackColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.BackgroundColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_LuongThuong.BorderRadius = 0;
-            this.btn_LuongThuong.BorderSize = 0;
-            this.btn_LuongThuong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_LuongThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LuongThuong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_LuongThuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_LuongThuong.Location = new System.Drawing.Point(0, 363);
-            this.btn_LuongThuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_LuongThuong.Name = "btn_LuongThuong";
-            this.btn_LuongThuong.Size = new System.Drawing.Size(263, 64);
-            this.btn_LuongThuong.TabIndex = 45;
-            this.btn_LuongThuong.Text = "Lương thưởng";
-            this.btn_LuongThuong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_LuongThuong.UseVisualStyleBackColor = false;
-            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
+            this.btn_Payroll.BackColor = System.Drawing.Color.White;
+            this.btn_Payroll.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Payroll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Payroll.BorderRadius = 0;
+            this.btn_Payroll.BorderSize = 0;
+            this.btn_Payroll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Payroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Payroll.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Payroll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Payroll.Location = new System.Drawing.Point(0, 363);
+            this.btn_Payroll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Payroll.Name = "btn_Payroll";
+            this.btn_Payroll.Size = new System.Drawing.Size(263, 64);
+            this.btn_Payroll.TabIndex = 45;
+            this.btn_Payroll.Text = "Lương thưởng";
+            this.btn_Payroll.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Payroll.UseVisualStyleBackColor = false;
+            this.btn_Payroll.Click += new System.EventHandler(this.btn_LuongThuong_Click);
             // 
-            // label4
+            // lbl_AccountName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 85);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
             // pictureBox2
             // 
@@ -296,89 +296,89 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // btn_DonTu
+            // btn_Letter
             // 
-            this.btn_DonTu.BackColor = System.Drawing.Color.White;
-            this.btn_DonTu.BackgroundColor = System.Drawing.Color.White;
-            this.btn_DonTu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_DonTu.BorderRadius = 0;
-            this.btn_DonTu.BorderSize = 0;
-            this.btn_DonTu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DonTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DonTu.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DonTu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.Location = new System.Drawing.Point(-1, 301);
-            this.btn_DonTu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DonTu.Name = "btn_DonTu";
-            this.btn_DonTu.Size = new System.Drawing.Size(263, 64);
-            this.btn_DonTu.TabIndex = 18;
-            this.btn_DonTu.Text = "Đơn từ";
-            this.btn_DonTu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.UseVisualStyleBackColor = false;
-            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
+            this.btn_Letter.BackColor = System.Drawing.Color.White;
+            this.btn_Letter.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Letter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Letter.BorderRadius = 0;
+            this.btn_Letter.BorderSize = 0;
+            this.btn_Letter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Letter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Letter.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Letter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Letter.Location = new System.Drawing.Point(-1, 301);
+            this.btn_Letter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Letter.Name = "btn_Letter";
+            this.btn_Letter.Size = new System.Drawing.Size(263, 64);
+            this.btn_Letter.TabIndex = 18;
+            this.btn_Letter.Text = "Đơn từ";
+            this.btn_Letter.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Letter.UseVisualStyleBackColor = false;
+            this.btn_Letter.Click += new System.EventHandler(this.btn_DonTu_Click);
             // 
-            // btn_QuanLyChamCong
+            // btn_Timekeeping
             // 
-            this.btn_QuanLyChamCong.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BorderColor = System.Drawing.Color.Silver;
-            this.btn_QuanLyChamCong.BorderRadius = 0;
-            this.btn_QuanLyChamCong.BorderSize = 0;
-            this.btn_QuanLyChamCong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyChamCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyChamCong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.Location = new System.Drawing.Point(-1, 243);
-            this.btn_QuanLyChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyChamCong.Name = "btn_QuanLyChamCong";
-            this.btn_QuanLyChamCong.Size = new System.Drawing.Size(264, 64);
-            this.btn_QuanLyChamCong.TabIndex = 17;
-            this.btn_QuanLyChamCong.Text = "Chấm công";
-            this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
-            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
+            this.btn_Timekeeping.BackColor = System.Drawing.Color.White;
+            this.btn_Timekeeping.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Timekeeping.BorderColor = System.Drawing.Color.Silver;
+            this.btn_Timekeeping.BorderRadius = 0;
+            this.btn_Timekeeping.BorderSize = 0;
+            this.btn_Timekeeping.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Timekeeping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Timekeeping.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Timekeeping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Timekeeping.Location = new System.Drawing.Point(-1, 243);
+            this.btn_Timekeeping.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Timekeeping.Name = "btn_Timekeeping";
+            this.btn_Timekeeping.Size = new System.Drawing.Size(264, 64);
+            this.btn_Timekeeping.TabIndex = 17;
+            this.btn_Timekeeping.Text = "Chấm công";
+            this.btn_Timekeeping.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Timekeeping.UseVisualStyleBackColor = false;
+            this.btn_Timekeeping.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
             // 
-            // btn_HoSoCuaToi
+            // btn_MyProfile
             // 
-            this.btn_HoSoCuaToi.BackColor = System.Drawing.Color.White;
-            this.btn_HoSoCuaToi.BackgroundColor = System.Drawing.Color.White;
-            this.btn_HoSoCuaToi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_HoSoCuaToi.BorderRadius = 0;
-            this.btn_HoSoCuaToi.BorderSize = 0;
-            this.btn_HoSoCuaToi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_HoSoCuaToi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoSoCuaToi.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoSoCuaToi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSoCuaToi.Location = new System.Drawing.Point(0, 131);
-            this.btn_HoSoCuaToi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_HoSoCuaToi.Name = "btn_HoSoCuaToi";
-            this.btn_HoSoCuaToi.Size = new System.Drawing.Size(262, 60);
-            this.btn_HoSoCuaToi.TabIndex = 16;
-            this.btn_HoSoCuaToi.Text = "Hồ sơ của tôi";
-            this.btn_HoSoCuaToi.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSoCuaToi.UseVisualStyleBackColor = false;
-            this.btn_HoSoCuaToi.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
+            this.btn_MyProfile.BackColor = System.Drawing.Color.White;
+            this.btn_MyProfile.BackgroundColor = System.Drawing.Color.White;
+            this.btn_MyProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_MyProfile.BorderRadius = 0;
+            this.btn_MyProfile.BorderSize = 0;
+            this.btn_MyProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_MyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MyProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_MyProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_MyProfile.Location = new System.Drawing.Point(0, 131);
+            this.btn_MyProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MyProfile.Name = "btn_MyProfile";
+            this.btn_MyProfile.Size = new System.Drawing.Size(262, 60);
+            this.btn_MyProfile.TabIndex = 16;
+            this.btn_MyProfile.Text = "Hồ sơ của tôi";
+            this.btn_MyProfile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_MyProfile.UseVisualStyleBackColor = false;
+            this.btn_MyProfile.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
             // 
-            // btn_QuanLyLichLam
+            // btn_WorkSchedule
             // 
-            this.btn_QuanLyLichLam.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_QuanLyLichLam.BorderRadius = 0;
-            this.btn_QuanLyLichLam.BorderSize = 0;
-            this.btn_QuanLyLichLam.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyLichLam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyLichLam.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyLichLam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.Location = new System.Drawing.Point(0, 189);
-            this.btn_QuanLyLichLam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyLichLam.Name = "btn_QuanLyLichLam";
-            this.btn_QuanLyLichLam.Size = new System.Drawing.Size(262, 56);
-            this.btn_QuanLyLichLam.TabIndex = 16;
-            this.btn_QuanLyLichLam.Text = "Lịch làm";
-            this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
-            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
+            this.btn_WorkSchedule.BackColor = System.Drawing.Color.White;
+            this.btn_WorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.btn_WorkSchedule.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_WorkSchedule.BorderRadius = 0;
+            this.btn_WorkSchedule.BorderSize = 0;
+            this.btn_WorkSchedule.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_WorkSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_WorkSchedule.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_WorkSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkSchedule.Location = new System.Drawing.Point(0, 189);
+            this.btn_WorkSchedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_WorkSchedule.Name = "btn_WorkSchedule";
+            this.btn_WorkSchedule.Size = new System.Drawing.Size(262, 56);
+            this.btn_WorkSchedule.TabIndex = 16;
+            this.btn_WorkSchedule.Text = "Lịch làm";
+            this.btn_WorkSchedule.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkSchedule.UseVisualStyleBackColor = false;
+            this.btn_WorkSchedule.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
             // 
             // pictureBox1
             // 
@@ -389,101 +389,101 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbl_NewPasswordConfirm
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(440, 281);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(227, 28);
-            this.label2.TabIndex = 79;
-            this.label2.Text = "Nhập lại mật khẩu mới:";
+            this.lbl_NewPasswordConfirm.AutoSize = true;
+            this.lbl_NewPasswordConfirm.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_NewPasswordConfirm.Location = new System.Drawing.Point(440, 281);
+            this.lbl_NewPasswordConfirm.Name = "lbl_NewPasswordConfirm";
+            this.lbl_NewPasswordConfirm.Size = new System.Drawing.Size(227, 28);
+            this.lbl_NewPasswordConfirm.TabIndex = 79;
+            this.lbl_NewPasswordConfirm.Text = "Nhập lại mật khẩu mới:";
             // 
-            // tb_MatKhauHienTai
+            // tb_CurrentPassword
             // 
-            this.tb_MatKhauHienTai.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MatKhauHienTai.BorderColor = System.Drawing.Color.Gray;
-            this.tb_MatKhauHienTai.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_MatKhauHienTai.BorderRadius = 10;
-            this.tb_MatKhauHienTai.BorderSize = 1;
-            this.tb_MatKhauHienTai.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MatKhauHienTai.ForeColor = System.Drawing.Color.Black;
-            this.tb_MatKhauHienTai.Location = new System.Drawing.Point(674, 158);
-            this.tb_MatKhauHienTai.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MatKhauHienTai.Multiline = false;
-            this.tb_MatKhauHienTai.Name = "tb_MatKhauHienTai";
-            this.tb_MatKhauHienTai.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MatKhauHienTai.PasswordChar = false;
-            this.tb_MatKhauHienTai.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MatKhauHienTai.PlaceholderText = "";
-            this.tb_MatKhauHienTai.ReadOnly = false;
-            this.tb_MatKhauHienTai.Size = new System.Drawing.Size(306, 39);
-            this.tb_MatKhauHienTai.TabIndex = 81;
-            this.tb_MatKhauHienTai.Texts = "";
-            this.tb_MatKhauHienTai.UnderlinedStyle = false;
+            this.tb_CurrentPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_CurrentPassword.BorderColor = System.Drawing.Color.Gray;
+            this.tb_CurrentPassword.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_CurrentPassword.BorderRadius = 10;
+            this.tb_CurrentPassword.BorderSize = 1;
+            this.tb_CurrentPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_CurrentPassword.ForeColor = System.Drawing.Color.Black;
+            this.tb_CurrentPassword.Location = new System.Drawing.Point(674, 158);
+            this.tb_CurrentPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_CurrentPassword.Multiline = false;
+            this.tb_CurrentPassword.Name = "tb_CurrentPassword";
+            this.tb_CurrentPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_CurrentPassword.PasswordChar = false;
+            this.tb_CurrentPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_CurrentPassword.PlaceholderText = "";
+            this.tb_CurrentPassword.ReadOnly = false;
+            this.tb_CurrentPassword.Size = new System.Drawing.Size(306, 39);
+            this.tb_CurrentPassword.TabIndex = 81;
+            this.tb_CurrentPassword.Texts = "";
+            this.tb_CurrentPassword.UnderlinedStyle = false;
             // 
-            // tb_NhapLaiMatKhau
+            // tb_NewPasswordConfirm
             // 
-            this.tb_NhapLaiMatKhau.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NhapLaiMatKhau.BorderColor = System.Drawing.Color.Gray;
-            this.tb_NhapLaiMatKhau.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_NhapLaiMatKhau.BorderRadius = 10;
-            this.tb_NhapLaiMatKhau.BorderSize = 1;
-            this.tb_NhapLaiMatKhau.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NhapLaiMatKhau.ForeColor = System.Drawing.Color.Black;
-            this.tb_NhapLaiMatKhau.Location = new System.Drawing.Point(674, 275);
-            this.tb_NhapLaiMatKhau.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NhapLaiMatKhau.Multiline = false;
-            this.tb_NhapLaiMatKhau.Name = "tb_NhapLaiMatKhau";
-            this.tb_NhapLaiMatKhau.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_NhapLaiMatKhau.PasswordChar = false;
-            this.tb_NhapLaiMatKhau.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NhapLaiMatKhau.PlaceholderText = "";
-            this.tb_NhapLaiMatKhau.ReadOnly = false;
-            this.tb_NhapLaiMatKhau.Size = new System.Drawing.Size(306, 39);
-            this.tb_NhapLaiMatKhau.TabIndex = 82;
-            this.tb_NhapLaiMatKhau.Texts = "";
-            this.tb_NhapLaiMatKhau.UnderlinedStyle = false;
+            this.tb_NewPasswordConfirm.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_NewPasswordConfirm.BorderColor = System.Drawing.Color.Gray;
+            this.tb_NewPasswordConfirm.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_NewPasswordConfirm.BorderRadius = 10;
+            this.tb_NewPasswordConfirm.BorderSize = 1;
+            this.tb_NewPasswordConfirm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_NewPasswordConfirm.ForeColor = System.Drawing.Color.Black;
+            this.tb_NewPasswordConfirm.Location = new System.Drawing.Point(674, 275);
+            this.tb_NewPasswordConfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_NewPasswordConfirm.Multiline = false;
+            this.tb_NewPasswordConfirm.Name = "tb_NewPasswordConfirm";
+            this.tb_NewPasswordConfirm.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_NewPasswordConfirm.PasswordChar = false;
+            this.tb_NewPasswordConfirm.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_NewPasswordConfirm.PlaceholderText = "";
+            this.tb_NewPasswordConfirm.ReadOnly = false;
+            this.tb_NewPasswordConfirm.Size = new System.Drawing.Size(306, 39);
+            this.tb_NewPasswordConfirm.TabIndex = 82;
+            this.tb_NewPasswordConfirm.Texts = "";
+            this.tb_NewPasswordConfirm.UnderlinedStyle = false;
             // 
-            // tb_MatKhauMoi
+            // tb_NewPassword
             // 
-            this.tb_MatKhauMoi.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MatKhauMoi.BorderColor = System.Drawing.Color.Gray;
-            this.tb_MatKhauMoi.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_MatKhauMoi.BorderRadius = 10;
-            this.tb_MatKhauMoi.BorderSize = 1;
-            this.tb_MatKhauMoi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MatKhauMoi.ForeColor = System.Drawing.Color.Black;
-            this.tb_MatKhauMoi.Location = new System.Drawing.Point(674, 216);
-            this.tb_MatKhauMoi.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MatKhauMoi.Multiline = false;
-            this.tb_MatKhauMoi.Name = "tb_MatKhauMoi";
-            this.tb_MatKhauMoi.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MatKhauMoi.PasswordChar = false;
-            this.tb_MatKhauMoi.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MatKhauMoi.PlaceholderText = "";
-            this.tb_MatKhauMoi.ReadOnly = false;
-            this.tb_MatKhauMoi.Size = new System.Drawing.Size(306, 39);
-            this.tb_MatKhauMoi.TabIndex = 83;
-            this.tb_MatKhauMoi.Texts = "";
-            this.tb_MatKhauMoi.UnderlinedStyle = false;
+            this.tb_NewPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_NewPassword.BorderColor = System.Drawing.Color.Gray;
+            this.tb_NewPassword.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_NewPassword.BorderRadius = 10;
+            this.tb_NewPassword.BorderSize = 1;
+            this.tb_NewPassword.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_NewPassword.ForeColor = System.Drawing.Color.Black;
+            this.tb_NewPassword.Location = new System.Drawing.Point(674, 216);
+            this.tb_NewPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_NewPassword.Multiline = false;
+            this.tb_NewPassword.Name = "tb_NewPassword";
+            this.tb_NewPassword.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_NewPassword.PasswordChar = false;
+            this.tb_NewPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_NewPassword.PlaceholderText = "";
+            this.tb_NewPassword.ReadOnly = false;
+            this.tb_NewPassword.Size = new System.Drawing.Size(306, 39);
+            this.tb_NewPassword.TabIndex = 83;
+            this.tb_NewPassword.Texts = "";
+            this.tb_NewPassword.UnderlinedStyle = false;
             // 
             // DoiMatKhau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.tb_MatKhauMoi);
-            this.Controls.Add(this.tb_NhapLaiMatKhau);
-            this.Controls.Add(this.tb_MatKhauHienTai);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tb_NewPassword);
+            this.Controls.Add(this.tb_NewPasswordConfirm);
+            this.Controls.Add(this.tb_CurrentPassword);
+            this.Controls.Add(this.lbl_NewPasswordConfirm);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.btn_CapNhat);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.lbl_NewPassword);
+            this.Controls.Add(this.lbl_CurrentPassword);
+            this.Controls.Add(this.lbl_PasswordReset);
             this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.btn_DangXuat);
+            this.Controls.Add(this.btn_SignOut);
             this.Name = "DoiMatKhau";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Text = "v";
@@ -498,27 +498,27 @@
         }
 
         #endregion
-        private CustomControls.RoundedButton btn_DangXuat;
+        private CustomControls.RoundedButton btn_SignOut;
         private MetroFramework.Controls.MetroGrid metroGrid1;
-        private Label label1;
-        private Label label6;
-        private Label label5;
-        private CustomControls.RoundedButton btn_CapNhat;
+        private Label lbl_PasswordReset;
+        private Label lbl_CurrentPassword;
+        private Label lbl_NewPassword;
+        private CustomControls.RoundedButton btn_Update;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private CustomControls.RoundedButton roundedButton3;
-        private CustomControls.RoundedButton roundedButton1;
-        private CustomControls.RoundedButton btn_LuongThuong;
-        private Label label4;
+        private CustomControls.RoundedButton btn_PasswordReset;
+        private CustomControls.RoundedButton btn_Notification;
+        private CustomControls.RoundedButton btn_Payroll;
+        private Label lbl_AccountName;
         private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_DonTu;
-        private CustomControls.RoundedButton btn_QuanLyChamCong;
-        private CustomControls.RoundedButton btn_HoSoCuaToi;
-        private CustomControls.RoundedButton btn_QuanLyLichLam;
+        private CustomControls.RoundedButton btn_Letter;
+        private CustomControls.RoundedButton btn_Timekeeping;
+        private CustomControls.RoundedButton btn_MyProfile;
+        private CustomControls.RoundedButton btn_WorkSchedule;
         private PictureBox pictureBox1;
-        private Label label2;
-        private CustomControls.LeftAlignRoundedTextBox tb_MatKhauHienTai;
-        private CustomControls.LeftAlignRoundedTextBox tb_NhapLaiMatKhau;
-        private CustomControls.LeftAlignRoundedTextBox tb_MatKhauMoi;
+        private Label lbl_NewPasswordConfirm;
+        private CustomControls.LeftAlignRoundedTextBox tb_CurrentPassword;
+        private CustomControls.LeftAlignRoundedTextBox tb_NewPasswordConfirm;
+        private CustomControls.LeftAlignRoundedTextBox tb_NewPassword;
     }
 }

@@ -8,17 +8,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.NhanVienPage;
 
 namespace WinFormsApp2.StaffAccount
 {
     public partial class DangKyLichLam : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture; 
         int day;
         int month;
         int year;
         public DangKyLichLam()
         {
             InitializeComponent();
+            SetLanguage("en-US");
         }
 
         public DangKyLichLam(int day, int month, int year)
@@ -140,6 +145,27 @@ namespace WinFormsApp2.StaffAccount
             this.Hide();
             //form.ShowDialog();
             this.Close();
+        }
+
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(QuanLyLichLamNgay).Assembly);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_StaffProfile.Text = rm.GetString("staffProfileText", culture);
+            btn_WorkScheduleManagement.Text = rm.GetString("workScheduleManagementText", culture);
+            btn_TimekeepingManagement.Text = rm.GetString("timekeepingManagementText", culture);
+            btn_letter.Text = rm.GetString("letterText", culture);
+            btn_PayRoll.Text = rm.GetString("payrollText", culture);
+            lbl_Date.Text = rm.GetString("dayText", culture);
+            cb_date.PromptText = rm.GetString("dayText", culture);
+            lbl_RegisterShift.Text = rm.GetString("registerShiftText", culture);
+            btn_afternoonShift.Text = rm.GetString("afternoonShiftText", culture);
+            btn_morningShift.Text = rm.GetString("morningShiftText", culture);
+            btn_eveningShift.Text = rm.GetString("eveningShiftText", culture);
+            btn_Back.Text = rm.GetString("backText", culture);
         }
     }
 }

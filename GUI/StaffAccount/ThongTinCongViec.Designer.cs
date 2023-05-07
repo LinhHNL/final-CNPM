@@ -31,78 +31,78 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinCongViec));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinCongViec));
-            this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_HoSo = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_BaoHiemXaHoi = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_CongViec = new WinFormsApp2.CustomControls.RoundedButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tb_NgayLamViec = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tb_ChucVu = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.tb_MaChamCong = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tb_TrangThai = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgv_NhanVien = new MetroFramework.Controls.MetroGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_PersonalInfo = new System.Windows.Forms.Label();
+            this.btn_profile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_socialInsurance = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_job = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton3 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_LuongThuong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btn_PasswordReset = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Notification = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Payroll = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_DonTu = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyChamCong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_HoSoCuaToi = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyLichLam = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Letter = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Timekeeping = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_MyProfile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_WorkSchedule = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gb_WorkInfo = new System.Windows.Forms.GroupBox();
+            this.tb_startWorkDay = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_Department = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.lbl_startWorkDay = new System.Windows.Forms.Label();
+            this.tb_Position = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.lbl_Department = new System.Windows.Forms.Label();
+            this.tb_timekeepingCode = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.lbl_Position = new System.Windows.Forms.Label();
+            this.lbl_timekeepingCode = new System.Windows.Forms.Label();
+            this.tb_status = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.lbl_status = new System.Windows.Forms.Label();
+            this.gb_WorkProcess = new System.Windows.Forms.GroupBox();
+            this.dgv_NhanVien = new MetroFramework.Controls.MetroGrid();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EndDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Edit = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.gb_WorkInfo.SuspendLayout();
+            this.gb_WorkProcess.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_DangXuat
+            // btn_SignOut
             // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DangXuat.BorderRadius = 8;
-            this.btn_DangXuat.BorderSize = 0;
-            this.btn_DangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Location = new System.Drawing.Point(1057, 35);
-            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(117, 35);
-            this.btn_DangXuat.TabIndex = 22;
-            this.btn_DangXuat.Text = "Đăng xuất";
-            this.btn_DangXuat.TextColor = System.Drawing.Color.White;
-            this.btn_DangXuat.UseVisualStyleBackColor = false;
+            this.btn_SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_SignOut.BorderRadius = 8;
+            this.btn_SignOut.BorderSize = 0;
+            this.btn_SignOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_SignOut.ForeColor = System.Drawing.Color.White;
+            this.btn_SignOut.Location = new System.Drawing.Point(1057, 35);
+            this.btn_SignOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_SignOut.Name = "btn_SignOut";
+            this.btn_SignOut.Size = new System.Drawing.Size(117, 35);
+            this.btn_SignOut.TabIndex = 22;
+            this.btn_SignOut.Text = "Đăng xuất";
+            this.btn_SignOut.TextColor = System.Drawing.Color.White;
+            this.btn_SignOut.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
@@ -149,289 +149,504 @@
             this.metroGrid1.Size = new System.Drawing.Size(8, 8);
             this.metroGrid1.TabIndex = 31;
             // 
-            // label1
+            // lbl_PersonalInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(268, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 38);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Thông tin cá nhân";
+            this.lbl_PersonalInfo.AutoSize = true;
+            this.lbl_PersonalInfo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_PersonalInfo.Location = new System.Drawing.Point(268, 75);
+            this.lbl_PersonalInfo.Name = "lbl_PersonalInfo";
+            this.lbl_PersonalInfo.Size = new System.Drawing.Size(255, 38);
+            this.lbl_PersonalInfo.TabIndex = 47;
+            this.lbl_PersonalInfo.Text = "Thông tin cá nhân";
             // 
-            // btn_HoSo
+            // btn_profile
             // 
-            this.btn_HoSo.BackColor = System.Drawing.Color.White;
-            this.btn_HoSo.BackgroundColor = System.Drawing.Color.White;
-            this.btn_HoSo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSo.BorderRadius = 0;
-            this.btn_HoSo.BorderSize = 1;
-            this.btn_HoSo.FlatAppearance.BorderSize = 0;
-            this.btn_HoSo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoSo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoSo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSo.Location = new System.Drawing.Point(273, 120);
-            this.btn_HoSo.Name = "btn_HoSo";
-            this.btn_HoSo.Size = new System.Drawing.Size(295, 50);
-            this.btn_HoSo.TabIndex = 49;
-            this.btn_HoSo.Text = "Hồ Sơ";
-            this.btn_HoSo.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSo.UseVisualStyleBackColor = false;
+            this.btn_profile.BackColor = System.Drawing.Color.White;
+            this.btn_profile.BackgroundColor = System.Drawing.Color.White;
+            this.btn_profile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_profile.BorderRadius = 0;
+            this.btn_profile.BorderSize = 1;
+            this.btn_profile.FlatAppearance.BorderSize = 0;
+            this.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_profile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_profile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_profile.Location = new System.Drawing.Point(273, 120);
+            this.btn_profile.Name = "btn_profile";
+            this.btn_profile.Size = new System.Drawing.Size(295, 50);
+            this.btn_profile.TabIndex = 49;
+            this.btn_profile.Text = "Hồ Sơ";
+            this.btn_profile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_profile.UseVisualStyleBackColor = false;
+            this.btn_profile.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
             // 
-            // btn_BaoHiemXaHoi
+            // btn_socialInsurance
             // 
-            this.btn_BaoHiemXaHoi.BackColor = System.Drawing.Color.White;
-            this.btn_BaoHiemXaHoi.BackgroundColor = System.Drawing.Color.White;
-            this.btn_BaoHiemXaHoi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_BaoHiemXaHoi.BorderRadius = 0;
-            this.btn_BaoHiemXaHoi.BorderSize = 1;
-            this.btn_BaoHiemXaHoi.FlatAppearance.BorderSize = 0;
-            this.btn_BaoHiemXaHoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_BaoHiemXaHoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_BaoHiemXaHoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_BaoHiemXaHoi.Location = new System.Drawing.Point(874, 120);
-            this.btn_BaoHiemXaHoi.Name = "btn_BaoHiemXaHoi";
-            this.btn_BaoHiemXaHoi.Size = new System.Drawing.Size(306, 50);
-            this.btn_BaoHiemXaHoi.TabIndex = 50;
-            this.btn_BaoHiemXaHoi.Text = "Bảo hiểm xã hội";
-            this.btn_BaoHiemXaHoi.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_BaoHiemXaHoi.UseVisualStyleBackColor = false;
-            this.btn_BaoHiemXaHoi.Click += new System.EventHandler(this.btn_BaoHiemXaHoi_Click);
+            this.btn_socialInsurance.BackColor = System.Drawing.Color.White;
+            this.btn_socialInsurance.BackgroundColor = System.Drawing.Color.White;
+            this.btn_socialInsurance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_socialInsurance.BorderRadius = 0;
+            this.btn_socialInsurance.BorderSize = 1;
+            this.btn_socialInsurance.FlatAppearance.BorderSize = 0;
+            this.btn_socialInsurance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_socialInsurance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_socialInsurance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_socialInsurance.Location = new System.Drawing.Point(874, 120);
+            this.btn_socialInsurance.Name = "btn_socialInsurance";
+            this.btn_socialInsurance.Size = new System.Drawing.Size(306, 50);
+            this.btn_socialInsurance.TabIndex = 50;
+            this.btn_socialInsurance.Text = "Bảo hiểm xã hội";
+            this.btn_socialInsurance.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_socialInsurance.UseVisualStyleBackColor = false;
+            this.btn_socialInsurance.Click += new System.EventHandler(this.btn_BaoHiemXaHoi_Click);
             // 
-            // btn_CongViec
+            // btn_job
             // 
-            this.btn_CongViec.BackColor = System.Drawing.Color.White;
-            this.btn_CongViec.BackgroundColor = System.Drawing.Color.White;
-            this.btn_CongViec.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_CongViec.BorderRadius = 0;
-            this.btn_CongViec.BorderSize = 0;
-            this.btn_CongViec.FlatAppearance.BorderSize = 0;
-            this.btn_CongViec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CongViec.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_CongViec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_CongViec.Location = new System.Drawing.Point(568, 120);
-            this.btn_CongViec.Name = "btn_CongViec";
-            this.btn_CongViec.Size = new System.Drawing.Size(306, 50);
-            this.btn_CongViec.TabIndex = 51;
-            this.btn_CongViec.Text = "Công việc";
-            this.btn_CongViec.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_CongViec.UseVisualStyleBackColor = false;
-            this.btn_CongViec.Paint += new System.Windows.Forms.PaintEventHandler(this.btn_CongViec_Paint_1);
+            this.btn_job.BackColor = System.Drawing.Color.White;
+            this.btn_job.BackgroundColor = System.Drawing.Color.White;
+            this.btn_job.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_job.BorderRadius = 0;
+            this.btn_job.BorderSize = 0;
+            this.btn_job.FlatAppearance.BorderSize = 0;
+            this.btn_job.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_job.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_job.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_job.Location = new System.Drawing.Point(568, 120);
+            this.btn_job.Name = "btn_job";
+            this.btn_job.Size = new System.Drawing.Size(306, 50);
+            this.btn_job.TabIndex = 51;
+            this.btn_job.Text = "Công việc";
+            this.btn_job.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_job.UseVisualStyleBackColor = false;
+            this.btn_job.Paint += new System.Windows.Forms.PaintEventHandler(this.btn_CongViec_Paint_1);
+            // 
+            // metroPanel1
+            // 
+            this.metroPanel1.Controls.Add(this.btn_PasswordReset);
+            this.metroPanel1.Controls.Add(this.btn_Notification);
+            this.metroPanel1.Controls.Add(this.btn_Payroll);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
+            this.metroPanel1.Controls.Add(this.pictureBox2);
+            this.metroPanel1.Controls.Add(this.metroPanel7);
+            this.metroPanel1.Controls.Add(this.btn_Letter);
+            this.metroPanel1.Controls.Add(this.btn_Timekeeping);
+            this.metroPanel1.Controls.Add(this.btn_MyProfile);
+            this.metroPanel1.Controls.Add(this.btn_WorkSchedule);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 11;
+            this.metroPanel1.Location = new System.Drawing.Point(4, 27);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(263, 578);
+            this.metroPanel1.TabIndex = 55;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // btn_PasswordReset
+            // 
+            this.btn_PasswordReset.BackColor = System.Drawing.Color.White;
+            this.btn_PasswordReset.BackgroundColor = System.Drawing.Color.White;
+            this.btn_PasswordReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_PasswordReset.BorderRadius = 0;
+            this.btn_PasswordReset.BorderSize = 0;
+            this.btn_PasswordReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_PasswordReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PasswordReset.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_PasswordReset.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_PasswordReset.Location = new System.Drawing.Point(0, 485);
+            this.btn_PasswordReset.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_PasswordReset.Name = "btn_PasswordReset";
+            this.btn_PasswordReset.Size = new System.Drawing.Size(263, 64);
+            this.btn_PasswordReset.TabIndex = 47;
+            this.btn_PasswordReset.Text = "Đổi mật khẩu";
+            this.btn_PasswordReset.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_PasswordReset.UseVisualStyleBackColor = false;
+            this.btn_PasswordReset.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
+            // 
+            // btn_Notification
+            // 
+            this.btn_Notification.BackColor = System.Drawing.Color.White;
+            this.btn_Notification.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Notification.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Notification.BorderRadius = 0;
+            this.btn_Notification.BorderSize = 0;
+            this.btn_Notification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Notification.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Notification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.Location = new System.Drawing.Point(0, 420);
+            this.btn_Notification.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Notification.Name = "btn_Notification";
+            this.btn_Notification.Size = new System.Drawing.Size(263, 64);
+            this.btn_Notification.TabIndex = 46;
+            this.btn_Notification.Text = "Thông báo";
+            this.btn_Notification.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.UseVisualStyleBackColor = false;
+            this.btn_Notification.Click += new System.EventHandler(this.btn_ThongBao_Click);
+            // 
+            // btn_Payroll
+            // 
+            this.btn_Payroll.BackColor = System.Drawing.Color.White;
+            this.btn_Payroll.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Payroll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Payroll.BorderRadius = 0;
+            this.btn_Payroll.BorderSize = 0;
+            this.btn_Payroll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Payroll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Payroll.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Payroll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Payroll.Location = new System.Drawing.Point(0, 363);
+            this.btn_Payroll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Payroll.Name = "btn_Payroll";
+            this.btn_Payroll.Size = new System.Drawing.Size(263, 64);
+            this.btn_Payroll.TabIndex = 45;
+            this.btn_Payroll.Text = "Lương thưởng";
+            this.btn_Payroll.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Payroll.UseVisualStyleBackColor = false;
+            this.btn_Payroll.Click += new System.EventHandler(this.btn_LuongThuong_Click);
+            // 
+            // lbl_AccountName
+            // 
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 85);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // metroPanel7
+            // 
+            this.metroPanel7.BackColor = System.Drawing.Color.Black;
+            this.metroPanel7.HorizontalScrollbarBarColor = true;
+            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.HorizontalScrollbarSize = 11;
+            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
+            this.metroPanel7.Name = "metroPanel7";
+            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
+            this.metroPanel7.TabIndex = 20;
+            this.metroPanel7.VerticalScrollbarBarColor = true;
+            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.VerticalScrollbarSize = 10;
+            // 
+            // btn_Letter
+            // 
+            this.btn_Letter.BackColor = System.Drawing.Color.White;
+            this.btn_Letter.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Letter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Letter.BorderRadius = 0;
+            this.btn_Letter.BorderSize = 0;
+            this.btn_Letter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Letter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Letter.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Letter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Letter.Location = new System.Drawing.Point(-1, 301);
+            this.btn_Letter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Letter.Name = "btn_Letter";
+            this.btn_Letter.Size = new System.Drawing.Size(263, 64);
+            this.btn_Letter.TabIndex = 18;
+            this.btn_Letter.Text = "Đơn từ";
+            this.btn_Letter.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Letter.UseVisualStyleBackColor = false;
+            this.btn_Letter.Click += new System.EventHandler(this.btn_DonTu_Click);
+            // 
+            // btn_Timekeeping
+            // 
+            this.btn_Timekeeping.BackColor = System.Drawing.Color.White;
+            this.btn_Timekeeping.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Timekeeping.BorderColor = System.Drawing.Color.Silver;
+            this.btn_Timekeeping.BorderRadius = 0;
+            this.btn_Timekeeping.BorderSize = 0;
+            this.btn_Timekeeping.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Timekeeping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Timekeeping.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Timekeeping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Timekeeping.Location = new System.Drawing.Point(-1, 243);
+            this.btn_Timekeeping.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Timekeeping.Name = "btn_Timekeeping";
+            this.btn_Timekeeping.Size = new System.Drawing.Size(264, 64);
+            this.btn_Timekeeping.TabIndex = 17;
+            this.btn_Timekeeping.Text = "Chấm công";
+            this.btn_Timekeeping.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Timekeeping.UseVisualStyleBackColor = false;
+            this.btn_Timekeeping.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
+            // 
+            // btn_MyProfile
+            // 
+            this.btn_MyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_MyProfile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_MyProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_MyProfile.BorderRadius = 0;
+            this.btn_MyProfile.BorderSize = 0;
+            this.btn_MyProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_MyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_MyProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_MyProfile.ForeColor = System.Drawing.Color.White;
+            this.btn_MyProfile.Location = new System.Drawing.Point(0, 131);
+            this.btn_MyProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MyProfile.Name = "btn_MyProfile";
+            this.btn_MyProfile.Size = new System.Drawing.Size(262, 60);
+            this.btn_MyProfile.TabIndex = 16;
+            this.btn_MyProfile.Text = "Hồ sơ của tôi";
+            this.btn_MyProfile.TextColor = System.Drawing.Color.White;
+            this.btn_MyProfile.UseVisualStyleBackColor = false;
+            this.btn_MyProfile.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
+            // 
+            // btn_WorkSchedule
+            // 
+            this.btn_WorkSchedule.BackColor = System.Drawing.Color.White;
+            this.btn_WorkSchedule.BackgroundColor = System.Drawing.Color.White;
+            this.btn_WorkSchedule.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_WorkSchedule.BorderRadius = 0;
+            this.btn_WorkSchedule.BorderSize = 0;
+            this.btn_WorkSchedule.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_WorkSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_WorkSchedule.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_WorkSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkSchedule.Location = new System.Drawing.Point(0, 189);
+            this.btn_WorkSchedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_WorkSchedule.Name = "btn_WorkSchedule";
+            this.btn_WorkSchedule.Size = new System.Drawing.Size(262, 56);
+            this.btn_WorkSchedule.TabIndex = 16;
+            this.btn_WorkSchedule.Text = "Lịch làm";
+            this.btn_WorkSchedule.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkSchedule.UseVisualStyleBackColor = false;
+            this.btn_WorkSchedule.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(101, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 51);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.groupBox1);
-            this.flowLayoutPanel1.Controls.Add(this.groupBox2);
-            this.flowLayoutPanel1.Controls.Add(this.roundedButton1);
+            this.flowLayoutPanel1.Controls.Add(this.gb_WorkInfo);
+            this.flowLayoutPanel1.Controls.Add(this.gb_WorkProcess);
+            this.flowLayoutPanel1.Controls.Add(this.btn_Edit);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(273, 176);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(894, 429);
-            this.flowLayoutPanel1.TabIndex = 54;
+            this.flowLayoutPanel1.TabIndex = 57;
             // 
-            // groupBox1
+            // gb_WorkInfo
             // 
-            this.groupBox1.Controls.Add(this.tb_NgayLamViec);
-            this.groupBox1.Controls.Add(this.tb_PhongBan);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.tb_ChucVu);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.tb_MaChamCong);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.tb_TrangThai);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox1.Location = new System.Drawing.Point(5, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(865, 284);
-            this.groupBox1.TabIndex = 53;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin công việc";
+            this.gb_WorkInfo.Controls.Add(this.tb_startWorkDay);
+            this.gb_WorkInfo.Controls.Add(this.tb_Department);
+            this.gb_WorkInfo.Controls.Add(this.lbl_startWorkDay);
+            this.gb_WorkInfo.Controls.Add(this.tb_Position);
+            this.gb_WorkInfo.Controls.Add(this.lbl_Department);
+            this.gb_WorkInfo.Controls.Add(this.tb_timekeepingCode);
+            this.gb_WorkInfo.Controls.Add(this.lbl_Position);
+            this.gb_WorkInfo.Controls.Add(this.lbl_timekeepingCode);
+            this.gb_WorkInfo.Controls.Add(this.tb_status);
+            this.gb_WorkInfo.Controls.Add(this.lbl_status);
+            this.gb_WorkInfo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gb_WorkInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.gb_WorkInfo.Location = new System.Drawing.Point(5, 3);
+            this.gb_WorkInfo.Name = "gb_WorkInfo";
+            this.gb_WorkInfo.Size = new System.Drawing.Size(865, 284);
+            this.gb_WorkInfo.TabIndex = 53;
+            this.gb_WorkInfo.TabStop = false;
+            this.gb_WorkInfo.Text = "Thông tin công việc";
             // 
-            // tb_NgayLamViec
+            // tb_startWorkDay
             // 
-            this.tb_NgayLamViec.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NgayLamViec.BorderColor = System.Drawing.Color.Gray;
-            this.tb_NgayLamViec.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_NgayLamViec.BorderRadius = 10;
-            this.tb_NgayLamViec.BorderSize = 1;
-            this.tb_NgayLamViec.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NgayLamViec.ForeColor = System.Drawing.Color.Black;
-            this.tb_NgayLamViec.Location = new System.Drawing.Point(295, 233);
-            this.tb_NgayLamViec.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NgayLamViec.Multiline = false;
-            this.tb_NgayLamViec.Name = "tb_NgayLamViec";
-            this.tb_NgayLamViec.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_NgayLamViec.PasswordChar = false;
-            this.tb_NgayLamViec.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NgayLamViec.PlaceholderText = "";
-            this.tb_NgayLamViec.ReadOnly = false;
-            this.tb_NgayLamViec.Size = new System.Drawing.Size(306, 39);
-            this.tb_NgayLamViec.TabIndex = 44;
-            this.tb_NgayLamViec.Texts = "";
-            this.tb_NgayLamViec.UnderlinedStyle = false;
+            this.tb_startWorkDay.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_startWorkDay.BorderColor = System.Drawing.Color.Gray;
+            this.tb_startWorkDay.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_startWorkDay.BorderRadius = 10;
+            this.tb_startWorkDay.BorderSize = 1;
+            this.tb_startWorkDay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_startWorkDay.ForeColor = System.Drawing.Color.Black;
+            this.tb_startWorkDay.Location = new System.Drawing.Point(295, 233);
+            this.tb_startWorkDay.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_startWorkDay.Multiline = false;
+            this.tb_startWorkDay.Name = "tb_startWorkDay";
+            this.tb_startWorkDay.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_startWorkDay.PasswordChar = false;
+            this.tb_startWorkDay.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_startWorkDay.PlaceholderText = "";
+            this.tb_startWorkDay.ReadOnly = false;
+            this.tb_startWorkDay.Size = new System.Drawing.Size(306, 39);
+            this.tb_startWorkDay.TabIndex = 44;
+            this.tb_startWorkDay.Texts = "";
+            this.tb_startWorkDay.UnderlinedStyle = false;
             // 
-            // tb_PhongBan
+            // tb_Department
             // 
-            this.tb_PhongBan.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_PhongBan.BorderColor = System.Drawing.Color.Gray;
-            this.tb_PhongBan.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.BorderRadius = 10;
-            this.tb_PhongBan.BorderSize = 1;
-            this.tb_PhongBan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_PhongBan.ForeColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.Location = new System.Drawing.Point(295, 186);
-            this.tb_PhongBan.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_PhongBan.Multiline = false;
-            this.tb_PhongBan.Name = "tb_PhongBan";
-            this.tb_PhongBan.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_PhongBan.PasswordChar = false;
-            this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_PhongBan.PlaceholderText = "";
-            this.tb_PhongBan.ReadOnly = false;
-            this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
-            this.tb_PhongBan.TabIndex = 43;
-            this.tb_PhongBan.Texts = "";
-            this.tb_PhongBan.UnderlinedStyle = false;
+            this.tb_Department.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Department.BorderColor = System.Drawing.Color.Gray;
+            this.tb_Department.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_Department.BorderRadius = 10;
+            this.tb_Department.BorderSize = 1;
+            this.tb_Department.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_Department.ForeColor = System.Drawing.Color.Black;
+            this.tb_Department.Location = new System.Drawing.Point(295, 186);
+            this.tb_Department.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Department.Multiline = false;
+            this.tb_Department.Name = "tb_Department";
+            this.tb_Department.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Department.PasswordChar = false;
+            this.tb_Department.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_Department.PlaceholderText = "";
+            this.tb_Department.ReadOnly = false;
+            this.tb_Department.Size = new System.Drawing.Size(306, 39);
+            this.tb_Department.TabIndex = 43;
+            this.tb_Department.Texts = "";
+            this.tb_Department.UnderlinedStyle = false;
             // 
-            // label8
+            // lbl_startWorkDay
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(77, 240);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(211, 28);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Ngày bắt đầu làm việc:";
+            this.lbl_startWorkDay.AutoSize = true;
+            this.lbl_startWorkDay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_startWorkDay.ForeColor = System.Drawing.Color.Black;
+            this.lbl_startWorkDay.Location = new System.Drawing.Point(71, 237);
+            this.lbl_startWorkDay.Name = "lbl_startWorkDay";
+            this.lbl_startWorkDay.Size = new System.Drawing.Size(211, 28);
+            this.lbl_startWorkDay.TabIndex = 42;
+            this.lbl_startWorkDay.Text = "Ngày bắt đầu làm việc:";
             // 
-            // tb_ChucVu
+            // tb_Position
             // 
-            this.tb_ChucVu.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_ChucVu.BorderColor = System.Drawing.Color.Gray;
-            this.tb_ChucVu.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_ChucVu.BorderRadius = 10;
-            this.tb_ChucVu.BorderSize = 1;
-            this.tb_ChucVu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_ChucVu.ForeColor = System.Drawing.Color.Black;
-            this.tb_ChucVu.Location = new System.Drawing.Point(295, 136);
-            this.tb_ChucVu.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_ChucVu.Multiline = false;
-            this.tb_ChucVu.Name = "tb_ChucVu";
-            this.tb_ChucVu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_ChucVu.PasswordChar = false;
-            this.tb_ChucVu.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_ChucVu.PlaceholderText = "";
-            this.tb_ChucVu.ReadOnly = false;
-            this.tb_ChucVu.Size = new System.Drawing.Size(306, 39);
-            this.tb_ChucVu.TabIndex = 41;
-            this.tb_ChucVu.Texts = "";
-            this.tb_ChucVu.UnderlinedStyle = false;
+            this.tb_Position.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Position.BorderColor = System.Drawing.Color.Gray;
+            this.tb_Position.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_Position.BorderRadius = 10;
+            this.tb_Position.BorderSize = 1;
+            this.tb_Position.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_Position.ForeColor = System.Drawing.Color.Black;
+            this.tb_Position.Location = new System.Drawing.Point(295, 136);
+            this.tb_Position.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Position.Multiline = false;
+            this.tb_Position.Name = "tb_Position";
+            this.tb_Position.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Position.PasswordChar = false;
+            this.tb_Position.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_Position.PlaceholderText = "";
+            this.tb_Position.ReadOnly = false;
+            this.tb_Position.Size = new System.Drawing.Size(306, 39);
+            this.tb_Position.TabIndex = 41;
+            this.tb_Position.Texts = "";
+            this.tb_Position.UnderlinedStyle = false;
             // 
-            // label7
+            // lbl_Department
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(177, 190);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 28);
-            this.label7.TabIndex = 40;
-            this.label7.Text = "Phòng ban:";
+            this.lbl_Department.AutoSize = true;
+            this.lbl_Department.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Department.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Department.Location = new System.Drawing.Point(71, 191);
+            this.lbl_Department.Name = "lbl_Department";
+            this.lbl_Department.Size = new System.Drawing.Size(111, 28);
+            this.lbl_Department.TabIndex = 40;
+            this.lbl_Department.Text = "Phòng ban:";
             // 
-            // tb_MaChamCong
+            // tb_timekeepingCode
             // 
-            this.tb_MaChamCong.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MaChamCong.BorderColor = System.Drawing.Color.Gray;
-            this.tb_MaChamCong.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_MaChamCong.BorderRadius = 10;
-            this.tb_MaChamCong.BorderSize = 1;
-            this.tb_MaChamCong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MaChamCong.ForeColor = System.Drawing.Color.Black;
-            this.tb_MaChamCong.Location = new System.Drawing.Point(295, 86);
-            this.tb_MaChamCong.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaChamCong.Multiline = false;
-            this.tb_MaChamCong.Name = "tb_MaChamCong";
-            this.tb_MaChamCong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MaChamCong.PasswordChar = false;
-            this.tb_MaChamCong.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MaChamCong.PlaceholderText = "";
-            this.tb_MaChamCong.ReadOnly = false;
-            this.tb_MaChamCong.Size = new System.Drawing.Size(306, 39);
-            this.tb_MaChamCong.TabIndex = 39;
-            this.tb_MaChamCong.Texts = "";
-            this.tb_MaChamCong.UnderlinedStyle = false;
+            this.tb_timekeepingCode.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_timekeepingCode.BorderColor = System.Drawing.Color.Gray;
+            this.tb_timekeepingCode.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_timekeepingCode.BorderRadius = 10;
+            this.tb_timekeepingCode.BorderSize = 1;
+            this.tb_timekeepingCode.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_timekeepingCode.ForeColor = System.Drawing.Color.Black;
+            this.tb_timekeepingCode.Location = new System.Drawing.Point(295, 86);
+            this.tb_timekeepingCode.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_timekeepingCode.Multiline = false;
+            this.tb_timekeepingCode.Name = "tb_timekeepingCode";
+            this.tb_timekeepingCode.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_timekeepingCode.PasswordChar = false;
+            this.tb_timekeepingCode.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_timekeepingCode.PlaceholderText = "";
+            this.tb_timekeepingCode.ReadOnly = false;
+            this.tb_timekeepingCode.Size = new System.Drawing.Size(306, 39);
+            this.tb_timekeepingCode.TabIndex = 39;
+            this.tb_timekeepingCode.Texts = "";
+            this.tb_timekeepingCode.UnderlinedStyle = false;
             // 
-            // label6
+            // lbl_Position
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(202, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 28);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Chức vụ:";
+            this.lbl_Position.AutoSize = true;
+            this.lbl_Position.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Position.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Position.Location = new System.Drawing.Point(72, 144);
+            this.lbl_Position.Name = "lbl_Position";
+            this.lbl_Position.Size = new System.Drawing.Size(86, 28);
+            this.lbl_Position.TabIndex = 38;
+            this.lbl_Position.Text = "Chức vụ:";
             // 
-            // label5
+            // lbl_timekeepingCode
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(144, 88);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 28);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Mã chấm công:";
+            this.lbl_timekeepingCode.AutoSize = true;
+            this.lbl_timekeepingCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_timekeepingCode.ForeColor = System.Drawing.Color.Black;
+            this.lbl_timekeepingCode.Location = new System.Drawing.Point(72, 91);
+            this.lbl_timekeepingCode.Name = "lbl_timekeepingCode";
+            this.lbl_timekeepingCode.Size = new System.Drawing.Size(145, 28);
+            this.lbl_timekeepingCode.TabIndex = 37;
+            this.lbl_timekeepingCode.Text = "Mã chấm công:";
             // 
-            // tb_TrangThai
+            // tb_status
             // 
-            this.tb_TrangThai.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_TrangThai.BorderColor = System.Drawing.Color.Gray;
-            this.tb_TrangThai.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_TrangThai.BorderRadius = 10;
-            this.tb_TrangThai.BorderSize = 1;
-            this.tb_TrangThai.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_TrangThai.ForeColor = System.Drawing.Color.Black;
-            this.tb_TrangThai.Location = new System.Drawing.Point(295, 34);
-            this.tb_TrangThai.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_TrangThai.Multiline = false;
-            this.tb_TrangThai.Name = "tb_TrangThai";
-            this.tb_TrangThai.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_TrangThai.PasswordChar = false;
-            this.tb_TrangThai.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_TrangThai.PlaceholderText = "";
-            this.tb_TrangThai.ReadOnly = false;
-            this.tb_TrangThai.Size = new System.Drawing.Size(306, 39);
-            this.tb_TrangThai.TabIndex = 35;
-            this.tb_TrangThai.Texts = "";
-            this.tb_TrangThai.UnderlinedStyle = false;
+            this.tb_status.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_status.BorderColor = System.Drawing.Color.Gray;
+            this.tb_status.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_status.BorderRadius = 10;
+            this.tb_status.BorderSize = 1;
+            this.tb_status.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_status.ForeColor = System.Drawing.Color.Black;
+            this.tb_status.Location = new System.Drawing.Point(295, 34);
+            this.tb_status.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_status.Multiline = false;
+            this.tb_status.Name = "tb_status";
+            this.tb_status.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_status.PasswordChar = false;
+            this.tb_status.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_status.PlaceholderText = "";
+            this.tb_status.ReadOnly = false;
+            this.tb_status.Size = new System.Drawing.Size(306, 39);
+            this.tb_status.TabIndex = 35;
+            this.tb_status.Texts = "";
+            this.tb_status.UnderlinedStyle = false;
             // 
-            // label3
+            // lbl_status
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(188, 36);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 28);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Trạng thái:";
+            this.lbl_status.AutoSize = true;
+            this.lbl_status.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_status.ForeColor = System.Drawing.Color.Black;
+            this.lbl_status.Location = new System.Drawing.Point(72, 36);
+            this.lbl_status.Name = "lbl_status";
+            this.lbl_status.Size = new System.Drawing.Size(102, 28);
+            this.lbl_status.TabIndex = 0;
+            this.lbl_status.Text = "Trạng thái:";
             // 
-            // groupBox2
+            // gb_WorkProcess
             // 
-            this.groupBox2.Controls.Add(this.dgv_NhanVien);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.groupBox2.Location = new System.Drawing.Point(5, 293);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(865, 257);
-            this.groupBox2.TabIndex = 54;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Quá trình làm việc";
+            this.gb_WorkProcess.Controls.Add(this.dgv_NhanVien);
+            this.gb_WorkProcess.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gb_WorkProcess.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.gb_WorkProcess.Location = new System.Drawing.Point(5, 293);
+            this.gb_WorkProcess.Name = "gb_WorkProcess";
+            this.gb_WorkProcess.Size = new System.Drawing.Size(865, 257);
+            this.gb_WorkProcess.TabIndex = 54;
+            this.gb_WorkProcess.TabStop = false;
+            this.gb_WorkProcess.Text = "Quá trình làm việc";
             // 
             // dgv_NhanVien
             // 
@@ -452,11 +667,11 @@
             this.dgv_NhanVien.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_NhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_NhanVien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.Number,
+            this.Position,
+            this.StartDate,
+            this.EndDate,
+            this.Description});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -487,348 +702,134 @@
             this.dgv_NhanVien.Size = new System.Drawing.Size(854, 220);
             this.dgv_NhanVien.TabIndex = 33;
             // 
-            // Column1
+            // Number
             // 
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 125;
+            this.Number.HeaderText = "STT";
+            this.Number.MinimumWidth = 6;
+            this.Number.Name = "Number";
+            this.Number.ReadOnly = true;
+            this.Number.Width = 125;
             // 
-            // Column2
+            // Position
             // 
-            this.Column2.HeaderText = "Chức vụ";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 175;
+            this.Position.HeaderText = "Chức vụ";
+            this.Position.MinimumWidth = 6;
+            this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
+            this.Position.Width = 175;
             // 
-            // Column3
+            // StartDate
             // 
-            this.Column3.HeaderText = "Ngày bắt đầu";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 200;
+            this.StartDate.HeaderText = "Ngày bắt đầu";
+            this.StartDate.MinimumWidth = 6;
+            this.StartDate.Name = "StartDate";
+            this.StartDate.ReadOnly = true;
+            this.StartDate.Width = 200;
             // 
-            // Column4
+            // EndDate
             // 
-            this.Column4.HeaderText = "Ngày kết thúc";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
+            this.EndDate.HeaderText = "Ngày kết thúc";
+            this.EndDate.MinimumWidth = 6;
+            this.EndDate.Name = "EndDate";
+            this.EndDate.Width = 200;
             // 
-            // Column5
+            // Description
             // 
-            this.Column5.HeaderText = "Mô tả";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
+            this.Description.HeaderText = "Mô tả";
+            this.Description.MinimumWidth = 6;
+            this.Description.Name = "Description";
+            this.Description.Width = 150;
             // 
-            // roundedButton1
+            // btn_Edit
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.roundedButton1.BorderRadius = 8;
-            this.roundedButton1.BorderSize = 1;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(780, 557);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(90, 35);
-            this.roundedButton1.TabIndex = 55;
-            this.roundedButton1.Text = "Sửa";
-            this.roundedButton1.TextColor = System.Drawing.Color.White;
-            this.roundedButton1.UseVisualStyleBackColor = false;
-            this.roundedButton1.Click += new System.EventHandler(this.roundedButton1_Click);
-            // 
-            // metroPanel1
-            // 
-            this.metroPanel1.Controls.Add(this.roundedButton3);
-            this.metroPanel1.Controls.Add(this.roundedButton2);
-            this.metroPanel1.Controls.Add(this.btn_LuongThuong);
-            this.metroPanel1.Controls.Add(this.label4);
-            this.metroPanel1.Controls.Add(this.pictureBox2);
-            this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_DonTu);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyChamCong);
-            this.metroPanel1.Controls.Add(this.btn_HoSoCuaToi);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyLichLam);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 11;
-            this.metroPanel1.Location = new System.Drawing.Point(4, 27);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(263, 578);
-            this.metroPanel1.TabIndex = 55;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
-            // 
-            // roundedButton3
-            // 
-            this.roundedButton3.BackColor = System.Drawing.Color.White;
-            this.roundedButton3.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton3.BorderRadius = 0;
-            this.roundedButton3.BorderSize = 0;
-            this.roundedButton3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton3.Location = new System.Drawing.Point(0, 485);
-            this.roundedButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton3.Name = "roundedButton3";
-            this.roundedButton3.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton3.TabIndex = 47;
-            this.roundedButton3.Text = "Đổi mật khẩu";
-            this.roundedButton3.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton3.UseVisualStyleBackColor = false;
-            this.roundedButton3.Click += new System.EventHandler(this.btn_DoiMatKhau_Click);
-            // 
-            // roundedButton2
-            // 
-            this.roundedButton2.BackColor = System.Drawing.Color.White;
-            this.roundedButton2.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton2.BorderRadius = 0;
-            this.roundedButton2.BorderSize = 0;
-            this.roundedButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton2.Location = new System.Drawing.Point(0, 420);
-            this.roundedButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton2.Name = "roundedButton2";
-            this.roundedButton2.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton2.TabIndex = 46;
-            this.roundedButton2.Text = "Thông báo";
-            this.roundedButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton2.UseVisualStyleBackColor = false;
-            this.roundedButton2.Click += new System.EventHandler(this.btn_ThongBao_Click);
-            // 
-            // btn_LuongThuong
-            // 
-            this.btn_LuongThuong.BackColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.BackgroundColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_LuongThuong.BorderRadius = 0;
-            this.btn_LuongThuong.BorderSize = 0;
-            this.btn_LuongThuong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_LuongThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LuongThuong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_LuongThuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_LuongThuong.Location = new System.Drawing.Point(0, 363);
-            this.btn_LuongThuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_LuongThuong.Name = "btn_LuongThuong";
-            this.btn_LuongThuong.Size = new System.Drawing.Size(263, 64);
-            this.btn_LuongThuong.TabIndex = 45;
-            this.btn_LuongThuong.Text = "Lương thưởng";
-            this.btn_LuongThuong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_LuongThuong.UseVisualStyleBackColor = false;
-            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // metroPanel7
-            // 
-            this.metroPanel7.BackColor = System.Drawing.Color.Black;
-            this.metroPanel7.HorizontalScrollbarBarColor = true;
-            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 11;
-            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
-            this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
-            this.metroPanel7.TabIndex = 20;
-            this.metroPanel7.VerticalScrollbarBarColor = true;
-            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 10;
-            // 
-            // btn_DonTu
-            // 
-            this.btn_DonTu.BackColor = System.Drawing.Color.White;
-            this.btn_DonTu.BackgroundColor = System.Drawing.Color.White;
-            this.btn_DonTu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_DonTu.BorderRadius = 0;
-            this.btn_DonTu.BorderSize = 0;
-            this.btn_DonTu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DonTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DonTu.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DonTu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.Location = new System.Drawing.Point(-1, 301);
-            this.btn_DonTu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DonTu.Name = "btn_DonTu";
-            this.btn_DonTu.Size = new System.Drawing.Size(263, 64);
-            this.btn_DonTu.TabIndex = 18;
-            this.btn_DonTu.Text = "Đơn từ";
-            this.btn_DonTu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.UseVisualStyleBackColor = false;
-            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
-            // 
-            // btn_QuanLyChamCong
-            // 
-            this.btn_QuanLyChamCong.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BorderColor = System.Drawing.Color.Silver;
-            this.btn_QuanLyChamCong.BorderRadius = 0;
-            this.btn_QuanLyChamCong.BorderSize = 0;
-            this.btn_QuanLyChamCong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyChamCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyChamCong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.Location = new System.Drawing.Point(-1, 243);
-            this.btn_QuanLyChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyChamCong.Name = "btn_QuanLyChamCong";
-            this.btn_QuanLyChamCong.Size = new System.Drawing.Size(264, 64);
-            this.btn_QuanLyChamCong.TabIndex = 17;
-            this.btn_QuanLyChamCong.Text = "Chấm công";
-            this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
-            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
-            // 
-            // btn_HoSoCuaToi
-            // 
-            this.btn_HoSoCuaToi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HoSoCuaToi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HoSoCuaToi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_HoSoCuaToi.BorderRadius = 0;
-            this.btn_HoSoCuaToi.BorderSize = 0;
-            this.btn_HoSoCuaToi.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_HoSoCuaToi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoSoCuaToi.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoSoCuaToi.ForeColor = System.Drawing.Color.White;
-            this.btn_HoSoCuaToi.Location = new System.Drawing.Point(0, 131);
-            this.btn_HoSoCuaToi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_HoSoCuaToi.Name = "btn_HoSoCuaToi";
-            this.btn_HoSoCuaToi.Size = new System.Drawing.Size(262, 60);
-            this.btn_HoSoCuaToi.TabIndex = 16;
-            this.btn_HoSoCuaToi.Text = "Hồ sơ của tôi";
-            this.btn_HoSoCuaToi.TextColor = System.Drawing.Color.White;
-            this.btn_HoSoCuaToi.UseVisualStyleBackColor = false;
-            this.btn_HoSoCuaToi.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
-            // 
-            // btn_QuanLyLichLam
-            // 
-            this.btn_QuanLyLichLam.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_QuanLyLichLam.BorderRadius = 0;
-            this.btn_QuanLyLichLam.BorderSize = 0;
-            this.btn_QuanLyLichLam.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyLichLam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyLichLam.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyLichLam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.Location = new System.Drawing.Point(0, 189);
-            this.btn_QuanLyLichLam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyLichLam.Name = "btn_QuanLyLichLam";
-            this.btn_QuanLyLichLam.Size = new System.Drawing.Size(262, 56);
-            this.btn_QuanLyLichLam.TabIndex = 16;
-            this.btn_QuanLyLichLam.Text = "Lịch làm";
-            this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
-            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(101, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 51);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.btn_Edit.BorderRadius = 8;
+            this.btn_Edit.BorderSize = 1;
+            this.btn_Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Edit.ForeColor = System.Drawing.Color.White;
+            this.btn_Edit.Location = new System.Drawing.Point(791, 557);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(79, 35);
+            this.btn_Edit.TabIndex = 57;
+            this.btn_Edit.Text = "Sửa";
+            this.btn_Edit.TextColor = System.Drawing.Color.White;
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.roundedButton1_Click);
             // 
             // ThongTinCongViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.btn_CongViec);
-            this.Controls.Add(this.btn_BaoHiemXaHoi);
-            this.Controls.Add(this.btn_HoSo);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.btn_job);
+            this.Controls.Add(this.btn_socialInsurance);
+            this.Controls.Add(this.btn_profile);
+            this.Controls.Add(this.lbl_PersonalInfo);
             this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.btn_DangXuat);
+            this.Controls.Add(this.btn_SignOut);
             this.Name = "ThongTinCongViec";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Text = "v";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.gb_WorkInfo.ResumeLayout(false);
+            this.gb_WorkInfo.PerformLayout();
+            this.gb_WorkProcess.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_NhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private CustomControls.RoundedButton btn_DangXuat;
+        private CustomControls.RoundedButton btn_SignOut;
         private MetroFramework.Controls.MetroGrid metroGrid1;
-        private Label label1;
-        private CustomControls.RoundedButton btn_HoSo;
-        private CustomControls.RoundedButton btn_BaoHiemXaHoi;
-        private CustomControls.RoundedButton btn_CongViec;
-        private FlowLayoutPanel flowLayoutPanel1;
-        private GroupBox groupBox1;
-        private CustomControls.LeftAlignRoundedTextBox tb_NgayLamViec;
-        private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
-        private Label label8;
-        private CustomControls.LeftAlignRoundedTextBox tb_ChucVu;
-        private Label label7;
-        private CustomControls.LeftAlignRoundedTextBox tb_MaChamCong;
-        private Label label6;
-        private Label label5;
-        private CustomControls.LeftAlignRoundedTextBox tb_TrangThai;
-        private Label label3;
-        private GroupBox groupBox2;
-        private MetroFramework.Controls.MetroGrid dgv_NhanVien;
-        private CustomControls.RoundedButton roundedButton1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
+        private Label lbl_PersonalInfo;
+        private CustomControls.RoundedButton btn_profile;
+        private CustomControls.RoundedButton btn_socialInsurance;
+        private CustomControls.RoundedButton btn_job;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private CustomControls.RoundedButton roundedButton3;
-        private CustomControls.RoundedButton roundedButton2;
-        private CustomControls.RoundedButton btn_LuongThuong;
-        private Label label4;
+        private CustomControls.RoundedButton btn_PasswordReset;
+        private CustomControls.RoundedButton btn_Notification;
+        private CustomControls.RoundedButton btn_Payroll;
+        private Label lbl_AccountName;
         private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_DonTu;
-        private CustomControls.RoundedButton btn_QuanLyChamCong;
-        private CustomControls.RoundedButton btn_HoSoCuaToi;
-        private CustomControls.RoundedButton btn_QuanLyLichLam;
+        private CustomControls.RoundedButton btn_Letter;
+        private CustomControls.RoundedButton btn_Timekeeping;
+        private CustomControls.RoundedButton btn_MyProfile;
+        private CustomControls.RoundedButton btn_WorkSchedule;
         private PictureBox pictureBox1;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private GroupBox gb_WorkInfo;
+        private CustomControls.LeftAlignRoundedTextBox tb_startWorkDay;
+        private CustomControls.LeftAlignRoundedTextBox tb_Department;
+        private Label lbl_startWorkDay;
+        private CustomControls.LeftAlignRoundedTextBox tb_Position;
+        private Label lbl_Department;
+        private CustomControls.LeftAlignRoundedTextBox tb_timekeepingCode;
+        private Label lbl_Position;
+        private Label lbl_timekeepingCode;
+        private CustomControls.LeftAlignRoundedTextBox tb_status;
+        private Label lbl_status;
+        private GroupBox gb_WorkProcess;
+        private MetroFramework.Controls.MetroGrid dgv_NhanVien;
+        private DataGridViewTextBoxColumn Number;
+        private DataGridViewTextBoxColumn Position;
+        private DataGridViewTextBoxColumn StartDate;
+        private DataGridViewTextBoxColumn EndDate;
+        private DataGridViewTextBoxColumn Description;
+        private CustomControls.RoundedButton btn_Edit;
     }
 }

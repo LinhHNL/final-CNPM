@@ -7,15 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.KhoPage;
 
 namespace WinFormsApp2.StaffAccount
 {
     public partial class DoiMatKhau : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         private bool editMode = false;
         public DoiMatKhau()
         {
             InitializeComponent();
+            SetLanguage("en-US");
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
@@ -73,6 +78,28 @@ namespace WinFormsApp2.StaffAccount
             DoiMatKhau form = new DoiMatKhau();
             form.ShowDialog();
             this.Close();
+        }
+        public void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
+                             typeof(HangHoaTrongKho).Assembly);
+            btn_MyProfile.Text = rm.GetString("myProfileText", culture);
+            btn_WorkSchedule.Text = rm.GetString("workScheduleText", culture);
+            btn_Timekeeping.Text = rm.GetString("timekeepingText", culture);
+            btn_Letter.Text = rm.GetString("letterText", culture);
+            btn_Payroll.Text = rm.GetString("payrollText", culture);
+            btn_Notification.Text = rm.GetString("notificationText", culture);
+            btn_PasswordReset.Text = rm.GetString("passwordResetText", culture);
+            btn_SignOut.Text = rm.GetString("signoutText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+
+
+            lbl_PasswordReset.Text = rm.GetString("passwordResetText", culture);
+            lbl_CurrentPassword.Text = rm.GetString("currentPasswordText", culture);
+            lbl_NewPassword.Text = rm.GetString("newPasswordText", culture);
+            lbl_NewPasswordConfirm.Text = rm.GetString("newPasswordConfirmText", culture);
+            btn_Update.Text = rm.GetString("updateText", culture);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp2.StaffAccount
 {
-    partial class ThongTinBHXH
+    partial class ThongBao
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinBHXH));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongBao));
             this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.lbl_PersonalInfo = new System.Windows.Forms.Label();
-            this.btn_profile = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_socialInsurance = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_job = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Edit = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_Notification = new System.Windows.Forms.Label();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btn_PasswordReset = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_Notification = new WinFormsApp2.CustomControls.RoundedButton();
@@ -51,22 +47,12 @@
             this.btn_MyProfile = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_WorkSchedule = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gb_insuranceInfomation = new System.Windows.Forms.GroupBox();
-            this.tb_medicalInsuranceEndDate = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.lbl_medicalInsuranceEndDate = new System.Windows.Forms.Label();
-            this.tb_socialInsuranceEndDate = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.lbl_medicalInsuranceStartDate = new System.Windows.Forms.Label();
-            this.tb_socialInsuranceStartDate = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.lbl_socialInsuranceEndDate = new System.Windows.Forms.Label();
-            this.lbl_socialInsuranceStartDate = new System.Windows.Forms.Label();
-            this.tb_socialInsuranceNumber = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.lbl_socialInsuranceNumber = new System.Windows.Forms.Label();
+            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.roundedButton2 = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.gb_insuranceInfomation.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_SignOut
@@ -116,7 +102,7 @@
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(381, 153);
+            this.metroGrid1.Location = new System.Drawing.Point(370, 106);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -134,95 +120,15 @@
             this.metroGrid1.Size = new System.Drawing.Size(8, 8);
             this.metroGrid1.TabIndex = 31;
             // 
-            // lbl_PersonalInfo
+            // lbl_Notification
             // 
-            this.lbl_PersonalInfo.AutoSize = true;
-            this.lbl_PersonalInfo.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_PersonalInfo.Location = new System.Drawing.Point(268, 75);
-            this.lbl_PersonalInfo.Name = "lbl_PersonalInfo";
-            this.lbl_PersonalInfo.Size = new System.Drawing.Size(255, 38);
-            this.lbl_PersonalInfo.TabIndex = 47;
-            this.lbl_PersonalInfo.Text = "Thông tin cá nhân";
-            // 
-            // btn_profile
-            // 
-            this.btn_profile.BackColor = System.Drawing.Color.White;
-            this.btn_profile.BackgroundColor = System.Drawing.Color.White;
-            this.btn_profile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_profile.BorderRadius = 0;
-            this.btn_profile.BorderSize = 1;
-            this.btn_profile.FlatAppearance.BorderSize = 0;
-            this.btn_profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_profile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_profile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_profile.Location = new System.Drawing.Point(273, 120);
-            this.btn_profile.Name = "btn_profile";
-            this.btn_profile.Size = new System.Drawing.Size(295, 50);
-            this.btn_profile.TabIndex = 49;
-            this.btn_profile.Text = "Hồ Sơ";
-            this.btn_profile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_profile.UseVisualStyleBackColor = false;
-            this.btn_profile.Click += new System.EventHandler(this.btn_HoSo_Click);
-            // 
-            // btn_socialInsurance
-            // 
-            this.btn_socialInsurance.BackColor = System.Drawing.Color.White;
-            this.btn_socialInsurance.BackgroundColor = System.Drawing.Color.White;
-            this.btn_socialInsurance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_socialInsurance.BorderRadius = 0;
-            this.btn_socialInsurance.BorderSize = 0;
-            this.btn_socialInsurance.FlatAppearance.BorderSize = 0;
-            this.btn_socialInsurance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_socialInsurance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_socialInsurance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_socialInsurance.Location = new System.Drawing.Point(874, 120);
-            this.btn_socialInsurance.Name = "btn_socialInsurance";
-            this.btn_socialInsurance.Size = new System.Drawing.Size(306, 50);
-            this.btn_socialInsurance.TabIndex = 50;
-            this.btn_socialInsurance.Text = "Bảo hiểm xã hội";
-            this.btn_socialInsurance.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_socialInsurance.UseVisualStyleBackColor = false;
-            // 
-            // btn_job
-            // 
-            this.btn_job.BackColor = System.Drawing.Color.White;
-            this.btn_job.BackgroundColor = System.Drawing.Color.White;
-            this.btn_job.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_job.BorderRadius = 0;
-            this.btn_job.BorderSize = 1;
-            this.btn_job.FlatAppearance.BorderSize = 0;
-            this.btn_job.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_job.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_job.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_job.Location = new System.Drawing.Point(568, 120);
-            this.btn_job.Name = "btn_job";
-            this.btn_job.Size = new System.Drawing.Size(306, 50);
-            this.btn_job.TabIndex = 51;
-            this.btn_job.Text = "Công việc";
-            this.btn_job.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_job.UseVisualStyleBackColor = false;
-            this.btn_job.Click += new System.EventHandler(this.btn_CongViec_Click);
-            // 
-            // btn_Edit
-            // 
-            this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Edit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Edit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_Edit.BorderRadius = 8;
-            this.btn_Edit.BorderSize = 1;
-            this.btn_Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(1077, 479);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(90, 35);
-            this.btn_Edit.TabIndex = 53;
-            this.btn_Edit.Text = "Sửa";
-            this.btn_Edit.TextColor = System.Drawing.Color.White;
-            this.btn_Edit.UseVisualStyleBackColor = false;
-            this.btn_Edit.Click += new System.EventHandler(this.roundedButton1_Click);
+            this.lbl_Notification.AutoSize = true;
+            this.lbl_Notification.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Notification.Location = new System.Drawing.Point(286, 80);
+            this.lbl_Notification.Name = "lbl_Notification";
+            this.lbl_Notification.Size = new System.Drawing.Size(148, 37);
+            this.lbl_Notification.TabIndex = 47;
+            this.lbl_Notification.Text = "Thông báo";
             // 
             // metroPanel1
             // 
@@ -240,10 +146,10 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 11;
-            this.metroPanel1.Location = new System.Drawing.Point(-1, 27);
+            this.metroPanel1.Location = new System.Drawing.Point(-2, 27);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(263, 578);
-            this.metroPanel1.TabIndex = 56;
+            this.metroPanel1.TabIndex = 78;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
@@ -271,22 +177,22 @@
             // 
             // btn_Notification
             // 
-            this.btn_Notification.BackColor = System.Drawing.Color.White;
-            this.btn_Notification.BackgroundColor = System.Drawing.Color.White;
+            this.btn_Notification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Notification.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_Notification.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
             this.btn_Notification.BorderRadius = 0;
             this.btn_Notification.BorderSize = 0;
             this.btn_Notification.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btn_Notification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Notification.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Notification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.ForeColor = System.Drawing.Color.White;
             this.btn_Notification.Location = new System.Drawing.Point(0, 420);
             this.btn_Notification.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Notification.Name = "btn_Notification";
             this.btn_Notification.Size = new System.Drawing.Size(263, 64);
             this.btn_Notification.TabIndex = 46;
             this.btn_Notification.Text = "Thông báo";
-            this.btn_Notification.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_Notification.TextColor = System.Drawing.Color.White;
             this.btn_Notification.UseVisualStyleBackColor = false;
             this.btn_Notification.Click += new System.EventHandler(this.btn_ThongBao_Click);
             // 
@@ -389,24 +295,24 @@
             // 
             // btn_MyProfile
             // 
-            this.btn_MyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_MyProfile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_MyProfile.BackColor = System.Drawing.Color.White;
+            this.btn_MyProfile.BackgroundColor = System.Drawing.Color.White;
             this.btn_MyProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
             this.btn_MyProfile.BorderRadius = 0;
             this.btn_MyProfile.BorderSize = 0;
             this.btn_MyProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.btn_MyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MyProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_MyProfile.ForeColor = System.Drawing.Color.White;
+            this.btn_MyProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_MyProfile.Location = new System.Drawing.Point(0, 131);
             this.btn_MyProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MyProfile.Name = "btn_MyProfile";
             this.btn_MyProfile.Size = new System.Drawing.Size(262, 60);
             this.btn_MyProfile.TabIndex = 16;
             this.btn_MyProfile.Text = "Hồ sơ của tôi";
-            this.btn_MyProfile.TextColor = System.Drawing.Color.White;
+            this.btn_MyProfile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
             this.btn_MyProfile.UseVisualStyleBackColor = false;
-            this.btn_MyProfile.Click += new System.EventHandler(this.btn_HoSo_Click);
+            this.btn_MyProfile.Click += new System.EventHandler(this.btn_HoSoCuaToi_Click);
             // 
             // btn_WorkSchedule
             // 
@@ -438,212 +344,63 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // gb_insuranceInfomation
+            // roundedButton1
             // 
-            this.gb_insuranceInfomation.Controls.Add(this.tb_medicalInsuranceEndDate);
-            this.gb_insuranceInfomation.Controls.Add(this.tb_PhongBan);
-            this.gb_insuranceInfomation.Controls.Add(this.lbl_medicalInsuranceEndDate);
-            this.gb_insuranceInfomation.Controls.Add(this.tb_socialInsuranceEndDate);
-            this.gb_insuranceInfomation.Controls.Add(this.lbl_medicalInsuranceStartDate);
-            this.gb_insuranceInfomation.Controls.Add(this.tb_socialInsuranceStartDate);
-            this.gb_insuranceInfomation.Controls.Add(this.lbl_socialInsuranceEndDate);
-            this.gb_insuranceInfomation.Controls.Add(this.lbl_socialInsuranceStartDate);
-            this.gb_insuranceInfomation.Controls.Add(this.tb_socialInsuranceNumber);
-            this.gb_insuranceInfomation.Controls.Add(this.lbl_socialInsuranceNumber);
-            this.gb_insuranceInfomation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_insuranceInfomation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.gb_insuranceInfomation.Location = new System.Drawing.Point(273, 185);
-            this.gb_insuranceInfomation.Name = "gb_insuranceInfomation";
-            this.gb_insuranceInfomation.Size = new System.Drawing.Size(894, 287);
-            this.gb_insuranceInfomation.TabIndex = 57;
-            this.gb_insuranceInfomation.TabStop = false;
-            this.gb_insuranceInfomation.Text = "Thông tin bảo hiểm";
+            this.roundedButton1.AutoSize = true;
+            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
+            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
+            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton1.BorderRadius = 10;
+            this.roundedButton1.BorderSize = 0;
+            this.roundedButton1.FlatAppearance.BorderSize = 0;
+            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton1.ForeColor = System.Drawing.Color.Black;
+            this.roundedButton1.Location = new System.Drawing.Point(284, 138);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Padding = new System.Windows.Forms.Padding(10);
+            this.roundedButton1.Size = new System.Drawing.Size(875, 102);
+            this.roundedButton1.TabIndex = 79;
+            this.roundedButton1.Text = "--/ --/ ----   00:00\r\nĐã duyệt đơn quên chấm công\r\nNgười duyệt Nguyễn Văn A \r\n";
+            this.roundedButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.roundedButton1.TextColor = System.Drawing.Color.Black;
+            this.roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // tb_medicalInsuranceEndDate
+            // roundedButton2
             // 
-            this.tb_medicalInsuranceEndDate.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_medicalInsuranceEndDate.BorderColor = System.Drawing.Color.Gray;
-            this.tb_medicalInsuranceEndDate.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_medicalInsuranceEndDate.BorderRadius = 10;
-            this.tb_medicalInsuranceEndDate.BorderSize = 1;
-            this.tb_medicalInsuranceEndDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_medicalInsuranceEndDate.ForeColor = System.Drawing.Color.Black;
-            this.tb_medicalInsuranceEndDate.Location = new System.Drawing.Point(295, 233);
-            this.tb_medicalInsuranceEndDate.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_medicalInsuranceEndDate.Multiline = false;
-            this.tb_medicalInsuranceEndDate.Name = "tb_medicalInsuranceEndDate";
-            this.tb_medicalInsuranceEndDate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_medicalInsuranceEndDate.PasswordChar = false;
-            this.tb_medicalInsuranceEndDate.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_medicalInsuranceEndDate.PlaceholderText = "";
-            this.tb_medicalInsuranceEndDate.ReadOnly = false;
-            this.tb_medicalInsuranceEndDate.Size = new System.Drawing.Size(306, 39);
-            this.tb_medicalInsuranceEndDate.TabIndex = 44;
-            this.tb_medicalInsuranceEndDate.Texts = "";
-            this.tb_medicalInsuranceEndDate.UnderlinedStyle = false;
+            this.roundedButton2.AutoSize = true;
+            this.roundedButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
+            this.roundedButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(228)))), ((int)(((byte)(230)))));
+            this.roundedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.roundedButton2.BorderRadius = 10;
+            this.roundedButton2.BorderSize = 0;
+            this.roundedButton2.FlatAppearance.BorderSize = 0;
+            this.roundedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roundedButton2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roundedButton2.ForeColor = System.Drawing.Color.Black;
+            this.roundedButton2.Location = new System.Drawing.Point(286, 252);
+            this.roundedButton2.Name = "roundedButton2";
+            this.roundedButton2.Padding = new System.Windows.Forms.Padding(10);
+            this.roundedButton2.Size = new System.Drawing.Size(875, 102);
+            this.roundedButton2.TabIndex = 80;
+            this.roundedButton2.Text = "--/ --/ ----   00:00\r\nĐã duyệt đơn quên chấm công\r\nNgười duyệt Nguyễn Văn A \r\n";
+            this.roundedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.roundedButton2.TextColor = System.Drawing.Color.Black;
+            this.roundedButton2.UseVisualStyleBackColor = false;
             // 
-            // tb_PhongBan
-            // 
-            this.tb_PhongBan.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_PhongBan.BorderColor = System.Drawing.Color.Gray;
-            this.tb_PhongBan.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.BorderRadius = 10;
-            this.tb_PhongBan.BorderSize = 1;
-            this.tb_PhongBan.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_PhongBan.ForeColor = System.Drawing.Color.Black;
-            this.tb_PhongBan.Location = new System.Drawing.Point(295, 186);
-            this.tb_PhongBan.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_PhongBan.Multiline = false;
-            this.tb_PhongBan.Name = "tb_PhongBan";
-            this.tb_PhongBan.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_PhongBan.PasswordChar = false;
-            this.tb_PhongBan.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_PhongBan.PlaceholderText = "";
-            this.tb_PhongBan.ReadOnly = false;
-            this.tb_PhongBan.Size = new System.Drawing.Size(306, 39);
-            this.tb_PhongBan.TabIndex = 43;
-            this.tb_PhongBan.Texts = "";
-            this.tb_PhongBan.UnderlinedStyle = false;
-            // 
-            // lbl_medicalInsuranceEndDate
-            // 
-            this.lbl_medicalInsuranceEndDate.AutoSize = true;
-            this.lbl_medicalInsuranceEndDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_medicalInsuranceEndDate.ForeColor = System.Drawing.Color.Black;
-            this.lbl_medicalInsuranceEndDate.Location = new System.Drawing.Point(17, 233);
-            this.lbl_medicalInsuranceEndDate.Name = "lbl_medicalInsuranceEndDate";
-            this.lbl_medicalInsuranceEndDate.Size = new System.Drawing.Size(189, 28);
-            this.lbl_medicalInsuranceEndDate.TabIndex = 42;
-            this.lbl_medicalInsuranceEndDate.Text = "Ngày kết thúc BHYT:";
-            // 
-            // tb_socialInsuranceEndDate
-            // 
-            this.tb_socialInsuranceEndDate.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_socialInsuranceEndDate.BorderColor = System.Drawing.Color.Gray;
-            this.tb_socialInsuranceEndDate.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceEndDate.BorderRadius = 10;
-            this.tb_socialInsuranceEndDate.BorderSize = 1;
-            this.tb_socialInsuranceEndDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_socialInsuranceEndDate.ForeColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceEndDate.Location = new System.Drawing.Point(295, 136);
-            this.tb_socialInsuranceEndDate.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_socialInsuranceEndDate.Multiline = false;
-            this.tb_socialInsuranceEndDate.Name = "tb_socialInsuranceEndDate";
-            this.tb_socialInsuranceEndDate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_socialInsuranceEndDate.PasswordChar = false;
-            this.tb_socialInsuranceEndDate.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_socialInsuranceEndDate.PlaceholderText = "";
-            this.tb_socialInsuranceEndDate.ReadOnly = false;
-            this.tb_socialInsuranceEndDate.Size = new System.Drawing.Size(306, 39);
-            this.tb_socialInsuranceEndDate.TabIndex = 41;
-            this.tb_socialInsuranceEndDate.Texts = "";
-            this.tb_socialInsuranceEndDate.UnderlinedStyle = false;
-            // 
-            // lbl_medicalInsuranceStartDate
-            // 
-            this.lbl_medicalInsuranceStartDate.AutoSize = true;
-            this.lbl_medicalInsuranceStartDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_medicalInsuranceStartDate.ForeColor = System.Drawing.Color.Black;
-            this.lbl_medicalInsuranceStartDate.Location = new System.Drawing.Point(17, 188);
-            this.lbl_medicalInsuranceStartDate.Name = "lbl_medicalInsuranceStartDate";
-            this.lbl_medicalInsuranceStartDate.Size = new System.Drawing.Size(186, 28);
-            this.lbl_medicalInsuranceStartDate.TabIndex = 40;
-            this.lbl_medicalInsuranceStartDate.Text = "Ngày bắt đầu BHYT:";
-            // 
-            // tb_socialInsuranceStartDate
-            // 
-            this.tb_socialInsuranceStartDate.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_socialInsuranceStartDate.BorderColor = System.Drawing.Color.Gray;
-            this.tb_socialInsuranceStartDate.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceStartDate.BorderRadius = 10;
-            this.tb_socialInsuranceStartDate.BorderSize = 1;
-            this.tb_socialInsuranceStartDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_socialInsuranceStartDate.ForeColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceStartDate.Location = new System.Drawing.Point(295, 86);
-            this.tb_socialInsuranceStartDate.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_socialInsuranceStartDate.Multiline = false;
-            this.tb_socialInsuranceStartDate.Name = "tb_socialInsuranceStartDate";
-            this.tb_socialInsuranceStartDate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_socialInsuranceStartDate.PasswordChar = false;
-            this.tb_socialInsuranceStartDate.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_socialInsuranceStartDate.PlaceholderText = "";
-            this.tb_socialInsuranceStartDate.ReadOnly = false;
-            this.tb_socialInsuranceStartDate.Size = new System.Drawing.Size(306, 39);
-            this.tb_socialInsuranceStartDate.TabIndex = 39;
-            this.tb_socialInsuranceStartDate.Texts = "";
-            this.tb_socialInsuranceStartDate.UnderlinedStyle = false;
-            // 
-            // lbl_socialInsuranceEndDate
-            // 
-            this.lbl_socialInsuranceEndDate.AutoSize = true;
-            this.lbl_socialInsuranceEndDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_socialInsuranceEndDate.ForeColor = System.Drawing.Color.Black;
-            this.lbl_socialInsuranceEndDate.Location = new System.Drawing.Point(17, 136);
-            this.lbl_socialInsuranceEndDate.Name = "lbl_socialInsuranceEndDate";
-            this.lbl_socialInsuranceEndDate.Size = new System.Drawing.Size(194, 28);
-            this.lbl_socialInsuranceEndDate.TabIndex = 38;
-            this.lbl_socialInsuranceEndDate.Text = "Ngày kết thúc BHXH:";
-            // 
-            // lbl_socialInsuranceStartDate
-            // 
-            this.lbl_socialInsuranceStartDate.AutoSize = true;
-            this.lbl_socialInsuranceStartDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_socialInsuranceStartDate.ForeColor = System.Drawing.Color.Black;
-            this.lbl_socialInsuranceStartDate.Location = new System.Drawing.Point(17, 86);
-            this.lbl_socialInsuranceStartDate.Name = "lbl_socialInsuranceStartDate";
-            this.lbl_socialInsuranceStartDate.Size = new System.Drawing.Size(191, 28);
-            this.lbl_socialInsuranceStartDate.TabIndex = 37;
-            this.lbl_socialInsuranceStartDate.Text = "Ngày bắt đầu BHXH:";
-            // 
-            // tb_socialInsuranceNumber
-            // 
-            this.tb_socialInsuranceNumber.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_socialInsuranceNumber.BorderColor = System.Drawing.Color.Gray;
-            this.tb_socialInsuranceNumber.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceNumber.BorderRadius = 10;
-            this.tb_socialInsuranceNumber.BorderSize = 1;
-            this.tb_socialInsuranceNumber.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_socialInsuranceNumber.ForeColor = System.Drawing.Color.Black;
-            this.tb_socialInsuranceNumber.Location = new System.Drawing.Point(295, 34);
-            this.tb_socialInsuranceNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_socialInsuranceNumber.Multiline = false;
-            this.tb_socialInsuranceNumber.Name = "tb_socialInsuranceNumber";
-            this.tb_socialInsuranceNumber.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_socialInsuranceNumber.PasswordChar = false;
-            this.tb_socialInsuranceNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_socialInsuranceNumber.PlaceholderText = "";
-            this.tb_socialInsuranceNumber.ReadOnly = false;
-            this.tb_socialInsuranceNumber.Size = new System.Drawing.Size(306, 39);
-            this.tb_socialInsuranceNumber.TabIndex = 35;
-            this.tb_socialInsuranceNumber.Texts = "";
-            this.tb_socialInsuranceNumber.UnderlinedStyle = false;
-            // 
-            // lbl_socialInsuranceNumber
-            // 
-            this.lbl_socialInsuranceNumber.AutoSize = true;
-            this.lbl_socialInsuranceNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_socialInsuranceNumber.ForeColor = System.Drawing.Color.Black;
-            this.lbl_socialInsuranceNumber.Location = new System.Drawing.Point(17, 34);
-            this.lbl_socialInsuranceNumber.Name = "lbl_socialInsuranceNumber";
-            this.lbl_socialInsuranceNumber.Size = new System.Drawing.Size(125, 28);
-            this.lbl_socialInsuranceNumber.TabIndex = 0;
-            this.lbl_socialInsuranceNumber.Text = "Mã số BHXH:";
-            // 
-            // ThongTinBHXH
+            // ThongBao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.gb_insuranceInfomation);
+            this.Controls.Add(this.roundedButton2);
+            this.Controls.Add(this.roundedButton1);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.btn_Edit);
-            this.Controls.Add(this.btn_job);
-            this.Controls.Add(this.btn_socialInsurance);
-            this.Controls.Add(this.btn_profile);
-            this.Controls.Add(this.lbl_PersonalInfo);
+            this.Controls.Add(this.lbl_Notification);
             this.Controls.Add(this.metroGrid1);
             this.Controls.Add(this.btn_SignOut);
-            this.Name = "ThongTinBHXH";
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Name = "ThongBao";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Text = "v";
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
@@ -651,8 +408,6 @@
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.gb_insuranceInfomation.ResumeLayout(false);
-            this.gb_insuranceInfomation.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -661,11 +416,7 @@
         #endregion
         private CustomControls.RoundedButton btn_SignOut;
         private MetroFramework.Controls.MetroGrid metroGrid1;
-        private Label lbl_PersonalInfo;
-        private CustomControls.RoundedButton btn_profile;
-        private CustomControls.RoundedButton btn_socialInsurance;
-        private CustomControls.RoundedButton btn_job;
-        private CustomControls.RoundedButton btn_Edit;
+        private Label lbl_Notification;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private CustomControls.RoundedButton btn_PasswordReset;
         private CustomControls.RoundedButton btn_Notification;
@@ -678,16 +429,7 @@
         private CustomControls.RoundedButton btn_MyProfile;
         private CustomControls.RoundedButton btn_WorkSchedule;
         private PictureBox pictureBox1;
-        private GroupBox gb_insuranceInfomation;
-        private CustomControls.LeftAlignRoundedTextBox tb_medicalInsuranceEndDate;
-        private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
-        private Label lbl_medicalInsuranceEndDate;
-        private CustomControls.LeftAlignRoundedTextBox tb_socialInsuranceEndDate;
-        private Label lbl_medicalInsuranceStartDate;
-        private CustomControls.LeftAlignRoundedTextBox tb_socialInsuranceStartDate;
-        private Label lbl_socialInsuranceEndDate;
-        private Label lbl_socialInsuranceStartDate;
-        private CustomControls.LeftAlignRoundedTextBox tb_socialInsuranceNumber;
-        private Label lbl_socialInsuranceNumber;
+        private CustomControls.RoundedButton roundedButton1;
+        private CustomControls.RoundedButton roundedButton2;
     }
 }
