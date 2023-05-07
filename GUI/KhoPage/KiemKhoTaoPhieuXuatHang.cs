@@ -18,7 +18,7 @@ namespace WinFormsApp2.KhoPage
     {
         int NumberOfID = 0;
         CultureInfo culture;
-        public KiemKhoTaoPhieuXuatHang()
+        public KiemKhoTaoPhieuXuatHang(int numberOfID)
         {
             InitializeComponent();
 

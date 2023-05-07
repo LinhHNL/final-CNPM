@@ -19,12 +19,6 @@ namespace WinFormsApp2.KhoPage
         public HangHoaTrongKho()
         {
             InitializeComponent();
-            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_HangTrongKho.ReadOnly = true;
             SetLanguage("en-US");
         }
 
@@ -37,7 +31,7 @@ namespace WinFormsApp2.KhoPage
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            int numberofID = dgv_HangTrongKho.RowCount;
+            int numberofID = dgv_InStock.RowCount;
             this.Hide();
             ThemHangHoa form = new ThemHangHoa(numberofID);
             form.ShowDialog();
@@ -70,13 +64,13 @@ namespace WinFormsApp2.KhoPage
             if (e.RowIndex > -1)
             {
                 string value = "";
-                if (dgv_HangTrongKho.Rows[e.RowIndex].Cells[0].Value == null)
+                if (dgv_InStock.Rows[e.RowIndex].Cells[0].Value == null)
                 {
                     value = "";
                 }
                 else
                 {
-                    value = dgv_HangTrongKho.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    value = dgv_InStock.Rows[e.RowIndex].Cells[0].Value.ToString();
                     this.Hide();
                     XemThongTinHangHoa form = new XemThongTinHangHoa(value);
                     form.ShowDialog();

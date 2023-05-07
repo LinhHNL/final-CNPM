@@ -25,15 +25,14 @@ namespace WinFormsApp2.AdminPage
 
         private void UpdateFood_Load(object sender, EventArgs e)
         {
-            
-            flp_food_update.Controls.Clear();
+            //flp_food_update.Controls.Clear();
             BUS.Menu menu = new BUS.Menu();
             List<Dictionary<string, string>> menuList = menu.getAllMenu();
             foreach (Dictionary<string, string> item in menuList)
             {
                 if (item["Status"] == "1")
                 {
-                    flp_food_update.Controls.Add(new UpdateFoodCom(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
+                    //flp_food_update.Controls.Add(new UpdateFoodCom(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
 
             }

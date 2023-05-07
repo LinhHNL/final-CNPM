@@ -26,14 +26,15 @@ namespace WinFormsApp2.KhoPage
             List<Dictionary<string, string>> importList = order.getAllImportOrder();
             foreach (Dictionary<string, string> item in importList)
             {
-                dgv_NhapHang.Rows.Add(item["ImportOrderID"], item["Date"], item["Name"]);
+                
+                dgv_Import.Rows.Add(item["ImportOrderID"], item["Date"], item["Name"]);
             }
             SetLanguage("en-US");
         }
 
         private void btn_ImportNoteAdd_Click(object sender, EventArgs e)
         {
-            int numberofID = dgv_NhapHang.RowCount;
+            int numberofID = dgv_Import.RowCount;
             this.Hide();
             KiemKhoTaoPhieuNhapHang form = new KiemKhoTaoPhieuNhapHang(numberofID);
             form.ShowDialog();
@@ -68,13 +69,13 @@ namespace WinFormsApp2.KhoPage
             if (e.RowIndex > -1)
             {
                 string value = "";
-                if (dgv_NhapHang.Rows[e.RowIndex].Cells[0].Value == null)
+                if (dgv_Import.Rows[e.RowIndex].Cells[0].Value == null)
                 {
                     value = "";
                 }
                 else
                 {
-                    value = dgv_NhapHang.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    value = dgv_Import.Rows[e.RowIndex].Cells[0].Value.ToString();
                     this.Hide();
                     KiemKhoXemPhieuNhapHang form = new KiemKhoXemPhieuNhapHang(value);
                     form.ShowDialog();

@@ -17,7 +17,7 @@ namespace WinFormsApp2.KhoPage
     public partial class KiemKhoTaoPhieuNhapHang : MetroFramework.Forms.MetroForm
     {
         private int IDMonHang = 0;
-
+        CultureInfo culture;
         public KiemKhoTaoPhieuNhapHang(int iDMonHang)
         {
             InitializeComponent();

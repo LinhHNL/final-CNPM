@@ -93,70 +93,73 @@ namespace WinFormsApp2.AdminPage
         private void cb_TypeofFood_OnSelectedIndexChanged(object sender, EventArgs e)
         {
 
-        }   }
-    private void SetLanguage(string cultureName)
-    {
-        culture = CultureInfo.CreateSpecificCulture(cultureName);
-        ResourceManager rm = new
-            ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
-        btn_AddingFood.Text = rm.GetString("addText", culture);
-        btn_UpdateFood.Text = rm.GetString("updateFoodText", culture);
-        btn_AddComboFood.Text = rm.GetString("addComboText", culture);
-        btn_PictueLabel.Text = rm.GetString("addImageText", culture);
-        btn_LockFood.Text = rm.GetString("lockFoodText", culture);
-        btn_Signout.Text = rm.GetString("signoutText", culture);
-        tb_NameOfFood.PlaceholderText = rm.GetString("foodNameText", culture);
-        tb_Price.PlaceholderText = rm.GetString("priceText", culture);
-        cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
-        lbl_AccountName.Text = rm.GetString("accountNameText", culture);
-        btn_AddFood.Text = rm.GetString("addFoodText", culture);
-    }
-    private void btn_AddFood_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        AddFood form = new AddFood();
-        form.ShowDialog();
-        this.Close();
-    }
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
+            btn_AddFood.Text = rm.GetString("addText", culture);
+            btn_UpdateFood.Text = rm.GetString("updateFoodText", culture);
+            btn_AddComboFood.Text = rm.GetString("addComboText", culture);
+            btn_PictueLabel.Text = rm.GetString("addImageText", culture);
+            btn_LockFood.Text = rm.GetString("lockFoodText", culture);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            
+            tb_nameoffood.PlaceholderText = rm.GetString("foodNameText", culture);
+            tb_gia.PlaceholderText = rm.GetString("priceText", culture);
+            cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
+            //lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_AddFood.Text = rm.GetString("addFoodText", culture);
+        }
+        private void btn_AddFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood form = new AddFood();
+            form.ShowDialog();
+            this.Close();
+        }
 
-    private void btn_AddComboFood_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        AddComboFood form = new AddComboFood();
-        form.ShowDialog();
-        this.Close();
-    }
+        private void btn_AddComboFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddComboFood form = new AddComboFood();
+            form.ShowDialog();
+            this.Close();
+        }
 
-    private void btn_LockFood_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        LockFood form = new LockFood();
-        form.ShowDialog();
-        this.Close();
-    }
+        private void btn_LockFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LockFood form = new LockFood();
+            form.ShowDialog();
+            this.Close();
+        }
 
-    private void btn_UpdateFood_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        UpdateFood form = new UpdateFood();
-        form.ShowDialog();
-        this.Close();
-    }
+        private void btn_UpdateFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpdateFood form = new UpdateFood();
+            form.ShowDialog();
+            this.Close();
+        }
 
-    private void btn_AddingFood_Click(object sender, EventArgs e)
-    {
-        this.Hide();
-        AdminAddingComboFood form = new AdminAddingComboFood();
-        form.ShowDialog();
-        this.Close();
-    }
-    private void AddingComboFood_Click(object sender, EventArgs e)
-    {
-        String GiaCombo = this.tb_giacombo.Texts;
-        String NameCombo = this.tb_nameofcombo.Texts;
-        this.Hide();
-        AdminAddingComboFood AdminAddingComboFood = new AdminAddingComboFood(NameCombo, GiaCombo, this.ImageURL);
-        AdminAddingComboFood.ShowDialog();
-        this.Close();
+        private void btn_AddingFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminAddingComboFood form = new AdminAddingComboFood();
+            form.ShowDialog();
+            this.Close();
+        }
+        private void AddingComboFood_Click(object sender, EventArgs e)
+        {
+            
+            //String GiaCombo = this.tb_giacombo.Texts;
+            //String NameCombo = this.tb_nameofcombo.Texts;
+            this.Hide();
+            //AdminAddingComboFood AdminAddingComboFood = new AdminAddingComboFood(NameCombo, GiaCombo, this.ImageURL);
+            //AdminAddingComboFood.ShowDialog();
+            this.Close();
+        }
     }
 }

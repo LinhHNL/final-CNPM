@@ -17,7 +17,7 @@ namespace WinFormsApp2.AdminPage
         private String UpdateFoodID = "0";
         Dictionary<string, string> MenuItem;
         CultureInfo culture;
-        public UpdateFoodForm()
+        public UpdateFoodForm(String UpdateFoodID)
         {
             InitializeComponent();
             this.UpdateFoodID = UpdateFoodID;
@@ -56,7 +56,8 @@ namespace WinFormsApp2.AdminPage
                 if (item.ContainsKey("Name"))
                 {
                     string RoomName = item["Name"].ToString();
-                    cb_RoomID.Items.Add(RoomName);
+                    //cb_RoomID.Items.Add(RoomName);
+                    
                 }
             }
             BUS.Menu menu = new BUS.Menu();
@@ -64,11 +65,12 @@ namespace WinFormsApp2.AdminPage
             this.tb_NameOfFood.Texts = MenuItem["Name"];
             this.tb_Price.Texts = MenuItem["Price"];
             this.cb_TypeofFood.SelectedIndex = int.Parse(MenuItem["KindFoodID"]);
-            this.cb_RoomID.SelectedIndex = int.Parse(MenuItem["RoomID"]);
+            //this.cb_RoomID.SelectedIndex = int.Parse(MenuItem["RoomID"]);
             this.UploadPlaceBox.Image = Base64ToImage(MenuItem["URLImage"]);
             ImageURL = MenuItem["URLImage"];
             btn_addPicture.Visible = false;
-            btn_placeholderlabel.Visible = false;
+            
+            btn_PictueLabel.Visible = false;
         }
         String ImageURL = "";
         private void btn_addPicture_Click(object sender, EventArgs e)
@@ -131,9 +133,9 @@ namespace WinFormsApp2.AdminPage
             {
             MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
             }
-            if (this.cb_RoomID.SelectedItem != null)
+            //if (this.cb_RoomID.SelectedItem != null)
             {
-            MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
+            //MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
             }
             MenuItem["URLImage"] = ImageURL.ToString();
             BUS.Menu menu = new BUS.Menu();
@@ -191,13 +193,7 @@ namespace WinFormsApp2.AdminPage
             this.Close();
         }
 
-        private void btn_UpdateFood_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            UpdateFood form = new UpdateFood();
-            form.ShowDialog();
-            this.Close();
-        }
+        
 
         private void btn_AddingFood_Click(object sender, EventArgs e)
         {

@@ -293,7 +293,7 @@
             this.btn_ChooseDish.Text = "Chọn món ăn";
             this.btn_ChooseDish.TextColor = System.Drawing.Color.White;
             this.btn_ChooseDish.UseVisualStyleBackColor = false;
-            this.btn_ChooseDish.Click += new System.EventHandler(this.roundedButton1_Click);
+            //this.btn_ChooseDish.Click += new System.EventHandler(this.btn_ChooseDish_Click);
             // 
             // tb_Price
             // 

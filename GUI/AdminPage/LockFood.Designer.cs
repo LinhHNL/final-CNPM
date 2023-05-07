@@ -39,7 +39,7 @@
             this.btn_AddComboFood = new WinFormsApp2.CustomControls.RoundedButton();
             this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
-            this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
+            this.pnl_food_lock = new MetroFramework.Controls.MetroPanel();
             this.metroPanel9 = new MetroFramework.Controls.MetroPanel();
             this.roundedButton11 = new WinFormsApp2.CustomControls.RoundedButton();
             this.label12 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
-            this.metroPanel5.SuspendLayout();
+            this.pnl_food_lock.SuspendLayout();
             this.metroPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.metroPanel8.SuspendLayout();
@@ -256,27 +256,27 @@
             this.btn_Signout.TextColor = System.Drawing.Color.White;
             this.btn_Signout.UseVisualStyleBackColor = false;
             // 
-            // metroPanel5
+            // pnl_food_lock
             // 
-            this.metroPanel5.AutoScroll = true;
-            this.metroPanel5.Controls.Add(this.metroPanel9);
-            this.metroPanel5.Controls.Add(this.metroPanel8);
-            this.metroPanel5.Controls.Add(this.metroPanel6);
-            this.metroPanel5.Controls.Add(this.metroPanel4);
-            this.metroPanel5.Controls.Add(this.metroPanel2);
-            this.metroPanel5.Controls.Add(this.metroPanel3);
-            this.metroPanel5.HorizontalScrollbar = true;
-            this.metroPanel5.HorizontalScrollbarBarColor = true;
-            this.metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.HorizontalScrollbarSize = 10;
-            this.metroPanel5.Location = new System.Drawing.Point(270, 79);
-            this.metroPanel5.Name = "metroPanel5";
-            this.metroPanel5.Size = new System.Drawing.Size(901, 533);
-            this.metroPanel5.TabIndex = 23;
-            this.metroPanel5.VerticalScrollbar = true;
-            this.metroPanel5.VerticalScrollbarBarColor = true;
-            this.metroPanel5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.VerticalScrollbarSize = 10;
+            this.pnl_food_lock.AutoScroll = true;
+            this.pnl_food_lock.Controls.Add(this.metroPanel9);
+            this.pnl_food_lock.Controls.Add(this.metroPanel8);
+            this.pnl_food_lock.Controls.Add(this.metroPanel6);
+            this.pnl_food_lock.Controls.Add(this.metroPanel4);
+            this.pnl_food_lock.Controls.Add(this.metroPanel2);
+            this.pnl_food_lock.Controls.Add(this.metroPanel3);
+            this.pnl_food_lock.HorizontalScrollbar = true;
+            this.pnl_food_lock.HorizontalScrollbarBarColor = true;
+            this.pnl_food_lock.HorizontalScrollbarHighlightOnWheel = false;
+            this.pnl_food_lock.HorizontalScrollbarSize = 10;
+            this.pnl_food_lock.Location = new System.Drawing.Point(270, 79);
+            this.pnl_food_lock.Name = "pnl_food_lock";
+            this.pnl_food_lock.Size = new System.Drawing.Size(901, 533);
+            this.pnl_food_lock.TabIndex = 23;
+            this.pnl_food_lock.VerticalScrollbar = true;
+            this.pnl_food_lock.VerticalScrollbarBarColor = true;
+            this.pnl_food_lock.VerticalScrollbarHighlightOnWheel = false;
+            this.pnl_food_lock.VerticalScrollbarSize = 10;
             // 
             // metroPanel9
             // 
@@ -703,7 +703,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.metroPanel5);
+            this.Controls.Add(this.pnl_food_lock);
             this.Controls.Add(this.btn_Signout);
             this.Controls.Add(this.metroPanel1);
             this.Name = "LockFood";
@@ -711,7 +711,7 @@
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
-            this.metroPanel5.ResumeLayout(false);
+            this.pnl_food_lock.ResumeLayout(false);
             this.metroPanel9.ResumeLayout(false);
             this.metroPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -744,7 +744,7 @@
         private CustomControls.RoundedButton btn_AddComboFood;
         private PictureBox pb_Logo;
         private CustomControls.RoundedButton btn_Signout;
-        private MetroFramework.Controls.MetroPanel metroPanel5;
+        private MetroFramework.Controls.MetroPanel pnl_food_lock;
         private MetroFramework.Controls.MetroPanel metroPanel9;
         private CustomControls.RoundedButton roundedButton11;
         private Label label12;

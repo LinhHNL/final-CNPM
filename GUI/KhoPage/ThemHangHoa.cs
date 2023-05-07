@@ -25,7 +25,7 @@ namespace WinFormsApp2.KhoPage
 
         private void ThemHangHoa_Load(object sender, EventArgs e)
         {
-            this.tb_MaHang.Texts = "HH" + this.numberofRows.ToString();
+            this.tb_CommodityID.Texts = "HH" + this.numberofRows.ToString();
         }
 
         private void btn_KiemKho_Click(object sender, EventArgs e)

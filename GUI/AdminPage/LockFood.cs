@@ -12,7 +12,7 @@ using GUI.Components;
 using BUS;
 using System.Resources;
 using System.Globalization;
-using System.Text.RegularExpressions
+using System.Text.RegularExpressions;
 namespace WinFormsApp2.AdminPage
 {
     public partial class LockFood : MetroFramework.Forms.MetroForm
@@ -91,12 +91,11 @@ namespace WinFormsApp2.AdminPage
             LockFood form = new LockFood();
             form.ShowDialog();
             this.Close();
-        
+        }
         private void LockFood_Load(object sender, EventArgs e)
         {
                 UpdateMenu();
-}
-
+        }
         private void btn_UpdateFood_Click(object sender, EventArgs e)
         {
             this.Hide();
