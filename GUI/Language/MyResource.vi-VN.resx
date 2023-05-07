@@ -285,6 +285,9 @@
   <data name="detailText" xml:space="preserve">
     <value>Chi tiết</value>
   </data>
+  <data name="dishListText" xml:space="preserve">
+    <value>Danh sách món ăn</value>
+  </data>
   <data name="dishText" xml:space="preserve">
     <value>Món ăn</value>
   </data>
@@ -443,6 +446,9 @@
   </data>
   <data name="loginText" xml:space="preserve">
     <value>Đăng nhập</value>
+  </data>
+  <data name="makeDishBillText" xml:space="preserve">
+    <value>Bill làm món</value>
   </data>
   <data name="makeLetterDateText" xml:space="preserve">
     <value>Ngày làm đơn</value>

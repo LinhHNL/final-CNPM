@@ -330,6 +330,9 @@
     <value>Detail</value>
     <comment>1</comment>
   </data>
+  <data name="dishListText" xml:space="preserve">
+    <value>Dish list</value>
+  </data>
   <data name="dishText" xml:space="preserve">
     <value>Dish</value>
     <comment>1</comment>
@@ -531,6 +534,9 @@
   <data name="loginText" xml:space="preserve">
     <value>Login</value>
     <comment>1</comment>
+  </data>
+  <data name="makeDishBillText" xml:space="preserve">
+    <value>Making dish bill</value>
   </data>
   <data name="makeLetterDateText" xml:space="preserve">
     <value>Date of making</value>
