@@ -645,6 +645,9 @@
     <value>Password</value>
     <comment>1</comment>
   </data>
+  <data name="paymentDateText" xml:space="preserve">
+    <value>Payment Date</value>
+  </data>
   <data name="paymentDetailText" xml:space="preserve">
     <value>Payment details</value>
     <comment>1</comment>

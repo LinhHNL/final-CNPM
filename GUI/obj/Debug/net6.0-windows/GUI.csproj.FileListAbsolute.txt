@@ -238,3 +238,4 @@ D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.ViewingKitchen.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.HoaDonTong.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongBao.resources

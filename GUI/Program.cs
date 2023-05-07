@@ -8,6 +8,7 @@ using WinFormsApp2.NhanVienPage;
 using WinFormsApp2.Statistic;
 using WinFormsApp2.StaffAccount;
 using GUI.KhachHangInfo;
+using GUI.ThanhToan;
 
 namespace WinFormsApp1
 {
@@ -22,7 +23,7 @@ namespace WinFormsApp1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new TransactionInfo());
+            Application.Run(new Payment());
         }
     }
 }

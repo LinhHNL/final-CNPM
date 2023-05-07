@@ -534,6 +534,9 @@
   <data name="passwordText" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
+  <data name="paymentDateText" xml:space="preserve">
+    <value>Ngày thanh toán</value>
+  </data>
   <data name="paymentDetailText" xml:space="preserve">
     <value>Chi tiết thanh toán</value>
   </data>
