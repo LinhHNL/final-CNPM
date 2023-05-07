@@ -29,227 +29,226 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetailKitchen));
-            metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            pictureBox1 = new PictureBox();
-            lbl_heading = new Label();
-            lbl_idbill = new Label();
-            lbl_billidvalue = new Label();
-            lbl_foodlist = new Label();
-            lbl_food = new Label();
-            label1 = new Label();
-            flp_showDetailMon = new FlowLayoutPanel();
-            btn_ChangeStatus = new WinFormsApp2.CustomControls.RoundedButton();
-            metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbl_MakeDishBill = new System.Windows.Forms.Label();
+            this.lbl_BillID = new System.Windows.Forms.Label();
+            this.lbl_BillIDVal = new System.Windows.Forms.Label();
+            this.lbl_DishList = new System.Windows.Forms.Label();
+            this.lbl_Dish = new System.Windows.Forms.Label();
+            this.lbl_Quantity = new System.Windows.Forms.Label();
+            this.flp_showDetailMon = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_Finish = new WinFormsApp2.CustomControls.RoundedButton();
+            this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // metroPanel1
             // 
-            metroPanel1.Controls.Add(label4);
-            metroPanel1.Controls.Add(pictureBox2);
-            metroPanel1.Controls.Add(metroPanel7);
-            metroPanel1.Controls.Add(pictureBox1);
-            metroPanel1.HorizontalScrollbarBarColor = true;
-            metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel1.HorizontalScrollbarSize = 10;
-            metroPanel1.Location = new Point(0, 5);
-            metroPanel1.Name = "metroPanel1";
-            metroPanel1.Size = new Size(261, 722);
-            metroPanel1.TabIndex = 19;
-            metroPanel1.VerticalScrollbarBarColor = true;
-            metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
+            this.metroPanel1.Controls.Add(this.pictureBox2);
+            this.metroPanel1.Controls.Add(this.metroPanel7);
+            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(0, 5);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(261, 722);
+            this.metroPanel1.TabIndex = 19;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // label4
+            // lbl_AccountName
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(229, 1, 17);
-            label4.Location = new Point(70, 86);
-            label4.Name = "label4";
-            label4.Size = new Size(138, 28);
-            label4.TabIndex = 31;
-            label4.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 86);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(34, 88);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 26);
-            pictureBox2.TabIndex = 21;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
             // 
             // metroPanel7
             // 
-            metroPanel7.BackColor = Color.Black;
-            metroPanel7.HorizontalScrollbarBarColor = true;
-            metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel7.HorizontalScrollbarSize = 10;
-            metroPanel7.Location = new Point(259, 539);
-            metroPanel7.Name = "metroPanel7";
-            metroPanel7.Size = new Size(904, 55);
-            metroPanel7.TabIndex = 20;
-            metroPanel7.VerticalScrollbarBarColor = true;
-            metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel7.VerticalScrollbarSize = 10;
+            this.metroPanel7.BackColor = System.Drawing.Color.Black;
+            this.metroPanel7.HorizontalScrollbarBarColor = true;
+            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.HorizontalScrollbarSize = 10;
+            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
+            this.metroPanel7.Name = "metroPanel7";
+            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
+            this.metroPanel7.TabIndex = 20;
+            this.metroPanel7.VerticalScrollbarBarColor = true;
+            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel7.VerticalScrollbarSize = 10;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(100, 14);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
-            // lbl_heading
+            // lbl_MakeDishBill
             // 
-            lbl_heading.AutoSize = true;
-            lbl_heading.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_heading.ForeColor = Color.FromArgb(229, 1, 17);
-            lbl_heading.Location = new Point(294, 19);
-            lbl_heading.Name = "lbl_heading";
-            lbl_heading.Size = new Size(171, 37);
-            lbl_heading.TabIndex = 33;
-            lbl_heading.Text = "Bill làm món";
+            this.lbl_MakeDishBill.AutoSize = true;
+            this.lbl_MakeDishBill.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_MakeDishBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_MakeDishBill.Location = new System.Drawing.Point(294, 19);
+            this.lbl_MakeDishBill.Name = "lbl_MakeDishBill";
+            this.lbl_MakeDishBill.Size = new System.Drawing.Size(171, 37);
+            this.lbl_MakeDishBill.TabIndex = 33;
+            this.lbl_MakeDishBill.Text = "Bill làm món";
             // 
-            // lbl_idbill
+            // lbl_BillID
             // 
-            lbl_idbill.AutoSize = true;
-            lbl_idbill.BackColor = Color.White;
-            lbl_idbill.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_idbill.ForeColor = Color.Black;
-            lbl_idbill.Location = new Point(303, 90);
-            lbl_idbill.Name = "lbl_idbill";
-            lbl_idbill.Size = new Size(89, 29);
-            lbl_idbill.TabIndex = 32;
-            lbl_idbill.Text = "Mã bill:";
-            lbl_idbill.TextAlign = ContentAlignment.TopCenter;
+            this.lbl_BillID.AutoSize = true;
+            this.lbl_BillID.BackColor = System.Drawing.Color.White;
+            this.lbl_BillID.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_BillID.ForeColor = System.Drawing.Color.Black;
+            this.lbl_BillID.Location = new System.Drawing.Point(303, 90);
+            this.lbl_BillID.Name = "lbl_BillID";
+            this.lbl_BillID.Size = new System.Drawing.Size(89, 29);
+            this.lbl_BillID.TabIndex = 32;
+            this.lbl_BillID.Text = "Mã bill:";
+            this.lbl_BillID.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lbl_billidvalue
+            // lbl_BillIDVal
             // 
-            lbl_billidvalue.AutoSize = true;
-            lbl_billidvalue.BackColor = Color.White;
-            lbl_billidvalue.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_billidvalue.ForeColor = Color.Black;
-            lbl_billidvalue.Location = new Point(398, 90);
-            lbl_billidvalue.Name = "lbl_billidvalue";
-            lbl_billidvalue.Size = new Size(147, 29);
-            lbl_billidvalue.TabIndex = 34;
-            lbl_billidvalue.Text = "Giá trị mã bill";
-            lbl_billidvalue.TextAlign = ContentAlignment.TopCenter;
+            this.lbl_BillIDVal.AutoSize = true;
+            this.lbl_BillIDVal.BackColor = System.Drawing.Color.White;
+            this.lbl_BillIDVal.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_BillIDVal.ForeColor = System.Drawing.Color.Black;
+            this.lbl_BillIDVal.Location = new System.Drawing.Point(398, 90);
+            this.lbl_BillIDVal.Name = "lbl_BillIDVal";
+            this.lbl_BillIDVal.Size = new System.Drawing.Size(147, 29);
+            this.lbl_BillIDVal.TabIndex = 34;
+            this.lbl_BillIDVal.Text = "Giá trị mã bill";
+            this.lbl_BillIDVal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lbl_foodlist
+            // lbl_DishList
             // 
-            lbl_foodlist.AutoSize = true;
-            lbl_foodlist.BackColor = Color.White;
-            lbl_foodlist.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_foodlist.ForeColor = Color.Black;
-            lbl_foodlist.Location = new Point(303, 150);
-            lbl_foodlist.Name = "lbl_foodlist";
-            lbl_foodlist.Size = new Size(197, 29);
-            lbl_foodlist.TabIndex = 35;
-            lbl_foodlist.Text = "Danh sách món ăn";
-            lbl_foodlist.TextAlign = ContentAlignment.TopCenter;
+            this.lbl_DishList.AutoSize = true;
+            this.lbl_DishList.BackColor = System.Drawing.Color.White;
+            this.lbl_DishList.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_DishList.ForeColor = System.Drawing.Color.Black;
+            this.lbl_DishList.Location = new System.Drawing.Point(303, 150);
+            this.lbl_DishList.Name = "lbl_DishList";
+            this.lbl_DishList.Size = new System.Drawing.Size(197, 29);
+            this.lbl_DishList.TabIndex = 35;
+            this.lbl_DishList.Text = "Danh sách món ăn";
+            this.lbl_DishList.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lbl_food
+            // lbl_Dish
             // 
-            lbl_food.AutoSize = true;
-            lbl_food.BackColor = Color.White;
-            lbl_food.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lbl_food.ForeColor = Color.Black;
-            lbl_food.Location = new Point(365, 213);
-            lbl_food.Name = "lbl_food";
-            lbl_food.Size = new Size(90, 29);
-            lbl_food.TabIndex = 36;
-            lbl_food.Text = "Món ăn";
-            lbl_food.TextAlign = ContentAlignment.TopCenter;
+            this.lbl_Dish.AutoSize = true;
+            this.lbl_Dish.BackColor = System.Drawing.Color.White;
+            this.lbl_Dish.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Dish.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Dish.Location = new System.Drawing.Point(365, 213);
+            this.lbl_Dish.Name = "lbl_Dish";
+            this.lbl_Dish.Size = new System.Drawing.Size(90, 29);
+            this.lbl_Dish.TabIndex = 36;
+            this.lbl_Dish.Text = "Món ăn";
+            this.lbl_Dish.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // lbl_Quantity
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(1186, 213);
-            label1.Name = "label1";
-            label1.Size = new Size(103, 29);
-            label1.TabIndex = 37;
-            label1.Text = "Số lượng";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            this.lbl_Quantity.AutoSize = true;
+            this.lbl_Quantity.BackColor = System.Drawing.Color.White;
+            this.lbl_Quantity.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Quantity.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Quantity.Location = new System.Drawing.Point(1186, 213);
+            this.lbl_Quantity.Name = "lbl_Quantity";
+            this.lbl_Quantity.Size = new System.Drawing.Size(103, 29);
+            this.lbl_Quantity.TabIndex = 37;
+            this.lbl_Quantity.Text = "Số lượng";
+            this.lbl_Quantity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flp_showDetailMon
             // 
-            flp_showDetailMon.AutoScroll = true;
-            flp_showDetailMon.Location = new Point(294, 265);
-            flp_showDetailMon.Name = "flp_showDetailMon";
-            flp_showDetailMon.Size = new Size(1063, 377);
-            flp_showDetailMon.TabIndex = 38;
+            this.flp_showDetailMon.AutoScroll = true;
+            this.flp_showDetailMon.Location = new System.Drawing.Point(294, 265);
+            this.flp_showDetailMon.Name = "flp_showDetailMon";
+            this.flp_showDetailMon.Size = new System.Drawing.Size(1063, 377);
+            this.flp_showDetailMon.TabIndex = 38;
             // 
-            // btn_ChangeStatus
+            // btn_Finish
             // 
-            btn_ChangeStatus.BackColor = Color.FromArgb(229, 1, 17);
-            btn_ChangeStatus.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_ChangeStatus.BorderColor = Color.PaleVioletRed;
-            btn_ChangeStatus.BorderRadius = 8;
-            btn_ChangeStatus.BorderSize = 0;
-            btn_ChangeStatus.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ChangeStatus.FlatStyle = FlatStyle.Flat;
-            btn_ChangeStatus.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ChangeStatus.ForeColor = Color.White;
-            btn_ChangeStatus.Location = new Point(1219, 669);
-            btn_ChangeStatus.Margin = new Padding(3, 4, 3, 4);
-            btn_ChangeStatus.Name = "btn_ChangeStatus";
-            btn_ChangeStatus.Size = new Size(138, 35);
-            btn_ChangeStatus.TabIndex = 39;
-            btn_ChangeStatus.Text = "Hoàn thành";
-            btn_ChangeStatus.TextColor = Color.White;
-            btn_ChangeStatus.UseVisualStyleBackColor = false;
-            btn_ChangeStatus.Click += btn_ChangeStatus_Click;
+            this.btn_Finish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Finish.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Finish.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Finish.BorderRadius = 8;
+            this.btn_Finish.BorderSize = 0;
+            this.btn_Finish.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Finish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Finish.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Finish.ForeColor = System.Drawing.Color.White;
+            this.btn_Finish.Location = new System.Drawing.Point(1219, 669);
+            this.btn_Finish.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Finish.Name = "btn_Finish";
+            this.btn_Finish.Size = new System.Drawing.Size(138, 35);
+            this.btn_Finish.TabIndex = 39;
+            this.btn_Finish.Text = "Hoàn thành";
+            this.btn_Finish.TextColor = System.Drawing.Color.White;
+            this.btn_Finish.UseVisualStyleBackColor = false;
             // 
             // DetailKitchen
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1405, 728);
-            Controls.Add(btn_ChangeStatus);
-            Controls.Add(flp_showDetailMon);
-            Controls.Add(label1);
-            Controls.Add(lbl_food);
-            Controls.Add(lbl_foodlist);
-            Controls.Add(lbl_billidvalue);
-            Controls.Add(lbl_idbill);
-            Controls.Add(lbl_heading);
-            Controls.Add(metroPanel1);
-            Name = "DetailKitchen";
-            Load += DetailKitchen_Load;
-            metroPanel1.ResumeLayout(false);
-            metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1405, 728);
+            this.Controls.Add(this.btn_Finish);
+            this.Controls.Add(this.flp_showDetailMon);
+            this.Controls.Add(this.lbl_Quantity);
+            this.Controls.Add(this.lbl_Dish);
+            this.Controls.Add(this.lbl_DishList);
+            this.Controls.Add(this.lbl_BillIDVal);
+            this.Controls.Add(this.lbl_BillID);
+            this.Controls.Add(this.lbl_MakeDishBill);
+            this.Controls.Add(this.metroPanel1);
+            this.Name = "DetailKitchen";
+            this.metroPanel1.ResumeLayout(false);
+            this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private Label label4;
+        private Label lbl_AccountName;
         private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel7;
         private PictureBox pictureBox1;
-        private Label lbl_heading;
-        private Label lbl_idbill;
-        private Label lbl_billidvalue;
-        private Label lbl_foodlist;
-        private Label lbl_food;
-        private Label label1;
+        private Label lbl_MakeDishBill;
+        private Label lbl_BillID;
+        private Label lbl_BillIDVal;
+        private Label lbl_DishList;
+        private Label lbl_Dish;
+        private Label lbl_Quantity;
         private FlowLayoutPanel flp_showDetailMon;
-        private WinFormsApp2.CustomControls.RoundedButton btn_ChangeStatus;
+        private WinFormsApp2.CustomControls.RoundedButton btn_Finish;
     }
 }
