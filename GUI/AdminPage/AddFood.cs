@@ -26,8 +26,7 @@ namespace WinFormsApp2.AdminPage
 
         private void AddFood_Load(object sender, EventArgs e)
         {
-            cb_TypeofFood.Items.Add("Loại món ăn");
-            cb_TypeofFood.SelectedIndex = 0;
+
             BUS.KindFood kindFood = new BUS.KindFood();
             List<Dictionary<string, string>> kindFoodList = kindFood.gettingKindFood();
             foreach (Dictionary<string, string> item in kindFoodList)
@@ -38,8 +37,7 @@ namespace WinFormsApp2.AdminPage
                     cb_TypeofFood.Items.Add(name);
                 }
             }
-            cb_RoomID.Items.Add("Loại phòng đảm nhận");
-            cb_RoomID.SelectedIndex = 0;
+
             BUS.Room Room = new BUS.Room();
             List<Dictionary<string, string>> RoomList = Room.gettingRoom();
             foreach (Dictionary<string, string> item in RoomList)
@@ -52,6 +50,7 @@ namespace WinFormsApp2.AdminPage
             }
         }
         String imageLocation = "";
+        String ImageURL = "";
         private void btn_addPicture_Click(object sender, EventArgs e)
         {
             try
@@ -61,6 +60,8 @@ namespace WinFormsApp2.AdminPage
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     imageLocation = dialog.FileName;
+                    byte[] imageData = File.ReadAllBytes(imageLocation);
+                    ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
                     btn_PictueLabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
@@ -82,6 +83,8 @@ namespace WinFormsApp2.AdminPage
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     imageLocation = dialog.FileName;
+                    byte[] imageData = File.ReadAllBytes(imageLocation);
+                    ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
                     btn_PictueLabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
@@ -98,12 +101,12 @@ namespace WinFormsApp2.AdminPage
             Dictionary<string, string> itemtoadd = new Dictionary<string, string>();
             String nameoffood = this.tb_NameOfFood.Texts.ToString();
             String price = this.tb_Price.Texts.ToString();
-            String typeID = this.cb_TypeofFood.SelectedIndex.ToString();
-            String RoomID = this.cb_RoomID.SelectedIndex.ToString();
+            String typeID = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
+            String RoomID = (this.cb_RoomID.SelectedIndex + 1).ToString();
             itemtoadd.Add("Name", nameoffood);
             itemtoadd.Add("Price", price);
             itemtoadd.Add("typeID", typeID);
-            itemtoadd.Add("ImageURL", imageLocation);
+            itemtoadd.Add("ImageURL", ImageURL);
             itemtoadd.Add("RoomID", RoomID);
             BUS.Menu Menu = new BUS.Menu();
             if (Menu.addMenu(itemtoadd))

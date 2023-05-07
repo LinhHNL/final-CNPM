@@ -139,21 +139,14 @@ namespace WinFormsApp2
         private void RerenderKindFood(int kindfoodID)
         {
             panel_monan_1.Controls.Clear();
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("Select * from menu where KindFoodID=" + kindfoodID, conn);
-
-            using (SqlDataReader reader = cmd.ExecuteReader())
+            BUS.Menu menu = new BUS.Menu();
+            List<Dictionary<string, string>> menuList = menu.getAllMenu();
+            foreach (Dictionary<string, string> item in menuList)
             {
-                while (reader.Read())
+                if (item["KindFoodID"] == kindfoodID.ToString() && item["Status"] == "1")
                 {
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"], item["URLImage"], this));
                 }
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "5000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Come back home, I'm the best", "50000000", this));
             }
             this.Updateprice();
         }

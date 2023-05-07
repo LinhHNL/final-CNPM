@@ -14,16 +14,14 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoXemPhieuNhapHang : MetroFramework.Forms.MetroForm
     {
+        private String phieudonhangid = "";
         CultureInfo culture;
-        public KiemKhoXemPhieuNhapHang()
+        public KiemKhoXemPhieuNhapHang(string phieudonhang)
         {
             InitializeComponent();
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            SetLanguage("en-US");
+
+            this.phieudonhangid = phieudonhang;
+            this.phieudonhangid = phieudonhang;
         }
         private void btn_InStock_Click(object sender, EventArgs e)
         {

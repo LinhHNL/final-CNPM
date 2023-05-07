@@ -14,10 +14,12 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class XemThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
+        private String hanghoaid = "";
         CultureInfo culture;
-        public XemThongTinHangHoa()
+        public XemThongTinHangHoa(string hanghoaid)
         {
             InitializeComponent();
+            this.hanghoaid = hanghoaid;
             SetLanguage("en-US");
         }
 
@@ -53,7 +55,7 @@ namespace WinFormsApp2.KhoPage
         private void btn_edit_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SuaThongTinHangHoa form = new SuaThongTinHangHoa();
+            SuaThongTinHangHoa form = new SuaThongTinHangHoa(this.hanghoaid);
             form.ShowDialog();
             this.Close();
         }

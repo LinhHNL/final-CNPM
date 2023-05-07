@@ -29,9 +29,9 @@ namespace WinFormsApp2.NhanVienPage
                 form.ShowDialog();
                 this.Close();
             };
-
             culture = CultureInfo.CurrentCulture;
             SetLanguage("vi-VN");
+
         }
 
         private void QuanLyChamCongBangChamCong_Load(object sender, EventArgs e)

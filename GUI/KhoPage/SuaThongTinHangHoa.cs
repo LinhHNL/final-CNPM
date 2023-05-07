@@ -14,11 +14,13 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class SuaThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
+        private String hanghoaid = "";
         CultureInfo culture;
-        public SuaThongTinHangHoa()
+        public SuaThongTinHangHoa(string hanghoaid)
         {
             InitializeComponent();
-            SetLanguage("en-US");
+            this.hanghoaid = hanghoaid;
+            this.hanghoaid = hanghoaid;
         }
 
         private void btn_InventoryControl_Click(object sender, EventArgs e)

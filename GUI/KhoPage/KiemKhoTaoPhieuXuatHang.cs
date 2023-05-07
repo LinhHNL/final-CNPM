@@ -16,17 +16,14 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoTaoPhieuXuatHang : MetroFramework.Forms.MetroForm
     {
+        int NumberOfID = 0;
         CultureInfo culture;
         public KiemKhoTaoPhieuXuatHang()
         {
             InitializeComponent();
-            dgv_Export.Rows.Add("0", "asd", "asd");
-            dgv_Export.Rows.Add("0", "asd", "asd");
-            dgv_Export.Rows.Add("0", "asd", "asd");
-            dgv_Export.Rows.Add("0", "asd", "asd");
-            dgv_Export.Rows.Add("0", "asd", "asd");
-            SetLanguage("en-US");
 
+            NumberOfID = numberOfID;
+            SetLanguage("en-US");
         }
         private void btn_InStock_Click(object sender, EventArgs e)
         {
@@ -49,7 +46,10 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
-
+        private void KiemKhoTaoPhieuXuatHang_Load(object sender, EventArgs e)
+        {
+            this.tb_MaXuatHang.Texts = "XH" + this.NumberOfID.ToString();
+        }
         public void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);

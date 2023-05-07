@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 using WinFormsApp2.Components;
-
+using BUS;
 namespace WinFormsApp2
 {
     public partial class HomepageFormSingle : MetroFramework.Forms.MetroForm
@@ -155,23 +155,15 @@ namespace WinFormsApp2
 
         private void HomepageFormSingle_Load(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("Select ten, giaban from monan", conn);
-
-            using (SqlDataReader reader = cmd.ExecuteReader())
+            panel_monan_1.Controls.Clear();
+            BUS.Menu menu = new BUS.Menu();
+            List<Dictionary<string, string>> menuList = menu.getAllMenu();
+            foreach (Dictionary<string, string> item in menuList)
             {
-                while (reader.Read())
+                if (item["KindFoodID"] == "1" && item["Status"] == "1")
                 {
-
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+                panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"],item["URLImage"],this));
                 }
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "5000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Come back home, I'm the best", "50000000", this));
-                this.Updateprice();
             }
         }
 

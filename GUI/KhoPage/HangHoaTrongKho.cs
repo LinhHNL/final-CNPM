@@ -19,15 +19,16 @@ namespace WinFormsApp2.KhoPage
         public HangHoaTrongKho()
         {
             InitializeComponent();
-            dgv_InStock.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_InStock.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_InStock.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_InStock.Rows.Add("0", "asd", "asd", "asd", "asd");
-            dgv_InStock.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.Rows.Add("0", "asd", "asd", "asd", "asd");
+            dgv_HangTrongKho.ReadOnly = true;
             SetLanguage("en-US");
         }
 
-        
+
 
         private void dgv_XuatHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -36,8 +37,9 @@ namespace WinFormsApp2.KhoPage
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
+            int numberofID = dgv_HangTrongKho.RowCount;
             this.Hide();
-            ThemHangHoa form = new ThemHangHoa();
+            ThemHangHoa form = new ThemHangHoa(numberofID);
             form.ShowDialog();
             this.Close();
         }
@@ -51,7 +53,7 @@ namespace WinFormsApp2.KhoPage
             if (btn_Import.Visible == false)
             {
                 btn_Import.Visible = true;
-                btn_Export.Visible = true;    
+                btn_Export.Visible = true;
             }
             else
             {
@@ -62,8 +64,27 @@ namespace WinFormsApp2.KhoPage
             KiemKhoXuatHang form = new KiemKhoXuatHang();
             form.ShowDialog();
             this.Close();
-        }   
+        }
+        private void dgv_HangTrongKho_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                string value = "";
+                if (dgv_HangTrongKho.Rows[e.RowIndex].Cells[0].Value == null)
+                {
+                    value = "";
+                }
+                else
+                {
+                    value = dgv_HangTrongKho.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    this.Hide();
+                    XemThongTinHangHoa form = new XemThongTinHangHoa(value);
+                    form.ShowDialog();
+                    this.Close();
+                }
+            }
 
+        }
         public void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);

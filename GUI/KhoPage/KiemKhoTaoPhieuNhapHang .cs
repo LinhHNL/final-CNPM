@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,15 +16,13 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoTaoPhieuNhapHang : MetroFramework.Forms.MetroForm
     {
-        CultureInfo culture;
-        public KiemKhoTaoPhieuNhapHang()
+        private int IDMonHang = 0;
+
+        public KiemKhoTaoPhieuNhapHang(int iDMonHang)
         {
             InitializeComponent();
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
-            dgv_Import.Rows.Add("0", "asd", "asd");
+            
+            this.IDMonHang = iDMonHang;
             SetLanguage("en-US");
         }
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
@@ -48,7 +47,6 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
-
         public void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);

@@ -1,3 +1,5 @@
+using GUI.Components;
+using GUI.Kitchen;
 using WinFormsApp2;
 using WinFormsApp2.AdminPage;
 using WinFormsApp2.KhachHangManager;
