@@ -87,9 +87,10 @@ namespace WinFormsApp2.AdminPage
             ComboInfo.Add("Name", TenCombo);
             ComboInfo.Add("Cost", GiaCombo);
             ComboInfo.Add("ImageURL", ImageURL);
-            if (combo.tryingAddingCombo(ComboInfo)) 
+            Dictionary<string, string> Result = combo.tryingAddingCombo(ComboInfo);
+            if (Result == null) 
             {
-                String IDCombo = combo.getLastIDCombo()["ComboID"];
+                String IDCombo = Result["ComboID"];
                 foreach (MonAnComponentForAdding element in panel_monan_1.Controls.OfType<MonAnComponentForAdding>())
                 {
                     if (element.getSoLuong() == 0)

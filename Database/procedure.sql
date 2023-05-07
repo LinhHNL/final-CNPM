@@ -1522,6 +1522,7 @@ END
 
 ----Crud Combo
 go
+
 ---Procedure thêm Combo mới (Create)
 CREATE PROCEDURE AddCombo
     @Name NVARCHAR(45),
@@ -1619,7 +1620,7 @@ DELETE FROM DetailCombo WHERE MenuID = @MenuID AND Id = @ComboID
 END
 
 
-
+GO
 ----- CRUD Tembill
 --- Mô tả : Đối với Status Temp Bill status bằng 0 nghĩa là chia được thanh toán 1 là đã thanh toán 
 ---Còn đối với TempBillDetails status bằng 0 nghĩa là đã xác nhận món xong 0 là chưa xác nhận món
@@ -1644,10 +1645,14 @@ CREATE PROCEDURE InsertTempBill
     @Price FLOAT
 AS
 BEGIN
+	Declare  @id int
     INSERT INTO TempBill (CustomerId, Status, Price)
     VALUES (@CustomerId, @Status, @Price)
+	set @id = SCOPE_IDENTITY()
+	Select @id as TempBilID
 END
 GO
+
 ---Update TempBill 
 CREATE PROCEDURE UpdateTempBill
     @Id INT,
@@ -1667,16 +1672,11 @@ Go
 ----Update TempBillDetails
 CREATE PROCEDURE UpdateTempBillDetails
     @TempBillId INT,
-    @MenuID INT,
-    @Number INT,
-    @Price FLOAT,
-    @Status BIT
+    @MenuID INT
 AS
 BEGIN
     UPDATE TempBillDetails
-    SET Number = @Number,
-        Price = @Price,
-        Status = @Status
+    SET Status = ~Status
     WHERE TempBillId = @TempBillId AND MenuID = @MenuID
 END
 GO
@@ -1698,6 +1698,14 @@ BEGIN
 END
 GO
 ---Get
+Create Proc GetTempBillNotDone 
+AS
+	Begin
+		Select * from TempBill where status=0;
+	END
+GO
+EXEC GetTempBillNotDone;
+GO
 Create Procedure GetTempBill
 @Token varchar(45),
 @CustomerID int 
@@ -1715,7 +1723,8 @@ AS
 	End
 ----PayRoll
 GO
-
+EXEC GetAllTempBillDetailsOfTempBill 1;
+GO
 CREATE PROCEDURE InsertPayroll
 (
 @TimeHourW FLOAT,
@@ -2287,3 +2296,8 @@ as
 	begin 
 		select * from Staff where Name = @name
 	end
+GO
+
+EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xương đầy đủ';
+EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
+EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';

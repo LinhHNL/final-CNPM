@@ -13,12 +13,8 @@ namespace BUS
             DAO.Combo combo = new();
             return combo.getAllCombo();
         }
-        public Dictionary<string, string> getLastIDCombo()
-        {
-            DAO.Combo combo = new();
-            return combo.getLastIDCombo();
-        }
-        public bool tryingAddingCombo(Dictionary<string, string> ComboInfo)
+        
+        public Dictionary<string, string> tryingAddingCombo(Dictionary<string, string> ComboInfo)
         {
             DAO.Combo combo = new();
             return combo.tryingAddingCombo(ComboInfo);

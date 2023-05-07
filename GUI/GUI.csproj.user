@@ -22,6 +22,9 @@
     <Compile Update="AdminPage\UpdateFoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Components\KitchenView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Components\LockedFood.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -42,6 +45,9 @@
     </Compile>
     <Compile Update="Components\UpdateFoodCom.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ConfirmView.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="CustomControls\ButtonTrangThai.cs">
       <SubType>UserControl</SubType>
@@ -80,6 +86,15 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="HomepageFormSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhachHangInfo\InfoTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhachHangInfo\ThongTinCoBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="KhachHangInfo\TransactionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="KhachHangManager\ListCustomerForm.cs">
@@ -122,6 +137,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AllMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Kitchen\DetailKitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Kitchen\ViewingKitchen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="NhanVienPage\HoSoNhanVien.cs">
@@ -194,6 +215,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SignUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan\HoaDonTong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ThanhToan\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

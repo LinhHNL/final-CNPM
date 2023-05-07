@@ -162,7 +162,7 @@ namespace WinFormsApp2
             {
                 if (item["KindFoodID"] == "1" && item["Status"] == "1")
                 {
-                panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"],item["URLImage"],this));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"], item["URLImage"], this));
                 }
             }
         }

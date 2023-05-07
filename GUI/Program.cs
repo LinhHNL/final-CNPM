@@ -1,3 +1,6 @@
+using GUI;
+using GUI.Components;
+using GUI.Kitchen;
 using WinFormsApp2;
 using WinFormsApp2.AdminPage;
 using WinFormsApp2.KhachHangManager;
@@ -17,7 +20,7 @@ namespace WinFormsApp1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new LockFood());
+            Application.Run(new ConfirmView());
         }
     }
 }

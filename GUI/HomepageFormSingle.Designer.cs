@@ -72,6 +72,7 @@ namespace WinFormsApp2
             btn_topRightFourPot = new MetroFramework.Controls.MetroTile();
             btn_bottomRightFourPot = new MetroFramework.Controls.MetroTile();
             panel_monan_1 = new FlowLayoutPanel();
+            btn_ComfirmFoodChange = new RoundedButton();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel_doublePot.SuspendLayout();
@@ -799,11 +800,32 @@ namespace WinFormsApp2
             panel_monan_1.Size = new Size(461, 511);
             panel_monan_1.TabIndex = 35;
             // 
+            // btn_ComfirmFoodChange
+            // 
+            btn_ComfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BorderColor = Color.PaleVioletRed;
+            btn_ComfirmFoodChange.BorderRadius = 8;
+            btn_ComfirmFoodChange.BorderSize = 0;
+            btn_ComfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_ComfirmFoodChange.FlatStyle = FlatStyle.Flat;
+            btn_ComfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ComfirmFoodChange.ForeColor = Color.White;
+            btn_ComfirmFoodChange.Location = new Point(799, 46);
+            btn_ComfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ComfirmFoodChange.Name = "btn_ComfirmFoodChange";
+            btn_ComfirmFoodChange.Size = new Size(143, 35);
+            btn_ComfirmFoodChange.TabIndex = 36;
+            btn_ComfirmFoodChange.Text = "Xác Nhận Món";
+            btn_ComfirmFoodChange.TextColor = Color.White;
+            btn_ComfirmFoodChange.UseVisualStyleBackColor = false;
+            // 
             // HomepageFormSingle
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1212, 697);
+            Controls.Add(btn_ComfirmFoodChange);
             Controls.Add(panel_monan_1);
             Controls.Add(panel_fourPot);
             Controls.Add(panel_doublePot);
@@ -873,5 +895,6 @@ namespace WinFormsApp2
         private RoundedButton roundedButton24;
         private RoundedButton roundedButton21;
         private FlowLayoutPanel panel_monan_1;
+        private RoundedButton btn_ComfirmFoodChange;
     }
 }

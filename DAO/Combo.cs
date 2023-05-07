@@ -40,34 +40,13 @@ namespace DAO
                 return resultList;
             }
         }
-        public Dictionary<string, string> getLastIDCombo()
-        {
-            Dictionary<string, string> resultDic = new Dictionary<string, string>();
-            try
-            {
-                SqlConnection conn = DatabaseConnection.connectDBFunc();
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("GetLastIDCombo", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    resultDic.Add("ComboID", reader["Id"].ToString());
-                    
-                }
-                return resultDic;
-            }
-            catch (Exception ex)
-            {
-                resultDic.Add("ComboID", "-1");
-                return resultDic;
-            }
-        }
-        public bool tryingAddingCombo(Dictionary<string, string> MenuInfo)
+        
+        public Dictionary<string, string> tryingAddingCombo(Dictionary<string, string> MenuInfo)
         {
             String Name = MenuInfo["Name"];
             String Cost = MenuInfo["Cost"];
             String ImageURl = MenuInfo["ImageURL"];
+            Dictionary<string, string> resultDic = new Dictionary<string, string>();
 
             try
             {
@@ -80,27 +59,31 @@ namespace DAO
                 cmd.Parameters.AddWithValue("@ImageURL", ImageURl);
                 cmd.Parameters.AddWithValue("@Description", "");
                 SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    resultDic.Add("ComboID", reader["ComboID"].ToString());
+                }
                 conn.Close();
-                return true;
+                return resultDic;
             }
             catch (Exception ex)
             {
-                return false;
+                return resultDic;
             }
 
         }
         public bool tryingFlipStatusCombo(Dictionary<string, string> MenuInfo)
         {
             int IDCombo = int.Parse(MenuInfo["ComboID"]);
-            String Status = MenuInfo["Status"];
+            int Status = int.Parse(MenuInfo["Status"]);
             try
             {
                 SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("change_statusCombo", conn);
+                SqlCommand cmd = new SqlCommand("UpdateStatusOfCombo", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id", IDCombo);
-                cmd.Parameters.AddWithValue("@status", Status);
+                cmd.Parameters.AddWithValue("@Status", Status);
                 SqlDataReader reader = cmd.ExecuteReader();
                 conn.Close();
                 return true;

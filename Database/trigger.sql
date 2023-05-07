@@ -1,4 +1,7 @@
-﻿----customer 
+﻿
+use hadilao
+go
+----customer 
 CREATE TRIGGER CheckCustomerExists
 ON Customers
 FOR INSERT
@@ -184,10 +187,10 @@ FOR INSERT,Update
 AS
 BEGIN
     DECLARE @CustomerId INT
-    SELECT @CustomerId = inserted.CustomerId
+    SELECT @CustomerId = inserted.CustormerID
     FROM inserted
-    LEFT JOIN Customers ON inserted.CustomerId = Customers.CustomerId
-    WHERE Customers.CustomerId IS NULL
+    LEFT JOIN Customers ON inserted.CustormerID = Customers.CustormerID
+    WHERE Customers.CustormerID IS NULL
 
     IF @CustomerId IS NOT NULL
     BEGIN
@@ -223,7 +226,7 @@ GO
 
 CREATE TRIGGER trg_AddTransactionDetail
 ON TransactionDetail
-BEFORE INSERT, UPDATE
+INSTEAD OF INSERT, UPDATE
 AS
 BEGIN
   -- Check if the TransactionID and MenuID exist in Transactions and Menu tables
@@ -550,3 +553,21 @@ BEGIN
         WHERE NOT EXISTS(SELECT 1 FROM Account a WHERE a.Username = inserted.Username)
     END
 END
+GO
+CREATE TRIGGER trg_StaffCheckAge
+ON Staff
+AFTER INSERT, UPDATE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    IF EXISTS (
+        SELECT * FROM inserted
+        WHERE DATEDIFF(year, DateOfBirth, GETDATE()) < 18 OR DATEDIFF(year, DateOfBirth, GETDATE()) > 60
+    )
+    BEGIN
+        RAISERROR ('Staff age must be between 18 and 60.', 16, 1);
+        ROLLBACK;
+    END
+END
+GO
