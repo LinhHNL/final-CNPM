@@ -817,6 +817,9 @@
     <value>Timekeeping management</value>
     <comment>1</comment>
   </data>
+  <data name="timekeepingTableText" xml:space="preserve">
+    <value>Timekeeping Table</value>
+  </data>
   <data name="timekeepingText" xml:space="preserve">
     <value>Timekeeping</value>
     <comment>Staff management</comment>
@@ -844,6 +847,9 @@
   <data name="tuesdayText" xml:space="preserve">
     <value>Tuesday</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="undertakingRoomText" xml:space="preserve">
+    <value>Undertaking Room</value>
   </data>
   <data name="unionMoneyText" xml:space="preserve">
     <value>Union money</value>

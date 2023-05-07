@@ -138,8 +138,6 @@ D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.SuaThongTinHangHoa.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.ThemHangHoa.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.XemThongTinHangHoa.resources
-D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.English.resources
-D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.VietNam.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.HoSoNhanVien.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCong.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCongBangChamCong.resources
@@ -220,3 +218,10 @@ D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong2.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LichLam.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DangKyLichLam.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\en-US\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\vi-VN\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.en-US.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.vi-VN.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\en-US\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\vi-VN\GUI.resources.dll

@@ -42,6 +42,11 @@
     <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs" />
     <Compile Update="KhoPage\KiemKhoNhapHang.cs" />
     <Compile Update="AllMonAn.cs" />
+    <Compile Update="Language\MyResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
     <Compile Update="StaffAccount\DonTu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +107,13 @@
     <Compile Update="Statistic\ThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Language\MyResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

@@ -30,13 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LockFood));
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
+            this.pb_AccountIcon = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton7 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton6 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton5 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.roundedButton4 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_UpdateFood = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_LockFood = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_AddFood = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_AddComboFood = new WinFormsApp2.CustomControls.RoundedButton();
+            this.pb_Logo = new System.Windows.Forms.PictureBox();
+            this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel5 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel9 = new MetroFramework.Controls.MetroPanel();
             this.roundedButton11 = new WinFormsApp2.CustomControls.RoundedButton();
@@ -64,14 +66,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btn_Lock = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_Price = new System.Windows.Forms.Label();
+            this.lbl_FoodName = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
             this.metroPanel5.SuspendLayout();
             this.metroPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -85,19 +86,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.metroPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.label7);
-            this.metroPanel1.Controls.Add(this.pictureBox8);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
+            this.metroPanel1.Controls.Add(this.pb_AccountIcon);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.roundedButton7);
-            this.metroPanel1.Controls.Add(this.roundedButton6);
-            this.metroPanel1.Controls.Add(this.roundedButton5);
-            this.metroPanel1.Controls.Add(this.roundedButton4);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.Controls.Add(this.btn_UpdateFood);
+            this.metroPanel1.Controls.Add(this.btn_LockFood);
+            this.metroPanel1.Controls.Add(this.btn_AddFood);
+            this.metroPanel1.Controls.Add(this.btn_AddComboFood);
+            this.metroPanel1.Controls.Add(this.pb_Logo);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
@@ -108,6 +108,26 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // lbl_AccountName
+            // 
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(82, 80);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 33;
+            this.lbl_AccountName.Text = "Tên tài khoản";
+            // 
+            // pb_AccountIcon
+            // 
+            this.pb_AccountIcon.Image = ((System.Drawing.Image)(resources.GetObject("pb_AccountIcon.Image")));
+            this.pb_AccountIcon.Location = new System.Drawing.Point(46, 82);
+            this.pb_AccountIcon.Name = "pb_AccountIcon";
+            this.pb_AccountIcon.Size = new System.Drawing.Size(30, 26);
+            this.pb_AccountIcon.TabIndex = 32;
+            this.pb_AccountIcon.TabStop = false;
             // 
             // metroPanel7
             // 
@@ -123,114 +143,118 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // roundedButton7
+            // btn_UpdateFood
             // 
-            this.roundedButton7.BackColor = System.Drawing.Color.White;
-            this.roundedButton7.BackgroundColor = System.Drawing.Color.White;
-            this.roundedButton7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton7.BorderRadius = 0;
-            this.roundedButton7.BorderSize = 0;
-            this.roundedButton7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.Location = new System.Drawing.Point(-1, 300);
-            this.roundedButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton7.Name = "roundedButton7";
-            this.roundedButton7.Size = new System.Drawing.Size(263, 64);
-            this.roundedButton7.TabIndex = 18;
-            this.roundedButton7.Text = "Cập nhật món ăn";
-            this.roundedButton7.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton7.UseVisualStyleBackColor = false;
+            this.btn_UpdateFood.BackColor = System.Drawing.Color.White;
+            this.btn_UpdateFood.BackgroundColor = System.Drawing.Color.White;
+            this.btn_UpdateFood.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_UpdateFood.BorderRadius = 0;
+            this.btn_UpdateFood.BorderSize = 0;
+            this.btn_UpdateFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_UpdateFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_UpdateFood.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_UpdateFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_UpdateFood.Location = new System.Drawing.Point(-1, 300);
+            this.btn_UpdateFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_UpdateFood.Name = "btn_UpdateFood";
+            this.btn_UpdateFood.Size = new System.Drawing.Size(263, 64);
+            this.btn_UpdateFood.TabIndex = 18;
+            this.btn_UpdateFood.Text = "Cập nhật món ăn";
+            this.btn_UpdateFood.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_UpdateFood.UseVisualStyleBackColor = false;
+            this.btn_UpdateFood.Click += new System.EventHandler(this.btn_UpdateFood_Click);
             // 
-            // roundedButton6
+            // btn_LockFood
             // 
-            this.roundedButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton6.BorderRadius = 0;
-            this.roundedButton6.BorderSize = 0;
-            this.roundedButton6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton6.ForeColor = System.Drawing.Color.White;
-            this.roundedButton6.Location = new System.Drawing.Point(-1, 241);
-            this.roundedButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton6.Name = "roundedButton6";
-            this.roundedButton6.Size = new System.Drawing.Size(264, 64);
-            this.roundedButton6.TabIndex = 17;
-            this.roundedButton6.Text = "Khóa món ăn";
-            this.roundedButton6.TextColor = System.Drawing.Color.White;
-            this.roundedButton6.UseVisualStyleBackColor = false;
+            this.btn_LockFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_LockFood.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_LockFood.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_LockFood.BorderRadius = 0;
+            this.btn_LockFood.BorderSize = 0;
+            this.btn_LockFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_LockFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_LockFood.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_LockFood.ForeColor = System.Drawing.Color.White;
+            this.btn_LockFood.Location = new System.Drawing.Point(-1, 241);
+            this.btn_LockFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_LockFood.Name = "btn_LockFood";
+            this.btn_LockFood.Size = new System.Drawing.Size(264, 64);
+            this.btn_LockFood.TabIndex = 17;
+            this.btn_LockFood.Text = "Khóa món ăn";
+            this.btn_LockFood.TextColor = System.Drawing.Color.White;
+            this.btn_LockFood.UseVisualStyleBackColor = false;
+            this.btn_LockFood.Click += new System.EventHandler(this.btn_LockFood_Click);
             // 
-            // roundedButton5
+            // btn_AddFood
             // 
-            this.roundedButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton5.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton5.BorderRadius = 0;
-            this.roundedButton5.BorderSize = 0;
-            this.roundedButton5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton5.Location = new System.Drawing.Point(0, 128);
-            this.roundedButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton5.Name = "roundedButton5";
-            this.roundedButton5.Size = new System.Drawing.Size(262, 60);
-            this.roundedButton5.TabIndex = 16;
-            this.roundedButton5.Text = "Thêm món ăn";
-            this.roundedButton5.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton5.UseVisualStyleBackColor = false;
+            this.btn_AddFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_AddFood.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_AddFood.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_AddFood.BorderRadius = 0;
+            this.btn_AddFood.BorderSize = 0;
+            this.btn_AddFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_AddFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AddFood.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_AddFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_AddFood.Location = new System.Drawing.Point(0, 128);
+            this.btn_AddFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_AddFood.Name = "btn_AddFood";
+            this.btn_AddFood.Size = new System.Drawing.Size(262, 60);
+            this.btn_AddFood.TabIndex = 16;
+            this.btn_AddFood.Text = "Thêm món ăn";
+            this.btn_AddFood.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_AddFood.UseVisualStyleBackColor = false;
+            this.btn_AddFood.Click += new System.EventHandler(this.btn_AddFood_Click);
             // 
-            // roundedButton4
+            // btn_AddComboFood
             // 
-            this.roundedButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.roundedButton4.BorderColor = System.Drawing.Color.Transparent;
-            this.roundedButton4.BorderRadius = 0;
-            this.roundedButton4.BorderSize = 0;
-            this.roundedButton4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton4.Location = new System.Drawing.Point(0, 187);
-            this.roundedButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton4.Name = "roundedButton4";
-            this.roundedButton4.Size = new System.Drawing.Size(262, 56);
-            this.roundedButton4.TabIndex = 16;
-            this.roundedButton4.Text = "Thêm combo món ăn";
-            this.roundedButton4.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.roundedButton4.UseVisualStyleBackColor = false;
+            this.btn_AddComboFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_AddComboFood.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_AddComboFood.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_AddComboFood.BorderRadius = 0;
+            this.btn_AddComboFood.BorderSize = 0;
+            this.btn_AddComboFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_AddComboFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_AddComboFood.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_AddComboFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_AddComboFood.Location = new System.Drawing.Point(0, 187);
+            this.btn_AddComboFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_AddComboFood.Name = "btn_AddComboFood";
+            this.btn_AddComboFood.Size = new System.Drawing.Size(262, 56);
+            this.btn_AddComboFood.TabIndex = 16;
+            this.btn_AddComboFood.Text = "Thêm combo món ăn";
+            this.btn_AddComboFood.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_AddComboFood.UseVisualStyleBackColor = false;
+            this.btn_AddComboFood.Click += new System.EventHandler(this.btn_AddComboFood_Click);
             // 
-            // pictureBox1
+            // pb_Logo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pb_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_Logo.Image")));
+            this.pb_Logo.Location = new System.Drawing.Point(100, 14);
+            this.pb_Logo.Name = "pb_Logo";
+            this.pb_Logo.Size = new System.Drawing.Size(50, 50);
+            this.pb_Logo.TabIndex = 16;
+            this.pb_Logo.TabStop = false;
             // 
-            // roundedButton10
+            // btn_Signout
             // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton10.BorderRadius = 8;
-            this.roundedButton10.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1042, 37);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton10.TabIndex = 22;
-            this.roundedButton10.Text = "Đăng xuất";
-            this.roundedButton10.TextColor = System.Drawing.Color.White;
-            this.roundedButton10.UseVisualStyleBackColor = false;
+            this.btn_Signout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Signout.BorderRadius = 8;
+            this.btn_Signout.BorderSize = 0;
+            this.btn_Signout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Signout.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Signout.ForeColor = System.Drawing.Color.White;
+            this.btn_Signout.Location = new System.Drawing.Point(1042, 37);
+            this.btn_Signout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Signout.Name = "btn_Signout";
+            this.btn_Signout.Size = new System.Drawing.Size(117, 35);
+            this.btn_Signout.TabIndex = 22;
+            this.btn_Signout.Text = "Đăng xuất";
+            this.btn_Signout.TextColor = System.Drawing.Color.White;
+            this.btn_Signout.UseVisualStyleBackColor = false;
             // 
             // metroPanel5
             // 
@@ -607,9 +631,9 @@
             // metroPanel3
             // 
             this.metroPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.metroPanel3.Controls.Add(this.roundedButton1);
-            this.metroPanel3.Controls.Add(this.label3);
-            this.metroPanel3.Controls.Add(this.label4);
+            this.metroPanel3.Controls.Add(this.btn_Lock);
+            this.metroPanel3.Controls.Add(this.lbl_Price);
+            this.metroPanel3.Controls.Add(this.lbl_FoodName);
             this.metroPanel3.Controls.Add(this.pictureBox3);
             this.metroPanel3.HorizontalScrollbar = true;
             this.metroPanel3.HorizontalScrollbarBarColor = true;
@@ -623,47 +647,47 @@
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel3.VerticalScrollbarSize = 10;
             // 
-            // roundedButton1
+            // btn_Lock
             // 
-            this.roundedButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton1.BorderRadius = 8;
-            this.roundedButton1.BorderSize = 0;
-            this.roundedButton1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton1.ForeColor = System.Drawing.Color.White;
-            this.roundedButton1.Location = new System.Drawing.Point(351, 145);
-            this.roundedButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton1.Name = "roundedButton1";
-            this.roundedButton1.Size = new System.Drawing.Size(95, 35);
-            this.roundedButton1.TabIndex = 23;
-            this.roundedButton1.Text = "Khóa";
-            this.roundedButton1.TextColor = System.Drawing.Color.White;
-            this.roundedButton1.UseVisualStyleBackColor = false;
+            this.btn_Lock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Lock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Lock.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Lock.BorderRadius = 8;
+            this.btn_Lock.BorderSize = 0;
+            this.btn_Lock.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Lock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Lock.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Lock.ForeColor = System.Drawing.Color.White;
+            this.btn_Lock.Location = new System.Drawing.Point(351, 145);
+            this.btn_Lock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Lock.Name = "btn_Lock";
+            this.btn_Lock.Size = new System.Drawing.Size(95, 35);
+            this.btn_Lock.TabIndex = 23;
+            this.btn_Lock.Text = "Khóa";
+            this.btn_Lock.TextColor = System.Drawing.Color.White;
+            this.btn_Lock.UseVisualStyleBackColor = false;
             // 
-            // label3
+            // lbl_Price
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(236, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 29);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Giá tiền";
+            this.lbl_Price.AutoSize = true;
+            this.lbl_Price.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Price.ForeColor = System.Drawing.Color.Black;
+            this.lbl_Price.Location = new System.Drawing.Point(236, 89);
+            this.lbl_Price.Name = "lbl_Price";
+            this.lbl_Price.Size = new System.Drawing.Size(90, 29);
+            this.lbl_Price.TabIndex = 18;
+            this.lbl_Price.Text = "Giá tiền";
             // 
-            // label4
+            // lbl_FoodName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(236, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 37);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Tên món";
+            this.lbl_FoodName.AutoSize = true;
+            this.lbl_FoodName.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_FoodName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_FoodName.Location = new System.Drawing.Point(236, 16);
+            this.lbl_FoodName.Name = "lbl_FoodName";
+            this.lbl_FoodName.Size = new System.Drawing.Size(123, 37);
+            this.lbl_FoodName.TabIndex = 17;
+            this.lbl_FoodName.Text = "Tên món";
             // 
             // pictureBox3
             // 
@@ -674,38 +698,19 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label7.Location = new System.Drawing.Point(82, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 28);
-            this.label7.TabIndex = 33;
-            this.label7.Text = "Tên tài khoản";
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(46, 82);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox8.TabIndex = 32;
-            this.pictureBox8.TabStop = false;
-            // 
             // LockFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
             this.Controls.Add(this.metroPanel5);
-            this.Controls.Add(this.roundedButton10);
+            this.Controls.Add(this.btn_Signout);
             this.Controls.Add(this.metroPanel1);
             this.Name = "LockFood";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             this.metroPanel5.ResumeLayout(false);
             this.metroPanel9.ResumeLayout(false);
             this.metroPanel9.PerformLayout();
@@ -725,7 +730,6 @@
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -734,12 +738,12 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton roundedButton7;
-        private CustomControls.RoundedButton roundedButton6;
-        private CustomControls.RoundedButton roundedButton5;
-        private CustomControls.RoundedButton roundedButton4;
-        private PictureBox pictureBox1;
-        private CustomControls.RoundedButton roundedButton10;
+        private CustomControls.RoundedButton btn_UpdateFood;
+        private CustomControls.RoundedButton btn_LockFood;
+        private CustomControls.RoundedButton btn_AddFood;
+        private CustomControls.RoundedButton btn_AddComboFood;
+        private PictureBox pb_Logo;
+        private CustomControls.RoundedButton btn_Signout;
         private MetroFramework.Controls.MetroPanel metroPanel5;
         private MetroFramework.Controls.MetroPanel metroPanel9;
         private CustomControls.RoundedButton roundedButton11;
@@ -767,11 +771,11 @@
         private Label label2;
         private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel3;
-        private CustomControls.RoundedButton roundedButton1;
-        private Label label3;
-        private Label label4;
+        private CustomControls.RoundedButton btn_Lock;
+        private Label lbl_Price;
+        private Label lbl_FoodName;
         private PictureBox pictureBox3;
-        private Label label7;
-        private PictureBox pictureBox8;
+        private Label lbl_AccountName;
+        private PictureBox pb_AccountIcon;
     }
 }

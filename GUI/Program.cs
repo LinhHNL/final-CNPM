@@ -19,7 +19,7 @@ namespace WinFormsApp1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new DangKyLichLam(6,5,2023));
+            Application.Run(new QuanLyLuongThuong());
         }
     }
 }

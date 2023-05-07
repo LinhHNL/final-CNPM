@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\AdminPage",
     "\\Language",
+    "\\NhanVienPage",
     "\\StaffAccount",
     "\\Statistic"
   ],
-  "SelectedNode": "\\StaffAccount\\ChamCong2.Designer.cs",
+  "SelectedNode": "\\NhanVienPage\\QuanLyDonTuDuyetDon.cs",
   "PreviewInSolutionExplorer": false
 }

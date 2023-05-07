@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.CustomControls;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.AdminPage;
 
 namespace WinFormsApp2.NhanVienPage
 {
     public partial class QuanLyChamCongBangChamCong : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         public QuanLyChamCongBangChamCong()
         {
             InitializeComponent();
-            cb_month.SelectedIndex = 0;
+            cb_Month.SelectedIndex = 0;
             calendar.cellClickEvent = (sender, e) =>
             {
                 int day = Int32.Parse(((CalendarCell)sender).getDay().Text);
@@ -25,15 +29,16 @@ namespace WinFormsApp2.NhanVienPage
                 form.ShowDialog();
                 this.Close();
             };
-           
 
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("vi-VN");
         }
 
         private void QuanLyChamCongBangChamCong_Load(object sender, EventArgs e)
         {
             calendar.setParentForm(this);
             calendar.SetMonthYear(DateTime.Now.Month, DateTime.Now.Year);
-            cb_month.SelectedIndex = 0;
+            cb_Month.SelectedIndex = 0;
 
             calendar.getCellAtDay(7).setOff();
             calendar.getCellAtDay(6).setCa(9, 30, 10, 0, 1);
@@ -42,8 +47,8 @@ namespace WinFormsApp2.NhanVienPage
 
         private void cb_month_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int month = Int32.Parse(cb_month.SelectedItem.ToString().Split("/")[0]);
-            int year = Int32.Parse(cb_month.SelectedItem.ToString().Split("/")[1]);
+            int month = Int32.Parse(cb_Month.SelectedItem.ToString().Split("/")[0]);
+            int year = Int32.Parse(cb_Month.SelectedItem.ToString().Split("/")[1]);
             calendar.SetMonthYear(month, year);
             calendar.Reload();
         }
@@ -94,6 +99,22 @@ namespace WinFormsApp2.NhanVienPage
             this.Hide();
             form.ShowDialog();
             this.Close();
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_StaffProfile.Text = rm.GetString("staffProfileText", culture);
+            btn_WorkScheduleManagement.Text = rm.GetString("workScheduleManagementText", culture);
+            btn_TimekeepingManagement.Text = rm.GetString("timekeepingManagementText", culture);
+            btn_letter.Text = rm.GetString("letterText", culture);
+            btn_PayRoll.Text = rm.GetString("payrollText", culture);
+            lbl_Month.Text = rm.GetString("monthText", culture);
+            lbl_Timekeeping.Text = rm.GetString("timekeepingText", culture);
+            
         }
     }
 }

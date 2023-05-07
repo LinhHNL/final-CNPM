@@ -229,7 +229,7 @@
     <value>Ngày/ Giờ</value>
   </data>
   <data name="dayoffText" xml:space="preserve">
-    <value>Số ngày nghỉ</value>
+    <value>Nghỉ</value>
   </data>
   <data name="daysoffWithoutPermissionText" xml:space="preserve">
     <value>Số ngày nghỉ không phép</value>
@@ -510,6 +510,12 @@
   <data name="quantityText" xml:space="preserve">
     <value>Hài lòng</value>
   </data>
+  <data name="reasonDescriptionText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="reasonText" xml:space="preserve">
+    <value>Lý do</value>
+  </data>
   <data name="rejectedText" xml:space="preserve">
     <value>Không duyệt</value>
   </data>
@@ -618,12 +624,6 @@
   <data name="stockManagementText" xml:space="preserve">
     <value>Quản lý kho hàng</value>
   </data>
-  <data name="String132" xml:space="preserve">
-    <value>reasonDescriptionText</value>
-  </data>
-  <data name="String133" xml:space="preserve">
-    <value>reasonText</value>
-  </data>
   <data name="sundayText" xml:space="preserve">
     <value>Chủ nhật</value>
   </data>
@@ -641,6 +641,9 @@
   </data>
   <data name="timekeepingManagementText" xml:space="preserve">
     <value>Quản lý chấm công</value>
+  </data>
+  <data name="timekeepingTableText" xml:space="preserve">
+    <value>Bảng chấm công</value>
   </data>
   <data name="timekeepingText" xml:space="preserve">
     <value>Chấm công</value>
@@ -662,6 +665,9 @@
   </data>
   <data name="tuesdayText" xml:space="preserve">
     <value>Thứ ba</value>
+  </data>
+  <data name="undertakingRoomText" xml:space="preserve">
+    <value>Loại phòng đảm nhận</value>
   </data>
   <data name="unionMoneyText" xml:space="preserve">
     <value>Tiền công đoàn</value>
