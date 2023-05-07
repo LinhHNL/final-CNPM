@@ -237,8 +237,14 @@
   <data name="currentPasswordText" xml:space="preserve">
     <value>Mật khẩu hiện tại</value>
   </data>
+  <data name="customerIDNameText" xml:space="preserve">
+    <value>Mã/ Tên khách hàng</value>
+  </data>
   <data name="customerIDText" xml:space="preserve">
     <value>Mã khách hàng</value>
+  </data>
+  <data name="customerListText" xml:space="preserve">
+    <value>Danh sách khách hàng</value>
   </data>
   <data name="customerManagementText" xml:space="preserve">
     <value>Quản lý khách hàng</value>
@@ -452,6 +458,9 @@
   </data>
   <data name="membershipLevelText" xml:space="preserve">
     <value>Xếp hạng thành viên</value>
+  </data>
+  <data name="membershipTypeText" xml:space="preserve">
+    <value>Loại thành viên</value>
   </data>
   <data name="moderateText" xml:space="preserve">
     <value>Bình thường</value>

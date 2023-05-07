@@ -269,8 +269,14 @@
   <data name="currentPasswordText" xml:space="preserve">
     <value>Current password</value>
   </data>
+  <data name="customerIDNameText" xml:space="preserve">
+    <value>Customer ID/ Name</value>
+  </data>
   <data name="customerIDText" xml:space="preserve">
     <value>Customer ID</value>
+  </data>
+  <data name="customerListText" xml:space="preserve">
+    <value>Customer list</value>
   </data>
   <data name="customerManagementText" xml:space="preserve">
     <value>Customer management</value>
@@ -543,6 +549,9 @@
   <data name="membershipLevelText" xml:space="preserve">
     <value>Membership level</value>
     <comment>1</comment>
+  </data>
+  <data name="membershipTypeText" xml:space="preserve">
+    <value>Membership type</value>
   </data>
   <data name="moderateText" xml:space="preserve">
     <value>Moderate</value>
