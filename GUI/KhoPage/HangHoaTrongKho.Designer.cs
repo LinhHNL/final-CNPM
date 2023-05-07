@@ -37,42 +37,42 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
+            this.pb_AccountIcon = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_NhapHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_XuatHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_HangTrongKho = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_KiemKho = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_XuatFile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Import = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Export = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_InStock = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_InventoryControl = new WinFormsApp2.CustomControls.RoundedButton();
+            this.pictureBoxBrand = new System.Windows.Forms.PictureBox();
+            this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_ExportFile = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.btn_Them = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Xoa = new WinFormsApp2.CustomControls.RoundedButton();
-            this.dgv_HangTrongKho = new MetroFramework.Controls.MetroGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Add = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Delete = new WinFormsApp2.CustomControls.RoundedButton();
+            this.dgv_InStock = new MetroFramework.Controls.MetroGrid();
+            this.CommodityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CommodityName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ImportDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_HangTrongKho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_InStock)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.label4);
-            this.metroPanel1.Controls.Add(this.pictureBox2);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
+            this.metroPanel1.Controls.Add(this.pb_AccountIcon);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_NhapHang);
-            this.metroPanel1.Controls.Add(this.btn_XuatHang);
-            this.metroPanel1.Controls.Add(this.btn_HangTrongKho);
-            this.metroPanel1.Controls.Add(this.btn_KiemKho);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.Controls.Add(this.btn_Import);
+            this.metroPanel1.Controls.Add(this.btn_Export);
+            this.metroPanel1.Controls.Add(this.btn_InStock);
+            this.metroPanel1.Controls.Add(this.btn_InventoryControl);
+            this.metroPanel1.Controls.Add(this.pictureBoxBrand);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
@@ -84,25 +84,25 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // label4
+            // lbl_AccountName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 86);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
-            // pictureBox2
+            // pb_AccountIcon
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.pb_AccountIcon.Image = ((System.Drawing.Image)(resources.GetObject("pb_AccountIcon.Image")));
+            this.pb_AccountIcon.Location = new System.Drawing.Point(34, 88);
+            this.pb_AccountIcon.Name = "pb_AccountIcon";
+            this.pb_AccountIcon.Size = new System.Drawing.Size(30, 26);
+            this.pb_AccountIcon.TabIndex = 21;
+            this.pb_AccountIcon.TabStop = false;
             // 
             // metroPanel7
             // 
@@ -118,138 +118,137 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // btn_NhapHang
+            // btn_Import
             // 
-            this.btn_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_NhapHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_NhapHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_NhapHang.BorderRadius = 0;
-            this.btn_NhapHang.BorderSize = 0;
-            this.btn_NhapHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhapHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_NhapHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_NhapHang.Location = new System.Drawing.Point(-1, 302);
-            this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_NhapHang.Name = "btn_NhapHang";
-            this.btn_NhapHang.Size = new System.Drawing.Size(263, 64);
-            this.btn_NhapHang.TabIndex = 18;
-            this.btn_NhapHang.Text = "Nhập hàng";
-            this.btn_NhapHang.TextColor = System.Drawing.Color.Black;
-            this.btn_NhapHang.UseVisualStyleBackColor = false;
-            this.btn_NhapHang.Visible = false;
+            this.btn_Import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Import.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Import.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Import.BorderRadius = 0;
+            this.btn_Import.BorderSize = 0;
+            this.btn_Import.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Import.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Import.ForeColor = System.Drawing.Color.Black;
+            this.btn_Import.Location = new System.Drawing.Point(-1, 302);
+            this.btn_Import.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Import.Name = "btn_Import";
+            this.btn_Import.Size = new System.Drawing.Size(263, 64);
+            this.btn_Import.TabIndex = 18;
+            this.btn_Import.Text = "Nhập hàng";
+            this.btn_Import.TextColor = System.Drawing.Color.Black;
+            this.btn_Import.UseVisualStyleBackColor = false;
+            this.btn_Import.Visible = false;
             // 
-            // btn_XuatHang
+            // btn_Export
             // 
-            this.btn_XuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_XuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_XuatHang.BorderColor = System.Drawing.Color.Silver;
-            this.btn_XuatHang.BorderRadius = 0;
-            this.btn_XuatHang.BorderSize = 0;
-            this.btn_XuatHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_XuatHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_XuatHang.Location = new System.Drawing.Point(-1, 243);
-            this.btn_XuatHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatHang.Name = "btn_XuatHang";
-            this.btn_XuatHang.Size = new System.Drawing.Size(264, 64);
-            this.btn_XuatHang.TabIndex = 17;
-            this.btn_XuatHang.Text = "Xuất hàng";
-            this.btn_XuatHang.TextColor = System.Drawing.Color.Black;
-            this.btn_XuatHang.UseVisualStyleBackColor = false;
-            this.btn_XuatHang.Visible = false;
+            this.btn_Export.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Export.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Export.BorderColor = System.Drawing.Color.Silver;
+            this.btn_Export.BorderRadius = 0;
+            this.btn_Export.BorderSize = 0;
+            this.btn_Export.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Export.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Export.ForeColor = System.Drawing.Color.Black;
+            this.btn_Export.Location = new System.Drawing.Point(-1, 243);
+            this.btn_Export.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(264, 64);
+            this.btn_Export.TabIndex = 17;
+            this.btn_Export.Text = "Xuất hàng";
+            this.btn_Export.TextColor = System.Drawing.Color.Black;
+            this.btn_Export.UseVisualStyleBackColor = false;
+            this.btn_Export.Visible = false;
             // 
-            // btn_HangTrongKho
+            // btn_InStock
             // 
-            this.btn_HangTrongKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HangTrongKho.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HangTrongKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_HangTrongKho.BorderRadius = 0;
-            this.btn_HangTrongKho.BorderSize = 0;
-            this.btn_HangTrongKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_HangTrongKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HangTrongKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HangTrongKho.ForeColor = System.Drawing.Color.White;
-            this.btn_HangTrongKho.Location = new System.Drawing.Point(0, 130);
-            this.btn_HangTrongKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_HangTrongKho.Name = "btn_HangTrongKho";
-            this.btn_HangTrongKho.Size = new System.Drawing.Size(262, 60);
-            this.btn_HangTrongKho.TabIndex = 16;
-            this.btn_HangTrongKho.Text = "Hàng trong kho";
-            this.btn_HangTrongKho.TextColor = System.Drawing.Color.White;
-            this.btn_HangTrongKho.UseVisualStyleBackColor = false;
-            
+            this.btn_InStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_InStock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_InStock.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_InStock.BorderRadius = 0;
+            this.btn_InStock.BorderSize = 0;
+            this.btn_InStock.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_InStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InStock.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_InStock.ForeColor = System.Drawing.Color.White;
+            this.btn_InStock.Location = new System.Drawing.Point(0, 130);
+            this.btn_InStock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_InStock.Name = "btn_InStock";
+            this.btn_InStock.Size = new System.Drawing.Size(262, 60);
+            this.btn_InStock.TabIndex = 16;
+            this.btn_InStock.Text = "Hàng trong kho";
+            this.btn_InStock.TextColor = System.Drawing.Color.White;
+            this.btn_InStock.UseVisualStyleBackColor = false;
             // 
-            // btn_KiemKho
+            // btn_InventoryControl
             // 
-            this.btn_KiemKho.BackColor = System.Drawing.Color.White;
-            this.btn_KiemKho.BackgroundColor = System.Drawing.Color.White;
-            this.btn_KiemKho.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_KiemKho.BorderRadius = 0;
-            this.btn_KiemKho.BorderSize = 0;
-            this.btn_KiemKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_KiemKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_KiemKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_KiemKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_KiemKho.Location = new System.Drawing.Point(0, 189);
-            this.btn_KiemKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_KiemKho.Name = "btn_KiemKho";
-            this.btn_KiemKho.Size = new System.Drawing.Size(262, 56);
-            this.btn_KiemKho.TabIndex = 16;
-            this.btn_KiemKho.Text = "Kiểm kho";
-            this.btn_KiemKho.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_KiemKho.UseVisualStyleBackColor = false;
-            this.btn_KiemKho.Click += new System.EventHandler(this.btn_KiemKho_Click);
+            this.btn_InventoryControl.BackColor = System.Drawing.Color.White;
+            this.btn_InventoryControl.BackgroundColor = System.Drawing.Color.White;
+            this.btn_InventoryControl.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_InventoryControl.BorderRadius = 0;
+            this.btn_InventoryControl.BorderSize = 0;
+            this.btn_InventoryControl.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_InventoryControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InventoryControl.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_InventoryControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_InventoryControl.Location = new System.Drawing.Point(0, 189);
+            this.btn_InventoryControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_InventoryControl.Name = "btn_InventoryControl";
+            this.btn_InventoryControl.Size = new System.Drawing.Size(262, 56);
+            this.btn_InventoryControl.TabIndex = 16;
+            this.btn_InventoryControl.Text = "Kiểm kho";
+            this.btn_InventoryControl.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_InventoryControl.UseVisualStyleBackColor = false;
+            this.btn_InventoryControl.Click += new System.EventHandler(this.btn_KiemKho_Click);
             // 
-            // pictureBox1
+            // pictureBoxBrand
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxBrand.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxBrand.Image")));
+            this.pictureBoxBrand.Location = new System.Drawing.Point(100, 14);
+            this.pictureBoxBrand.Name = "pictureBoxBrand";
+            this.pictureBoxBrand.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxBrand.TabIndex = 16;
+            this.pictureBoxBrand.TabStop = false;
             // 
-            // roundedButton10
+            // btn_SignOut
             // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton10.BorderRadius = 8;
-            this.roundedButton10.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1042, 37);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton10.TabIndex = 22;
-            this.roundedButton10.Text = "Đăng xuất";
-            this.roundedButton10.TextColor = System.Drawing.Color.White;
-            this.roundedButton10.UseVisualStyleBackColor = false;
+            this.btn_SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_SignOut.BorderRadius = 8;
+            this.btn_SignOut.BorderSize = 0;
+            this.btn_SignOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_SignOut.ForeColor = System.Drawing.Color.White;
+            this.btn_SignOut.Location = new System.Drawing.Point(1042, 37);
+            this.btn_SignOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_SignOut.Name = "btn_SignOut";
+            this.btn_SignOut.Size = new System.Drawing.Size(117, 35);
+            this.btn_SignOut.TabIndex = 22;
+            this.btn_SignOut.Text = "Đăng xuất";
+            this.btn_SignOut.TextColor = System.Drawing.Color.White;
+            this.btn_SignOut.UseVisualStyleBackColor = false;
             // 
-            // btn_XuatFile
+            // btn_ExportFile
             // 
-            this.btn_XuatFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_XuatFile.BorderRadius = 8;
-            this.btn_XuatFile.BorderSize = 1;
-            this.btn_XuatFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_XuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatFile.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_XuatFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.Location = new System.Drawing.Point(1042, 80);
-            this.btn_XuatFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatFile.Name = "btn_XuatFile";
-            this.btn_XuatFile.Size = new System.Drawing.Size(117, 35);
-            this.btn_XuatFile.TabIndex = 30;
-            this.btn_XuatFile.Text = "Xuất file";
-            this.btn_XuatFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.UseVisualStyleBackColor = false;
+            this.btn_ExportFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_ExportFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_ExportFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.btn_ExportFile.BorderRadius = 8;
+            this.btn_ExportFile.BorderSize = 1;
+            this.btn_ExportFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_ExportFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ExportFile.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_ExportFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_ExportFile.Location = new System.Drawing.Point(1042, 80);
+            this.btn_ExportFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_ExportFile.Name = "btn_ExportFile";
+            this.btn_ExportFile.Size = new System.Drawing.Size(117, 35);
+            this.btn_ExportFile.TabIndex = 30;
+            this.btn_ExportFile.Text = "Xuất file";
+            this.btn_ExportFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_ExportFile.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
@@ -296,58 +295,58 @@
             this.metroGrid1.Size = new System.Drawing.Size(8, 8);
             this.metroGrid1.TabIndex = 31;
             // 
-            // btn_Them
+            // btn_Add
             // 
-            this.btn_Them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Them.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Them.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_Them.BorderRadius = 8;
-            this.btn_Them.BorderSize = 1;
-            this.btn_Them.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Them.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Them.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Them.Location = new System.Drawing.Point(932, 80);
-            this.btn_Them.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(104, 35);
-            this.btn_Them.TabIndex = 33;
-            this.btn_Them.Text = "+ Thêm";
-            this.btn_Them.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Them.UseVisualStyleBackColor = false;
-            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_Add.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_Add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.btn_Add.BorderRadius = 8;
+            this.btn_Add.BorderSize = 1;
+            this.btn_Add.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Add.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Add.Location = new System.Drawing.Point(932, 80);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(104, 35);
+            this.btn_Add.TabIndex = 33;
+            this.btn_Add.Text = "+ Thêm";
+            this.btn_Add.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // btn_Xoa
+            // btn_Delete
             // 
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Xoa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_Xoa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_Xoa.BorderRadius = 8;
-            this.btn_Xoa.BorderSize = 1;
-            this.btn_Xoa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Xoa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Xoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Xoa.Location = new System.Drawing.Point(847, 80);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(79, 35);
-            this.btn_Xoa.TabIndex = 34;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_Delete.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_Delete.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.btn_Delete.BorderRadius = 8;
+            this.btn_Delete.BorderSize = 1;
+            this.btn_Delete.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Delete.Location = new System.Drawing.Point(847, 80);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(79, 35);
+            this.btn_Delete.TabIndex = 34;
+            this.btn_Delete.Text = "Xóa";
+            this.btn_Delete.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Delete.UseVisualStyleBackColor = false;
             // 
-            // dgv_HangTrongKho
+            // dgv_InStock
             // 
-            this.dgv_HangTrongKho.AllowUserToResizeRows = false;
+            this.dgv_InStock.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
-            this.dgv_HangTrongKho.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_HangTrongKho.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_HangTrongKho.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgv_HangTrongKho.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgv_HangTrongKho.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgv_HangTrongKho.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgv_InStock.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_InStock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_InStock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dgv_InStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_InStock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgv_InStock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -355,14 +354,14 @@
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_HangTrongKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgv_HangTrongKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_HangTrongKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.dgv_InStock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgv_InStock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_InStock.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CommodityID,
+            this.CommodityName,
+            this.Unit,
+            this.Quantity,
+            this.ImportDate});
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -370,13 +369,13 @@
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_HangTrongKho.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgv_HangTrongKho.EnableHeadersVisualStyles = false;
-            this.dgv_HangTrongKho.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.dgv_HangTrongKho.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
-            this.dgv_HangTrongKho.Location = new System.Drawing.Point(265, 123);
-            this.dgv_HangTrongKho.Name = "dgv_HangTrongKho";
-            this.dgv_HangTrongKho.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgv_InStock.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_InStock.EnableHeadersVisualStyles = false;
+            this.dgv_InStock.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dgv_InStock.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this.dgv_InStock.Location = new System.Drawing.Point(265, 123);
+            this.dgv_InStock.Name = "dgv_InStock";
+            this.dgv_InStock.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -384,73 +383,73 @@
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_HangTrongKho.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgv_HangTrongKho.RowHeadersVisible = false;
-            this.dgv_HangTrongKho.RowHeadersWidth = 51;
-            this.dgv_HangTrongKho.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgv_HangTrongKho.RowTemplate.Height = 29;
-            this.dgv_HangTrongKho.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_HangTrongKho.Size = new System.Drawing.Size(905, 463);
-            this.dgv_HangTrongKho.TabIndex = 35;
+            this.dgv_InStock.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgv_InStock.RowHeadersVisible = false;
+            this.dgv_InStock.RowHeadersWidth = 51;
+            this.dgv_InStock.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_InStock.RowTemplate.Height = 29;
+            this.dgv_InStock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_InStock.Size = new System.Drawing.Size(905, 463);
+            this.dgv_InStock.TabIndex = 35;
             // 
-            // Column1
+            // CommodityID
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.FillWeight = 1F;
-            this.Column1.HeaderText = "Mã hàng hóa";
-            this.Column1.MinimumWidth = 150;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.CommodityID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CommodityID.FillWeight = 1F;
+            this.CommodityID.HeaderText = "Mã hàng hóa";
+            this.CommodityID.MinimumWidth = 150;
+            this.CommodityID.Name = "CommodityID";
+            this.CommodityID.ReadOnly = true;
             // 
-            // Column2
+            // CommodityName
             // 
-            this.Column2.FillWeight = 3F;
-            this.Column2.HeaderText = "Tên hàng hóa";
-            this.Column2.MinimumWidth = 300;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.CommodityName.FillWeight = 3F;
+            this.CommodityName.HeaderText = "Tên hàng hóa";
+            this.CommodityName.MinimumWidth = 300;
+            this.CommodityName.Name = "CommodityName";
+            this.CommodityName.ReadOnly = true;
             // 
-            // Column3
+            // Unit
             // 
-            this.Column3.FillWeight = 1F;
-            this.Column3.HeaderText = "Đơn vị tính";
-            this.Column3.MinimumWidth = 150;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.Unit.FillWeight = 1F;
+            this.Unit.HeaderText = "Đơn vị tính";
+            this.Unit.MinimumWidth = 150;
+            this.Unit.Name = "Unit";
+            this.Unit.ReadOnly = true;
             // 
-            // Column4
+            // Quantity
             // 
-            this.Column4.FillWeight = 1F;
-            this.Column4.HeaderText = "Số lượng";
-            this.Column4.MinimumWidth = 150;
-            this.Column4.Name = "Column4";
+            this.Quantity.FillWeight = 1F;
+            this.Quantity.HeaderText = "Số lượng";
+            this.Quantity.MinimumWidth = 150;
+            this.Quantity.Name = "Quantity";
             // 
-            // Column5
+            // ImportDate
             // 
-            this.Column5.FillWeight = 1F;
-            this.Column5.HeaderText = "Ngày nhập";
-            this.Column5.MinimumWidth = 150;
-            this.Column5.Name = "Column5";
+            this.ImportDate.FillWeight = 1F;
+            this.ImportDate.HeaderText = "Ngày nhập";
+            this.ImportDate.MinimumWidth = 150;
+            this.ImportDate.Name = "ImportDate";
             // 
             // HangHoaTrongKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.dgv_HangTrongKho);
-            this.Controls.Add(this.btn_Xoa);
-            this.Controls.Add(this.btn_Them);
+            this.Controls.Add(this.dgv_InStock);
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.btn_XuatFile);
-            this.Controls.Add(this.roundedButton10);
+            this.Controls.Add(this.btn_ExportFile);
+            this.Controls.Add(this.btn_SignOut);
             this.Controls.Add(this.metroPanel1);
             this.Name = "HangHoaTrongKho";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBrand)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_HangTrongKho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_InStock)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -459,23 +458,23 @@
 
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_NhapHang;
-        private CustomControls.RoundedButton btn_XuatHang;
-        private CustomControls.RoundedButton btn_HangTrongKho;
-        private CustomControls.RoundedButton btn_KiemKho;
-        private PictureBox pictureBox1;
-        private CustomControls.RoundedButton roundedButton10;
-        private PictureBox pictureBox2;
-        private Label label4;
-        private CustomControls.RoundedButton btn_XuatFile;
+        private CustomControls.RoundedButton btn_Import;
+        private CustomControls.RoundedButton btn_Export;
+        private CustomControls.RoundedButton btn_InStock;
+        private CustomControls.RoundedButton btn_InventoryControl;
+        private PictureBox pictureBoxBrand;
+        private CustomControls.RoundedButton btn_SignOut;
+        private PictureBox pb_AccountIcon;
+        private Label lbl_AccountName;
+        private CustomControls.RoundedButton btn_ExportFile;
         private MetroFramework.Controls.MetroGrid metroGrid1;
-        private CustomControls.RoundedButton btn_Them;
-        private CustomControls.RoundedButton btn_Xoa;
-        private MetroFramework.Controls.MetroGrid dgv_HangTrongKho;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private DataGridViewTextBoxColumn Column4;
-        private DataGridViewTextBoxColumn Column5;
+        private CustomControls.RoundedButton btn_Add;
+        private CustomControls.RoundedButton btn_Delete;
+        private MetroFramework.Controls.MetroGrid dgv_InStock;
+        private DataGridViewTextBoxColumn CommodityID;
+        private DataGridViewTextBoxColumn CommodityName;
+        private DataGridViewTextBoxColumn Unit;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewTextBoxColumn ImportDate;
     }
 }

@@ -165,6 +165,9 @@
     <value>Approve</value>
     <comment>Staff management</comment>
   </data>
+  <data name="assignShiftText" xml:space="preserve">
+    <value>Assign work shift</value>
+  </data>
   <data name="backText" xml:space="preserve">
     <value>Back</value>
     <comment>1</comment>
@@ -209,6 +212,9 @@
     <value>Choose dishes</value>
     <comment>1</comment>
   </data>
+  <data name="commodityAddText" xml:space="preserve">
+    <value>Add commodity</value>
+  </data>
   <data name="commodityIDNameText" xml:space="preserve">
     <value>Commodity ID/ Name</value>
     <comment>1</comment>
@@ -244,6 +250,9 @@
   <data name="currentAddressText" xml:space="preserve">
     <value>Current address</value>
     <comment>1</comment>
+  </data>
+  <data name="customerIDText" xml:space="preserve">
+    <value>Customer ID</value>
   </data>
   <data name="customerManagementText" xml:space="preserve">
     <value>Customer management</value>
@@ -334,12 +343,15 @@
     <comment>1</comment>
   </data>
   <data name="exportFileText" xml:space="preserve">
-    <value>Export</value>
+    <value>Export File</value>
     <comment>1</comment>
   </data>
   <data name="exportIDText" xml:space="preserve">
     <value>Export ID</value>
     <comment>1</comment>
+  </data>
+  <data name="exportNoteAddText" xml:space="preserve">
+    <value>+ Export note</value>
   </data>
   <data name="exportNoteText" xml:space="preserve">
     <value>Export note</value>
@@ -348,6 +360,9 @@
   <data name="exportText" xml:space="preserve">
     <value>Export</value>
     <comment>1</comment>
+  </data>
+  <data name="exportText2" xml:space="preserve">
+    <value>Export</value>
   </data>
   <data name="feedbackOnServiceText" xml:space="preserve">
     <value>Feedback on our restaurant service</value>
@@ -405,9 +420,15 @@
     <value>Importer</value>
     <comment>1</comment>
   </data>
+  <data name="importExportText" xml:space="preserve">
+    <value>Import - Export</value>
+  </data>
   <data name="importIDText" xml:space="preserve">
     <value>Import ID</value>
     <comment>1</comment>
+  </data>
+  <data name="importNoteAddText" xml:space="preserve">
+    <value>+ Import note</value>
   </data>
   <data name="importNoteText" xml:space="preserve">
     <value>Import note</value>
@@ -416,6 +437,12 @@
   <data name="importText" xml:space="preserve">
     <value>Import</value>
     <comment>1</comment>
+  </data>
+  <data name="importText2" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="inStockQuantityText" xml:space="preserve">
+    <value>In stock quantity</value>
   </data>
   <data name="inStockText" xml:space="preserve">
     <value>In stock</value>
@@ -525,6 +552,9 @@
     <value>Newly added dishes</value>
     <comment>1</comment>
   </data>
+  <data name="notificationText" xml:space="preserve">
+    <value>Notification</value>
+  </data>
   <data name="numberText" xml:space="preserve">
     <value>No.</value>
     <comment>1</comment>
@@ -556,6 +586,9 @@
   <data name="parkingAllowanceText" xml:space="preserve">
     <value>Parking allowance</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="passwordResetText" xml:space="preserve">
+    <value>Reset password</value>
   </data>
   <data name="passwordText" xml:space="preserve">
     <value>Password</value>
@@ -629,9 +662,18 @@
     <value>Price</value>
     <comment>1</comment>
   </data>
+  <data name="productIDText" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="productNameText" xml:space="preserve">
+    <value>Product name</value>
+  </data>
   <data name="profileText" xml:space="preserve">
     <value>Profile</value>
     <comment>1</comment>
+  </data>
+  <data name="profitText" xml:space="preserve">
+    <value>Profit</value>
   </data>
   <data name="qualityRatingText" xml:space="preserve">
     <value>Quality rating</value>
@@ -672,6 +714,9 @@
   <data name="revenueBonusText" xml:space="preserve">
     <value>Revenue bonus</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="revenueText" xml:space="preserve">
+    <value>Revenue</value>
   </data>
   <data name="satisfactoryText" xml:space="preserve">
     <value>Satisfactory</value>
@@ -741,6 +786,9 @@
     <value>Sold out</value>
     <comment>1</comment>
   </data>
+  <data name="soldProductsText" xml:space="preserve">
+    <value>Sold products</value>
+  </data>
   <data name="specialOfferCodeText" xml:space="preserve">
     <value>Special offer code</value>
     <comment>1</comment>
@@ -769,9 +817,15 @@
     <value>Staff management</value>
     <comment>1</comment>
   </data>
+  <data name="staffNameText" xml:space="preserve">
+    <value>Staff name</value>
+  </data>
   <data name="staffProfileText" xml:space="preserve">
     <value>Staff profile</value>
     <comment>1</comment>
+  </data>
+  <data name="staffSalaryText" xml:space="preserve">
+    <value>Staff salary</value>
   </data>
   <data name="staffText" xml:space="preserve">
     <value>Staff</value>
@@ -792,6 +846,9 @@
   <data name="stockManagementText" xml:space="preserve">
     <value>Stock management</value>
     <comment>1</comment>
+  </data>
+  <data name="stockText" xml:space="preserve">
+    <value>Stock</value>
   </data>
   <data name="sundayText" xml:space="preserve">
     <value>Sunday</value>
@@ -827,6 +884,9 @@
   <data name="timeText" xml:space="preserve">
     <value>Time</value>
     <comment>1</comment>
+  </data>
+  <data name="totalCapitalText" xml:space="preserve">
+    <value>Total capital</value>
   </data>
   <data name="totalSalaryText" xml:space="preserve">
     <value>Total salary</value>
