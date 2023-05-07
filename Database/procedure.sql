@@ -1645,10 +1645,14 @@ CREATE PROCEDURE InsertTempBill
     @Price FLOAT
 AS
 BEGIN
+	Declare  @id int
     INSERT INTO TempBill (CustomerId, Status, Price)
     VALUES (@CustomerId, @Status, @Price)
+	set @id = SCOPE_IDENTITY()
+	Select @id as TempBilID
 END
 GO
+
 ---Update TempBill 
 CREATE PROCEDURE UpdateTempBill
     @Id INT,

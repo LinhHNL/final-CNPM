@@ -118,7 +118,7 @@ namespace WinFormsApp2
             roundedButton7.TextColor = ColorTranslator.FromHtml("#A09F9F");
             roundedButton8.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton8.TextColor = ColorTranslator.FromHtml("#A09F9F");
-           
+
         }
 
         private void roundedButton4_Click(object sender, EventArgs e)
