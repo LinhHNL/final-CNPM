@@ -672,6 +672,9 @@
     <value>Personal income tax</value>
     <comment>Staff management</comment>
   </data>
+  <data name="personalInfoText" xml:space="preserve">
+    <value>Personal information</value>
+  </data>
   <data name="phoneText" xml:space="preserve">
     <value>Phone Number</value>
     <comment>1</comment>
