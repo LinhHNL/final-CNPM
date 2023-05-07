@@ -7,19 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Resources;
 
 namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoXuatHang : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         public KiemKhoXuatHang()
         {
             InitializeComponent();
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
-            dgv_XuatHang.Rows.Add("0", "asd", "asd");
+            dgv_Export.Rows.Add("0", "asd", "asd");
+            dgv_Export.Rows.Add("0", "asd", "asd");
+            dgv_Export.Rows.Add("0", "asd", "asd");
+            dgv_Export.Rows.Add("0", "asd", "asd");
+            dgv_Export.Rows.Add("0", "asd", "asd");
+            SetLanguage("en-US");
         }
 
         private void btn_PhieuXuatHang_Click(object sender, EventArgs e)
@@ -31,12 +35,12 @@ namespace WinFormsApp2.KhoPage
         }
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
         {
-            btn_HangTrongKho.ForeColor = ColorTranslator.FromHtml("white");
-            btn_HangTrongKho.BackColor = ColorTranslator.FromHtml("#E50111");
-            btn_KiemKho.ForeColor = ColorTranslator.FromHtml("#A09F9F");
-            btn_KiemKho.BackColor = ColorTranslator.FromHtml("white");
-            btn_NhapHang.Visible = false;
-            btn_XuatHang.Visible = false;
+            btn_InStock.ForeColor = ColorTranslator.FromHtml("white");
+            btn_InStock.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_InventoryControl.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_InventoryControl.BackColor = ColorTranslator.FromHtml("white");
+            btn_Import.Visible = false;
+            btn_Export.Visible = false;
             this.Hide();
             HangHoaTrongKho form = new HangHoaTrongKho();
             form.ShowDialog();
@@ -44,11 +48,30 @@ namespace WinFormsApp2.KhoPage
         }
         private void btn_NhapHang_Click(object sender, EventArgs e)
         {
-            btn_NhapHang.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_Import.ForeColor = ColorTranslator.FromHtml("#A09F9F");
             this.Hide();
             KiemKhoNhapHang form = new KiemKhoNhapHang();
             form.ShowDialog();
             this.Close();
         }
+
+        public void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
+                             typeof(KiemKhoSuaPhieuXuatHang).Assembly);
+            btn_InStock.Text = rm.GetString("inStockText", culture);
+            btn_InventoryControl.Text = rm.GetString("inventoryControlText", culture);
+            btn_Import.Text = rm.GetString("importText", culture);
+            btn_Export.Text = rm.GetString("exportText", culture);
+            btn_SignOut.Text = rm.GetString("signoutText", culture);
+            btn_ExportNoteAdd.Text = rm.GetString("exportNoteAddText", culture);
+            ExportID.HeaderText = rm.GetString("exportIDText", culture);
+            Exporter.HeaderText = rm.GetString("exporterText", culture);
+            DayHour.HeaderText = rm.GetString("dayHourText", culture);
+            lbl_Export.Text = rm.GetString("exportText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+        }
+
     }
 }

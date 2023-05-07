@@ -29,274 +29,274 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XemThongTinHangHoa));
-            this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_save = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_MaHang = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tb_TenHang = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.tb_NgayNhap = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.tb_Donvitinh = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.tb_SoLuong = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btn_edit = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Save = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_CommodityInfo = new System.Windows.Forms.Label();
+            this.tb_CommodityID = new WinFormsApp2.CustomControls.RoundedTextBox();
+            this.lbl_CommodityID = new System.Windows.Forms.Label();
+            this.tb_CommodityName = new WinFormsApp2.CustomControls.RoundedTextBox();
+            this.tb_ImportDate = new WinFormsApp2.CustomControls.RoundedTextBox();
+            this.tb_Unit = new WinFormsApp2.CustomControls.RoundedTextBox();
+            this.tb_Quantity = new WinFormsApp2.CustomControls.RoundedTextBox();
+            this.lbl_Unit = new System.Windows.Forms.Label();
+            this.lbl_ImportDate = new System.Windows.Forms.Label();
+            this.lbl_CommodityName = new System.Windows.Forms.Label();
+            this.lbl_Quantity = new System.Windows.Forms.Label();
+            this.btn_Edit = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_NhapHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_XuatHang = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_HangTrongKho = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_KiemKho = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Import = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Export = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_InStock = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_InventoryControl = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // roundedButton10
+            // btn_SignOut
             // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton10.BorderRadius = 8;
-            this.roundedButton10.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1042, 37);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton10.TabIndex = 22;
-            this.roundedButton10.Text = "Đăng xuất";
-            this.roundedButton10.TextColor = System.Drawing.Color.White;
-            this.roundedButton10.UseVisualStyleBackColor = false;
+            this.btn_SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_SignOut.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_SignOut.BorderRadius = 8;
+            this.btn_SignOut.BorderSize = 0;
+            this.btn_SignOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_SignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_SignOut.ForeColor = System.Drawing.Color.White;
+            this.btn_SignOut.Location = new System.Drawing.Point(1042, 37);
+            this.btn_SignOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_SignOut.Name = "btn_SignOut";
+            this.btn_SignOut.Size = new System.Drawing.Size(117, 35);
+            this.btn_SignOut.TabIndex = 22;
+            this.btn_SignOut.Text = "Đăng xuất";
+            this.btn_SignOut.TextColor = System.Drawing.Color.White;
+            this.btn_SignOut.UseVisualStyleBackColor = false;
             // 
-            // btn_save
+            // btn_Save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_save.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_save.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_save.BorderRadius = 8;
-            this.btn_save.BorderSize = 1;
-            this.btn_save.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(669, 438);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(83, 35);
-            this.btn_save.TabIndex = 28;
-            this.btn_save.Text = "Lưu";
-            this.btn_save.TextColor = System.Drawing.Color.White;
-            this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btn_Save.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btn_Save.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.btn_Save.BorderRadius = 8;
+            this.btn_Save.BorderSize = 1;
+            this.btn_Save.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Save.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Save.ForeColor = System.Drawing.Color.White;
+            this.btn_Save.Location = new System.Drawing.Point(669, 438);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(83, 35);
+            this.btn_Save.TabIndex = 28;
+            this.btn_Save.Text = "Lưu";
+            this.btn_Save.TextColor = System.Drawing.Color.White;
+            this.btn_Save.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lbl_CommodityInfo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(276, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 35);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Thông tin hàng hóa";
+            this.lbl_CommodityInfo.AutoSize = true;
+            this.lbl_CommodityInfo.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_CommodityInfo.Location = new System.Drawing.Point(276, 81);
+            this.lbl_CommodityInfo.Name = "lbl_CommodityInfo";
+            this.lbl_CommodityInfo.Size = new System.Drawing.Size(237, 35);
+            this.lbl_CommodityInfo.TabIndex = 29;
+            this.lbl_CommodityInfo.Text = "Thông tin hàng hóa";
             // 
-            // tb_MaHang
+            // tb_CommodityID
             // 
-            this.tb_MaHang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MaHang.BorderColor = System.Drawing.Color.Gray;
-            this.tb_MaHang.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_MaHang.BorderRadius = 10;
-            this.tb_MaHang.BorderSize = 2;
-            this.tb_MaHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MaHang.ForeColor = System.Drawing.Color.Black;
-            this.tb_MaHang.Location = new System.Drawing.Point(565, 165);
-            this.tb_MaHang.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaHang.Multiline = false;
-            this.tb_MaHang.Name = "tb_MaHang";
-            this.tb_MaHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_MaHang.PasswordChar = false;
-            this.tb_MaHang.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MaHang.PlaceholderText = "";
-            this.tb_MaHang.Size = new System.Drawing.Size(214, 39);
-            this.tb_MaHang.TabIndex = 30;
-            this.tb_MaHang.Texts = "";
-            this.tb_MaHang.UnderlinedStyle = false;
+            this.tb_CommodityID.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_CommodityID.BorderColor = System.Drawing.Color.Gray;
+            this.tb_CommodityID.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_CommodityID.BorderRadius = 10;
+            this.tb_CommodityID.BorderSize = 2;
+            this.tb_CommodityID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_CommodityID.ForeColor = System.Drawing.Color.Black;
+            this.tb_CommodityID.Location = new System.Drawing.Point(565, 165);
+            this.tb_CommodityID.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_CommodityID.Multiline = false;
+            this.tb_CommodityID.Name = "tb_CommodityID";
+            this.tb_CommodityID.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_CommodityID.PasswordChar = false;
+            this.tb_CommodityID.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_CommodityID.PlaceholderText = "";
+            this.tb_CommodityID.Size = new System.Drawing.Size(214, 39);
+            this.tb_CommodityID.TabIndex = 30;
+            this.tb_CommodityID.Texts = "";
+            this.tb_CommodityID.UnderlinedStyle = false;
             // 
-            // label2
+            // lbl_CommodityID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(433, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 24);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "Mã hàng hóa:";
+            this.lbl_CommodityID.AutoSize = true;
+            this.lbl_CommodityID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_CommodityID.Location = new System.Drawing.Point(403, 171);
+            this.lbl_CommodityID.Name = "lbl_CommodityID";
+            this.lbl_CommodityID.Size = new System.Drawing.Size(126, 24);
+            this.lbl_CommodityID.TabIndex = 31;
+            this.lbl_CommodityID.Text = "Mã hàng hóa:";
             // 
-            // tb_TenHang
+            // tb_CommodityName
             // 
-            this.tb_TenHang.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_TenHang.BorderColor = System.Drawing.Color.Gray;
-            this.tb_TenHang.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_TenHang.BorderRadius = 10;
-            this.tb_TenHang.BorderSize = 2;
-            this.tb_TenHang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_TenHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.tb_TenHang.Location = new System.Drawing.Point(565, 214);
-            this.tb_TenHang.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_TenHang.Multiline = false;
-            this.tb_TenHang.Name = "tb_TenHang";
-            this.tb_TenHang.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_TenHang.PasswordChar = false;
-            this.tb_TenHang.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_TenHang.PlaceholderText = "";
-            this.tb_TenHang.Size = new System.Drawing.Size(214, 39);
-            this.tb_TenHang.TabIndex = 32;
-            this.tb_TenHang.Texts = "";
-            this.tb_TenHang.UnderlinedStyle = false;
+            this.tb_CommodityName.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_CommodityName.BorderColor = System.Drawing.Color.Gray;
+            this.tb_CommodityName.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_CommodityName.BorderRadius = 10;
+            this.tb_CommodityName.BorderSize = 2;
+            this.tb_CommodityName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_CommodityName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.tb_CommodityName.Location = new System.Drawing.Point(565, 214);
+            this.tb_CommodityName.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_CommodityName.Multiline = false;
+            this.tb_CommodityName.Name = "tb_CommodityName";
+            this.tb_CommodityName.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_CommodityName.PasswordChar = false;
+            this.tb_CommodityName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_CommodityName.PlaceholderText = "";
+            this.tb_CommodityName.Size = new System.Drawing.Size(214, 39);
+            this.tb_CommodityName.TabIndex = 32;
+            this.tb_CommodityName.Texts = "";
+            this.tb_CommodityName.UnderlinedStyle = false;
             // 
-            // tb_NgayNhap
+            // tb_ImportDate
             // 
-            this.tb_NgayNhap.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NgayNhap.BorderColor = System.Drawing.Color.Gray;
-            this.tb_NgayNhap.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_NgayNhap.BorderRadius = 10;
-            this.tb_NgayNhap.BorderSize = 2;
-            this.tb_NgayNhap.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NgayNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.tb_NgayNhap.Location = new System.Drawing.Point(565, 265);
-            this.tb_NgayNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NgayNhap.Multiline = false;
-            this.tb_NgayNhap.Name = "tb_NgayNhap";
-            this.tb_NgayNhap.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_NgayNhap.PasswordChar = false;
-            this.tb_NgayNhap.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NgayNhap.PlaceholderText = "";
-            this.tb_NgayNhap.Size = new System.Drawing.Size(214, 39);
-            this.tb_NgayNhap.TabIndex = 33;
-            this.tb_NgayNhap.Texts = "";
-            this.tb_NgayNhap.UnderlinedStyle = false;
+            this.tb_ImportDate.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_ImportDate.BorderColor = System.Drawing.Color.Gray;
+            this.tb_ImportDate.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_ImportDate.BorderRadius = 10;
+            this.tb_ImportDate.BorderSize = 2;
+            this.tb_ImportDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_ImportDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.tb_ImportDate.Location = new System.Drawing.Point(565, 265);
+            this.tb_ImportDate.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_ImportDate.Multiline = false;
+            this.tb_ImportDate.Name = "tb_ImportDate";
+            this.tb_ImportDate.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_ImportDate.PasswordChar = false;
+            this.tb_ImportDate.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_ImportDate.PlaceholderText = "";
+            this.tb_ImportDate.Size = new System.Drawing.Size(214, 39);
+            this.tb_ImportDate.TabIndex = 33;
+            this.tb_ImportDate.Texts = "";
+            this.tb_ImportDate.UnderlinedStyle = false;
             // 
-            // tb_Donvitinh
+            // tb_Unit
             // 
-            this.tb_Donvitinh.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_Donvitinh.BorderColor = System.Drawing.Color.Gray;
-            this.tb_Donvitinh.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_Donvitinh.BorderRadius = 10;
-            this.tb_Donvitinh.BorderSize = 2;
-            this.tb_Donvitinh.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Donvitinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.tb_Donvitinh.Location = new System.Drawing.Point(565, 316);
-            this.tb_Donvitinh.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Donvitinh.Multiline = false;
-            this.tb_Donvitinh.Name = "tb_Donvitinh";
-            this.tb_Donvitinh.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_Donvitinh.PasswordChar = false;
-            this.tb_Donvitinh.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_Donvitinh.PlaceholderText = "";
-            this.tb_Donvitinh.Size = new System.Drawing.Size(214, 39);
-            this.tb_Donvitinh.TabIndex = 34;
-            this.tb_Donvitinh.Texts = "";
-            this.tb_Donvitinh.UnderlinedStyle = false;
+            this.tb_Unit.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Unit.BorderColor = System.Drawing.Color.Gray;
+            this.tb_Unit.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_Unit.BorderRadius = 10;
+            this.tb_Unit.BorderSize = 2;
+            this.tb_Unit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_Unit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.tb_Unit.Location = new System.Drawing.Point(565, 316);
+            this.tb_Unit.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Unit.Multiline = false;
+            this.tb_Unit.Name = "tb_Unit";
+            this.tb_Unit.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Unit.PasswordChar = false;
+            this.tb_Unit.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_Unit.PlaceholderText = "";
+            this.tb_Unit.Size = new System.Drawing.Size(214, 39);
+            this.tb_Unit.TabIndex = 34;
+            this.tb_Unit.Texts = "";
+            this.tb_Unit.UnderlinedStyle = false;
             // 
-            // tb_SoLuong
+            // tb_Quantity
             // 
-            this.tb_SoLuong.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_SoLuong.BorderColor = System.Drawing.Color.Gray;
-            this.tb_SoLuong.BorderFocusColor = System.Drawing.Color.Black;
-            this.tb_SoLuong.BorderRadius = 10;
-            this.tb_SoLuong.BorderSize = 2;
-            this.tb_SoLuong.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_SoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.tb_SoLuong.Location = new System.Drawing.Point(565, 367);
-            this.tb_SoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_SoLuong.Multiline = false;
-            this.tb_SoLuong.Name = "tb_SoLuong";
-            this.tb_SoLuong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_SoLuong.PasswordChar = false;
-            this.tb_SoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_SoLuong.PlaceholderText = "";
-            this.tb_SoLuong.Size = new System.Drawing.Size(214, 39);
-            this.tb_SoLuong.TabIndex = 35;
-            this.tb_SoLuong.Texts = "";
-            this.tb_SoLuong.UnderlinedStyle = false;
+            this.tb_Quantity.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Quantity.BorderColor = System.Drawing.Color.Gray;
+            this.tb_Quantity.BorderFocusColor = System.Drawing.Color.Black;
+            this.tb_Quantity.BorderRadius = 10;
+            this.tb_Quantity.BorderSize = 2;
+            this.tb_Quantity.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_Quantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.tb_Quantity.Location = new System.Drawing.Point(565, 367);
+            this.tb_Quantity.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Quantity.Multiline = false;
+            this.tb_Quantity.Name = "tb_Quantity";
+            this.tb_Quantity.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.tb_Quantity.PasswordChar = false;
+            this.tb_Quantity.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_Quantity.PlaceholderText = "";
+            this.tb_Quantity.Size = new System.Drawing.Size(214, 39);
+            this.tb_Quantity.TabIndex = 35;
+            this.tb_Quantity.Texts = "";
+            this.tb_Quantity.UnderlinedStyle = false;
             // 
-            // label3
+            // lbl_Unit
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(432, 324);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 24);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Đơn vị tính:";
+            this.lbl_Unit.AutoSize = true;
+            this.lbl_Unit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Unit.Location = new System.Drawing.Point(402, 324);
+            this.lbl_Unit.Name = "lbl_Unit";
+            this.lbl_Unit.Size = new System.Drawing.Size(111, 24);
+            this.lbl_Unit.TabIndex = 36;
+            this.lbl_Unit.Text = "Đơn vị tính:";
             // 
-            // label5
+            // lbl_ImportDate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(432, 273);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 24);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Ngày nhập:";
+            this.lbl_ImportDate.AutoSize = true;
+            this.lbl_ImportDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ImportDate.Location = new System.Drawing.Point(402, 273);
+            this.lbl_ImportDate.Name = "lbl_ImportDate";
+            this.lbl_ImportDate.Size = new System.Drawing.Size(105, 24);
+            this.lbl_ImportDate.TabIndex = 37;
+            this.lbl_ImportDate.Text = "Ngày nhập:";
             // 
-            // label6
+            // lbl_CommodityName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(431, 222);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 24);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Tên hàng hóa:";
+            this.lbl_CommodityName.AutoSize = true;
+            this.lbl_CommodityName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_CommodityName.Location = new System.Drawing.Point(401, 222);
+            this.lbl_CommodityName.Name = "lbl_CommodityName";
+            this.lbl_CommodityName.Size = new System.Drawing.Size(128, 24);
+            this.lbl_CommodityName.TabIndex = 38;
+            this.lbl_CommodityName.Text = "Tên hàng hóa:";
             // 
-            // label7
+            // lbl_Quantity
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(433, 372);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 24);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Số lượng:";
+            this.lbl_Quantity.AutoSize = true;
+            this.lbl_Quantity.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Quantity.Location = new System.Drawing.Point(403, 372);
+            this.lbl_Quantity.Name = "lbl_Quantity";
+            this.lbl_Quantity.Size = new System.Drawing.Size(92, 24);
+            this.lbl_Quantity.TabIndex = 39;
+            this.lbl_Quantity.Text = "Số lượng:";
             // 
-            // btn_edit
+            // btn_Edit
             // 
-            this.btn_edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_edit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_edit.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_edit.BorderRadius = 8;
-            this.btn_edit.BorderSize = 0;
-            this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.Location = new System.Drawing.Point(580, 438);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(83, 35);
-            this.btn_edit.TabIndex = 40;
-            this.btn_edit.Text = "Sửa";
-            this.btn_edit.TextColor = System.Drawing.Color.White;
-            this.btn_edit.UseVisualStyleBackColor = false;
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Edit.BorderRadius = 8;
+            this.btn_Edit.BorderSize = 0;
+            this.btn_Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Edit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Edit.ForeColor = System.Drawing.Color.White;
+            this.btn_Edit.Location = new System.Drawing.Point(580, 438);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(83, 35);
+            this.btn_Edit.TabIndex = 40;
+            this.btn_Edit.Text = "Sửa";
+            this.btn_Edit.TextColor = System.Drawing.Color.White;
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.label4);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
             this.metroPanel1.Controls.Add(this.pictureBox2);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_NhapHang);
-            this.metroPanel1.Controls.Add(this.btn_XuatHang);
-            this.metroPanel1.Controls.Add(this.btn_HangTrongKho);
-            this.metroPanel1.Controls.Add(this.btn_KiemKho);
+            this.metroPanel1.Controls.Add(this.btn_Import);
+            this.metroPanel1.Controls.Add(this.btn_Export);
+            this.metroPanel1.Controls.Add(this.btn_InStock);
+            this.metroPanel1.Controls.Add(this.btn_InventoryControl);
             this.metroPanel1.Controls.Add(this.pictureBox1);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
@@ -309,16 +309,16 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // label4
+            // lbl_AccountName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 86);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 86);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
             // pictureBox2
             // 
@@ -343,87 +343,88 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // btn_NhapHang
+            // btn_Import
             // 
-            this.btn_NhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_NhapHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_NhapHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_NhapHang.BorderRadius = 0;
-            this.btn_NhapHang.BorderSize = 0;
-            this.btn_NhapHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_NhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NhapHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_NhapHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_NhapHang.Location = new System.Drawing.Point(-1, 302);
-            this.btn_NhapHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_NhapHang.Name = "btn_NhapHang";
-            this.btn_NhapHang.Size = new System.Drawing.Size(263, 64);
-            this.btn_NhapHang.TabIndex = 18;
-            this.btn_NhapHang.Text = "Nhập hàng";
-            this.btn_NhapHang.TextColor = System.Drawing.Color.Black;
-            this.btn_NhapHang.UseVisualStyleBackColor = false;
-            this.btn_NhapHang.Visible = false;
+            this.btn_Import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Import.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Import.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_Import.BorderRadius = 0;
+            this.btn_Import.BorderSize = 0;
+            this.btn_Import.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Import.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Import.ForeColor = System.Drawing.Color.Black;
+            this.btn_Import.Location = new System.Drawing.Point(-1, 302);
+            this.btn_Import.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Import.Name = "btn_Import";
+            this.btn_Import.Size = new System.Drawing.Size(263, 64);
+            this.btn_Import.TabIndex = 18;
+            this.btn_Import.Text = "Nhập hàng";
+            this.btn_Import.TextColor = System.Drawing.Color.Black;
+            this.btn_Import.UseVisualStyleBackColor = false;
+            this.btn_Import.Visible = false;
             // 
-            // btn_XuatHang
+            // btn_Export
             // 
-            this.btn_XuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_XuatHang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
-            this.btn_XuatHang.BorderColor = System.Drawing.Color.Silver;
-            this.btn_XuatHang.BorderRadius = 0;
-            this.btn_XuatHang.BorderSize = 0;
-            this.btn_XuatHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_XuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatHang.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_XuatHang.ForeColor = System.Drawing.Color.Black;
-            this.btn_XuatHang.Location = new System.Drawing.Point(-1, 243);
-            this.btn_XuatHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatHang.Name = "btn_XuatHang";
-            this.btn_XuatHang.Size = new System.Drawing.Size(264, 64);
-            this.btn_XuatHang.TabIndex = 17;
-            this.btn_XuatHang.Text = "Xuất hàng";
-            this.btn_XuatHang.TextColor = System.Drawing.Color.Black;
-            this.btn_XuatHang.UseVisualStyleBackColor = false;
-            this.btn_XuatHang.Visible = false;
+            this.btn_Export.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Export.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
+            this.btn_Export.BorderColor = System.Drawing.Color.Silver;
+            this.btn_Export.BorderRadius = 0;
+            this.btn_Export.BorderSize = 0;
+            this.btn_Export.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Export.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Export.ForeColor = System.Drawing.Color.Black;
+            this.btn_Export.Location = new System.Drawing.Point(-1, 243);
+            this.btn_Export.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Export.Name = "btn_Export";
+            this.btn_Export.Size = new System.Drawing.Size(264, 64);
+            this.btn_Export.TabIndex = 17;
+            this.btn_Export.Text = "Xuất hàng";
+            this.btn_Export.TextColor = System.Drawing.Color.Black;
+            this.btn_Export.UseVisualStyleBackColor = false;
+            this.btn_Export.Visible = false;
             // 
-            // btn_HangTrongKho
+            // btn_InStock
             // 
-            this.btn_HangTrongKho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HangTrongKho.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_HangTrongKho.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_HangTrongKho.BorderRadius = 0;
-            this.btn_HangTrongKho.BorderSize = 0;
-            this.btn_HangTrongKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_HangTrongKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HangTrongKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HangTrongKho.ForeColor = System.Drawing.Color.White;
-            this.btn_HangTrongKho.Location = new System.Drawing.Point(0, 130);
-            this.btn_HangTrongKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_HangTrongKho.Name = "btn_HangTrongKho";
-            this.btn_HangTrongKho.Size = new System.Drawing.Size(262, 60);
-            this.btn_HangTrongKho.TabIndex = 16;
-            this.btn_HangTrongKho.Text = "Hàng trong kho";
-            this.btn_HangTrongKho.TextColor = System.Drawing.Color.White;
-            this.btn_HangTrongKho.UseVisualStyleBackColor = false;
+            this.btn_InStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_InStock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_InStock.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_InStock.BorderRadius = 0;
+            this.btn_InStock.BorderSize = 0;
+            this.btn_InStock.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_InStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InStock.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_InStock.ForeColor = System.Drawing.Color.White;
+            this.btn_InStock.Location = new System.Drawing.Point(0, 130);
+            this.btn_InStock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_InStock.Name = "btn_InStock";
+            this.btn_InStock.Size = new System.Drawing.Size(262, 60);
+            this.btn_InStock.TabIndex = 16;
+            this.btn_InStock.Text = "Hàng trong kho";
+            this.btn_InStock.TextColor = System.Drawing.Color.White;
+            this.btn_InStock.UseVisualStyleBackColor = false;
             // 
-            // btn_KiemKho
+            // btn_InventoryControl
             // 
-            this.btn_KiemKho.BackColor = System.Drawing.Color.White;
-            this.btn_KiemKho.BackgroundColor = System.Drawing.Color.White;
-            this.btn_KiemKho.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_KiemKho.BorderRadius = 0;
-            this.btn_KiemKho.BorderSize = 0;
-            this.btn_KiemKho.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_KiemKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_KiemKho.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_KiemKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_KiemKho.Location = new System.Drawing.Point(0, 189);
-            this.btn_KiemKho.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_KiemKho.Name = "btn_KiemKho";
-            this.btn_KiemKho.Size = new System.Drawing.Size(262, 56);
-            this.btn_KiemKho.TabIndex = 16;
-            this.btn_KiemKho.Text = "Kiểm kho";
-            this.btn_KiemKho.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_KiemKho.UseVisualStyleBackColor = false;
+            this.btn_InventoryControl.BackColor = System.Drawing.Color.White;
+            this.btn_InventoryControl.BackgroundColor = System.Drawing.Color.White;
+            this.btn_InventoryControl.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_InventoryControl.BorderRadius = 0;
+            this.btn_InventoryControl.BorderSize = 0;
+            this.btn_InventoryControl.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_InventoryControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_InventoryControl.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_InventoryControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_InventoryControl.Location = new System.Drawing.Point(0, 189);
+            this.btn_InventoryControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_InventoryControl.Name = "btn_InventoryControl";
+            this.btn_InventoryControl.Size = new System.Drawing.Size(262, 56);
+            this.btn_InventoryControl.TabIndex = 16;
+            this.btn_InventoryControl.Text = "Kiểm kho";
+            this.btn_InventoryControl.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_InventoryControl.UseVisualStyleBackColor = false;
+            this.btn_InventoryControl.Click += new System.EventHandler(this.btn_InventoryControl_Click);
             // 
             // pictureBox1
             // 
@@ -440,20 +441,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.btn_edit);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_SoLuong);
-            this.Controls.Add(this.tb_Donvitinh);
-            this.Controls.Add(this.tb_NgayNhap);
-            this.Controls.Add(this.tb_TenHang);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tb_MaHang);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.roundedButton10);
+            this.Controls.Add(this.btn_Edit);
+            this.Controls.Add(this.lbl_Quantity);
+            this.Controls.Add(this.lbl_CommodityName);
+            this.Controls.Add(this.lbl_ImportDate);
+            this.Controls.Add(this.lbl_Unit);
+            this.Controls.Add(this.tb_Quantity);
+            this.Controls.Add(this.tb_Unit);
+            this.Controls.Add(this.tb_ImportDate);
+            this.Controls.Add(this.tb_CommodityName);
+            this.Controls.Add(this.lbl_CommodityID);
+            this.Controls.Add(this.tb_CommodityID);
+            this.Controls.Add(this.lbl_CommodityInfo);
+            this.Controls.Add(this.btn_Save);
+            this.Controls.Add(this.btn_SignOut);
             this.Name = "XemThongTinHangHoa";
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
@@ -465,28 +466,28 @@
         }
 
         #endregion
-        private CustomControls.RoundedButton roundedButton10;
-        private CustomControls.RoundedButton btn_save;
-        private Label label1;
-        private CustomControls.RoundedTextBox tb_MaHang;
-        private Label label2;
-        private CustomControls.RoundedTextBox tb_TenHang;
-        private CustomControls.RoundedTextBox tb_NgayNhap;
-        private CustomControls.RoundedTextBox tb_Donvitinh;
-        private CustomControls.RoundedTextBox tb_SoLuong;
-        private Label label3;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private CustomControls.RoundedButton btn_edit;
+        private CustomControls.RoundedButton btn_SignOut;
+        private CustomControls.RoundedButton btn_Save;
+        private Label lbl_CommodityInfo;
+        private CustomControls.RoundedTextBox tb_CommodityID;
+        private Label lbl_CommodityID;
+        private CustomControls.RoundedTextBox tb_CommodityName;
+        private CustomControls.RoundedTextBox tb_ImportDate;
+        private CustomControls.RoundedTextBox tb_Unit;
+        private CustomControls.RoundedTextBox tb_Quantity;
+        private Label lbl_Unit;
+        private Label lbl_ImportDate;
+        private Label lbl_CommodityName;
+        private Label lbl_Quantity;
+        private CustomControls.RoundedButton btn_Edit;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private Label label4;
+        private Label lbl_AccountName;
         private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_NhapHang;
-        private CustomControls.RoundedButton btn_XuatHang;
-        private CustomControls.RoundedButton btn_HangTrongKho;
-        private CustomControls.RoundedButton btn_KiemKho;
+        private CustomControls.RoundedButton btn_Import;
+        private CustomControls.RoundedButton btn_Export;
+        private CustomControls.RoundedButton btn_InStock;
+        private CustomControls.RoundedButton btn_InventoryControl;
         private PictureBox pictureBox1;
     }
 }

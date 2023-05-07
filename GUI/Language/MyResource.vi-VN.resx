@@ -153,6 +153,9 @@
   <data name="approveText" xml:space="preserve">
     <value>Duyệt</value>
   </data>
+  <data name="assignShiftText" xml:space="preserve">
+    <value>Xếp ca làm</value>
+  </data>
   <data name="backText" xml:space="preserve">
     <value>Quay lại</value>
   </data>
@@ -186,6 +189,9 @@
   <data name="chooseDishText" xml:space="preserve">
     <value>Chọn món ăn</value>
   </data>
+  <data name="commodityAddText" xml:space="preserve">
+    <value>Thêm hàng hóa</value>
+  </data>
   <data name="commodityIDNameText" xml:space="preserve">
     <value>Mã/ Tên hàng</value>
   </data>
@@ -212,6 +218,9 @@
   </data>
   <data name="currentAddressText" xml:space="preserve">
     <value>Địa chỉ hiện tại</value>
+  </data>
+  <data name="customerIDText" xml:space="preserve">
+    <value>Mã khách hàng</value>
   </data>
   <data name="customerManagementText" xml:space="preserve">
     <value>Quản lý khách hàng</value>
@@ -285,11 +294,17 @@
   <data name="exportIDText" xml:space="preserve">
     <value>Mã xuất hàng</value>
   </data>
+  <data name="exportNoteAddText" xml:space="preserve">
+    <value>+ Phiếu xuất hàng</value>
+  </data>
   <data name="exportNoteText" xml:space="preserve">
     <value>Phiếu xuất hàng</value>
   </data>
   <data name="exportText" xml:space="preserve">
     <value>Xuất hàng</value>
+  </data>
+  <data name="exportText2" xml:space="preserve">
+    <value>Xuất</value>
   </data>
   <data name="feedbackOnServiceText" xml:space="preserve">
     <value>Nhận xét về dịch vụ nhà hàng</value>
@@ -333,14 +348,26 @@
   <data name="importerText" xml:space="preserve">
     <value>Người nhập</value>
   </data>
+  <data name="importExportText" xml:space="preserve">
+    <value>Nhập - xuất hàng</value>
+  </data>
   <data name="importIDText" xml:space="preserve">
     <value>Mã nhập hàng</value>
   </data>
+  <data name="importNoteAddText" xml:space="preserve">
+    <value>+ Phiếu nhập hàng</value>
+  </data>
   <data name="importNoteText" xml:space="preserve">
-    <value>Tạo phiếu</value>
+    <value>Phiếu nhập hàng</value>
   </data>
   <data name="importText" xml:space="preserve">
     <value>Nhập hàng</value>
+  </data>
+  <data name="importText2" xml:space="preserve">
+    <value>Nhập</value>
+  </data>
+  <data name="inStockQuantityText" xml:space="preserve">
+    <value>SL tồn kho</value>
   </data>
   <data name="inStockText" xml:space="preserve">
     <value>Hàng trong kho</value>
@@ -423,8 +450,11 @@
   <data name="newlyAddedDishText" xml:space="preserve">
     <value>Món ăn mới thêm</value>
   </data>
+  <data name="notificationText" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
   <data name="numberText" xml:space="preserve">
-    <value>Số thứ tự</value>
+    <value>STT</value>
   </data>
   <data name="offerIDText" xml:space="preserve">
     <value>Mã ưu đãi</value>
@@ -446,6 +476,9 @@
   </data>
   <data name="parkingAllowanceText" xml:space="preserve">
     <value>Phụ cấp gửi xe</value>
+  </data>
+  <data name="passwordResetText" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
   </data>
   <data name="passwordText" xml:space="preserve">
     <value>Mật khẩu</value>
@@ -501,14 +534,23 @@
   <data name="priceText" xml:space="preserve">
     <value>Giá tiền</value>
   </data>
+  <data name="productIDText" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="productNameText" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
   <data name="profileText" xml:space="preserve">
     <value>Hồ sơ</value>
+  </data>
+  <data name="profitText" xml:space="preserve">
+    <value>Lợi nhuận</value>
   </data>
   <data name="qualityRatingText" xml:space="preserve">
     <value>Đánh giá chất lượng</value>
   </data>
   <data name="quantityText" xml:space="preserve">
-    <value>Hài lòng</value>
+    <value>Số lượng</value>
   </data>
   <data name="rejectedText" xml:space="preserve">
     <value>Không duyệt</value>
@@ -527,6 +569,9 @@
   </data>
   <data name="revenueBonusText" xml:space="preserve">
     <value>Tiền thưởng doanh thu</value>
+  </data>
+  <data name="revenueText" xml:space="preserve">
+    <value>Doanh thu</value>
   </data>
   <data name="satisfactoryText" xml:space="preserve">
     <value>Hài lòng</value>
@@ -579,6 +624,9 @@
   <data name="soldOutText" xml:space="preserve">
     <value>Bán hết</value>
   </data>
+  <data name="soldProductsText" xml:space="preserve">
+    <value>Sản phẩm bán ra</value>
+  </data>
   <data name="specialOfferCodeText" xml:space="preserve">
     <value>Mã ưu đãi</value>
   </data>
@@ -600,8 +648,14 @@
   <data name="staffManagementText" xml:space="preserve">
     <value>Quản lý nhân viên</value>
   </data>
+  <data name="staffNameText" xml:space="preserve">
+    <value>Tên nhân viên</value>
+  </data>
   <data name="staffProfileText" xml:space="preserve">
     <value>Hồ sơ nhân viên</value>
+  </data>
+  <data name="staffSalaryText" xml:space="preserve">
+    <value>Lương nhân viên</value>
   </data>
   <data name="staffText" xml:space="preserve">
     <value>Nhân viên</value>
@@ -617,6 +671,9 @@
   </data>
   <data name="stockManagementText" xml:space="preserve">
     <value>Quản lý kho hàng</value>
+  </data>
+  <data name="stockText" xml:space="preserve">
+    <value>Kho hàng</value>
   </data>
   <data name="String132" xml:space="preserve">
     <value>reasonDescriptionText</value>
@@ -647,6 +704,9 @@
   </data>
   <data name="timeText" xml:space="preserve">
     <value>Thời gian</value>
+  </data>
+  <data name="totalCapitalText" xml:space="preserve">
+    <value>Tổng vốn</value>
   </data>
   <data name="totalSalaryText" xml:space="preserve">
     <value>Tổng lương</value>
