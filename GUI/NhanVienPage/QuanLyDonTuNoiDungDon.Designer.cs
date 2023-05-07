@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyDonTuNoiDungDon));
             this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
@@ -46,18 +46,18 @@
             this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.lbl_letterContent = new System.Windows.Forms.Label();
             this.lbl_staffID = new System.Windows.Forms.Label();
-            this.cb_TrangThai = new MetroFramework.Controls.MetroComboBox();
-            this.tb_MaNhanVien = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.tb_HoTen = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.cb_Status = new MetroFramework.Controls.MetroComboBox();
+            this.tb_StaffID = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_FullName = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.lbl_FullName = new System.Windows.Forms.Label();
-            this.tb_NgayLamDon = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_LetterDate = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.lbl_letterDate = new System.Windows.Forms.Label();
-            this.tb_LyDo = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_Reason = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.lbl_reason = new System.Windows.Forms.Label();
             this.lbl_Status = new System.Windows.Forms.Label();
-            this.tb_MoTa = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
+            this.tb_ReasonDescription = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
             this.lbl_reasonDescription = new System.Windows.Forms.Label();
-            this.btn_Update = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Edit = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_Save = new WinFormsApp2.CustomControls.RoundedButton();
             this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -93,37 +93,37 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle5;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(370, 106);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.metroGrid1.RowHeadersWidth = 51;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 29;
@@ -321,67 +321,67 @@
             this.lbl_staffID.TabIndex = 62;
             this.lbl_staffID.Text = "Mã nhân viên:";
             // 
-            // cb_TrangThai
+            // cb_Status
             // 
-            this.cb_TrangThai.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.cb_TrangThai.FormattingEnabled = true;
-            this.cb_TrangThai.ItemHeight = 29;
-            this.cb_TrangThai.Items.AddRange(new object[] {
+            this.cb_Status.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            this.cb_Status.FormattingEnabled = true;
+            this.cb_Status.ItemHeight = 29;
+            this.cb_Status.Items.AddRange(new object[] {
             "Đã duyệt",
             "Chờ duyệt",
             "Không duyệt"});
-            this.cb_TrangThai.Location = new System.Drawing.Point(890, 259);
-            this.cb_TrangThai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cb_TrangThai.Name = "cb_TrangThai";
-            this.cb_TrangThai.Size = new System.Drawing.Size(267, 35);
-            this.cb_TrangThai.TabIndex = 63;
-            this.cb_TrangThai.UseSelectable = true;
+            this.cb_Status.Location = new System.Drawing.Point(890, 259);
+            this.cb_Status.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_Status.Name = "cb_Status";
+            this.cb_Status.Size = new System.Drawing.Size(267, 35);
+            this.cb_Status.TabIndex = 63;
+            this.cb_Status.UseSelectable = true;
             // 
-            // tb_MaNhanVien
+            // tb_StaffID
             // 
-            this.tb_MaNhanVien.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MaNhanVien.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.tb_MaNhanVien.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.tb_MaNhanVien.BorderRadius = 0;
-            this.tb_MaNhanVien.BorderSize = 1;
-            this.tb_MaNhanVien.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MaNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
-            this.tb_MaNhanVien.Location = new System.Drawing.Point(435, 148);
-            this.tb_MaNhanVien.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MaNhanVien.Multiline = false;
-            this.tb_MaNhanVien.Name = "tb_MaNhanVien";
-            this.tb_MaNhanVien.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tb_MaNhanVien.PasswordChar = false;
-            this.tb_MaNhanVien.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MaNhanVien.PlaceholderText = "";
-            this.tb_MaNhanVien.ReadOnly = true;
-            this.tb_MaNhanVien.Size = new System.Drawing.Size(267, 35);
-            this.tb_MaNhanVien.TabIndex = 65;
-            this.tb_MaNhanVien.Texts = "";
-            this.tb_MaNhanVien.UnderlinedStyle = false;
+            this.tb_StaffID.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_StaffID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.tb_StaffID.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.tb_StaffID.BorderRadius = 0;
+            this.tb_StaffID.BorderSize = 1;
+            this.tb_StaffID.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_StaffID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.tb_StaffID.Location = new System.Drawing.Point(435, 148);
+            this.tb_StaffID.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_StaffID.Multiline = false;
+            this.tb_StaffID.Name = "tb_StaffID";
+            this.tb_StaffID.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.tb_StaffID.PasswordChar = false;
+            this.tb_StaffID.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_StaffID.PlaceholderText = "";
+            this.tb_StaffID.ReadOnly = true;
+            this.tb_StaffID.Size = new System.Drawing.Size(267, 35);
+            this.tb_StaffID.TabIndex = 65;
+            this.tb_StaffID.Texts = "";
+            this.tb_StaffID.UnderlinedStyle = false;
             // 
-            // tb_HoTen
+            // tb_FullName
             // 
-            this.tb_HoTen.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_HoTen.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.tb_HoTen.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.tb_HoTen.BorderRadius = 0;
-            this.tb_HoTen.BorderSize = 1;
-            this.tb_HoTen.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_HoTen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
-            this.tb_HoTen.Location = new System.Drawing.Point(890, 148);
-            this.tb_HoTen.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_HoTen.Multiline = false;
-            this.tb_HoTen.Name = "tb_HoTen";
-            this.tb_HoTen.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tb_HoTen.PasswordChar = false;
-            this.tb_HoTen.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_HoTen.PlaceholderText = "";
-            this.tb_HoTen.ReadOnly = true;
-            this.tb_HoTen.Size = new System.Drawing.Size(267, 35);
-            this.tb_HoTen.TabIndex = 67;
-            this.tb_HoTen.Texts = "";
-            this.tb_HoTen.UnderlinedStyle = false;
+            this.tb_FullName.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_FullName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.tb_FullName.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.tb_FullName.BorderRadius = 0;
+            this.tb_FullName.BorderSize = 1;
+            this.tb_FullName.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_FullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.tb_FullName.Location = new System.Drawing.Point(890, 148);
+            this.tb_FullName.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_FullName.Multiline = false;
+            this.tb_FullName.Name = "tb_FullName";
+            this.tb_FullName.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.tb_FullName.PasswordChar = false;
+            this.tb_FullName.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_FullName.PlaceholderText = "";
+            this.tb_FullName.ReadOnly = true;
+            this.tb_FullName.Size = new System.Drawing.Size(267, 35);
+            this.tb_FullName.TabIndex = 67;
+            this.tb_FullName.Texts = "";
+            this.tb_FullName.UnderlinedStyle = false;
             // 
             // lbl_FullName
             // 
@@ -393,28 +393,28 @@
             this.lbl_FullName.TabIndex = 66;
             this.lbl_FullName.Text = "Họ và tên:";
             // 
-            // tb_NgayLamDon
+            // tb_LetterDate
             // 
-            this.tb_NgayLamDon.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_NgayLamDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.tb_NgayLamDon.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.tb_NgayLamDon.BorderRadius = 0;
-            this.tb_NgayLamDon.BorderSize = 1;
-            this.tb_NgayLamDon.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_NgayLamDon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
-            this.tb_NgayLamDon.Location = new System.Drawing.Point(890, 202);
-            this.tb_NgayLamDon.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_NgayLamDon.Multiline = false;
-            this.tb_NgayLamDon.Name = "tb_NgayLamDon";
-            this.tb_NgayLamDon.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tb_NgayLamDon.PasswordChar = false;
-            this.tb_NgayLamDon.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_NgayLamDon.PlaceholderText = "--/ --/ ----";
-            this.tb_NgayLamDon.ReadOnly = true;
-            this.tb_NgayLamDon.Size = new System.Drawing.Size(267, 35);
-            this.tb_NgayLamDon.TabIndex = 71;
-            this.tb_NgayLamDon.Texts = "";
-            this.tb_NgayLamDon.UnderlinedStyle = false;
+            this.tb_LetterDate.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_LetterDate.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.tb_LetterDate.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.tb_LetterDate.BorderRadius = 0;
+            this.tb_LetterDate.BorderSize = 1;
+            this.tb_LetterDate.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_LetterDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.tb_LetterDate.Location = new System.Drawing.Point(890, 202);
+            this.tb_LetterDate.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_LetterDate.Multiline = false;
+            this.tb_LetterDate.Name = "tb_LetterDate";
+            this.tb_LetterDate.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.tb_LetterDate.PasswordChar = false;
+            this.tb_LetterDate.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_LetterDate.PlaceholderText = "--/ --/ ----";
+            this.tb_LetterDate.ReadOnly = true;
+            this.tb_LetterDate.Size = new System.Drawing.Size(267, 35);
+            this.tb_LetterDate.TabIndex = 71;
+            this.tb_LetterDate.Texts = "";
+            this.tb_LetterDate.UnderlinedStyle = false;
             // 
             // lbl_letterDate
             // 
@@ -426,28 +426,28 @@
             this.lbl_letterDate.TabIndex = 70;
             this.lbl_letterDate.Text = "Ngày làm đơn:";
             // 
-            // tb_LyDo
+            // tb_Reason
             // 
-            this.tb_LyDo.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_LyDo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.tb_LyDo.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.tb_LyDo.BorderRadius = 0;
-            this.tb_LyDo.BorderSize = 1;
-            this.tb_LyDo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_LyDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
-            this.tb_LyDo.Location = new System.Drawing.Point(435, 202);
-            this.tb_LyDo.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_LyDo.Multiline = false;
-            this.tb_LyDo.Name = "tb_LyDo";
-            this.tb_LyDo.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tb_LyDo.PasswordChar = false;
-            this.tb_LyDo.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_LyDo.PlaceholderText = "";
-            this.tb_LyDo.ReadOnly = true;
-            this.tb_LyDo.Size = new System.Drawing.Size(267, 35);
-            this.tb_LyDo.TabIndex = 69;
-            this.tb_LyDo.Texts = "";
-            this.tb_LyDo.UnderlinedStyle = false;
+            this.tb_Reason.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_Reason.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.tb_Reason.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.tb_Reason.BorderRadius = 0;
+            this.tb_Reason.BorderSize = 1;
+            this.tb_Reason.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_Reason.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.tb_Reason.Location = new System.Drawing.Point(435, 202);
+            this.tb_Reason.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_Reason.Multiline = false;
+            this.tb_Reason.Name = "tb_Reason";
+            this.tb_Reason.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.tb_Reason.PasswordChar = false;
+            this.tb_Reason.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_Reason.PlaceholderText = "";
+            this.tb_Reason.ReadOnly = true;
+            this.tb_Reason.Size = new System.Drawing.Size(267, 35);
+            this.tb_Reason.TabIndex = 69;
+            this.tb_Reason.Texts = "";
+            this.tb_Reason.UnderlinedStyle = false;
             // 
             // lbl_reason
             // 
@@ -469,29 +469,29 @@
             this.lbl_Status.TabIndex = 74;
             this.lbl_Status.Text = "Trạng thái:";
             // 
-            // tb_MoTa
+            // tb_ReasonDescription
             // 
-            this.tb_MoTa.AutoScroll = true;
-            this.tb_MoTa.BackColor = System.Drawing.SystemColors.Window;
-            this.tb_MoTa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.tb_MoTa.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.tb_MoTa.BorderRadius = 0;
-            this.tb_MoTa.BorderSize = 1;
-            this.tb_MoTa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_MoTa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
-            this.tb_MoTa.Location = new System.Drawing.Point(435, 259);
-            this.tb_MoTa.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_MoTa.Multiline = true;
-            this.tb_MoTa.Name = "tb_MoTa";
-            this.tb_MoTa.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.tb_MoTa.PasswordChar = false;
-            this.tb_MoTa.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.tb_MoTa.PlaceholderText = "";
-            this.tb_MoTa.ReadOnly = true;
-            this.tb_MoTa.Size = new System.Drawing.Size(267, 114);
-            this.tb_MoTa.TabIndex = 73;
-            this.tb_MoTa.Texts = "";
-            this.tb_MoTa.UnderlinedStyle = false;
+            this.tb_ReasonDescription.AutoScroll = true;
+            this.tb_ReasonDescription.BackColor = System.Drawing.SystemColors.Window;
+            this.tb_ReasonDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
+            this.tb_ReasonDescription.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.tb_ReasonDescription.BorderRadius = 0;
+            this.tb_ReasonDescription.BorderSize = 1;
+            this.tb_ReasonDescription.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tb_ReasonDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(72)))), ((int)(((byte)(70)))));
+            this.tb_ReasonDescription.Location = new System.Drawing.Point(435, 259);
+            this.tb_ReasonDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_ReasonDescription.Multiline = true;
+            this.tb_ReasonDescription.Name = "tb_ReasonDescription";
+            this.tb_ReasonDescription.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.tb_ReasonDescription.PasswordChar = false;
+            this.tb_ReasonDescription.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.tb_ReasonDescription.PlaceholderText = "";
+            this.tb_ReasonDescription.ReadOnly = true;
+            this.tb_ReasonDescription.Size = new System.Drawing.Size(267, 114);
+            this.tb_ReasonDescription.TabIndex = 73;
+            this.tb_ReasonDescription.Texts = "";
+            this.tb_ReasonDescription.UnderlinedStyle = false;
             // 
             // lbl_reasonDescription
             // 
@@ -503,26 +503,26 @@
             this.lbl_reasonDescription.TabIndex = 72;
             this.lbl_reasonDescription.Text = "Mô tả lý do:";
             // 
-            // btn_Update
+            // btn_Edit
             // 
-            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Update.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Update.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Update.BorderRadius = 8;
-            this.btn_Update.BorderSize = 0;
-            this.btn_Update.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Update.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Update.ForeColor = System.Drawing.Color.White;
-            this.btn_Update.Location = new System.Drawing.Point(936, 336);
-            this.btn_Update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Update.Name = "btn_Update";
-            this.btn_Update.Size = new System.Drawing.Size(122, 37);
-            this.btn_Update.TabIndex = 75;
-            this.btn_Update.Text = "Sửa";
-            this.btn_Update.TextColor = System.Drawing.Color.White;
-            this.btn_Update.UseVisualStyleBackColor = false;
-            this.btn_Update.Click += new System.EventHandler(this.btn_Sua_Click);
+            this.btn_Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Edit.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Edit.BorderRadius = 8;
+            this.btn_Edit.BorderSize = 0;
+            this.btn_Edit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Edit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Edit.ForeColor = System.Drawing.Color.White;
+            this.btn_Edit.Location = new System.Drawing.Point(936, 336);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(122, 37);
+            this.btn_Edit.TabIndex = 75;
+            this.btn_Edit.Text = "Sửa";
+            this.btn_Edit.TextColor = System.Drawing.Color.White;
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Save
             // 
@@ -573,18 +573,18 @@
             this.ClientSize = new System.Drawing.Size(1182, 605);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.btn_Save);
-            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.lbl_Status);
-            this.Controls.Add(this.tb_MoTa);
+            this.Controls.Add(this.tb_ReasonDescription);
             this.Controls.Add(this.lbl_reasonDescription);
-            this.Controls.Add(this.tb_NgayLamDon);
+            this.Controls.Add(this.tb_LetterDate);
             this.Controls.Add(this.lbl_letterDate);
-            this.Controls.Add(this.tb_LyDo);
+            this.Controls.Add(this.tb_Reason);
             this.Controls.Add(this.lbl_reason);
-            this.Controls.Add(this.tb_HoTen);
+            this.Controls.Add(this.tb_FullName);
             this.Controls.Add(this.lbl_FullName);
-            this.Controls.Add(this.tb_MaNhanVien);
-            this.Controls.Add(this.cb_TrangThai);
+            this.Controls.Add(this.tb_StaffID);
+            this.Controls.Add(this.cb_Status);
             this.Controls.Add(this.lbl_staffID);
             this.Controls.Add(this.lbl_letterContent);
             this.Controls.Add(this.metroPanel1);
@@ -619,18 +619,18 @@
         private CustomControls.RoundedButton btn_PayRoll;
         private Label lbl_letterContent;
         private Label lbl_staffID;
-        private MetroFramework.Controls.MetroComboBox cb_TrangThai;
-        private CustomControls.LeftAlignRoundedTextBox tb_MaNhanVien;
-        private CustomControls.LeftAlignRoundedTextBox tb_HoTen;
+        private MetroFramework.Controls.MetroComboBox cb_Status;
+        private CustomControls.LeftAlignRoundedTextBox tb_StaffID;
+        private CustomControls.LeftAlignRoundedTextBox tb_FullName;
         private Label lbl_FullName;
-        private CustomControls.LeftAlignRoundedTextBox tb_NgayLamDon;
+        private CustomControls.LeftAlignRoundedTextBox tb_LetterDate;
         private Label lbl_letterDate;
-        private CustomControls.LeftAlignRoundedTextBox tb_LyDo;
+        private CustomControls.LeftAlignRoundedTextBox tb_Reason;
         private Label lbl_reason;
         private Label lbl_Status;
-        private CustomControls.LeftAlignRoundedTextBox tb_MoTa;
+        private CustomControls.LeftAlignRoundedTextBox tb_ReasonDescription;
         private Label lbl_reasonDescription;
-        private CustomControls.RoundedButton btn_Update;
+        private CustomControls.RoundedButton btn_Edit;
         private CustomControls.RoundedButton btn_Save;
         private CustomControls.RoundedButton btn_Back;
     }

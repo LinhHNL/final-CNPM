@@ -157,7 +157,7 @@
     <value>Xếp ca làm</value>
   </data>
   <data name="backText" xml:space="preserve">
-    <value>Quay lại</value>
+    <value>Quay lại &gt;</value>
   </data>
   <data name="bankAccountNumberText" xml:space="preserve">
     <value>STK ngân hàng</value>
@@ -189,6 +189,15 @@
   <data name="chooseDishText" xml:space="preserve">
     <value>Chọn món ăn</value>
   </data>
+  <data name="chooseFourText" xml:space="preserve">
+    <value>Bạn đang chọn loại bốn đáy nồi</value>
+  </data>
+  <data name="chooseOneText" xml:space="preserve">
+    <value>Bạn đang chọn loại một đáy nồi</value>
+  </data>
+  <data name="chooseTwoText" xml:space="preserve">
+    <value>Bạn đang chọn loại hai đáy nồi</value>
+  </data>
   <data name="commodityAddText" xml:space="preserve">
     <value>Thêm hàng hóa</value>
   </data>
@@ -213,11 +222,17 @@
   <data name="confirmText" xml:space="preserve">
     <value>Xác nhận</value>
   </data>
+  <data name="createLetterText" xml:space="preserve">
+    <value>Tạo đơn</value>
+  </data>
   <data name="createNoteText" xml:space="preserve">
     <value>Lập phiếu xuất hàng</value>
   </data>
   <data name="currentAddressText" xml:space="preserve">
     <value>Địa chỉ hiện tại</value>
+  </data>
+  <data name="currentPasswordText" xml:space="preserve">
+    <value>Mật khẩu hiện tại</value>
   </data>
   <data name="customerIDText" xml:space="preserve">
     <value>Mã khách hàng</value>
@@ -272,6 +287,9 @@
   </data>
   <data name="editText" xml:space="preserve">
     <value>Sửa</value>
+  </data>
+  <data name="emailText" xml:space="preserve">
+    <value>Địa chỉ email</value>
   </data>
   <data name="endDateText" xml:space="preserve">
     <value>Ngày kết thúc</value>
@@ -387,6 +405,9 @@
   <data name="letterDateText" xml:space="preserve">
     <value>Ngày làm đơn</value>
   </data>
+  <data name="letterHistoryText" xml:space="preserve">
+    <value>Lịch sử làm đơn</value>
+  </data>
   <data name="letterIDText" xml:space="preserve">
     <value>Mã đơn từ</value>
   </data>
@@ -395,6 +416,9 @@
   </data>
   <data name="letterText" xml:space="preserve">
     <value>Đơn từ</value>
+  </data>
+  <data name="letterTypeText" xml:space="preserve">
+    <value>Loại đơn</value>
   </data>
   <data name="lockFoodText" xml:space="preserve">
     <value>Khóa món ăn</value>
@@ -407,6 +431,12 @@
   </data>
   <data name="loginText" xml:space="preserve">
     <value>Đăng nhập</value>
+  </data>
+  <data name="makeLetterDateText" xml:space="preserve">
+    <value>Ngày làm đơn</value>
+  </data>
+  <data name="makeLetterText" xml:space="preserve">
+    <value>Làm đơn</value>
   </data>
   <data name="medicalInsuranceEndDateText" xml:space="preserve">
     <value>Ngày kết thúc BHXH</value>
@@ -449,6 +479,12 @@
   </data>
   <data name="newlyAddedDishText" xml:space="preserve">
     <value>Món ăn mới thêm</value>
+  </data>
+  <data name="newPasswordConfirmText" xml:space="preserve">
+    <value>Nhập lại mật khẩu mới</value>
+  </data>
+  <data name="newPasswordText" xml:space="preserve">
+    <value>Mật khẩu mới</value>
   </data>
   <data name="notificationText" xml:space="preserve">
     <value>Thông báo</value>
@@ -534,6 +570,9 @@
   <data name="priceText" xml:space="preserve">
     <value>Giá tiền</value>
   </data>
+  <data name="processingDateText" xml:space="preserve">
+    <value>Ngày xử lý</value>
+  </data>
   <data name="productIDText" xml:space="preserve">
     <value>Mã sản phẩm</value>
   </data>
@@ -557,6 +596,9 @@
   </data>
   <data name="reasonText" xml:space="preserve">
     <value>Lý do</value>
+  </data>
+  <data name="registerShiftText" xml:space="preserve">
+    <value>Đăng ký ca làm</value>
   </data>
   <data name="rejectedText" xml:space="preserve">
     <value>Không duyệt</value>
@@ -601,7 +643,7 @@
     <value>Ca</value>
   </data>
   <data name="signoutText" xml:space="preserve">
-    <value>Đăng nhập</value>
+    <value>Đăng xuất</value>
   </data>
   <data name="signupText" xml:space="preserve">
     <value>Đăng kí</value>
@@ -678,10 +720,10 @@
   <data name="stockManagementText" xml:space="preserve">
     <value>Quản lý kho hàng</value>
   </data>
-	<data name="stockText" xml:space="preserve">
+  <data name="stockText" xml:space="preserve">
     <value>Kho hàng</value>
   </data>
- <data name="String132" xml:space="preserve">
+  <data name="String132" xml:space="preserve">
     <value>reasonDescriptionText</value>
   </data>
   <data name="String133" xml:space="preserve">
@@ -701,6 +743,9 @@
   </data>
   <data name="timekeepingCodeText" xml:space="preserve">
     <value>Mã chấm công</value>
+  </data>
+  <data name="timekeepingConfirmLetterText" xml:space="preserve">
+    <value>Đơn xác nhận chấm công</value>
   </data>
   <data name="timekeepingManagementText" xml:space="preserve">
     <value>Quản lý chấm công</value>
@@ -731,6 +776,9 @@
   </data>
   <data name="tuesdayText" xml:space="preserve">
     <value>Thứ ba</value>
+  </data>
+  <data name="turnInLetterText" xml:space="preserve">
+    <value>Nộp đơn</value>
   </data>
   <data name="undertakingRoomText" xml:space="preserve">
     <value>Loại phòng đảm nhận</value>

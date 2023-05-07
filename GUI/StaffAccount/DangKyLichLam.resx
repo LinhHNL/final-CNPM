@@ -117,21 +117,21 @@
         kNhuqG9Owp/YUUeBtw5Luq0S3vwcWBXva/W+8P8thPwPsIIfWJ/PkPgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btn_CaSang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_morningShift.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAEpJREFUKFNjcPBwUHDycpJnwAbcPdznu3m43ceqwCHAQcDN0+38QClwcHAQcHV3
         BUt6eXkhJKkoAQJAB/RjlQABDw8PBawSDAwMAFVqNQRcg8ZaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_CaChieu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_afternoonShift.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAEpJREFUKFNjcPBwUHDycpJnwAbcPdznu3m43ceqwCHAQcDN0+38QClwcHAQcHV3
         BUt6eXkhJKkoAQJAB/RjlQABDw8PBawSDAwMAFVqNQRcg8ZaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btn_CaToi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_eveningShift.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAAEpJREFUKFNjcPBwUHDycpJnwAbcPdznu3m43ceqwCHAQcDN0+38QClwcHAQcHV3

@@ -35,20 +35,20 @@ namespace WinFormsApp2.NhanVienPage
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            btn_Update.BackColor = ColorTranslator.FromHtml("#6C757D");
+            btn_Edit.BackColor = ColorTranslator.FromHtml("#6C757D");
             btn_Save.BackColor = ColorTranslator.FromHtml("#E50111");
             editMode = true; 
         }
 
         private void QuanLyDonTuNoiDungDon_Load(object sender, EventArgs e)
         {
-            cb_TrangThai.SelectedIndex = 0;
+            cb_Status.SelectedIndex = 0;
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
             btn_Save.BackColor = ColorTranslator.FromHtml("#6C757D");
-            btn_Update.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_Edit.BackColor = ColorTranslator.FromHtml("#E50111");
             editMode = false;
         }
 
@@ -110,7 +110,7 @@ namespace WinFormsApp2.NhanVienPage
             lbl_FullName.Text = rm.GetString("fullNameText", culture);
             lbl_letterDate.Text = rm.GetString("letterDateText", culture);
             btn_Back.Text = rm.GetString("backText", culture);
-            btn_Update.Text = rm.GetString("updateText", culture);
+            btn_Edit.Text = rm.GetString("updateText", culture);
             btn_Save.Text = rm.GetString("saveText", culture);
             lbl_Status.Text = rm.GetString("statusText", culture);
             

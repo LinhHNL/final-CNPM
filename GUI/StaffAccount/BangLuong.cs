@@ -28,6 +28,7 @@ namespace WinFormsApp2.StaffAccount
         {
 
         }
+
         private void btn_HoSoCuaToi_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -38,7 +39,10 @@ namespace WinFormsApp2.StaffAccount
 
         private void btn_QuanLyLichLam_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            LichLam form = new LichLam();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void btn_QuanLyChamCong_Click(object sender, EventArgs e)
@@ -67,7 +71,10 @@ namespace WinFormsApp2.StaffAccount
 
         private void btn_ThongBao_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ThongBao form = new ThongBao();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
@@ -77,7 +84,6 @@ namespace WinFormsApp2.StaffAccount
             form.ShowDialog();
             this.Close();
         }
-
         public void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);
@@ -91,6 +97,8 @@ namespace WinFormsApp2.StaffAccount
             btn_Notification.Text = rm.GetString("notificationText", culture);
             btn_PasswordReset.Text = rm.GetString("passwordResetText", culture);
             btn_SignOut.Text = rm.GetString("signoutText", culture);
+
+
             lbl_PayrollDetail.Text = rm.GetString("payrollDetailText", culture);
             lbl_Month.Text = rm.GetString("monthText", culture);
             lbl_Work.Text = rm.GetString("workText", culture);

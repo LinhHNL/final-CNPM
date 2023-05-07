@@ -9,20 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using WinFormsApp2.KhoPage;
 
 namespace WinFormsApp2.StaffAccount
 {
-    public partial class LamDon : MetroFramework.Forms.MetroForm
+    public partial class ThongBao : MetroFramework.Forms.MetroForm
     {
         CultureInfo culture;
         private bool editMode = false;
-        public LamDon()
+        public ThongBao()
         {
             InitializeComponent();
             SetLanguage("en-US");
-
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
@@ -32,7 +30,6 @@ namespace WinFormsApp2.StaffAccount
             form.ShowDialog();
             this.Close();
         }
-
         private void btn_HoSoCuaToi_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -75,10 +72,7 @@ namespace WinFormsApp2.StaffAccount
 
         private void btn_ThongBao_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ThongBao form = new ThongBao();
-            form.ShowDialog();
-            this.Close();
+
         }
 
         private void btn_DoiMatKhau_Click(object sender, EventArgs e)
@@ -88,7 +82,6 @@ namespace WinFormsApp2.StaffAccount
             form.ShowDialog();
             this.Close();
         }
-
         public void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);
@@ -104,15 +97,6 @@ namespace WinFormsApp2.StaffAccount
             btn_SignOut.Text = rm.GetString("signoutText", culture);
             lbl_AccountName.Text = rm.GetString("accountNameText", culture);
 
-
-            lbl_MakeLetter.Text = rm.GetString("makeLetterText", culture);
-            btn_TurnInLetter.Text = rm.GetString("turnInLetterText", culture);
-            lbl_staffID.Text = rm.GetString("staffIDText", culture);
-            lbl_reason.Text = rm.GetString("reasonText", culture);
-            lbl_reasonDescription.Text = rm.GetString("reasonDescriptionText", culture);
-            lbl_FullName.Text = rm.GetString("fullNameText", culture);
-            lbl_letterDate.Text = rm.GetString("letterDateText", culture);
-            btn_Back.Text = rm.GetString("backText", culture);
         }
     }
 }
