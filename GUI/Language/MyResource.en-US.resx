@@ -176,9 +176,12 @@
     <value>Bank account number</value>
     <comment>1</comment>
   </data>
-  <data name="bankNameNumber" xml:space="preserve">
+  <data name="bankNameNumberText" xml:space="preserve">
     <value>Bank name</value>
     <comment>1</comment>
+  </data>
+  <data name="basicInfoText" xml:space="preserve">
+    <value>Basic Information</value>
   </data>
   <data name="beverageText" xml:space="preserve">
     <value>Beverages</value>
@@ -473,6 +476,9 @@
   <data name="inventoryControlText" xml:space="preserve">
     <value>Inventory control</value>
     <comment>1</comment>
+  </data>
+  <data name="jobText" xml:space="preserve">
+    <value>Job</value>
   </data>
   <data name="lateTimesText" xml:space="preserve">
     <value>Late times</value>
@@ -847,6 +853,9 @@
     <value>Staff ID</value>
     <comment>1</comment>
   </data>
+  <data name="staffInfoText" xml:space="preserve">
+    <value>Staff Information</value>
+  </data>
   <data name="staffLevelBonusText" xml:space="preserve">
     <value>Staff level bonus</value>
     <comment>Staff management</comment>
@@ -876,6 +885,12 @@
   <data name="startDateText" xml:space="preserve">
     <value>Start date</value>
     <comment>1</comment>
+  </data>
+  <data name="startWorkDayText" xml:space="preserve">
+    <value>Start Work Day</value>
+  </data>
+  <data name="startWorkDayText2" xml:space="preserve">
+    <value>Start Work Date</value>
   </data>
   <data name="statisticsText" xml:space="preserve">
     <value>Statistics</value>
@@ -990,6 +1005,9 @@
   <data name="workHoursText" xml:space="preserve">
     <value>Work hours</value>
     <comment>Staff management</comment>
+  </data>
+  <data name="workInfoText" xml:space="preserve">
+    <value>Work Information</value>
   </data>
   <data name="workProgressText" xml:space="preserve">
     <value>Work progress</value>

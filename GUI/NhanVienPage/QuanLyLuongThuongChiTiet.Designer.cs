@@ -28,100 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyLuongThuongChiTiet));
-            this.btn_DangXuat = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btn_LuongThuong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btn_PayRoll = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
+            this.pb_AccountIcon = new System.Windows.Forms.PictureBox();
             this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_DonTu = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyChamCong = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_HoSoNhanVien = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_QuanLyLichLam = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btn_letter = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_TimekeepingManagement = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_StaffProfile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_WorkScheduleManagement = new WinFormsApp2.CustomControls.RoundedButton();
+            this.pb_Logo = new System.Windows.Forms.PictureBox();
+            this.lbl_payrollDetail = new System.Windows.Forms.Label();
+            this.lbl_StaffID = new System.Windows.Forms.Label();
             this.tb_MaNhanVien = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.btn_XuatFile = new WinFormsApp2.CustomControls.RoundedButton();
+            this.btn_exportFile = new WinFormsApp2.CustomControls.RoundedButton();
             this.tb_ChucVu = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_Position = new System.Windows.Forms.Label();
             this.tb_PhongBan = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_Department = new System.Windows.Forms.Label();
             this.tb_HoTen = new WinFormsApp2.CustomControls.LeftAlignRoundedTextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_FullName = new System.Windows.Forms.Label();
             this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_Work = new System.Windows.Forms.Label();
             this.line1 = new WinFormsApp2.CustomControls.Line();
             this.line2 = new WinFormsApp2.CustomControls.Line();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_OvertimeAllowance = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbl_ParkingAllowance = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_TrueWorkTime = new System.Windows.Forms.Label();
             this.line3 = new WinFormsApp2.CustomControls.Line();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbl_RevenueBonus = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbl_TrueWork = new System.Windows.Forms.Label();
             this.line4 = new WinFormsApp2.CustomControls.Line();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.lbl_StaffLevelBonus = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.lbl_LateTimes = new System.Windows.Forms.Label();
             this.line5 = new WinFormsApp2.CustomControls.Line();
             this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lbl_TotalSalaryText = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lbl_Wage = new System.Windows.Forms.Label();
             this.line6 = new WinFormsApp2.CustomControls.Line();
             this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lbl_PersonalIncomeTax = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
+            this.lbl_DaysoffWithoutPermission = new System.Windows.Forms.Label();
             this.line7 = new WinFormsApp2.CustomControls.Line();
             this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.lbl_UnionMoney = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lbl_FineForLate = new System.Windows.Forms.Label();
             this.line8 = new WinFormsApp2.CustomControls.Line();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lbl_SocialInsuranceMoney = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
+            this.lbl_EarlyEndTimes = new System.Windows.Forms.Label();
             this.line9 = new WinFormsApp2.CustomControls.Line();
             this.line10 = new WinFormsApp2.CustomControls.Line();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_DangXuat
+            // btn_Signout
             // 
-            this.btn_DangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_DangXuat.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_DangXuat.BorderRadius = 8;
-            this.btn_DangXuat.BorderSize = 0;
-            this.btn_DangXuat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DangXuat.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_DangXuat.Location = new System.Drawing.Point(1057, 35);
-            this.btn_DangXuat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DangXuat.Name = "btn_DangXuat";
-            this.btn_DangXuat.Size = new System.Drawing.Size(117, 35);
-            this.btn_DangXuat.TabIndex = 22;
-            this.btn_DangXuat.Text = "Đăng xuất";
-            this.btn_DangXuat.TextColor = System.Drawing.Color.White;
-            this.btn_DangXuat.UseVisualStyleBackColor = false;
+            this.btn_Signout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Signout.BorderRadius = 8;
+            this.btn_Signout.BorderSize = 0;
+            this.btn_Signout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Signout.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Signout.ForeColor = System.Drawing.Color.White;
+            this.btn_Signout.Location = new System.Drawing.Point(1057, 35);
+            this.btn_Signout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Signout.Name = "btn_Signout";
+            this.btn_Signout.Size = new System.Drawing.Size(117, 35);
+            this.btn_Signout.TabIndex = 22;
+            this.btn_Signout.Text = "Đăng xuất";
+            this.btn_Signout.TextColor = System.Drawing.Color.White;
+            this.btn_Signout.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
@@ -130,37 +130,37 @@
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(370, 106);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.metroGrid1.RowHeadersWidth = 51;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.RowTemplate.Height = 29;
@@ -170,15 +170,15 @@
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.btn_LuongThuong);
-            this.metroPanel1.Controls.Add(this.label4);
-            this.metroPanel1.Controls.Add(this.pictureBox2);
+            this.metroPanel1.Controls.Add(this.btn_PayRoll);
+            this.metroPanel1.Controls.Add(this.lbl_AccountName);
+            this.metroPanel1.Controls.Add(this.pb_AccountIcon);
             this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_DonTu);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyChamCong);
-            this.metroPanel1.Controls.Add(this.btn_HoSoNhanVien);
-            this.metroPanel1.Controls.Add(this.btn_QuanLyLichLam);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
+            this.metroPanel1.Controls.Add(this.btn_letter);
+            this.metroPanel1.Controls.Add(this.btn_TimekeepingManagement);
+            this.metroPanel1.Controls.Add(this.btn_StaffProfile);
+            this.metroPanel1.Controls.Add(this.btn_WorkScheduleManagement);
+            this.metroPanel1.Controls.Add(this.pb_Logo);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 11;
@@ -190,46 +190,46 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // btn_LuongThuong
+            // btn_PayRoll
             // 
-            this.btn_LuongThuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LuongThuong.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LuongThuong.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_LuongThuong.BorderRadius = 0;
-            this.btn_LuongThuong.BorderSize = 0;
-            this.btn_LuongThuong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_LuongThuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LuongThuong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_LuongThuong.ForeColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.Location = new System.Drawing.Point(0, 363);
-            this.btn_LuongThuong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_LuongThuong.Name = "btn_LuongThuong";
-            this.btn_LuongThuong.Size = new System.Drawing.Size(263, 64);
-            this.btn_LuongThuong.TabIndex = 45;
-            this.btn_LuongThuong.Text = "Lương thưởng";
-            this.btn_LuongThuong.TextColor = System.Drawing.Color.White;
-            this.btn_LuongThuong.UseVisualStyleBackColor = false;
-            this.btn_LuongThuong.Click += new System.EventHandler(this.btn_LuongThuong_Click);
+            this.btn_PayRoll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_PayRoll.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_PayRoll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_PayRoll.BorderRadius = 0;
+            this.btn_PayRoll.BorderSize = 0;
+            this.btn_PayRoll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_PayRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_PayRoll.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_PayRoll.ForeColor = System.Drawing.Color.White;
+            this.btn_PayRoll.Location = new System.Drawing.Point(0, 363);
+            this.btn_PayRoll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_PayRoll.Name = "btn_PayRoll";
+            this.btn_PayRoll.Size = new System.Drawing.Size(263, 64);
+            this.btn_PayRoll.TabIndex = 45;
+            this.btn_PayRoll.Text = "Lương thưởng";
+            this.btn_PayRoll.TextColor = System.Drawing.Color.White;
+            this.btn_PayRoll.UseVisualStyleBackColor = false;
+            this.btn_PayRoll.Click += new System.EventHandler(this.btn_LuongThuong_Click);
             // 
-            // label4
+            // lbl_AccountName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(70, 85);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 28);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(70, 85);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 31;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
-            // pictureBox2
+            // pb_AccountIcon
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(34, 88);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
+            this.pb_AccountIcon.Image = ((System.Drawing.Image)(resources.GetObject("pb_AccountIcon.Image")));
+            this.pb_AccountIcon.Location = new System.Drawing.Point(34, 88);
+            this.pb_AccountIcon.Name = "pb_AccountIcon";
+            this.pb_AccountIcon.Size = new System.Drawing.Size(30, 27);
+            this.pb_AccountIcon.TabIndex = 21;
+            this.pb_AccountIcon.TabStop = false;
             // 
             // metroPanel7
             // 
@@ -245,118 +245,118 @@
             this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // btn_DonTu
+            // btn_letter
             // 
-            this.btn_DonTu.BackColor = System.Drawing.Color.White;
-            this.btn_DonTu.BackgroundColor = System.Drawing.Color.White;
-            this.btn_DonTu.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_DonTu.BorderRadius = 0;
-            this.btn_DonTu.BorderSize = 0;
-            this.btn_DonTu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_DonTu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_DonTu.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_DonTu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.Location = new System.Drawing.Point(-1, 301);
-            this.btn_DonTu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_DonTu.Name = "btn_DonTu";
-            this.btn_DonTu.Size = new System.Drawing.Size(263, 64);
-            this.btn_DonTu.TabIndex = 18;
-            this.btn_DonTu.Text = "Đơn từ";
-            this.btn_DonTu.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_DonTu.UseVisualStyleBackColor = false;
-            this.btn_DonTu.Click += new System.EventHandler(this.btn_DonTu_Click);
+            this.btn_letter.BackColor = System.Drawing.Color.White;
+            this.btn_letter.BackgroundColor = System.Drawing.Color.White;
+            this.btn_letter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_letter.BorderRadius = 0;
+            this.btn_letter.BorderSize = 0;
+            this.btn_letter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_letter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_letter.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_letter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_letter.Location = new System.Drawing.Point(-1, 301);
+            this.btn_letter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_letter.Name = "btn_letter";
+            this.btn_letter.Size = new System.Drawing.Size(263, 64);
+            this.btn_letter.TabIndex = 18;
+            this.btn_letter.Text = "Đơn từ";
+            this.btn_letter.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_letter.UseVisualStyleBackColor = false;
+            this.btn_letter.Click += new System.EventHandler(this.btn_DonTu_Click);
             // 
-            // btn_QuanLyChamCong
+            // btn_TimekeepingManagement
             // 
-            this.btn_QuanLyChamCong.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyChamCong.BorderColor = System.Drawing.Color.Silver;
-            this.btn_QuanLyChamCong.BorderRadius = 0;
-            this.btn_QuanLyChamCong.BorderSize = 0;
-            this.btn_QuanLyChamCong.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyChamCong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyChamCong.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyChamCong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.Location = new System.Drawing.Point(-1, 243);
-            this.btn_QuanLyChamCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyChamCong.Name = "btn_QuanLyChamCong";
-            this.btn_QuanLyChamCong.Size = new System.Drawing.Size(264, 64);
-            this.btn_QuanLyChamCong.TabIndex = 17;
-            this.btn_QuanLyChamCong.Text = "Quản lý chấm công";
-            this.btn_QuanLyChamCong.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyChamCong.UseVisualStyleBackColor = false;
-            this.btn_QuanLyChamCong.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
+            this.btn_TimekeepingManagement.BackColor = System.Drawing.Color.White;
+            this.btn_TimekeepingManagement.BackgroundColor = System.Drawing.Color.White;
+            this.btn_TimekeepingManagement.BorderColor = System.Drawing.Color.Silver;
+            this.btn_TimekeepingManagement.BorderRadius = 0;
+            this.btn_TimekeepingManagement.BorderSize = 0;
+            this.btn_TimekeepingManagement.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_TimekeepingManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TimekeepingManagement.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_TimekeepingManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_TimekeepingManagement.Location = new System.Drawing.Point(-1, 243);
+            this.btn_TimekeepingManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_TimekeepingManagement.Name = "btn_TimekeepingManagement";
+            this.btn_TimekeepingManagement.Size = new System.Drawing.Size(264, 64);
+            this.btn_TimekeepingManagement.TabIndex = 17;
+            this.btn_TimekeepingManagement.Text = "Quản lý chấm công";
+            this.btn_TimekeepingManagement.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_TimekeepingManagement.UseVisualStyleBackColor = false;
+            this.btn_TimekeepingManagement.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
             // 
-            // btn_HoSoNhanVien
+            // btn_StaffProfile
             // 
-            this.btn_HoSoNhanVien.BackColor = System.Drawing.Color.White;
-            this.btn_HoSoNhanVien.BackgroundColor = System.Drawing.Color.White;
-            this.btn_HoSoNhanVien.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_HoSoNhanVien.BorderRadius = 0;
-            this.btn_HoSoNhanVien.BorderSize = 0;
-            this.btn_HoSoNhanVien.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_HoSoNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoSoNhanVien.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_HoSoNhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSoNhanVien.Location = new System.Drawing.Point(0, 131);
-            this.btn_HoSoNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_HoSoNhanVien.Name = "btn_HoSoNhanVien";
-            this.btn_HoSoNhanVien.Size = new System.Drawing.Size(262, 60);
-            this.btn_HoSoNhanVien.TabIndex = 16;
-            this.btn_HoSoNhanVien.Text = "Hồ sơ nhân viên";
-            this.btn_HoSoNhanVien.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_HoSoNhanVien.UseVisualStyleBackColor = false;
-            this.btn_HoSoNhanVien.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
+            this.btn_StaffProfile.BackColor = System.Drawing.Color.White;
+            this.btn_StaffProfile.BackgroundColor = System.Drawing.Color.White;
+            this.btn_StaffProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
+            this.btn_StaffProfile.BorderRadius = 0;
+            this.btn_StaffProfile.BorderSize = 0;
+            this.btn_StaffProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_StaffProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_StaffProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_StaffProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_StaffProfile.Location = new System.Drawing.Point(0, 131);
+            this.btn_StaffProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_StaffProfile.Name = "btn_StaffProfile";
+            this.btn_StaffProfile.Size = new System.Drawing.Size(262, 60);
+            this.btn_StaffProfile.TabIndex = 16;
+            this.btn_StaffProfile.Text = "Hồ sơ nhân viên";
+            this.btn_StaffProfile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_StaffProfile.UseVisualStyleBackColor = false;
+            this.btn_StaffProfile.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
             // 
-            // btn_QuanLyLichLam
+            // btn_WorkScheduleManagement
             // 
-            this.btn_QuanLyLichLam.BackColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BackgroundColor = System.Drawing.Color.White;
-            this.btn_QuanLyLichLam.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_QuanLyLichLam.BorderRadius = 0;
-            this.btn_QuanLyLichLam.BorderSize = 0;
-            this.btn_QuanLyLichLam.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_QuanLyLichLam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_QuanLyLichLam.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_QuanLyLichLam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.Location = new System.Drawing.Point(0, 189);
-            this.btn_QuanLyLichLam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_QuanLyLichLam.Name = "btn_QuanLyLichLam";
-            this.btn_QuanLyLichLam.Size = new System.Drawing.Size(262, 56);
-            this.btn_QuanLyLichLam.TabIndex = 16;
-            this.btn_QuanLyLichLam.Text = "Quản lý lịch làm";
-            this.btn_QuanLyLichLam.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_QuanLyLichLam.UseVisualStyleBackColor = false;
-            this.btn_QuanLyLichLam.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
+            this.btn_WorkScheduleManagement.BackColor = System.Drawing.Color.White;
+            this.btn_WorkScheduleManagement.BackgroundColor = System.Drawing.Color.White;
+            this.btn_WorkScheduleManagement.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_WorkScheduleManagement.BorderRadius = 0;
+            this.btn_WorkScheduleManagement.BorderSize = 0;
+            this.btn_WorkScheduleManagement.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_WorkScheduleManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_WorkScheduleManagement.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_WorkScheduleManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkScheduleManagement.Location = new System.Drawing.Point(0, 189);
+            this.btn_WorkScheduleManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_WorkScheduleManagement.Name = "btn_WorkScheduleManagement";
+            this.btn_WorkScheduleManagement.Size = new System.Drawing.Size(262, 56);
+            this.btn_WorkScheduleManagement.TabIndex = 16;
+            this.btn_WorkScheduleManagement.Text = "Quản lý lịch làm";
+            this.btn_WorkScheduleManagement.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
+            this.btn_WorkScheduleManagement.UseVisualStyleBackColor = false;
+            this.btn_WorkScheduleManagement.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
             // 
-            // pictureBox1
+            // pb_Logo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(101, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 51);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pb_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_Logo.Image")));
+            this.pb_Logo.Location = new System.Drawing.Point(101, 13);
+            this.pb_Logo.Name = "pb_Logo";
+            this.pb_Logo.Size = new System.Drawing.Size(50, 51);
+            this.pb_Logo.TabIndex = 16;
+            this.pb_Logo.TabStop = false;
             // 
-            // label1
+            // lbl_payrollDetail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(267, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 37);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "Chi tiết bảng lương";
+            this.lbl_payrollDetail.AutoSize = true;
+            this.lbl_payrollDetail.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_payrollDetail.Location = new System.Drawing.Point(267, 48);
+            this.lbl_payrollDetail.Name = "lbl_payrollDetail";
+            this.lbl_payrollDetail.Size = new System.Drawing.Size(256, 37);
+            this.lbl_payrollDetail.TabIndex = 47;
+            this.lbl_payrollDetail.Text = "Chi tiết bảng lương";
             // 
-            // label6
+            // lbl_StaffID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(287, 137);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 28);
-            this.label6.TabIndex = 62;
-            this.label6.Text = "Mã nhân viên:";
+            this.lbl_StaffID.AutoSize = true;
+            this.lbl_StaffID.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_StaffID.Location = new System.Drawing.Point(287, 137);
+            this.lbl_StaffID.Name = "lbl_StaffID";
+            this.lbl_StaffID.Size = new System.Drawing.Size(144, 28);
+            this.lbl_StaffID.TabIndex = 62;
+            this.lbl_StaffID.Text = "Mã nhân viên:";
             // 
             // tb_MaNhanVien
             // 
@@ -381,25 +381,25 @@
             this.tb_MaNhanVien.Texts = "";
             this.tb_MaNhanVien.UnderlinedStyle = false;
             // 
-            // btn_XuatFile
+            // btn_exportFile
             // 
-            this.btn_XuatFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
-            this.btn_XuatFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
-            this.btn_XuatFile.BorderRadius = 8;
-            this.btn_XuatFile.BorderSize = 1;
-            this.btn_XuatFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_XuatFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_XuatFile.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_XuatFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.Location = new System.Drawing.Point(918, 78);
-            this.btn_XuatFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_XuatFile.Name = "btn_XuatFile";
-            this.btn_XuatFile.Size = new System.Drawing.Size(117, 35);
-            this.btn_XuatFile.TabIndex = 67;
-            this.btn_XuatFile.Text = "Xuất file";
-            this.btn_XuatFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_XuatFile.UseVisualStyleBackColor = false;
+            this.btn_exportFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_exportFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
+            this.btn_exportFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
+            this.btn_exportFile.BorderRadius = 8;
+            this.btn_exportFile.BorderSize = 1;
+            this.btn_exportFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_exportFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exportFile.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_exportFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_exportFile.Location = new System.Drawing.Point(918, 78);
+            this.btn_exportFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_exportFile.Name = "btn_exportFile";
+            this.btn_exportFile.Size = new System.Drawing.Size(117, 35);
+            this.btn_exportFile.TabIndex = 67;
+            this.btn_exportFile.Text = "Xuất file";
+            this.btn_exportFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_exportFile.UseVisualStyleBackColor = false;
             // 
             // tb_ChucVu
             // 
@@ -424,15 +424,15 @@
             this.tb_ChucVu.Texts = "";
             this.tb_ChucVu.UnderlinedStyle = false;
             // 
-            // label2
+            // lbl_Position
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(338, 180);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 28);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Chức vụ:";
+            this.lbl_Position.AutoSize = true;
+            this.lbl_Position.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Position.Location = new System.Drawing.Point(338, 180);
+            this.lbl_Position.Name = "lbl_Position";
+            this.lbl_Position.Size = new System.Drawing.Size(93, 28);
+            this.lbl_Position.TabIndex = 68;
+            this.lbl_Position.Text = "Chức vụ:";
             // 
             // tb_PhongBan
             // 
@@ -457,15 +457,15 @@
             this.tb_PhongBan.Texts = "";
             this.tb_PhongBan.UnderlinedStyle = false;
             // 
-            // label3
+            // lbl_Department
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(769, 176);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 28);
-            this.label3.TabIndex = 72;
-            this.label3.Text = "Phòng ban:";
+            this.lbl_Department.AutoSize = true;
+            this.lbl_Department.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Department.Location = new System.Drawing.Point(769, 176);
+            this.lbl_Department.Name = "lbl_Department";
+            this.lbl_Department.Size = new System.Drawing.Size(117, 28);
+            this.lbl_Department.TabIndex = 72;
+            this.lbl_Department.Text = "Phòng ban:";
             // 
             // tb_HoTen
             // 
@@ -490,15 +490,15 @@
             this.tb_HoTen.Texts = "";
             this.tb_HoTen.UnderlinedStyle = false;
             // 
-            // label5
+            // lbl_FullName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(780, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 28);
-            this.label5.TabIndex = 70;
-            this.label5.Text = "Họ và tên:";
+            this.lbl_FullName.AutoSize = true;
+            this.lbl_FullName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_FullName.Location = new System.Drawing.Point(780, 137);
+            this.lbl_FullName.Name = "lbl_FullName";
+            this.lbl_FullName.Size = new System.Drawing.Size(106, 28);
+            this.lbl_FullName.TabIndex = 70;
+            this.lbl_FullName.Text = "Họ và tên:";
             // 
             // btn_Back
             // 
@@ -531,15 +531,15 @@
             this.label7.TabIndex = 81;
             this.label7.Text = "--";
             // 
-            // label8
+            // lbl_Work
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(278, 238);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 28);
-            this.label8.TabIndex = 80;
-            this.label8.Text = "Công làm việc";
+            this.lbl_Work.AutoSize = true;
+            this.lbl_Work.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Work.Location = new System.Drawing.Point(278, 238);
+            this.lbl_Work.Name = "lbl_Work";
+            this.lbl_Work.Size = new System.Drawing.Size(139, 28);
+            this.lbl_Work.TabIndex = 80;
+            this.lbl_Work.Text = "Công làm việc";
             // 
             // line1
             // 
@@ -565,15 +565,15 @@
             this.label9.TabIndex = 84;
             this.label9.Text = "--";
             // 
-            // label10
+            // lbl_OvertimeAllowance
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(721, 238);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(159, 28);
-            this.label10.TabIndex = 83;
-            this.label10.Text = "Phụ cấp tăng ca";
+            this.lbl_OvertimeAllowance.AutoSize = true;
+            this.lbl_OvertimeAllowance.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_OvertimeAllowance.Location = new System.Drawing.Point(721, 238);
+            this.lbl_OvertimeAllowance.Name = "lbl_OvertimeAllowance";
+            this.lbl_OvertimeAllowance.Size = new System.Drawing.Size(159, 28);
+            this.lbl_OvertimeAllowance.TabIndex = 83;
+            this.lbl_OvertimeAllowance.Text = "Phụ cấp tăng ca";
             // 
             // label11
             // 
@@ -585,15 +585,15 @@
             this.label11.TabIndex = 89;
             this.label11.Text = "--";
             // 
-            // label12
+            // lbl_ParkingAllowance
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(721, 278);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(146, 28);
-            this.label12.TabIndex = 88;
-            this.label12.Text = "Phụ cấp gửi xe";
+            this.lbl_ParkingAllowance.AutoSize = true;
+            this.lbl_ParkingAllowance.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ParkingAllowance.Location = new System.Drawing.Point(721, 278);
+            this.lbl_ParkingAllowance.Name = "lbl_ParkingAllowance";
+            this.lbl_ParkingAllowance.Size = new System.Drawing.Size(146, 28);
+            this.lbl_ParkingAllowance.TabIndex = 88;
+            this.lbl_ParkingAllowance.Text = "Phụ cấp gửi xe";
             // 
             // label13
             // 
@@ -605,15 +605,15 @@
             this.label13.TabIndex = 87;
             this.label13.Text = "--";
             // 
-            // label14
+            // lbl_TrueWorkTime
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(278, 278);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(216, 28);
-            this.label14.TabIndex = 86;
-            this.label14.Text = "Giờ làm việc thực tính";
+            this.lbl_TrueWorkTime.AutoSize = true;
+            this.lbl_TrueWorkTime.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TrueWorkTime.Location = new System.Drawing.Point(278, 278);
+            this.lbl_TrueWorkTime.Name = "lbl_TrueWorkTime";
+            this.lbl_TrueWorkTime.Size = new System.Drawing.Size(216, 28);
+            this.lbl_TrueWorkTime.TabIndex = 86;
+            this.lbl_TrueWorkTime.Text = "Giờ làm việc thực tính";
             // 
             // line3
             // 
@@ -632,15 +632,15 @@
             this.label15.TabIndex = 94;
             this.label15.Text = "--";
             // 
-            // label16
+            // lbl_RevenueBonus
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(721, 314);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(227, 28);
-            this.label16.TabIndex = 93;
-            this.label16.Text = "Tiền thưởng doanh thu";
+            this.lbl_RevenueBonus.AutoSize = true;
+            this.lbl_RevenueBonus.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_RevenueBonus.Location = new System.Drawing.Point(721, 314);
+            this.lbl_RevenueBonus.Name = "lbl_RevenueBonus";
+            this.lbl_RevenueBonus.Size = new System.Drawing.Size(227, 28);
+            this.lbl_RevenueBonus.TabIndex = 93;
+            this.lbl_RevenueBonus.Text = "Tiền thưởng doanh thu";
             // 
             // label17
             // 
@@ -652,15 +652,15 @@
             this.label17.TabIndex = 92;
             this.label17.Text = "--";
             // 
-            // label18
+            // lbl_TrueWork
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(278, 314);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(147, 28);
-            this.label18.TabIndex = 91;
-            this.label18.Text = "Số công chuẩn";
+            this.lbl_TrueWork.AutoSize = true;
+            this.lbl_TrueWork.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TrueWork.Location = new System.Drawing.Point(278, 314);
+            this.lbl_TrueWork.Name = "lbl_TrueWork";
+            this.lbl_TrueWork.Size = new System.Drawing.Size(147, 28);
+            this.lbl_TrueWork.TabIndex = 91;
+            this.lbl_TrueWork.Text = "Số công chuẩn";
             // 
             // line4
             // 
@@ -679,15 +679,15 @@
             this.label19.TabIndex = 99;
             this.label19.Text = "--";
             // 
-            // label20
+            // lbl_StaffLevelBonus
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(721, 354);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(272, 28);
-            this.label20.TabIndex = 98;
-            this.label20.Text = "Tiền thưởng hạng nhân viên";
+            this.lbl_StaffLevelBonus.AutoSize = true;
+            this.lbl_StaffLevelBonus.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_StaffLevelBonus.Location = new System.Drawing.Point(721, 354);
+            this.lbl_StaffLevelBonus.Name = "lbl_StaffLevelBonus";
+            this.lbl_StaffLevelBonus.Size = new System.Drawing.Size(272, 28);
+            this.lbl_StaffLevelBonus.TabIndex = 98;
+            this.lbl_StaffLevelBonus.Text = "Tiền thưởng hạng nhân viên";
             // 
             // label21
             // 
@@ -699,15 +699,15 @@
             this.label21.TabIndex = 97;
             this.label21.Text = "--";
             // 
-            // label22
+            // lbl_LateTimes
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(278, 354);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(150, 28);
-            this.label22.TabIndex = 96;
-            this.label22.Text = "Số lần đi muộn";
+            this.lbl_LateTimes.AutoSize = true;
+            this.lbl_LateTimes.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_LateTimes.Location = new System.Drawing.Point(278, 354);
+            this.lbl_LateTimes.Name = "lbl_LateTimes";
+            this.lbl_LateTimes.Size = new System.Drawing.Size(150, 28);
+            this.lbl_LateTimes.TabIndex = 96;
+            this.lbl_LateTimes.Text = "Số lần đi muộn";
             // 
             // line5
             // 
@@ -726,15 +726,15 @@
             this.label23.TabIndex = 119;
             this.label23.Text = "--";
             // 
-            // label24
+            // lbl_TotalSalaryText
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(721, 508);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(116, 28);
-            this.label24.TabIndex = 118;
-            this.label24.Text = "Tổng lương";
+            this.lbl_TotalSalaryText.AutoSize = true;
+            this.lbl_TotalSalaryText.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TotalSalaryText.Location = new System.Drawing.Point(721, 508);
+            this.lbl_TotalSalaryText.Name = "lbl_TotalSalaryText";
+            this.lbl_TotalSalaryText.Size = new System.Drawing.Size(116, 28);
+            this.lbl_TotalSalaryText.TabIndex = 118;
+            this.lbl_TotalSalaryText.Text = "Tổng lương";
             // 
             // label25
             // 
@@ -746,15 +746,15 @@
             this.label25.TabIndex = 117;
             this.label25.Text = "--";
             // 
-            // label26
+            // lbl_Wage
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(278, 508);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(101, 28);
-            this.label26.TabIndex = 116;
-            this.label26.Text = "Tiền công";
+            this.lbl_Wage.AutoSize = true;
+            this.lbl_Wage.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Wage.Location = new System.Drawing.Point(278, 508);
+            this.lbl_Wage.Name = "lbl_Wage";
+            this.lbl_Wage.Size = new System.Drawing.Size(101, 28);
+            this.lbl_Wage.TabIndex = 116;
+            this.lbl_Wage.Text = "Tiền công";
             // 
             // line6
             // 
@@ -773,15 +773,15 @@
             this.label27.TabIndex = 114;
             this.label27.Text = "--";
             // 
-            // label28
+            // lbl_PersonalIncomeTax
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(721, 468);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(266, 28);
-            this.label28.TabIndex = 113;
-            this.label28.Text = "Tiền thuế thu nhập cá nhân";
+            this.lbl_PersonalIncomeTax.AutoSize = true;
+            this.lbl_PersonalIncomeTax.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_PersonalIncomeTax.Location = new System.Drawing.Point(721, 468);
+            this.lbl_PersonalIncomeTax.Name = "lbl_PersonalIncomeTax";
+            this.lbl_PersonalIncomeTax.Size = new System.Drawing.Size(266, 28);
+            this.lbl_PersonalIncomeTax.TabIndex = 113;
+            this.lbl_PersonalIncomeTax.Text = "Tiền thuế thu nhập cá nhân";
             // 
             // label29
             // 
@@ -793,15 +793,15 @@
             this.label29.TabIndex = 112;
             this.label29.Text = "--";
             // 
-            // label30
+            // lbl_DaysoffWithoutPermission
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(278, 468);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(243, 28);
-            this.label30.TabIndex = 111;
-            this.label30.Text = "Số ngày nghỉ không phép";
+            this.lbl_DaysoffWithoutPermission.AutoSize = true;
+            this.lbl_DaysoffWithoutPermission.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_DaysoffWithoutPermission.Location = new System.Drawing.Point(278, 468);
+            this.lbl_DaysoffWithoutPermission.Name = "lbl_DaysoffWithoutPermission";
+            this.lbl_DaysoffWithoutPermission.Size = new System.Drawing.Size(243, 28);
+            this.lbl_DaysoffWithoutPermission.TabIndex = 111;
+            this.lbl_DaysoffWithoutPermission.Text = "Số ngày nghỉ không phép";
             // 
             // line7
             // 
@@ -820,15 +820,15 @@
             this.label31.TabIndex = 109;
             this.label31.Text = "--";
             // 
-            // label32
+            // lbl_UnionMoney
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(721, 432);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(154, 28);
-            this.label32.TabIndex = 108;
-            this.label32.Text = "Tiền công đoàn";
+            this.lbl_UnionMoney.AutoSize = true;
+            this.lbl_UnionMoney.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_UnionMoney.Location = new System.Drawing.Point(721, 432);
+            this.lbl_UnionMoney.Name = "lbl_UnionMoney";
+            this.lbl_UnionMoney.Size = new System.Drawing.Size(154, 28);
+            this.lbl_UnionMoney.TabIndex = 108;
+            this.lbl_UnionMoney.Text = "Tiền công đoàn";
             // 
             // label33
             // 
@@ -840,15 +840,15 @@
             this.label33.TabIndex = 107;
             this.label33.Text = "--";
             // 
-            // label34
+            // lbl_FineForLate
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.Location = new System.Drawing.Point(278, 432);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(181, 28);
-            this.label34.TabIndex = 106;
-            this.label34.Text = "Tiền phạt đi muộn";
+            this.lbl_FineForLate.AutoSize = true;
+            this.lbl_FineForLate.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_FineForLate.Location = new System.Drawing.Point(278, 432);
+            this.lbl_FineForLate.Name = "lbl_FineForLate";
+            this.lbl_FineForLate.Size = new System.Drawing.Size(181, 28);
+            this.lbl_FineForLate.TabIndex = 106;
+            this.lbl_FineForLate.Text = "Tiền phạt đi muộn";
             // 
             // line8
             // 
@@ -867,15 +867,15 @@
             this.label35.TabIndex = 104;
             this.label35.Text = "--";
             // 
-            // label36
+            // lbl_SocialInsuranceMoney
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(721, 392);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(202, 28);
-            this.label36.TabIndex = 103;
-            this.label36.Text = "Tiền bảo hiểm xã hội";
+            this.lbl_SocialInsuranceMoney.AutoSize = true;
+            this.lbl_SocialInsuranceMoney.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_SocialInsuranceMoney.Location = new System.Drawing.Point(721, 392);
+            this.lbl_SocialInsuranceMoney.Name = "lbl_SocialInsuranceMoney";
+            this.lbl_SocialInsuranceMoney.Size = new System.Drawing.Size(202, 28);
+            this.lbl_SocialInsuranceMoney.TabIndex = 103;
+            this.lbl_SocialInsuranceMoney.Text = "Tiền bảo hiểm xã hội";
             // 
             // label37
             // 
@@ -887,15 +887,15 @@
             this.label37.TabIndex = 102;
             this.label37.Text = "--";
             // 
-            // label38
+            // lbl_EarlyEndTimes
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.Location = new System.Drawing.Point(278, 392);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(139, 28);
-            this.label38.TabIndex = 101;
-            this.label38.Text = "Số lần về sớm";
+            this.lbl_EarlyEndTimes.AutoSize = true;
+            this.lbl_EarlyEndTimes.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_EarlyEndTimes.Location = new System.Drawing.Point(278, 392);
+            this.lbl_EarlyEndTimes.Name = "lbl_EarlyEndTimes";
+            this.lbl_EarlyEndTimes.Size = new System.Drawing.Size(139, 28);
+            this.lbl_EarlyEndTimes.TabIndex = 101;
+            this.lbl_EarlyEndTimes.Text = "Số lần về sớm";
             // 
             // line9
             // 
@@ -918,137 +918,137 @@
             this.ClientSize = new System.Drawing.Size(1182, 605);
             this.Controls.Add(this.line10);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.lbl_TotalSalaryText);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.lbl_Wage);
             this.Controls.Add(this.line6);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.label28);
+            this.Controls.Add(this.lbl_PersonalIncomeTax);
             this.Controls.Add(this.label29);
-            this.Controls.Add(this.label30);
+            this.Controls.Add(this.lbl_DaysoffWithoutPermission);
             this.Controls.Add(this.line7);
             this.Controls.Add(this.label31);
-            this.Controls.Add(this.label32);
+            this.Controls.Add(this.lbl_UnionMoney);
             this.Controls.Add(this.label33);
-            this.Controls.Add(this.label34);
+            this.Controls.Add(this.lbl_FineForLate);
             this.Controls.Add(this.line8);
             this.Controls.Add(this.label35);
-            this.Controls.Add(this.label36);
+            this.Controls.Add(this.lbl_SocialInsuranceMoney);
             this.Controls.Add(this.label37);
-            this.Controls.Add(this.label38);
+            this.Controls.Add(this.lbl_EarlyEndTimes);
             this.Controls.Add(this.line9);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
+            this.Controls.Add(this.lbl_StaffLevelBonus);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label22);
+            this.Controls.Add(this.lbl_LateTimes);
             this.Controls.Add(this.line5);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lbl_RevenueBonus);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.lbl_TrueWork);
             this.Controls.Add(this.line4);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lbl_ParkingAllowance);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lbl_TrueWorkTime);
             this.Controls.Add(this.line3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbl_OvertimeAllowance);
             this.Controls.Add(this.line2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lbl_Work);
             this.Controls.Add(this.line1);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.tb_PhongBan);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_Department);
             this.Controls.Add(this.tb_HoTen);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_FullName);
             this.Controls.Add(this.tb_ChucVu);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btn_XuatFile);
+            this.Controls.Add(this.lbl_Position);
+            this.Controls.Add(this.btn_exportFile);
             this.Controls.Add(this.tb_MaNhanVien);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_StaffID);
+            this.Controls.Add(this.lbl_payrollDetail);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.btn_DangXuat);
+            this.Controls.Add(this.btn_Signout);
             this.Name = "QuanLyLuongThuongChiTiet";
             this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
             this.Load += new System.EventHandler(this.QuanLyLuongThuongChiTiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private CustomControls.RoundedButton btn_DangXuat;
+        private CustomControls.RoundedButton btn_Signout;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private Label label4;
-        private PictureBox pictureBox2;
+        private Label lbl_AccountName;
+        private PictureBox pb_AccountIcon;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_DonTu;
-        private CustomControls.RoundedButton btn_QuanLyChamCong;
-        private CustomControls.RoundedButton btn_HoSoNhanVien;
-        private CustomControls.RoundedButton btn_QuanLyLichLam;
-        private PictureBox pictureBox1;
-        private CustomControls.RoundedButton btn_LuongThuong;
-        private Label label1;
-        private Label label6;
+        private CustomControls.RoundedButton btn_letter;
+        private CustomControls.RoundedButton btn_TimekeepingManagement;
+        private CustomControls.RoundedButton btn_StaffProfile;
+        private CustomControls.RoundedButton btn_WorkScheduleManagement;
+        private PictureBox pb_Logo;
+        private CustomControls.RoundedButton btn_PayRoll;
+        private Label lbl_payrollDetail;
+        private Label lbl_StaffID;
         private CustomControls.LeftAlignRoundedTextBox tb_MaNhanVien;
-        private CustomControls.RoundedButton btn_XuatFile;
+        private CustomControls.RoundedButton btn_exportFile;
         private CustomControls.LeftAlignRoundedTextBox tb_ChucVu;
-        private Label label2;
+        private Label lbl_Position;
         private CustomControls.LeftAlignRoundedTextBox tb_PhongBan;
-        private Label label3;
+        private Label lbl_Department;
         private CustomControls.LeftAlignRoundedTextBox tb_HoTen;
-        private Label label5;
+        private Label lbl_FullName;
         private CustomControls.RoundedButton btn_Back;
         private Label label7;
-        private Label label8;
+        private Label lbl_Work;
         private CustomControls.Line line1;
         private CustomControls.Line line2;
         private Label label9;
-        private Label label10;
+        private Label lbl_OvertimeAllowance;
         private Label label11;
-        private Label label12;
+        private Label lbl_ParkingAllowance;
         private Label label13;
-        private Label label14;
+        private Label lbl_TrueWorkTime;
         private CustomControls.Line line3;
         private Label label15;
-        private Label label16;
+        private Label lbl_RevenueBonus;
         private Label label17;
-        private Label label18;
+        private Label lbl_TrueWork;
         private CustomControls.Line line4;
         private Label label19;
-        private Label label20;
+        private Label lbl_StaffLevelBonus;
         private Label label21;
-        private Label label22;
+        private Label lbl_LateTimes;
         private CustomControls.Line line5;
         private Label label23;
-        private Label label24;
+        private Label lbl_TotalSalaryText;
         private Label label25;
-        private Label label26;
+        private Label lbl_Wage;
         private CustomControls.Line line6;
         private Label label27;
-        private Label label28;
+        private Label lbl_PersonalIncomeTax;
         private Label label29;
-        private Label label30;
+        private Label lbl_DaysoffWithoutPermission;
         private CustomControls.Line line7;
         private Label label31;
-        private Label label32;
+        private Label lbl_UnionMoney;
         private Label label33;
-        private Label label34;
+        private Label lbl_FineForLate;
         private CustomControls.Line line8;
         private Label label35;
-        private Label label36;
+        private Label lbl_SocialInsuranceMoney;
         private Label label37;
-        private Label label38;
+        private Label lbl_EarlyEndTimes;
         private CustomControls.Line line9;
         private CustomControls.Line line10;
     }
