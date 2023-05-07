@@ -162,8 +162,11 @@
   <data name="bankAccountNumberText" xml:space="preserve">
     <value>STK ngân hàng</value>
   </data>
-  <data name="bankNameNumber" xml:space="preserve">
+  <data name="bankNameNumberText" xml:space="preserve">
     <value>Tên ngân hàng</value>
+  </data>
+  <data name="basicInfoText" xml:space="preserve">
+    <value>Thông tin cơ bản</value>
   </data>
   <data name="beverageText" xml:space="preserve">
     <value>Đồ uống</value>
@@ -378,6 +381,9 @@
   <data name="inventoryControlText" xml:space="preserve">
     <value>Kiểm kho</value>
   </data>
+  <data name="jobText" xml:space="preserve">
+    <value>Công việc</value>
+  </data>
   <data name="lateTimesText" xml:space="preserve">
     <value>Số lần đi muộn</value>
   </data>
@@ -409,10 +415,10 @@
     <value>Đăng nhập</value>
   </data>
   <data name="medicalInsuranceEndDateText" xml:space="preserve">
-    <value>Ngày kết thúc BHXH</value>
+    <value>Ngày kết thúc BHYT</value>
   </data>
   <data name="medicalInsuranceStartDateText" xml:space="preserve">
-    <value>Ngày bắt đầu BHXH</value>
+    <value>Ngày bắt đầu BHYT</value>
   </data>
   <data name="membershipLevelText" xml:space="preserve">
     <value>Xếp hạng thành viên</value>
@@ -553,7 +559,7 @@
     <value>Số lượng</value>
   </data>
   <data name="reasonDescriptionText" xml:space="preserve">
-    <value />
+    <value>Mô tả lý do</value>
   </data>
   <data name="reasonText" xml:space="preserve">
     <value>Lý do</value>
@@ -601,7 +607,7 @@
     <value>Ca</value>
   </data>
   <data name="signoutText" xml:space="preserve">
-    <value>Đăng nhập</value>
+    <value>Đăng xuất</value>
   </data>
   <data name="signupText" xml:space="preserve">
     <value>Đăng kí</value>
@@ -645,6 +651,9 @@
   <data name="staffIDText" xml:space="preserve">
     <value>Mã nhân viên</value>
   </data>
+  <data name="staffInfoText" xml:space="preserve">
+    <value>Thông tin nhân viên</value>
+  </data>
   <data name="staffLevelBonusText" xml:space="preserve">
     <value>Tiền thưởng hạng nhân viên</value>
   </data>
@@ -667,6 +676,12 @@
     <value>Nhân viên</value>
   </data>
   <data name="startDateText" xml:space="preserve">
+    <value>Ngày bắt đầu</value>
+  </data>
+  <data name="startWorkDayText" xml:space="preserve">
+    <value>Ngày bắt đầu làm việc</value>
+  </data>
+  <data name="startWorkDayText2" xml:space="preserve">
     <value>Ngày vào làm</value>
   </data>
   <data name="statisticsText" xml:space="preserve">
@@ -678,14 +693,8 @@
   <data name="stockManagementText" xml:space="preserve">
     <value>Quản lý kho hàng</value>
   </data>
-	<data name="stockText" xml:space="preserve">
+  <data name="stockText" xml:space="preserve">
     <value>Kho hàng</value>
-  </data>
- <data name="String132" xml:space="preserve">
-    <value>reasonDescriptionText</value>
-  </data>
-  <data name="String133" xml:space="preserve">
-    <value>reasonText</value>
   </data>
   <data name="sundayText" xml:space="preserve">
     <value>Chủ nhật</value>
@@ -758,6 +767,9 @@
   </data>
   <data name="workHoursText" xml:space="preserve">
     <value>Số giờ làm</value>
+  </data>
+  <data name="workInfoText" xml:space="preserve">
+    <value>Thông tin công việc</value>
   </data>
   <data name="workProgressText" xml:space="preserve">
     <value>Quá trình làm việc</value>
