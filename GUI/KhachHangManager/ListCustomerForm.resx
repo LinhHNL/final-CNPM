@@ -117,7 +117,7 @@
         kNhuqG9Owp/YUUeBtw5Luq0S3vwcWBXva/W+8P8thPwPsIIfWJ/PkPgAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="MembershipType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>
