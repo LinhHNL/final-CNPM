@@ -304,11 +304,10 @@ CREATE TABLE Menu
   KindFoodID INT NOT NULL,
   RoomID INT NOT NULL,
   status int not null,
+  Initual BIT not null ,
   PRIMARY KEY (MenuID),
   FOREIGN KEY (KindFoodID) REFERENCES KindFood(KindFoodID),
   FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
-  
-
 );
 GO
 CREATE TABLE ExportOrders
@@ -404,4 +403,3 @@ CREATE TABLE TempBillDetails (
     FOREIGN KEY (TempBillId) REFERENCES TempBill(Id)
 )
 GO
-

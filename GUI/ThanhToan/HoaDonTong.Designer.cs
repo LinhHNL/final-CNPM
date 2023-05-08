@@ -59,9 +59,9 @@
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             metroPanel1.HorizontalScrollbarSize = 10;
-            metroPanel1.Location = new Point(0, 17);
+            metroPanel1.Location = new Point(0, 44);
             metroPanel1.Name = "metroPanel1";
-            metroPanel1.Size = new Size(261, 722);
+            metroPanel1.Size = new Size(261, 695);
             metroPanel1.TabIndex = 20;
             metroPanel1.VerticalScrollbarBarColor = true;
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -252,6 +252,7 @@
             btn_ChangeStatus.Text = "Xác Nhận";
             btn_ChangeStatus.TextColor = Color.White;
             btn_ChangeStatus.UseVisualStyleBackColor = false;
+            btn_ChangeStatus.Click += btn_ChangeStatus_Click;
             // 
             // HoaDonTong
             // 
@@ -271,6 +272,7 @@
             Controls.Add(lbl_heading);
             Controls.Add(metroPanel1);
             Name = "HoaDonTong";
+            Load += HoaDonTong_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

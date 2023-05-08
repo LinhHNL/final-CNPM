@@ -27,7 +27,7 @@ namespace WinFormsApp2
             {
                 if (result == "1")
                 {
-                    StoringCustomerID.CustomerID = Int32.Parse(resultlist["id"]);
+                    BUS.SessionStorage.CustomerIDInUse = resultlist["id"];
                     this.Hide();
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
                     HomepageFormSingle.ShowDialog();

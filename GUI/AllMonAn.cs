@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using WinFormsApp2.Components;
+using GUI.ThanhToan;
 
 namespace WinFormsApp2
 {
@@ -16,8 +17,12 @@ namespace WinFormsApp2
     public partial class AllMonAn : MetroFramework.Forms.MetroForm
     {
         private string lbl_showprice = "0 VNĐ";
-        public AllMonAn()
+        public AllMonAn(String ResetLoad)
         {
+            if(ResetLoad == "1")
+            {
+            StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            }
             InitializeComponent();
         }
 
@@ -145,7 +150,7 @@ namespace WinFormsApp2
             {
                 if (item["KindFoodID"] == kindfoodID.ToString() && item["Status"] == "1")
                 {
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"],item["Name"], item["Price"], item["URLImage"], this));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
             }
             this.Updateprice();
@@ -183,5 +188,21 @@ namespace WinFormsApp2
             this.lbl_showprice = pricestr + " VNĐ";
         }
 
+        private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GUI.ConfirmView confirmView = new GUI.ConfirmView();
+            confirmView.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            
+            HoaDonTong payment = new HoaDonTong();
+            payment.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace WinFormsApp2.Components
         private String Giamon = "";
         private int index = 0;
         private int SoLuong = 0;
+        public String IDMon = "";
         private ShoppingCartForm context;
         public PaymentView()
         {
@@ -48,7 +49,7 @@ namespace WinFormsApp2.Components
             lbl_price.Text = ChangeGia((int.Parse(GiaMon)*SoLuong).ToString());
             this.context = context;
         }
-        public PaymentView(string TenMon, int SoLuong, String GiaMon)
+        public PaymentView(string TenMon, int SoLuong, String GiaMon, string IDMon)
         {
             //Set số lượng
             this.Tenmon = TenMon;
@@ -59,6 +60,7 @@ namespace WinFormsApp2.Components
             lbl_SoLuong.Text = this.SoLuong.ToString();
             lbl_price.Text = ChangeGia((int.Parse(GiaMon) * SoLuong).ToString());
             this.context = context;
+            this.IDMon = IDMon;
         }
 
         private void add_them_soluong_Click(object sender, EventArgs e)

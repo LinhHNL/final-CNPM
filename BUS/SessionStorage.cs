@@ -8,7 +8,7 @@ namespace BUS
 {
     public class SessionStorage
     {
-        public static String CustomerIDInUse = "-1";
+        public static String CustomerIDInUse = "1";
         public static String TokenStorage = "-1";
         public static String TempBillID = "-1";
     }

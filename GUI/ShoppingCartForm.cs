@@ -19,6 +19,7 @@ namespace WinFormsApp2
         {
             InitializeComponent();
         }
+        string pricestrValue = "0";
         public void UpdatePrice()
         {
             int price = 0;
@@ -29,6 +30,7 @@ namespace WinFormsApp2
                 price += tmpprice;
             }
             string pricestr = price.ToString();
+            pricestrValue= pricestr;
             string changestr = "";
             for (int i = pricestr.Length - 3; i > 0; i -= 3)
             {
@@ -57,7 +59,7 @@ namespace WinFormsApp2
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("0");
             MonAn.ShowDialog();
             this.Close();
         }
@@ -67,7 +69,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("1");
             MonAn.ShowDialog();
             this.Close();
         }
@@ -76,7 +78,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("1");
             MonAn.ShowDialog();
             this.Close();
         }
@@ -86,8 +88,8 @@ namespace WinFormsApp2
             BUS.TempBill tempBill = new BUS.TempBill();
             Dictionary<String,String> tempBillInfo=new Dictionary<String,String>();
             Dictionary<String, String> IDInfo = new Dictionary<String, String>();
-            tempBillInfo.Add("Price",lbl_priceshow.ToString());
-            if (BUS.SessionStorage.TempBillID == "-1")
+            tempBillInfo.Add("Price", pricestrValue);
+            if (BUS.SessionStorage.TempBillID.Equals("-1"))
             {
             IDInfo=tempBill.tryingInsertTempBill(tempBillInfo);
             BUS.SessionStorage.TempBillID = IDInfo["TempBilID"];
@@ -117,6 +119,10 @@ namespace WinFormsApp2
                         return;
                     }
                 }
+                this.Hide();
+                AllMonAn allMonAn = new AllMonAn("1");
+                allMonAn.ShowDialog();
+                this.Close();
             }
             else{
                 MessageBox.Show("Thêm thất bại");

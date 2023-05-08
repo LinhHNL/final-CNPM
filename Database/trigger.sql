@@ -2,9 +2,11 @@
 use hadilao
 go
 ----customer 
+DROP Trigger CheckCustomerExists;
+GO
 CREATE TRIGGER CheckCustomerExists
 ON Customers
-FOR INSERT
+INSTEAD OF INSERT
 AS
 BEGIN
  -- Kiểm tra trường Phone
@@ -20,10 +22,15 @@ BEGIN
 BEGIN
 RAISERROR ('Customer with phone number  already exists', 16, 1);
 ROLLBACK TRANSACTION;
+	
 RETURN;
 END
+ELSE
+	INSERT Customers(name, phone, address, password, point, levelid)
+   SELECT name, phone, address, password,0,1 FROM  inserted
 END
 GO
+
 
 CREATE TRIGGER tr_UpdateCustomer
 ON Customers

@@ -52,7 +52,6 @@ namespace WinFormsApp2
 
         private void roundedButton2_Click(object sender, EventArgs e)
         {
-            StoringCustomerID.CustomerID = -64;
             this.Hide();
             HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
             homepageFormSingle.ShowDialog();

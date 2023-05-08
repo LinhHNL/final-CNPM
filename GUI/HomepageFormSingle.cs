@@ -103,7 +103,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -111,7 +111,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -119,7 +119,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -127,7 +127,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -135,7 +135,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }

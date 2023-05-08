@@ -10,6 +10,32 @@ namespace DAO
 {
     public class TempBill
     {
+        public Dictionary<string, string> getTempBillByIDAndToken(Dictionary<string, string> TempBillInfo)
+        {
+            int CustomerID = int.Parse(TempBillInfo["CustomerID"]);
+            String TokenID = TempBillInfo["Token"];
+            Dictionary<string, string> resultDic = new Dictionary<string, string>();
+            try
+            {
+                SqlConnection conn = DatabaseConnection.connectDBFunc();
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("GetTempBill", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Token", TokenID);
+                cmd.Parameters.AddWithValue("@CustomerID", CustomerID);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    resultDic.Add("TempBillID", reader["Id"].ToString());
+                }
+                conn.Close();
+                return resultDic;
+            }
+            catch (Exception ex)
+            {
+                return resultDic;
+            }
+        }
         public bool tryingInsertTempBillDetail(Dictionary<string, string> TempBillDetailInfo)
         {
             int TempBillId = int.Parse(TempBillDetailInfo["TempBillId"]);
@@ -55,12 +81,12 @@ namespace DAO
                 cmd.Parameters.AddWithValue("@Price", Price);
                 cmd.Parameters.AddWithValue("@Token", TokenID);
                 SqlDataReader reader = cmd.ExecuteReader();
-                conn.Close();
                 while (reader.Read())
                 {
                     resultDic.Add("TempBilID", reader["TempBilID"].ToString());
                 }
-                return resultDic;
+            conn.Close();
+            return resultDic;
             }
             catch (Exception ex)
             {
@@ -111,7 +137,7 @@ namespace DAO
                 return resultList;
             }
         }
-        public List<Dictionary<string, string>> GetAllTempBillDetailsOfTempBill(String IDBillStr)
+        public List<Dictionary<string, string>> getAllTempBillDetailsOfTempBill(String IDBillStr)
         {
             int IDBill = int.Parse(IDBillStr);
             List<Dictionary<string, string>> resultList = new List<Dictionary<string, string>>();
@@ -128,6 +154,8 @@ namespace DAO
                     Dictionary<string, string> resultDic = new Dictionary<string, string>();
                     resultDic.Add("MenuID", reader["MenuID"].ToString());
                     resultDic.Add("NumberOfFood", reader["Number"].ToString());
+                    resultDic.Add("Status", reader["Status"].ToString());
+                    resultDic.Add("Price", reader["Price"].ToString());
                     resultList.Add(resultDic);
                 }
                 conn.Close();

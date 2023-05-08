@@ -29,14 +29,22 @@ namespace BUS
             DAO.TempBill tempBill = new DAO.TempBill();
             return tempBill.getTempBillNotDone();
         }
-        public List<Dictionary<string, string>> GetAllTempBillDetailsOfTempBill(string tempBillId)
+        public Dictionary<string, string> getTempBillByIDAndToken() {
+            DAO.TempBill tempBill=new DAO.TempBill();
+            Dictionary<string, string> TempBillInfo= new Dictionary<string, string>();
+            TempBillInfo.Add("CustomerID", SessionStorage.CustomerIDInUse);
+            TempBillInfo.Add("Token", SessionStorage.TokenStorage);
+            return tempBill.getTempBillByIDAndToken(TempBillInfo);
+        }
+        public List<Dictionary<string, string>> getAllTempBillDetailsOfTempBill(string tempBillId)
         {
             DAO.TempBill tempBill = new DAO.TempBill();
-            return tempBill.GetAllTempBillDetailsOfTempBill(tempBillId);
+            return tempBill.getAllTempBillDetailsOfTempBill(tempBillId);
         }
         public bool tryingChangeStatus(Dictionary<string, string> StatusInfo)
         {
             DAO.TempBill tempBill = new DAO.TempBill();
+            StatusInfo.Add("BillID",SessionStorage.TempBillID);
             return tempBill.tryingChangeStatus(StatusInfo);
         }
     }

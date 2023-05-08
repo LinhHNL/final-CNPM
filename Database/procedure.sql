@@ -34,6 +34,7 @@ INSERT INTO Customers (name, phone, address, password, point, levelid)
 VALUES (@name, @phone, @address, @password, 0, 1)
 END
 GO
+
 CREATE PROCEDURE dbo.DeleteCustomer
     @customerId INT
 AS
@@ -224,7 +225,6 @@ Go
 
 
 
-
 ---status 1 là còn bán 2 là khóa món 0 là nghĩ bán 
 
 --crud monan
@@ -235,11 +235,12 @@ CREATE PROCEDURE sp_add_menu
     @url_image VARCHAR(MAX),
     @kind_food_id INT,
     @room_id INT,
-    @status INT
+    @status INT,
+	@Initual INT
 AS
 BEGIN
-    INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid, status)
-    VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status);
+    INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid, status,Initual)
+    VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status,@Initual);
 END
 
 Go
@@ -298,6 +299,7 @@ begin
 	Select * from Menu
 end
 GO
+
 CREATE PROCEDURE sp_getMenuByID
 	@ID INT
 AS
@@ -1705,7 +1707,8 @@ AS
 		Select * from TempBill where status=0;
 	END
 GO
-EXEC GetTempBillNotDone;
+Select * from TempBill
+EXEC GetAllTempBillDetailsOfTempBill 17;
 GO
 Create Procedure GetTempBill
 @Token varchar(45),
@@ -1724,7 +1727,7 @@ AS
 	End
 ----PayRoll
 GO
-EXEC GetAllTempBillDetailsOfTempBill 1;
+EXEC GetAllTempBillDetailsOfTempBill 10;
 GO
 CREATE PROCEDURE InsertPayroll
 (
@@ -2298,7 +2301,11 @@ as
 		select * from Staff where Name = @name
 	end
 GO
-
+EXEC Room_Insert 'Phòng chế biến gà thượng hạng','Phòng này chuyên gia chế gà có dáng nở nang'
 EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xương đầy đủ';
 EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
 EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';
+EXEC Level_Insert 'Gà bình thường','Gà này chưa được nấu chín',30000;
+EXEC sp_add_menu 'Thức ăn và nước uống',40000,40,'',1,1,0,1;
+EXEC AddCustomer N'Khách hàng','99999999',N'Không có','0000000';
+Select * from TempBillDetails

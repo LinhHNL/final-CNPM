@@ -106,6 +106,7 @@
             lbl_returnplace.Size = new Size(110, 28);
             lbl_returnplace.TabIndex = 3;
             lbl_returnplace.Text = "Quay lại >";
+            lbl_returnplace.Click += lbl_returnplace_Click;
             // 
             // lbl_heading
             // 
@@ -167,6 +168,7 @@
             btn_ConfirmBill.Text = "Xác Nhận Hết";
             btn_ConfirmBill.TextColor = Color.White;
             btn_ConfirmBill.UseVisualStyleBackColor = false;
+            btn_ConfirmBill.Click += btn_ConfirmBill_Click;
             // 
             // ConfirmView
             // 
@@ -181,6 +183,7 @@
             Controls.Add(roundedButton10);
             Controls.Add(btn_ChangeToAccountSection);
             Name = "ConfirmView";
+            Load += ConfirmView_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ResumeLayout(false);
