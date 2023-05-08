@@ -14,6 +14,7 @@ namespace GUI.ThanhToan
 {
     public partial class HoaDonTong : MetroForm
     {
+        List<Dictionary<String, String>> ListContainAllDetail = new List<Dictionary<String, String>>();
         public HoaDonTong()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace GUI.ThanhToan
         int Price = 0;
         private void HoaDonTong_Load(object sender, EventArgs e)
         {
-            List<Dictionary<String, String>> ListContainAllDetail = new List<Dictionary<String, String>>();
+            
             flp_showDetailMon.Controls.Clear();
             BUS.TempBill tempBill = new BUS.TempBill();
             BUS.Menu menu = new BUS.Menu();
@@ -64,7 +65,7 @@ namespace GUI.ThanhToan
         private void btn_ChangeStatus_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HoaDonTong HoaDonTong = new HoaDonTong();
+            Payment HoaDonTong = new Payment(ListContainAllDetail, Price);
             HoaDonTong.ShowDialog();
             this.Close();
         }

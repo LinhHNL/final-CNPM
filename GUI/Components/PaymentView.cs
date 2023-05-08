@@ -46,7 +46,7 @@ namespace WinFormsApp2.Components
             InitializeComponent();
             lbl_TenMon.Text = this.Tenmon;
             lbl_SoLuong.Text = this.SoLuong.ToString();
-            lbl_price.Text = ChangeGia((int.Parse(GiaMon)*SoLuong).ToString());
+            lbl_price.Text = ChangeGia((int.Parse(GiaMon) * SoLuong).ToString());
             this.context = context;
         }
         public PaymentView(string TenMon, int SoLuong, String GiaMon, string IDMon)

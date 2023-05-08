@@ -209,7 +209,7 @@
             lbl_DatePaymentValue.BackColor = Color.White;
             lbl_DatePaymentValue.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_DatePaymentValue.ForeColor = Color.Black;
-            lbl_DatePaymentValue.Location = new Point(581, 210);
+            lbl_DatePaymentValue.Location = new Point(581, 198);
             lbl_DatePaymentValue.Name = "lbl_DatePaymentValue";
             lbl_DatePaymentValue.Size = new Size(241, 29);
             lbl_DatePaymentValue.TabIndex = 47;
