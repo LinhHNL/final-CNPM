@@ -76,10 +76,9 @@
             btn_DangXuat.FlatStyle = FlatStyle.Flat;
             btn_DangXuat.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_DangXuat.ForeColor = Color.White;
-            btn_DangXuat.Location = new Point(1057, 35);
-            btn_DangXuat.Margin = new Padding(3, 4, 3, 4);
+            btn_DangXuat.Location = new Point(925, 26);
             btn_DangXuat.Name = "btn_DangXuat";
-            btn_DangXuat.Size = new Size(117, 35);
+            btn_DangXuat.Size = new Size(102, 26);
             btn_DangXuat.TabIndex = 22;
             btn_DangXuat.Text = "Đăng xuất";
             btn_DangXuat.TextColor = Color.White;
@@ -89,9 +88,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Calibri", 19.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(265, 77);
+            label1.Location = new Point(232, 58);
             label1.Name = "label1";
-            label1.Size = new Size(248, 40);
+            label1.Size = new Size(199, 33);
             label1.TabIndex = 29;
             label1.Text = "Phiếu nhập hàng";
             // 
@@ -122,7 +121,8 @@
             metroGrid1.EnableHeadersVisualStyles = false;
             metroGrid1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             metroGrid1.GridColor = Color.FromArgb(255, 255, 255);
-            metroGrid1.Location = new Point(381, 153);
+            metroGrid1.Location = new Point(333, 115);
+            metroGrid1.Margin = new Padding(3, 2, 3, 2);
             metroGrid1.Name = "metroGrid1";
             metroGrid1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -137,7 +137,7 @@
             metroGrid1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             metroGrid1.RowTemplate.Height = 29;
             metroGrid1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            metroGrid1.Size = new Size(8, 8);
+            metroGrid1.Size = new Size(7, 6);
             metroGrid1.TabIndex = 31;
             // 
             // dgv_HangHoa
@@ -170,7 +170,8 @@
             dgv_HangHoa.EnableHeadersVisualStyles = false;
             dgv_HangHoa.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             dgv_HangHoa.GridColor = Color.FromArgb(197, 198, 198);
-            dgv_HangHoa.Location = new Point(267, 219);
+            dgv_HangHoa.Location = new Point(234, 164);
+            dgv_HangHoa.Margin = new Padding(3, 2, 3, 2);
             dgv_HangHoa.Name = "dgv_HangHoa";
             dgv_HangHoa.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -186,8 +187,9 @@
             dgv_HangHoa.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dgv_HangHoa.RowTemplate.Height = 29;
             dgv_HangHoa.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv_HangHoa.Size = new Size(905, 300);
+            dgv_HangHoa.Size = new Size(792, 225);
             dgv_HangHoa.TabIndex = 32;
+            dgv_HangHoa.CellContentClick += dgv_HangHoa_CellContentClick;
             // 
             // Column2
             // 
@@ -214,9 +216,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(269, 133);
+            label2.Location = new Point(235, 100);
             label2.Name = "label2";
-            label2.Size = new Size(136, 24);
+            label2.Size = new Size(106, 19);
             label2.TabIndex = 33;
             label2.Text = "Mã nhập hàng:";
             // 
@@ -229,16 +231,16 @@
             tb_MaNhapHang.BorderSize = 1;
             tb_MaNhapHang.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tb_MaNhapHang.ForeColor = Color.Black;
-            tb_MaNhapHang.Location = new Point(449, 125);
-            tb_MaNhapHang.Margin = new Padding(5, 4, 5, 4);
+            tb_MaNhapHang.Location = new Point(393, 94);
+            tb_MaNhapHang.Margin = new Padding(4, 3, 4, 3);
             tb_MaNhapHang.Multiline = false;
             tb_MaNhapHang.Name = "tb_MaNhapHang";
-            tb_MaNhapHang.Padding = new Padding(10, 7, 10, 7);
+            tb_MaNhapHang.Padding = new Padding(9, 5, 9, 5);
             tb_MaNhapHang.PasswordChar = false;
             tb_MaNhapHang.PlaceholderColor = Color.DarkGray;
             tb_MaNhapHang.PlaceholderText = "";
             tb_MaNhapHang.ReadOnly = true;
-            tb_MaNhapHang.Size = new Size(272, 39);
+            tb_MaNhapHang.Size = new Size(238, 30);
             tb_MaNhapHang.TabIndex = 34;
             tb_MaNhapHang.Texts = "";
             tb_MaNhapHang.UnderlinedStyle = false;
@@ -252,16 +254,16 @@
             tb_NgayNhap.BorderSize = 1;
             tb_NgayNhap.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tb_NgayNhap.ForeColor = Color.Black;
-            tb_NgayNhap.Location = new Point(449, 172);
-            tb_NgayNhap.Margin = new Padding(5, 4, 5, 4);
+            tb_NgayNhap.Location = new Point(393, 129);
+            tb_NgayNhap.Margin = new Padding(4, 3, 4, 3);
             tb_NgayNhap.Multiline = false;
             tb_NgayNhap.Name = "tb_NgayNhap";
-            tb_NgayNhap.Padding = new Padding(10, 7, 10, 7);
+            tb_NgayNhap.Padding = new Padding(9, 5, 9, 5);
             tb_NgayNhap.PasswordChar = false;
             tb_NgayNhap.PlaceholderColor = Color.DarkGray;
             tb_NgayNhap.PlaceholderText = "";
             tb_NgayNhap.ReadOnly = false;
-            tb_NgayNhap.Size = new Size(272, 39);
+            tb_NgayNhap.Size = new Size(238, 30);
             tb_NgayNhap.TabIndex = 36;
             tb_NgayNhap.Texts = "";
             tb_NgayNhap.UnderlinedStyle = false;
@@ -270,9 +272,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(269, 179);
+            label3.Location = new Point(235, 134);
             label3.Name = "label3";
-            label3.Size = new Size(104, 24);
+            label3.Size = new Size(82, 19);
             label3.TabIndex = 35;
             label3.Text = "Ngày nhập:";
             // 
@@ -287,10 +289,9 @@
             btn_TaoPhieu.FlatStyle = FlatStyle.Flat;
             btn_TaoPhieu.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_TaoPhieu.ForeColor = Color.White;
-            btn_TaoPhieu.Location = new Point(1057, 560);
-            btn_TaoPhieu.Margin = new Padding(3, 4, 3, 4);
+            btn_TaoPhieu.Location = new Point(925, 420);
             btn_TaoPhieu.Name = "btn_TaoPhieu";
-            btn_TaoPhieu.Size = new Size(117, 35);
+            btn_TaoPhieu.Size = new Size(102, 26);
             btn_TaoPhieu.TabIndex = 39;
             btn_TaoPhieu.Text = "Tạo phiếu";
             btn_TaoPhieu.TextColor = Color.White;
@@ -307,10 +308,9 @@
             btn_XuatFile.FlatStyle = FlatStyle.Flat;
             btn_XuatFile.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btn_XuatFile.ForeColor = Color.FromArgb(229, 1, 17);
-            btn_XuatFile.Location = new Point(1057, 85);
-            btn_XuatFile.Margin = new Padding(3, 4, 3, 4);
+            btn_XuatFile.Location = new Point(925, 64);
             btn_XuatFile.Name = "btn_XuatFile";
-            btn_XuatFile.Size = new Size(117, 35);
+            btn_XuatFile.Size = new Size(102, 26);
             btn_XuatFile.TabIndex = 42;
             btn_XuatFile.Text = " Xuất file";
             btn_XuatFile.TextColor = Color.FromArgb(229, 1, 17);
@@ -328,32 +328,34 @@
             metroPanel1.Controls.Add(pictureBox1);
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel1.HorizontalScrollbarSize = 11;
-            metroPanel1.Location = new Point(5, 35);
+            metroPanel1.HorizontalScrollbarSize = 8;
+            metroPanel1.Location = new Point(4, 26);
+            metroPanel1.Margin = new Padding(3, 2, 3, 2);
             metroPanel1.Name = "metroPanel1";
-            metroPanel1.Size = new Size(259, 571);
+            metroPanel1.Size = new Size(227, 428);
             metroPanel1.TabIndex = 46;
             metroPanel1.VerticalScrollbarBarColor = true;
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel1.VerticalScrollbarSize = 10;
+            metroPanel1.VerticalScrollbarSize = 9;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(229, 1, 17);
-            label4.Location = new Point(70, 85);
+            label4.Location = new Point(61, 64);
             label4.Name = "label4";
-            label4.Size = new Size(138, 28);
+            label4.Size = new Size(114, 23);
             label4.TabIndex = 31;
             label4.Text = "Tên tài khoản";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(34, 88);
+            pictureBox2.Location = new Point(30, 66);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 27);
+            pictureBox2.Size = new Size(26, 20);
             pictureBox2.TabIndex = 21;
             pictureBox2.TabStop = false;
             // 
@@ -362,14 +364,15 @@
             metroPanel7.BackColor = Color.Black;
             metroPanel7.HorizontalScrollbarBarColor = true;
             metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel7.HorizontalScrollbarSize = 11;
-            metroPanel7.Location = new Point(259, 539);
+            metroPanel7.HorizontalScrollbarSize = 8;
+            metroPanel7.Location = new Point(227, 404);
+            metroPanel7.Margin = new Padding(3, 2, 3, 2);
             metroPanel7.Name = "metroPanel7";
-            metroPanel7.Size = new Size(904, 55);
+            metroPanel7.Size = new Size(791, 41);
             metroPanel7.TabIndex = 20;
             metroPanel7.VerticalScrollbarBarColor = true;
             metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel7.VerticalScrollbarSize = 10;
+            metroPanel7.VerticalScrollbarSize = 9;
             // 
             // btn_NhapHang
             // 
@@ -382,10 +385,9 @@
             btn_NhapHang.FlatStyle = FlatStyle.Flat;
             btn_NhapHang.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_NhapHang.ForeColor = Color.Black;
-            btn_NhapHang.Location = new Point(-1, 301);
-            btn_NhapHang.Margin = new Padding(3, 4, 3, 4);
+            btn_NhapHang.Location = new Point(-1, 226);
             btn_NhapHang.Name = "btn_NhapHang";
-            btn_NhapHang.Size = new Size(263, 64);
+            btn_NhapHang.Size = new Size(230, 48);
             btn_NhapHang.TabIndex = 18;
             btn_NhapHang.Text = "Nhập hàng";
             btn_NhapHang.TextColor = Color.Black;
@@ -402,10 +404,9 @@
             btn_XuatHang.FlatStyle = FlatStyle.Flat;
             btn_XuatHang.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_XuatHang.ForeColor = Color.FromArgb(160, 159, 159);
-            btn_XuatHang.Location = new Point(-1, 243);
-            btn_XuatHang.Margin = new Padding(3, 4, 3, 4);
+            btn_XuatHang.Location = new Point(-1, 182);
             btn_XuatHang.Name = "btn_XuatHang";
-            btn_XuatHang.Size = new Size(264, 64);
+            btn_XuatHang.Size = new Size(231, 48);
             btn_XuatHang.TabIndex = 17;
             btn_XuatHang.Text = "Xuất hàng";
             btn_XuatHang.TextColor = Color.FromArgb(160, 159, 159);
@@ -423,10 +424,9 @@
             btn_HangTrongKho.FlatStyle = FlatStyle.Flat;
             btn_HangTrongKho.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_HangTrongKho.ForeColor = Color.FromArgb(160, 159, 159);
-            btn_HangTrongKho.Location = new Point(0, 131);
-            btn_HangTrongKho.Margin = new Padding(3, 4, 3, 4);
+            btn_HangTrongKho.Location = new Point(0, 98);
             btn_HangTrongKho.Name = "btn_HangTrongKho";
-            btn_HangTrongKho.Size = new Size(262, 60);
+            btn_HangTrongKho.Size = new Size(229, 45);
             btn_HangTrongKho.TabIndex = 16;
             btn_HangTrongKho.Text = "Hàng trong kho";
             btn_HangTrongKho.TextColor = Color.FromArgb(160, 159, 159);
@@ -444,10 +444,9 @@
             btn_KiemKho.FlatStyle = FlatStyle.Flat;
             btn_KiemKho.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_KiemKho.ForeColor = Color.White;
-            btn_KiemKho.Location = new Point(0, 189);
-            btn_KiemKho.Margin = new Padding(3, 4, 3, 4);
+            btn_KiemKho.Location = new Point(0, 142);
             btn_KiemKho.Name = "btn_KiemKho";
-            btn_KiemKho.Size = new Size(262, 56);
+            btn_KiemKho.Size = new Size(229, 42);
             btn_KiemKho.TabIndex = 16;
             btn_KiemKho.Text = "Kiểm kho";
             btn_KiemKho.TextColor = Color.White;
@@ -456,17 +455,18 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(101, 13);
+            pictureBox1.Location = new Point(88, 10);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 51);
+            pictureBox1.Size = new Size(44, 38);
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
             // KiemKhoTaoPhieuNhapHang
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1182, 605);
+            ClientSize = new Size(1034, 454);
             Controls.Add(metroPanel1);
             Controls.Add(btn_XuatFile);
             Controls.Add(btn_TaoPhieu);
@@ -478,8 +478,9 @@
             Controls.Add(metroGrid1);
             Controls.Add(label1);
             Controls.Add(btn_DangXuat);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "KiemKhoTaoPhieuNhapHang";
-            Padding = new Padding(21, 80, 21, 20);
+            Padding = new Padding(18, 60, 18, 15);
             Text = "v";
             ((System.ComponentModel.ISupportInitialize)metroGrid1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_HangHoa).EndInit();

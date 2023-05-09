@@ -243,6 +243,7 @@
             btn_placeholderlabel.Size = new Size(157, 32);
             btn_placeholderlabel.TabIndex = 24;
             btn_placeholderlabel.Text = "+ Thêm ảnh ";
+            btn_placeholderlabel.Click += btn_placeholderlabel_Click;
             // 
             // UploadPlaceBox
             // 

@@ -695,6 +695,7 @@ namespace WinFormsApp2
             roundedButton23.TabIndex = 0;
             roundedButton23.TextColor = Color.Yellow;
             roundedButton23.UseVisualStyleBackColor = false;
+            roundedButton23.Click += roundedButton23_Click;
             // 
             // roundedButton22
             // 
@@ -799,6 +800,7 @@ namespace WinFormsApp2
             panel_monan_1.Name = "panel_monan_1";
             panel_monan_1.Size = new Size(461, 511);
             panel_monan_1.TabIndex = 35;
+            panel_monan_1.Paint += panel_monan_1_Paint;
             // 
             // btn_ComfirmFoodChange
             // 

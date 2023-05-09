@@ -15,17 +15,44 @@ namespace WinFormsApp2.KhoPage
         public HangHoaTrongKho()
         {
             InitializeComponent();
-            dgv_HangTrongKho.ReadOnly = true;
 
         }
 
 
+        private void HangHoaTrongKho_Load(object sender, EventArgs e)
+        {
+            BUS.Warehouse bus = new BUS.Warehouse();
+            List<Dictionary<String, string>> listCommodity = bus.gettingCommodity();
+
+            if (listCommodity.Count == 0)
+            {
+                MessageBox.Show("Không có đối tượng commodity nào được tìm thấy.");
+                return;
+            }
+
+            dgv_HangTrongKho.ColumnCount = 4;
+            dgv_HangTrongKho.Columns[0].Name = "Mã hàng hóa";
+            dgv_HangTrongKho.Columns[1].Name = "Tên hàng hóa";
+            dgv_HangTrongKho.Columns[2].Name = "Số lượng";
+            dgv_HangTrongKho.Columns[3].Name = "Đơn vị tính";
+
+            foreach (Dictionary<String, String> commodity in listCommodity)
+            {
+                string[] row = new string[]
+                {
+                    commodity["CommodityID"],
+                    commodity["Name"],
+                    commodity["Number"],
+                    commodity["UnitName"]
+                };
+                dgv_HangTrongKho.Rows.Add(row);
+            }
+        }
 
         private void dgv_XuatHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
-
         private void btn_Them_Click(object sender, EventArgs e)
         {
             int numberofID = dgv_HangTrongKho.RowCount;
@@ -34,7 +61,6 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
-
         private void btn_KiemKho_Click(object sender, EventArgs e)
         {
             btn_HangTrongKho.ForeColor = ColorTranslator.FromHtml("#A09F9F");
@@ -61,10 +87,10 @@ namespace WinFormsApp2.KhoPage
         {
             if (e.RowIndex > -1)
             {
-                string value = "";
+                string value = "0";
                 if (dgv_HangTrongKho.Rows[e.RowIndex].Cells[0].Value == null)
                 {
-                    value = "";
+                    value = "0";
                 }
                 else
                 {
@@ -75,6 +101,19 @@ namespace WinFormsApp2.KhoPage
                     this.Close();
                 }
             }
+
+        }
+
+
+
+        private void btn_XuatFile_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void roundedButton1_Click(object sender, EventArgs e)
+        {
 
         }
     }

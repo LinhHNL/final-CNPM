@@ -12,15 +12,27 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class XemThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
-        private String hanghoaid="";
+        private string hanghoaid = "1";
         public XemThongTinHangHoa(string hanghoaid)
         {
             InitializeComponent();
             this.hanghoaid = hanghoaid;
         }
 
+        private void XemThongTinHangHoa_Load(object sender, EventArgs e)
+        {
+            if (hanghoaid != null)
+            {
+                BUS.Warehouse bus = new BUS.Warehouse();
+                int id = int.Parse(hanghoaid);
+                Dictionary<String, String> result = bus.getCommodityByID(id);
+                tb_MaHang.Texts = result["CommodityID"].ToString();
+                tb_SoLuong.Texts = Convert.ToDouble(result["Number"]).ToString();
+                tb_TenHang.Texts = result["Name"].ToString();
+                tb_Donvitinh.Texts = result["UnitName"].ToString();
+            }
+        }
 
-     
         private void btn_KiemKho_Click(object sender, EventArgs e)
         {
             btn_HangTrongKho.ForeColor = ColorTranslator.FromHtml("#A09F9F");

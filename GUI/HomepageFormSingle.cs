@@ -174,5 +174,15 @@ namespace WinFormsApp2
             ShoppingCartForm.ShowDialog();
             this.Close();
         }
+
+        private void roundedButton23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_monan_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

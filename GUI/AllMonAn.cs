@@ -183,5 +183,9 @@ namespace WinFormsApp2
             this.lbl_showprice = pricestr + " VNĐ";
         }
 
+        private void panel_monan_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

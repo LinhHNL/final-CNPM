@@ -49,7 +49,6 @@
             btn_XuatFile = new CustomControls.RoundedButton();
             metroGrid1 = new MetroFramework.Controls.MetroGrid();
             btn_Them = new CustomControls.RoundedButton();
-            btn_Xoa = new CustomControls.RoundedButton();
             dgv_HangTrongKho = new MetroFramework.Controls.MetroGrid();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
@@ -133,7 +132,7 @@
             btn_NhapHang.Name = "btn_NhapHang";
             btn_NhapHang.Size = new Size(263, 64);
             btn_NhapHang.TabIndex = 18;
-            btn_NhapHang.Text = "Nhập hàng";
+            btn_NhapHang.Text = "Phiếu Nhập hàng";
             btn_NhapHang.TextColor = Color.Black;
             btn_NhapHang.UseVisualStyleBackColor = false;
             btn_NhapHang.Visible = false;
@@ -240,7 +239,7 @@
             btn_XuatFile.FlatStyle = FlatStyle.Flat;
             btn_XuatFile.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_XuatFile.ForeColor = Color.FromArgb(229, 1, 17);
-            btn_XuatFile.Location = new Point(1042, 80);
+            btn_XuatFile.Location = new Point(1046, 80);
             btn_XuatFile.Margin = new Padding(3, 4, 3, 4);
             btn_XuatFile.Name = "btn_XuatFile";
             btn_XuatFile.Size = new Size(117, 35);
@@ -248,6 +247,7 @@
             btn_XuatFile.Text = "Xuất file";
             btn_XuatFile.TextColor = Color.FromArgb(229, 1, 17);
             btn_XuatFile.UseVisualStyleBackColor = false;
+            btn_XuatFile.Click += btn_XuatFile_Click;
             // 
             // metroGrid1
             // 
@@ -305,7 +305,7 @@
             btn_Them.FlatStyle = FlatStyle.Flat;
             btn_Them.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Them.ForeColor = Color.FromArgb(229, 1, 17);
-            btn_Them.Location = new Point(932, 80);
+            btn_Them.Location = new Point(936, 80);
             btn_Them.Margin = new Padding(3, 4, 3, 4);
             btn_Them.Name = "btn_Them";
             btn_Them.Size = new Size(104, 35);
@@ -314,26 +314,6 @@
             btn_Them.TextColor = Color.FromArgb(229, 1, 17);
             btn_Them.UseVisualStyleBackColor = false;
             btn_Them.Click += btn_Them_Click;
-            // 
-            // btn_Xoa
-            // 
-            btn_Xoa.BackColor = Color.FromArgb(253, 197, 183);
-            btn_Xoa.BackgroundColor = Color.FromArgb(253, 197, 183);
-            btn_Xoa.BorderColor = Color.FromArgb(215, 122, 125);
-            btn_Xoa.BorderRadius = 8;
-            btn_Xoa.BorderSize = 1;
-            btn_Xoa.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_Xoa.FlatStyle = FlatStyle.Flat;
-            btn_Xoa.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_Xoa.ForeColor = Color.FromArgb(229, 1, 17);
-            btn_Xoa.Location = new Point(847, 80);
-            btn_Xoa.Margin = new Padding(3, 4, 3, 4);
-            btn_Xoa.Name = "btn_Xoa";
-            btn_Xoa.Size = new Size(79, 35);
-            btn_Xoa.TabIndex = 34;
-            btn_Xoa.Text = "Xóa";
-            btn_Xoa.TextColor = Color.FromArgb(229, 1, 17);
-            btn_Xoa.UseVisualStyleBackColor = false;
             // 
             // dgv_HangTrongKho
             // 
@@ -422,13 +402,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 605);
             Controls.Add(dgv_HangTrongKho);
-            Controls.Add(btn_Xoa);
             Controls.Add(btn_Them);
             Controls.Add(metroGrid1);
             Controls.Add(btn_XuatFile);
             Controls.Add(roundedButton10);
             Controls.Add(metroPanel1);
             Name = "HangHoaTrongKho";
+            Load += HangHoaTrongKho_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -453,7 +433,6 @@
         private CustomControls.RoundedButton btn_XuatFile;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private CustomControls.RoundedButton btn_Them;
-        private CustomControls.RoundedButton btn_Xoa;
         private MetroFramework.Controls.MetroGrid dgv_HangTrongKho;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;

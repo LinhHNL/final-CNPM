@@ -1,6 +1,5 @@
 ﻿--check login  result = 0 là thất bạn 1 là thành công
-use hadilao
-go
+
 CREATE PROCEDURE CheckLogin
     @phone VARCHAR(50),
     @password VARCHAR(50)
@@ -22,6 +21,7 @@ BEGIN
     END
 END
 GO
+
 --lưu thông tin tài khoản mới trong đó result = 0 là thất bạn 1 là thành công
 CREATE PROCEDURE AddCustomer
 @name NVARCHAR(50),
@@ -32,8 +32,11 @@ AS
 BEGIN
 INSERT INTO Customers (name, phone, address, password, point, levelid)
 VALUES (@name, @phone, @address, @password, 0, 1)
+SELECT SCOPE_IDENTITY() AS CustormerID;
 END
-GO
+
+
+go
 CREATE PROCEDURE dbo.DeleteCustomer
     @customerId INT
 AS
@@ -42,7 +45,6 @@ BEGIN
     WHERE CustormerID = @customerId
 END
 GO
-
 CREATE PROCEDURE dbo.UpdateCustomer
     @customerId INT,
     @name NVARCHAR(45),
@@ -452,8 +454,8 @@ go
 CREATE PROCEDURE sp_UpdateShift
   @ShiftID INT,
   @Name nvarchar(45),
-  @StartTime DATE,
-  @EndTime DATE
+  @StartTime Time(7),
+  @EndTime Time(7)
 AS
 BEGIN
       UPDATE Shift
@@ -554,6 +556,7 @@ BEGIN
   WHERE s.StaffID = @StaffID;
 END
 go
+
 CREATE PROCEDURE UpdateStaff
     @StaffID INT,
     @Name NVARCHAR(45),
@@ -602,13 +605,6 @@ AS
 Begin 
 	Select * from Staff
 End 
-Go 
-Create Procedure GetStaffByID 
-@ID int 
-AS 
-Begin 
-	Select * from Staff where StaffID = @ID 
-End
 
 Go 
 Create Procedure DeleteStaff
@@ -627,8 +623,10 @@ AS
 BEGIN
     INSERT INTO Transactions (TotalPrice, Date, CustormerID)
     VALUES (@TotalPrice, @Date, @CustomerId);
+	SELECT SCOPE_IDENTITY() AS TransactionID;
 END
 GO
+
 CREATE PROCEDURE GetTransactionById
     @TransactionId INT
 AS
@@ -636,6 +634,7 @@ BEGIN
     SELECT *
     FROM Transactions
     WHERE TransactionID = @TransactionId;
+
 END
 GO
 CREATE PROCEDURE GetTransactions
@@ -781,7 +780,7 @@ Go
 
 
 
-
+ 
 
 -----CRUD Commodity
 CREATE PROCEDURE CreateCommodity
@@ -808,9 +807,10 @@ BEGIN
     INNER JOIN Unit u ON c.UnitID = u.UnitID
     WHERE c.ComodityID = @CommodityID;
 END
+
 go
-CREATE PROCEDURE getCommoditys
-    @CommodityID INT
+CREATE PROCEDURE getAllCommoditys
+   
 AS
 BEGIN
     
@@ -821,6 +821,7 @@ BEGIN
    
 END
 go
+
 CREATE PROCEDURE DeleteCommodity
     @CommodityID INT
 AS

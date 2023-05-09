@@ -16,5 +16,10 @@ namespace WinFormsApp2.KhachHangManager
         {
             InitializeComponent();
         }
+
+        private void dgv_DanhsachKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

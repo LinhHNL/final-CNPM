@@ -106,6 +106,7 @@
             tb_findingMaKhach.PasswordChar = false;
             tb_findingMaKhach.PlaceholderColor = Color.DarkGray;
             tb_findingMaKhach.PlaceholderText = "Mã/ Tên Khách Hàng";
+            tb_findingMaKhach.ReadOnly = false;
             tb_findingMaKhach.Size = new Size(200, 39);
             tb_findingMaKhach.TabIndex = 46;
             tb_findingMaKhach.Texts = "";
@@ -302,6 +303,7 @@
             dgv_DanhsachKhachHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_DanhsachKhachHang.Size = new Size(779, 357);
             dgv_DanhsachKhachHang.TabIndex = 55;
+            dgv_DanhsachKhachHang.CellContentClick += dgv_DanhsachKhachHang_CellContentClick;
             // 
             // Column1
             // 

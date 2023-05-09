@@ -1,5 +1,4 @@
-use hadilao;
-GO
+
 CREATE TABLE Level
 (
   LevelID INT IDENTITY(1,1) NOT NULL,
@@ -58,21 +57,23 @@ CREATE TABLE Position
 (
   PositionID INT IDENTITY(1,1) NOT NULL,
   Name nvarchar(45) NOT NULL,
-  Description nvarchar(45) NOT NULL,
+  Description text NOT NULL,
   DepartmentID INT NOT NULL,
   PRIMARY KEY (PositionID),
   FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID)
 );
 GO
+
 CREATE TABLE Shift
 (
   ShiftID INT IDENTITY(1,1) NOT NULL,
   Name nvarchar(45) NOT NULL,
-  StartTime DATE NOT NULL,
-  EndTime DATE NOT NULL,
+  StartTime Time(7) NOT NULL,
+  EndTime Time(7) NOT NULL,
   PRIMARY KEY (ShiftID)
 );
 GO
+
 CREATE TABLE RequestType
 (
   RequestTypeID INT IDENTITY(1,1) NOT NULL,
@@ -363,25 +364,7 @@ CREATE TABLE DetailComBo
   FOREIGN KEY (Id) REFERENCES Combo(Id)
 );
 Go
-CREATE TABLE ImportCoupon
-(
-  IDCoupon INT IDENTITY(1,1) NOT NULL,
-  Date DATE NOT NULL,
-  StaffID INT NOT NULL,
-  PRIMARY KEY (IDCoupon),
-  FOREIGN KEY (StaffID) REFERENCES Staff(StaffID)
-);
-Go
-CREATE TABLE CouponDetail
-(
-  Number INT  NOT NULL,
-  ComodityID INT NOT NULL,
-  IDCoupon INT NOT NULL,
-  PRIMARY KEY (ComodityID, IDCoupon),
-  FOREIGN KEY (ComodityID) REFERENCES Commodity(ComodityID),
-  FOREIGN KEY (IDCoupon) REFERENCES ImportCoupon(IDCoupon)
-);
-Go
+
 Create table TempBill(
 	Id int identity(1,1) not null,
 	CustomerId int not null,

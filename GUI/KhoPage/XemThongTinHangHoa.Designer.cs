@@ -35,11 +35,9 @@
             tb_MaHang = new CustomControls.RoundedTextBox();
             label2 = new Label();
             tb_TenHang = new CustomControls.RoundedTextBox();
-            tb_NgayNhap = new CustomControls.RoundedTextBox();
             tb_Donvitinh = new CustomControls.RoundedTextBox();
             tb_SoLuong = new CustomControls.RoundedTextBox();
             label3 = new Label();
-            label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             btn_edit = new CustomControls.RoundedButton();
@@ -117,7 +115,7 @@
             tb_MaHang.Enabled = false;
             tb_MaHang.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tb_MaHang.ForeColor = Color.Black;
-            tb_MaHang.Location = new Point(565, 165);
+            tb_MaHang.Location = new Point(565, 156);
             tb_MaHang.Margin = new Padding(4);
             tb_MaHang.Multiline = false;
             tb_MaHang.Name = "tb_MaHang";
@@ -134,7 +132,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(433, 171);
+            label2.Location = new Point(433, 167);
             label2.Name = "label2";
             label2.Size = new Size(126, 24);
             label2.TabIndex = 31;
@@ -163,29 +161,6 @@
             tb_TenHang.Texts = "";
             tb_TenHang.UnderlinedStyle = false;
             // 
-            // tb_NgayNhap
-            // 
-            tb_NgayNhap.BackColor = SystemColors.Window;
-            tb_NgayNhap.BorderColor = Color.Gray;
-            tb_NgayNhap.BorderFocusColor = Color.Black;
-            tb_NgayNhap.BorderRadius = 10;
-            tb_NgayNhap.BorderSize = 2;
-            tb_NgayNhap.Enabled = false;
-            tb_NgayNhap.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            tb_NgayNhap.ForeColor = Color.FromArgb(160, 159, 159);
-            tb_NgayNhap.Location = new Point(565, 265);
-            tb_NgayNhap.Margin = new Padding(4);
-            tb_NgayNhap.Multiline = false;
-            tb_NgayNhap.Name = "tb_NgayNhap";
-            tb_NgayNhap.Padding = new Padding(10, 7, 10, 7);
-            tb_NgayNhap.PasswordChar = false;
-            tb_NgayNhap.PlaceholderColor = Color.DarkGray;
-            tb_NgayNhap.PlaceholderText = "";
-            tb_NgayNhap.Size = new Size(214, 39);
-            tb_NgayNhap.TabIndex = 33;
-            tb_NgayNhap.Texts = "";
-            tb_NgayNhap.UnderlinedStyle = false;
-            // 
             // tb_Donvitinh
             // 
             tb_Donvitinh.BackColor = SystemColors.Window;
@@ -196,7 +171,7 @@
             tb_Donvitinh.Enabled = false;
             tb_Donvitinh.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tb_Donvitinh.ForeColor = Color.FromArgb(160, 159, 159);
-            tb_Donvitinh.Location = new Point(565, 316);
+            tb_Donvitinh.Location = new Point(565, 261);
             tb_Donvitinh.Margin = new Padding(4);
             tb_Donvitinh.Multiline = false;
             tb_Donvitinh.Name = "tb_Donvitinh";
@@ -219,7 +194,7 @@
             tb_SoLuong.Enabled = false;
             tb_SoLuong.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
             tb_SoLuong.ForeColor = Color.FromArgb(160, 159, 159);
-            tb_SoLuong.Location = new Point(565, 367);
+            tb_SoLuong.Location = new Point(565, 320);
             tb_SoLuong.Margin = new Padding(4);
             tb_SoLuong.Multiline = false;
             tb_SoLuong.Name = "tb_SoLuong";
@@ -236,27 +211,17 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(432, 324);
+            label3.Location = new Point(433, 276);
             label3.Name = "label3";
             label3.Size = new Size(111, 24);
             label3.TabIndex = 36;
             label3.Text = "Đơn vị tính:";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(432, 273);
-            label5.Name = "label5";
-            label5.Size = new Size(105, 24);
-            label5.TabIndex = 37;
-            label5.Text = "Ngày nhập:";
-            // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(431, 222);
+            label6.Location = new Point(433, 226);
             label6.Name = "label6";
             label6.Size = new Size(128, 24);
             label6.TabIndex = 38;
@@ -266,7 +231,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(433, 372);
+            label7.Location = new Point(433, 320);
             label7.Name = "label7";
             label7.Size = new Size(92, 24);
             label7.TabIndex = 39;
@@ -448,11 +413,9 @@
             Controls.Add(btn_edit);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label3);
             Controls.Add(tb_SoLuong);
             Controls.Add(tb_Donvitinh);
-            Controls.Add(tb_NgayNhap);
             Controls.Add(tb_TenHang);
             Controls.Add(label2);
             Controls.Add(tb_MaHang);
@@ -460,6 +423,7 @@
             Controls.Add(btn_save);
             Controls.Add(roundedButton10);
             Name = "XemThongTinHangHoa";
+            Load += XemThongTinHangHoa_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -475,11 +439,9 @@
         private CustomControls.RoundedTextBox tb_MaHang;
         private Label label2;
         private CustomControls.RoundedTextBox tb_TenHang;
-        private CustomControls.RoundedTextBox tb_NgayNhap;
         private CustomControls.RoundedTextBox tb_Donvitinh;
         private CustomControls.RoundedTextBox tb_SoLuong;
         private Label label3;
-        private Label label5;
         private Label label6;
         private Label label7;
         private CustomControls.RoundedButton btn_edit;

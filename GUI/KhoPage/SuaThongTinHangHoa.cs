@@ -13,7 +13,7 @@ namespace WinFormsApp2.KhoPage
     public partial class SuaThongTinHangHoa : MetroFramework.Forms.MetroForm
     {
         private String hanghoaid = "";
-        public SuaThongTinHangHoa(string hanghoaid)
+        public SuaThongTinHangHoa(String hanghoaid)
         {
             InitializeComponent();
             this.hanghoaid = hanghoaid;

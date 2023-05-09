@@ -116,19 +116,19 @@ namespace WinFormsApp2.AdminPage
         {
             if (tb_NameOfFood.Texts.ToString() != "")
             {
-            MenuItem["Name"]=tb_NameOfFood.Texts.ToString();
+                MenuItem["Name"] = tb_NameOfFood.Texts.ToString();
             }
             if (tb_Price.Texts.ToString() != "")
             {
-            MenuItem["Price"] = tb_Price.Texts.ToString(); 
+                MenuItem["Price"] = tb_Price.Texts.ToString();
             }
             if (this.cb_TypeofFood.SelectedItem != null)
             {
-            MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
+                MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
             }
             if (this.cb_RoomID.SelectedItem != null)
             {
-            MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
+                MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
             }
             MenuItem["URLImage"] = ImageURL.ToString();
             BUS.Menu menu = new BUS.Menu();
@@ -144,6 +144,11 @@ namespace WinFormsApp2.AdminPage
             {
                 MessageBox.Show("Cập nhật thất bại");
             }
+        }
+
+        private void btn_placeholderlabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

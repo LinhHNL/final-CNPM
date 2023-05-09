@@ -40,5 +40,7 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
+
+      
     }
 }

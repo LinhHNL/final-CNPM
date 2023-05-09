@@ -42,6 +42,9 @@ namespace WinFormsApp2.KhoPage
             this.Close();
         }
 
+        private void dgv_HangHoa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

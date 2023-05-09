@@ -11,7 +11,7 @@ namespace DAO
     {
         public static SqlConnection connectDBFunc()
         {
-            string connectionString = "Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True";
+            string connectionString = "Data Source = LING; Initial Catalog = haidilao; Integrated Security = True";
             return new SqlConnection(connectionString);
         }
     }

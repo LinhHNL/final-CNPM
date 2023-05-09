@@ -62,28 +62,30 @@ namespace WinFormsApp2
             metroPanel1.Controls.Add(pictureBox1);
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel1.HorizontalScrollbarSize = 10;
-            metroPanel1.Location = new Point(0, 32);
+            metroPanel1.HorizontalScrollbarSize = 8;
+            metroPanel1.Location = new Point(0, 24);
+            metroPanel1.Margin = new Padding(3, 2, 3, 2);
             metroPanel1.Name = "metroPanel1";
-            metroPanel1.Size = new Size(262, 597);
+            metroPanel1.Size = new Size(229, 448);
             metroPanel1.TabIndex = 15;
             metroPanel1.VerticalScrollbarBarColor = true;
             metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel1.VerticalScrollbarSize = 10;
+            metroPanel1.VerticalScrollbarSize = 9;
             // 
             // metroPanel7
             // 
             metroPanel7.BackColor = Color.Black;
             metroPanel7.HorizontalScrollbarBarColor = true;
             metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            metroPanel7.HorizontalScrollbarSize = 10;
-            metroPanel7.Location = new Point(259, 539);
+            metroPanel7.HorizontalScrollbarSize = 8;
+            metroPanel7.Location = new Point(227, 404);
+            metroPanel7.Margin = new Padding(3, 2, 3, 2);
             metroPanel7.Name = "metroPanel7";
-            metroPanel7.Size = new Size(904, 55);
+            metroPanel7.Size = new Size(791, 41);
             metroPanel7.TabIndex = 20;
             metroPanel7.VerticalScrollbarBarColor = true;
             metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            metroPanel7.VerticalScrollbarSize = 10;
+            metroPanel7.VerticalScrollbarSize = 9;
             // 
             // roundedButton8
             // 
@@ -96,10 +98,9 @@ namespace WinFormsApp2
             roundedButton8.FlatStyle = FlatStyle.Flat;
             roundedButton8.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton8.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton8.Location = new Point(-2, 307);
-            roundedButton8.Margin = new Padding(3, 4, 3, 4);
+            roundedButton8.Location = new Point(-2, 230);
             roundedButton8.Name = "roundedButton8";
-            roundedButton8.Size = new Size(264, 64);
+            roundedButton8.Size = new Size(231, 48);
             roundedButton8.TabIndex = 19;
             roundedButton8.Text = "Đồ uống";
             roundedButton8.TextColor = Color.FromArgb(160, 159, 159);
@@ -117,10 +118,9 @@ namespace WinFormsApp2
             roundedButton7.FlatStyle = FlatStyle.Flat;
             roundedButton7.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton7.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton7.Location = new Point(0, 243);
-            roundedButton7.Margin = new Padding(3, 4, 3, 4);
+            roundedButton7.Location = new Point(0, 182);
             roundedButton7.Name = "roundedButton7";
-            roundedButton7.Size = new Size(264, 64);
+            roundedButton7.Size = new Size(231, 48);
             roundedButton7.TabIndex = 18;
             roundedButton7.Text = "Đồ ăn vặt";
             roundedButton7.TextColor = Color.FromArgb(160, 159, 159);
@@ -138,10 +138,9 @@ namespace WinFormsApp2
             roundedButton6.FlatStyle = FlatStyle.Flat;
             roundedButton6.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton6.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton6.Location = new Point(0, 184);
-            roundedButton6.Margin = new Padding(3, 4, 3, 4);
+            roundedButton6.Location = new Point(0, 138);
             roundedButton6.Name = "roundedButton6";
-            roundedButton6.Size = new Size(264, 64);
+            roundedButton6.Size = new Size(231, 48);
             roundedButton6.TabIndex = 17;
             roundedButton6.Text = "Món rau";
             roundedButton6.TextColor = Color.FromArgb(160, 159, 159);
@@ -159,10 +158,9 @@ namespace WinFormsApp2
             roundedButton5.FlatStyle = FlatStyle.Flat;
             roundedButton5.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton5.ForeColor = Color.White;
-            roundedButton5.Location = new Point(0, 126);
-            roundedButton5.Margin = new Padding(3, 4, 3, 4);
+            roundedButton5.Location = new Point(0, 94);
             roundedButton5.Name = "roundedButton5";
-            roundedButton5.Size = new Size(262, 60);
+            roundedButton5.Size = new Size(229, 45);
             roundedButton5.TabIndex = 16;
             roundedButton5.Text = "Món mặn";
             roundedButton5.TextColor = Color.White;
@@ -180,10 +178,9 @@ namespace WinFormsApp2
             roundedButton4.FlatStyle = FlatStyle.Flat;
             roundedButton4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton4.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton4.Location = new Point(0, 71);
-            roundedButton4.Margin = new Padding(3, 4, 3, 4);
+            roundedButton4.Location = new Point(0, 53);
             roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(262, 56);
+            roundedButton4.Size = new Size(229, 42);
             roundedButton4.TabIndex = 16;
             roundedButton4.Text = "Lẩu";
             roundedButton4.TextColor = Color.FromArgb(160, 159, 159);
@@ -193,9 +190,10 @@ namespace WinFormsApp2
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(100, 14);
+            pictureBox1.Location = new Point(88, 10);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 50);
+            pictureBox1.Size = new Size(44, 38);
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
@@ -208,10 +206,11 @@ namespace WinFormsApp2
             tile_blacklayout.FlatAppearance.MouseDownBackColor = Color.Black;
             tile_blacklayout.FlatAppearance.MouseOverBackColor = Color.Black;
             tile_blacklayout.FlatStyle = FlatStyle.Flat;
-            tile_blacklayout.Location = new Point(259, 602);
+            tile_blacklayout.Location = new Point(227, 452);
+            tile_blacklayout.Margin = new Padding(3, 2, 3, 2);
             tile_blacklayout.Name = "tile_blacklayout";
             tile_blacklayout.PaintTileCount = false;
-            tile_blacklayout.Size = new Size(753, 66);
+            tile_blacklayout.Size = new Size(659, 50);
             tile_blacklayout.Style = MetroFramework.MetroColorStyle.Black;
             tile_blacklayout.TabIndex = 20;
             tile_blacklayout.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -225,9 +224,9 @@ namespace WinFormsApp2
             lbl_priceshow.BackColor = Color.Black;
             lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_priceshow.ForeColor = Color.White;
-            lbl_priceshow.Location = new Point(490, 18);
+            lbl_priceshow.Location = new Point(429, 14);
             lbl_priceshow.Name = "lbl_priceshow";
-            lbl_priceshow.Size = new Size(254, 25);
+            lbl_priceshow.Size = new Size(222, 19);
             lbl_priceshow.TabIndex = 0;
             lbl_priceshow.Text = "0đ";
             lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
@@ -243,10 +242,9 @@ namespace WinFormsApp2
             btn_signInForm.FlatStyle = FlatStyle.Flat;
             btn_signInForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_signInForm.ForeColor = Color.White;
-            btn_signInForm.Location = new Point(954, 46);
-            btn_signInForm.Margin = new Padding(3, 4, 3, 4);
+            btn_signInForm.Location = new Point(835, 34);
             btn_signInForm.Name = "btn_signInForm";
-            btn_signInForm.Size = new Size(117, 35);
+            btn_signInForm.Size = new Size(102, 26);
             btn_signInForm.TabIndex = 18;
             btn_signInForm.Text = "Tài khoản";
             btn_signInForm.TextColor = Color.White;
@@ -263,10 +261,9 @@ namespace WinFormsApp2
             roundedButton10.FlatStyle = FlatStyle.Flat;
             roundedButton10.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton10.ForeColor = Color.White;
-            roundedButton10.Location = new Point(1077, 46);
-            roundedButton10.Margin = new Padding(3, 4, 3, 4);
+            roundedButton10.Location = new Point(942, 34);
             roundedButton10.Name = "roundedButton10";
-            roundedButton10.Size = new Size(117, 35);
+            roundedButton10.Size = new Size(102, 26);
             roundedButton10.TabIndex = 21;
             roundedButton10.Text = "Đăng xuất";
             roundedButton10.TextColor = Color.White;
@@ -283,10 +280,9 @@ namespace WinFormsApp2
             btn_ChangetoForm.FlatStyle = FlatStyle.Flat;
             btn_ChangetoForm.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             btn_ChangetoForm.ForeColor = Color.White;
-            btn_ChangetoForm.Location = new Point(1009, 602);
-            btn_ChangetoForm.Margin = new Padding(3, 4, 3, 4);
+            btn_ChangetoForm.Location = new Point(883, 452);
             btn_ChangetoForm.Name = "btn_ChangetoForm";
-            btn_ChangetoForm.Size = new Size(207, 60);
+            btn_ChangetoForm.Size = new Size(181, 45);
             btn_ChangetoForm.TabIndex = 21;
             btn_ChangetoForm.Text = "Giỏ hàng";
             btn_ChangetoForm.TextColor = Color.White;
@@ -296,10 +292,12 @@ namespace WinFormsApp2
             // panel_monan_1
             // 
             panel_monan_1.AutoScroll = true;
-            panel_monan_1.Location = new Point(268, 103);
+            panel_monan_1.Location = new Point(234, 77);
+            panel_monan_1.Margin = new Padding(3, 2, 3, 2);
             panel_monan_1.Name = "panel_monan_1";
-            panel_monan_1.Size = new Size(935, 493);
+            panel_monan_1.Size = new Size(818, 370);
             panel_monan_1.TabIndex = 22;
+            panel_monan_1.Paint += panel_monan_1_Paint;
             // 
             // btn_ComfirmFoodChange
             // 
@@ -312,10 +310,9 @@ namespace WinFormsApp2
             btn_ComfirmFoodChange.FlatStyle = FlatStyle.Flat;
             btn_ComfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_ComfirmFoodChange.ForeColor = Color.White;
-            btn_ComfirmFoodChange.Location = new Point(805, 46);
-            btn_ComfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ComfirmFoodChange.Location = new Point(704, 34);
             btn_ComfirmFoodChange.Name = "btn_ComfirmFoodChange";
-            btn_ComfirmFoodChange.Size = new Size(143, 35);
+            btn_ComfirmFoodChange.Size = new Size(125, 26);
             btn_ComfirmFoodChange.TabIndex = 37;
             btn_ComfirmFoodChange.Text = "Xác Nhận Món";
             btn_ComfirmFoodChange.TextColor = Color.White;
@@ -323,9 +320,9 @@ namespace WinFormsApp2
             // 
             // AllMonAn
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1212, 660);
+            ClientSize = new Size(1060, 495);
             Controls.Add(btn_ComfirmFoodChange);
             Controls.Add(panel_monan_1);
             Controls.Add(btn_ChangetoForm);
@@ -333,7 +330,9 @@ namespace WinFormsApp2
             Controls.Add(btn_signInForm);
             Controls.Add(tile_blacklayout);
             Controls.Add(metroPanel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AllMonAn";
+            Padding = new Padding(18, 45, 18, 15);
             Style = MetroFramework.MetroColorStyle.White;
             Load += MonAn_Load_1;
             metroPanel1.ResumeLayout(false);
