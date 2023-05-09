@@ -22,7 +22,7 @@ namespace GUI.AdminPage
         {
             InitializeComponent();
             culture = CultureInfo.CurrentCulture;
-            SetLanguage("vi-VN");
+            SetLanguage("en-US");
         }
 
         private void AddComboFood_Load(object sender, EventArgs e)

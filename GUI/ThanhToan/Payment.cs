@@ -20,7 +20,7 @@ namespace GUI.ThanhToan
         CultureInfo culture;
         private List<Dictionary<String, String>> ListContainAllDetail;
         private int Price = 0;
-        public Payment(List<Dictionary<String, String>> ListContainAllDetail,int Price)
+        public Payment(List<Dictionary<String, String>> ListContainAllDetail, int Price)
         {
             this.ListContainAllDetail = ListContainAllDetail;
             this.Price = Price;
@@ -52,12 +52,12 @@ namespace GUI.ThanhToan
 
         private void btn_InsertTransaction_Click(object sender, EventArgs e)
         {
-            BUS.Transaction transaction=new BUS.Transaction();
+            BUS.Transaction transaction = new BUS.Transaction();
             Dictionary<String, String> TransactionInfo = new Dictionary<String, String>();
             Dictionary<String, String> IDInfo = new Dictionary<String, String>();
-            TransactionInfo.Add("Price",this.Price.ToString());
+            TransactionInfo.Add("Price", this.Price.ToString());
             IDInfo = transaction.tryingInsertTransaction(TransactionInfo);
-            String TransactionID= IDInfo["TransactionID"];
+            String TransactionID = IDInfo["TransactionID"];
             if (TransactionID != "-1")
             {
                 foreach (Dictionary<String, String> item in ListContainAllDetail)
@@ -95,7 +95,7 @@ namespace GUI.ThanhToan
             lbl_paymentDetail.Text = rm.GetString("paymentDetailText", culture);
             lbl_idbill.Text = rm.GetString("billIDText", culture);
             lbl_totalMoney.Text = rm.GetString("totalText", culture);
-            lbl_datePayment.Text = rm.GetString("paymentDateText",culture);
+            lbl_datePayment.Text = rm.GetString("paymentDateText", culture);
             lbl_offer.Text = rm.GetString("offerText", culture);
             cb_offerID.Texts = rm.GetString("offerIDText", culture);
             lbl_paymentMethod.Text = rm.GetString("paymentMethodText", culture);

@@ -54,11 +54,6 @@ namespace WinFormsApp2
 
         }
 
-        private void myRoundedButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Pa_ColorDis_Click(object sender, EventArgs e)
         {
 

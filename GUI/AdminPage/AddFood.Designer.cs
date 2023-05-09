@@ -237,6 +237,7 @@
             btn_addPicture.TabIndex = 23;
             btn_addPicture.TextColor = SystemColors.WindowText;
             btn_addPicture.UseVisualStyleBackColor = false;
+            btn_addPicture.Click += btn_addPicture_Click;
             // 
             // btn_PictueLabel
             // 
@@ -315,6 +316,7 @@
             btn_AddingFood.Text = "Thêm";
             btn_AddingFood.TextColor = Color.White;
             btn_AddingFood.UseVisualStyleBackColor = false;
+            btn_AddingFood.Click += btn_addingMenu_Click;
             // 
             // UploadPlaceBox
             // 
@@ -323,6 +325,7 @@
             UploadPlaceBox.Size = new Size(400, 399);
             UploadPlaceBox.TabIndex = 29;
             UploadPlaceBox.TabStop = false;
+            UploadPlaceBox.Click += UploadPlaceBox_Click;
             // 
             // cb_TypeofFood
             // 
@@ -378,6 +381,7 @@
             Controls.Add(metroPanel1);
             Controls.Add(UploadPlaceBox);
             Name = "AddFood";
+            Load += AddFood_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb_AccountIcon).EndInit();

@@ -142,43 +142,7 @@ namespace WinFormsApp2
             btn_Snack.TextColor = ColorTranslator.FromHtml("#A09F9F");
             btn_Beverage.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#A09F9F");
-           
-            
         }
-        private void roundedButton5_Click(object sender, EventArgs e)
-        {
-            ChangeSection1();
-        }
-
-        private void roundedButton6_Click(object sender, EventArgs e)
-        {
-            ChangeSection2();
-        }
-
-        private void roundedButton7_Click(object sender, EventArgs e)
-        {
-            ChangeSection3();
-        }
-
-        private void roundedButton8_Click(object sender, EventArgs e)
-        {
-            ChangeSection4();
-        }
-
-        private void roundedButton9_Click(object sender, EventArgs e)
-        {
-
-            ChangeSection5();
-        }
-
-        private void roundedButton4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
-            homepageFormSingle.ShowDialog();
-            this.Close();
-        }
-
         private void roundedButton10_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -263,6 +227,44 @@ namespace WinFormsApp2
             this.Hide();
             HoaDonTong payment = new HoaDonTong();
             payment.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Hotpot_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
+            homepageFormSingle.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_SavouryFood_Click(object sender, EventArgs e)
+        {
+            ChangeSection1();
+
+        }
+
+        private void btn_Snack_Click(object sender, EventArgs e)
+        {
+            ChangeSection3();
+        }
+
+        private void btn_Vegetable_Click(object sender, EventArgs e)
+        {
+            ChangeSection2();
+        }
+
+        private void btn_Beverage_Click(object sender, EventArgs e)
+        {
+            ChangeSection4();
+
+        }
+
+        private void btn_Cart_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ShoppingCartForm ShoppingCartForm = new ShoppingCartForm();
+            ShoppingCartForm.ShowDialog();
             this.Close();
         }
     }

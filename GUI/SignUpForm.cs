@@ -25,7 +25,7 @@ namespace WinFormsApp2
             String email = tb_Email.Texts.Trim();
             String phone = tb_Phone.Texts.Trim();
             String password = tb_Password.Texts;
-            
+
             Dictionary<string, string> resultlist = new Dictionary<string, string>();
             resultlist = customer.returnResultRegister(phone, password, name, email);
             String result = resultlist["result"];
@@ -84,9 +84,9 @@ namespace WinFormsApp2
             }
         }
 
-        
 
-        
+
+
 
         private void roundedButton1_MouseHover(object sender, EventArgs e)
         {

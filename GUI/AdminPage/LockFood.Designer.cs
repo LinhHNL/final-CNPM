@@ -238,6 +238,7 @@
             Controls.Add(btn_Signout);
             Controls.Add(metroPanel1);
             Name = "LockFood";
+            Load += LockFood_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb_AccountIcon).EndInit();

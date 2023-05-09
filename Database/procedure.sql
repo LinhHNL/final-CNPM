@@ -1711,9 +1711,6 @@ AS
 		Select * from TempBill where status=0;
 	END
 GO
-Select * from TempBill
-EXEC GetAllTempBillDetailsOfTempBill 17;
-GO
 Create Procedure GetTempBill
 @Token varchar(45),
 @CustomerID int 
@@ -2313,4 +2310,4 @@ EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xư
 EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
 EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';
 Select * from Customers
-Select * from Transactions
+Select * from Menu

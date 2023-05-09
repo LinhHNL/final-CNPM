@@ -58,7 +58,7 @@ namespace WinFormsApp2.AdminPage
                 {
                     string RoomName = item["Name"].ToString();
                     //cb_RoomID.Items.Add(RoomName);
-                    
+
                 }
             }
             BUS.Menu menu = new BUS.Menu();
@@ -70,7 +70,7 @@ namespace WinFormsApp2.AdminPage
             this.UploadPlaceBox.Image = Base64ToImage(MenuItem["URLImage"]);
             ImageURL = MenuItem["URLImage"];
             btn_addPicture.Visible = false;
-            
+
             btn_PictueLabel.Visible = false;
         }
         String ImageURL = "";
@@ -124,19 +124,19 @@ namespace WinFormsApp2.AdminPage
         {
             if (tb_NameOfFood.Texts.ToString() != "")
             {
-            MenuItem["Name"]=tb_NameOfFood.Texts.ToString();
+                MenuItem["Name"] = tb_NameOfFood.Texts.ToString();
             }
             if (tb_Price.Texts.ToString() != "")
             {
-            MenuItem["Price"] = tb_Price.Texts.ToString(); 
+                MenuItem["Price"] = tb_Price.Texts.ToString();
             }
             if (this.cb_TypeofFood.SelectedItem != null)
             {
-            MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
+                MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
             }
             //if (this.cb_RoomID.SelectedItem != null)
             {
-            //MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
+                //MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
             }
             MenuItem["URLImage"] = ImageURL.ToString();
             BUS.Menu menu = new BUS.Menu();
@@ -194,7 +194,7 @@ namespace WinFormsApp2.AdminPage
             this.Close();
         }
 
-        
+
 
         private void btn_AddingFood_Click(object sender, EventArgs e)
         {

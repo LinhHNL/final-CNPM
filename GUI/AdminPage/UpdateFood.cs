@@ -21,19 +21,19 @@ namespace WinFormsApp2.AdminPage
         {
             InitializeComponent();
             culture = CultureInfo.CurrentCulture;
-            SetLanguage("vi-VN");
+            SetLanguage("en-US");
         }
 
         private void UpdateFood_Load(object sender, EventArgs e)
         {
-            //flp_food_update.Controls.Clear();
+            flp_food_update.Controls.Clear();
             BUS.Menu menu = new BUS.Menu();
             List<Dictionary<string, string>> menuList = menu.getAllMenu();
             foreach (Dictionary<string, string> item in menuList)
             {
                 if (item["Status"] == "1")
                 {
-                    //flp_food_update.Controls.Add(new UpdateFoodCom(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
+                    flp_food_update.Controls.Add(new UpdateFoodCom(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
 
             }
@@ -49,11 +49,7 @@ namespace WinFormsApp2.AdminPage
             btn_LockFood.Text = rm.GetString("lockFoodText", culture);
             lbl_AccountName.Text = rm.GetString("accountNameText", culture);
             btn_AddFood.Text = rm.GetString("addFoodText", culture);
-            lbl_Price.Text = rm.GetString("priceText", culture);
-            lbl_FoodName.Text = rm.GetString("foodNameText", culture);
             btn_Signout.Text = rm.GetString("signoutText", culture);
-            btn_Update.Text = rm.GetString("updateText", culture);
-            btn_Delete.Text = rm.GetString("deleteText", culture);
         }
         private void btn_AddFood_Click(object sender, EventArgs e)
         {

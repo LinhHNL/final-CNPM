@@ -206,6 +206,7 @@
             UploadPlaceBox.Size = new Size(400, 399);
             UploadPlaceBox.TabIndex = 30;
             UploadPlaceBox.TabStop = false;
+            UploadPlaceBox.Click += UploadPlaceBox_Click;
             // 
             // btn_PictueLabel
             // 
@@ -227,12 +228,13 @@
             btn_addPicture.FlatAppearance.BorderSize = 0;
             btn_addPicture.FlatStyle = FlatStyle.Flat;
             btn_addPicture.ForeColor = SystemColors.WindowText;
-            btn_addPicture.Location = new Point(325, 128);
+            btn_addPicture.Location = new Point(325, 127);
             btn_addPicture.Name = "btn_addPicture";
             btn_addPicture.Size = new Size(400, 400);
             btn_addPicture.TabIndex = 32;
             btn_addPicture.TextColor = SystemColors.WindowText;
             btn_addPicture.UseVisualStyleBackColor = false;
+            btn_addPicture.Click += btn_addPicture_Click;
             // 
             // tb_NameOfFood
             // 
@@ -337,6 +339,7 @@
             Controls.Add(btn_addPicture);
             Controls.Add(UploadPlaceBox);
             Name = "AddComboFood";
+            Load += AddComboFood_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pb_AccountIcon).EndInit();

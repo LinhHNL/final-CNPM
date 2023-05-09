@@ -61,7 +61,7 @@ namespace GUI.ThanhToan
         int Price = 0;
         private void HoaDonTong_Load(object sender, EventArgs e)
         {
-            
+
             flp_showDetailMon.Controls.Clear();
             BUS.TempBill tempBill = new BUS.TempBill();
             BUS.Menu menu = new BUS.Menu();
@@ -88,7 +88,9 @@ namespace GUI.ThanhToan
             }
         }
 
-        private void btn_ChangeStatus_Click(object sender, EventArgs e)
+       
+
+        private void btn_confirm_Click(object sender, EventArgs e)
         {
             this.Hide();
             Payment HoaDonTong = new Payment(ListContainAllDetail, Price);

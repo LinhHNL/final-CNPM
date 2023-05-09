@@ -88,14 +88,14 @@ namespace WinFormsApp2.AdminPage
         {
             String IdMenu = "";
             String SoLuongMon = "";
-            BUS.Combo combo= new BUS.Combo();
+            BUS.Combo combo = new BUS.Combo();
             Dictionary<string, string> ComboInfo = new Dictionary<string, string>();
             Dictionary<string, string> ComboDetailInfo = new Dictionary<string, string>();
             ComboInfo.Add("Name", TenCombo);
             ComboInfo.Add("Cost", GiaCombo);
             ComboInfo.Add("ImageURL", ImageURL);
             Dictionary<string, string> Result = combo.tryingAddingCombo(ComboInfo);
-            if (Result == null) 
+            if (Result == null)
             {
                 String IDCombo = Result["ComboID"];
                 foreach (MonAnComponentForAdding element in panel_monan_1.Controls.OfType<MonAnComponentForAdding>())
@@ -110,7 +110,7 @@ namespace WinFormsApp2.AdminPage
                     ComboDetailInfo.Add("MenuID", IdMenu);
                     ComboDetailInfo.Add("ComboID", IDCombo);
                     ComboDetailInfo.Add("NumberOfFood", SoLuongMon);
-                    if(!combo.tryingAddingComboDetail(ComboDetailInfo))
+                    if (!combo.tryingAddingComboDetail(ComboDetailInfo))
                     {
                         MessageBox.Show("Thêm thất bại");
                         break;

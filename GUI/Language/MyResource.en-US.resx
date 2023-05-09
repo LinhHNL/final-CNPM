@@ -969,6 +969,9 @@
   <data name="totalCapitalText" xml:space="preserve">
     <value>Total capital</value>
   </data>
+  <data name="totalMoneyText" xml:space="preserve">
+    <value>Total Money</value>
+  </data>
   <data name="totalSalaryText" xml:space="preserve">
     <value>Total salary</value>
     <comment>Staff management</comment>

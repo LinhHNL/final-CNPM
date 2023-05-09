@@ -31,287 +31,338 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllMonAn));
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_Beverage = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Snack = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Vegetable = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_SavouryFood = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Hotpot = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tile_blacklayout = new MetroFramework.Controls.MetroTile();
-            this.lbl_priceshow = new System.Windows.Forms.Label();
-            this.btn_AccountForm = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_SignOut = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_Cart = new WinFormsApp2.CustomControls.RoundedButton();
-            this.panel_monan_1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tile_blacklayout.SuspendLayout();
-            this.SuspendLayout();
+            metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            metroPanel7 = new MetroFramework.Controls.MetroPanel();
+            btn_Beverage = new RoundedButton();
+            btn_Snack = new RoundedButton();
+            btn_Vegetable = new RoundedButton();
+            btn_SavouryFood = new RoundedButton();
+            btn_Hotpot = new RoundedButton();
+            pictureBox1 = new PictureBox();
+            tile_blacklayout = new MetroFramework.Controls.MetroTile();
+            lbl_priceshow = new Label();
+            btn_AccountForm = new RoundedButton();
+            btn_SignOut = new RoundedButton();
+            btn_Cart = new RoundedButton();
+            panel_monan_1 = new FlowLayoutPanel();
+            btn_ConfirmFoodChange = new RoundedButton();
+            btn_PaymentChange = new RoundedButton();
+            metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            tile_blacklayout.SuspendLayout();
+            SuspendLayout();
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_Beverage);
-            this.metroPanel1.Controls.Add(this.btn_Snack);
-            this.metroPanel1.Controls.Add(this.btn_Vegetable);
-            this.metroPanel1.Controls.Add(this.btn_SavouryFood);
-            this.metroPanel1.Controls.Add(this.btn_Hotpot);
-            this.metroPanel1.Controls.Add(this.pictureBox1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 32);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(262, 597);
-            this.metroPanel1.TabIndex = 15;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            metroPanel1.Controls.Add(metroPanel7);
+            metroPanel1.Controls.Add(btn_Beverage);
+            metroPanel1.Controls.Add(btn_Snack);
+            metroPanel1.Controls.Add(btn_Vegetable);
+            metroPanel1.Controls.Add(btn_SavouryFood);
+            metroPanel1.Controls.Add(btn_Hotpot);
+            metroPanel1.Controls.Add(pictureBox1);
+            metroPanel1.HorizontalScrollbarBarColor = true;
+            metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel1.HorizontalScrollbarSize = 10;
+            metroPanel1.Location = new Point(0, 32);
+            metroPanel1.Name = "metroPanel1";
+            metroPanel1.Size = new Size(262, 597);
+            metroPanel1.TabIndex = 15;
+            metroPanel1.VerticalScrollbarBarColor = true;
+            metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel1.VerticalScrollbarSize = 10;
             // 
             // metroPanel7
             // 
-            this.metroPanel7.BackColor = System.Drawing.Color.Black;
-            this.metroPanel7.HorizontalScrollbarBarColor = true;
-            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 10;
-            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
-            this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
-            this.metroPanel7.TabIndex = 20;
-            this.metroPanel7.VerticalScrollbarBarColor = true;
-            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 10;
+            metroPanel7.BackColor = Color.Black;
+            metroPanel7.HorizontalScrollbarBarColor = true;
+            metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel7.HorizontalScrollbarSize = 10;
+            metroPanel7.Location = new Point(259, 539);
+            metroPanel7.Name = "metroPanel7";
+            metroPanel7.Size = new Size(904, 55);
+            metroPanel7.TabIndex = 20;
+            metroPanel7.VerticalScrollbarBarColor = true;
+            metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel7.VerticalScrollbarSize = 10;
             // 
             // btn_Beverage
             // 
-            this.btn_Beverage.BackColor = System.Drawing.Color.White;
-            this.btn_Beverage.BackgroundColor = System.Drawing.Color.White;
-            this.btn_Beverage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_Beverage.BorderRadius = 0;
-            this.btn_Beverage.BorderSize = 0;
-            this.btn_Beverage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Beverage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Beverage.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Beverage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Beverage.Location = new System.Drawing.Point(-2, 307);
-            this.btn_Beverage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Beverage.Name = "btn_Beverage";
-            this.btn_Beverage.Size = new System.Drawing.Size(264, 64);
-            this.btn_Beverage.TabIndex = 19;
-            this.btn_Beverage.Text = "Đồ uống";
-            this.btn_Beverage.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Beverage.UseVisualStyleBackColor = false;
+            btn_Beverage.BackColor = Color.White;
+            btn_Beverage.BackgroundColor = Color.White;
+            btn_Beverage.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Beverage.BorderRadius = 0;
+            btn_Beverage.BorderSize = 0;
+            btn_Beverage.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Beverage.FlatStyle = FlatStyle.Flat;
+            btn_Beverage.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Beverage.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Beverage.Location = new Point(-2, 307);
+            btn_Beverage.Margin = new Padding(3, 4, 3, 4);
+            btn_Beverage.Name = "btn_Beverage";
+            btn_Beverage.Size = new Size(264, 64);
+            btn_Beverage.TabIndex = 19;
+            btn_Beverage.Text = "Đồ uống";
+            btn_Beverage.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Beverage.UseVisualStyleBackColor = false;
+            btn_Beverage.Click += btn_Beverage_Click;
             // 
             // btn_Snack
             // 
-            this.btn_Snack.BackColor = System.Drawing.Color.White;
-            this.btn_Snack.BackgroundColor = System.Drawing.Color.White;
-            this.btn_Snack.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_Snack.BorderRadius = 0;
-            this.btn_Snack.BorderSize = 0;
-            this.btn_Snack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Snack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Snack.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Snack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Snack.Location = new System.Drawing.Point(0, 243);
-            this.btn_Snack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Snack.Name = "btn_Snack";
-            this.btn_Snack.Size = new System.Drawing.Size(264, 64);
-            this.btn_Snack.TabIndex = 18;
-            this.btn_Snack.Text = "Đồ ăn vặt";
-            this.btn_Snack.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Snack.UseVisualStyleBackColor = false;
+            btn_Snack.BackColor = Color.White;
+            btn_Snack.BackgroundColor = Color.White;
+            btn_Snack.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Snack.BorderRadius = 0;
+            btn_Snack.BorderSize = 0;
+            btn_Snack.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Snack.FlatStyle = FlatStyle.Flat;
+            btn_Snack.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Snack.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Snack.Location = new Point(0, 243);
+            btn_Snack.Margin = new Padding(3, 4, 3, 4);
+            btn_Snack.Name = "btn_Snack";
+            btn_Snack.Size = new Size(264, 64);
+            btn_Snack.TabIndex = 18;
+            btn_Snack.Text = "Đồ ăn vặt";
+            btn_Snack.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Snack.UseVisualStyleBackColor = false;
+            btn_Snack.Click += btn_Snack_Click;
             // 
             // btn_Vegetable
             // 
-            this.btn_Vegetable.BackColor = System.Drawing.Color.White;
-            this.btn_Vegetable.BackgroundColor = System.Drawing.Color.White;
-            this.btn_Vegetable.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_Vegetable.BorderRadius = 0;
-            this.btn_Vegetable.BorderSize = 0;
-            this.btn_Vegetable.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Vegetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Vegetable.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Vegetable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Vegetable.Location = new System.Drawing.Point(0, 184);
-            this.btn_Vegetable.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Vegetable.Name = "btn_Vegetable";
-            this.btn_Vegetable.Size = new System.Drawing.Size(264, 64);
-            this.btn_Vegetable.TabIndex = 17;
-            this.btn_Vegetable.Text = "Món rau";
-            this.btn_Vegetable.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Vegetable.UseVisualStyleBackColor = false;
+            btn_Vegetable.BackColor = Color.White;
+            btn_Vegetable.BackgroundColor = Color.White;
+            btn_Vegetable.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Vegetable.BorderRadius = 0;
+            btn_Vegetable.BorderSize = 0;
+            btn_Vegetable.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Vegetable.FlatStyle = FlatStyle.Flat;
+            btn_Vegetable.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Vegetable.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Vegetable.Location = new Point(0, 184);
+            btn_Vegetable.Margin = new Padding(3, 4, 3, 4);
+            btn_Vegetable.Name = "btn_Vegetable";
+            btn_Vegetable.Size = new Size(264, 64);
+            btn_Vegetable.TabIndex = 17;
+            btn_Vegetable.Text = "Món rau";
+            btn_Vegetable.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Vegetable.UseVisualStyleBackColor = false;
+            btn_Vegetable.Click += btn_Vegetable_Click;
             // 
             // btn_SavouryFood
             // 
-            this.btn_SavouryFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_SavouryFood.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_SavouryFood.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_SavouryFood.BorderRadius = 0;
-            this.btn_SavouryFood.BorderSize = 0;
-            this.btn_SavouryFood.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_SavouryFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SavouryFood.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_SavouryFood.ForeColor = System.Drawing.Color.White;
-            this.btn_SavouryFood.Location = new System.Drawing.Point(0, 126);
-            this.btn_SavouryFood.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_SavouryFood.Name = "btn_SavouryFood";
-            this.btn_SavouryFood.Size = new System.Drawing.Size(262, 60);
-            this.btn_SavouryFood.TabIndex = 16;
-            this.btn_SavouryFood.Text = "Món mặn";
-            this.btn_SavouryFood.TextColor = System.Drawing.Color.White;
-            this.btn_SavouryFood.UseVisualStyleBackColor = false;
+            btn_SavouryFood.BackColor = Color.FromArgb(229, 1, 17);
+            btn_SavouryFood.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_SavouryFood.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_SavouryFood.BorderRadius = 0;
+            btn_SavouryFood.BorderSize = 0;
+            btn_SavouryFood.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_SavouryFood.FlatStyle = FlatStyle.Flat;
+            btn_SavouryFood.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SavouryFood.ForeColor = Color.White;
+            btn_SavouryFood.Location = new Point(0, 126);
+            btn_SavouryFood.Margin = new Padding(3, 4, 3, 4);
+            btn_SavouryFood.Name = "btn_SavouryFood";
+            btn_SavouryFood.Size = new Size(262, 60);
+            btn_SavouryFood.TabIndex = 16;
+            btn_SavouryFood.Text = "Món mặn";
+            btn_SavouryFood.TextColor = Color.White;
+            btn_SavouryFood.UseVisualStyleBackColor = false;
+            btn_SavouryFood.Click += btn_SavouryFood_Click;
             // 
             // btn_Hotpot
             // 
-            this.btn_Hotpot.BackColor = System.Drawing.Color.White;
-            this.btn_Hotpot.BackgroundColor = System.Drawing.Color.White;
-            this.btn_Hotpot.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Hotpot.BorderRadius = 0;
-            this.btn_Hotpot.BorderSize = 0;
-            this.btn_Hotpot.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Hotpot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Hotpot.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Hotpot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Hotpot.Location = new System.Drawing.Point(0, 71);
-            this.btn_Hotpot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Hotpot.Name = "btn_Hotpot";
-            this.btn_Hotpot.Size = new System.Drawing.Size(262, 56);
-            this.btn_Hotpot.TabIndex = 16;
-            this.btn_Hotpot.Text = "Lẩu";
-            this.btn_Hotpot.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_Hotpot.UseVisualStyleBackColor = false;
+            btn_Hotpot.BackColor = Color.White;
+            btn_Hotpot.BackgroundColor = Color.White;
+            btn_Hotpot.BorderColor = Color.PaleVioletRed;
+            btn_Hotpot.BorderRadius = 0;
+            btn_Hotpot.BorderSize = 0;
+            btn_Hotpot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Hotpot.FlatStyle = FlatStyle.Flat;
+            btn_Hotpot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Hotpot.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Hotpot.Location = new Point(0, 71);
+            btn_Hotpot.Margin = new Padding(3, 4, 3, 4);
+            btn_Hotpot.Name = "btn_Hotpot";
+            btn_Hotpot.Size = new Size(262, 56);
+            btn_Hotpot.TabIndex = 16;
+            btn_Hotpot.Text = "Lẩu";
+            btn_Hotpot.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Hotpot.UseVisualStyleBackColor = false;
+            btn_Hotpot.Click += btn_Hotpot_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(100, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(100, 14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 50);
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
             // 
             // tile_blacklayout
             // 
-            this.tile_blacklayout.ActiveControl = null;
-            this.tile_blacklayout.BackColor = System.Drawing.Color.Black;
-            this.tile_blacklayout.Controls.Add(this.lbl_priceshow);
-            this.tile_blacklayout.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.tile_blacklayout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.tile_blacklayout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.tile_blacklayout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tile_blacklayout.Location = new System.Drawing.Point(259, 602);
-            this.tile_blacklayout.Name = "tile_blacklayout";
-            this.tile_blacklayout.PaintTileCount = false;
-            this.tile_blacklayout.Size = new System.Drawing.Size(753, 66);
-            this.tile_blacklayout.Style = MetroFramework.MetroColorStyle.Black;
-            this.tile_blacklayout.TabIndex = 20;
-            this.tile_blacklayout.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.tile_blacklayout.UseCustomBackColor = true;
-            this.tile_blacklayout.UseSelectable = true;
-            this.tile_blacklayout.UseStyleColors = true;
-            this.tile_blacklayout.UseVisualStyleBackColor = false;
+            tile_blacklayout.ActiveControl = null;
+            tile_blacklayout.BackColor = Color.Black;
+            tile_blacklayout.Controls.Add(lbl_priceshow);
+            tile_blacklayout.FlatAppearance.BorderColor = Color.Black;
+            tile_blacklayout.FlatAppearance.MouseDownBackColor = Color.Black;
+            tile_blacklayout.FlatAppearance.MouseOverBackColor = Color.Black;
+            tile_blacklayout.FlatStyle = FlatStyle.Flat;
+            tile_blacklayout.Location = new Point(259, 602);
+            tile_blacklayout.Name = "tile_blacklayout";
+            tile_blacklayout.PaintTileCount = false;
+            tile_blacklayout.Size = new Size(753, 66);
+            tile_blacklayout.Style = MetroFramework.MetroColorStyle.Black;
+            tile_blacklayout.TabIndex = 20;
+            tile_blacklayout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            tile_blacklayout.UseCustomBackColor = true;
+            tile_blacklayout.UseSelectable = true;
+            tile_blacklayout.UseStyleColors = true;
+            tile_blacklayout.UseVisualStyleBackColor = false;
             // 
             // lbl_priceshow
             // 
-            this.lbl_priceshow.BackColor = System.Drawing.Color.Black;
-            this.lbl_priceshow.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_priceshow.ForeColor = System.Drawing.Color.White;
-            this.lbl_priceshow.Location = new System.Drawing.Point(490, 18);
-            this.lbl_priceshow.Name = "lbl_priceshow";
-            this.lbl_priceshow.Size = new System.Drawing.Size(254, 25);
-            this.lbl_priceshow.TabIndex = 0;
-            this.lbl_priceshow.Text = "0đ";
-            this.lbl_priceshow.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbl_priceshow.BackColor = Color.Black;
+            lbl_priceshow.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_priceshow.ForeColor = Color.White;
+            lbl_priceshow.Location = new Point(490, 18);
+            lbl_priceshow.Name = "lbl_priceshow";
+            lbl_priceshow.Size = new Size(254, 25);
+            lbl_priceshow.TabIndex = 0;
+            lbl_priceshow.Text = "0đ";
+            lbl_priceshow.TextAlign = ContentAlignment.MiddleRight;
             // 
             // btn_AccountForm
             // 
-            this.btn_AccountForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_AccountForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_AccountForm.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_AccountForm.BorderRadius = 8;
-            this.btn_AccountForm.BorderSize = 0;
-            this.btn_AccountForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_AccountForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AccountForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_AccountForm.ForeColor = System.Drawing.Color.White;
-            this.btn_AccountForm.Location = new System.Drawing.Point(954, 27);
-            this.btn_AccountForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_AccountForm.Name = "btn_AccountForm";
-            this.btn_AccountForm.Size = new System.Drawing.Size(117, 35);
-            this.btn_AccountForm.TabIndex = 18;
-            this.btn_AccountForm.Text = "Tài khoản";
-            this.btn_AccountForm.TextColor = System.Drawing.Color.White;
-            this.btn_AccountForm.UseVisualStyleBackColor = false;
+            btn_AccountForm.BackColor = Color.FromArgb(229, 1, 17);
+            btn_AccountForm.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_AccountForm.BorderColor = Color.PaleVioletRed;
+            btn_AccountForm.BorderRadius = 8;
+            btn_AccountForm.BorderSize = 0;
+            btn_AccountForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_AccountForm.FlatStyle = FlatStyle.Flat;
+            btn_AccountForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AccountForm.ForeColor = Color.White;
+            btn_AccountForm.Location = new Point(954, 27);
+            btn_AccountForm.Margin = new Padding(3, 4, 3, 4);
+            btn_AccountForm.Name = "btn_AccountForm";
+            btn_AccountForm.Size = new Size(117, 35);
+            btn_AccountForm.TabIndex = 18;
+            btn_AccountForm.Text = "Tài khoản";
+            btn_AccountForm.TextColor = Color.White;
+            btn_AccountForm.UseVisualStyleBackColor = false;
             // 
             // btn_SignOut
             // 
-            this.btn_SignOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_SignOut.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_SignOut.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_SignOut.BorderRadius = 8;
-            this.btn_SignOut.BorderSize = 0;
-            this.btn_SignOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_SignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_SignOut.ForeColor = System.Drawing.Color.White;
-            this.btn_SignOut.Location = new System.Drawing.Point(1077, 27);
-            this.btn_SignOut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_SignOut.Name = "btn_SignOut";
-            this.btn_SignOut.Size = new System.Drawing.Size(117, 35);
-            this.btn_SignOut.TabIndex = 21;
-            this.btn_SignOut.Text = "Đăng xuất";
-            this.btn_SignOut.TextColor = System.Drawing.Color.White;
-            this.btn_SignOut.UseVisualStyleBackColor = false;
+            btn_SignOut.BackColor = Color.FromArgb(229, 1, 17);
+            btn_SignOut.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_SignOut.BorderColor = Color.PaleVioletRed;
+            btn_SignOut.BorderRadius = 8;
+            btn_SignOut.BorderSize = 0;
+            btn_SignOut.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_SignOut.FlatStyle = FlatStyle.Flat;
+            btn_SignOut.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SignOut.ForeColor = Color.White;
+            btn_SignOut.Location = new Point(1077, 27);
+            btn_SignOut.Margin = new Padding(3, 4, 3, 4);
+            btn_SignOut.Name = "btn_SignOut";
+            btn_SignOut.Size = new Size(117, 35);
+            btn_SignOut.TabIndex = 21;
+            btn_SignOut.Text = "Đăng xuất";
+            btn_SignOut.TextColor = Color.White;
+            btn_SignOut.UseVisualStyleBackColor = false;
             // 
             // btn_Cart
             // 
-            this.btn_Cart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Cart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Cart.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Cart.BorderRadius = 0;
-            this.btn_Cart.BorderSize = 0;
-            this.btn_Cart.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Cart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cart.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Cart.ForeColor = System.Drawing.Color.White;
-            this.btn_Cart.Location = new System.Drawing.Point(1009, 602);
-            this.btn_Cart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Cart.Name = "btn_Cart";
-            this.btn_Cart.Size = new System.Drawing.Size(207, 60);
-            this.btn_Cart.TabIndex = 21;
-            this.btn_Cart.Text = "Giỏ hàng";
-            this.btn_Cart.TextColor = System.Drawing.Color.White;
-            this.btn_Cart.UseVisualStyleBackColor = false;
+            btn_Cart.BackColor = Color.FromArgb(229, 1, 17);
+            btn_Cart.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_Cart.BorderColor = Color.PaleVioletRed;
+            btn_Cart.BorderRadius = 0;
+            btn_Cart.BorderSize = 0;
+            btn_Cart.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Cart.FlatStyle = FlatStyle.Flat;
+            btn_Cart.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Cart.ForeColor = Color.White;
+            btn_Cart.Location = new Point(1009, 602);
+            btn_Cart.Margin = new Padding(3, 4, 3, 4);
+            btn_Cart.Name = "btn_Cart";
+            btn_Cart.Size = new Size(207, 60);
+            btn_Cart.TabIndex = 21;
+            btn_Cart.Text = "Giỏ hàng";
+            btn_Cart.TextColor = Color.White;
+            btn_Cart.UseVisualStyleBackColor = false;
+            btn_Cart.Click += btn_Cart_Click;
             // 
             // panel_monan_1
             // 
-            this.panel_monan_1.AutoScroll = true;
-            this.panel_monan_1.Location = new System.Drawing.Point(268, 103);
-            this.panel_monan_1.Name = "panel_monan_1";
-            this.panel_monan_1.Size = new System.Drawing.Size(935, 493);
-            this.panel_monan_1.TabIndex = 22;
+            panel_monan_1.AutoScroll = true;
+            panel_monan_1.Location = new Point(268, 103);
+            panel_monan_1.Name = "panel_monan_1";
+            panel_monan_1.Size = new Size(935, 493);
+            panel_monan_1.TabIndex = 22;
+            // 
+            // btn_ConfirmFoodChange
+            // 
+            btn_ConfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_ConfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_ConfirmFoodChange.BorderColor = Color.PaleVioletRed;
+            btn_ConfirmFoodChange.BorderRadius = 8;
+            btn_ConfirmFoodChange.BorderSize = 0;
+            btn_ConfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_ConfirmFoodChange.FlatStyle = FlatStyle.Flat;
+            btn_ConfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ConfirmFoodChange.ForeColor = Color.White;
+            btn_ConfirmFoodChange.Location = new Point(778, 27);
+            btn_ConfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ConfirmFoodChange.Name = "btn_ConfirmFoodChange";
+            btn_ConfirmFoodChange.Size = new Size(159, 35);
+            btn_ConfirmFoodChange.TabIndex = 23;
+            btn_ConfirmFoodChange.Text = "Xác Nhận Món";
+            btn_ConfirmFoodChange.TextColor = Color.White;
+            btn_ConfirmFoodChange.UseVisualStyleBackColor = false;
+            btn_ConfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
+            // 
+            // btn_PaymentChange
+            // 
+            btn_PaymentChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_PaymentChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_PaymentChange.BorderColor = Color.PaleVioletRed;
+            btn_PaymentChange.BorderRadius = 8;
+            btn_PaymentChange.BorderSize = 0;
+            btn_PaymentChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_PaymentChange.FlatStyle = FlatStyle.Flat;
+            btn_PaymentChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_PaymentChange.ForeColor = Color.White;
+            btn_PaymentChange.Location = new Point(628, 27);
+            btn_PaymentChange.Margin = new Padding(3, 4, 3, 4);
+            btn_PaymentChange.Name = "btn_PaymentChange";
+            btn_PaymentChange.Size = new Size(126, 35);
+            btn_PaymentChange.TabIndex = 24;
+            btn_PaymentChange.Text = "Thanh toán";
+            btn_PaymentChange.TextColor = Color.White;
+            btn_PaymentChange.UseVisualStyleBackColor = false;
+            btn_PaymentChange.Click += btn_Payment_Click;
             // 
             // AllMonAn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 660);
-            this.Controls.Add(this.panel_monan_1);
-            this.Controls.Add(this.btn_Cart);
-            this.Controls.Add(this.btn_SignOut);
-            this.Controls.Add(this.btn_AccountForm);
-            this.Controls.Add(this.tile_blacklayout);
-            this.Controls.Add(this.metroPanel1);
-            this.Name = "AllMonAn";
-            this.Style = MetroFramework.MetroColorStyle.White;
-            this.metroPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tile_blacklayout.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1212, 660);
+            Controls.Add(btn_PaymentChange);
+            Controls.Add(btn_ConfirmFoodChange);
+            Controls.Add(panel_monan_1);
+            Controls.Add(btn_Cart);
+            Controls.Add(btn_SignOut);
+            Controls.Add(btn_AccountForm);
+            Controls.Add(tile_blacklayout);
+            Controls.Add(metroPanel1);
+            Name = "AllMonAn";
+            Style = MetroFramework.MetroColorStyle.White;
+            metroPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            tile_blacklayout.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
@@ -331,5 +382,7 @@ namespace WinFormsApp2
         private Label lbl_priceshow;
         private RoundedButton btn_ComfirmFoodChange;
         private RoundedButton btn_Payment;
+        private RoundedButton btn_ConfirmFoodChange;
+        private RoundedButton btn_PaymentChange;
     }
 }

@@ -28,216 +28,216 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_paymentDetail = new System.Windows.Forms.Label();
-            this.lbl_idbill = new System.Windows.Forms.Label();
-            this.lbl_billidvalue = new System.Windows.Forms.Label();
-            this.lbl_totalMoney = new System.Windows.Forms.Label();
-            this.lbl_TotalMoneyValue = new System.Windows.Forms.Label();
-            this.lbl_offer = new System.Windows.Forms.Label();
-            this.cb_offerID = new WinFormsApp2.CustomControls.CustomComboBox();
-            this.lbl_paymentMethod = new System.Windows.Forms.Label();
-            this.cb_paymentMethod = new WinFormsApp2.CustomControls.CustomComboBox();
-            this.btn_pay = new WinFormsApp2.CustomControls.RoundedButton();
-            this.lbl_datePayment = new System.Windows.Forms.Label();
-            this.lbl_DatePaymentValue = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lbl_paymentDetail = new Label();
+            lbl_idbill = new Label();
+            lbl_billidvalue = new Label();
+            lbl_totalMoney = new Label();
+            lbl_TotalMoneyValue = new Label();
+            lbl_offer = new Label();
+            cb_offerID = new WinFormsApp2.CustomControls.CustomComboBox();
+            lbl_paymentMethod = new Label();
+            cb_paymentMethod = new WinFormsApp2.CustomControls.CustomComboBox();
+            btn_pay = new WinFormsApp2.CustomControls.RoundedButton();
+            lbl_datePayment = new Label();
+            lbl_DatePaymentValue = new Label();
+            SuspendLayout();
             // 
             // lbl_paymentDetail
             // 
-            this.lbl_paymentDetail.AutoSize = true;
-            this.lbl_paymentDetail.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_paymentDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.lbl_paymentDetail.Location = new System.Drawing.Point(55, 30);
-            this.lbl_paymentDetail.Name = "lbl_paymentDetail";
-            this.lbl_paymentDetail.Size = new System.Drawing.Size(250, 37);
-            this.lbl_paymentDetail.TabIndex = 35;
-            this.lbl_paymentDetail.Text = "Chi tiết thanh toán";
+            lbl_paymentDetail.AutoSize = true;
+            lbl_paymentDetail.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_paymentDetail.ForeColor = Color.FromArgb(229, 1, 17);
+            lbl_paymentDetail.Location = new Point(55, 30);
+            lbl_paymentDetail.Name = "lbl_paymentDetail";
+            lbl_paymentDetail.Size = new Size(250, 37);
+            lbl_paymentDetail.TabIndex = 35;
+            lbl_paymentDetail.Text = "Chi tiết thanh toán";
             // 
             // lbl_idbill
             // 
-            this.lbl_idbill.AutoSize = true;
-            this.lbl_idbill.BackColor = System.Drawing.Color.White;
-            this.lbl_idbill.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_idbill.ForeColor = System.Drawing.Color.Black;
-            this.lbl_idbill.Location = new System.Drawing.Point(55, 94);
-            this.lbl_idbill.Name = "lbl_idbill";
-            this.lbl_idbill.Size = new System.Drawing.Size(143, 29);
-            this.lbl_idbill.TabIndex = 36;
-            this.lbl_idbill.Text = "Mã hóa đơn:";
-            this.lbl_idbill.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_idbill.AutoSize = true;
+            lbl_idbill.BackColor = Color.White;
+            lbl_idbill.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_idbill.ForeColor = Color.Black;
+            lbl_idbill.Location = new Point(55, 94);
+            lbl_idbill.Name = "lbl_idbill";
+            lbl_idbill.Size = new Size(143, 29);
+            lbl_idbill.TabIndex = 36;
+            lbl_idbill.Text = "Mã hóa đơn:";
+            lbl_idbill.TextAlign = ContentAlignment.TopCenter;
             // 
             // lbl_billidvalue
             // 
-            this.lbl_billidvalue.AutoSize = true;
-            this.lbl_billidvalue.BackColor = System.Drawing.Color.White;
-            this.lbl_billidvalue.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_billidvalue.ForeColor = System.Drawing.Color.Black;
-            this.lbl_billidvalue.Location = new System.Drawing.Point(675, 94);
-            this.lbl_billidvalue.Name = "lbl_billidvalue";
-            this.lbl_billidvalue.Size = new System.Drawing.Size(147, 29);
-            this.lbl_billidvalue.TabIndex = 37;
-            this.lbl_billidvalue.Text = "Giá trị mã bill";
-            this.lbl_billidvalue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbl_billidvalue.AutoSize = true;
+            lbl_billidvalue.BackColor = Color.White;
+            lbl_billidvalue.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_billidvalue.ForeColor = Color.Black;
+            lbl_billidvalue.Location = new Point(675, 94);
+            lbl_billidvalue.Name = "lbl_billidvalue";
+            lbl_billidvalue.Size = new Size(147, 29);
+            lbl_billidvalue.TabIndex = 37;
+            lbl_billidvalue.Text = "Giá trị mã bill";
+            lbl_billidvalue.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lbl_totalMoney
             // 
-            this.lbl_totalMoney.AutoSize = true;
-            this.lbl_totalMoney.BackColor = System.Drawing.Color.White;
-            this.lbl_totalMoney.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_totalMoney.ForeColor = System.Drawing.Color.Black;
-            this.lbl_totalMoney.Location = new System.Drawing.Point(55, 146);
-            this.lbl_totalMoney.Name = "lbl_totalMoney";
-            this.lbl_totalMoney.Size = new System.Drawing.Size(115, 29);
-            this.lbl_totalMoney.TabIndex = 38;
-            this.lbl_totalMoney.Text = "Tổng Tiền:";
-            this.lbl_totalMoney.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_totalMoney.AutoSize = true;
+            lbl_totalMoney.BackColor = Color.White;
+            lbl_totalMoney.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_totalMoney.ForeColor = Color.Black;
+            lbl_totalMoney.Location = new Point(55, 146);
+            lbl_totalMoney.Name = "lbl_totalMoney";
+            lbl_totalMoney.Size = new Size(115, 29);
+            lbl_totalMoney.TabIndex = 38;
+            lbl_totalMoney.Text = "Tổng Tiền:";
+            lbl_totalMoney.TextAlign = ContentAlignment.TopCenter;
             // 
             // lbl_TotalMoneyValue
             // 
-            this.lbl_TotalMoneyValue.AutoSize = true;
-            this.lbl_TotalMoneyValue.BackColor = System.Drawing.Color.White;
-            this.lbl_TotalMoneyValue.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TotalMoneyValue.ForeColor = System.Drawing.Color.Black;
-            this.lbl_TotalMoneyValue.Location = new System.Drawing.Point(645, 146);
-            this.lbl_TotalMoneyValue.Name = "lbl_TotalMoneyValue";
-            this.lbl_TotalMoneyValue.Size = new System.Drawing.Size(177, 29);
-            this.lbl_TotalMoneyValue.TabIndex = 39;
-            this.lbl_TotalMoneyValue.Text = "Giá Trị Tổng Tiền";
-            this.lbl_TotalMoneyValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbl_TotalMoneyValue.AutoSize = true;
+            lbl_TotalMoneyValue.BackColor = Color.White;
+            lbl_TotalMoneyValue.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_TotalMoneyValue.ForeColor = Color.Black;
+            lbl_TotalMoneyValue.Location = new Point(645, 146);
+            lbl_TotalMoneyValue.Name = "lbl_TotalMoneyValue";
+            lbl_TotalMoneyValue.Size = new Size(177, 29);
+            lbl_TotalMoneyValue.TabIndex = 39;
+            lbl_TotalMoneyValue.Text = "Giá Trị Tổng Tiền";
+            lbl_TotalMoneyValue.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lbl_offer
             // 
-            this.lbl_offer.AutoSize = true;
-            this.lbl_offer.BackColor = System.Drawing.Color.White;
-            this.lbl_offer.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_offer.ForeColor = System.Drawing.Color.Black;
-            this.lbl_offer.Location = new System.Drawing.Point(55, 257);
-            this.lbl_offer.Name = "lbl_offer";
-            this.lbl_offer.Size = new System.Drawing.Size(81, 29);
-            this.lbl_offer.TabIndex = 40;
-            this.lbl_offer.Text = "Ưu Đãi";
-            this.lbl_offer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_offer.AutoSize = true;
+            lbl_offer.BackColor = Color.White;
+            lbl_offer.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_offer.ForeColor = Color.Black;
+            lbl_offer.Location = new Point(55, 257);
+            lbl_offer.Name = "lbl_offer";
+            lbl_offer.Size = new Size(81, 29);
+            lbl_offer.TabIndex = 40;
+            lbl_offer.Text = "Ưu Đãi";
+            lbl_offer.TextAlign = ContentAlignment.TopCenter;
             // 
             // cb_offerID
             // 
-            this.cb_offerID.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cb_offerID.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cb_offerID.BorderSize = 1;
-            this.cb_offerID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cb_offerID.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_offerID.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_offerID.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cb_offerID.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cb_offerID.ListTextColor = System.Drawing.Color.DimGray;
-            this.cb_offerID.Location = new System.Drawing.Point(55, 311);
-            this.cb_offerID.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cb_offerID.Name = "cb_offerID";
-            this.cb_offerID.Padding = new System.Windows.Forms.Padding(1);
-            this.cb_offerID.Size = new System.Drawing.Size(250, 38);
-            this.cb_offerID.TabIndex = 41;
-            this.cb_offerID.Texts = "Mã ưu đãi";
+            cb_offerID.BackColor = Color.WhiteSmoke;
+            cb_offerID.BorderColor = Color.MediumSlateBlue;
+            cb_offerID.BorderSize = 1;
+            cb_offerID.DropDownStyle = ComboBoxStyle.DropDown;
+            cb_offerID.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_offerID.ForeColor = Color.DimGray;
+            cb_offerID.IconColor = Color.MediumSlateBlue;
+            cb_offerID.ListBackColor = Color.FromArgb(230, 228, 245);
+            cb_offerID.ListTextColor = Color.DimGray;
+            cb_offerID.Location = new Point(55, 311);
+            cb_offerID.MinimumSize = new Size(200, 30);
+            cb_offerID.Name = "cb_offerID";
+            cb_offerID.Padding = new Padding(1);
+            cb_offerID.Size = new Size(250, 38);
+            cb_offerID.TabIndex = 41;
+            cb_offerID.Texts = "Mã ưu đãi";
             // 
             // lbl_paymentMethod
             // 
-            this.lbl_paymentMethod.AutoSize = true;
-            this.lbl_paymentMethod.BackColor = System.Drawing.Color.White;
-            this.lbl_paymentMethod.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_paymentMethod.ForeColor = System.Drawing.Color.Black;
-            this.lbl_paymentMethod.Location = new System.Drawing.Point(55, 389);
-            this.lbl_paymentMethod.Name = "lbl_paymentMethod";
-            this.lbl_paymentMethod.Size = new System.Drawing.Size(261, 29);
-            this.lbl_paymentMethod.TabIndex = 42;
-            this.lbl_paymentMethod.Text = "Phương thức thanh toán";
-            this.lbl_paymentMethod.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_paymentMethod.AutoSize = true;
+            lbl_paymentMethod.BackColor = Color.White;
+            lbl_paymentMethod.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_paymentMethod.ForeColor = Color.Black;
+            lbl_paymentMethod.Location = new Point(55, 389);
+            lbl_paymentMethod.Name = "lbl_paymentMethod";
+            lbl_paymentMethod.Size = new Size(261, 29);
+            lbl_paymentMethod.TabIndex = 42;
+            lbl_paymentMethod.Text = "Phương thức thanh toán";
+            lbl_paymentMethod.TextAlign = ContentAlignment.TopCenter;
             // 
             // cb_paymentMethod
             // 
-            this.cb_paymentMethod.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cb_paymentMethod.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.cb_paymentMethod.BorderSize = 1;
-            this.cb_paymentMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cb_paymentMethod.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_paymentMethod.ForeColor = System.Drawing.Color.DimGray;
-            this.cb_paymentMethod.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.cb_paymentMethod.Items.AddRange(new object[] {
-            "Tiền mặt"});
-            this.cb_paymentMethod.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.cb_paymentMethod.ListTextColor = System.Drawing.Color.DimGray;
-            this.cb_paymentMethod.Location = new System.Drawing.Point(55, 459);
-            this.cb_paymentMethod.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cb_paymentMethod.Name = "cb_paymentMethod";
-            this.cb_paymentMethod.Padding = new System.Windows.Forms.Padding(1);
-            this.cb_paymentMethod.Size = new System.Drawing.Size(250, 38);
-            this.cb_paymentMethod.TabIndex = 43;
-            this.cb_paymentMethod.Texts = "Phương thức thanh toán";
+            cb_paymentMethod.BackColor = Color.WhiteSmoke;
+            cb_paymentMethod.BorderColor = Color.MediumSlateBlue;
+            cb_paymentMethod.BorderSize = 1;
+            cb_paymentMethod.DropDownStyle = ComboBoxStyle.DropDown;
+            cb_paymentMethod.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            cb_paymentMethod.ForeColor = Color.DimGray;
+            cb_paymentMethod.IconColor = Color.MediumSlateBlue;
+            cb_paymentMethod.Items.AddRange(new object[] { "Tiền mặt" });
+            cb_paymentMethod.ListBackColor = Color.FromArgb(230, 228, 245);
+            cb_paymentMethod.ListTextColor = Color.DimGray;
+            cb_paymentMethod.Location = new Point(55, 459);
+            cb_paymentMethod.MinimumSize = new Size(200, 30);
+            cb_paymentMethod.Name = "cb_paymentMethod";
+            cb_paymentMethod.Padding = new Padding(1);
+            cb_paymentMethod.Size = new Size(250, 38);
+            cb_paymentMethod.TabIndex = 43;
+            cb_paymentMethod.Texts = "Phương thức thanh toán";
             // 
             // btn_pay
             // 
-            this.btn_pay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_pay.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_pay.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_pay.BorderRadius = 8;
-            this.btn_pay.BorderSize = 0;
-            this.btn_pay.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_pay.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_pay.ForeColor = System.Drawing.Color.White;
-            this.btn_pay.Location = new System.Drawing.Point(684, 532);
-            this.btn_pay.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_pay.Name = "btn_pay";
-            this.btn_pay.Size = new System.Drawing.Size(138, 35);
-            this.btn_pay.TabIndex = 45;
-            this.btn_pay.Text = "Thanh toán";
-            this.btn_pay.TextColor = System.Drawing.Color.White;
-            this.btn_pay.UseVisualStyleBackColor = false;
+            btn_pay.BackColor = Color.FromArgb(229, 1, 17);
+            btn_pay.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_pay.BorderColor = Color.PaleVioletRed;
+            btn_pay.BorderRadius = 8;
+            btn_pay.BorderSize = 0;
+            btn_pay.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_pay.FlatStyle = FlatStyle.Flat;
+            btn_pay.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_pay.ForeColor = Color.White;
+            btn_pay.Location = new Point(684, 532);
+            btn_pay.Margin = new Padding(3, 4, 3, 4);
+            btn_pay.Name = "btn_pay";
+            btn_pay.Size = new Size(138, 35);
+            btn_pay.TabIndex = 45;
+            btn_pay.Text = "Thanh toán";
+            btn_pay.TextColor = Color.White;
+            btn_pay.UseVisualStyleBackColor = false;
+            btn_pay.Click += btn_InsertTransaction_Click;
             // 
             // lbl_datePayment
             // 
-            this.lbl_datePayment.AutoSize = true;
-            this.lbl_datePayment.BackColor = System.Drawing.Color.White;
-            this.lbl_datePayment.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_datePayment.ForeColor = System.Drawing.Color.Black;
-            this.lbl_datePayment.Location = new System.Drawing.Point(55, 198);
-            this.lbl_datePayment.Name = "lbl_datePayment";
-            this.lbl_datePayment.Size = new System.Drawing.Size(185, 29);
-            this.lbl_datePayment.TabIndex = 46;
-            this.lbl_datePayment.Text = "Ngày thanh toán:";
-            this.lbl_datePayment.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_datePayment.AutoSize = true;
+            lbl_datePayment.BackColor = Color.White;
+            lbl_datePayment.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_datePayment.ForeColor = Color.Black;
+            lbl_datePayment.Location = new Point(55, 198);
+            lbl_datePayment.Name = "lbl_datePayment";
+            lbl_datePayment.Size = new Size(185, 29);
+            lbl_datePayment.TabIndex = 46;
+            lbl_datePayment.Text = "Ngày thanh toán:";
+            lbl_datePayment.TextAlign = ContentAlignment.TopCenter;
             // 
             // lbl_DatePaymentValue
             // 
-            this.lbl_DatePaymentValue.AutoSize = true;
-            this.lbl_DatePaymentValue.BackColor = System.Drawing.Color.White;
-            this.lbl_DatePaymentValue.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_DatePaymentValue.ForeColor = System.Drawing.Color.Black;
-            this.lbl_DatePaymentValue.Location = new System.Drawing.Point(581, 198);
-            this.lbl_DatePaymentValue.Name = "lbl_DatePaymentValue";
-            this.lbl_DatePaymentValue.Size = new System.Drawing.Size(241, 29);
-            this.lbl_DatePaymentValue.TabIndex = 47;
-            this.lbl_DatePaymentValue.Text = "Giá trị ngày thanh toán";
-            this.lbl_DatePaymentValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbl_DatePaymentValue.AutoSize = true;
+            lbl_DatePaymentValue.BackColor = Color.White;
+            lbl_DatePaymentValue.Font = new Font("Calibri", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_DatePaymentValue.ForeColor = Color.Black;
+            lbl_DatePaymentValue.Location = new Point(581, 198);
+            lbl_DatePaymentValue.Name = "lbl_DatePaymentValue";
+            lbl_DatePaymentValue.Size = new Size(241, 29);
+            lbl_DatePaymentValue.TabIndex = 47;
+            lbl_DatePaymentValue.Text = "Giá trị ngày thanh toán";
+            lbl_DatePaymentValue.TextAlign = ContentAlignment.MiddleRight;
             // 
             // Payment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 591);
-            this.Controls.Add(this.lbl_DatePaymentValue);
-            this.Controls.Add(this.lbl_datePayment);
-            this.Controls.Add(this.btn_pay);
-            this.Controls.Add(this.cb_paymentMethod);
-            this.Controls.Add(this.lbl_paymentMethod);
-            this.Controls.Add(this.cb_offerID);
-            this.Controls.Add(this.lbl_offer);
-            this.Controls.Add(this.lbl_TotalMoneyValue);
-            this.Controls.Add(this.lbl_totalMoney);
-            this.Controls.Add(this.lbl_billidvalue);
-            this.Controls.Add(this.lbl_idbill);
-            this.Controls.Add(this.lbl_paymentDetail);
-            this.Name = "Payment";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(845, 591);
+            Controls.Add(lbl_DatePaymentValue);
+            Controls.Add(lbl_datePayment);
+            Controls.Add(btn_pay);
+            Controls.Add(cb_paymentMethod);
+            Controls.Add(lbl_paymentMethod);
+            Controls.Add(cb_offerID);
+            Controls.Add(lbl_offer);
+            Controls.Add(lbl_TotalMoneyValue);
+            Controls.Add(lbl_totalMoney);
+            Controls.Add(lbl_billidvalue);
+            Controls.Add(lbl_idbill);
+            Controls.Add(lbl_paymentDetail);
+            Name = "Payment";
+            Load += Payment_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
