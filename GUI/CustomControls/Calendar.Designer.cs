@@ -28,40 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Sunday = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_Monday = new System.Windows.Forms.Label();
+            this.lbl_Tuesday = new System.Windows.Forms.Label();
+            this.lbl_Wednesday = new System.Windows.Forms.Label();
+            this.lbl_Thursday = new System.Windows.Forms.Label();
+            this.lbl_Friday = new System.Windows.Forms.Label();
+            this.lbl_Saturday = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_Sunday
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label1.Location = new System.Drawing.Point(2, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CN";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Sunday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Sunday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Sunday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Sunday.Location = new System.Drawing.Point(2, 2);
+            this.lbl_Sunday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Sunday.Name = "lbl_Sunday";
+            this.lbl_Sunday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Sunday.TabIndex = 0;
+            this.lbl_Sunday.Text = "CN";
+            this.lbl_Sunday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.label2);
-            this.flowLayoutPanel1.Controls.Add(this.label3);
-            this.flowLayoutPanel1.Controls.Add(this.label4);
-            this.flowLayoutPanel1.Controls.Add(this.label5);
-            this.flowLayoutPanel1.Controls.Add(this.label6);
-            this.flowLayoutPanel1.Controls.Add(this.label8);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Sunday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Monday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Tuesday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Wednesday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Thursday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Friday);
+            this.flowLayoutPanel1.Controls.Add(this.lbl_Saturday);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -70,83 +70,83 @@
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
-            // label2
+            // lbl_Monday
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label2.Location = new System.Drawing.Point(132, 2);
-            this.label2.Margin = new System.Windows.Forms.Padding(0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 29);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Thứ 2";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Monday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Monday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Monday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Monday.Location = new System.Drawing.Point(132, 2);
+            this.lbl_Monday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Monday.Name = "lbl_Monday";
+            this.lbl_Monday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Monday.TabIndex = 7;
+            this.lbl_Monday.Text = "Thứ 2";
+            this.lbl_Monday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lbl_Tuesday
             // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label3.Location = new System.Drawing.Point(262, 2);
-            this.label3.Margin = new System.Windows.Forms.Padding(0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 29);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Thứ 3";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Tuesday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Tuesday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Tuesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Tuesday.Location = new System.Drawing.Point(262, 2);
+            this.lbl_Tuesday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Tuesday.Name = "lbl_Tuesday";
+            this.lbl_Tuesday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Tuesday.TabIndex = 8;
+            this.lbl_Tuesday.Text = "Thứ 3";
+            this.lbl_Tuesday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lbl_Wednesday
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(392, 2);
-            this.label4.Margin = new System.Windows.Forms.Padding(0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 29);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Thứ 4";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Wednesday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Wednesday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Wednesday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Wednesday.Location = new System.Drawing.Point(392, 2);
+            this.lbl_Wednesday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Wednesday.Name = "lbl_Wednesday";
+            this.lbl_Wednesday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Wednesday.TabIndex = 9;
+            this.lbl_Wednesday.Text = "Thứ 4";
+            this.lbl_Wednesday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lbl_Thursday
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label5.Location = new System.Drawing.Point(522, 2);
-            this.label5.Margin = new System.Windows.Forms.Padding(0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 29);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Thứ 5";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Thursday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Thursday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Thursday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Thursday.Location = new System.Drawing.Point(522, 2);
+            this.lbl_Thursday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Thursday.Name = "lbl_Thursday";
+            this.lbl_Thursday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Thursday.TabIndex = 10;
+            this.lbl_Thursday.Text = "Thứ 5";
+            this.lbl_Thursday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lbl_Friday
             // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label6.Location = new System.Drawing.Point(652, 2);
-            this.label6.Margin = new System.Windows.Forms.Padding(0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 29);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Thứ 6";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Friday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Friday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Friday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Friday.Location = new System.Drawing.Point(652, 2);
+            this.lbl_Friday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Friday.Name = "lbl_Friday";
+            this.lbl_Friday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Friday.TabIndex = 11;
+            this.lbl_Friday.Text = "Thứ 6";
+            this.lbl_Friday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lbl_Saturday
             // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label8.Location = new System.Drawing.Point(782, 2);
-            this.label8.Margin = new System.Windows.Forms.Padding(0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 29);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Thứ 7";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_Saturday.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Saturday.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Saturday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Saturday.Location = new System.Drawing.Point(782, 2);
+            this.lbl_Saturday.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_Saturday.Name = "lbl_Saturday";
+            this.lbl_Saturday.Size = new System.Drawing.Size(130, 29);
+            this.lbl_Saturday.TabIndex = 12;
+            this.lbl_Saturday.Text = "Thứ 7";
+            this.lbl_Saturday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Calendar
             // 
@@ -155,21 +155,21 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Calendar";
             this.Size = new System.Drawing.Size(930, 376);
+            this.Load += new System.EventHandler(this.Calendar_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.Load += new System.EventHandler(Calendar_Load);
 
         }
 
         #endregion
 
-        private Label label1;
+        private Label lbl_Sunday;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label8;
+        private Label lbl_Monday;
+        private Label lbl_Tuesday;
+        private Label lbl_Wednesday;
+        private Label lbl_Thursday;
+        private Label lbl_Friday;
+        private Label lbl_Saturday;
     }
 }

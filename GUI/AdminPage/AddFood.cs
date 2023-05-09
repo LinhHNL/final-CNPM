@@ -9,13 +9,20 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
+using System.Resources;
+using System.Globalization;
+using GUI.AdminPage;
+
 namespace WinFormsApp2.AdminPage
 {
     public partial class AddFood : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         public AddFood()
         {
             InitializeComponent();
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("en-US");
         }
 
         private void AddFood_Load(object sender, EventArgs e)
@@ -57,7 +64,7 @@ namespace WinFormsApp2.AdminPage
                     byte[] imageData = File.ReadAllBytes(imageLocation);
                     ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
-                    btn_placeholderlabel.Visible = false;
+                    btn_PictueLabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
                 }
             }
@@ -80,7 +87,7 @@ namespace WinFormsApp2.AdminPage
                     byte[] imageData = File.ReadAllBytes(imageLocation);
                     ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
-                    btn_placeholderlabel.Visible = false;
+                    btn_PictueLabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
                 }
             }
@@ -111,6 +118,57 @@ namespace WinFormsApp2.AdminPage
             {
                 MessageBox.Show("Thêm thất bại");
             }
+        }
+
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
+            btn_AddingFood.Text = rm.GetString("addText", culture);
+            btn_UpdateFood.Text = rm.GetString("updateFoodText", culture);
+            btn_AddComboFood.Text = rm.GetString("addComboText", culture);
+            btn_PictueLabel.Text = rm.GetString("addImageText", culture);
+            btn_LockFood.Text = rm.GetString("lockFoodText", culture);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            tb_NameOfFood.PlaceholderText = rm.GetString("foodNameText", culture);
+            tb_Price.PlaceholderText = rm.GetString("priceText", culture);
+            cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
+            cb_RoomID.Texts = rm.GetString("undertakingRoomText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_AddFood.Text = rm.GetString("addFoodText", culture);
+        }
+
+        private void btn_AddFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood form = new AddFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_AddComboFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddComboFood form = new AddComboFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_LockFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LockFood form = new LockFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_UpdateFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpdateFood form = new UpdateFood();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

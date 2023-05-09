@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectedAdminPage));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_Logo = new System.Windows.Forms.PictureBox();
             this.btn_ChooseManagedCustomer = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lbl_FoodManage = new System.Windows.Forms.Label();
+            this.lbl_FoodManagement = new System.Windows.Forms.Label();
             this.roundedButton1 = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_customerManagement = new System.Windows.Forms.Label();
             this.btn_ChooseManagerAdmin = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_StaffManagement = new System.Windows.Forms.Label();
             this.btn_ManagingStorage = new WinFormsApp2.CustomControls.RoundedButton();
             this.roundedButton4 = new WinFormsApp2.CustomControls.RoundedButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_StockManagement = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.roundedButton10 = new WinFormsApp2.CustomControls.RoundedButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lbl_Statistic = new System.Windows.Forms.Label();
+            this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
+            this.lbl_AccountName = new System.Windows.Forms.Label();
+            this.pb_AccountIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pb_Logo
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(624, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 107);
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.pb_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_Logo.Image")));
+            this.pb_Logo.Location = new System.Drawing.Point(624, 29);
+            this.pb_Logo.Name = "pb_Logo";
+            this.pb_Logo.Size = new System.Drawing.Size(101, 107);
+            this.pb_Logo.TabIndex = 14;
+            this.pb_Logo.TabStop = false;
             // 
             // btn_ChooseManagedCustomer
             // 
@@ -92,16 +92,16 @@
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             // 
-            // lbl_FoodManage
+            // lbl_FoodManagement
             // 
-            this.lbl_FoodManage.AutoSize = true;
-            this.lbl_FoodManage.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_FoodManage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.lbl_FoodManage.Location = new System.Drawing.Point(135, 326);
-            this.lbl_FoodManage.Name = "lbl_FoodManage";
-            this.lbl_FoodManage.Size = new System.Drawing.Size(196, 32);
-            this.lbl_FoodManage.TabIndex = 17;
-            this.lbl_FoodManage.Text = "Quản lý món ăn";
+            this.lbl_FoodManagement.AutoSize = true;
+            this.lbl_FoodManagement.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_FoodManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_FoodManagement.Location = new System.Drawing.Point(135, 326);
+            this.lbl_FoodManagement.Name = "lbl_FoodManagement";
+            this.lbl_FoodManagement.Size = new System.Drawing.Size(196, 32);
+            this.lbl_FoodManagement.TabIndex = 17;
+            this.lbl_FoodManagement.Text = "Quản lý món ăn";
             // 
             // roundedButton1
             // 
@@ -129,16 +129,16 @@
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
-            // label1
+            // lbl_customerManagement
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label1.Location = new System.Drawing.Point(562, 326);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(239, 32);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Quản lý khách hàng";
+            this.lbl_customerManagement.AutoSize = true;
+            this.lbl_customerManagement.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_customerManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_customerManagement.Location = new System.Drawing.Point(562, 326);
+            this.lbl_customerManagement.Name = "lbl_customerManagement";
+            this.lbl_customerManagement.Size = new System.Drawing.Size(239, 32);
+            this.lbl_customerManagement.TabIndex = 20;
+            this.lbl_customerManagement.Text = "Quản lý khách hàng";
             // 
             // btn_ChooseManagerAdmin
             // 
@@ -166,16 +166,16 @@
             this.pictureBox4.TabIndex = 22;
             this.pictureBox4.TabStop = false;
             // 
-            // label2
+            // lbl_StaffManagement
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label2.Location = new System.Drawing.Point(1002, 326);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 32);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Quản lý nhân viên";
+            this.lbl_StaffManagement.AutoSize = true;
+            this.lbl_StaffManagement.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_StaffManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_StaffManagement.Location = new System.Drawing.Point(1002, 326);
+            this.lbl_StaffManagement.Name = "lbl_StaffManagement";
+            this.lbl_StaffManagement.Size = new System.Drawing.Size(221, 32);
+            this.lbl_StaffManagement.TabIndex = 23;
+            this.lbl_StaffManagement.Text = "Quản lý nhân viên";
             // 
             // btn_ManagingStorage
             // 
@@ -220,16 +220,16 @@
             this.pictureBox5.TabIndex = 26;
             this.pictureBox5.TabStop = false;
             // 
-            // label3
+            // lbl_StockManagement
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label3.Location = new System.Drawing.Point(354, 589);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 32);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Quản lý kho hàng";
+            this.lbl_StockManagement.AutoSize = true;
+            this.lbl_StockManagement.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_StockManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_StockManagement.Location = new System.Drawing.Point(354, 589);
+            this.lbl_StockManagement.Name = "lbl_StockManagement";
+            this.lbl_StockManagement.Size = new System.Drawing.Size(215, 32);
+            this.lbl_StockManagement.TabIndex = 27;
+            this.lbl_StockManagement.Text = "Quản lý kho hàng";
             // 
             // pictureBox6
             // 
@@ -240,89 +240,89 @@
             this.pictureBox6.TabIndex = 28;
             this.pictureBox6.TabStop = false;
             // 
-            // label4
+            // lbl_Statistic
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label4.Location = new System.Drawing.Point(842, 589);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 32);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Thống kê";
+            this.lbl_Statistic.AutoSize = true;
+            this.lbl_Statistic.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Statistic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_Statistic.Location = new System.Drawing.Point(842, 589);
+            this.lbl_Statistic.Name = "lbl_Statistic";
+            this.lbl_Statistic.Size = new System.Drawing.Size(120, 32);
+            this.lbl_Statistic.TabIndex = 29;
+            this.lbl_Statistic.Text = "Thống kê";
             // 
-            // roundedButton10
+            // btn_Signout
             // 
-            this.roundedButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.roundedButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.roundedButton10.BorderRadius = 8;
-            this.roundedButton10.BorderSize = 0;
-            this.roundedButton10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.roundedButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roundedButton10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundedButton10.ForeColor = System.Drawing.Color.White;
-            this.roundedButton10.Location = new System.Drawing.Point(1252, 64);
-            this.roundedButton10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.roundedButton10.Name = "roundedButton10";
-            this.roundedButton10.Size = new System.Drawing.Size(117, 35);
-            this.roundedButton10.TabIndex = 30;
-            this.roundedButton10.Text = "Đăng xuất";
-            this.roundedButton10.TextColor = System.Drawing.Color.White;
-            this.roundedButton10.UseVisualStyleBackColor = false;
+            this.btn_Signout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.btn_Signout.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_Signout.BorderRadius = 8;
+            this.btn_Signout.BorderSize = 0;
+            this.btn_Signout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
+            this.btn_Signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Signout.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Signout.ForeColor = System.Drawing.Color.White;
+            this.btn_Signout.Location = new System.Drawing.Point(1252, 64);
+            this.btn_Signout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_Signout.Name = "btn_Signout";
+            this.btn_Signout.Size = new System.Drawing.Size(117, 35);
+            this.btn_Signout.TabIndex = 30;
+            this.btn_Signout.Text = "Đăng xuất";
+            this.btn_Signout.TextColor = System.Drawing.Color.White;
+            this.btn_Signout.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // lbl_AccountName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.label7.Location = new System.Drawing.Point(1099, 68);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(138, 28);
-            this.label7.TabIndex = 35;
-            this.label7.Text = "Tên tài khoản";
+            this.lbl_AccountName.AutoSize = true;
+            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
+            this.lbl_AccountName.Location = new System.Drawing.Point(1099, 68);
+            this.lbl_AccountName.Name = "lbl_AccountName";
+            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
+            this.lbl_AccountName.TabIndex = 35;
+            this.lbl_AccountName.Text = "Tên tài khoản";
             // 
-            // pictureBox8
+            // pb_AccountIcon
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(1063, 70);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 26);
-            this.pictureBox8.TabIndex = 34;
-            this.pictureBox8.TabStop = false;
+            this.pb_AccountIcon.Image = ((System.Drawing.Image)(resources.GetObject("pb_AccountIcon.Image")));
+            this.pb_AccountIcon.Location = new System.Drawing.Point(1063, 70);
+            this.pb_AccountIcon.Name = "pb_AccountIcon";
+            this.pb_AccountIcon.Size = new System.Drawing.Size(30, 26);
+            this.pb_AccountIcon.TabIndex = 34;
+            this.pb_AccountIcon.TabStop = false;
             // 
             // SelectedAdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1392, 759);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.roundedButton10);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_AccountName);
+            this.Controls.Add(this.pb_AccountIcon);
+            this.Controls.Add(this.btn_Signout);
+            this.Controls.Add(this.lbl_Statistic);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_StockManagement);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.roundedButton4);
             this.Controls.Add(this.btn_ManagingStorage);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_StaffManagement);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btn_ChooseManagerAdmin);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_customerManagement);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.lbl_FoodManage);
+            this.Controls.Add(this.lbl_FoodManagement);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_ChooseManagedCustomer);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_Logo);
             this.Controls.Add(this.roundedButton1);
             this.Name = "SelectedAdminPage";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,24 +330,24 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pb_Logo;
         private CustomControls.RoundedButton btn_ChooseManagedCustomer;
         private PictureBox pictureBox2;
-        private Label lbl_FoodManage;
+        private Label lbl_FoodManagement;
         private CustomControls.RoundedButton roundedButton1;
         private PictureBox pictureBox3;
-        private Label label1;
+        private Label lbl_customerManagement;
         private CustomControls.RoundedButton btn_ChooseManagerAdmin;
         private PictureBox pictureBox4;
-        private Label label2;
+        private Label lbl_StaffManagement;
         private CustomControls.RoundedButton btn_ManagingStorage;
         private CustomControls.RoundedButton roundedButton4;
         private PictureBox pictureBox5;
-        private Label label3;
+        private Label lbl_StockManagement;
         private PictureBox pictureBox6;
-        private Label label4;
-        private CustomControls.RoundedButton roundedButton10;
-        private Label label7;
-        private PictureBox pictureBox8;
+        private Label lbl_Statistic;
+        private CustomControls.RoundedButton btn_Signout;
+        private Label lbl_AccountName;
+        private PictureBox pb_AccountIcon;
     }
 }

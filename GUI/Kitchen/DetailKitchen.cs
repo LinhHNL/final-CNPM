@@ -10,17 +10,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.Components;
+using System.Resources;
+using System.Globalization;
+using System.Net;
+using WinFormsApp2.KhoPage;
 
 namespace GUI.Kitchen
 {
     public partial class DetailKitchen : MetroForm
     {
+        CultureInfo culture;
         private String BillID = "";
         public DetailKitchen(string billID)
         {
             InitializeComponent();
             BillID = billID;
-            lbl_billidvalue.Text = billID;
+            lbl_BillIDVal.Text = billID;
+            SetLanguage("en-US");
         }
 
         private void DetailKitchen_Load(object sender, EventArgs e)
@@ -51,6 +57,23 @@ namespace GUI.Kitchen
             ViewingKitchen ViewingKitchen = new ViewingKitchen();
             ViewingKitchen.Show();
             this.Close();*/
+        }
+
+        public void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
+                             typeof(HangHoaTrongKho).Assembly);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+
+
+
+            lbl_MakeDishBill.Text = rm.GetString("makeDishBillText", culture);
+            lbl_BillID.Text = rm.GetString("billIDText", culture);
+            lbl_DishList.Text = rm.GetString("dishListText", culture);
+            lbl_Dish.Text = rm.GetString("dishText", culture);
+            lbl_Quantity.Text = rm.GetString("quantityText", culture);
+            btn_Finish.Text = rm.GetString("finishText", culture);
         }
     }
 }
