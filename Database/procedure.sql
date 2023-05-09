@@ -1,10 +1,5 @@
 ﻿--check login  result = 0 là thất bạn 1 là thành công
-<<<<<<< HEAD
 
-=======
-use haidilao
-go
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 CREATE PROCEDURE CheckLogin
     @phone VARCHAR(50),
     @password VARCHAR(50)
@@ -39,14 +34,9 @@ INSERT INTO Customers (name, phone, address, password, point, levelid)
 VALUES (@name, @phone, @address, @password, 0, 1)
 SELECT SCOPE_IDENTITY() AS CustormerID;
 END
-<<<<<<< HEAD
 
 
 go
-=======
-GO
-
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 CREATE PROCEDURE dbo.DeleteCustomer
     @customerId INT
 AS
@@ -236,6 +226,7 @@ Go
 
 
 
+
 ---status 1 là còn bán 2 là khóa món 0 là nghĩ bán 
 
 --crud monan
@@ -246,12 +237,11 @@ CREATE PROCEDURE sp_add_menu
     @url_image VARCHAR(MAX),
     @kind_food_id INT,
     @room_id INT,
-    @status INT,
-	@Initual INT
+    @status INT
 AS
 BEGIN
-    INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid, status,Initual)
-    VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status,@Initual);
+    INSERT INTO Menu(name, price, point, urlimage, kindfoodid, roomid, status)
+    VALUES (@name, @price, @point, @url_image, @kind_food_id, @room_id, @status);
 END
 
 Go
@@ -310,7 +300,6 @@ begin
 	Select * from Menu
 end
 GO
-
 CREATE PROCEDURE sp_getMenuByID
 	@ID INT
 AS
@@ -625,7 +614,6 @@ Begin
 	Delete from Staff where StaffID = @ID
 End
 Go
-
 --lưu thông tin lịch sử giao dịch
 CREATE PROCEDURE InsertTransaction
     @TotalPrice FLOAT,
@@ -638,12 +626,7 @@ BEGIN
 	SELECT SCOPE_IDENTITY() AS TransactionID;
 END
 GO
-<<<<<<< HEAD
 
-=======
-EXEC InsertTransaction 400000,'2020-10-06',1
-GO
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 CREATE PROCEDURE GetTransactionById
     @TransactionId INT
 AS
@@ -1660,13 +1643,12 @@ Go
 CREATE PROCEDURE InsertTempBill
     @CustomerId INT,
     @Status BIT,
-    @Price FLOAT,
-	@Token varchar(45)
+    @Price FLOAT
 AS
 BEGIN
 	Declare  @id int
-    INSERT INTO TempBill (CustomerId, Status, Price,Token)
-    VALUES (@CustomerId, @Status, @Price, @Token)
+    INSERT INTO TempBill (CustomerId, Status, Price)
+    VALUES (@CustomerId, @Status, @Price)
 	set @id = SCOPE_IDENTITY()
 	Select @id as TempBilID
 END
@@ -1723,8 +1705,7 @@ AS
 		Select * from TempBill where status=0;
 	END
 GO
-Select * from TempBill
-EXEC GetAllTempBillDetailsOfTempBill 17;
+EXEC GetTempBillNotDone;
 GO
 Create Procedure GetTempBill
 @Token varchar(45),
@@ -1743,7 +1724,7 @@ AS
 	End
 ----PayRoll
 GO
-EXEC GetAllTempBillDetailsOfTempBill 10;
+EXEC GetAllTempBillDetailsOfTempBill 1;
 GO
 CREATE PROCEDURE InsertPayroll
 (
@@ -2317,12 +2298,7 @@ as
 		select * from Staff where Name = @name
 	end
 GO
-EXEC Level_Insert 'Gà bình thường','Gà này chưa được nấu chín',30000;
-EXEC sp_add_menu 'Thức ăn và nước uống',40000,40,'',1,1,0,1;
-EXEC AddCustomer N'Khách hàng','99999999',N'Không có','0000000';
-EXEC Room_Insert 'Phòng chế biến gà thượng hạng','Phòng này chuyên gia chế gà có dáng nở nang'
+
 EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xương đầy đủ';
 EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
 EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';
-Select * from Customers
-Select * from Transactions

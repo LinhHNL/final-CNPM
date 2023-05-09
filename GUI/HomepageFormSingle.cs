@@ -1,33 +1,13 @@
 ﻿using System.Data.SqlClient;
 using WinFormsApp2.Components;
-using System.Resources;
-using System.Globalization;
-using WinFormsApp2.KhoPage;
 using BUS;
-using GUI.ThanhToan;
-
 namespace WinFormsApp2
 {
     public partial class HomepageFormSingle : MetroFramework.Forms.MetroForm
     {
-        CultureInfo culture;
-        String chooseOneText = "";
-        String chooseTwoText = "";
-        String chooseFourText = "";
-
         public HomepageFormSingle()
         {
             InitializeComponent();
-            SetLanguage("en-US");
-        }
-        public HomepageFormSingle(String ResetValue)
-        {
-            InitializeComponent();
-            SetLanguage("en-US");
-            if (ResetValue == "0")
-            {
-                Updateprice();
-            }
         }
 
 
@@ -76,44 +56,44 @@ namespace WinFormsApp2
 
         private void btn_singlePot_Click(object sender, EventArgs e)
         {
-            lbl_Message.Text = chooseOneText;
+            label7.Text = "Bạn đang chọn loại 1 đáy nồi";
             panel_doublePot.Visible = false;
             panel_singlePot.Visible = true;
             panel_fourPot.Visible = false;
-            btn_SinglePot.BackColor = ColorTranslator.FromHtml("#E50111");
-            btn_SinglePot.ForeColor = Color.White;
-            btn_DualSidedPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_DualSidedPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
-            btn_FourSidedPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_FourSidedPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_singlePot.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_singlePot.ForeColor = Color.White;
+            btn_doublePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_doublePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_fourPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_fourPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
         }
 
         private void btn_doublePot_Click(object sender, EventArgs e)
         {
-            lbl_Message.Text = chooseTwoText;
+            label7.Text = "Bạn đang chọn loại 2 đáy nồi";
             panel_doublePot.Visible = true;
             panel_singlePot.Visible = false;
             panel_fourPot.Visible = false;
-            btn_DualSidedPot.BackColor = ColorTranslator.FromHtml("#E50111");
-            btn_DualSidedPot.ForeColor = Color.White;
-            btn_SinglePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_SinglePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
-            btn_FourSidedPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_FourSidedPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_doublePot.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_doublePot.ForeColor = Color.White;
+            btn_singlePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_singlePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_fourPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_fourPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
         }
 
         private void btn_fourPot_Click(object sender, EventArgs e)
         {
-            lbl_Message.Text = chooseFourText;
+            label7.Text = "Bạn đang chọn loại 4 đáy nồi";
             panel_doublePot.Visible = false;
             panel_singlePot.Visible = false;
             panel_fourPot.Visible = true;
-            btn_FourSidedPot.BackColor = ColorTranslator.FromHtml("#E50111");
-            btn_FourSidedPot.ForeColor = Color.White;
-            btn_SinglePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_SinglePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
-            btn_DualSidedPot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
-            btn_DualSidedPot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_fourPot.BackColor = ColorTranslator.FromHtml("#E50111");
+            btn_fourPot.ForeColor = Color.White;
+            btn_singlePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_singlePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
+            btn_doublePot.BackColor = ColorTranslator.FromHtml("#DEE2E6");
+            btn_doublePot.ForeColor = ColorTranslator.FromHtml("#A09F9F");
         }
 
 
@@ -123,7 +103,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn("0", 1);
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -131,7 +111,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn("0", 2);
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -139,7 +119,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn("0", 3);
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -147,7 +127,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn("0", 4);
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -155,7 +135,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn("0", 5);
+            AllMonAn homepageFormSingle = new AllMonAn();
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -182,7 +162,7 @@ namespace WinFormsApp2
             {
                 if (item["KindFoodID"] == "1" && item["Status"] == "1")
                 {
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"], item["URLImage"], this));
                 }
             }
         }
@@ -195,7 +175,6 @@ namespace WinFormsApp2
             this.Close();
         }
 
-<<<<<<< HEAD
         private void roundedButton23_Click(object sender, EventArgs e)
         {
 
@@ -204,45 +183,6 @@ namespace WinFormsApp2
         private void panel_monan_1_Paint(object sender, PaintEventArgs e)
         {
 
-=======
-
-        public void SetLanguage(string cultureName)
-        {
-            culture = CultureInfo.CreateSpecificCulture(cultureName);
-            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
-                             typeof(HangHoaTrongKho).Assembly);
-            btn_SignOut.Text = rm.GetString("signoutText", culture);
-            btn_Hotpot.Text = rm.GetString("hotpotText", culture);
-            btn_SinglePot.Text = rm.GetString("singlePotText", culture);
-            btn_DualSidedPot.Text = rm.GetString("dualSidedPotText", culture);
-            btn_FourSidedPot.Text = rm.GetString("fourSidedPotText", culture);
-            btn_AccountForm.Text = rm.GetString("accountText", culture);
-            btn_SignOut.Text = rm.GetString("signoutText", culture);
-            btn_Cart.Text = rm.GetString("cartText", culture);
-            btn_SavouryFood.Text = rm.GetString("savouryFoodText", culture);
-            btn_Vegetable.Text = rm.GetString("vegetableText", culture);
-            btn_Snack.Text = rm.GetString("snackText", culture);
-            btn_Beverage.Text = rm.GetString("beverageText", culture);
-            lbl_Message.Text = rm.GetString("chooseOneText", culture);
-            chooseOneText = rm.GetString("chooseOneText", culture);
-            chooseTwoText = rm.GetString("chooseTwoText", culture);
-            chooseFourText = rm.GetString("chooseFourText", culture);
-        }
-        private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GUI.ConfirmView confirmView = new GUI.ConfirmView();
-            confirmView.ShowDialog();
-            this.Close();
-        }
-
-        private void btn_Payment_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            HoaDonTong payment = new HoaDonTong();
-            payment.ShowDialog();
-            this.Close();
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
         }
     }
 }

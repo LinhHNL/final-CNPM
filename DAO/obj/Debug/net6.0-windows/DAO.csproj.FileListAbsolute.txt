@@ -22,6 +22,7 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+<<<<<<< HEAD
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.AssemblyReference.cache
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.GeneratedMSBuildEditorConfig.editorconfig
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.AssemblyInfoInputs.cache
@@ -46,3 +47,29 @@ C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.GenerateResou
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.CopyComplete
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.genruntimeconfig.cache
 C:\hoc\CNPM\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\ref\DAO.dll
+=======
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\DAO.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\DAO.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\DAO.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\DAO.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\DAO.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.AssemblyReference.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.Form1.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.GenerateResource.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.AssemblyInfoInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.AssemblyInfo.cs
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.CoreCompileInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.csproj.CopyComplete
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\refint\DAO.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\DAO.genruntimeconfig.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\DAO\obj\Debug\net6.0-windows\ref\DAO.dll
+>>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312

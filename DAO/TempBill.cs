@@ -10,46 +10,20 @@ namespace DAO
 {
     public class TempBill
     {
-        public Dictionary<string, string> getTempBillByIDAndToken(Dictionary<string, string> TempBillInfo)
+        public bool tryingInsertTempBillDetail(Dictionary<string, string> TempBillInfo)
         {
-            int CustomerID = int.Parse(TempBillInfo["CustomerID"]);
-            String TokenID = TempBillInfo["Token"];
-            Dictionary<string, string> resultDic = new Dictionary<string, string>();
+            int TempBillId = int.Parse(TempBillInfo["@TempBillId"]);
+            int MenuID = int.Parse(TempBillInfo["@MenuID"]);
+            int NumberOfFood = int.Parse(TempBillInfo["@Number"]);
+            float Price = (float)int.Parse(TempBillInfo["Price"]);
+            int Status = 0;
             try
             {
                 SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("GetTempBill", conn);
+                SqlCommand cmd = new SqlCommand("InsertTempBill", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Token", TokenID);
-                cmd.Parameters.AddWithValue("@CustomerID", CustomerID);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    resultDic.Add("TempBillID", reader["Id"].ToString());
-                }
-                conn.Close();
-                return resultDic;
-            }
-            catch (Exception ex)
-            {
-                return resultDic;
-            }
-        }
-        public bool tryingInsertTempBillDetail(Dictionary<string, string> TempBillDetailInfo)
-        {
-            int TempBillId = int.Parse(TempBillDetailInfo["TempBillId"]);
-            int MenuID = int.Parse(TempBillDetailInfo["MenuID"]);
-            int NumberOfFood = int.Parse(TempBillDetailInfo["Number"]);
-            float Price = (float)int.Parse(TempBillDetailInfo["Price"]);
-            int Status = 0;
-            //try
-            //{
-                SqlConnection conn = DatabaseConnection.connectDBFunc();
-                conn.Open();
-                SqlCommand cmd = new SqlCommand("InsertTempBillDetails", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@TempBillId", TempBillId);
+                cmd.Parameters.AddWithValue("@CustomerId", TempBillId);
                 cmd.Parameters.AddWithValue("@MenuID", MenuID);
                 cmd.Parameters.AddWithValue("@Number", NumberOfFood);
                 cmd.Parameters.AddWithValue("@Status", Status);
@@ -57,44 +31,41 @@ namespace DAO
                 SqlDataReader reader = cmd.ExecuteReader();
                 conn.Close();
                 return true;
-            /*}
+            }
             catch (Exception ex)
             {
                 return false;
-            }*/
+            }
         }
         public Dictionary<string, string> tryingInsertTempBill(Dictionary<string, string> TempBillInfo)
         {
             Dictionary<string, string> resultDic = new Dictionary<string, string>();
             int CustomerID = int.Parse(TempBillInfo["CustomerID"]);
             int Status = 0;
-            String TokenID = TempBillInfo["Token"];
             float Price = (float) int.Parse(TempBillInfo["Price"]);
-            //try
-            //{
-            SqlConnection conn = DatabaseConnection.connectDBFunc();
+            try
+            {
+                SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("InsertTempBill", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CustomerId", CustomerID);
                 cmd.Parameters.AddWithValue("@Status", Status);
                 cmd.Parameters.AddWithValue("@Price", Price);
-                cmd.Parameters.AddWithValue("@Token", TokenID);
                 SqlDataReader reader = cmd.ExecuteReader();
+                conn.Close();
                 while (reader.Read())
                 {
                     resultDic.Add("TempBilID", reader["TempBilID"].ToString());
                 }
-            conn.Close();
-            return resultDic;
-            //}
-            /*catch (Exception ex)
+                return resultDic;
+            }
+            catch (Exception ex)
             {
                 resultDic.Add("TempBilID", "-1");
                 return resultDic;
-            }*/
+            }
         }
-
         public bool tryingChangeStatus(Dictionary<string, string> StatusInfo) {
             String MenuID = StatusInfo["MenuID"];
             String IDFood = StatusInfo["BillID"];
@@ -138,7 +109,7 @@ namespace DAO
                 return resultList;
             }
         }
-        public List<Dictionary<string, string>> getAllTempBillDetailsOfTempBill(String IDBillStr)
+        public List<Dictionary<string, string>> GetAllTempBillDetailsOfTempBill(String IDBillStr)
         {
             int IDBill = int.Parse(IDBillStr);
             List<Dictionary<string, string>> resultList = new List<Dictionary<string, string>>();
@@ -155,8 +126,6 @@ namespace DAO
                     Dictionary<string, string> resultDic = new Dictionary<string, string>();
                     resultDic.Add("MenuID", reader["MenuID"].ToString());
                     resultDic.Add("NumberOfFood", reader["Number"].ToString());
-                    resultDic.Add("Status", reader["Status"].ToString());
-                    resultDic.Add("Price", reader["Price"].ToString());
                     resultList.Add(resultDic);
                 }
                 conn.Close();

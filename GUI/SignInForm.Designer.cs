@@ -31,206 +31,210 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInForm));
-            this.lbl_Login = new System.Windows.Forms.Label();
-            this.btn_Login = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tb_Phone = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.tb_Password = new WinFormsApp2.CustomControls.RoundedTextBox();
-            this.btn_LoginForm = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_SignupForm = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_LoginGuest = new WinFormsApp2.CustomControls.RoundedButton();
-            this.lbl_errorMessage = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            btn_login = new RoundedButton();
+            pictureBox1 = new PictureBox();
+            tb_phone = new RoundedTextBox();
+            tb_password = new RoundedTextBox();
+            roundedButton1 = new RoundedButton();
+            btn_signUpForm = new RoundedButton();
+            roundedButton2 = new RoundedButton();
+            lbl_errorMessage = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
-            // lbl_Login
+            // label1
             // 
-            this.lbl_Login.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.lbl_Login.Location = new System.Drawing.Point(325, 106);
-            this.lbl_Login.Name = "lbl_Login";
-            this.lbl_Login.Size = new System.Drawing.Size(349, 49);
-            this.lbl_Login.TabIndex = 4;
-            this.lbl_Login.Text = "Đăng nhập";
-            this.lbl_Login.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(229, 1, 17);
+            label1.Location = new Point(412, 106);
+            label1.Name = "label1";
+            label1.Size = new Size(200, 49);
+            label1.TabIndex = 4;
+            label1.Text = "Đăng nhập";
             // 
-            // btn_Login
+            // btn_login
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Login.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Login.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Login.BorderRadius = 28;
-            this.btn_Login.BorderSize = 0;
-            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(428, 328);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(152, 54);
-            this.btn_Login.TabIndex = 11;
-            this.btn_Login.Text = "Đăng nhập";
-            this.btn_Login.TextColor = System.Drawing.Color.White;
-            this.btn_Login.UseVisualStyleBackColor = false;
-            this.btn_Login.Click += new System.EventHandler(this.btn_login_Click);
+            btn_login.BackColor = Color.FromArgb(229, 1, 17);
+            btn_login.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_login.BorderColor = Color.PaleVioletRed;
+            btn_login.BorderRadius = 28;
+            btn_login.BorderSize = 0;
+            btn_login.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(428, 328);
+            btn_login.Margin = new Padding(3, 4, 3, 4);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(152, 54);
+            btn_login.TabIndex = 11;
+            btn_login.Text = "Đăng nhập";
+            btn_login.TextColor = Color.White;
+            btn_login.UseVisualStyleBackColor = false;
+            btn_login.Click += btn_login_Click;
+            btn_login.MouseHover += roundedButton1_MouseHover;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(449, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 107);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(449, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(101, 107);
+            pictureBox1.TabIndex = 13;
+            pictureBox1.TabStop = false;
             // 
-            // tb_Phone
+            // tb_phone
             // 
-            this.tb_Phone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.tb_Phone.BorderColor = System.Drawing.Color.Transparent;
-            this.tb_Phone.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.tb_Phone.BorderRadius = 20;
-            this.tb_Phone.BorderSize = 2;
-            this.tb_Phone.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Phone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tb_Phone.Location = new System.Drawing.Point(325, 176);
-            this.tb_Phone.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Phone.Multiline = false;
-            this.tb_Phone.Name = "tb_Phone";
-            this.tb_Phone.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_Phone.PasswordChar = false;
-            this.tb_Phone.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.tb_Phone.PlaceholderText = "Số điện thoại";
-            this.tb_Phone.Size = new System.Drawing.Size(349, 43);
-            this.tb_Phone.TabIndex = 15;
-            this.tb_Phone.Texts = "";
-            this.tb_Phone.UnderlinedStyle = false;
+            tb_phone.BackColor = Color.FromArgb(233, 236, 239);
+            tb_phone.BorderColor = Color.Transparent;
+            tb_phone.BorderFocusColor = Color.Transparent;
+            tb_phone.BorderRadius = 20;
+            tb_phone.BorderSize = 2;
+            tb_phone.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_phone.ForeColor = Color.FromArgb(64, 64, 64);
+            tb_phone.Location = new Point(325, 176);
+            tb_phone.Margin = new Padding(4);
+            tb_phone.Multiline = false;
+            tb_phone.Name = "tb_phone";
+            tb_phone.Padding = new Padding(10, 7, 10, 7);
+            tb_phone.PasswordChar = false;
+            tb_phone.PlaceholderColor = Color.FromArgb(108, 117, 125);
+            tb_phone.PlaceholderText = "Số điện thoại";
+            tb_phone.Size = new Size(349, 43);
+            tb_phone.TabIndex = 15;
+            tb_phone.Texts = "";
+            tb_phone.UnderlinedStyle = false;
             // 
-            // tb_Password
+            // tb_password
             // 
-            this.tb_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.tb_Password.BorderColor = System.Drawing.Color.Transparent;
-            this.tb_Password.BorderFocusColor = System.Drawing.Color.Transparent;
-            this.tb_Password.BorderRadius = 20;
-            this.tb_Password.BorderSize = 2;
-            this.tb_Password.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tb_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tb_Password.Location = new System.Drawing.Point(325, 247);
-            this.tb_Password.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_Password.Multiline = false;
-            this.tb_Password.Name = "tb_Password";
-            this.tb_Password.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.tb_Password.PasswordChar = true;
-            this.tb_Password.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.tb_Password.PlaceholderText = "Mật khẩu";
-            this.tb_Password.Size = new System.Drawing.Size(349, 43);
-            this.tb_Password.TabIndex = 16;
-            this.tb_Password.Texts = "";
-            this.tb_Password.UnderlinedStyle = false;
+            tb_password.BackColor = Color.FromArgb(233, 236, 239);
+            tb_password.BorderColor = Color.Transparent;
+            tb_password.BorderFocusColor = Color.Transparent;
+            tb_password.BorderRadius = 20;
+            tb_password.BorderSize = 2;
+            tb_password.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tb_password.ForeColor = Color.FromArgb(64, 64, 64);
+            tb_password.Location = new Point(325, 247);
+            tb_password.Margin = new Padding(4);
+            tb_password.Multiline = false;
+            tb_password.Name = "tb_password";
+            tb_password.Padding = new Padding(10, 7, 10, 7);
+            tb_password.PasswordChar = true;
+            tb_password.PlaceholderColor = Color.FromArgb(108, 117, 125);
+            tb_password.PlaceholderText = "Mật khẩu";
+            tb_password.Size = new Size(349, 43);
+            tb_password.TabIndex = 16;
+            tb_password.Texts = "";
+            tb_password.UnderlinedStyle = false;
             // 
-            // btn_LoginForm
+            // roundedButton1
             // 
-            this.btn_LoginForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LoginForm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LoginForm.BorderColor = System.Drawing.Color.White;
-            this.btn_LoginForm.BorderRadius = 8;
-            this.btn_LoginForm.BorderSize = 1;
-            this.btn_LoginForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_LoginForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LoginForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_LoginForm.ForeColor = System.Drawing.Color.White;
-            this.btn_LoginForm.Location = new System.Drawing.Point(747, 34);
-            this.btn_LoginForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_LoginForm.Name = "btn_LoginForm";
-            this.btn_LoginForm.Size = new System.Drawing.Size(117, 35);
-            this.btn_LoginForm.TabIndex = 17;
-            this.btn_LoginForm.Text = "Đăng nhập";
-            this.btn_LoginForm.TextColor = System.Drawing.Color.White;
-            this.btn_LoginForm.UseVisualStyleBackColor = false;
+            roundedButton1.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton1.BorderColor = Color.White;
+            roundedButton1.BorderRadius = 8;
+            roundedButton1.BorderSize = 1;
+            roundedButton1.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Location = new Point(747, 34);
+            roundedButton1.Margin = new Padding(3, 4, 3, 4);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(117, 35);
+            roundedButton1.TabIndex = 17;
+            roundedButton1.Text = "Đăng nhập";
+            roundedButton1.TextColor = Color.White;
+            roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // btn_SignupForm
+            // btn_signUpForm
             // 
-            this.btn_SignupForm.BackColor = System.Drawing.Color.White;
-            this.btn_SignupForm.BackgroundColor = System.Drawing.Color.White;
-            this.btn_SignupForm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_SignupForm.BorderRadius = 8;
-            this.btn_SignupForm.BorderSize = 1;
-            this.btn_SignupForm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_SignupForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SignupForm.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_SignupForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_SignupForm.Location = new System.Drawing.Point(873, 34);
-            this.btn_SignupForm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_SignupForm.Name = "btn_SignupForm";
-            this.btn_SignupForm.Size = new System.Drawing.Size(117, 35);
-            this.btn_SignupForm.TabIndex = 18;
-            this.btn_SignupForm.Text = "Đăng ký";
-            this.btn_SignupForm.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.btn_SignupForm.UseVisualStyleBackColor = false;
-            this.btn_SignupForm.Click += new System.EventHandler(this.btn_SignupForm_Click_1);
+            btn_signUpForm.BackColor = Color.White;
+            btn_signUpForm.BackgroundColor = Color.White;
+            btn_signUpForm.BorderColor = Color.FromArgb(108, 117, 125);
+            btn_signUpForm.BorderRadius = 8;
+            btn_signUpForm.BorderSize = 1;
+            btn_signUpForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_signUpForm.FlatStyle = FlatStyle.Flat;
+            btn_signUpForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_signUpForm.ForeColor = Color.FromArgb(108, 117, 125);
+            btn_signUpForm.Location = new Point(873, 34);
+            btn_signUpForm.Margin = new Padding(3, 4, 3, 4);
+            btn_signUpForm.Name = "btn_signUpForm";
+            btn_signUpForm.Size = new Size(117, 35);
+            btn_signUpForm.TabIndex = 18;
+            btn_signUpForm.Text = "Đăng ký";
+            btn_signUpForm.TextColor = Color.FromArgb(108, 117, 125);
+            btn_signUpForm.UseVisualStyleBackColor = false;
+            btn_signUpForm.Click += btn_signUpForm_Click;
             // 
-            // btn_LoginGuest
+            // roundedButton2
             // 
-            this.btn_LoginGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LoginGuest.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_LoginGuest.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_LoginGuest.BorderRadius = 28;
-            this.btn_LoginGuest.BorderSize = 0;
-            this.btn_LoginGuest.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_LoginGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_LoginGuest.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_LoginGuest.ForeColor = System.Drawing.Color.White;
-            this.btn_LoginGuest.Location = new System.Drawing.Point(398, 399);
-            this.btn_LoginGuest.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_LoginGuest.Name = "btn_LoginGuest";
-            this.btn_LoginGuest.Size = new System.Drawing.Size(214, 51);
-            this.btn_LoginGuest.TabIndex = 19;
-            this.btn_LoginGuest.Text = "Đăng nhập khách";
-            this.btn_LoginGuest.TextColor = System.Drawing.Color.White;
-            this.btn_LoginGuest.UseVisualStyleBackColor = false;
+            roundedButton2.BackColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BackgroundColor = Color.FromArgb(229, 1, 17);
+            roundedButton2.BorderColor = Color.PaleVioletRed;
+            roundedButton2.BorderRadius = 28;
+            roundedButton2.BorderSize = 0;
+            roundedButton2.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            roundedButton2.FlatStyle = FlatStyle.Flat;
+            roundedButton2.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            roundedButton2.ForeColor = Color.White;
+            roundedButton2.Location = new Point(398, 399);
+            roundedButton2.Margin = new Padding(3, 4, 3, 4);
+            roundedButton2.Name = "roundedButton2";
+            roundedButton2.Size = new Size(214, 51);
+            roundedButton2.TabIndex = 19;
+            roundedButton2.Text = "Đăng nhập khách";
+            roundedButton2.TextColor = Color.White;
+            roundedButton2.UseVisualStyleBackColor = false;
+            roundedButton2.Click += roundedButton2_Click;
             // 
             // lbl_errorMessage
             // 
-            this.lbl_errorMessage.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_errorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.lbl_errorMessage.Location = new System.Drawing.Point(325, 294);
-            this.lbl_errorMessage.Name = "lbl_errorMessage";
-            this.lbl_errorMessage.Size = new System.Drawing.Size(349, 30);
-            this.lbl_errorMessage.TabIndex = 20;
-            this.lbl_errorMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            lbl_errorMessage.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_errorMessage.ForeColor = Color.FromArgb(229, 1, 17);
+            lbl_errorMessage.Location = new Point(325, 294);
+            lbl_errorMessage.Name = "lbl_errorMessage";
+            lbl_errorMessage.Size = new Size(349, 30);
+            lbl_errorMessage.TabIndex = 20;
+            lbl_errorMessage.TextAlign = ContentAlignment.TopCenter;
+            lbl_errorMessage.Click += lbl_errorMessage_Click;
             // 
             // SignInForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 464);
-            this.Controls.Add(this.lbl_errorMessage);
-            this.Controls.Add(this.btn_LoginGuest);
-            this.Controls.Add(this.btn_SignupForm);
-            this.Controls.Add(this.btn_LoginForm);
-            this.Controls.Add(this.tb_Password);
-            this.Controls.Add(this.tb_Phone);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btn_Login);
-            this.Controls.Add(this.lbl_Login);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.Name = "SignInForm";
-            this.Padding = new System.Windows.Forms.Padding(16, 80, 16, 20);
-            this.Style = MetroFramework.MetroColorStyle.White;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1003, 464);
+            Controls.Add(lbl_errorMessage);
+            Controls.Add(roundedButton2);
+            Controls.Add(btn_signUpForm);
+            Controls.Add(roundedButton1);
+            Controls.Add(tb_password);
+            Controls.Add(tb_phone);
+            Controls.Add(pictureBox1);
+            Controls.Add(btn_login);
+            Controls.Add(label1);
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "SignInForm";
+            Padding = new Padding(16, 80, 16, 20);
+            Style = MetroFramework.MetroColorStyle.White;
+            Load += SignInForm_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private Label lbl_Login;
-        private RoundedButton btn_Login;
+        private Label label1;
+        private RoundedButton btn_login;
         private PictureBox pictureBox1;
-        private RoundedTextBox tb_Phone;
-        private RoundedTextBox tb_Password;
-        private RoundedButton btn_LoginForm;
-        private RoundedButton btn_SignupForm;
-        private RoundedButton btn_LoginGuest;
+        private RoundedTextBox tb_phone;
+        private RoundedTextBox tb_password;
+        private RoundedButton roundedButton1;
+        private RoundedButton btn_signUpForm;
+        private RoundedButton roundedButton2;
         private Label lbl_errorMessage;
     }
 

@@ -35,7 +35,6 @@ namespace DAO
                 cmd.Parameters.AddWithValue("@kind_food_id", TypeID);
                 cmd.Parameters.AddWithValue("@room_id", RoomID);
                 cmd.Parameters.AddWithValue("@status", 1);
-                cmd.Parameters.AddWithValue("@Initual", 0);
                 SqlDataReader reader = cmd.ExecuteReader();
                 conn.Close();
                 return true;
@@ -66,8 +65,6 @@ namespace DAO
                     resultDic.Add("KindFoodID", reader["KindFoodID"].ToString());
                     resultDic.Add("RoomID", reader["RoomID"].ToString());
                     resultDic.Add("Status", reader["Status"].ToString());
-                    resultDic.Add("Initual", reader["Initual"].ToString());
-
                     resultList.Add(resultDic);
                 }
                 conn.Close();
@@ -102,7 +99,6 @@ namespace DAO
                 cmd.Parameters.AddWithValue("@kind_food_id", TypeID);
                 cmd.Parameters.AddWithValue("@room_id", RoomID);
                 cmd.Parameters.AddWithValue("@status", 1);
-                
                 SqlDataReader reader = cmd.ExecuteReader();
                 conn.Close();
                 return true;

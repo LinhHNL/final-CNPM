@@ -29,39 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HangHoaTrongKho));
-<<<<<<< HEAD
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            label4 = new Label();
-            pictureBox2 = new PictureBox();
-            metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            btn_NhapHang = new CustomControls.RoundedButton();
-            btn_XuatHang = new CustomControls.RoundedButton();
-            btn_HangTrongKho = new CustomControls.RoundedButton();
-            btn_KiemKho = new CustomControls.RoundedButton();
-            pictureBox1 = new PictureBox();
-            roundedButton10 = new CustomControls.RoundedButton();
-            btn_XuatFile = new CustomControls.RoundedButton();
-            metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            btn_Them = new CustomControls.RoundedButton();
-            dgv_HangTrongKho = new MetroFramework.Controls.MetroGrid();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
-            Column4 = new DataGridViewTextBoxColumn();
-            metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)metroGrid1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgv_HangTrongKho).BeginInit();
-            SuspendLayout();
-=======
+
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -95,7 +64,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_InStock)).BeginInit();
             this.SuspendLayout();
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
             // 
             // metroPanel1
             // 
@@ -154,26 +123,9 @@
             // 
             // btn_Import
             // 
-<<<<<<< HEAD
-            btn_NhapHang.BackColor = Color.FromArgb(253, 230, 232);
-            btn_NhapHang.BackgroundColor = Color.FromArgb(253, 230, 232);
-            btn_NhapHang.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            btn_NhapHang.BorderRadius = 0;
-            btn_NhapHang.BorderSize = 0;
-            btn_NhapHang.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_NhapHang.FlatStyle = FlatStyle.Flat;
-            btn_NhapHang.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_NhapHang.ForeColor = Color.Black;
-            btn_NhapHang.Location = new Point(-1, 302);
-            btn_NhapHang.Margin = new Padding(3, 4, 3, 4);
-            btn_NhapHang.Name = "btn_NhapHang";
-            btn_NhapHang.Size = new Size(263, 64);
-            btn_NhapHang.TabIndex = 18;
-            btn_NhapHang.Text = "Phiếu Nhập hàng";
-            btn_NhapHang.TextColor = Color.Black;
-            btn_NhapHang.UseVisualStyleBackColor = false;
-            btn_NhapHang.Visible = false;
-=======
+
+           
+
             this.btn_Import.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
             this.btn_Import.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(230)))), ((int)(((byte)(232)))));
             this.btn_Import.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
@@ -192,7 +144,7 @@
             this.btn_Import.TextColor = System.Drawing.Color.Black;
             this.btn_Import.UseVisualStyleBackColor = false;
             this.btn_Import.Visible = false;
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
             // 
             // btn_Export
             // 
@@ -287,26 +239,8 @@
             // 
             // btn_ExportFile
             // 
-<<<<<<< HEAD
-            btn_XuatFile.BackColor = Color.FromArgb(253, 197, 183);
-            btn_XuatFile.BackgroundColor = Color.FromArgb(253, 197, 183);
-            btn_XuatFile.BorderColor = Color.FromArgb(215, 122, 125);
-            btn_XuatFile.BorderRadius = 8;
-            btn_XuatFile.BorderSize = 1;
-            btn_XuatFile.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_XuatFile.FlatStyle = FlatStyle.Flat;
-            btn_XuatFile.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_XuatFile.ForeColor = Color.FromArgb(229, 1, 17);
-            btn_XuatFile.Location = new Point(1046, 80);
-            btn_XuatFile.Margin = new Padding(3, 4, 3, 4);
-            btn_XuatFile.Name = "btn_XuatFile";
-            btn_XuatFile.Size = new Size(117, 35);
-            btn_XuatFile.TabIndex = 30;
-            btn_XuatFile.Text = "Xuất file";
-            btn_XuatFile.TextColor = Color.FromArgb(229, 1, 17);
-            btn_XuatFile.UseVisualStyleBackColor = false;
-            btn_XuatFile.Click += btn_XuatFile_Click;
-=======
+
+
             this.btn_ExportFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             this.btn_ExportFile.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             this.btn_ExportFile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
@@ -324,7 +258,7 @@
             this.btn_ExportFile.Text = "Xuất file";
             this.btn_ExportFile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
             this.btn_ExportFile.UseVisualStyleBackColor = false;
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
             // 
             // metroGrid1
             // 
@@ -373,7 +307,7 @@
             // 
             // btn_Add
             // 
-<<<<<<< HEAD
+
             btn_Them.BackColor = Color.FromArgb(253, 197, 183);
             btn_Them.BackgroundColor = Color.FromArgb(253, 197, 183);
             btn_Them.BorderColor = Color.FromArgb(215, 122, 125);
@@ -394,7 +328,7 @@
             btn_Them.Click += btn_Them_Click;
             // 
             // dgv_HangTrongKho
-=======
+
             this.btn_Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             this.btn_Add.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(183)))));
             this.btn_Add.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(122)))), ((int)(((byte)(125)))));
@@ -435,7 +369,7 @@
             this.btn_Delete.UseVisualStyleBackColor = false;
             // 
             // dgv_InStock
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
             // 
             this.dgv_InStock.AllowUserToResizeRows = false;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
@@ -532,26 +466,24 @@
             // 
             // HangHoaTrongKho
             // 
-<<<<<<< HEAD
+
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1182, 605);
             Controls.Add(dgv_HangTrongKho);
             Controls.Add(btn_Them);
             Controls.Add(metroGrid1);
-            Controls.Add(btn_XuatFile);
-            Controls.Add(roundedButton10);
+           
             Controls.Add(metroPanel1);
             Name = "HangHoaTrongKho";
             Load += HangHoaTrongKho_Load;
             metroPanel1.ResumeLayout(false);
             metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+          
             ((System.ComponentModel.ISupportInitialize)metroGrid1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_HangTrongKho).EndInit();
             ResumeLayout(false);
-=======
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 605);
@@ -571,7 +503,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_InStock)).EndInit();
             this.ResumeLayout(false);
 
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
         }
 
         #endregion
@@ -588,14 +520,14 @@
         private Label lbl_AccountName;
         private CustomControls.RoundedButton btn_ExportFile;
         private MetroFramework.Controls.MetroGrid metroGrid1;
-<<<<<<< HEAD
+
         private CustomControls.RoundedButton btn_Them;
         private MetroFramework.Controls.MetroGrid dgv_HangTrongKho;
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
-=======
+
         private CustomControls.RoundedButton btn_Add;
         private CustomControls.RoundedButton btn_Delete;
         private MetroFramework.Controls.MetroGrid dgv_InStock;
@@ -604,6 +536,6 @@
         private DataGridViewTextBoxColumn Unit;
         private DataGridViewTextBoxColumn Quantity;
         private DataGridViewTextBoxColumn ImportDate;
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
+
     }
 }

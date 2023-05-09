@@ -1,16 +1,10 @@
 ﻿
-<<<<<<< HEAD
-=======
-use haidilao
-go
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 ----customer 
 CREATE TRIGGER CheckCustomerExists
 ON Customers
 INSTEAD OF INSERT
 AS
 BEGIN
-<<<<<<< HEAD
 	declare @check varchar(45) 
 	set @check = (
 	 SELECT c.Phone
@@ -34,31 +28,6 @@ BEGIN
 		end
 END
 go
-=======
- -- Kiểm tra trường Phone
-    IF EXISTS (
-        SELECT *
-        FROM inserted i
-        WHERE i.Phone  In (
-            SELECT Phone
-            FROM Customers
-            WHERE Phone = i.Phone
-        )
-    )
-BEGIN
-RAISERROR ('Customer with phone number  already exists', 16, 1);
-ROLLBACK TRANSACTION;
-	
-RETURN;
-END
-ELSE
-	INSERT Customers(name, phone, address, password, point, levelid)
-   SELECT name, phone, address, password,0,1 FROM  inserted
-END
-GO
-
-
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 CREATE TRIGGER tr_UpdateCustomer
 ON Customers
 INSTEAD OF UPDATE
@@ -165,7 +134,6 @@ END
 
 
 go 
-
 CREATE TRIGGER trg_UpdateCustomerLevel
 ON Transactions
 AFTER INSERT, UPDATE

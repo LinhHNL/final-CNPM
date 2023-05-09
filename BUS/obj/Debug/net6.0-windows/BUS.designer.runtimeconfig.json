@@ -12,8 +12,14 @@
       }
     ],
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Laptop T&T\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Laptop T&T\\.nuget\\packages"
+=======
+      "C:\\Users\\Acer\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Acer\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+>>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

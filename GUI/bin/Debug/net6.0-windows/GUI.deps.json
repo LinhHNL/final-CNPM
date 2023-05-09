@@ -14,14 +14,6 @@
         },
         "runtime": {
           "GUI.dll": {}
-        },
-        "resources": {
-          "en-US/GUI.resources.dll": {
-            "locale": "en-US"
-          },
-          "vi-VN/GUI.resources.dll": {
-            "locale": "vi-VN"
-          }
         }
       },
       "MetroModernUI/1.4.0": {

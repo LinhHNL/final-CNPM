@@ -45,7 +45,7 @@
             // lbl_price
             // 
             lbl_price.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_price.Location = new Point(928, 15);
+            lbl_price.Location = new Point(831, 15);
             lbl_price.Name = "lbl_price";
             lbl_price.Size = new Size(214, 75);
             lbl_price.TabIndex = 1;
@@ -68,7 +68,7 @@
             Controls.Add(lbl_price);
             Controls.Add(lbl_TenMon);
             Name = "PaymentView";
-            Size = new Size(1145, 92);
+            Size = new Size(1045, 90);
             ResumeLayout(false);
         }
 

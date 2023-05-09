@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 
-=======
-use haidilao;
-GO
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
 CREATE TABLE Level
 (
   LevelID INT IDENTITY(1,1) NOT NULL,
@@ -310,10 +305,11 @@ CREATE TABLE Menu
   KindFoodID INT NOT NULL,
   RoomID INT NOT NULL,
   status int not null,
-  Initual BIT not null ,
   PRIMARY KEY (MenuID),
   FOREIGN KEY (KindFoodID) REFERENCES KindFood(KindFoodID),
   FOREIGN KEY (RoomID) REFERENCES Room(RoomID)
+  
+
 );
 GO
 CREATE TABLE ExportOrders

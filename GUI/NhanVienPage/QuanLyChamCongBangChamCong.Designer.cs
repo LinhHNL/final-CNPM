@@ -28,389 +28,385 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyChamCongBangChamCong));
-            this.btn_Signout = new WinFormsApp2.CustomControls.RoundedButton();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.btn_PayRoll = new WinFormsApp2.CustomControls.RoundedButton();
-            this.lbl_AccountName = new System.Windows.Forms.Label();
-            this.pb_AccountIcon = new System.Windows.Forms.PictureBox();
-            this.metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            this.btn_letter = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_TimekeepingManagement = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_StaffProfile = new WinFormsApp2.CustomControls.RoundedButton();
-            this.btn_WorkScheduleManagement = new WinFormsApp2.CustomControls.RoundedButton();
-            this.pb_Logo = new System.Windows.Forms.PictureBox();
-            this.lbl_Timekeeping = new System.Windows.Forms.Label();
-            this.cb_Month = new MetroFramework.Controls.MetroComboBox();
-            this.lbl_Month = new System.Windows.Forms.Label();
-            this.lbl_TimekeepingTable = new System.Windows.Forms.Label();
-            this.calendar = new WinFormsApp2.CustomControls.Calendar();
-            this.btn_Back = new WinFormsApp2.CustomControls.RoundedButton();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            this.metroPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).BeginInit();
-            this.SuspendLayout();
+            btn_DangXuat = new CustomControls.RoundedButton();
+            metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            btn_LuongThuong = new CustomControls.RoundedButton();
+            label4 = new Label();
+            pictureBox2 = new PictureBox();
+            metroPanel7 = new MetroFramework.Controls.MetroPanel();
+            btn_DonTu = new CustomControls.RoundedButton();
+            btn_QuanLyChamCong = new CustomControls.RoundedButton();
+            btn_HoSoNhanVien = new CustomControls.RoundedButton();
+            btn_QuanLyLichLam = new CustomControls.RoundedButton();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            cb_month = new MetroFramework.Controls.MetroComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            calendar = new CustomControls.Calendar();
+            btn_Back = new CustomControls.RoundedButton();
+            ((System.ComponentModel.ISupportInitialize)metroGrid1).BeginInit();
+            metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
-            // btn_Signout
+            // btn_DangXuat
             // 
-            this.btn_Signout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Signout.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Signout.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_Signout.BorderRadius = 8;
-            this.btn_Signout.BorderSize = 0;
-            this.btn_Signout.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Signout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Signout.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Signout.ForeColor = System.Drawing.Color.White;
-            this.btn_Signout.Location = new System.Drawing.Point(1057, 35);
-            this.btn_Signout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Signout.Name = "btn_Signout";
-            this.btn_Signout.Size = new System.Drawing.Size(117, 35);
-            this.btn_Signout.TabIndex = 22;
-            this.btn_Signout.Text = "Đăng xuất";
-            this.btn_Signout.TextColor = System.Drawing.Color.White;
-            this.btn_Signout.UseVisualStyleBackColor = false;
+            btn_DangXuat.BackColor = Color.FromArgb(229, 1, 17);
+            btn_DangXuat.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_DangXuat.BorderColor = Color.PaleVioletRed;
+            btn_DangXuat.BorderRadius = 8;
+            btn_DangXuat.BorderSize = 0;
+            btn_DangXuat.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_DangXuat.FlatStyle = FlatStyle.Flat;
+            btn_DangXuat.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DangXuat.ForeColor = Color.White;
+            btn_DangXuat.Location = new Point(1057, 35);
+            btn_DangXuat.Margin = new Padding(3, 4, 3, 4);
+            btn_DangXuat.Name = "btn_DangXuat";
+            btn_DangXuat.Size = new Size(117, 35);
+            btn_DangXuat.TabIndex = 22;
+            btn_DangXuat.Text = "Đăng xuất";
+            btn_DangXuat.TextColor = Color.White;
+            btn_DangXuat.UseVisualStyleBackColor = false;
             // 
             // metroGrid1
             // 
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle5;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(370, 106);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.metroGrid1.RowHeadersWidth = 51;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.RowTemplate.Height = 29;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(8, 8);
-            this.metroGrid1.TabIndex = 31;
+            metroGrid1.AllowUserToResizeRows = false;
+            metroGrid1.BackgroundColor = Color.FromArgb(255, 255, 255);
+            metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            metroGrid1.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            metroGrid1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            metroGrid1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            metroGrid1.DefaultCellStyle = dataGridViewCellStyle5;
+            metroGrid1.EnableHeadersVisualStyles = false;
+            metroGrid1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            metroGrid1.GridColor = Color.FromArgb(255, 255, 255);
+            metroGrid1.Location = new Point(370, 106);
+            metroGrid1.Name = "metroGrid1";
+            metroGrid1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            metroGrid1.RowHeadersWidth = 51;
+            metroGrid1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            metroGrid1.RowTemplate.Height = 29;
+            metroGrid1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            metroGrid1.Size = new Size(8, 8);
+            metroGrid1.TabIndex = 31;
             // 
             // metroPanel1
             // 
-            this.metroPanel1.Controls.Add(this.btn_PayRoll);
-            this.metroPanel1.Controls.Add(this.lbl_AccountName);
-            this.metroPanel1.Controls.Add(this.pb_AccountIcon);
-            this.metroPanel1.Controls.Add(this.metroPanel7);
-            this.metroPanel1.Controls.Add(this.btn_letter);
-            this.metroPanel1.Controls.Add(this.btn_TimekeepingManagement);
-            this.metroPanel1.Controls.Add(this.btn_StaffProfile);
-            this.metroPanel1.Controls.Add(this.btn_WorkScheduleManagement);
-            this.metroPanel1.Controls.Add(this.pb_Logo);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 11;
-            this.metroPanel1.Location = new System.Drawing.Point(-1, 35);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(263, 571);
-            this.metroPanel1.TabIndex = 44;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            metroPanel1.Controls.Add(btn_LuongThuong);
+            metroPanel1.Controls.Add(label4);
+            metroPanel1.Controls.Add(pictureBox2);
+            metroPanel1.Controls.Add(metroPanel7);
+            metroPanel1.Controls.Add(btn_DonTu);
+            metroPanel1.Controls.Add(btn_QuanLyChamCong);
+            metroPanel1.Controls.Add(btn_HoSoNhanVien);
+            metroPanel1.Controls.Add(btn_QuanLyLichLam);
+            metroPanel1.Controls.Add(pictureBox1);
+            metroPanel1.HorizontalScrollbarBarColor = true;
+            metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel1.HorizontalScrollbarSize = 11;
+            metroPanel1.Location = new Point(-1, 35);
+            metroPanel1.Name = "metroPanel1";
+            metroPanel1.Size = new Size(263, 571);
+            metroPanel1.TabIndex = 44;
+            metroPanel1.VerticalScrollbarBarColor = true;
+            metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel1.VerticalScrollbarSize = 10;
             // 
-            // btn_PayRoll
+            // btn_LuongThuong
             // 
-            this.btn_PayRoll.BackColor = System.Drawing.Color.White;
-            this.btn_PayRoll.BackgroundColor = System.Drawing.Color.White;
-            this.btn_PayRoll.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_PayRoll.BorderRadius = 0;
-            this.btn_PayRoll.BorderSize = 0;
-            this.btn_PayRoll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_PayRoll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PayRoll.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_PayRoll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_PayRoll.Location = new System.Drawing.Point(0, 363);
-            this.btn_PayRoll.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_PayRoll.Name = "btn_PayRoll";
-            this.btn_PayRoll.Size = new System.Drawing.Size(263, 64);
-            this.btn_PayRoll.TabIndex = 45;
-            this.btn_PayRoll.Text = "Lương thưởng";
-            this.btn_PayRoll.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_PayRoll.UseVisualStyleBackColor = false;
-            this.btn_PayRoll.Click += new System.EventHandler(this.btn_LuongThuong_Click);
+            btn_LuongThuong.BackColor = Color.White;
+            btn_LuongThuong.BackgroundColor = Color.White;
+            btn_LuongThuong.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_LuongThuong.BorderRadius = 0;
+            btn_LuongThuong.BorderSize = 0;
+            btn_LuongThuong.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_LuongThuong.FlatStyle = FlatStyle.Flat;
+            btn_LuongThuong.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_LuongThuong.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_LuongThuong.Location = new Point(0, 363);
+            btn_LuongThuong.Margin = new Padding(3, 4, 3, 4);
+            btn_LuongThuong.Name = "btn_LuongThuong";
+            btn_LuongThuong.Size = new Size(263, 64);
+            btn_LuongThuong.TabIndex = 45;
+            btn_LuongThuong.Text = "Lương thưởng";
+            btn_LuongThuong.TextColor = Color.FromArgb(160, 159, 159);
+            btn_LuongThuong.UseVisualStyleBackColor = false;
+            btn_LuongThuong.Click += btn_LuongThuong_Click;
             // 
-            // lbl_AccountName
+            // label4
             // 
-            this.lbl_AccountName.AutoSize = true;
-            this.lbl_AccountName.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_AccountName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.lbl_AccountName.Location = new System.Drawing.Point(70, 85);
-            this.lbl_AccountName.Name = "lbl_AccountName";
-            this.lbl_AccountName.Size = new System.Drawing.Size(138, 28);
-            this.lbl_AccountName.TabIndex = 31;
-            this.lbl_AccountName.Text = "Tên tài khoản";
+            label4.AutoSize = true;
+            label4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(229, 1, 17);
+            label4.Location = new Point(70, 85);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 28);
+            label4.TabIndex = 31;
+            label4.Text = "Tên tài khoản";
             // 
-            // pb_AccountIcon
+            // pictureBox2
             // 
-            this.pb_AccountIcon.Image = ((System.Drawing.Image)(resources.GetObject("pb_AccountIcon.Image")));
-            this.pb_AccountIcon.Location = new System.Drawing.Point(34, 88);
-            this.pb_AccountIcon.Name = "pb_AccountIcon";
-            this.pb_AccountIcon.Size = new System.Drawing.Size(30, 27);
-            this.pb_AccountIcon.TabIndex = 21;
-            this.pb_AccountIcon.TabStop = false;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(34, 88);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 27);
+            pictureBox2.TabIndex = 21;
+            pictureBox2.TabStop = false;
             // 
             // metroPanel7
             // 
-            this.metroPanel7.BackColor = System.Drawing.Color.Black;
-            this.metroPanel7.HorizontalScrollbarBarColor = true;
-            this.metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.HorizontalScrollbarSize = 11;
-            this.metroPanel7.Location = new System.Drawing.Point(259, 539);
-            this.metroPanel7.Name = "metroPanel7";
-            this.metroPanel7.Size = new System.Drawing.Size(904, 55);
-            this.metroPanel7.TabIndex = 20;
-            this.metroPanel7.VerticalScrollbarBarColor = true;
-            this.metroPanel7.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel7.VerticalScrollbarSize = 10;
+            metroPanel7.BackColor = Color.Black;
+            metroPanel7.HorizontalScrollbarBarColor = true;
+            metroPanel7.HorizontalScrollbarHighlightOnWheel = false;
+            metroPanel7.HorizontalScrollbarSize = 11;
+            metroPanel7.Location = new Point(259, 539);
+            metroPanel7.Name = "metroPanel7";
+            metroPanel7.Size = new Size(904, 55);
+            metroPanel7.TabIndex = 20;
+            metroPanel7.VerticalScrollbarBarColor = true;
+            metroPanel7.VerticalScrollbarHighlightOnWheel = false;
+            metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // btn_letter
+            // btn_DonTu
             // 
-            this.btn_letter.BackColor = System.Drawing.Color.White;
-            this.btn_letter.BackgroundColor = System.Drawing.Color.White;
-            this.btn_letter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_letter.BorderRadius = 0;
-            this.btn_letter.BorderSize = 0;
-            this.btn_letter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_letter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_letter.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_letter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_letter.Location = new System.Drawing.Point(-1, 301);
-            this.btn_letter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_letter.Name = "btn_letter";
-            this.btn_letter.Size = new System.Drawing.Size(263, 64);
-            this.btn_letter.TabIndex = 18;
-            this.btn_letter.Text = "Đơn từ";
-            this.btn_letter.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_letter.UseVisualStyleBackColor = false;
-            this.btn_letter.Click += new System.EventHandler(this.btn_DonTu_Click);
+            btn_DonTu.BackColor = Color.White;
+            btn_DonTu.BackgroundColor = Color.White;
+            btn_DonTu.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_DonTu.BorderRadius = 0;
+            btn_DonTu.BorderSize = 0;
+            btn_DonTu.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_DonTu.FlatStyle = FlatStyle.Flat;
+            btn_DonTu.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DonTu.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_DonTu.Location = new Point(-1, 301);
+            btn_DonTu.Margin = new Padding(3, 4, 3, 4);
+            btn_DonTu.Name = "btn_DonTu";
+            btn_DonTu.Size = new Size(263, 64);
+            btn_DonTu.TabIndex = 18;
+            btn_DonTu.Text = "Đơn từ";
+            btn_DonTu.TextColor = Color.FromArgb(160, 159, 159);
+            btn_DonTu.UseVisualStyleBackColor = false;
+            btn_DonTu.Click += btn_DonTu_Click;
             // 
-            // btn_TimekeepingManagement
+            // btn_QuanLyChamCong
             // 
-            this.btn_TimekeepingManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_TimekeepingManagement.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_TimekeepingManagement.BorderColor = System.Drawing.Color.Silver;
-            this.btn_TimekeepingManagement.BorderRadius = 0;
-            this.btn_TimekeepingManagement.BorderSize = 0;
-            this.btn_TimekeepingManagement.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_TimekeepingManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TimekeepingManagement.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_TimekeepingManagement.ForeColor = System.Drawing.Color.White;
-            this.btn_TimekeepingManagement.Location = new System.Drawing.Point(-1, 243);
-            this.btn_TimekeepingManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_TimekeepingManagement.Name = "btn_TimekeepingManagement";
-            this.btn_TimekeepingManagement.Size = new System.Drawing.Size(264, 64);
-            this.btn_TimekeepingManagement.TabIndex = 17;
-            this.btn_TimekeepingManagement.Text = "Quản lý chấm công";
-            this.btn_TimekeepingManagement.TextColor = System.Drawing.Color.White;
-            this.btn_TimekeepingManagement.UseVisualStyleBackColor = false;
-            this.btn_TimekeepingManagement.Click += new System.EventHandler(this.btn_QuanLyChamCong_Click);
+            btn_QuanLyChamCong.BackColor = Color.FromArgb(229, 1, 17);
+            btn_QuanLyChamCong.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_QuanLyChamCong.BorderColor = Color.Silver;
+            btn_QuanLyChamCong.BorderRadius = 0;
+            btn_QuanLyChamCong.BorderSize = 0;
+            btn_QuanLyChamCong.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_QuanLyChamCong.FlatStyle = FlatStyle.Flat;
+            btn_QuanLyChamCong.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_QuanLyChamCong.ForeColor = Color.White;
+            btn_QuanLyChamCong.Location = new Point(-1, 243);
+            btn_QuanLyChamCong.Margin = new Padding(3, 4, 3, 4);
+            btn_QuanLyChamCong.Name = "btn_QuanLyChamCong";
+            btn_QuanLyChamCong.Size = new Size(264, 64);
+            btn_QuanLyChamCong.TabIndex = 17;
+            btn_QuanLyChamCong.Text = "Quản lý chấm công";
+            btn_QuanLyChamCong.TextColor = Color.White;
+            btn_QuanLyChamCong.UseVisualStyleBackColor = false;
+            btn_QuanLyChamCong.Click += btn_QuanLyChamCong_Click;
             // 
-            // btn_StaffProfile
+            // btn_HoSoNhanVien
             // 
-            this.btn_StaffProfile.BackColor = System.Drawing.Color.White;
-            this.btn_StaffProfile.BackgroundColor = System.Drawing.Color.White;
-            this.btn_StaffProfile.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(15)))), ((int)(((byte)(255)))));
-            this.btn_StaffProfile.BorderRadius = 0;
-            this.btn_StaffProfile.BorderSize = 0;
-            this.btn_StaffProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_StaffProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_StaffProfile.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_StaffProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_StaffProfile.Location = new System.Drawing.Point(0, 131);
-            this.btn_StaffProfile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_StaffProfile.Name = "btn_StaffProfile";
-            this.btn_StaffProfile.Size = new System.Drawing.Size(262, 60);
-            this.btn_StaffProfile.TabIndex = 16;
-            this.btn_StaffProfile.Text = "Hồ sơ nhân viên";
-            this.btn_StaffProfile.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_StaffProfile.UseVisualStyleBackColor = false;
-            this.btn_StaffProfile.Click += new System.EventHandler(this.btn_HoSoNhanVien_Click);
+            btn_HoSoNhanVien.BackColor = Color.White;
+            btn_HoSoNhanVien.BackgroundColor = Color.White;
+            btn_HoSoNhanVien.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_HoSoNhanVien.BorderRadius = 0;
+            btn_HoSoNhanVien.BorderSize = 0;
+            btn_HoSoNhanVien.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_HoSoNhanVien.FlatStyle = FlatStyle.Flat;
+            btn_HoSoNhanVien.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_HoSoNhanVien.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_HoSoNhanVien.Location = new Point(0, 131);
+            btn_HoSoNhanVien.Margin = new Padding(3, 4, 3, 4);
+            btn_HoSoNhanVien.Name = "btn_HoSoNhanVien";
+            btn_HoSoNhanVien.Size = new Size(262, 60);
+            btn_HoSoNhanVien.TabIndex = 16;
+            btn_HoSoNhanVien.Text = "Hồ sơ nhân viên";
+            btn_HoSoNhanVien.TextColor = Color.FromArgb(160, 159, 159);
+            btn_HoSoNhanVien.UseVisualStyleBackColor = false;
+            btn_HoSoNhanVien.Click += btn_HoSoNhanVien_Click;
             // 
-            // btn_WorkScheduleManagement
+            // btn_QuanLyLichLam
             // 
-            this.btn_WorkScheduleManagement.BackColor = System.Drawing.Color.White;
-            this.btn_WorkScheduleManagement.BackgroundColor = System.Drawing.Color.White;
-            this.btn_WorkScheduleManagement.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_WorkScheduleManagement.BorderRadius = 0;
-            this.btn_WorkScheduleManagement.BorderSize = 0;
-            this.btn_WorkScheduleManagement.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_WorkScheduleManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_WorkScheduleManagement.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_WorkScheduleManagement.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_WorkScheduleManagement.Location = new System.Drawing.Point(0, 189);
-            this.btn_WorkScheduleManagement.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_WorkScheduleManagement.Name = "btn_WorkScheduleManagement";
-            this.btn_WorkScheduleManagement.Size = new System.Drawing.Size(262, 56);
-            this.btn_WorkScheduleManagement.TabIndex = 16;
-            this.btn_WorkScheduleManagement.Text = "Quản lý lịch làm";
-            this.btn_WorkScheduleManagement.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(159)))), ((int)(((byte)(159)))));
-            this.btn_WorkScheduleManagement.UseVisualStyleBackColor = false;
-            this.btn_WorkScheduleManagement.Click += new System.EventHandler(this.btn_QuanLyLichLam_Click);
+            btn_QuanLyLichLam.BackColor = Color.White;
+            btn_QuanLyLichLam.BackgroundColor = Color.White;
+            btn_QuanLyLichLam.BorderColor = Color.PaleVioletRed;
+            btn_QuanLyLichLam.BorderRadius = 0;
+            btn_QuanLyLichLam.BorderSize = 0;
+            btn_QuanLyLichLam.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_QuanLyLichLam.FlatStyle = FlatStyle.Flat;
+            btn_QuanLyLichLam.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_QuanLyLichLam.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_QuanLyLichLam.Location = new Point(0, 189);
+            btn_QuanLyLichLam.Margin = new Padding(3, 4, 3, 4);
+            btn_QuanLyLichLam.Name = "btn_QuanLyLichLam";
+            btn_QuanLyLichLam.Size = new Size(262, 56);
+            btn_QuanLyLichLam.TabIndex = 16;
+            btn_QuanLyLichLam.Text = "Quản lý lịch làm";
+            btn_QuanLyLichLam.TextColor = Color.FromArgb(160, 159, 159);
+            btn_QuanLyLichLam.UseVisualStyleBackColor = false;
+            btn_QuanLyLichLam.Click += btn_QuanLyLichLam_Click;
             // 
-            // pb_Logo
+            // pictureBox1
             // 
-            this.pb_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pb_Logo.Image")));
-            this.pb_Logo.Location = new System.Drawing.Point(101, 13);
-            this.pb_Logo.Name = "pb_Logo";
-            this.pb_Logo.Size = new System.Drawing.Size(50, 51);
-            this.pb_Logo.TabIndex = 16;
-            this.pb_Logo.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(101, 13);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 51);
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
             // 
-            // lbl_Timekeeping
+            // label1
             // 
-            this.lbl_Timekeeping.AutoSize = true;
-            this.lbl_Timekeeping.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Timekeeping.Location = new System.Drawing.Point(273, 35);
-            this.lbl_Timekeeping.Name = "lbl_Timekeeping";
-            this.lbl_Timekeeping.Size = new System.Drawing.Size(154, 37);
-            this.lbl_Timekeeping.TabIndex = 47;
-            this.lbl_Timekeeping.Text = "Chấm công";
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(273, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(154, 37);
+            label1.TabIndex = 47;
+            label1.Text = "Chấm công";
             // 
-            // cb_Month
+            // cb_month
             // 
-            this.cb_Month.FontSize = MetroFramework.MetroComboBoxSize.Tall;
-            this.cb_Month.FormattingEnabled = true;
-            this.cb_Month.ItemHeight = 29;
-            this.cb_Month.Items.AddRange(new object[] {
-            "03/2023",
-            "02/2023",
-            "01/2023"});
-            this.cb_Month.Location = new System.Drawing.Point(561, 79);
-            this.cb_Month.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cb_Month.Name = "cb_Month";
-            this.cb_Month.PromptText = "Tháng";
-            this.cb_Month.Size = new System.Drawing.Size(138, 35);
-            this.cb_Month.TabIndex = 48;
-            this.cb_Month.UseSelectable = true;
-            this.cb_Month.SelectionChangeCommitted += new System.EventHandler(this.cb_month_SelectionChangeCommitted);
+            cb_month.FontSize = MetroFramework.MetroComboBoxSize.Tall;
+            cb_month.FormattingEnabled = true;
+            cb_month.ItemHeight = 29;
+            cb_month.Items.AddRange(new object[] { "03/2023", "02/2023", "01/2023" });
+            cb_month.Location = new Point(561, 79);
+            cb_month.Margin = new Padding(3, 4, 3, 4);
+            cb_month.Name = "cb_month";
+            cb_month.PromptText = "Tháng";
+            cb_month.Size = new Size(138, 35);
+            cb_month.TabIndex = 48;
+            cb_month.UseSelectable = true;
+            cb_month.SelectionChangeCommitted += cb_month_SelectionChangeCommitted;
             // 
-            // lbl_Month
+            // label2
             // 
-            this.lbl_Month.AutoSize = true;
-            this.lbl_Month.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Month.Location = new System.Drawing.Point(480, 82);
-            this.lbl_Month.Name = "lbl_Month";
-            this.lbl_Month.Size = new System.Drawing.Size(75, 28);
-            this.lbl_Month.TabIndex = 49;
-            this.lbl_Month.Text = "Tháng:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(480, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 28);
+            label2.TabIndex = 49;
+            label2.Text = "Tháng:";
             // 
-            // lbl_TimekeepingTable
+            // label3
             // 
-            this.lbl_TimekeepingTable.AutoSize = true;
-            this.lbl_TimekeepingTable.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TimekeepingTable.Location = new System.Drawing.Point(272, 82);
-            this.lbl_TimekeepingTable.Name = "lbl_TimekeepingTable";
-            this.lbl_TimekeepingTable.Size = new System.Drawing.Size(166, 28);
-            this.lbl_TimekeepingTable.TabIndex = 67;
-            this.lbl_TimekeepingTable.Text = "Bảng chấm công";
+            label3.AutoSize = true;
+            label3.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(272, 82);
+            label3.Name = "label3";
+            label3.Size = new Size(166, 28);
+            label3.TabIndex = 67;
+            label3.Text = "Bảng chấm công";
             // 
             // calendar
             // 
-            this.calendar.Location = new System.Drawing.Point(268, 123);
-            this.calendar.Name = "calendar";
-            this.calendar.Size = new System.Drawing.Size(907, 469);
-            this.calendar.TabIndex = 68;
+            calendar.Location = new Point(268, 123);
+            calendar.Name = "calendar";
+            calendar.Size = new Size(921, 469);
+            calendar.TabIndex = 68;
             // 
             // btn_Back
             // 
-            this.btn_Back.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btn_Back.BorderColor = System.Drawing.Color.White;
-            this.btn_Back.BorderRadius = 8;
-            this.btn_Back.BorderSize = 1;
-            this.btn_Back.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
-            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Back.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Back.Location = new System.Drawing.Point(1057, 79);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(117, 35);
-            this.btn_Back.TabIndex = 69;
-            this.btn_Back.Text = "Quay lại >";
-            this.btn_Back.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(1)))), ((int)(((byte)(17)))));
-            this.btn_Back.UseVisualStyleBackColor = false;
-            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
+            btn_Back.BackColor = Color.Transparent;
+            btn_Back.BackgroundColor = Color.Transparent;
+            btn_Back.BorderColor = Color.White;
+            btn_Back.BorderRadius = 8;
+            btn_Back.BorderSize = 1;
+            btn_Back.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Back.FlatStyle = FlatStyle.Flat;
+            btn_Back.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Back.ForeColor = Color.FromArgb(229, 1, 17);
+            btn_Back.Location = new Point(1057, 79);
+            btn_Back.Margin = new Padding(3, 4, 3, 4);
+            btn_Back.Name = "btn_Back";
+            btn_Back.Size = new Size(117, 35);
+            btn_Back.TabIndex = 69;
+            btn_Back.Text = "Quay lại >";
+            btn_Back.TextColor = Color.FromArgb(229, 1, 17);
+            btn_Back.UseVisualStyleBackColor = false;
+            btn_Back.Click += btn_Back_Click;
             // 
             // QuanLyChamCongBangChamCong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 605);
-            this.Controls.Add(this.btn_Back);
-            this.Controls.Add(this.calendar);
-            this.Controls.Add(this.lbl_TimekeepingTable);
-            this.Controls.Add(this.lbl_Month);
-            this.Controls.Add(this.cb_Month);
-            this.Controls.Add(this.lbl_Timekeeping);
-            this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.metroGrid1);
-            this.Controls.Add(this.btn_Signout);
-            this.Name = "QuanLyChamCongBangChamCong";
-            this.Padding = new System.Windows.Forms.Padding(21, 80, 21, 20);
-            this.Load += new System.EventHandler(this.QuanLyChamCongBangChamCong_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            this.metroPanel1.ResumeLayout(false);
-            this.metroPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AccountIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Logo)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1209, 614);
+            Controls.Add(btn_Back);
+            Controls.Add(calendar);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(cb_month);
+            Controls.Add(label1);
+            Controls.Add(metroPanel1);
+            Controls.Add(metroGrid1);
+            Controls.Add(btn_DangXuat);
+            Name = "QuanLyChamCongBangChamCong";
+            Padding = new Padding(21, 80, 21, 20);
+            Load += QuanLyChamCongBangChamCong_Load;
+            ((System.ComponentModel.ISupportInitialize)metroGrid1).EndInit();
+            metroPanel1.ResumeLayout(false);
+            metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private CustomControls.RoundedButton btn_Signout;
+        private CustomControls.RoundedButton btn_DangXuat;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private Label lbl_AccountName;
-        private PictureBox pb_AccountIcon;
+        private Label label4;
+        private PictureBox pictureBox2;
         private MetroFramework.Controls.MetroPanel metroPanel7;
-        private CustomControls.RoundedButton btn_letter;
-        private CustomControls.RoundedButton btn_TimekeepingManagement;
-        private CustomControls.RoundedButton btn_StaffProfile;
-        private CustomControls.RoundedButton btn_WorkScheduleManagement;
-        private PictureBox pb_Logo;
-        private CustomControls.RoundedButton btn_PayRoll;
-        private Label lbl_Timekeeping;
-        private MetroFramework.Controls.MetroComboBox cb_Month;
-        private Label lbl_Month;
-        private Label lbl_TimekeepingTable;
+        private CustomControls.RoundedButton btn_DonTu;
+        private CustomControls.RoundedButton btn_QuanLyChamCong;
+        private CustomControls.RoundedButton btn_HoSoNhanVien;
+        private CustomControls.RoundedButton btn_QuanLyLichLam;
+        private PictureBox pictureBox1;
+        private CustomControls.RoundedButton btn_LuongThuong;
+        private Label label1;
+        private MetroFramework.Controls.MetroComboBox cb_month;
+        private Label label2;
+        private Label label3;
         private CustomControls.Calendar calendar;
         private CustomControls.RoundedButton btn_Back;
     }

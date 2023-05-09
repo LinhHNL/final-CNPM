@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateFoodCom));
             metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            btn_Deletebtn = new WinFormsApp2.CustomControls.RoundedButton();
             btn_UpdateFood = new WinFormsApp2.CustomControls.RoundedButton();
             lbl_gia = new Label();
             lbl_ten = new Label();
@@ -41,6 +42,7 @@
             // metroPanel3
             // 
             metroPanel3.BorderStyle = BorderStyle.FixedSingle;
+            metroPanel3.Controls.Add(btn_Deletebtn);
             metroPanel3.Controls.Add(btn_UpdateFood);
             metroPanel3.Controls.Add(lbl_gia);
             metroPanel3.Controls.Add(lbl_ten);
@@ -57,6 +59,25 @@
             metroPanel3.VerticalScrollbarHighlightOnWheel = false;
             metroPanel3.VerticalScrollbarSize = 10;
             // 
+            // btn_Deletebtn
+            // 
+            btn_Deletebtn.BackColor = Color.Black;
+            btn_Deletebtn.BackgroundColor = Color.Black;
+            btn_Deletebtn.BorderColor = Color.PaleVioletRed;
+            btn_Deletebtn.BorderRadius = 8;
+            btn_Deletebtn.BorderSize = 0;
+            btn_Deletebtn.FlatAppearance.BorderSize = 0;
+            btn_Deletebtn.FlatStyle = FlatStyle.Flat;
+            btn_Deletebtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Deletebtn.ForeColor = Color.White;
+            btn_Deletebtn.Location = new Point(370, 147);
+            btn_Deletebtn.Name = "btn_Deletebtn";
+            btn_Deletebtn.Size = new Size(70, 35);
+            btn_Deletebtn.TabIndex = 28;
+            btn_Deletebtn.Text = "Xóa";
+            btn_Deletebtn.TextColor = Color.White;
+            btn_Deletebtn.UseVisualStyleBackColor = false;
+            // 
             // btn_UpdateFood
             // 
             btn_UpdateFood.BackColor = Color.FromArgb(229, 1, 17);
@@ -68,7 +89,7 @@
             btn_UpdateFood.FlatStyle = FlatStyle.Flat;
             btn_UpdateFood.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_UpdateFood.ForeColor = Color.White;
-            btn_UpdateFood.Location = new Point(323, 147);
+            btn_UpdateFood.Location = new Point(217, 147);
             btn_UpdateFood.Margin = new Padding(3, 4, 3, 4);
             btn_UpdateFood.Name = "btn_UpdateFood";
             btn_UpdateFood.Size = new Size(117, 35);
@@ -131,5 +152,6 @@
         private Label lbl_ten;
         private PictureBox pb_FoodImage;
         private WinFormsApp2.CustomControls.RoundedButton btn_UpdateFood;
+        private WinFormsApp2.CustomControls.RoundedButton btn_Deletebtn;
     }
 }

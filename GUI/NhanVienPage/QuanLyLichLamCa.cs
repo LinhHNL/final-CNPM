@@ -7,16 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Resources;
-using System.Globalization;
-using WinFormsApp2.AdminPage;
 
 namespace WinFormsApp2.NhanVienPage
 {
     public partial class QuanLyLichLamCa : MetroFramework.Forms.MetroForm 
     {
         int day, month, year, shift;
-        CultureInfo culture;
+
+
         public QuanLyLichLamCa()
         {
             InitializeComponent();
@@ -24,8 +22,6 @@ namespace WinFormsApp2.NhanVienPage
             {
                 panel_NhanVien.Controls.Add(new CustomControls.RowDeletable("Ten nv", i));
             }
-            culture = CultureInfo.CurrentCulture;
-            SetLanguage("en-US");
         }
 
         public QuanLyLichLamCa(int day, int month, int year, int shift)
@@ -41,7 +37,7 @@ namespace WinFormsApp2.NhanVienPage
                 cb_date.Items.Add(i + "/" + month + "/" + year);
             }
             cb_date.SelectedIndex = daysInCurrentMonth - day;
-            cb_Shift.SelectedIndex = shift;
+            cb_Ca.SelectedIndex = shift;
             for (int i = 0; i < 10; i++)
             {
                 panel_NhanVien.Controls.Add(new CustomControls.RowDeletable("Ten nv", i));
@@ -103,27 +99,6 @@ namespace WinFormsApp2.NhanVienPage
             this.Hide();
             form.ShowDialog();
             this.Close();
-        }
-        private void SetLanguage(string cultureName)
-        {
-            culture = CultureInfo.CreateSpecificCulture(cultureName);
-            ResourceManager rm = new
-                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
-            btn_Signout.Text = rm.GetString("signoutText", culture);
-            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
-            btn_StaffProfile.Text = rm.GetString("staffProfileText", culture);
-            btn_WorkScheduleManagement.Text = rm.GetString("workScheduleManagementText", culture);
-            btn_TimekeepingManagement.Text = rm.GetString("timekeepingManagementText", culture);
-            btn_letter.Text = rm.GetString("letterText", culture);
-            btn_PayRoll.Text = rm.GetString("payrollText", culture);
-            lbl_Date.Text = rm.GetString("dayText", culture);
-            cb_date.PromptText = rm.GetString("dayText", culture);
-            lbl_Shift.Text = rm.GetString("shiftText", culture);
-            cb_Shift.PromptText = rm.GetString("shiftText", culture);
-            btn_staff.Text = "+ " + rm.GetString("staffText", culture);
-            lbl_staffList.Text = rm.GetString("staffListText", culture);
-            lbl_AssignShift.Text = rm.GetString("assignShiftText", culture);
-            btn_Back.Text = rm.GetString("backText", culture);
         }
     }
 }

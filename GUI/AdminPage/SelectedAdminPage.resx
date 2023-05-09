@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pb_Logo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGQAAABlCAYAAAC7vkbxAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAAFMtJREFUeF7tnQeYVEW2x0uMINA9zZAkCgZERRFWxYAroosRMaIPXAmucQH36Zoz
@@ -757,10 +757,10 @@
         Rf0Wi6kFkf8HrazWeuGpsYIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pb_AccountIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAAAcpJREFUSEvlVTsvBFEYPbNBQ3buLCKhEpWCRCQqhYTGD/CIRKMRiUcnGgoSfgIK
+        DwAACw8BkvkDpQAAAcpJREFUSEvlVTsvBFEYPbNBQ3buLCKhEpWCRCQqhYTGD/CIRKMRiUcnGgoSfgIK
         Eb1aQcEPoPEqFILdmUEiQiIr8Vhn+Bg7eyPuUHGSk93ZPed8330O/he2gWIfZW0ZqOkM7EV+Tp7Dbg9+
         F8nPcIaKahf2umupJ9dyciH5DLVxgdIqkcZDGuU17HorPzyf/H/zCqmkWMzhwhlnxw+68M/0YQ+JxRws
         sqsLLSAUlycmMpa614YWMisWc3iWc6sJLGCgE4s5PDhrutAoPaRWxWKONJKdDMlGQyO85Jo0icUcOSDh

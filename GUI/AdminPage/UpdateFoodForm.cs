@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Resources;
-using System.Globalization;
-using GUI.AdminPage;
 
 namespace WinFormsApp2.AdminPage
 {
@@ -17,13 +14,10 @@ namespace WinFormsApp2.AdminPage
     {
         private String UpdateFoodID = "0";
         Dictionary<string, string> MenuItem;
-        CultureInfo culture;
         public UpdateFoodForm(String UpdateFoodID)
         {
             InitializeComponent();
             this.UpdateFoodID = UpdateFoodID;
-            culture = CultureInfo.CurrentCulture;
-            SetLanguage("en-US");
         }
         public static Image Base64ToImage(string base64String)
         {
@@ -57,8 +51,7 @@ namespace WinFormsApp2.AdminPage
                 if (item.ContainsKey("Name"))
                 {
                     string RoomName = item["Name"].ToString();
-                    //cb_RoomID.Items.Add(RoomName);
-                    
+                    cb_RoomID.Items.Add(RoomName);
                 }
             }
             BUS.Menu menu = new BUS.Menu();
@@ -66,12 +59,11 @@ namespace WinFormsApp2.AdminPage
             this.tb_NameOfFood.Texts = MenuItem["Name"];
             this.tb_Price.Texts = MenuItem["Price"];
             this.cb_TypeofFood.SelectedIndex = int.Parse(MenuItem["KindFoodID"]);
-            //this.cb_RoomID.SelectedIndex = int.Parse(MenuItem["RoomID"]);
+            this.cb_RoomID.SelectedIndex = int.Parse(MenuItem["RoomID"]);
             this.UploadPlaceBox.Image = Base64ToImage(MenuItem["URLImage"]);
             ImageURL = MenuItem["URLImage"];
             btn_addPicture.Visible = false;
-            
-            btn_PictueLabel.Visible = false;
+            btn_placeholderlabel.Visible = false;
         }
         String ImageURL = "";
         private void btn_addPicture_Click(object sender, EventArgs e)
@@ -87,7 +79,7 @@ namespace WinFormsApp2.AdminPage
                     byte[] imageData = File.ReadAllBytes(imageLocation);
                     ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
-                    btn_PictueLabel.Visible = false;
+                    btn_placeholderlabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
                 }
             }
@@ -110,7 +102,7 @@ namespace WinFormsApp2.AdminPage
                     byte[] imageData = File.ReadAllBytes(imageLocation);
                     ImageURL = Convert.ToBase64String(imageData);
                     btn_addPicture.Visible = false;
-                    btn_PictueLabel.Visible = false;
+                    btn_placeholderlabel.Visible = false;
                     UploadPlaceBox.ImageLocation = imageLocation;
                 }
             }
@@ -134,13 +126,9 @@ namespace WinFormsApp2.AdminPage
             {
                 MenuItem["KindFoodID"] = (this.cb_TypeofFood.SelectedIndex + 1).ToString();
             }
-            //if (this.cb_RoomID.SelectedItem != null)
+            if (this.cb_RoomID.SelectedItem != null)
             {
-<<<<<<< HEAD
                 MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
-=======
-            //MenuItem["RoomID"] = (this.cb_RoomID.SelectedIndex + 1).ToString();
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
             }
             MenuItem["URLImage"] = ImageURL.ToString();
             BUS.Menu menu = new BUS.Menu();
@@ -157,62 +145,10 @@ namespace WinFormsApp2.AdminPage
                 MessageBox.Show("Cập nhật thất bại");
             }
         }
-<<<<<<< HEAD
 
         private void btn_placeholderlabel_Click(object sender, EventArgs e)
         {
 
-=======
-        private void SetLanguage(string cultureName)
-        {
-            culture = CultureInfo.CreateSpecificCulture(cultureName);
-            ResourceManager rm = new
-                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
-            btn_UpdateFood.Text = rm.GetString("updateFoodText", culture);
-            btn_AddComboFood.Text = rm.GetString("addComboText", culture);
-            btn_PictueLabel.Text = rm.GetString("addImageText", culture);
-            btn_LockFood.Text = rm.GetString("lockFoodText", culture);
-            btn_Signout.Text = rm.GetString("signoutText", culture);
-            tb_NameOfFood.PlaceholderText = rm.GetString("foodNameText", culture);
-            tb_Price.PlaceholderText = rm.GetString("priceText", culture);
-            cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
-            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
-            btn_AddFood.Text = rm.GetString("addFoodText", culture);
-            btn_ChooseDish.Text = rm.GetString("chooseDishText", culture);
-        }
-        private void btn_AddFood_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddFood form = new AddFood();
-            form.ShowDialog();
-            this.Close();
-        }
-
-        private void btn_AddComboFood_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddComboFood form = new AddComboFood();
-            form.ShowDialog();
-            this.Close();
-        }
-
-        private void btn_LockFood_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LockFood form = new LockFood();
-            form.ShowDialog();
-            this.Close();
-        }
-
-        
-
-        private void btn_AddingFood_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AdminAddingComboFood form = new AdminAddingComboFood();
-            form.ShowDialog();
-            this.Close();
->>>>>>> 8d249ced943f806d153ec3e35ac6189216f94312
         }
     }
 }

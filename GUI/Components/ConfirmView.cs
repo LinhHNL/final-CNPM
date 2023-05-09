@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI.Components
+namespace WinFormsApp2.Components
 {
     public partial class ConfirmView : UserControl
     {
         private String Tenmon = "";
-        public String IDMon = "";
+        private String IDMon = "";
         private String Giamon = "";
         private int index = 0;
         private int SoLuong = 0;
-        private GUI.ConfirmView ContextConfirm;
+        private ShoppingCartForm context;
         public ConfirmView()
         {
             InitializeComponent();
@@ -35,27 +35,49 @@ namespace GUI.Components
             }
             return pricestr + " ₫";
         }
-
-        public ConfirmView(string IDMon, string TenMon, int SoLuong, String GiaMon, GUI.ConfirmView context)
+        public ConfirmView(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list, ShoppingCartForm context)
         {
+            // Set index
+            index = list.Count();
             //Set số lượng
-            this.IDMon = IDMon;
             this.Tenmon = TenMon;
             this.Giamon = GiaMon;
             this.SoLuong = SoLuong;
             InitializeComponent();
             lbl_TenMon.Text = this.Tenmon;
             lbl_SoLuong.Text = this.SoLuong.ToString();
-            this.ContextConfirm = context;
+            this.context = context;
+        }
+        public ConfirmView(string TenMon, int SoLuong, String GiaMon)
+        {
+            //Set số lượng
+            this.Tenmon = TenMon;
+            this.Giamon = GiaMon;
+            this.SoLuong = SoLuong;
+            InitializeComponent();
+            lbl_TenMon.Text = this.Tenmon;
+            lbl_SoLuong.Text = this.SoLuong.ToString();
+            this.context = context;
         }
 
-        private void btn_ConfirmFood_Click(object sender, EventArgs e)
+        private void add_them_soluong_Click(object sender, EventArgs e)
         {
-            BUS.TempBill tempBill = new BUS.TempBill();
-            Dictionary<String, String> StatusInfo = new Dictionary<String, String>();
-            StatusInfo.Add("MenuID", IDMon);
-            tempBill.tryingChangeStatus(StatusInfo);
-            ContextConfirm.addingShowDetailMon();
+            MonAnComponent monancantang = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList[index - 1];
+            monancantang.TangSoLuong();
+            lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+            context.UpdatePrice();
+        }
+
+        private void btn_giamsoluong_Click(object sender, EventArgs e)
+        {
+            MonAnComponent monancantang = StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList[index - 1];
+            if (monancantang.getSoLuong() == 1)
+            {
+                return;
+            }
+            monancantang.GiamSoLuong();
+            lbl_SoLuong.Text = monancantang.getSoLuong().ToString();
+            context.UpdatePrice();
         }
     }
 }
