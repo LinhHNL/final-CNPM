@@ -15,6 +15,7 @@ namespace WinFormsApp2.Components
     {
         private String TenMon = "";
         private String GiaMon = "";
+        private String ID = "";
         private int Soluongdaadd = 0;
         private bool Checking = false;
         private AdminAddingComboFood context;
@@ -25,14 +26,37 @@ namespace WinFormsApp2.Components
             lbl_ten.Text = ten;
             btn_uncheckedadding.Hide();
         }
-
-
+        public static Image Base64ToImage(string base64String)
+        {
+            // Convert the Base64 string to a byte array
+            var bytes = Convert.FromBase64String(base64String);
+            // Create a MemoryStream from the byte array
+            using (var ms = new MemoryStream(bytes))
+            {
+                // Create an Image from the MemoryStream
+                var image = Image.FromStream(ms);
+                return image;
+            }
+        }
+        public MonAnComponentForAdding(String ID, String ten, String URLImage, AdminAddingComboFood context)
+        {
+            InitializeComponent();
+            this.ID = ID;
+            TenMon = ten;
+            this.context = context;
+            lbl_ten.Text = ten;
+            pb_FoodImage.Image = Base64ToImage(URLImage);
+        }
         public MonAnComponentForAdding(String ten, AdminAddingComboFood context)
         {
             InitializeComponent();
             TenMon = ten;
             lbl_ten.Text = ten;
             this.context = context;
+        }
+        public String getIDMon()
+        {
+            return ID;
         }
         public String getTenMon()
         {
@@ -71,11 +95,11 @@ namespace WinFormsApp2.Components
             btn_add_them_soluong.Hide();
             btn_uncheckedadding.Show();
             this.setTrangThai();
-            if(this.Checking && StoringMonAnComponentForAdding.StoringMonAnAdding.Find(x => x.getTenMon().Equals(this.getTenMon())) == null)
+            if (this.Checking && StoringMonAnComponentForAdding.StoringMonAnAdding.Find(x => x.getTenMon().Equals(this.getTenMon())) == null)
             {
-            this.Soluongdaadd++;
-            StoringMonAnComponentForAdding.StoringMonAnAdding.Add(this);
-            StoringMonAnPanel.StoringMonAnPanelList.Add(new Components.MonAnAddingInPanel(this.TenMon, this));
+                this.Soluongdaadd++;
+                StoringMonAnComponentForAdding.StoringMonAnAdding.Add(this);
+                StoringMonAnPanel.StoringMonAnPanelList.Add(new Components.MonAnAddingInPanel(this.TenMon, this));
             }
             context.HienThiMonAn();
         }

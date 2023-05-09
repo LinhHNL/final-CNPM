@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,14 +13,11 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoTaoPhieuNhapHang : MetroFramework.Forms.MetroForm
     {
-        public KiemKhoTaoPhieuNhapHang()
+        private int IDMonHang = 0;
+        public KiemKhoTaoPhieuNhapHang(int iDMonHang)
         {
             InitializeComponent();
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
+            this.IDMonHang = iDMonHang;
         }
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
         {
@@ -43,5 +41,7 @@ namespace WinFormsApp2.KhoPage
             form.ShowDialog();
             this.Close();
         }
+
+
     }
 }

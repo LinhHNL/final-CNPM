@@ -41,9 +41,6 @@
             btn_PhieuNhapHang = new CustomControls.RoundedButton();
             metroGrid1 = new MetroFramework.Controls.MetroGrid();
             dgv_NhapHang = new MetroFramework.Controls.MetroGrid();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             label4 = new Label();
             pictureBox2 = new PictureBox();
@@ -53,6 +50,9 @@
             btn_HangTrongKho = new CustomControls.RoundedButton();
             btn_KiemKho = new CustomControls.RoundedButton();
             pictureBox1 = new PictureBox();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)metroGrid1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_NhapHang).BeginInit();
             metroPanel1.SuspendLayout();
@@ -190,6 +190,7 @@
             dgv_NhapHang.GridColor = Color.FromArgb(197, 198, 198);
             dgv_NhapHang.Location = new Point(269, 125);
             dgv_NhapHang.Name = "dgv_NhapHang";
+            dgv_NhapHang.ReadOnly = true;
             dgv_NhapHang.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = Color.FromArgb(0, 174, 219);
@@ -206,27 +207,7 @@
             dgv_NhapHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgv_NhapHang.Size = new Size(905, 463);
             dgv_NhapHang.TabIndex = 32;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Mã nhập hàng";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Ngày/Giờ";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Trạng thái";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
+            dgv_NhapHang.CellClick += dgv_NhapHang_CellClick;
             // 
             // metroPanel1
             // 
@@ -374,6 +355,27 @@
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
+            // Column1
+            // 
+            Column1.HeaderText = "Mã nhập hàng";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Ngày/Giờ";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Người Nhập";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.ReadOnly = true;
+            // 
             // KiemKhoNhapHang
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -402,9 +404,6 @@
         private CustomControls.RoundedButton btn_PhieuNhapHang;
         private MetroFramework.Controls.MetroGrid metroGrid1;
         private MetroFramework.Controls.MetroGrid dgv_NhapHang;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private Label label4;
         private PictureBox pictureBox2;
@@ -414,5 +413,8 @@
         private CustomControls.RoundedButton btn_HangTrongKho;
         private CustomControls.RoundedButton btn_KiemKho;
         private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
     }
 }

@@ -45,6 +45,8 @@ namespace WinFormsApp2
             roundedButton10 = new RoundedButton();
             btn_ChangetoForm = new RoundedButton();
             panel_monan_1 = new FlowLayoutPanel();
+            btn_ComfirmFoodChange = new RoundedButton();
+            btn_Payment = new RoundedButton();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tile_blacklayout.SuspendLayout();
@@ -242,7 +244,7 @@ namespace WinFormsApp2
             btn_signInForm.FlatStyle = FlatStyle.Flat;
             btn_signInForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_signInForm.ForeColor = Color.White;
-            btn_signInForm.Location = new Point(954, 27);
+            btn_signInForm.Location = new Point(954, 46);
             btn_signInForm.Margin = new Padding(3, 4, 3, 4);
             btn_signInForm.Name = "btn_signInForm";
             btn_signInForm.Size = new Size(117, 35);
@@ -262,7 +264,7 @@ namespace WinFormsApp2
             roundedButton10.FlatStyle = FlatStyle.Flat;
             roundedButton10.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             roundedButton10.ForeColor = Color.White;
-            roundedButton10.Location = new Point(1077, 27);
+            roundedButton10.Location = new Point(1077, 46);
             roundedButton10.Margin = new Padding(3, 4, 3, 4);
             roundedButton10.Name = "roundedButton10";
             roundedButton10.Size = new Size(117, 35);
@@ -300,18 +302,62 @@ namespace WinFormsApp2
             panel_monan_1.Size = new Size(935, 493);
             panel_monan_1.TabIndex = 22;
             // 
-            // MonAn
+            // btn_ComfirmFoodChange
+            // 
+            btn_ComfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BorderColor = Color.PaleVioletRed;
+            btn_ComfirmFoodChange.BorderRadius = 8;
+            btn_ComfirmFoodChange.BorderSize = 0;
+            btn_ComfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_ComfirmFoodChange.FlatStyle = FlatStyle.Flat;
+            btn_ComfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ComfirmFoodChange.ForeColor = Color.White;
+            btn_ComfirmFoodChange.Location = new Point(805, 46);
+            btn_ComfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ComfirmFoodChange.Name = "btn_ComfirmFoodChange";
+            btn_ComfirmFoodChange.Size = new Size(143, 35);
+            btn_ComfirmFoodChange.TabIndex = 37;
+            btn_ComfirmFoodChange.Text = "Xác Nhận Món";
+            btn_ComfirmFoodChange.TextColor = Color.White;
+            btn_ComfirmFoodChange.UseVisualStyleBackColor = false;
+            btn_ComfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
+            // 
+            // btn_Payment
+            // 
+            btn_Payment.BackColor = Color.FromArgb(229, 1, 17);
+            btn_Payment.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_Payment.BorderColor = Color.PaleVioletRed;
+            btn_Payment.BorderRadius = 8;
+            btn_Payment.BorderSize = 0;
+            btn_Payment.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Payment.FlatStyle = FlatStyle.Flat;
+            btn_Payment.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Payment.ForeColor = Color.White;
+            btn_Payment.Location = new Point(656, 46);
+            btn_Payment.Margin = new Padding(3, 4, 3, 4);
+            btn_Payment.Name = "btn_Payment";
+            btn_Payment.Size = new Size(143, 35);
+            btn_Payment.TabIndex = 38;
+            btn_Payment.Text = "Thanh toán";
+            btn_Payment.TextColor = Color.White;
+            btn_Payment.UseVisualStyleBackColor = false;
+            btn_Payment.Click += btn_Payment_Click;
+            // 
+            // AllMonAn
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1212, 660);
+            Controls.Add(btn_Payment);
+            Controls.Add(btn_ComfirmFoodChange);
             Controls.Add(panel_monan_1);
             Controls.Add(btn_ChangetoForm);
             Controls.Add(roundedButton10);
             Controls.Add(btn_signInForm);
             Controls.Add(tile_blacklayout);
             Controls.Add(metroPanel1);
-            Name = "MonAn";
+            Name = "AllMonAn";
             Style = MetroFramework.MetroColorStyle.White;
             Load += MonAn_Load_1;
             metroPanel1.ResumeLayout(false);
@@ -335,5 +381,7 @@ namespace WinFormsApp2
         private RoundedButton btn_ChangetoForm;
         private FlowLayoutPanel panel_monan_1;
         private Label lbl_priceshow;
+        private RoundedButton btn_ComfirmFoodChange;
+        private RoundedButton btn_Payment;
     }
 }

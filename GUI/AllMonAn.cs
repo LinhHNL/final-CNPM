@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using WinFormsApp2.Components;
+using GUI.ThanhToan;
 
 namespace WinFormsApp2
 {
@@ -16,9 +17,31 @@ namespace WinFormsApp2
     public partial class AllMonAn : MetroFramework.Forms.MetroForm
     {
         private string lbl_showprice = "0 VNĐ";
-        public AllMonAn()
+        public AllMonAn(String ResetLoad, int InitualValue)
         {
+            if (ResetLoad == "1")
+            {
+                StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            }
             InitializeComponent();
+            switch (InitualValue)
+            {
+                case 1:
+                    ChangeSection1();
+                    break;
+                case 2:
+                    ChangeSection2();
+                    break;
+                case 3:
+                    ChangeSection3();
+                    break;
+                case 4:
+                    ChangeSection4();
+                    break;
+                case 5:
+                    ChangeSection5();
+                    break;
+            }
         }
 
         private void MonAn_Load(object sender, EventArgs e)
@@ -55,8 +78,7 @@ namespace WinFormsApp2
         {
 
         }
-
-        private void roundedButton5_Click(object sender, EventArgs e)
+        private void ChangeSection1()
         {
             roundedButton5.BackColor = ColorTranslator.FromHtml("#E50111");
             roundedButton5.TextColor = ColorTranslator.FromHtml("#FFFFFF");
@@ -68,8 +90,7 @@ namespace WinFormsApp2
             roundedButton8.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(2);
         }
-
-        private void roundedButton6_Click(object sender, EventArgs e)
+        private void ChangeSection2()
         {
             roundedButton5.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton5.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -81,8 +102,7 @@ namespace WinFormsApp2
             roundedButton8.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(3);
         }
-
-        private void roundedButton7_Click(object sender, EventArgs e)
+        private void ChangeSection3()
         {
             roundedButton5.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton5.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -94,8 +114,7 @@ namespace WinFormsApp2
             roundedButton8.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(4);
         }
-
-        private void roundedButton8_Click(object sender, EventArgs e)
+        private void ChangeSection4()
         {
             roundedButton5.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton5.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -107,8 +126,7 @@ namespace WinFormsApp2
             roundedButton8.TextColor = ColorTranslator.FromHtml("#FFFFFF");
             RerenderKindFood(5);
         }
-
-        private void roundedButton9_Click(object sender, EventArgs e)
+        private void ChangeSection5()
         {
             roundedButton5.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton5.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -118,13 +136,37 @@ namespace WinFormsApp2
             roundedButton7.TextColor = ColorTranslator.FromHtml("#A09F9F");
             roundedButton8.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             roundedButton8.TextColor = ColorTranslator.FromHtml("#A09F9F");
-           
+        }
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            ChangeSection1();
+        }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            ChangeSection2();
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            ChangeSection3();
+        }
+
+        private void roundedButton8_Click(object sender, EventArgs e)
+        {
+            ChangeSection4();
+        }
+
+        private void roundedButton9_Click(object sender, EventArgs e)
+        {
+
+            ChangeSection5();
         }
 
         private void roundedButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -139,21 +181,14 @@ namespace WinFormsApp2
         private void RerenderKindFood(int kindfoodID)
         {
             panel_monan_1.Controls.Clear();
-            SqlConnection conn = new SqlConnection("Data Source = LAPTOP-VERULPGO\\SQLEXPRESS; Initial Catalog = hadilao; Integrated Security = True");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("Select * from menu where KindFoodID=" + kindfoodID, conn);
-
-            using (SqlDataReader reader = cmd.ExecuteReader())
+            BUS.Menu menu = new BUS.Menu();
+            List<Dictionary<string, string>> menuList = menu.getAllMenu();
+            foreach (Dictionary<string, string> item in menuList)
             {
-                while (reader.Read())
+                if (item["KindFoodID"] == kindfoodID.ToString() && item["Status"] == "1")
                 {
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(reader["ten"].ToString(), reader["giaban"].ToString()));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("PrettyU", "5000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Aju Nice", "50000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Home", "500000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Don't Wanna Cry", "5000000", this));
-                panel_monan_1.Controls.Add(new Components.MonAnComponent("Come back home, I'm the best", "50000000", this));
             }
             this.Updateprice();
         }
@@ -190,5 +225,20 @@ namespace WinFormsApp2
             this.lbl_showprice = pricestr + " VNĐ";
         }
 
+        private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GUI.ConfirmView confirmView = new GUI.ConfirmView();
+            confirmView.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HoaDonTong payment = new HoaDonTong();
+            payment.ShowDialog();
+            this.Close();
+        }
     }
 }

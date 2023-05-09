@@ -12,11 +12,12 @@ namespace WinFormsApp2.Components
 {
     public partial class MonAnComponenInShoppingCart : UserControl
     {
-        private String Tenmon = "";
-        private String Giamon = "";
-        private int index = 0;
-        private int SoLuong = 0;
-        private ShoppingCartForm context;
+        public String Tenmon = "";
+        public String Giamon = "";
+        public int index = 0;
+        public String MenuID = "-1";
+        public int SoLuong = 0;
+        public ShoppingCartForm context;
         public MonAnComponenInShoppingCart()
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace WinFormsApp2.Components
             }
             return pricestr + " ₫";
         }
-        public MonAnComponenInShoppingCart(string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list, ShoppingCartForm context)
+        public MonAnComponenInShoppingCart(string MenuID,string TenMon, int SoLuong, String GiaMon, List<MonAnComponent> list, ShoppingCartForm context)
         {
             // Set index
             index = list.Count();
@@ -47,6 +48,7 @@ namespace WinFormsApp2.Components
             lbl_SoLuong.Text = this.SoLuong.ToString();
             lbl_price.Text = ChangeGia(GiaMon);
             this.context = context;
+            this.MenuID = MenuID;
         }
 
         private void add_them_soluong_Click(object sender, EventArgs e)

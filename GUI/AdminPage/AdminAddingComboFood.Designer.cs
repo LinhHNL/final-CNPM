@@ -204,8 +204,8 @@
             panel_monan_1.Location = new Point(270, 86);
             panel_monan_1.Name = "panel_monan_1";
             panel_monan_1.Size = new Size(500, 529);
-            panel_monan_1.TabIndex = 23;            
-             
+            panel_monan_1.TabIndex = 23;
+            // 
             // flp_Hienthimonan
             // 
             flp_Hienthimonan.AutoScroll = true;
@@ -253,6 +253,7 @@
             btn_addbtn.Text = "Thêm";
             btn_addbtn.TextColor = Color.White;
             btn_addbtn.UseVisualStyleBackColor = false;
+            btn_addbtn.Click += btn_addbtn_Click;
             // 
             // metroTile1
             // 

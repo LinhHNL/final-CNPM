@@ -12,14 +12,11 @@ namespace WinFormsApp2.KhoPage
 {
     public partial class KiemKhoTaoPhieuXuatHang : MetroFramework.Forms.MetroForm
     {
-        public KiemKhoTaoPhieuXuatHang()
+        int NumberOfID = 0;
+        public KiemKhoTaoPhieuXuatHang(int numberOfID)
         {
             InitializeComponent();
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
-            dgv_HangHoa.Rows.Add("0", "asd", "asd");
+            NumberOfID = numberOfID;
         }
         private void btn_HangTrongKho_Click(object sender, EventArgs e)
         {
@@ -41,6 +38,11 @@ namespace WinFormsApp2.KhoPage
             KiemKhoNhapHang form = new KiemKhoNhapHang();
             form.ShowDialog();
             this.Close();
+        }
+
+        private void KiemKhoTaoPhieuXuatHang_Load(object sender, EventArgs e)
+        {
+            this.tb_MaXuatHang.Texts = "XH" + this.NumberOfID.ToString();
         }
     }
 }
