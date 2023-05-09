@@ -793,6 +793,48 @@ namespace WinFormsApp2
             this.panel_monan_1.Size = new System.Drawing.Size(461, 511);
             this.panel_monan_1.TabIndex = 35;
             // 
+            // btn_ComfirmFoodChange
+            // 
+            btn_ComfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_ComfirmFoodChange.BorderColor = Color.PaleVioletRed;
+            btn_ComfirmFoodChange.BorderRadius = 8;
+            btn_ComfirmFoodChange.BorderSize = 0;
+            btn_ComfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_ComfirmFoodChange.FlatStyle = FlatStyle.Flat;
+            btn_ComfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ComfirmFoodChange.ForeColor = Color.White;
+            btn_ComfirmFoodChange.Location = new Point(799, 46);
+            btn_ComfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ComfirmFoodChange.Name = "btn_ComfirmFoodChange";
+            btn_ComfirmFoodChange.Size = new Size(143, 35);
+            btn_ComfirmFoodChange.TabIndex = 36;
+            btn_ComfirmFoodChange.Text = "Xác Nhận Món";
+            btn_ComfirmFoodChange.TextColor = Color.White;
+            btn_ComfirmFoodChange.UseVisualStyleBackColor = false;
+            btn_ComfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
+            // 
+            // btn_Payment
+            // 
+            btn_Payment.BackColor = Color.FromArgb(229, 1, 17);
+            btn_Payment.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_Payment.BorderColor = Color.PaleVioletRed;
+            btn_Payment.BorderRadius = 8;
+            btn_Payment.BorderSize = 0;
+            btn_Payment.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Payment.FlatStyle = FlatStyle.Flat;
+            btn_Payment.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Payment.ForeColor = Color.White;
+            btn_Payment.Location = new Point(650, 46);
+            btn_Payment.Margin = new Padding(3, 4, 3, 4);
+            btn_Payment.Name = "btn_Payment";
+            btn_Payment.Size = new Size(143, 35);
+            btn_Payment.TabIndex = 39;
+            btn_Payment.Text = "Thanh toán";
+            btn_Payment.TextColor = Color.White;
+            btn_Payment.UseVisualStyleBackColor = false;
+            btn_Payment.Click += btn_Payment_Click;
+            // 
             // HomepageFormSingle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -867,5 +909,7 @@ namespace WinFormsApp2
         private RoundedButton roundedButton24;
         private RoundedButton roundedButton21;
         private FlowLayoutPanel panel_monan_1;
+        private RoundedButton btn_ComfirmFoodChange;
+        private RoundedButton btn_Payment;
     }
 }

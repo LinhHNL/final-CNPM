@@ -12,6 +12,7 @@ namespace WinFormsApp2.Components
 {
     public partial class MonAnComponent : UserControl
     {
+        private String MenuID = "";
         private String TenMon = "";
         private String GiaMon = "";
         private String URLImage = "";
@@ -22,7 +23,7 @@ namespace WinFormsApp2.Components
         {
             InitializeComponent();
         }
-        public MonAnComponent(String ten, String gia)
+        public MonAnComponent(string menuID,String ten, String gia)
         {
             InitializeComponent();
             TenMon = ten;
@@ -30,7 +31,7 @@ namespace WinFormsApp2.Components
             lbl_ten.Text = ten;
             lbl_gia.Text = gia;
         }
-        public MonAnComponent(String ten, String gia, String URLImage)
+        public MonAnComponent(string menuID,String ten, String gia, String URLImage)
         {
             InitializeComponent();
             TenMon = ten;
@@ -41,15 +42,16 @@ namespace WinFormsApp2.Components
             pb_FoodImage.Image = Base64ToImage(URLImage);
         }
 
-        public MonAnComponent(String ten, String gia, String URLImage, AllMonAn context)
+        public MonAnComponent(string menuID,String ten, String gia, String URLImage, AllMonAn context)
         {
             InitializeComponent();
             TenMon = ten;
             Context = context;
             GiaMon = gia;
             lbl_ten.Text = ten;
-         lbl_gia.Text = ChangeGia(gia);
+            lbl_gia.Text = ChangeGia(gia);
             pb_FoodImage.Image = Base64ToImage(URLImage);
+            MenuID = menuID;
         }
         private string ChangeGia(String gia)
         {
@@ -77,7 +79,7 @@ namespace WinFormsApp2.Components
             }
         }
 
-        public MonAnComponent(String ten, String gia, String URLImage, HomepageFormSingle context)
+        public MonAnComponent(string menuID,String ten, String gia, String URLImage, HomepageFormSingle context)
         {
             InitializeComponent();
             TenMon = ten;
@@ -86,10 +88,15 @@ namespace WinFormsApp2.Components
             lbl_ten.Text = ten;
             lbl_gia.Text = ChangeGia(gia);
             pb_FoodImage.Image = Base64ToImage(URLImage);
+            this.MenuID = menuID;
         }
         public String getTenMon()
         {
             return TenMon;
+        }
+        public String getMenuID()
+        {
+            return MenuID;
         }
         public String getGiaMon()
         {

@@ -239,3 +239,20 @@ D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.HoaDonTong.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
 D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongBao.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UnlockedFood.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.LockedFood.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UpdateFoodCom.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.KitchenView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponentForKitchen.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.DetailKitchen.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.ViewingKitchen.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.PaymentView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ConfirmView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.InfoTransaction.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.LuuThongTin.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.ThongTinCoBan.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.TransactionInfo.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.HoaDonTong.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.ConfirmView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Bill.BillForm.resources

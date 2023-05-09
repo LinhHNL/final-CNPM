@@ -4,6 +4,8 @@ using System.Resources;
 using System.Globalization;
 using WinFormsApp2.KhoPage;
 using BUS;
+using GUI.ThanhToan;
+
 namespace WinFormsApp2
 {
     public partial class HomepageFormSingle : MetroFramework.Forms.MetroForm
@@ -17,7 +19,15 @@ namespace WinFormsApp2
         {
             InitializeComponent();
             SetLanguage("en-US");
-
+        }
+        public HomepageFormSingle(String ResetValue)
+        {
+            InitializeComponent();
+            SetLanguage("en-US");
+            if (ResetValue == "0")
+            {
+                Updateprice();
+            }
         }
 
 
@@ -113,7 +123,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0", 1);
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -121,7 +131,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0", 2);
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -129,7 +139,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0", 3);
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -137,7 +147,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0", 4);
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -145,7 +155,7 @@ namespace WinFormsApp2
         private void btn_ChangeToSectionFood5_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn homepageFormSingle = new AllMonAn();
+            AllMonAn homepageFormSingle = new AllMonAn("0", 5);
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -172,7 +182,7 @@ namespace WinFormsApp2
             {
                 if (item["KindFoodID"] == "1" && item["Status"] == "1")
                 {
-                panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"],item["URLImage"],this));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
             }
         }
@@ -207,6 +217,20 @@ namespace WinFormsApp2
             chooseOneText = rm.GetString("chooseOneText", culture);
             chooseTwoText = rm.GetString("chooseTwoText", culture);
             chooseFourText = rm.GetString("chooseFourText", culture);
+        private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GUI.ConfirmView confirmView = new GUI.ConfirmView();
+            confirmView.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HoaDonTong payment = new HoaDonTong();
+            payment.ShowDialog();
+            this.Close();
         }
     }
 }

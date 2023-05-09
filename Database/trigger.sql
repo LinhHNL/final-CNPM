@@ -1,10 +1,10 @@
 ﻿
-use hadilao
+use haidilao
 go
 ----customer 
 CREATE TRIGGER CheckCustomerExists
 ON Customers
-FOR INSERT
+INSTEAD OF INSERT
 AS
 BEGIN
  -- Kiểm tra trường Phone
@@ -20,10 +20,15 @@ BEGIN
 BEGIN
 RAISERROR ('Customer with phone number  already exists', 16, 1);
 ROLLBACK TRANSACTION;
+	
 RETURN;
 END
+ELSE
+	INSERT Customers(name, phone, address, password, point, levelid)
+   SELECT name, phone, address, password,0,1 FROM  inserted
 END
 GO
+
 
 CREATE TRIGGER tr_UpdateCustomer
 ON Customers
@@ -202,24 +207,25 @@ END
 
 
 go 
+
 CREATE TRIGGER trg_UpdateCustomerLevel
 ON Transactions
 AFTER INSERT, UPDATE
 AS
 BEGIN
-  UPDATE Customer
+  UPDATE Customers
   SET LevelID = (
     SELECT TOP 1 LevelID
     FROM Level
     WHERE condition <= (
       SELECT SUM(TotalPrice)
       FROM Transactions
-      WHERE CustomerID = inserted.CustomerID
+      WHERE CustormerID = inserted.CustormerID
     )
     ORDER BY condition DESC
   )
-  FROM Customer
-  INNER JOIN inserted ON Customer.CustomerID = inserted.CustomerID
+  FROM Customers
+  INNER JOIN inserted ON Customers.CustormerID = inserted.CustormerID
 END
 GO
 

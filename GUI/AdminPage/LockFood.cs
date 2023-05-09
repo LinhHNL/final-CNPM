@@ -44,11 +44,11 @@ namespace WinFormsApp2.AdminPage
             }
             foreach (Dictionary<string, string> item in menuList)
             {
-                if (item["Status"] == "1")
+                if (item["Status"] == "1" && item["Initual"]=="0")
                 {
                     pnl_food_lock.Controls.Add(new UnlockedFood(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
-                if (item["Status"] == "0")
+                if (item["Status"] == "0" && item["Initual"] == "0")
                 {
                     pnl_food_lock.Controls.Add(new LockedFood(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }

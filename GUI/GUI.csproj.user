@@ -22,6 +22,12 @@
     <Compile Update="AdminPage\UpdateFoodForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Bill\BillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Components\ConfirmView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Components\KitchenView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -45,6 +51,9 @@
     </Compile>
     <Compile Update="Components\UpdateFoodCom.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ConfirmView.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Update="CustomControls\ButtonTrangThai.cs">
       <SubType>UserControl</SubType>

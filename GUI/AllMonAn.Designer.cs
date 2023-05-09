@@ -329,5 +329,7 @@ namespace WinFormsApp2
         private RoundedButton btn_Cart;
         private FlowLayoutPanel panel_monan_1;
         private Label lbl_priceshow;
+        private RoundedButton btn_ComfirmFoodChange;
+        private RoundedButton btn_Payment;
     }
 }

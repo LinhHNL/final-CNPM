@@ -31,7 +31,7 @@ namespace GUI.Kitchen
 
         private void DetailKitchen_Load(object sender, EventArgs e)
         {
-            flp_showDetailMon.Controls.Clear();
+            /* flp_showDetailMon.Controls.Clear();
             BUS.TempBill TempBill = new BUS.TempBill();
             List<Dictionary<string, string>> tempDetailList = TempBill.GetAllTempBillDetailsOfTempBill(BillID);
             BUS.Menu menu = new BUS.Menu();
@@ -40,12 +40,12 @@ namespace GUI.Kitchen
                 Dictionary<string, string> MonAnInfo = new Dictionary<string, string>();
                 MonAnInfo = menu.getMonAnByID(item["MenuID"]);
                 flp_showDetailMon.Controls.Add(new MonAnComponentForKitchen(item["MenuID"], MonAnInfo["Name"], int.Parse(item["NumberOfFood"])));
-            }
+            }*/
         }
 
         private void btn_ChangeStatus_Click(object sender, EventArgs e)
         {
-            BUS.TempBill TempBill = new BUS.TempBill();
+            /*BUS.TempBill TempBill = new BUS.TempBill();
             Dictionary<string, string> StatusInfo=new Dictionary<string, string>();
             foreach (MonAnComponentForKitchen element in flp_showDetailMon.Controls.OfType<MonAnComponentForKitchen>())
             {
@@ -56,7 +56,7 @@ namespace GUI.Kitchen
             this.Hide();
             ViewingKitchen ViewingKitchen = new ViewingKitchen();
             ViewingKitchen.Show();
-            this.Close();
+            this.Close();*/
         }
 
         public void SetLanguage(string cultureName)

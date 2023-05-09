@@ -12,6 +12,7 @@ using WinFormsApp2.Components;
 using System.Resources;
 using System.Globalization;
 using WinFormsApp2.KhoPage;
+using GUI.ThanhToan;
 
 namespace WinFormsApp2
 {
@@ -21,9 +22,32 @@ namespace WinFormsApp2
         private string lbl_showprice = "0 VNĐ";
         CultureInfo culture;
         public AllMonAn()
+        public AllMonAn(String ResetLoad, int InitualValue)
         {
+            if (ResetLoad == "1")
+            {
+                StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
+            }
             InitializeComponent();
             SetLanguage("en-US");
+            switch (InitualValue)
+            {
+                case 1:
+                    ChangeSection1();
+                    break;
+                case 2:
+                    ChangeSection2();
+                    break;
+                case 3:
+                    ChangeSection3();
+                    break;
+                case 4:
+                    ChangeSection4();
+                    break;
+                case 5:
+                    ChangeSection5();
+                    break;
+            }
         }
 
         private void MonAn_Load(object sender, EventArgs e)
@@ -60,8 +84,7 @@ namespace WinFormsApp2
         {
 
         }
-
-        private void roundedButton5_Click(object sender, EventArgs e)
+        private void ChangeSection1()
         {
             btn_SavouryFood.BackColor = ColorTranslator.FromHtml("#E50111");
             btn_SavouryFood.TextColor = ColorTranslator.FromHtml("#FFFFFF");
@@ -73,8 +96,7 @@ namespace WinFormsApp2
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(2);
         }
-
-        private void roundedButton6_Click(object sender, EventArgs e)
+        private void ChangeSection2()
         {
             btn_SavouryFood.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_SavouryFood.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -86,8 +108,7 @@ namespace WinFormsApp2
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(3);
         }
-
-        private void roundedButton7_Click(object sender, EventArgs e)
+        private void ChangeSection3()
         {
             btn_SavouryFood.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_SavouryFood.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -99,8 +120,7 @@ namespace WinFormsApp2
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#A09F9F");
             RerenderKindFood(4);
         }
-
-        private void roundedButton8_Click(object sender, EventArgs e)
+        private void ChangeSection4()
         {
             btn_SavouryFood.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_SavouryFood.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -112,8 +132,7 @@ namespace WinFormsApp2
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#FFFFFF");
             RerenderKindFood(5);
         }
-
-        private void roundedButton9_Click(object sender, EventArgs e)
+        private void ChangeSection5()
         {
             btn_SavouryFood.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_SavouryFood.TextColor = ColorTranslator.FromHtml("#A09F9F");
@@ -124,12 +143,38 @@ namespace WinFormsApp2
             btn_Beverage.BackColor = ColorTranslator.FromHtml("#FFFFFF");
             btn_Beverage.TextColor = ColorTranslator.FromHtml("#A09F9F");
            
+            
+        }
+        private void roundedButton5_Click(object sender, EventArgs e)
+        {
+            ChangeSection1();
+        }
+
+        private void roundedButton6_Click(object sender, EventArgs e)
+        {
+            ChangeSection2();
+        }
+
+        private void roundedButton7_Click(object sender, EventArgs e)
+        {
+            ChangeSection3();
+        }
+
+        private void roundedButton8_Click(object sender, EventArgs e)
+        {
+            ChangeSection4();
+        }
+
+        private void roundedButton9_Click(object sender, EventArgs e)
+        {
+
+            ChangeSection5();
         }
 
         private void roundedButton4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -150,7 +195,7 @@ namespace WinFormsApp2
             {
                 if (item["KindFoodID"] == kindfoodID.ToString() && item["Status"] == "1")
                 {
-                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["Name"], item["Price"], item["URLImage"], this));
+                    panel_monan_1.Controls.Add(new Components.MonAnComponent(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
             }
             this.Updateprice();
@@ -205,5 +250,20 @@ namespace WinFormsApp2
         }
 
 
+        private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GUI.ConfirmView confirmView = new GUI.ConfirmView();
+            confirmView.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HoaDonTong payment = new HoaDonTong();
+            payment.ShowDialog();
+            this.Close();
+        }
     }
 }
