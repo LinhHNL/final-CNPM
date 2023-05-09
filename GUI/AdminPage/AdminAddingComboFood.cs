@@ -13,6 +13,7 @@ using WinFormsApp2.Components;
 using BUS;
 using System.Resources;
 using System.Globalization;
+using GUI.AdminPage;
 
 namespace WinFormsApp2.AdminPage
 {

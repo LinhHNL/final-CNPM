@@ -13,6 +13,8 @@ using BUS;
 using System.Resources;
 using System.Globalization;
 using System.Text.RegularExpressions;
+using GUI.AdminPage;
+
 namespace WinFormsApp2.AdminPage
 {
     public partial class LockFood : MetroFramework.Forms.MetroForm
@@ -44,7 +46,7 @@ namespace WinFormsApp2.AdminPage
             }
             foreach (Dictionary<string, string> item in menuList)
             {
-                if (item["Status"] == "1" && item["Initual"]=="0")
+                if (item["Status"] == "1" && item["Initual"] == "0")
                 {
                     pnl_food_lock.Controls.Add(new UnlockedFood(item["MenuID"], item["Name"], item["Price"], item["URLImage"], this));
                 }
@@ -64,9 +66,6 @@ namespace WinFormsApp2.AdminPage
             btn_LockFood.Text = rm.GetString("lockFoodText", culture);
             lbl_AccountName.Text = rm.GetString("accountNameText", culture);
             btn_AddFood.Text = rm.GetString("addFoodText", culture);
-            lbl_Price.Text = rm.GetString("priceText", culture);
-            btn_Lock.Text = rm.GetString("lockText", culture);
-            lbl_FoodName.Text = rm.GetString("foodNameText", culture);
             btn_Signout.Text = rm.GetString("signoutText", culture);
         }
         private void btn_AddFood_Click(object sender, EventArgs e)
@@ -94,7 +93,7 @@ namespace WinFormsApp2.AdminPage
         }
         private void LockFood_Load(object sender, EventArgs e)
         {
-                UpdateMenu();
+            UpdateMenu();
         }
         private void btn_UpdateFood_Click(object sender, EventArgs e)
         {

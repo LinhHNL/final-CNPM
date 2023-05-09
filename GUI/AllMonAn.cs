@@ -21,7 +21,7 @@ namespace WinFormsApp2
     {
         private string lbl_showprice = "0 VNĐ";
         CultureInfo culture;
-        public AllMonAn()
+        public AllMonAn() { }
         public AllMonAn(String ResetLoad, int InitualValue)
         {
             if (ResetLoad == "1")

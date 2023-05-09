@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,14 +7,15 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2.AdminPage;
+using BUS;
 using System.Resources;
-
-namespace WinFormsApp2.AdminPage
+using System.Globalization;
+namespace GUI.AdminPage
 {
-    public partial class AddComboFood : MetroFramework.Forms.MetroForm
+    public partial class AddComboFood : MetroForm
     {
         CultureInfo culture;
         public AddComboFood()
@@ -105,11 +107,10 @@ namespace WinFormsApp2.AdminPage
             btn_PictueLabel.Text = rm.GetString("addImageText", culture);
             btn_LockFood.Text = rm.GetString("lockFoodText", culture);
             btn_Signout.Text = rm.GetString("signoutText", culture);
-            
-            tb_nameoffood.PlaceholderText = rm.GetString("foodNameText", culture);
-            tb_gia.PlaceholderText = rm.GetString("priceText", culture);
-            cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
-            //lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+
+            tb_NameOfFood.PlaceholderText = rm.GetString("foodNameText", culture);
+            tb_Price.PlaceholderText = rm.GetString("priceText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
             btn_AddFood.Text = rm.GetString("addFoodText", culture);
         }
         private void btn_AddFood_Click(object sender, EventArgs e)
@@ -153,12 +154,12 @@ namespace WinFormsApp2.AdminPage
         }
         private void AddingComboFood_Click(object sender, EventArgs e)
         {
-            
-            //String GiaCombo = this.tb_giacombo.Texts;
-            //String NameCombo = this.tb_nameofcombo.Texts;
+
+            String GiaCombo = this.tb_Price.Texts;
+            String NameCombo = this.tb_NameOfFood.Texts;
             this.Hide();
-            //AdminAddingComboFood AdminAddingComboFood = new AdminAddingComboFood(NameCombo, GiaCombo, this.ImageURL);
-            //AdminAddingComboFood.ShowDialog();
+            AdminAddingComboFood AdminAddingComboFood = new AdminAddingComboFood(NameCombo, GiaCombo, this.ImageURL);
+            AdminAddingComboFood.ShowDialog();
             this.Close();
         }
     }

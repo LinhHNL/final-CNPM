@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
+using GUI.AdminPage;
 
 namespace WinFormsApp2.AdminPage
 {

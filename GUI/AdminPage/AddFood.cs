@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using BUS;
 using System.Resources;
 using System.Globalization;
+using GUI.AdminPage;
 
 namespace WinFormsApp2.AdminPage
 {
@@ -118,7 +119,7 @@ namespace WinFormsApp2.AdminPage
                 MessageBox.Show("Thêm thất bại");
             }
         }
-        
+
         private void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);
@@ -135,7 +136,7 @@ namespace WinFormsApp2.AdminPage
             cb_TypeofFood.Texts = rm.GetString("foodTypeText", culture);
             cb_RoomID.Texts = rm.GetString("undertakingRoomText", culture);
             lbl_AccountName.Text = rm.GetString("accountNameText", culture);
-            btn_AddFood.Text = rm.GetString("addFoodText",culture);
+            btn_AddFood.Text = rm.GetString("addFoodText", culture);
         }
 
         private void btn_AddFood_Click(object sender, EventArgs e)

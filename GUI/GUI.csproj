@@ -30,7 +30,6 @@
     <Compile Update="AdminPage\UpdateFoodForm.cs" />
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />
-    <Compile Update="AdminPage\AddComboFood.cs" />
     <Compile Update="Components\ConfirmView.cs" />
     <Compile Update="Components\PaymentView.cs">
       <SubType>UserControl</SubType>

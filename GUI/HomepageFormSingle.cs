@@ -217,6 +217,7 @@ namespace WinFormsApp2
             chooseOneText = rm.GetString("chooseOneText", culture);
             chooseTwoText = rm.GetString("chooseTwoText", culture);
             chooseFourText = rm.GetString("chooseFourText", culture);
+        }
         private void btn_ComfirmFoodChange_Click(object sender, EventArgs e)
         {
             this.Hide();

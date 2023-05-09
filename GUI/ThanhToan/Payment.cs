@@ -8,12 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsApp2;
+using BUS;
+using System.Resources;
+using System.Globalization;
 
 namespace GUI.ThanhToan
 {
     public partial class Payment : MetroForm
     {
-        public Payment()
+        CultureInfo culture;
+        private List<Dictionary<String, String>> ListContainAllDetail;
+        private int Price = 0;
+        public Payment(List<Dictionary<String, String>> ListContainAllDetail,int Price)
         {
             this.ListContainAllDetail = ListContainAllDetail;
             this.Price = Price;
@@ -84,7 +91,7 @@ namespace GUI.ThanhToan
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);
             ResourceManager rm = new
-                ResourceManager("GUI.Language.MyResource", typeof(HoaDonTong).Assembly);
+             ResourceManager("GUI.Language.MyResource", typeof(HoaDonTong).Assembly);
             lbl_paymentDetail.Text = rm.GetString("paymentDetailText", culture);
             lbl_idbill.Text = rm.GetString("billIDText", culture);
             lbl_totalMoney.Text = rm.GetString("totalText", culture);

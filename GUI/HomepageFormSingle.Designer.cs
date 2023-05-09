@@ -812,7 +812,6 @@ namespace WinFormsApp2
             btn_ComfirmFoodChange.Text = "Xác Nhận Món";
             btn_ComfirmFoodChange.TextColor = Color.White;
             btn_ComfirmFoodChange.UseVisualStyleBackColor = false;
-            btn_ComfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
             // 
             // btn_Payment
             // 
@@ -833,7 +832,6 @@ namespace WinFormsApp2
             btn_Payment.Text = "Thanh toán";
             btn_Payment.TextColor = Color.White;
             btn_Payment.UseVisualStyleBackColor = false;
-            btn_Payment.Click += btn_Payment_Click;
             // 
             // HomepageFormSingle
             // 
