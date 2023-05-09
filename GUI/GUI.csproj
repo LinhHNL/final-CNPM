@@ -30,10 +30,7 @@
     <Compile Update="AdminPage\UpdateFoodForm.cs" />
     <Compile Update="AdminPage\UpdateFood.cs" />
     <Compile Update="AdminPage\LockFood.cs" />
-    <Compile Update="AdminPage\AddComboFood.cs" />
-    <Compile Update="Components\ConfirmView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="Components\ConfirmView.cs" />
     <Compile Update="Components\PaymentView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -54,6 +51,78 @@
     <Compile Update="KhoPage\KiemKhoTaoPhieuXuatHang.cs" />
     <Compile Update="KhoPage\KiemKhoNhapHang.cs" />
     <Compile Update="AllMonAn.cs" />
+    <Compile Update="Language\MyResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Update="StaffAccount\DonTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\LamDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\BangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\ChamCong2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\LichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\DangKyLichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\SuaThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\SuaThongTinBHXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\SuaThongTinCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\ThongTinBHXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\ThongTinCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffAccount\ChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeLuongNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeKhoHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeXuatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeSanPhamBanRa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Statistic\ThongKeDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Language\MyResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

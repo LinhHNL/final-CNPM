@@ -9,16 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.Components;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.KhoPage;
 
 namespace WinFormsApp2
 {
     public partial class ShoppingCartForm : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
 
         public ShoppingCartForm()
         {
             InitializeComponent();
+            SetLanguage("en-US");
         }
+
+        string pricestrValue = "0";
         public void UpdatePrice()
         {
             int price = 0;
@@ -29,13 +36,14 @@ namespace WinFormsApp2
                 price += tmpprice;
             }
             string pricestr = price.ToString();
+            pricestrValue= pricestr;
             string changestr = "";
             for (int i = pricestr.Length - 3; i > 0; i -= 3)
             {
                 changestr = pricestr.Insert(i, ".");
                 pricestr = changestr;
             }
-            lbl_priceshow.Text = pricestr + " VNĐ";
+            lbl_Price.Text = pricestr + " VNĐ";
 
         }
         private void ShoppingCartForm_Load(object sender, EventArgs e)
@@ -48,7 +56,7 @@ namespace WinFormsApp2
             foreach (MonAnComponent i in listdachon)
             {
                 listdaxuly.Add(i);
-                flp_Hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getTenMon(), i.getSoLuong(), i.getGiaMon(), listdaxuly, this));
+                flp_Hienthimonan.Controls.Add(new MonAnComponenInShoppingCart(i.getMenuID(),i.getTenMon(), i.getSoLuong(), i.getGiaMon(), listdaxuly, this));
 
             }
             this.UpdatePrice();
@@ -57,7 +65,7 @@ namespace WinFormsApp2
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("0", 1);
             MonAn.ShowDialog();
             this.Close();
         }
@@ -67,7 +75,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("1", 1);
             MonAn.ShowDialog();
             this.Close();
         }
@@ -76,13 +84,68 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn();
+            AllMonAn MonAn = new AllMonAn("1", 1);
             MonAn.ShowDialog();
             this.Close();
         }
 
         private void btn_submitfood_Click(object sender, EventArgs e)
         {
+            BUS.TempBill tempBill = new BUS.TempBill();
+            Dictionary<String,String> tempBillInfo=new Dictionary<String,String>();
+            Dictionary<String, String> IDInfo = new Dictionary<String, String>();
+            tempBillInfo.Add("Price", pricestrValue);
+            if (BUS.SessionStorage.TempBillID.Equals("-1"))
+            {
+            IDInfo=tempBill.tryingInsertTempBill(tempBillInfo);
+            BUS.SessionStorage.TempBillID = IDInfo["TempBilID"];
+            }
+            if (BUS.SessionStorage.TempBillID != "-1")
+            {
+                foreach(MonAnComponenInShoppingCart item in flp_Hienthimonan.Controls)
+                {
+                    if (item.MenuID != "-1")
+                    {
+                        Dictionary<String, String> tempBillDetailInfo = new Dictionary<String, String>();
+                       
+                        tempBillDetailInfo.Add("MenuID", item.MenuID);
+                        tempBillDetailInfo.Add("Number", item.SoLuong.ToString());
+                        tempBillDetailInfo.Add("Price",item.Giamon.ToString());
+                        BUS.TempBill tempBill1 = new BUS.TempBill();
+                        tempBill1.tryingInsertTempBillDetail(tempBillDetailInfo);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm thất bại");
+                        return;
+                    }
+                }
+                this.Hide();
+                AllMonAn allMonAn = new AllMonAn("1", 1);
+                allMonAn.ShowDialog();
+                this.Close();
+            }
+            else{
+                MessageBox.Show("Thêm thất bại");
+            }
+        }
+
+
+        public void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
+                             typeof(HangHoaTrongKho).Assembly);
+            lbl_mySelections.Text = rm.GetString("mySelectionsText", culture);
+            btn_AccountForm.Text = rm.GetString("accountText", culture);
+            btn_SignOut.Text = rm.GetString("signoutText", culture);
+            btn_Back.Text = rm.GetString("backText", culture);
+            btn_SignOut.Text = rm.GetString("signoutText", culture);
+            lbl_Dish.Text = rm.GetString("dishText", culture);
+            btn_Order.Text = rm.GetString("orderText", culture);
+            lbl_Price.Text = rm.GetString("priceText", culture);
+            lbl_Total.Text = rm.GetString("totalText", culture);
+            lbl_DeleteAll.Text = rm.GetString("deleteAllText", culture);
         }
     }
 }
