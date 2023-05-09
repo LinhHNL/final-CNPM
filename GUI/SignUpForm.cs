@@ -29,7 +29,7 @@ namespace WinFormsApp2
                 {
                     BUS.SessionStorage.CustomerIDInUse = resultlist["id"];
                     this.Hide();
-                    HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
+                    HomepageFormSingle HomepageFormSingle = new HomepageFormSingle("0");
                     HomepageFormSingle.ShowDialog();
                     this.Close();
                 }

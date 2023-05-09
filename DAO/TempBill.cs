@@ -43,8 +43,8 @@ namespace DAO
             int NumberOfFood = int.Parse(TempBillDetailInfo["Number"]);
             float Price = (float)int.Parse(TempBillDetailInfo["Price"]);
             int Status = 0;
-            try
-            {
+            //try
+            //{
                 SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("InsertTempBillDetails", conn);
@@ -57,11 +57,11 @@ namespace DAO
                 SqlDataReader reader = cmd.ExecuteReader();
                 conn.Close();
                 return true;
-            }
+            /*}
             catch (Exception ex)
             {
                 return false;
-            }
+            }*/
         }
         public Dictionary<string, string> tryingInsertTempBill(Dictionary<string, string> TempBillInfo)
         {
@@ -70,9 +70,9 @@ namespace DAO
             int Status = 0;
             String TokenID = TempBillInfo["Token"];
             float Price = (float) int.Parse(TempBillInfo["Price"]);
-            try
-            {
-                SqlConnection conn = DatabaseConnection.connectDBFunc();
+            //try
+            //{
+            SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("InsertTempBill", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -87,13 +87,14 @@ namespace DAO
                 }
             conn.Close();
             return resultDic;
-            }
-            catch (Exception ex)
+            //}
+            /*catch (Exception ex)
             {
                 resultDic.Add("TempBilID", "-1");
                 return resultDic;
-            }
+            }*/
         }
+
         public bool tryingChangeStatus(Dictionary<string, string> StatusInfo) {
             String MenuID = StatusInfo["MenuID"];
             String IDFood = StatusInfo["BillID"];

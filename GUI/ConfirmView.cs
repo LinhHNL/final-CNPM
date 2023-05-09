@@ -29,7 +29,7 @@ namespace GUI
             if (BUS.SessionStorage.TempBillID == "-1")
             {
                 this.Hide();
-                AllMonAn allMonAn = new AllMonAn("0");
+                AllMonAn allMonAn = new AllMonAn("0",1);
                 allMonAn.ShowDialog();
                 this.Close();
             }
@@ -68,7 +68,7 @@ namespace GUI
             }
             addingShowDetailMon();
             this.Hide();
-            AllMonAn allMonAn = new AllMonAn("0");
+            AllMonAn allMonAn = new AllMonAn("0",1);
             allMonAn.ShowDialog();
             this.Close();
         }
@@ -76,7 +76,7 @@ namespace GUI
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn allMonAn = new AllMonAn("0");
+            AllMonAn allMonAn = new AllMonAn("0", 1);
             allMonAn.ShowDialog();
             this.Close();
         }

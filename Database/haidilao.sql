@@ -1,4 +1,4 @@
-use hadilao;
+use haidilao;
 GO
 CREATE TABLE Level
 (
@@ -403,3 +403,4 @@ CREATE TABLE TempBillDetails (
     FOREIGN KEY (TempBillId) REFERENCES TempBill(Id)
 )
 GO
+

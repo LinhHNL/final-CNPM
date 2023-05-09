@@ -1,9 +1,7 @@
 ﻿
-use hadilao
+use haidilao
 go
 ----customer 
-DROP Trigger CheckCustomerExists;
-GO
 CREATE TRIGGER CheckCustomerExists
 ON Customers
 INSTEAD OF INSERT
@@ -209,24 +207,25 @@ END
 
 
 go 
+
 CREATE TRIGGER trg_UpdateCustomerLevel
 ON Transactions
 AFTER INSERT, UPDATE
 AS
 BEGIN
-  UPDATE Customer
+  UPDATE Customers
   SET LevelID = (
     SELECT TOP 1 LevelID
     FROM Level
     WHERE condition <= (
       SELECT SUM(TotalPrice)
       FROM Transactions
-      WHERE CustomerID = inserted.CustomerID
+      WHERE CustormerID = inserted.CustormerID
     )
     ORDER BY condition DESC
   )
-  FROM Customer
-  INNER JOIN inserted ON Customer.CustomerID = inserted.CustomerID
+  FROM Customers
+  INNER JOIN inserted ON Customers.CustormerID = inserted.CustormerID
 END
 GO
 

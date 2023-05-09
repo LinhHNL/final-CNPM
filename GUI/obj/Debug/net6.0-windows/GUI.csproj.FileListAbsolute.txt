@@ -115,3 +115,4 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.HoaDonTong.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.ConfirmView.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Bill.BillForm.resources

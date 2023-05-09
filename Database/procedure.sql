@@ -1,5 +1,5 @@
 ﻿--check login  result = 0 là thất bạn 1 là thành công
-use hadilao
+use haidilao
 go
 CREATE PROCEDURE CheckLogin
     @phone VARCHAR(50),
@@ -620,6 +620,7 @@ Begin
 	Delete from Staff where StaffID = @ID
 End
 Go
+
 --lưu thông tin lịch sử giao dịch
 CREATE PROCEDURE InsertTransaction
     @TotalPrice FLOAT,
@@ -629,7 +630,10 @@ AS
 BEGIN
     INSERT INTO Transactions (TotalPrice, Date, CustormerID)
     VALUES (@TotalPrice, @Date, @CustomerId);
+	SELECT SCOPE_IDENTITY() AS TransactionID;
 END
+GO
+EXEC InsertTransaction 400000,'2020-10-06',1
 GO
 CREATE PROCEDURE GetTransactionById
     @TransactionId INT
@@ -2301,11 +2305,12 @@ as
 		select * from Staff where Name = @name
 	end
 GO
+EXEC Level_Insert 'Gà bình thường','Gà này chưa được nấu chín',30000;
+EXEC sp_add_menu 'Thức ăn và nước uống',40000,40,'',1,1,0,1;
+EXEC AddCustomer N'Khách hàng','99999999',N'Không có','0000000';
 EXEC Room_Insert 'Phòng chế biến gà thượng hạng','Phòng này chuyên gia chế gà có dáng nở nang'
 EXEC KindFood_Insert 'Gà thượng hạng','Gà thượng hạng thịt xương đầy đủ';
 EXEC KindFood_Insert 'Gà bình thường','Gà thường thịt xương tàm tạm';
 EXEC KindFood_Insert 'Gà hạng xoàng','Gà thường thịt xương không ngon';
-EXEC Level_Insert 'Gà bình thường','Gà này chưa được nấu chín',30000;
-EXEC sp_add_menu 'Thức ăn và nước uống',40000,40,'',1,1,0,1;
-EXEC AddCustomer N'Khách hàng','99999999',N'Không có','0000000';
-Select * from TempBillDetails
+Select * from Customers
+Select * from Transactions

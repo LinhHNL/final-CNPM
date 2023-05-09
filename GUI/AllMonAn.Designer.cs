@@ -334,7 +334,7 @@ namespace WinFormsApp2
             btn_Payment.FlatStyle = FlatStyle.Flat;
             btn_Payment.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btn_Payment.ForeColor = Color.White;
-            btn_Payment.Location = new Point(644, 46);
+            btn_Payment.Location = new Point(656, 46);
             btn_Payment.Margin = new Padding(3, 4, 3, 4);
             btn_Payment.Name = "btn_Payment";
             btn_Payment.Size = new Size(143, 35);

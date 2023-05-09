@@ -37,7 +37,7 @@
             cb_ChoosingPromotion = new WinFormsApp2.CustomControls.CustomComboBox();
             lbl_Payment = new Label();
             cb_Payment = new WinFormsApp2.CustomControls.CustomComboBox();
-            btn_ChangeStatus = new WinFormsApp2.CustomControls.RoundedButton();
+            btn_InsertTransaction = new WinFormsApp2.CustomControls.RoundedButton();
             lbl_datePayment = new Label();
             lbl_DatePaymentValue = new Label();
             SuspendLayout();
@@ -170,25 +170,26 @@
             cb_Payment.TabIndex = 43;
             cb_Payment.Texts = "Phương thức thanh toán";
             // 
-            // btn_ChangeStatus
+            // btn_InsertTransaction
             // 
-            btn_ChangeStatus.BackColor = Color.FromArgb(229, 1, 17);
-            btn_ChangeStatus.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_ChangeStatus.BorderColor = Color.PaleVioletRed;
-            btn_ChangeStatus.BorderRadius = 8;
-            btn_ChangeStatus.BorderSize = 0;
-            btn_ChangeStatus.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ChangeStatus.FlatStyle = FlatStyle.Flat;
-            btn_ChangeStatus.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ChangeStatus.ForeColor = Color.White;
-            btn_ChangeStatus.Location = new Point(684, 532);
-            btn_ChangeStatus.Margin = new Padding(3, 4, 3, 4);
-            btn_ChangeStatus.Name = "btn_ChangeStatus";
-            btn_ChangeStatus.Size = new Size(138, 35);
-            btn_ChangeStatus.TabIndex = 45;
-            btn_ChangeStatus.Text = "Thanh toán";
-            btn_ChangeStatus.TextColor = Color.White;
-            btn_ChangeStatus.UseVisualStyleBackColor = false;
+            btn_InsertTransaction.BackColor = Color.FromArgb(229, 1, 17);
+            btn_InsertTransaction.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_InsertTransaction.BorderColor = Color.PaleVioletRed;
+            btn_InsertTransaction.BorderRadius = 8;
+            btn_InsertTransaction.BorderSize = 0;
+            btn_InsertTransaction.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_InsertTransaction.FlatStyle = FlatStyle.Flat;
+            btn_InsertTransaction.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_InsertTransaction.ForeColor = Color.White;
+            btn_InsertTransaction.Location = new Point(684, 532);
+            btn_InsertTransaction.Margin = new Padding(3, 4, 3, 4);
+            btn_InsertTransaction.Name = "btn_InsertTransaction";
+            btn_InsertTransaction.Size = new Size(138, 35);
+            btn_InsertTransaction.TabIndex = 45;
+            btn_InsertTransaction.Text = "Thanh toán";
+            btn_InsertTransaction.TextColor = Color.White;
+            btn_InsertTransaction.UseVisualStyleBackColor = false;
+            btn_InsertTransaction.Click += btn_InsertTransaction_Click;
             // 
             // lbl_datePayment
             // 
@@ -223,7 +224,7 @@
             ClientSize = new Size(845, 591);
             Controls.Add(lbl_DatePaymentValue);
             Controls.Add(lbl_datePayment);
-            Controls.Add(btn_ChangeStatus);
+            Controls.Add(btn_InsertTransaction);
             Controls.Add(cb_Payment);
             Controls.Add(lbl_Payment);
             Controls.Add(cb_ChoosingPromotion);
@@ -250,7 +251,7 @@
         private WinFormsApp2.CustomControls.CustomComboBox cb_ChoosingPromotion;
         private Label lbl_Payment;
         private WinFormsApp2.CustomControls.CustomComboBox cb_Payment;
-        private WinFormsApp2.CustomControls.RoundedButton btn_ChangeStatus;
+        private WinFormsApp2.CustomControls.RoundedButton btn_InsertTransaction;
         private Label lbl_datePayment;
         private Label lbl_DatePaymentValue;
     }

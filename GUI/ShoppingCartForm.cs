@@ -59,7 +59,7 @@ namespace WinFormsApp2
         private void lbl_returnplace_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AllMonAn MonAn = new AllMonAn("0");
+            AllMonAn MonAn = new AllMonAn("0", 1);
             MonAn.ShowDialog();
             this.Close();
         }
@@ -69,7 +69,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn("1");
+            AllMonAn MonAn = new AllMonAn("1", 1);
             MonAn.ShowDialog();
             this.Close();
         }
@@ -78,7 +78,7 @@ namespace WinFormsApp2
         {
             StoringMonAnComponentShoppingCart.StoringMonAnComponentShoppingCartList.Clear();
             this.Hide();
-            AllMonAn MonAn = new AllMonAn("1");
+            AllMonAn MonAn = new AllMonAn("1", 1);
             MonAn.ShowDialog();
             this.Close();
         }
@@ -101,12 +101,7 @@ namespace WinFormsApp2
                     if (item.MenuID != "-1")
                     {
                         Dictionary<String, String> tempBillDetailInfo = new Dictionary<String, String>();
-                        /*
-                        int TempBillId = int.Parse(TempBillDetailInfo["TempBillId"]);
-                        int MenuID = int.Parse(TempBillDetailInfo["MenuID"]);
-                        int NumberOfFood = int.Parse(TempBillDetailInfo["Number"]);
-                        float Price = (float)int.Parse(TempBillDetailInfo["Price"]);
-                         */
+                       
                         tempBillDetailInfo.Add("MenuID", item.MenuID);
                         tempBillDetailInfo.Add("Number", item.SoLuong.ToString());
                         tempBillDetailInfo.Add("Price",item.Giamon.ToString());
@@ -120,7 +115,7 @@ namespace WinFormsApp2
                     }
                 }
                 this.Hide();
-                AllMonAn allMonAn = new AllMonAn("1");
+                AllMonAn allMonAn = new AllMonAn("1", 1);
                 allMonAn.ShowDialog();
                 this.Close();
             }

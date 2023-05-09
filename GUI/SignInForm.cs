@@ -53,7 +53,7 @@ namespace WinFormsApp2
         private void roundedButton2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            HomepageFormSingle homepageFormSingle = new HomepageFormSingle();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
             homepageFormSingle.ShowDialog();
             this.Close();
         }
@@ -75,7 +75,7 @@ namespace WinFormsApp2
                 {
                     SessionStorage.CustomerIDInUse = resultlist["id"];
                     this.Hide();
-                    HomepageFormSingle HomepageFormSingle = new HomepageFormSingle();
+                    HomepageFormSingle HomepageFormSingle = new HomepageFormSingle("0");
                     HomepageFormSingle.ShowDialog();
                     this.Close();
                  
