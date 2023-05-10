@@ -49,8 +49,8 @@ namespace DAO
         public List<Dictionary<string, string>> getAllMonAn()
         {
             List<Dictionary<string, string>> resultList = new List<Dictionary<string, string>>();
-            try
-            {
+            //try
+            //{
                 SqlConnection conn = DatabaseConnection.connectDBFunc();
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("sp_getAll_Menu", conn);
@@ -65,18 +65,17 @@ namespace DAO
                     resultDic.Add("URLImage", reader["URLImage"].ToString());
                     resultDic.Add("KindFoodID", reader["KindFoodID"].ToString());
                     resultDic.Add("RoomID", reader["RoomID"].ToString());
-                    resultDic.Add("Status", reader["Status"].ToString());
+                    resultDic.Add("Status", reader["status"].ToString());
                     resultDic.Add("Initual", reader["Initual"].ToString());
-
                     resultList.Add(resultDic);
                 }
                 conn.Close();
                 return resultList;
-            }
+            /*}
             catch (Exception ex)
             {
                 return resultList;
-            }
+            }*/
         }
         public bool tryingChangeMenu(Dictionary<string, string> MenuInfo)
         {

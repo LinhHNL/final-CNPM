@@ -8,20 +8,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinFormsApp2.Components;
 using WinFormsApp2;
+using BUS;
+using System.Resources;
+using System.Globalization;
 
 namespace GUI.ThanhToan
 {
     public partial class Payment : MetroForm
     {
-        List<Dictionary<String, String>> ListContainAllDetail = new List<Dictionary<String, String>>();
-        int Price = 0;
+        CultureInfo culture;
+        private List<Dictionary<String, String>> ListContainAllDetail;
+        private int Price = 0;
         public Payment(List<Dictionary<String, String>> ListContainAllDetail, int Price)
         {
             this.ListContainAllDetail = ListContainAllDetail;
             this.Price = Price;
             InitializeComponent();
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("en-US");
         }
         private string ChangeGia(String gia)
         {
@@ -47,12 +52,12 @@ namespace GUI.ThanhToan
 
         private void btn_InsertTransaction_Click(object sender, EventArgs e)
         {
-            BUS.Transaction transaction=new BUS.Transaction();
+            BUS.Transaction transaction = new BUS.Transaction();
             Dictionary<String, String> TransactionInfo = new Dictionary<String, String>();
             Dictionary<String, String> IDInfo = new Dictionary<String, String>();
-            TransactionInfo.Add("Price",this.Price.ToString());
+            TransactionInfo.Add("Price", this.Price.ToString());
             IDInfo = transaction.tryingInsertTransaction(TransactionInfo);
-            String TransactionID= IDInfo["TransactionID"];
+            String TransactionID = IDInfo["TransactionID"];
             if (TransactionID != "-1")
             {
                 foreach (Dictionary<String, String> item in ListContainAllDetail)
@@ -81,6 +86,21 @@ namespace GUI.ThanhToan
             {
                 MessageBox.Show("Thêm thất bại");
             }
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+             ResourceManager("GUI.Language.MyResource", typeof(HoaDonTong).Assembly);
+            lbl_paymentDetail.Text = rm.GetString("paymentDetailText", culture);
+            lbl_idbill.Text = rm.GetString("billIDText", culture);
+            lbl_totalMoney.Text = rm.GetString("totalText", culture);
+            lbl_datePayment.Text = rm.GetString("paymentDateText", culture);
+            lbl_offer.Text = rm.GetString("offerText", culture);
+            cb_offerID.Texts = rm.GetString("offerIDText", culture);
+            lbl_paymentMethod.Text = rm.GetString("paymentMethodText", culture);
+            cb_paymentMethod.Texts = rm.GetString("paymentMethodText", culture);
+            btn_pay.Text = rm.GetString("payText", culture);
         }
     }
 }

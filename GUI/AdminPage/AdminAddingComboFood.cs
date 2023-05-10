@@ -10,6 +10,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.Components;
+using BUS;
+using System.Resources;
+using System.Globalization;
+using GUI.AdminPage;
 
 namespace WinFormsApp2.AdminPage
 {
@@ -18,9 +22,12 @@ namespace WinFormsApp2.AdminPage
         private String TenCombo;
         private String GiaCombo;
         private String ImageURL;
+        CultureInfo culture;
         public AdminAddingComboFood()
         {
             InitializeComponent();
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("vi-VN");
         }
         public AdminAddingComboFood(String TenCombo, String GiaCombo, String ImageURL)
         {
@@ -81,14 +88,14 @@ namespace WinFormsApp2.AdminPage
         {
             String IdMenu = "";
             String SoLuongMon = "";
-            BUS.Combo combo= new BUS.Combo();
+            BUS.Combo combo = new BUS.Combo();
             Dictionary<string, string> ComboInfo = new Dictionary<string, string>();
             Dictionary<string, string> ComboDetailInfo = new Dictionary<string, string>();
             ComboInfo.Add("Name", TenCombo);
             ComboInfo.Add("Cost", GiaCombo);
             ComboInfo.Add("ImageURL", ImageURL);
             Dictionary<string, string> Result = combo.tryingAddingCombo(ComboInfo);
-            if (Result == null) 
+            if (Result == null)
             {
                 String IDCombo = Result["ComboID"];
                 foreach (MonAnComponentForAdding element in panel_monan_1.Controls.OfType<MonAnComponentForAdding>())
@@ -103,7 +110,7 @@ namespace WinFormsApp2.AdminPage
                     ComboDetailInfo.Add("MenuID", IdMenu);
                     ComboDetailInfo.Add("ComboID", IDCombo);
                     ComboDetailInfo.Add("NumberOfFood", SoLuongMon);
-                    if(!combo.tryingAddingComboDetail(ComboDetailInfo))
+                    if (!combo.tryingAddingComboDetail(ComboDetailInfo))
                     {
                         MessageBox.Show("Thêm thất bại");
                         break;
@@ -116,5 +123,61 @@ namespace WinFormsApp2.AdminPage
                 MessageBox.Show("Thêm thất bại");
             }
         }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AdminAddingComboFood).Assembly);
+
+            btn_UpdateFood.Text = rm.GetString("updateFoodText", culture);
+            btn_AddComboFood.Text = rm.GetString("addComboText", culture);
+            btn_LockFood.Text = rm.GetString("lockFoodText", culture);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_AddingFood.Text = rm.GetString("addText", culture);
+            btn_AddFood.Text = rm.GetString("addFoodText", culture);
+            lbl_Food.Text = rm.GetString("dishText", culture);
+            lbl_deleteAll.Text = rm.GetString("deleteAllText", culture);
+        }
+        private void btn_AddFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddFood form = new AddFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_AddComboFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddComboFood form = new AddComboFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_LockFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LockFood form = new LockFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_UpdateFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UpdateFood form = new UpdateFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_AddingFood_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminAddingComboFood form = new AdminAddingComboFood();
+            form.ShowDialog();
+            this.Close();
+        }
+
     }
 }

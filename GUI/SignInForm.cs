@@ -10,13 +10,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.Components;
 using BUS;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.KhoPage;
+
 namespace WinFormsApp2
 {
     public partial class SignInForm : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         public SignInForm()
         {
             InitializeComponent();
+            SetLanguage("en-US");
         }
 
         private void SignInForm_Load(object sender, EventArgs e)
@@ -25,11 +31,11 @@ namespace WinFormsApp2
         }
 
 
-       
+
 
         private void roundedButton1_MouseHover(object sender, EventArgs e)
         {
-            btn_login.Cursor = Cursors.Hand;
+            btn_Login.Cursor = Cursors.Hand;
         }
 
         private void SignInForm_Load_1(object sender, EventArgs e)
@@ -65,11 +71,11 @@ namespace WinFormsApp2
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            BUS.Customer customer=new BUS.Customer();
-            Dictionary<string, string> resultlist= new Dictionary<string, string>();
-            resultlist= customer.returnResultLogin(this.tb_phone.Texts.ToString(), this.tb_password.Texts.ToString());
+            BUS.Customer customer = new BUS.Customer();
+            Dictionary<string, string> resultlist = new Dictionary<string, string>();
+            resultlist = customer.returnResultLogin(this.tb_Phone.Texts.ToString(), this.tb_Password.Texts.ToString());
             String result = resultlist["result"];
-            if (this.tb_phone!=null & this.tb_password != null) 
+            if (this.tb_Phone != null & this.tb_Password != null)
             {
                 if (result == "1")
                 {
@@ -78,29 +84,62 @@ namespace WinFormsApp2
                     HomepageFormSingle HomepageFormSingle = new HomepageFormSingle("0");
                     HomepageFormSingle.ShowDialog();
                     this.Close();
-                 
+
                 }
                 else
                 {
-                    if(result == "0") {
+                    if (result == "0")
+                    {
                         lbl_errorMessage.Text = "Sai tài khoản và mật khẩu";
                     }
                     if (result == "-1")
                     {
                         lbl_errorMessage.Text = "Vui lòng nhập số điện thoại";
-                        tb_phone.Focus();
+                        tb_Phone.Focus();
                     }
-                    if(result == "-2") {
+                    if (result == "-2")
+                    {
                         lbl_errorMessage.Text = "Vui lòng nhập mật khẩu";
-                        tb_password.Focus();
+                        tb_Password.Focus();
                     }
-                    if(result == "-3"){
+                    if (result == "-3")
+                    {
                         lbl_errorMessage.Text = "Số điện thoại không hợp lệ";
-                        tb_phone.Focus();
+                        tb_Phone.Focus();
                     }
                 }
             }
-            
+
+        }
+
+        public void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new ResourceManager("GUI.Language.MyResource",
+                             typeof(HangHoaTrongKho).Assembly);
+            btn_Login.Text = rm.GetString("loginText", culture);
+            btn_LoginForm.Text = rm.GetString("loginText", culture);
+            btn_LoginGuest.Text = rm.GetString("loginGuestText", culture);
+            tb_Phone.PlaceholderText = rm.GetString("phoneText", culture);
+            tb_Password.PlaceholderText = rm.GetString("passwordText", culture);
+            btn_SignupForm.Text = rm.GetString("signupText", culture);
+            lbl_Login.Text = rm.GetString("loginText", culture);
+        }
+
+        private void btn_SignupForm_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUpForm signUpForm = new SignUpForm();
+            signUpForm.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_LoginGuest_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomepageFormSingle homepageFormSingle = new HomepageFormSingle("0");
+            homepageFormSingle.ShowDialog();
+            this.Close();
         }
     }
 }

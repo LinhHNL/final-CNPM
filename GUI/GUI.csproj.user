@@ -223,11 +223,19 @@
     <Compile Update="SignUpForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="StaffAccount\ThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ThanhToan\HoaDonTong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ThanhToan\Payment.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Language\MyResource.vi-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

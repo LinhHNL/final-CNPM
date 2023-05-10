@@ -13,7 +13,6 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
-C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddComboFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AdminAddingComboFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.LockFood.resources
@@ -51,8 +50,6 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.SuaThongTinHangHoa.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.ThemHangHoa.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.XemThongTinHangHoa.resources
-C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.English.resources
-C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.VietNam.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.HoSoNhanVien.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCong.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCongBangChamCong.resources
@@ -99,6 +96,146 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.dll
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.pdb
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.csproj.AssemblyReference.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddComboFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AddFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.AdminAddingComboFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.LockFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.SelectedAdminPage.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.UpdateFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AdminPage.UpdateFoodForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.AllMonAn.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnAddingInPanel.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponenInShoppingCart.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponent.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponentForAdding.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.ButtonTrangThai.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.Calendar.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.CalendarCell.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.CustomComboBox.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.LeftAlignRoundedTextBox.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.Line.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.myblacklayout.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RoundedButton.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RoundedTextBox.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RowAdd.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.CustomControls.RowDeletable.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.HomepageFormSingle.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhachHangManager.DeleteCustomerForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhachHangManager.ListCustomerForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.HangHoaTrongKho.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoNhapHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoSuaPhieuNhapHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoSuaPhieuXuatHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoTaoPhieuNhapHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoTaoPhieuXuatHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXemPhieuNhapHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXemPhieuXuatHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.KiemKhoXuatHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.SuaThongTinHangHoa.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.ThemHangHoa.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.KhoPage.XemThongTinHangHoa.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.HoSoNhanVien.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCongBangChamCong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyChamCongBangChamCong2.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyDonTu.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyDonTuDuyetDon.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyDonTuNoiDungDon.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLichLam.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLichLamCa.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLichLamNgay.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLichLamThemNhanVien.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLuongThuong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.QuanLyLuongThuongChiTiet.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.SuaThongTinNhanVien_CongViec.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.SuaThongTinNhanVien_HoSo.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThemNhanVien.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_BHXH.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_CongViec.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_HoSo.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.ThongTinCoBanNhanVien_SuaBHXH.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.NhanVienPage.XoaNhanVien.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Properties.Resources.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.ShoppingCartForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.SignInForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.SignUpForm.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeDoanhThu.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.csproj.GenerateResource.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfoInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.AssemblyInfo.cs
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.csproj.CoreCompileInputs.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\refint\GUI.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\GUI.exe
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\GUI.deps.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\GUI.runtimeconfig.json
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\GUI.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\GUI.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\MetroFramework.Design.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\MetroFramework.Fonts.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\MetroFramework.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\BUS.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\DAO.pdb
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.csproj.CopyComplete
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\ref\GUI.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeSanPhamBanRa.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeXuatHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeNhapHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeKhoHang.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeLuongNhanVien.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinCaNhan.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinCaNhan.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinCongViec.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinCongViec.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinBHXH.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinBHXH.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DonTu.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LamDon.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.BangLuong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DoiMatKhau.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong2.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LichLam.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DangKyLichLam.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\en-US\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\vi-VN\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.en-US.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.vi-VN.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\en-US\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\vi-VN\GUI.resources.dll
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.KitchenView.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.LockedFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Components.MonAnComponentForKitchen.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UnlockedFood.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UpdateFoodCom.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.InfoTransaction.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.LuuThongTin.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.ThongTinCoBan.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.KhachHangInfo.TransactionInfo.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.DetailKitchen.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Kitchen.ViewingKitchen.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.HoaDonTong.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
+D:\ASSIGNMENT TDTU\HK 2 Nam 2\SOFTWARE\CUOIKI\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongBao.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UnlockedFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.LockedFood.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.UpdateFoodCom.resources
@@ -116,3 +253,32 @@ C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.ThanhToan.Payment.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Components.ConfirmView.resources
 C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Bill.BillForm.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.AdminPage.AddComboFood.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.BangLuong.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ChamCong2.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DangKyLichLam.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DoiMatKhau.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.DonTu.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LamDon.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.LichLam.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinBHXH.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinCaNhan.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.SuaThongTinCongViec.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongBao.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinBHXH.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinCaNhan.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.StaffAccount.ThongTinCongViec.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeDoanhThu.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeKhoHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeLuongNhanVien.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeNhapHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeSanPhamBanRa.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\WinFormsApp2.Statistic.ThongKeXuatHang.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.en-US.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\GUI.Language.MyResource.vi-VN.resources
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\en-US\GUI.resources.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\bin\Debug\net6.0-windows\vi-VN\GUI.resources.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\en-US\GUI.resources.dll
+C:\Users\ADMIN\Dropbox\My PC (LAPTOP-VERULPGO)\Desktop\CuoiKyCNPM\doancuoikyCNPM\GUI\obj\Debug\net6.0-windows\vi-VN\GUI.resources.dll

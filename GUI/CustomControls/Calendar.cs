@@ -11,6 +11,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp2.NhanVienPage;
+using System.Resources;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using WinFormsApp2.AdminPage;
 
 namespace WinFormsApp2.CustomControls
 {
@@ -20,6 +24,7 @@ namespace WinFormsApp2.CustomControls
         Dictionary<String, int> dict = new Dictionary<string, int>();
         Form parentForm;
         public Action<object, EventArgs> cellClickEvent;
+        CultureInfo culture;
 
         public Calendar()
         {
@@ -31,6 +36,8 @@ namespace WinFormsApp2.CustomControls
             dict.Add("Thursday", 5);
             dict.Add("Friday", 6);
             dict.Add("Saturday", 7);
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("en-US");
         }
 
         public Calendar(int month, int year)
@@ -150,7 +157,19 @@ namespace WinFormsApp2.CustomControls
             String dw = dt.DayOfWeek.ToString();
             return (CalendarCell) flowLayoutPanel1.Controls[7 + dict[dw] + day-2];
         }
-
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
+            lbl_Friday.Text = rm.GetString("fridayText", culture);
+            lbl_Monday.Text = rm.GetString("mondayText", culture);
+            lbl_Saturday.Text = rm.GetString("saturdayText", culture);
+            lbl_Sunday.Text = rm.GetString("sundayText", culture);
+            lbl_Thursday.Text = rm.GetString("thursdayText", culture);
+            lbl_Tuesday.Text = rm.GetString("tuesdayText", culture);
+            lbl_Wednesday.Text = rm.GetString("wednesdayText", culture) ;
+        }
     }
 
 }

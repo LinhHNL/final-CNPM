@@ -34,16 +34,16 @@ namespace WinFormsApp2
             Pa_ColorDis = new RoundedButton();
             pa2_NoicomDien = new RoundedButton();
             roundedButton1 = new RoundedButton();
-            btn_singlePot = new RoundedButton();
-            btn_fourPot = new RoundedButton();
-            btn_doublePot = new RoundedButton();
+            btn_SinglePot = new RoundedButton();
+            btn_FourSidedPot = new RoundedButton();
+            btn_DualSidedPot = new RoundedButton();
             metroPanel1 = new MetroFramework.Controls.MetroPanel();
             metroPanel7 = new MetroFramework.Controls.MetroPanel();
-            roundedButton8 = new RoundedButton();
-            roundedButton7 = new RoundedButton();
-            roundedButton6 = new RoundedButton();
-            btn_ChangeToFood1 = new RoundedButton();
-            roundedButton4 = new RoundedButton();
+            btn_Beverage = new RoundedButton();
+            btn_Snack = new RoundedButton();
+            btn_Vegetable = new RoundedButton();
+            btn_SavouryFood = new RoundedButton();
+            btn_Hotpot = new RoundedButton();
             pictureBox1 = new PictureBox();
             panel_doublePot = new Panel();
             roundedButton14 = new RoundedButton();
@@ -55,10 +55,10 @@ namespace WinFormsApp2
             btn_rightDoublePot = new MetroFramework.Controls.MetroTile();
             metroTile1 = new MetroFramework.Controls.MetroTile();
             btn_showprice = new Button();
-            label7 = new Label();
-            btn_signInForm = new RoundedButton();
-            btn_ReturnLogin = new RoundedButton();
-            btn_ChangingtoCartForm = new RoundedButton();
+            lbl_Message = new Label();
+            btn_AccountForm = new RoundedButton();
+            btn_SignOut = new RoundedButton();
+            btn_Cart = new RoundedButton();
             roundedButton17 = new RoundedButton();
             panel_singlePot = new Panel();
             panel_fourPot = new Panel();
@@ -72,8 +72,8 @@ namespace WinFormsApp2
             btn_topRightFourPot = new MetroFramework.Controls.MetroTile();
             btn_bottomRightFourPot = new MetroFramework.Controls.MetroTile();
             panel_monan_1 = new FlowLayoutPanel();
-            btn_ComfirmFoodChange = new RoundedButton();
-            btn_Payment = new RoundedButton();
+            btn_ConfirmFoodChange = new RoundedButton();
+            btn_PaymentChange = new RoundedButton();
             metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel_doublePot.SuspendLayout();
@@ -137,77 +137,77 @@ namespace WinFormsApp2
             roundedButton1.TextColor = Color.Yellow;
             roundedButton1.UseVisualStyleBackColor = false;
             // 
-            // btn_singlePot
+            // btn_SinglePot
             // 
-            btn_singlePot.BackColor = Color.FromArgb(229, 1, 17);
-            btn_singlePot.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_singlePot.BorderColor = Color.PaleVioletRed;
-            btn_singlePot.BorderRadius = 10;
-            btn_singlePot.BorderSize = 0;
-            btn_singlePot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_singlePot.FlatStyle = FlatStyle.Flat;
-            btn_singlePot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_singlePot.ForeColor = Color.White;
-            btn_singlePot.Location = new Point(268, 103);
-            btn_singlePot.Margin = new Padding(3, 4, 3, 4);
-            btn_singlePot.Name = "btn_singlePot";
-            btn_singlePot.Size = new Size(128, 48);
-            btn_singlePot.TabIndex = 12;
-            btn_singlePot.Text = "Nồi đơn";
-            btn_singlePot.TextColor = Color.White;
-            btn_singlePot.UseVisualStyleBackColor = false;
-            btn_singlePot.Click += btn_singlePot_Click;
+            btn_SinglePot.BackColor = Color.FromArgb(229, 1, 17);
+            btn_SinglePot.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_SinglePot.BorderColor = Color.PaleVioletRed;
+            btn_SinglePot.BorderRadius = 10;
+            btn_SinglePot.BorderSize = 0;
+            btn_SinglePot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_SinglePot.FlatStyle = FlatStyle.Flat;
+            btn_SinglePot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SinglePot.ForeColor = Color.White;
+            btn_SinglePot.Location = new Point(268, 103);
+            btn_SinglePot.Margin = new Padding(3, 4, 3, 4);
+            btn_SinglePot.Name = "btn_SinglePot";
+            btn_SinglePot.Size = new Size(128, 48);
+            btn_SinglePot.TabIndex = 12;
+            btn_SinglePot.Text = "Nồi đơn";
+            btn_SinglePot.TextColor = Color.White;
+            btn_SinglePot.UseVisualStyleBackColor = false;
+            btn_SinglePot.Click += btn_singlePot_Click;
             // 
-            // btn_fourPot
+            // btn_FourSidedPot
             // 
-            btn_fourPot.BackColor = Color.FromArgb(222, 226, 230);
-            btn_fourPot.BackgroundColor = Color.FromArgb(222, 226, 230);
-            btn_fourPot.BorderColor = Color.FromArgb(222, 226, 230);
-            btn_fourPot.BorderRadius = 10;
-            btn_fourPot.BorderSize = 0;
-            btn_fourPot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_fourPot.FlatStyle = FlatStyle.Flat;
-            btn_fourPot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_fourPot.ForeColor = Color.FromArgb(160, 159, 159);
-            btn_fourPot.Location = new Point(578, 103);
-            btn_fourPot.Margin = new Padding(3, 4, 3, 4);
-            btn_fourPot.Name = "btn_fourPot";
-            btn_fourPot.Size = new Size(154, 48);
-            btn_fourPot.TabIndex = 13;
-            btn_fourPot.Text = "Nồi bốn ngăn";
-            btn_fourPot.TextColor = Color.FromArgb(160, 159, 159);
-            btn_fourPot.UseVisualStyleBackColor = false;
-            btn_fourPot.Click += btn_fourPot_Click;
+            btn_FourSidedPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_FourSidedPot.BackgroundColor = Color.FromArgb(222, 226, 230);
+            btn_FourSidedPot.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_FourSidedPot.BorderRadius = 10;
+            btn_FourSidedPot.BorderSize = 0;
+            btn_FourSidedPot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_FourSidedPot.FlatStyle = FlatStyle.Flat;
+            btn_FourSidedPot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_FourSidedPot.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_FourSidedPot.Location = new Point(578, 103);
+            btn_FourSidedPot.Margin = new Padding(3, 4, 3, 4);
+            btn_FourSidedPot.Name = "btn_FourSidedPot";
+            btn_FourSidedPot.Size = new Size(154, 48);
+            btn_FourSidedPot.TabIndex = 13;
+            btn_FourSidedPot.Text = "Nồi bốn ngăn";
+            btn_FourSidedPot.TextColor = Color.FromArgb(160, 159, 159);
+            btn_FourSidedPot.UseVisualStyleBackColor = false;
+            btn_FourSidedPot.Click += btn_fourPot_Click;
             // 
-            // btn_doublePot
+            // btn_DualSidedPot
             // 
-            btn_doublePot.BackColor = Color.FromArgb(222, 226, 230);
-            btn_doublePot.BackgroundColor = Color.FromArgb(222, 226, 230);
-            btn_doublePot.BorderColor = Color.FromArgb(222, 226, 230);
-            btn_doublePot.BorderRadius = 10;
-            btn_doublePot.BorderSize = 0;
-            btn_doublePot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_doublePot.FlatStyle = FlatStyle.Flat;
-            btn_doublePot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_doublePot.ForeColor = Color.FromArgb(160, 159, 159);
-            btn_doublePot.Location = new Point(402, 103);
-            btn_doublePot.Margin = new Padding(3, 4, 3, 4);
-            btn_doublePot.Name = "btn_doublePot";
-            btn_doublePot.Size = new Size(170, 48);
-            btn_doublePot.TabIndex = 14;
-            btn_doublePot.Text = "Nồi uyên ương";
-            btn_doublePot.TextColor = Color.FromArgb(160, 159, 159);
-            btn_doublePot.UseVisualStyleBackColor = false;
-            btn_doublePot.Click += btn_doublePot_Click;
+            btn_DualSidedPot.BackColor = Color.FromArgb(222, 226, 230);
+            btn_DualSidedPot.BackgroundColor = Color.FromArgb(222, 226, 230);
+            btn_DualSidedPot.BorderColor = Color.FromArgb(222, 226, 230);
+            btn_DualSidedPot.BorderRadius = 10;
+            btn_DualSidedPot.BorderSize = 0;
+            btn_DualSidedPot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_DualSidedPot.FlatStyle = FlatStyle.Flat;
+            btn_DualSidedPot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_DualSidedPot.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_DualSidedPot.Location = new Point(402, 103);
+            btn_DualSidedPot.Margin = new Padding(3, 4, 3, 4);
+            btn_DualSidedPot.Name = "btn_DualSidedPot";
+            btn_DualSidedPot.Size = new Size(170, 48);
+            btn_DualSidedPot.TabIndex = 14;
+            btn_DualSidedPot.Text = "Nồi uyên ương";
+            btn_DualSidedPot.TextColor = Color.FromArgb(160, 159, 159);
+            btn_DualSidedPot.UseVisualStyleBackColor = false;
+            btn_DualSidedPot.Click += btn_doublePot_Click;
             // 
             // metroPanel1
             // 
             metroPanel1.Controls.Add(metroPanel7);
-            metroPanel1.Controls.Add(roundedButton8);
-            metroPanel1.Controls.Add(roundedButton7);
-            metroPanel1.Controls.Add(roundedButton6);
-            metroPanel1.Controls.Add(btn_ChangeToFood1);
-            metroPanel1.Controls.Add(roundedButton4);
+            metroPanel1.Controls.Add(btn_Beverage);
+            metroPanel1.Controls.Add(btn_Snack);
+            metroPanel1.Controls.Add(btn_Vegetable);
+            metroPanel1.Controls.Add(btn_SavouryFood);
+            metroPanel1.Controls.Add(btn_Hotpot);
             metroPanel1.Controls.Add(pictureBox1);
             metroPanel1.HorizontalScrollbarBarColor = true;
             metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
@@ -234,109 +234,110 @@ namespace WinFormsApp2
             metroPanel7.VerticalScrollbarHighlightOnWheel = false;
             metroPanel7.VerticalScrollbarSize = 10;
             // 
-            // roundedButton8
+            // btn_Beverage
             // 
-            roundedButton8.BackColor = Color.White;
-            roundedButton8.BackgroundColor = Color.White;
-            roundedButton8.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            roundedButton8.BorderRadius = 0;
-            roundedButton8.BorderSize = 0;
-            roundedButton8.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton8.FlatStyle = FlatStyle.Flat;
-            roundedButton8.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton8.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton8.Location = new Point(-2, 307);
-            roundedButton8.Margin = new Padding(3, 4, 3, 4);
-            roundedButton8.Name = "roundedButton8";
-            roundedButton8.Size = new Size(264, 64);
-            roundedButton8.TabIndex = 19;
-            roundedButton8.Text = "Đồ uống";
-            roundedButton8.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton8.UseVisualStyleBackColor = false;
-            roundedButton8.Click += btn_ChangeToSectionFood4_Click;
+            btn_Beverage.BackColor = Color.White;
+            btn_Beverage.BackgroundColor = Color.White;
+            btn_Beverage.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Beverage.BorderRadius = 0;
+            btn_Beverage.BorderSize = 0;
+            btn_Beverage.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Beverage.FlatStyle = FlatStyle.Flat;
+            btn_Beverage.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Beverage.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Beverage.Location = new Point(-2, 307);
+            btn_Beverage.Margin = new Padding(3, 4, 3, 4);
+            btn_Beverage.Name = "btn_Beverage";
+            btn_Beverage.Size = new Size(264, 64);
+            btn_Beverage.TabIndex = 19;
+            btn_Beverage.Text = "Đồ uống";
+            btn_Beverage.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Beverage.UseVisualStyleBackColor = false;
+            btn_Beverage.Click += btn_ChangeToSectionFood5_Click;
             // 
-            // roundedButton7
+            // btn_Snack
             // 
-            roundedButton7.BackColor = Color.White;
-            roundedButton7.BackgroundColor = Color.White;
-            roundedButton7.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            roundedButton7.BorderRadius = 0;
-            roundedButton7.BorderSize = 0;
-            roundedButton7.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton7.FlatStyle = FlatStyle.Flat;
-            roundedButton7.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton7.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton7.Location = new Point(0, 243);
-            roundedButton7.Margin = new Padding(3, 4, 3, 4);
-            roundedButton7.Name = "roundedButton7";
-            roundedButton7.Size = new Size(264, 64);
-            roundedButton7.TabIndex = 18;
-            roundedButton7.Text = "Đồ ăn vặt";
-            roundedButton7.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton7.UseVisualStyleBackColor = false;
-            roundedButton7.Click += btn_ChangeToSectionFood3_Click;
+            btn_Snack.BackColor = Color.White;
+            btn_Snack.BackgroundColor = Color.White;
+            btn_Snack.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Snack.BorderRadius = 0;
+            btn_Snack.BorderSize = 0;
+            btn_Snack.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Snack.FlatStyle = FlatStyle.Flat;
+            btn_Snack.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Snack.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Snack.Location = new Point(0, 243);
+            btn_Snack.Margin = new Padding(3, 4, 3, 4);
+            btn_Snack.Name = "btn_Snack";
+            btn_Snack.Size = new Size(264, 64);
+            btn_Snack.TabIndex = 18;
+            btn_Snack.Text = "Đồ ăn vặt";
+            btn_Snack.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Snack.UseVisualStyleBackColor = false;
+            btn_Snack.Click += btn_ChangeToSectionFood4_Click;
             // 
-            // roundedButton6
+            // btn_Vegetable
             // 
-            roundedButton6.BackColor = Color.White;
-            roundedButton6.BackgroundColor = Color.White;
-            roundedButton6.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            roundedButton6.BorderRadius = 0;
-            roundedButton6.BorderSize = 0;
-            roundedButton6.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton6.FlatStyle = FlatStyle.Flat;
-            roundedButton6.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton6.ForeColor = Color.FromArgb(160, 159, 159);
-            roundedButton6.Location = new Point(0, 184);
-            roundedButton6.Margin = new Padding(3, 4, 3, 4);
-            roundedButton6.Name = "roundedButton6";
-            roundedButton6.Size = new Size(264, 64);
-            roundedButton6.TabIndex = 17;
-            roundedButton6.Text = "Món rau";
-            roundedButton6.TextColor = Color.FromArgb(160, 159, 159);
-            roundedButton6.UseVisualStyleBackColor = false;
-            roundedButton6.Click += btn_ChangeToSectionFood2_Click;
+            btn_Vegetable.BackColor = Color.White;
+            btn_Vegetable.BackgroundColor = Color.White;
+            btn_Vegetable.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_Vegetable.BorderRadius = 0;
+            btn_Vegetable.BorderSize = 0;
+            btn_Vegetable.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Vegetable.FlatStyle = FlatStyle.Flat;
+            btn_Vegetable.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Vegetable.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_Vegetable.Location = new Point(0, 184);
+            btn_Vegetable.Margin = new Padding(3, 4, 3, 4);
+            btn_Vegetable.Name = "btn_Vegetable";
+            btn_Vegetable.Size = new Size(264, 64);
+            btn_Vegetable.TabIndex = 17;
+            btn_Vegetable.Text = "Món rau";
+            btn_Vegetable.TextColor = Color.FromArgb(160, 159, 159);
+            btn_Vegetable.UseVisualStyleBackColor = false;
+            btn_Vegetable.Click += btn_ChangeToSectionFood3_Click;
             // 
-            // btn_ChangeToFood1
+            // btn_SavouryFood
             // 
-            btn_ChangeToFood1.BackColor = Color.White;
-            btn_ChangeToFood1.BackgroundColor = Color.White;
-            btn_ChangeToFood1.BorderColor = Color.FromArgb(0, 0, 15, 255);
-            btn_ChangeToFood1.BorderRadius = 0;
-            btn_ChangeToFood1.BorderSize = 0;
-            btn_ChangeToFood1.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ChangeToFood1.FlatStyle = FlatStyle.Flat;
-            btn_ChangeToFood1.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ChangeToFood1.ForeColor = Color.FromArgb(160, 159, 159);
-            btn_ChangeToFood1.Location = new Point(0, 126);
-            btn_ChangeToFood1.Margin = new Padding(3, 4, 3, 4);
-            btn_ChangeToFood1.Name = "btn_ChangeToFood1";
-            btn_ChangeToFood1.Size = new Size(262, 60);
-            btn_ChangeToFood1.TabIndex = 16;
-            btn_ChangeToFood1.Text = "Món mặn";
-            btn_ChangeToFood1.TextColor = Color.FromArgb(160, 159, 159);
-            btn_ChangeToFood1.UseVisualStyleBackColor = false;
-            btn_ChangeToFood1.Click += btn_ChangeToSectionFood1_Click;
+            btn_SavouryFood.BackColor = Color.White;
+            btn_SavouryFood.BackgroundColor = Color.White;
+            btn_SavouryFood.BorderColor = Color.FromArgb(0, 0, 15, 255);
+            btn_SavouryFood.BorderRadius = 0;
+            btn_SavouryFood.BorderSize = 0;
+            btn_SavouryFood.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_SavouryFood.FlatStyle = FlatStyle.Flat;
+            btn_SavouryFood.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SavouryFood.ForeColor = Color.FromArgb(160, 159, 159);
+            btn_SavouryFood.Location = new Point(0, 126);
+            btn_SavouryFood.Margin = new Padding(3, 4, 3, 4);
+            btn_SavouryFood.Name = "btn_SavouryFood";
+            btn_SavouryFood.Size = new Size(262, 60);
+            btn_SavouryFood.TabIndex = 16;
+            btn_SavouryFood.Text = "Món mặn";
+            btn_SavouryFood.TextColor = Color.FromArgb(160, 159, 159);
+            btn_SavouryFood.UseVisualStyleBackColor = false;
+            btn_SavouryFood.Click += btn_ChangeToSectionFood2_Click;
             // 
-            // roundedButton4
+            // btn_Hotpot
             // 
-            roundedButton4.BackColor = Color.FromArgb(229, 1, 17);
-            roundedButton4.BackgroundColor = Color.FromArgb(229, 1, 17);
-            roundedButton4.BorderColor = Color.PaleVioletRed;
-            roundedButton4.BorderRadius = 0;
-            roundedButton4.BorderSize = 0;
-            roundedButton4.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            roundedButton4.FlatStyle = FlatStyle.Flat;
-            roundedButton4.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            roundedButton4.ForeColor = Color.White;
-            roundedButton4.Location = new Point(0, 71);
-            roundedButton4.Margin = new Padding(3, 4, 3, 4);
-            roundedButton4.Name = "roundedButton4";
-            roundedButton4.Size = new Size(262, 56);
-            roundedButton4.TabIndex = 16;
-            roundedButton4.Text = "Lẩu";
-            roundedButton4.TextColor = Color.White;
-            roundedButton4.UseVisualStyleBackColor = false;
+            btn_Hotpot.BackColor = Color.FromArgb(229, 1, 17);
+            btn_Hotpot.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_Hotpot.BorderColor = Color.PaleVioletRed;
+            btn_Hotpot.BorderRadius = 0;
+            btn_Hotpot.BorderSize = 0;
+            btn_Hotpot.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Hotpot.FlatStyle = FlatStyle.Flat;
+            btn_Hotpot.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Hotpot.ForeColor = Color.White;
+            btn_Hotpot.Location = new Point(0, 71);
+            btn_Hotpot.Margin = new Padding(3, 4, 3, 4);
+            btn_Hotpot.Name = "btn_Hotpot";
+            btn_Hotpot.Size = new Size(262, 56);
+            btn_Hotpot.TabIndex = 16;
+            btn_Hotpot.Text = "Lẩu";
+            btn_Hotpot.TextColor = Color.White;
+            btn_Hotpot.UseVisualStyleBackColor = false;
+            btn_Hotpot.Click += btn_ChangeToSectionFood1_Click;
             // 
             // pictureBox1
             // 
@@ -488,7 +489,7 @@ namespace WinFormsApp2
             metroTile1.ActiveControl = null;
             metroTile1.BackColor = Color.Black;
             metroTile1.Controls.Add(btn_showprice);
-            metroTile1.Controls.Add(label7);
+            metroTile1.Controls.Add(lbl_Message);
             metroTile1.FlatAppearance.BorderColor = Color.Black;
             metroTile1.FlatAppearance.MouseDownBackColor = Color.Black;
             metroTile1.FlatAppearance.MouseOverBackColor = Color.Black;
@@ -524,79 +525,77 @@ namespace WinFormsApp2
             btn_showprice.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_showprice.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // lbl_Message
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(20, 16);
-            label7.Name = "label7";
-            label7.Size = new Size(279, 28);
-            label7.TabIndex = 0;
-            label7.Text = "Bạn đang chọn loại 1 đáy nồi";
-            label7.Click += label7_Click;
+            lbl_Message.AutoSize = true;
+            lbl_Message.Font = new Font("Calibri", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_Message.ForeColor = Color.White;
+            lbl_Message.Location = new Point(20, 16);
+            lbl_Message.Name = "lbl_Message";
+            lbl_Message.Size = new Size(279, 28);
+            lbl_Message.TabIndex = 0;
+            lbl_Message.Text = "Bạn đang chọn loại 1 đáy nồi";
             // 
-            // btn_signInForm
+            // btn_AccountForm
             // 
-            btn_signInForm.BackColor = Color.FromArgb(229, 1, 17);
-            btn_signInForm.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_signInForm.BorderColor = Color.PaleVioletRed;
-            btn_signInForm.BorderRadius = 8;
-            btn_signInForm.BorderSize = 0;
-            btn_signInForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_signInForm.FlatStyle = FlatStyle.Flat;
-            btn_signInForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_signInForm.ForeColor = Color.White;
-            btn_signInForm.Location = new Point(959, 46);
-            btn_signInForm.Margin = new Padding(3, 4, 3, 4);
-            btn_signInForm.Name = "btn_signInForm";
-            btn_signInForm.Size = new Size(117, 35);
-            btn_signInForm.TabIndex = 18;
-            btn_signInForm.Text = "Tài khoản";
-            btn_signInForm.TextColor = Color.White;
-            btn_signInForm.UseVisualStyleBackColor = false;
+            btn_AccountForm.BackColor = Color.FromArgb(229, 1, 17);
+            btn_AccountForm.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_AccountForm.BorderColor = Color.PaleVioletRed;
+            btn_AccountForm.BorderRadius = 8;
+            btn_AccountForm.BorderSize = 0;
+            btn_AccountForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_AccountForm.FlatStyle = FlatStyle.Flat;
+            btn_AccountForm.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_AccountForm.ForeColor = Color.White;
+            btn_AccountForm.Location = new Point(959, 46);
+            btn_AccountForm.Margin = new Padding(3, 4, 3, 4);
+            btn_AccountForm.Name = "btn_AccountForm";
+            btn_AccountForm.Size = new Size(117, 35);
+            btn_AccountForm.TabIndex = 18;
+            btn_AccountForm.Text = "Tài khoản";
+            btn_AccountForm.TextColor = Color.White;
+            btn_AccountForm.UseVisualStyleBackColor = false;
             // 
-            // btn_ReturnLogin
+            // btn_SignOut
             // 
-            btn_ReturnLogin.BackColor = Color.FromArgb(229, 1, 17);
-            btn_ReturnLogin.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_ReturnLogin.BorderColor = Color.PaleVioletRed;
-            btn_ReturnLogin.BorderRadius = 8;
-            btn_ReturnLogin.BorderSize = 0;
-            btn_ReturnLogin.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ReturnLogin.FlatStyle = FlatStyle.Flat;
-            btn_ReturnLogin.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ReturnLogin.ForeColor = Color.White;
-            btn_ReturnLogin.Location = new Point(1082, 46);
-            btn_ReturnLogin.Margin = new Padding(3, 4, 3, 4);
-            btn_ReturnLogin.Name = "btn_ReturnLogin";
-            btn_ReturnLogin.Size = new Size(117, 35);
-            btn_ReturnLogin.TabIndex = 21;
-            btn_ReturnLogin.Text = "Đăng xuất";
-            btn_ReturnLogin.TextColor = Color.White;
-            btn_ReturnLogin.UseVisualStyleBackColor = false;
-            btn_ReturnLogin.Click += btn_ReturnLogin_Click;
+            btn_SignOut.BackColor = Color.FromArgb(229, 1, 17);
+            btn_SignOut.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_SignOut.BorderColor = Color.PaleVioletRed;
+            btn_SignOut.BorderRadius = 8;
+            btn_SignOut.BorderSize = 0;
+            btn_SignOut.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_SignOut.FlatStyle = FlatStyle.Flat;
+            btn_SignOut.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_SignOut.ForeColor = Color.White;
+            btn_SignOut.Location = new Point(1082, 46);
+            btn_SignOut.Margin = new Padding(3, 4, 3, 4);
+            btn_SignOut.Name = "btn_SignOut";
+            btn_SignOut.Size = new Size(117, 35);
+            btn_SignOut.TabIndex = 21;
+            btn_SignOut.Text = "Đăng xuất";
+            btn_SignOut.TextColor = Color.White;
+            btn_SignOut.UseVisualStyleBackColor = false;
+            btn_SignOut.Click += btn_ReturnLogin_Click;
             // 
-            // btn_ChangingtoCartForm
+            // btn_Cart
             // 
-            btn_ChangingtoCartForm.BackColor = Color.FromArgb(229, 1, 17);
-            btn_ChangingtoCartForm.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_ChangingtoCartForm.BorderColor = Color.PaleVioletRed;
-            btn_ChangingtoCartForm.BorderRadius = 0;
-            btn_ChangingtoCartForm.BorderSize = 0;
-            btn_ChangingtoCartForm.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ChangingtoCartForm.FlatStyle = FlatStyle.Flat;
-            btn_ChangingtoCartForm.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ChangingtoCartForm.ForeColor = Color.White;
-            btn_ChangingtoCartForm.Location = new Point(1010, 637);
-            btn_ChangingtoCartForm.Margin = new Padding(3, 4, 3, 4);
-            btn_ChangingtoCartForm.Name = "btn_ChangingtoCartForm";
-            btn_ChangingtoCartForm.Size = new Size(207, 60);
-            btn_ChangingtoCartForm.TabIndex = 21;
-            btn_ChangingtoCartForm.Text = "Giỏ hàng";
-            btn_ChangingtoCartForm.TextColor = Color.White;
-            btn_ChangingtoCartForm.UseVisualStyleBackColor = false;
-            btn_ChangingtoCartForm.Click += btn_ChangingtoCartForm_Click;
+            btn_Cart.BackColor = Color.FromArgb(229, 1, 17);
+            btn_Cart.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_Cart.BorderColor = Color.PaleVioletRed;
+            btn_Cart.BorderRadius = 0;
+            btn_Cart.BorderSize = 0;
+            btn_Cart.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_Cart.FlatStyle = FlatStyle.Flat;
+            btn_Cart.Font = new Font("Calibri", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Cart.ForeColor = Color.White;
+            btn_Cart.Location = new Point(1010, 637);
+            btn_Cart.Margin = new Padding(3, 4, 3, 4);
+            btn_Cart.Name = "btn_Cart";
+            btn_Cart.Size = new Size(207, 60);
+            btn_Cart.TabIndex = 21;
+            btn_Cart.Text = "Giỏ hàng";
+            btn_Cart.TextColor = Color.White;
+            btn_Cart.UseVisualStyleBackColor = false;
             // 
             // roundedButton17
             // 
@@ -801,67 +800,67 @@ namespace WinFormsApp2
             panel_monan_1.Size = new Size(461, 511);
             panel_monan_1.TabIndex = 35;
             // 
-            // btn_ComfirmFoodChange
+            // btn_ConfirmFoodChange
             // 
-            btn_ComfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
-            btn_ComfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_ComfirmFoodChange.BorderColor = Color.PaleVioletRed;
-            btn_ComfirmFoodChange.BorderRadius = 8;
-            btn_ComfirmFoodChange.BorderSize = 0;
-            btn_ComfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_ComfirmFoodChange.FlatStyle = FlatStyle.Flat;
-            btn_ComfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_ComfirmFoodChange.ForeColor = Color.White;
-            btn_ComfirmFoodChange.Location = new Point(799, 46);
-            btn_ComfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
-            btn_ComfirmFoodChange.Name = "btn_ComfirmFoodChange";
-            btn_ComfirmFoodChange.Size = new Size(143, 35);
-            btn_ComfirmFoodChange.TabIndex = 36;
-            btn_ComfirmFoodChange.Text = "Xác Nhận Món";
-            btn_ComfirmFoodChange.TextColor = Color.White;
-            btn_ComfirmFoodChange.UseVisualStyleBackColor = false;
-            btn_ComfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
+            btn_ConfirmFoodChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_ConfirmFoodChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_ConfirmFoodChange.BorderColor = Color.PaleVioletRed;
+            btn_ConfirmFoodChange.BorderRadius = 8;
+            btn_ConfirmFoodChange.BorderSize = 0;
+            btn_ConfirmFoodChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_ConfirmFoodChange.FlatStyle = FlatStyle.Flat;
+            btn_ConfirmFoodChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_ConfirmFoodChange.ForeColor = Color.White;
+            btn_ConfirmFoodChange.Location = new Point(785, 46);
+            btn_ConfirmFoodChange.Margin = new Padding(3, 4, 3, 4);
+            btn_ConfirmFoodChange.Name = "btn_ConfirmFoodChange";
+            btn_ConfirmFoodChange.Size = new Size(159, 35);
+            btn_ConfirmFoodChange.TabIndex = 36;
+            btn_ConfirmFoodChange.Text = "Xác Nhận Món";
+            btn_ConfirmFoodChange.TextColor = Color.White;
+            btn_ConfirmFoodChange.UseVisualStyleBackColor = false;
+            btn_ConfirmFoodChange.Click += btn_ComfirmFoodChange_Click;
             // 
-            // btn_Payment
+            // btn_PaymentChange
             // 
-            btn_Payment.BackColor = Color.FromArgb(229, 1, 17);
-            btn_Payment.BackgroundColor = Color.FromArgb(229, 1, 17);
-            btn_Payment.BorderColor = Color.PaleVioletRed;
-            btn_Payment.BorderRadius = 8;
-            btn_Payment.BorderSize = 0;
-            btn_Payment.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
-            btn_Payment.FlatStyle = FlatStyle.Flat;
-            btn_Payment.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_Payment.ForeColor = Color.White;
-            btn_Payment.Location = new Point(650, 46);
-            btn_Payment.Margin = new Padding(3, 4, 3, 4);
-            btn_Payment.Name = "btn_Payment";
-            btn_Payment.Size = new Size(143, 35);
-            btn_Payment.TabIndex = 39;
-            btn_Payment.Text = "Thanh toán";
-            btn_Payment.TextColor = Color.White;
-            btn_Payment.UseVisualStyleBackColor = false;
-            btn_Payment.Click += btn_Payment_Click;
+            btn_PaymentChange.BackColor = Color.FromArgb(229, 1, 17);
+            btn_PaymentChange.BackgroundColor = Color.FromArgb(229, 1, 17);
+            btn_PaymentChange.BorderColor = Color.PaleVioletRed;
+            btn_PaymentChange.BorderRadius = 8;
+            btn_PaymentChange.BorderSize = 0;
+            btn_PaymentChange.FlatAppearance.BorderColor = Color.FromArgb(230, 57, 70);
+            btn_PaymentChange.FlatStyle = FlatStyle.Flat;
+            btn_PaymentChange.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_PaymentChange.ForeColor = Color.White;
+            btn_PaymentChange.Location = new Point(637, 46);
+            btn_PaymentChange.Margin = new Padding(3, 4, 3, 4);
+            btn_PaymentChange.Name = "btn_PaymentChange";
+            btn_PaymentChange.Size = new Size(126, 35);
+            btn_PaymentChange.TabIndex = 37;
+            btn_PaymentChange.Text = "Thanh toán";
+            btn_PaymentChange.TextColor = Color.White;
+            btn_PaymentChange.UseVisualStyleBackColor = false;
+            btn_PaymentChange.Click += btn_Payment_Click;
             // 
             // HomepageFormSingle
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1212, 697);
-            Controls.Add(btn_Payment);
-            Controls.Add(btn_ComfirmFoodChange);
+            Controls.Add(btn_PaymentChange);
+            Controls.Add(btn_ConfirmFoodChange);
             Controls.Add(panel_monan_1);
             Controls.Add(panel_fourPot);
             Controls.Add(panel_doublePot);
             Controls.Add(panel_singlePot);
-            Controls.Add(btn_ChangingtoCartForm);
-            Controls.Add(btn_ReturnLogin);
-            Controls.Add(btn_signInForm);
+            Controls.Add(btn_Cart);
+            Controls.Add(btn_SignOut);
+            Controls.Add(btn_AccountForm);
             Controls.Add(metroTile1);
             Controls.Add(metroPanel1);
-            Controls.Add(btn_doublePot);
-            Controls.Add(btn_fourPot);
-            Controls.Add(btn_singlePot);
+            Controls.Add(btn_DualSidedPot);
+            Controls.Add(btn_FourSidedPot);
+            Controls.Add(btn_SinglePot);
             Name = "HomepageFormSingle";
             Style = MetroFramework.MetroColorStyle.White;
             Load += HomepageFormSingle_Load;
@@ -881,23 +880,23 @@ namespace WinFormsApp2
         private RoundedButton Pa_ColorDis;
         private RoundedButton pa2_NoicomDien;
         private RoundedButton roundedButton1;
-        private RoundedButton btn_singlePot;
-        private RoundedButton btn_fourPot;
-        private RoundedButton btn_doublePot;
+        private RoundedButton btn_SinglePot;
+        private RoundedButton btn_FourSidedPot;
+        private RoundedButton btn_DualSidedPot;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private PictureBox pictureBox1;
-        private RoundedButton roundedButton8;
-        private RoundedButton roundedButton7;
-        private RoundedButton roundedButton6;
-        private RoundedButton btn_ChangeToFood1;
-        private RoundedButton roundedButton4;
+        private RoundedButton btn_Beverage;
+        private RoundedButton btn_Snack;
+        private RoundedButton btn_Vegetable;
+        private RoundedButton btn_SavouryFood;
+        private RoundedButton btn_Hotpot;
         private MetroFramework.Controls.MetroPanel metroPanel7;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private RoundedButton btn_signInForm;
-        private RoundedButton btn_ReturnLogin;
-        private RoundedButton btn_ChangingtoCartForm;
+        private RoundedButton btn_AccountForm;
+        private RoundedButton btn_SignOut;
+        private RoundedButton btn_Cart;
         private Button btn_showprice;
-        private Label label7;
+        private Label lbl_Message;
         private RoundedButton roundedButton14;
         private RoundedButton roundedButton18;
         private RoundedButton roundedButton19;
@@ -921,5 +920,7 @@ namespace WinFormsApp2
         private FlowLayoutPanel panel_monan_1;
         private RoundedButton btn_ComfirmFoodChange;
         private RoundedButton btn_Payment;
+        private RoundedButton btn_ConfirmFoodChange;
+        private RoundedButton btn_PaymentChange;
     }
 }

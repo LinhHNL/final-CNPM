@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
+using System.Globalization;
+using WinFormsApp2.AdminPage;
 
 namespace WinFormsApp2.NhanVienPage
 {
     public partial class ThongTinCoBanNhanVien_BHXH : MetroFramework.Forms.MetroForm
     {
+        CultureInfo culture;
         public ThongTinCoBanNhanVien_BHXH()
         {
             InitializeComponent();
+            culture = CultureInfo.CurrentCulture;
+            SetLanguage("en-US");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -93,6 +99,33 @@ namespace WinFormsApp2.NhanVienPage
             this.Hide();
             form.ShowDialog();
             this.Close();
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("GUI.Language.MyResource", typeof(AddFood).Assembly);
+            btn_Signout.Text = rm.GetString("signoutText", culture);
+            lbl_AccountName.Text = rm.GetString("accountNameText", culture);
+            btn_StaffProfile.Text = rm.GetString("staffProfileText", culture);
+            btn_WorkScheduleManagement.Text = rm.GetString("workScheduleManagementText", culture);
+            btn_TimekeepingManagement.Text = rm.GetString("timekeepingManagementText", culture);
+            btn_letter.Text = rm.GetString("letterText", culture);
+            btn_ExportFile.Text = rm.GetString("exportFileText", culture);
+            btn_PayRoll.Text = rm.GetString("payrollText", culture);
+            btn_profile.Text = rm.GetString("profileText", culture);
+            btn_socialInsurance.Text = rm.GetString("socialInsuranceText", culture);
+            lbl_staffInfoText.Text = rm.GetString("staffInfoText", culture);
+            btn_job.Text = rm.GetString("jobText", culture);
+            lbl_Back.Text = rm.GetString("backText", culture);
+            btn_Save.Text = rm.GetString("saveText", culture);
+            lbl_medicalInsuranceEndDate.Text = rm.GetString("medicalInsuranceEndDateText", culture);
+            lbl_socialInsuranceNumber.Text = rm.GetString("socialInsuranceNumberText", culture);
+            lbl_socialInsuranceEndDate.Text = rm.GetString("socialInsuranceEndDateText", culture);
+            lbl_socialInsuranceStartDate.Text = rm.GetString("socialInsuranceStartDateText", culture);
+            lbl_medicalInsuranceStartDate.Text = rm.GetString("medicalInsuranceStartDateText", culture);
+            gb_insuranceInfomation.Text = rm.GetString("insuranceInfomationText", culture);
+            btn_Edit.Text = rm.GetString("editText", culture);
         }
     }
 }
